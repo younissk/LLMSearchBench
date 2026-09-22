@@ -95,16 +95,42 @@ class ToolCall(BenchModel):
 
 
 class ToolUseAttempt(BenchModel):
-    """What one model did with one item."""
+    """What one model did with one item.
+
+    Everything here is raw observation. The costs and averages are derived from
+    these fields at scoring time rather than stored, so a price correction does
+    not require re-running anything.
+    """
 
     task_id: str = Field(min_length=1)
     model: str = Field(min_length=1)
     answer: str = ""
     calls: list[ToolCall] = Field(default_factory=list)
+
     tokens_in: int = Field(default=0, ge=0)
     tokens_out: int = Field(default=0, ge=0)
+    #: Thinking/reasoning tokens, where the provider reports them separately.
+    #: Billed as output, so they are *included* in `tokens_out`, not added to it.
+    reasoning_tokens: int = Field(default=0, ge=0)
+    #: Input tokens served from the provider's cache, where reported.
+    cached_tokens: int = Field(default=0, ge=0)
+
     latency_s: float = Field(default=0.0, ge=0)
+    #: API round trips. One means it answered without searching.
+    turns: int = Field(default=0, ge=0)
+    #: The provider's last stop reason, kept for debugging odd runs.
+    stop_reason: str = ""
+    #: Set when the item failed outright; the attempt is recorded either way.
+    error: str = ""
 
     @property
     def searched(self) -> bool:
         return bool(self.calls)
+
+    @property
+    def failed(self) -> bool:
+        return bool(self.error)
+
+    @property
+    def answer_chars(self) -> int:
+        return len(self.answer)

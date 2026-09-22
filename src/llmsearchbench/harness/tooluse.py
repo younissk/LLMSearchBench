@@ -11,10 +11,11 @@ from collections.abc import Callable, Sequence
 from pathlib import Path
 from typing import Protocol
 
+from llmsearchbench.harness.adapters import Turn
 from llmsearchbench.harness.config import HarnessConfig
 from llmsearchbench.harness.protocols import SearchBackend
 from llmsearchbench.storage import append_line
-from llmsearchbench.types.tooluse import ToolCall, ToolUseAttempt, ToolUseTask
+from llmsearchbench.types.tooluse import ToolUseAttempt, ToolUseTask
 
 #: Called after each item with (index, total, task, attempt).
 ProgressHook = Callable[[int, int, ToolUseTask, ToolUseAttempt], None]
@@ -27,9 +28,7 @@ class PromptAdapter(Protocol):
     wants the call log back, not a structured answer.
     """
 
-    def answer(
-        self, prompt: str, backend: SearchBackend, config: HarnessConfig
-    ) -> tuple[str, list[ToolCall], int, int, float]: ...
+    def answer(self, prompt: str, backend: SearchBackend, config: HarnessConfig) -> Turn: ...
 
 
 def run_task(
@@ -40,15 +39,19 @@ def run_task(
     config: HarnessConfig,
 ) -> ToolUseAttempt:
     """Put one prompt to the model and record what it did."""
-    answer, calls, tokens_in, tokens_out, latency = adapter.answer(task.prompt, backend, config)
+    turn = adapter.answer(task.prompt, backend, config)
     return ToolUseAttempt(
         task_id=task.id,
         model=model,
-        answer=answer,
-        calls=calls,
-        tokens_in=tokens_in,
-        tokens_out=tokens_out,
-        latency_s=latency,
+        answer=turn.answer,
+        calls=turn.calls,
+        tokens_in=turn.tokens_in,
+        tokens_out=turn.tokens_out,
+        reasoning_tokens=turn.reasoning_tokens,
+        cached_tokens=turn.cached_tokens,
+        latency_s=turn.latency_s,
+        turns=turn.turns,
+        stop_reason=turn.stop_reason,
     )
 
 

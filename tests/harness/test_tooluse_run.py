@@ -107,27 +107,26 @@ class TestValidateSearchArguments:
 class TestAdapter:
     def test_an_answer_without_a_search_records_no_calls(self) -> None:
         adapter = adapter_for([answered()])
-        text, calls, tokens_in, tokens_out, latency = adapter.answer(
-            "prompt", StubBackend(), HarnessConfig()
-        )
-        assert text == "an answer"
-        assert calls == []
-        assert tokens_in == 100 and tokens_out == 50
-        assert latency >= 0
+        turn = adapter.answer("prompt", StubBackend(), HarnessConfig())
+        assert turn.answer == "an answer"
+        assert turn.calls == []
+        assert turn.tokens_in == 100 and turn.tokens_out == 50
+        assert turn.latency_s >= 0
+        assert turn.turns == 1
+        assert turn.stop_reason == "end_turn"
 
     def test_a_search_is_executed_and_recorded(self) -> None:
         backend = StubBackend()
         adapter = adapter_for([searched("sleep divorce"), answered()])
-        _, calls, _, _, _ = adapter.answer("prompt", backend, HarnessConfig())
-        assert [call.query for call in calls] == ["sleep divorce"]
+        turn = adapter.answer("prompt", backend, HarnessConfig())
+        assert [call.query for call in turn.calls] == ["sleep divorce"]
         assert backend.queries == ["sleep divorce"]
 
     def test_tokens_accumulate_across_turns(self) -> None:
         adapter = adapter_for([searched(), answered()])
-        _, _, tokens_in, tokens_out, _ = adapter.answer(
-            "prompt", StubBackend(), HarnessConfig()
-        )
-        assert tokens_in == 200 and tokens_out == 100
+        turn = adapter.answer("prompt", StubBackend(), HarnessConfig())
+        assert turn.tokens_in == 200 and turn.tokens_out == 100
+        assert turn.turns == 2, "a search costs a second round trip"
 
     def test_a_malformed_call_is_recorded_and_the_model_gets_a_chance_to_recover(
         self,
@@ -142,15 +141,15 @@ class TestAdapter:
                 answered(),
             ]
         )
-        _, calls, _, _, _ = adapter.answer("prompt", StubBackend(), HarnessConfig())
-        assert calls[0].schema_error is not None
-        assert "query" in calls[0].schema_error
+        turn = adapter.answer("prompt", StubBackend(), HarnessConfig())
+        assert turn.calls[0].schema_error is not None
+        assert "query" in turn.calls[0].schema_error
 
     def test_a_wrong_tool_is_recorded_and_not_executed(self) -> None:
         backend = StubBackend()
         adapter = adapter_for([searched(name="calculator"), answered()])
-        _, calls, _, _, _ = adapter.answer("prompt", backend, HarnessConfig())
-        assert calls[0].name == "calculator"
+        turn = adapter.answer("prompt", backend, HarnessConfig())
+        assert turn.calls[0].name == "calculator"
         assert backend.queries == []
 
     def test_an_empty_query_is_not_sent_to_the_backend(self) -> None:
@@ -162,8 +161,8 @@ class TestAdapter:
     def test_a_model_that_never_stops_is_cut_off_past_the_budget(self) -> None:
         """Over-budget has to be observable, so the loop runs one turn past it."""
         adapter = adapter_for([searched(f"q{i}") for i in range(12)])
-        _, calls, _, _, _ = adapter.answer("prompt", StubBackend(), HarnessConfig(max_calls=3))
-        assert len(calls) > 3
+        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(max_calls=3))
+        assert len(turn.calls) > 3
 
     def test_sampling_is_omitted_for_models_that_reject_it(self) -> None:
         """Opus 5 and Sonnet 5 return 400 when temperature is sent."""

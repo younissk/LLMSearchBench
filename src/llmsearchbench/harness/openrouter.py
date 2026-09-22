@@ -18,12 +18,15 @@ import os
 import time
 import urllib.error
 import urllib.request
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from llmsearchbench.harness.config import HarnessConfig
 from llmsearchbench.harness.protocols import SearchBackend
 from llmsearchbench.providers import ModelSpec
 from llmsearchbench.types.tooluse import ToolCall
+
+if TYPE_CHECKING:
+    from llmsearchbench.harness.adapters import Turn
 
 ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_TIMEOUT = 120.0
@@ -46,6 +49,27 @@ SEARCH_TOOL: dict[str, Any] = {
         },
     },
 }
+
+
+def _reasoning_tokens(usage: dict[str, Any]) -> int:
+    """Thinking tokens, where the routed provider reports them.
+
+    Reasoning models charge for these as output tokens, so they are already
+    inside `completion_tokens`. Recording them separately is what makes it
+    possible to see that a model spent 3,000 tokens thinking about whether to
+    search for a haiku.
+    """
+    details = usage.get("completion_tokens_details")
+    if isinstance(details, dict):
+        return int(details.get("reasoning_tokens", 0) or 0)
+    return 0
+
+
+def _cached_tokens(usage: dict[str, Any]) -> int:
+    details = usage.get("prompt_tokens_details")
+    if isinstance(details, dict):
+        return int(details.get("cached_tokens", 0) or 0)
+    return 0
 
 
 class OpenRouterError(RuntimeError):
@@ -118,12 +142,14 @@ class OpenRouterAdapter:
         prompt: str,
         backend: SearchBackend,
         config: HarnessConfig,
-    ) -> tuple[str, list[ToolCall], int, int, float]:
-        from llmsearchbench.harness.adapters import _render
+    ) -> Turn:
+        from llmsearchbench.harness.adapters import Turn, _render
 
         messages: list[dict[str, Any]] = [{"role": "user", "content": prompt}]
         calls: list[ToolCall] = []
-        tokens_in = tokens_out = 0
+        tokens_in = tokens_out = reasoning = cached = 0
+        turns = 0
+        stop_reason = ""
         started = time.monotonic()
 
         for _ in range(config.max_calls + 2):
@@ -137,19 +163,33 @@ class OpenRouterAdapter:
                 payload["temperature"] = config.temperature
 
             body = _post(payload, self._api_key)
+            turns += 1
             usage = body.get("usage") or {}
             tokens_in += int(usage.get("prompt_tokens", 0))
             tokens_out += int(usage.get("completion_tokens", 0))
+            reasoning += _reasoning_tokens(usage)
+            cached += _cached_tokens(usage)
 
             choices = body.get("choices") or []
             if not choices:
                 raise OpenRouterError("response contained no choices")
+            stop_reason = str(choices[0].get("finish_reason") or "")
             message = choices[0].get("message") or {}
             tool_calls = message.get("tool_calls") or []
 
             if not tool_calls:
                 text = str(message.get("content") or "")
-                return text, calls, tokens_in, tokens_out, time.monotonic() - started
+                return Turn(
+                    answer=text,
+                    calls=calls,
+                    tokens_in=tokens_in,
+                    tokens_out=tokens_out,
+                    reasoning_tokens=reasoning,
+                    cached_tokens=cached,
+                    latency_s=time.monotonic() - started,
+                    turns=turns,
+                    stop_reason=stop_reason,
+                )
 
             messages.append(message)
             for call in tool_calls:
@@ -177,4 +217,14 @@ class OpenRouterAdapter:
                     }
                 )
 
-        return "", calls, tokens_in, tokens_out, time.monotonic() - started
+        return Turn(
+            answer="",
+            calls=calls,
+            tokens_in=tokens_in,
+            tokens_out=tokens_out,
+            reasoning_tokens=reasoning,
+            cached_tokens=cached,
+            latency_s=time.monotonic() - started,
+            turns=turns,
+            stop_reason=stop_reason,
+        )

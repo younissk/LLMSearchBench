@@ -10,11 +10,14 @@ from __future__ import annotations
 import os
 import time
 from collections.abc import Sequence
-from typing import TYPE_CHECKING, Any, Protocol
+from typing import TYPE_CHECKING, Any
+
+from pydantic import Field
 
 from llmsearchbench.harness.config import HarnessConfig
 from llmsearchbench.harness.protocols import Document, SearchBackend
 from llmsearchbench.providers import ModelSpec, get_model, get_provider
+from llmsearchbench.types import BenchModel
 from llmsearchbench.types.tooluse import ToolCall
 
 if TYPE_CHECKING:
@@ -46,14 +49,19 @@ class NotConfiguredError(RuntimeError):
     """The model has no adapter, or its credential is missing."""
 
 
-class TurnResult(Protocol):
-    """What one adapter turn reports back to the run loop."""
+class Turn(BenchModel):
+    """Everything one adapter observed while answering one prompt."""
 
     answer: str
     calls: list[ToolCall]
-    tokens_in: int
-    tokens_out: int
-    latency_s: float
+    tokens_in: int = Field(ge=0)
+    tokens_out: int = Field(ge=0)
+    #: Included in `tokens_out` where the provider separates it out; 0 otherwise.
+    reasoning_tokens: int = Field(default=0, ge=0)
+    cached_tokens: int = Field(default=0, ge=0)
+    latency_s: float = Field(ge=0)
+    turns: int = Field(ge=0)
+    stop_reason: str = ""
 
 
 def validate_search_arguments(raw: object) -> tuple[dict[str, str], str | None]:
@@ -96,11 +104,13 @@ class AnthropicAdapter:
         prompt: str,
         backend: SearchBackend,
         config: HarnessConfig,
-    ) -> tuple[str, list[ToolCall], int, int, float]:
-        """Return (answer, calls, tokens_in, tokens_out, latency)."""
+    ) -> Turn:
+        """Run one prompt to completion and report everything observed."""
         messages: list[dict[str, Any]] = [{"role": "user", "content": prompt}]
         calls: list[ToolCall] = []
-        tokens_in = tokens_out = 0
+        tokens_in = tokens_out = cached = 0
+        turns = 0
+        stop_reason = ""
         started = time.monotonic()
 
         # One extra turn past the budget, so a model that keeps calling is
@@ -117,12 +127,27 @@ class AnthropicAdapter:
                 request["temperature"] = config.temperature
 
             response = self._client.messages.create(**request)
+            turns += 1
             tokens_in += response.usage.input_tokens
             tokens_out += response.usage.output_tokens
+            cached += getattr(response.usage, "cache_read_input_tokens", 0) or 0
+            stop_reason = str(response.stop_reason or "")
 
             if response.stop_reason != "tool_use":
                 text = "".join(block.text for block in response.content if block.type == "text")
-                return text, calls, tokens_in, tokens_out, time.monotonic() - started
+                return Turn(
+                    answer=text,
+                    calls=calls,
+                    tokens_in=tokens_in,
+                    tokens_out=tokens_out,
+                    # Anthropic bills thinking inside output tokens and does not
+                    # break it out, so this stays zero on this route.
+                    reasoning_tokens=0,
+                    cached_tokens=cached,
+                    latency_s=time.monotonic() - started,
+                    turns=turns,
+                    stop_reason=stop_reason,
+                )
 
             messages.append({"role": "assistant", "content": response.content})
             results: list[dict[str, Any]] = []
@@ -143,7 +168,17 @@ class AnthropicAdapter:
 
             messages.append({"role": "user", "content": results})
 
-        return "", calls, tokens_in, tokens_out, time.monotonic() - started
+        return Turn(
+            answer="",
+            calls=calls,
+            tokens_in=tokens_in,
+            tokens_out=tokens_out,
+            reasoning_tokens=0,
+            cached_tokens=cached,
+            latency_s=time.monotonic() - started,
+            turns=turns,
+            stop_reason=stop_reason,
+        )
 
 
 def _tool_result_body(
