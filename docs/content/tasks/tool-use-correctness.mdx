@@ -27,6 +27,25 @@ would hide which of the three a model is actually bad at.
 Every item carries an expectation. The model is given a search tool and the
 prompt, and we record whether it called the tool at all.
 
+Write $s_i \in \{0,1\}$ for whether the model searched on item $i$, and
+$e_i \in \{0,1\}$ for whether it should have. Over a task set $I$:
+
+$$
+\mathrm{DecisionAccuracy} = \frac{1}{|I|}\sum_{i \in I} \mathbb{1}\!\left[\, s_i = e_i \,\right]
+$$
+
+That single number is not enough, because the two ways of being wrong are not
+the same mistake. Splitting by bucket $B$:
+
+$$
+\mathrm{OverSearch}(B) = \frac{\bigl|\{\, i \in B : s_i = 1 \,\}\bigr|}{|B|},
+\qquad B \in \{\texttt{memory},\ \texttt{no\_tool}\}
+$$
+
+$$
+\mathrm{UnderSearch} = \frac{\bigl|\{\, i \in \texttt{search} : s_i = 0 \,\}\bigr|}{|\texttt{search}|}
+$$
+
 | Metric | Question it answers |
 | --- | --- |
 | Decision accuracy | Overall, how often was the search-or-not call right? |
@@ -54,15 +73,32 @@ once per item, so one item with three empty queries is one empty-query failure.
 | `duplicate-query` | Re-issued a query already made for this item |
 | `over-budget` | Kept calling past the harness limit of six |
 
-The headline figure is **well-formed rate**: the share of calling items whose
-every call was clean.
+Let $C \subseteq I$ be the items on which the model called anything at all, and
+$P_i$ the set of distinct problems found on item $i$. The headline figure is the
+share of calling items with nothing wrong:
+
+$$
+\mathrm{WellFormed} = \frac{\bigl|\{\, i \in C : P_i = \varnothing \,\}\bigr|}{|C|}
+$$
+
+The denominator is $|C|$, not $|I|$: a model that never calls the tool has no
+call quality to speak of, and scoring it 100% would reward abstention twice.
 
 ### 3. Answer — was it right in the end?
 
 Reported second, and on purpose. A model can be right by luck after a wrong
-decision, and right answers should not launder a bad tool policy. Matching is
-accent- and punctuation-insensitive containment against any gold alias —
-deliberately lenient, so this does not quietly become a QA benchmark.
+decision, and right answers should not launder a bad tool policy.
+
+For a bucket $B$ with gold alias sets $G_i$ and answer text $a_i$:
+
+$$
+\mathrm{AnswerAccuracy}(B) = \frac{1}{|B|}\sum_{i \in B}
+\mathbb{1}\!\left[\, \exists\, g \in G_i : \phi(g) \subseteq \phi(a_i) \,\right]
+$$
+
+where $\phi$ folds accents, case, and punctuation. Containment rather than
+equality, and any alias rather than all — deliberately lenient, so this does not
+quietly become a QA benchmark.
 
 ## The three buckets
 
@@ -84,6 +120,18 @@ flowchart TD
 | `search` | 120 | yes | RetrievalQA, `param_knowledge_answerable = 0` |
 | `no_tool` | 71 | no | Generated for this task |
 | **total** | **311** | | |
+
+<BarChart
+  title="Task set composition"
+  subtitle="311 items across three buckets"
+  format={(v) => String(Math.round(v))}
+  footnote="Only the search bucket expects a tool call. The two no-search buckets are scored apart."
+  data={[
+    {label: 'memory', value: 120, group: 'expect no search'},
+    {label: 'search', value: 120, group: 'expect search'},
+    {label: 'no_tool', value: 71, group: 'expect no search'},
+  ]}
+/>
 
 ### Examples
 
@@ -139,6 +187,24 @@ make a model look worse than it is, so every candidate passes a set of named
 admission rules first. The build is seeded and deterministic: the same source
 file and the same seed reproduce the committed set byte for byte.
 
+```mermaid
+flowchart LR
+  A["RetrievalQA<br/>2,785 records"] --> B{"param_knowledge<br/>_answerable"}
+  B -- "= 1" --> C["memory pool<br/>1,514"]
+  B -- "= 0" --> D["search pool<br/>1,271"]
+  C --> E["10 admission rules"]
+  D --> E
+  E -- "rejected 562 / 741" --> X["dropped"]
+  E --> F["eligible<br/>952 / 530"]
+  F --> G["round-robin<br/>sample, seeded"]
+  G --> H["120 memory<br/>120 search"]
+  I["generated prompts<br/>6 categories"] --> J["review"]
+  J -- "1 rejected" --> X
+  J --> K["71 no_tool"]
+  H --> L["tool-use-correctness.jsonl<br/>311 items"]
+  K --> L
+```
+
 ```bash
 make tasks          # rebuild from data/raw/
 make tasks-stats    # describe the committed set
@@ -164,6 +230,44 @@ From 2,785 source records:
 | **eligible** | | **952** | **530** |
 | **sampled** | | **120** | **120** |
 
+<BarChart
+  title="Candidates rejected, search bucket"
+  subtitle="741 of 1,271 retrieval-required records dropped"
+  format={(v) => String(Math.round(v))}
+  labelWidth={210}
+  footnote="Each candidate is counted against the first rule it fails. Biggest cause first."
+  data={[
+    {label: 'answer-absent-from-context', value: 244},
+    {label: 'ambiguous-generic-entity', value: 190},
+    {label: 'time-relative', value: 115},
+    {label: 'synthetic-corpus', value: 75},
+    {label: 'disambiguation-alias', value: 45},
+    {label: 'leaked-quoting', value: 26},
+    {label: 'duplicate-question', value: 24},
+    {label: 'ambiguous-short-entity', value: 15},
+    {label: 'unstable-superlative', value: 7},
+  ]}
+/>
+
+<BarChart
+  title="Candidates rejected, memory bucket"
+  subtitle="562 of 1,514 memory-answerable records dropped"
+  format={(v) => String(Math.round(v))}
+  labelWidth={210}
+  footnote="TriviaQA alias lists containing empty strings are the single largest cause."
+  data={[
+    {label: 'blank-alias', value: 243},
+    {label: 'ambiguous-generic-entity', value: 154},
+    {label: 'duplicate-question', value: 94},
+    {label: 'leaked-quoting', value: 21},
+    {label: 'disambiguation-alias', value: 15},
+    {label: 'ambiguous-short-entity', value: 13},
+    {label: 'answer-absent-from-context', value: 9},
+    {label: 'unstable-superlative', value: 8},
+    {label: 'time-relative', value: 5},
+  ]}
+/>
+
 The largest single rejection is `answer-absent-from-context` on the search
 bucket: 244 of the retrieval-required candidates have a gold answer that their
 own retrieved context never states, through entity ambiguity, stale scrapes, or
@@ -175,6 +279,19 @@ Sources are sampled round-robin rather than proportionally. PopQA is 52% of the
 retrieval-required source and consists of a single question template; sampling
 uniformly would make this largely a PopQA benchmark. Round-robin lifts the
 smaller, cleaner sources toward parity:
+
+<BarChart
+  title="Where the search bucket comes from"
+  subtitle="Round-robin sampling against the eligible pool"
+  format={(v) => String(Math.round(v))}
+  footnote="PopQA is 52% of the retrieval-required source and ends at 32% of the bucket."
+  data={[
+    {label: 'popqa', value: 38, group: 'templated'},
+    {label: 'realtimeqa', value: 38, group: 'web-sourced'},
+    {label: 'triviaqa', value: 37, group: 'templated'},
+    {label: 'freshqa', value: 7, group: 'web-sourced'},
+  ]}
+/>
 
 | Bucket | Composition |
 | --- | --- |
@@ -202,6 +319,29 @@ to search. 71 of 72 survived.
 | Prompt length, words (min / median / max) | 5 / 8 / 29 | 4 / 11 / 30 | 6 / 13 / 42 |
 | Gold aliases (min / median / max) | 1 / 11 / 280 | 1 / 2 / 41 | — |
 | Adversarial | 0 | 0 | 17 |
+
+## How one item is scored
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant R as Runner
+  participant M as Model under test
+  participant S as Search tool
+  participant J as Scorer
+
+  R->>M: prompt + search tool schema
+  alt model decides to search
+    M->>S: search(query)
+    S-->>M: results
+    Note over J: record every call for<br/>schema, emptiness, duplicates
+  else model answers directly
+    Note over M: no call recorded
+  end
+  M-->>R: answer + call log
+  R->>J: item bucket, expectation, calls, answer
+  J-->>R: decision correct? calls clean? answer right?
+```
 
 ## Known limitations
 
