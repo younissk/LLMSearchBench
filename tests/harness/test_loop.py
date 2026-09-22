@@ -8,6 +8,7 @@ from pathlib import Path
 import pytest
 
 from llmsearchbench.harness import (
+    BackendNotConfiguredError,
     Document,
     EchoAdapter,
     HarnessConfig,
@@ -194,17 +195,27 @@ class TestRunTasks:
         assert list(tmp_path.iterdir()) == []
 
 
-class TestUnwiredComponents:
-    def test_requesting_a_backend_that_does_not_exist_fails_loudly(self) -> None:
+class TestWiring:
+    def test_an_unknown_backend_names_the_ones_that_exist(self) -> None:
         """Silently falling back to a different backend would void the comparison."""
-        with pytest.raises(NotConfiguredError, match=r"adapters\.py"):
+        with pytest.raises(BackendNotConfiguredError, match="unknown search backend"):
             build_backend("some-search-api")
 
-    def test_a_catalogued_model_without_an_adapter_fails_loudly(self) -> None:
-        with pytest.raises(NotConfiguredError, match=r"adapters\.py"):
+    def test_a_backend_with_no_key_says_which_variable_to_set(
+        self, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        monkeypatch.delenv("TAVILY_API_KEY", raising=False)
+        with pytest.raises(BackendNotConfiguredError, match="TAVILY_API_KEY"):
+            build_backend("tavily")
+
+    def test_a_model_with_no_key_says_which_variable_to_set(
+        self, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+        with pytest.raises(NotConfiguredError, match="ANTHROPIC_API_KEY"):
             build_adapter("claude-opus-5")
 
     def test_a_model_outside_the_catalogue_fails_first(self) -> None:
-        """A typo should name the catalogue, not send you hunting for an adapter."""
+        """A typo should name the catalogue, not send you hunting for a key."""
         with pytest.raises(UnknownModelError, match="unknown model"):
             build_adapter("not-a-real-model")

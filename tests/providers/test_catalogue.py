@@ -58,9 +58,11 @@ class TestCatalogueIntegrity:
 
 
 class TestPricingGate:
-    def test_unpriced_models_are_reported(self) -> None:
+    def test_every_catalogued_model_has_a_price(self) -> None:
         """Publishing a cost of zero would be a lie, so a release checks this first."""
-        unpriced = {model.id for model in models_without_prices()}
-        assert unpriced == set(MODELS), (
-            "some models now have prices - fill in the rest, then tighten this test"
-        )
+        assert models_without_prices() == []
+
+    def test_model_ids_carry_no_date_suffix(self) -> None:
+        """Dated snapshot ids are not the published model strings."""
+        for model_id in MODELS:
+            assert not model_id[-8:].isdigit(), f"{model_id} looks date-suffixed"

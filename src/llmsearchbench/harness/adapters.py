@@ -1,36 +1,204 @@
-"""Wiring a model id or a backend name to an implementation.
+"""Talking to a model.
 
-Nothing here talks to a network yet. Add an implementation of the protocols in
-`llmsearchbench.harness.protocols`, register it below, and the CLI picks it up.
+Only Anthropic is wired up. Adding a provider means writing one class with an
+`answer` method and registering it below — the run loop and the scorer do not
+change.
 """
 
 from __future__ import annotations
 
-from llmsearchbench.harness.protocols import ModelAdapter, SearchBackend
-from llmsearchbench.providers import get_model
+import os
+import time
+from collections.abc import Sequence
+from typing import TYPE_CHECKING, Any, Protocol
+
+from llmsearchbench.harness.config import HarnessConfig
+from llmsearchbench.harness.protocols import Document, SearchBackend
+from llmsearchbench.providers import ModelSpec, get_model, get_provider
+from llmsearchbench.types.tooluse import ToolCall
+
+if TYPE_CHECKING:
+    from llmsearchbench.harness.openrouter import OpenRouterAdapter
+
+#: The one tool the model is offered. Deliberately *not* `strict`: strict mode
+#: guarantees schema-valid arguments, which would make malformed calls
+#: impossible to observe — and observing them is half the point of this task.
+SEARCH_TOOL: dict[str, Any] = {
+    "name": "search",
+    "description": (
+        "Search the web for current or obscure information. "
+        "Use it only when you do not already know the answer."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "The search query.",
+            }
+        },
+        "required": ["query"],
+    },
+}
 
 
 class NotConfiguredError(RuntimeError):
-    """Raised when a run is asked for a model or backend that has no adapter yet."""
+    """The model has no adapter, or its credential is missing."""
 
 
-def build_adapter(model_id: str) -> ModelAdapter:
-    """Return the adapter for a model id.
+class TurnResult(Protocol):
+    """What one adapter turn reports back to the run loop."""
 
-    Deliberately fails loudly: a benchmark that silently substitutes a different
-    model produces numbers nobody can place.
+    answer: str
+    calls: list[ToolCall]
+    tokens_in: int
+    tokens_out: int
+    latency_s: float
+
+
+def validate_search_arguments(raw: object) -> tuple[dict[str, str], str | None]:
+    """Check tool arguments against the search tool's schema.
+
+    Returns the normalised arguments and, when the call was malformed, the
+    reason. Done here rather than by the API so a bad call is recorded as data
+    instead of raising.
     """
-    get_model(model_id)  # unknown ids fail here, with the catalogue in the message
-    raise NotConfiguredError(
-        f"no adapter is wired up for {model_id!r}. "
-        "Implement the ModelAdapter protocol in "
-        "src/llmsearchbench/harness/adapters.py and register it in build_adapter()."
+    if not isinstance(raw, dict):
+        return {}, f"arguments must be an object, got {type(raw).__name__}"
+
+    arguments = {str(key): str(value) for key, value in raw.items()}
+    unexpected = set(arguments) - {"query"}
+    if "query" not in arguments:
+        return arguments, "missing required argument 'query'"
+    if unexpected:
+        return arguments, f"unexpected argument(s): {', '.join(sorted(unexpected))}"
+    return arguments, None
+
+
+class AnthropicAdapter:
+    """Runs one prompt through the Messages API, logging every tool call."""
+
+    def __init__(self, spec: ModelSpec, *, effort: str = "high") -> None:
+        import anthropic
+
+        provider = get_provider(spec.provider)
+        api_key = os.environ.get(provider.env_var, "").strip()
+        if not api_key:
+            raise NotConfiguredError(
+                f"{provider.env_var} is not set. Put it in .env or export it; see .env.example."
+            )
+        self._spec = spec
+        self._effort = effort
+        self._client = anthropic.Anthropic(api_key=api_key)
+
+    def answer(
+        self,
+        prompt: str,
+        backend: SearchBackend,
+        config: HarnessConfig,
+    ) -> tuple[str, list[ToolCall], int, int, float]:
+        """Return (answer, calls, tokens_in, tokens_out, latency)."""
+        messages: list[dict[str, Any]] = [{"role": "user", "content": prompt}]
+        calls: list[ToolCall] = []
+        tokens_in = tokens_out = 0
+        started = time.monotonic()
+
+        # One extra turn past the budget, so a model that keeps calling is
+        # recorded as over-budget rather than silently truncated.
+        for _ in range(config.max_calls + 2):
+            request: dict[str, Any] = {
+                "model": self._spec.id,
+                "max_tokens": 4096,
+                "messages": messages,
+                "tools": [SEARCH_TOOL],
+                "output_config": {"effort": self._effort},
+            }
+            if self._spec.supports_temperature:
+                request["temperature"] = config.temperature
+
+            response = self._client.messages.create(**request)
+            tokens_in += response.usage.input_tokens
+            tokens_out += response.usage.output_tokens
+
+            if response.stop_reason != "tool_use":
+                text = "".join(block.text for block in response.content if block.type == "text")
+                return text, calls, tokens_in, tokens_out, time.monotonic() - started
+
+            messages.append({"role": "assistant", "content": response.content})
+            results: list[dict[str, Any]] = []
+
+            for block in response.content:
+                if block.type != "tool_use":
+                    continue
+                arguments, schema_error = validate_search_arguments(block.input)
+                calls.append(
+                    ToolCall(
+                        name=block.name,
+                        arguments=arguments,
+                        schema_error=schema_error,
+                    )
+                )
+                body = _tool_result_body(block.name, arguments, schema_error, backend, config)
+                results.append({"type": "tool_result", "tool_use_id": block.id, **body})
+
+            messages.append({"role": "user", "content": results})
+
+        return "", calls, tokens_in, tokens_out, time.monotonic() - started
+
+
+def _tool_result_body(
+    name: str,
+    arguments: dict[str, str],
+    schema_error: str | None,
+    backend: SearchBackend,
+    config: HarnessConfig,
+) -> dict[str, Any]:
+    """The result handed back for one call, including for a bad call.
+
+    A malformed call still gets an error result rather than an exception: the
+    model should be given the chance to recover, and the mistake is already
+    recorded.
+    """
+    if name != "search":
+        return {"content": f"No tool named {name!r} is available.", "is_error": True}
+    if schema_error is not None:
+        return {"content": f"Invalid arguments: {schema_error}", "is_error": True}
+
+    query = arguments.get("query", "").strip()
+    if not query:
+        return {"content": "The query was empty.", "is_error": True}
+
+    documents = backend.search(query, config.top_k)
+    return {"content": _render(documents) or "No results."}
+
+
+def _render(documents: Sequence[Document]) -> str:
+    return "\n\n".join(
+        f"[{index}] {doc.title}\n{doc.url}\n{doc.text}"
+        for index, doc in enumerate(documents, start=1)
     )
 
 
-def build_backend(name: str) -> SearchBackend:
+def build_adapter(
+    model_id: str, *, effort: str = "high"
+) -> AnthropicAdapter | OpenRouterAdapter:
+    """Return the adapter for a model id.
+
+    Fails loudly for an unknown id or a missing key: a benchmark that quietly
+    substitutes a different model produces numbers nobody can place.
+    """
+    from llmsearchbench.harness.openrouter import OpenRouterAdapter
+
+    spec = get_model(model_id)
+    provider = get_provider(spec.provider)
+    if provider.key == "anthropic":
+        return AnthropicAdapter(spec, effort=effort)
+    if provider.key == "openrouter":
+        try:
+            return OpenRouterAdapter(spec, effort=effort)
+        except RuntimeError as error:
+            raise NotConfiguredError(str(error)) from None
     raise NotConfiguredError(
-        f"no search backend is wired up for {name!r}. "
-        "Implement the SearchBackend protocol in "
-        "src/llmsearchbench/harness/adapters.py and register it in build_backend()."
+        f"no adapter is wired up for provider {provider.key!r}. "
+        "Add one in src/llmsearchbench/harness/adapters.py."
     )
