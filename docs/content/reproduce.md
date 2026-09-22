@@ -47,7 +47,7 @@ Running the full model set for one release costs roughly what the `costPer1k`
 column implies, scaled to the task count — about $13 for all eight models at
 120 tasks, plus judge tokens.
 
-:::tip Run a subset first
+:::tip[Run a subset first]
 `--tasks 20` runs a stratified fifth of the set. It is not a valid result, but
 it catches a broken key or a bad harness config in three minutes instead of
 forty.

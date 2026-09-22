@@ -122,7 +122,7 @@ def render_site_page(specs: Iterable[DatasetSpec] | None = None) -> str:
             lines.append(f"Paper: [{spec.paper_url}]({spec.paper_url})")
             lines.append("")
         if spec.notes:
-            lines += [":::note Why this one", "", spec.notes, "", ":::", ""]
+            lines += [":::note[Why this one]", "", spec.notes, "", ":::", ""]
         lines += ["```bibtex", spec.citation, "```"]
 
     lines += [

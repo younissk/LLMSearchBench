@@ -23,7 +23,7 @@ is pinned to a SHA-256 so a run can be reproduced against the same bytes.
 
 Paper: [https://arxiv.org/abs/2402.16457](https://arxiv.org/abs/2402.16457)
 
-:::note Why this one
+:::note[Why this one]
 
 The `param_knowledge_answerable` flag is the reason this dataset is first in the queue: it is a ready-made version of our admission rule that a task must not be answerable from memory. It is the authors' judgement, not ours, so it seeds the candidate pool rather than replacing our own memory check.
 
