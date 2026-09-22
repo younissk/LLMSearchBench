@@ -22,7 +22,18 @@ from llmsearchbench.providers import ModelSpec
 from llmsearchbench.types.tooluse import ToolCall
 
 ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
-DEFAULT_TIMEOUT = 120.0
+
+#: Socket timeout. urllib applies this per operation, not to the whole
+#: request — a server that trickles bytes resets it indefinitely.
+SOCKET_TIMEOUT = 60.0
+
+#: Hard ceiling on one request, enforced while reading the body. Without it a
+#: single item can hang a run forever: one model sat on two items for thirteen
+#: minutes with the connection open and no timeout ever firing.
+DEADLINE = 180.0
+
+#: How much body to read per chunk while checking the deadline.
+CHUNK = 1 << 16
 
 #: The same tool, in the shape OpenRouter expects.
 SEARCH_TOOL: dict[str, Any] = {
@@ -46,6 +57,22 @@ class OpenRouterError(RuntimeError):
     """OpenRouter refused the request or could not be reached."""
 
 
+class RequestTimeoutError(RuntimeError):
+    """One request went past its deadline and was abandoned."""
+
+
+def _read_with_deadline(response: Any, deadline: float) -> bytes:
+    """Read a response body, giving up if it takes too long overall."""
+    chunks: list[bytes] = []
+    while True:
+        if time.monotonic() > deadline:
+            raise RequestTimeoutError(f"no complete response within {DEADLINE:.0f}s")
+        chunk = response.read(CHUNK)
+        if not chunk:
+            return b"".join(chunks)
+        chunks.append(chunk)
+
+
 def _post(payload: dict[str, Any], api_key: str) -> dict[str, Any]:
     request = urllib.request.Request(
         ENDPOINT,
@@ -58,13 +85,18 @@ def _post(payload: dict[str, Any], api_key: str) -> dict[str, Any]:
         },
         method="POST",
     )
+    deadline = time.monotonic() + DEADLINE
     try:
-        with urllib.request.urlopen(request, timeout=DEFAULT_TIMEOUT) as response:
-            body: dict[str, Any] = json.loads(response.read())
+        with urllib.request.urlopen(request, timeout=SOCKET_TIMEOUT) as response:
+            body: dict[str, Any] = json.loads(_read_with_deadline(response, deadline))
     except urllib.error.HTTPError as error:
         raise OpenRouterError(f"{error.code}: {error.read()[:300]!r}") from error
     except urllib.error.URLError as error:
         raise OpenRouterError(f"unreachable: {error.reason}") from error
+    except RequestTimeoutError as error:
+        raise OpenRouterError(str(error)) from error
+    except TimeoutError as error:
+        raise OpenRouterError(f"socket timed out after {SOCKET_TIMEOUT:.0f}s") from error
 
     if "error" in body:
         raise OpenRouterError(str(body["error"]))
