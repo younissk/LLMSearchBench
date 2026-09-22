@@ -222,3 +222,39 @@ class TestRunTasks:
 
     def test_completed_ids_is_empty_when_nothing_has_run(self, tmp_path: Path) -> None:
         assert completed_task_ids(tmp_path / "absent.jsonl") == set()
+
+
+class TestDecisionOnly:
+    """Stopping at the first tool call, so no search ever runs."""
+
+    def test_the_search_is_never_executed(self) -> None:
+        backend = StubBackend()
+        adapter = adapter_for([searched("who won?")])
+        adapter.answer("prompt", backend, HarnessConfig(stop_at_first_call=True))
+        assert backend.queries == []
+
+    def test_the_call_is_still_recorded(self) -> None:
+        """The decision is what this mode measures; it must survive."""
+        adapter = adapter_for([searched("who won?")])
+        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(stop_at_first_call=True))
+        assert [call.query for call in turn.calls] == ["who won?"]
+        assert turn.stop_reason == "stopped_at_first_call"
+
+    def test_a_malformed_first_call_is_still_caught(self) -> None:
+        adapter = adapter_for(
+            [Response("tool_use", [Block(type="tool_use", id="t", name="search", input={})])]
+        )
+        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(stop_at_first_call=True))
+        assert turn.calls[0].schema_error is not None
+
+    def test_it_costs_one_round_trip(self) -> None:
+        """The saving is the point: no second turn, no search subscription."""
+        adapter = adapter_for([searched()])
+        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(stop_at_first_call=True))
+        assert turn.turns == 1
+
+    def test_a_model_that_does_not_search_is_unaffected(self) -> None:
+        adapter = adapter_for([answered("Paris")])
+        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(stop_at_first_call=True))
+        assert turn.answer == "Paris"
+        assert turn.calls == []

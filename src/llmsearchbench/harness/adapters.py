@@ -149,6 +149,24 @@ class AnthropicAdapter:
                     stop_reason=stop_reason,
                 )
 
+            if config.stop_at_first_call:
+                calls.extend(
+                    _as_call(block.name, block.input)
+                    for block in response.content
+                    if block.type == "tool_use"
+                )
+                return Turn(
+                    answer="",
+                    calls=calls,
+                    tokens_in=tokens_in,
+                    tokens_out=tokens_out,
+                    reasoning_tokens=0,
+                    cached_tokens=cached,
+                    latency_s=time.monotonic() - started,
+                    turns=turns,
+                    stop_reason="stopped_at_first_call",
+                )
+
             messages.append({"role": "assistant", "content": response.content})
             results: list[dict[str, Any]] = []
 
@@ -179,6 +197,12 @@ class AnthropicAdapter:
             turns=turns,
             stop_reason=stop_reason,
         )
+
+
+def _as_call(name: str, raw: object) -> ToolCall:
+    """Record one tool call, validated but not executed."""
+    arguments, schema_error = validate_search_arguments(raw)
+    return ToolCall(name=name, arguments=arguments, schema_error=schema_error)
 
 
 def _tool_result_body(

@@ -191,6 +191,31 @@ class OpenRouterAdapter:
                     stop_reason=stop_reason,
                 )
 
+            if config.stop_at_first_call:
+                for call in tool_calls:
+                    function = call.get("function") or {}
+                    arguments, schema_error = parse_arguments(
+                        str(function.get("arguments", ""))
+                    )
+                    calls.append(
+                        ToolCall(
+                            name=str(function.get("name", "")),
+                            arguments=arguments,
+                            schema_error=schema_error,
+                        )
+                    )
+                return Turn(
+                    answer="",
+                    calls=calls,
+                    tokens_in=tokens_in,
+                    tokens_out=tokens_out,
+                    reasoning_tokens=reasoning,
+                    cached_tokens=cached,
+                    latency_s=time.monotonic() - started,
+                    turns=turns,
+                    stop_reason="stopped_at_first_call",
+                )
+
             messages.append(message)
             for call in tool_calls:
                 function = call.get("function") or {}
