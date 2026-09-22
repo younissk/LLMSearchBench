@@ -1,0 +1,50 @@
+---
+id: intro
+title: What this benchmark measures
+sidebar_label: Overview
+sidebar_position: 1
+description: A small, reproducible benchmark for how language models use search tools.
+---
+
+# What this benchmark measures
+
+LLMSearchBench asks one question: **when a model is given a search tool and a
+question it cannot answer from memory, how good is the grounded answer it comes
+back with — and what did that answer cost?**
+
+It is deliberately small. A full run is 120 tasks per model and finishes on one
+machine in well under an hour. Small means it stays cheap to re-run, and cheap
+to re-run means the numbers can be regenerated rather than trusted.
+
+## The four things it reports
+
+| Metric | Question it answers | Better |
+| --- | --- | --- |
+| Accuracy | Is the final answer right? | higher |
+| Citation F1 | Are the sources it cites the ones that actually support the answer? | higher |
+| Unsupported-claim rate | How often does it assert something no retrieved source backs? | lower |
+| Cost per 1 000 tasks | What does a grounded answer cost at scale? | lower |
+
+Latency and mean search-call count are reported alongside as context, not as
+scores.
+
+## Current standings
+
+<ResultsGrid compact />
+
+Full breakdown, charts, and older releases live on the [results page](/results).
+
+## What it deliberately does not measure
+
+- **Raw knowledge.** Every task is written so the answer cannot be recalled;
+  if a model can answer without searching, the task is broken and gets cut.
+- **Long-horizon agency.** One question, one answer, a bounded number of tool
+  calls. Multi-step research agents need a different harness.
+- **Search-engine quality.** All models get the same retrieval backend, so the
+  benchmark scores the model's use of search, not the index behind it.
+
+:::note
+Read [the versioning policy](./versioning.md) before comparing numbers across
+releases. Task sets change, and when they do the old numbers stop being
+comparable.
+:::

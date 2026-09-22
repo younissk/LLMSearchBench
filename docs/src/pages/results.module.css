@@ -1,0 +1,38 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.lede {
+  margin: 0.35rem 0 0;
+  color: var(--lsb-ink-secondary);
+  font-size: 0.95rem;
+}
+
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  color: var(--lsb-ink-muted);
+}
+
+.picker select {
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--lsb-ink);
+  background: var(--lsb-surface);
+  border: 1px solid var(--lsb-hairline);
+  border-radius: 7px;
+}

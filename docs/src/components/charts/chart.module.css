@@ -1,0 +1,89 @@
+.figure {
+  position: relative;
+  margin: 1.75rem 0;
+  background: var(--lsb-surface);
+  border: 1px solid var(--lsb-grid);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem 1rem;
+}
+
+.caption {
+  margin-bottom: 0.9rem;
+}
+
+.title {
+  font-weight: 650;
+  font-size: 1rem;
+  color: var(--lsb-ink);
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  font-size: 0.83rem;
+  color: var(--lsb-ink-secondary);
+  margin-top: 0.15rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  color: var(--lsb-ink-secondary);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legendSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.footnote {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--lsb-ink-muted);
+}
+
+.plot {
+  width: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.axisLabel {
+  font-size: 11px;
+  fill: var(--lsb-ink-muted);
+}
+
+.categoryLabel {
+  font-size: 12px;
+  fill: var(--lsb-ink-secondary);
+}
+
+.valueLabel {
+  font-size: 12px;
+  fill: var(--lsb-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.grid {
+  stroke: var(--lsb-grid);
+  stroke-width: 1;
+}
+
+.axis {
+  stroke: var(--lsb-axis);
+  stroke-width: 1;
+}
+
+.hit {
+  fill: transparent;
+  cursor: default;
+}

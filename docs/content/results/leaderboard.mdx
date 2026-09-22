@@ -1,0 +1,23 @@
+---
+id: leaderboard
+title: Leaderboard
+sidebar_position: 1
+---
+
+# Leaderboard
+
+Sortable, filterable, and downloadable. Click any column header to re-sort; the
+✓ marks the best value in a column.
+
+<ResultsGrid />
+
+<MetricBar metric="accuracy" title="Accuracy" colorByProvider />
+
+<MetricBar metric="citationF1" title="Citation F1" colorByProvider />
+
+<MetricBar
+  metric="costPer1k"
+  title="Cost per 1 000 tasks"
+  colorByProvider
+  footnote="Lower is better. List prices at run date; excludes judge tokens."
+/>

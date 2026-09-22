@@ -1,0 +1,169 @@
+.wrap {
+  margin: 1.75rem 0;
+  background: var(--lsb-surface);
+  border: 1px solid var(--lsb-grid);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid var(--lsb-grid);
+}
+
+.search {
+  flex: 1 1 12rem;
+  min-width: 10rem;
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--lsb-ink);
+  background: var(--ifm-background-color);
+  border: 1px solid var(--lsb-hairline);
+  border-radius: 7px;
+}
+
+.search:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+}
+
+.select {
+  padding: 0.4rem 0.5rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--lsb-ink);
+  background: var(--ifm-background-color);
+  border: 1px solid var(--lsb-hairline);
+  border-radius: 7px;
+}
+
+.count {
+  font-size: 0.78rem;
+  color: var(--lsb-ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.button {
+  padding: 0.4rem 0.7rem;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--lsb-ink-secondary);
+  background: transparent;
+  border: 1px solid var(--lsb-hairline);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--lsb-ink);
+  border-color: var(--lsb-axis);
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+.table {
+  /* infima sets `display: block` on tables; the grid is a real table */
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  margin: 0;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px solid var(--lsb-grid);
+  white-space: nowrap;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--lsb-surface);
+  text-align: right;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--lsb-ink-muted);
+}
+
+.table thead th:first-child,
+.table tbody td:first-child {
+  text-align: left;
+}
+
+.numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--lsb-ink);
+}
+
+.model {
+  font-weight: 600;
+  color: var(--lsb-ink);
+}
+
+.provider {
+  color: var(--lsb-ink-secondary);
+}
+
+.sortButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.sortButton:hover {
+  color: var(--lsb-ink);
+}
+
+.caret {
+  font-size: 0.7em;
+  opacity: 0.55;
+}
+
+.caretActive {
+  opacity: 1;
+  color: var(--ifm-color-primary);
+}
+
+.best {
+  font-weight: 650;
+}
+
+.bestMark {
+  color: var(--status-good);
+  margin-left: 0.35rem;
+  font-size: 0.8em;
+}
+
+.table tbody tr:hover {
+  background: color-mix(in srgb, var(--ifm-color-primary) 7%, transparent);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.empty {
+  padding: 1.5rem 0.9rem;
+  text-align: center;
+  color: var(--lsb-ink-muted);
+  font-size: 0.85rem;
+}

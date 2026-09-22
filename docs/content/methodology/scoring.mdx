@@ -1,0 +1,79 @@
+---
+id: scoring
+title: Scoring
+sidebar_position: 2
+description: Metric definitions for LLMSearchBench, in full.
+---
+
+# Scoring
+
+Every metric below is computed per task, then averaged over the task set. No
+metric is weighted into a single composite score — a composite hides the
+trade-off between cost and quality, which is the interesting part.
+
+## Accuracy
+
+An answer is correct when a judge model marks it equivalent to the gold answer.
+For a task set $T$ and a model $m$:
+
+$$
+\mathrm{Acc}(m) = \frac{1}{|T|} \sum_{t \in T} \mathbb{1}\!\left[\, \mathrm{judge}(a_{m,t},\, g_t) = \texttt{correct} \,\right]
+$$
+
+where $a_{m,t}$ is the model's answer and $g_t$ the gold answer. Negative tasks
+count as correct when the model declines and says why.
+
+## Citation F1
+
+Let $C_{m,t}$ be the set of URLs the model cited and $S_t$ the gold source set.
+Precision and recall are set-wise, and the reported figure is their harmonic
+mean:
+
+$$
+P = \frac{|C_{m,t} \cap S_t|}{|C_{m,t}|}, \qquad
+R = \frac{|C_{m,t} \cap S_t|}{|S_t|}, \qquad
+F_1 = \frac{2PR}{P + R}
+$$
+
+Citing ten sources to catch the right two is penalised: that is what $P$ is for.
+
+## Unsupported-claim rate
+
+Answers are split into atomic claims $c \in \mathcal{C}(a_{m,t})$. A claim is
+*supported* when a judge finds it entailed by at least one retrieved document:
+
+$$
+\mathrm{UCR}(m) = \frac{1}{|T|}\sum_{t \in T}
+\frac{\bigl|\{\, c : \neg\,\mathrm{supported}(c) \,\}\bigr|}{|\mathcal{C}(a_{m,t})|}
+$$
+
+<MetricBar
+  metric="hallucinationRate"
+  title="Unsupported-claim rate by model"
+  colorByProvider
+/>
+
+## Cost
+
+Cost is billed tokens at list price, including tool-call overhead and the
+retrieved documents fed back into context, scaled to 1 000 tasks:
+
+$$
+\mathrm{Cost}_{1k}(m) = \frac{1000}{|T|} \sum_{t \in T}
+\left( p_{\text{in}} \cdot n^{\text{in}}_{m,t} + p_{\text{out}} \cdot n^{\text{out}}_{m,t} \right)
+$$
+
+Judge-model tokens are excluded — they are a property of the harness, not of
+the model under test.
+
+## Judge protocol
+
+The judge is a fixed model pinned per release, prompted with the gold answer and
+asked for a three-way verdict (`correct` / `incorrect` / `unjudgeable`).
+Unjudgeable tasks are dropped from the denominator and logged; a release with
+more than 2% unjudgeable is rejected and the tasks rewritten.
+
+:::warning Judge drift
+Changing the judge model changes every number. The judge is part of the release
+identity — see [versioning](../versioning.md).
+:::

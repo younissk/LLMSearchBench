@@ -1,0 +1,60 @@
+---
+id: analysis
+title: Analysis
+sidebar_position: 2
+---
+
+import {getRelease, LATEST} from '@site/src/data';
+import {usd, pct} from '@site/src/components/charts/format';
+
+export const release = getRelease(LATEST);
+
+# Analysis
+
+## Cost buys accuracy, with sharply diminishing returns
+
+<ScatterPlot
+  title="Cost against accuracy"
+  subtitle={`${release.version} · each point is one model`}
+  data={release.rows.map((row) => ({
+    label: row.model,
+    x: row.costPer1k,
+    y: row.accuracy,
+    group: row.provider,
+  }))}
+  xLabel="USD per 1 000 tasks"
+  yLabel="Accuracy"
+  xFormat={usd}
+  yFormat={(v) => pct(v, 0)}
+  logX
+  footnote="Log-scaled cost axis. Up and to the left is better."
+/>
+
+The cost axis spans more than an order of magnitude while accuracy spans about
+25 points. Past roughly $10 per 1 000 tasks the curve flattens: the most
+expensive model in the set is not the most accurate by a margin that survives
+the confidence interval.
+
+## Citation fidelity lags accuracy everywhere
+
+Every model in the set scores lower on citation F1 than on accuracy. Models
+reach the right answer and then attribute it loosely — citing the page they
+landed on rather than the page that carried the fact.
+
+<MetricBar metric="citationF1" title="Citation F1" colorByProvider />
+
+## Search calls do not predict quality
+
+Mean search calls per task ranges from 1.9 to 4.1 with no clean relationship to
+accuracy. More searching is not better searching.
+
+<MetricBar
+  metric="searchCalls"
+  title="Mean search calls per task"
+  footnote="Context, not a score. Neither more nor fewer calls is inherently better."
+/>
+
+:::info Reading the intervals
+With 120 tasks, a 3-point accuracy gap is inside the noise. Treat differences
+under 5 points as a tie until the task count grows.
+:::
