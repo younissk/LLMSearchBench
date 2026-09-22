@@ -31,3 +31,6 @@ results/local/
 
 # os
 .DS_Store
+
+# scratch space for generators before review
+.build/
