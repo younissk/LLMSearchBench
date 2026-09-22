@@ -136,6 +136,11 @@ class RunStats(BenchModel):
 
     answer_chars_mean: float = Field(default=0, ge=0)
 
+    #: True when the run stopped at the first tool call. Several figures then
+    #: mean something different: searched episodes end early by construction,
+    #: so comparing their latency to a direct answer's is not informative.
+    decision_only: bool = False
+
     @property
     def items_per_minute(self) -> float:
         return self.items / (self.time.total_s / 60) if self.time.total_s else 0.0
@@ -243,4 +248,5 @@ def compute(
         items_searching_repeatedly=sum(1 for a in scored if len(a.calls) > 1),
         items_with_reasoning=sum(1 for a in scored if a.reasoning_tokens > 0),
         answer_chars_mean=_mean([a.answer_chars for a in scored]),
+        decision_only=any(a.stop_reason == "stopped_at_first_call" for a in scored),
     )

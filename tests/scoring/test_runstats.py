@@ -182,3 +182,17 @@ class TestCounters:
         broken = attempt("a").model_copy(update={"error": "provider timed out"})
         stats = compute(PRICED_MODEL, [task("a")], [broken])
         assert stats.failed_items == 1
+
+
+class TestDecisionOnlyRuns:
+    def test_a_decision_only_run_is_flagged(self) -> None:
+        """Several figures mean something different when episodes end early."""
+        stopped = attempt("a", calls=1).model_copy(
+            update={"stop_reason": "stopped_at_first_call"}
+        )
+        stats = compute(PRICED_MODEL, [task("a")], [stopped])
+        assert stats.decision_only
+
+    def test_a_normal_run_is_not(self) -> None:
+        finished = attempt("a").model_copy(update={"stop_reason": "end_turn"})
+        assert not compute(PRICED_MODEL, [task("a")], [finished]).decision_only

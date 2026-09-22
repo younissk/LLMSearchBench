@@ -37,7 +37,8 @@ from llmsearchbench.ui import console, fail, warn
 app = typer.Typer()
 
 TASK_SET = "tool-use-correctness"
-DEFAULT_BACKEND = "tavily"
+#: Nothing calls out to a search API until you pick one.
+DEFAULT_BACKEND = "null"
 
 
 def slug(model_id: str) -> str:
@@ -88,6 +89,13 @@ def run(
     task_set: Annotated[Path, typer.Option(help="The task set.")] = TASKS / f"{TASK_SET}.jsonl",
     out: Annotated[Path, typer.Option(help="Where to write attempts.")] = RESULTS / "local",
     backend: Annotated[str, typer.Option(help="Search backend.")] = DEFAULT_BACKEND,
+    decision_only: Annotated[
+        bool,
+        typer.Option(
+            "--decision-only",
+            help="Stop the moment the model reaches for the tool. No search runs.",
+        ),
+    ] = False,
     effort: Annotated[str, typer.Option(help="low | medium | high | xhigh | max.")] = "high",
     limit: Annotated[int | None, typer.Option(help="Run only the first N items.")] = None,
     bucket: Annotated[
@@ -127,7 +135,13 @@ def run(
         fail(str(error))
         raise typer.Exit(EXIT_NOT_WIRED) from None
 
-    if backend not in LIVE_BACKENDS:
+    if decision_only:
+        console.print(
+            "[muted]decision-only: the run stops at the first tool call. "
+            "Measures the search-or-not decision and the first call's shape; "
+            "not multi-call behaviour or answers.[/muted]"
+        )
+    elif backend not in LIVE_BACKENDS:
         warn(
             f"backend {backend!r} returns no results - decisions and call quality "
             "are still measured, but answers cannot be right. Not publishable."
@@ -164,7 +178,7 @@ def run(
                 model,
                 adapter,
                 search,
-                HarnessConfig(),
+                HarnessConfig(stop_at_first_call=decision_only),
                 out_path=attempts_path,
                 on_item=on_item,
             )
@@ -338,11 +352,17 @@ def _render_stats(stats: runstats.RunStats) -> None:
     clock.add_row("total", f"{stats.time.total_s:,.1f}s")
     clock.add_row("mean / median", f"{stats.time.mean_s:.1f}s / {stats.time.median_s:.1f}s")
     clock.add_row("p95 / max", f"{stats.time.p95_s:.1f}s / {stats.time.max_s:.1f}s")
-    clock.add_row(
-        "searched vs direct",
-        f"{stats.time.mean_s_searched:.1f}s vs {stats.time.mean_s_direct:.1f}s "
-        f"(+{stats.time.search_overhead_s:.1f}s)",
-    )
+    if stats.decision_only:
+        clock.add_row(
+            "[muted]searched vs direct[/muted]",
+            "[muted]not comparable in decision-only mode[/muted]",
+        )
+    else:
+        clock.add_row(
+            "searched vs direct",
+            f"{stats.time.mean_s_searched:.1f}s vs {stats.time.mean_s_direct:.1f}s "
+            f"({stats.time.search_overhead_s:+.1f}s)",
+        )
     clock.add_row("throughput", f"{stats.items_per_minute:.1f} items/min")
     console.print(clock)
 
