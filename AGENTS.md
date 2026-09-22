@@ -72,8 +72,8 @@ registry and run `make attribution`; never edit the outputs. Save the licence
 text under `attribution/licenses/` whenever you add a dataset.
 
 **Failing loudly beats substituting quietly.** An unknown model id, an
-unconfigured adapter, and a missing search backend all raise with a pointer to
-the file to edit. A benchmark that silently runs a different model than it
+unconfigured adapter, and a missing API key all raise with a pointer to the
+file to edit. A benchmark that silently runs a different model than it
 reports produces numbers nobody can place.
 
 **The judge is part of a release's identity.** Changing the judge model is a
@@ -112,13 +112,18 @@ written out in `docs/content/versioning.md`.
 ## Conventions
 
 **Tests state the behaviour, not the implementation.** A test name should say
-what breaks if it fails. Fakes over mocks: the run loop is driven by real
-implementations of its protocols (`harness/fakes.py`), so no test needs a
-network or an API key.
+what breaks if it fails. Fakes over mocks: the run loop is driven through a
+fake Messages API, so no test needs a network or an API key.
 
 **Rich and Typer stay in `ui/` and `cli/`.** Everything below them is
 terminal-free, so the library can be driven from a notebook or another program.
 The downloader takes an `on_bytes` hook rather than knowing about a progress bar.
+
+**The search tool is offered, never executed.** The task measures whether a
+model reaches for it, and that decision happens before any result comes back.
+There is no search backend and no second API to configure. Do not add one
+without a reason that survives the question "what does running the search
+tell us that the decision does not?"
 
 **Exit codes are a contract**, because CI gates on them: `0` success, `1` a real
 failure, `2` bad input, `3` not wired up yet.
@@ -143,9 +148,8 @@ mention the tooling used to write the change.
 
 ## State of play
 
-The harness is wired end to end except for the provider adapters: everything
-that does not need a network is implemented and tested. `llmsearchbench run`
-fails with a pointer to `harness/adapters.py`, deliberately.
+The harness runs end to end. `llmsearchbench run`
+works against OpenRouter and the first-party Anthropic API.
 
 Known open decisions, before a first task set can be built:
 

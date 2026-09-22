@@ -7,61 +7,25 @@ description: Keys, commands, costs, and what to do when a run breaks.
 
 # Running it
 
-## The short version
-
-You need a model key. You do **not** need a search key to start:
-
-```bash
-llmsearchbench run --model qwen/qwen3.5-27b --decision-only
-```
-
-`--decision-only` ends each item the moment the model reaches for the tool.
-Since the decision is made *before* any result comes back, running the search
-adds nothing to what this task measures — and skipping it means no search
-subscription, one round trip instead of two, and no retry loop when results
-come back empty.
-
-| | Measured | Not measured |
-| --- | --- | --- |
-| `--decision-only` | the search-or-not call; the first call's shape | repeat calls, over-budget looping, answers |
-| `--backend null` | the above, plus multi-call behaviour | answers (nothing is retrieved) |
-| `--backend tavily` | everything | — |
-
-Only the third is publishable. Start with the first.
-
-## Keys
-
-## 1. Keys
+## 1. A key
 
 ```bash
 cp .env.example .env
 ```
 
-Fill in **one model key**:
+Fill in one of:
 
 | Key | Gets you |
 | --- | --- |
 | `OPENROUTER_API_KEY` | many models through one account — [openrouter.ai](https://openrouter.ai/models) |
 | `ANTHROPIC_API_KEY` | the first-party `claude-*` models |
 
-For anything beyond `--decision-only`, you also need **one search key**. The
-model is given exactly one tool, backed by one of these:
+That is the only credential needed. The model is *offered* a search tool but
+never gets to use it — the moment it reaches for the tool, the item ends and
+the call is recorded. The decision is the measurement, and it is made before
+any result would come back, so there is no search API involved.
 
-| Backend | Where | Notes |
-| --- | --- | --- |
-| `tavily` | [app.tavily.com](https://app.tavily.com) | generous free tier, cleanest snippets |
-| `brave` | [brave.com/search/api](https://brave.com/search/api) | free tier, independent index |
-| `serper` | [serper.dev](https://serper.dev) | Google results, cheapest per call |
-| `null` | — | returns nothing; for checking the plumbing works |
-
-`null` needs no key. It still measures the decision and the call quality
-honestly — the model really did choose to search — but nothing is retrieved, so
-answers on the search bucket cannot be right, and models tend to retry when
-results come back empty, which inflates the call count. A `null` run is a smoke
-test, not a result. `llmsearchbench run` says so before it starts.
-
-`.env` is gitignored. Anything already exported in your shell wins over the
-file, so `ANTHROPIC_API_KEY=... llmsearchbench run` still works.
+`.env` is gitignored. Anything exported in your shell wins over the file.
 
 ## 2. Build the task set
 
@@ -73,14 +37,14 @@ make tasks    # build the 360 items
 ## 3. Run
 
 ```bash
-llmsearchbench run --model claude-opus-5 --backend tavily
+llmsearchbench run --model qwen/qwen3.5-27b
 ```
 
 It prints what it is about to do and roughly what it will cost, then asks
 before spending anything:
 
 ```text
-360 item(s) · claude-opus-5 (Anthropic) · tavily · effort high · roughly $3.32
+360 item(s) · qwen/qwen3.5-27b (OpenRouter) · effort high · roughly $0.19
 Run it? [Y/n]
 ```
 
@@ -88,7 +52,6 @@ Useful flags:
 
 | Flag | What for |
 | --- | --- |
-| `--decision-only` | no search runs; no search key needed |
 | `--limit 20` | a short smoke run before committing to the whole set |
 | `--bucket no_tool` | run one bucket; repeatable |
 | `--effort low` | cheaper, faster; also a fair thing to measure |
@@ -96,8 +59,8 @@ Useful flags:
 | `--yes` | skip the confirmation, for scripts |
 
 `--limit` is spread across the three buckets, so a short run still measures all
-of them. Start with `--limit 20 --decision-only`: it costs cents, needs no
-search key, and catches a bad model id in a minute rather than an hour.
+of them. Start with `--limit 20`: it costs cents and catches a bad model id in
+a minute rather than an hour.
 
 ### It resumes
 
@@ -132,61 +95,49 @@ after changing the scorer without paying for the run again.
 ## What you get back
 
 Seven tables. Three are the correctness measurements; four are what the run
-spent. From a real 30-item smoke run of Qwen3.5 27B on the `null` backend:
+spent. From a real twelve-item run of Qwen3.5 27B:
 
 ```text
 1. Decision                          Failure modes
-┏━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┓     over-search (memory)    40.0%
-┃ Bucket  ┃ Items ┃ Right call ┃     over-search (no_tool)    0.0%
-┡━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━┩     under-search             0.0%
-│ memory  │    10 │      60.0% │     adversarial accuracy   100.0%
-│ search  │    10 │     100.0% │
-│ no_tool │    10 │     100.0% │
-│ overall │    30 │      86.7% │
-└─────────┴───────┴────────────┘
+memory     4   50.0%                 over-search (memory)   50.0%
+search     4   75.0%                 over-search (no_tool)   0.0%
+no_tool    4  100.0%                 under-search           25.0%
+overall   12   75.0%                 adversarial accuracy    0.0%
 
-4. Cost                              5. Tokens
-total                     $0.0401    input          36,042   mean 1,201
-per 1,000 items            $1.34     output         21,198   mean   707
-wasted on needless searches          of which thinking
-                  $0.0041 (10.1%)                10,504 (50%)  mean 350
-per right decision      $0.00154     output median/p95/max  577 / 1,402 / 4,403
-
-6. Time                              7. Effort per bucket
-total                     642.4s     bucket   out  think  latency  calls   cost
-mean / median     21.4s / 16.8s      memory   226    103     8.7s   1.60  $0.0056
-p95 / max        48.3s / 119.6s      search  1,144   681    35.4s   3.80  $0.0222
-searched vs direct                   no_tool   750   266    20.1s   0.00  $0.0123
-        29.9s vs 14.0s (+15.9s)
-throughput         2.8 items/min
+2. Call quality                      4. Cost
+items that called      5             total                      $0.0075
+calls total            5             per 1,000 items              $0.63
+well formed       100.0%             wasted on needless searches
+                                                      $0.0004 (5.3%)
+                                     per right decision       $0.00084
 ```
+
+Plus tokens (input, output, and how much of the output was thinking), time
+(mean, median, p95, max, throughput), and effort per bucket — output tokens,
+thinking tokens, latency and cost broken out by prompt type.
 
 Worth knowing about each:
 
-**Cost.** Computed from the catalogue price at scoring time, not stored — a
-price correction does not mean re-running anything. **Wasted spend** is the
-money that went on items the model should never have searched: those extra
-turns bought nothing, and it is the dollar value of a bad tool policy. **Cost
-per right decision** is total spend over correct search-or-not calls, which is
-the number to compare across models of different prices.
+**Cost** is computed from the catalogue price at scoring time, not stored, so
+correcting a price does not mean re-running anything. **Wasted spend** is the
+money that went on items the model should never have searched — the dollar
+value of a bad tool policy. **Cost per right decision** is what makes models at
+different prices comparable.
 
 **Tokens.** Thinking tokens are reported separately where the provider breaks
-them out, but they are *inside* the output total — reasoning models bill them as
-output. Median and p95 sit beside the mean because one 4,400-token item
-distorts an average of thirty.
+them out, but they are *inside* the output total — reasoning models bill them
+as output. Median and p95 sit beside the mean because one long answer distorts
+a small sample.
 
-**Time.** `searched vs direct` is what reaching for the tool costs in seconds.
-p95 and max are there because a mean hides a stall.
+**Effort per bucket** usually says the most: whether a model burns as many
+tokens deciding not to search as it does deciding to.
 
-**Effort per bucket** is the table that usually says the most. Above, the model
-spends five times the output tokens and four times the wall clock on `search`
-items as on `memory` ones — appropriate. But it also spends 750 output tokens
-and 266 thinking tokens per `no_tool` item, which is a lot of deliberation for
-"write a haiku".
+**Answer accuracy** is only meaningful for the `memory` bucket. Nothing is
+retrieved, so a `search`-bucket answer has nothing to be right from — a high
+number there means the model knew it after all, which is itself worth seeing.
 
-:::note[These are not results]
-30 items on the `null` backend. It is enough to show the shape of the output
-and not nearly enough to rank anything.
+:::note[Twelve items is not a result]
+The numbers above show the shape of the output. They rank nothing.
 :::
 
 ## What a run costs
@@ -199,9 +150,8 @@ Roughly, for all 360 items:
 | `claude-sonnet-5` | about $1.50 |
 | `claude-opus-5` | about $3.50 |
 
-Plus search calls — a few hundred at most, which is inside every backend's free
-tier. The exact figure depends on how often the model searches, which is the
-thing being measured.
+No other cost: no search API is called. The exact figure depends on how much
+the model thinks, which varies a lot between models.
 
 ## Adding a model
 
@@ -233,7 +183,6 @@ route is recorded with the run. Compare like with like.
 | Message | Fix |
 | --- | --- |
 | `ANTHROPIC_API_KEY is not set` | fill it in `.env`, or export it |
-| `TAVILY_API_KEY is not set` | same, or pick a different `--backend` |
 | `unknown model 'x'` | check `llmsearchbench models` |
 | `no task set at …` | run `make tasks` |
-| `search backend failed: …` | the run stopped; rerun to resume from where it got to |
+| an OpenRouter error | the run stopped; rerun to resume from where it got to |

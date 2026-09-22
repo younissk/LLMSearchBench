@@ -1,14 +1,11 @@
 """OpenRouter adapter.
 
-OpenRouter fronts many providers behind one key and an OpenAI-shaped
-chat-completions API. That makes it the cheapest way to get a second and third
-model into the benchmark without a separate account each.
+One key reaches many providers. As with the Anthropic route, the tool is
+offered and never executed — the call is recorded and the episode ends.
 
-One caveat worth stating plainly: routing a model through OpenRouter is not
-identical to calling its own API. Tool-call formatting, system-prompt handling,
-and default sampling can all differ slightly from first-party. A run's manifest
-records which route was used, and results from different routes are not
-strictly comparable.
+One caveat worth stating: routing a model through OpenRouter is not identical
+to calling its own API. Tool-call formatting and default sampling can differ.
+Results from different routes are not strictly comparable.
 """
 
 from __future__ import annotations
@@ -18,22 +15,16 @@ import os
 import time
 import urllib.error
 import urllib.request
-from typing import TYPE_CHECKING, Any
+from typing import Any
 
-from llmsearchbench.harness.config import HarnessConfig
-from llmsearchbench.harness.protocols import SearchBackend
+from llmsearchbench.harness.adapters import Turn
 from llmsearchbench.providers import ModelSpec
 from llmsearchbench.types.tooluse import ToolCall
-
-if TYPE_CHECKING:
-    from llmsearchbench.harness.adapters import Turn
 
 ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_TIMEOUT = 120.0
 
-#: The same one tool, in the shape OpenRouter expects. Not marked strict, for
-#: the same reason as the Anthropic definition: a malformed call has to stay
-#: observable.
+#: The same tool, in the shape OpenRouter expects.
 SEARCH_TOOL: dict[str, Any] = {
     "type": "function",
     "function": {
@@ -49,27 +40,6 @@ SEARCH_TOOL: dict[str, Any] = {
         },
     },
 }
-
-
-def _reasoning_tokens(usage: dict[str, Any]) -> int:
-    """Thinking tokens, where the routed provider reports them.
-
-    Reasoning models charge for these as output tokens, so they are already
-    inside `completion_tokens`. Recording them separately is what makes it
-    possible to see that a model spent 3,000 tokens thinking about whether to
-    search for a haiku.
-    """
-    details = usage.get("completion_tokens_details")
-    if isinstance(details, dict):
-        return int(details.get("reasoning_tokens", 0) or 0)
-    return 0
-
-
-def _cached_tokens(usage: dict[str, Any]) -> int:
-    details = usage.get("prompt_tokens_details")
-    if isinstance(details, dict):
-        return int(details.get("cached_tokens", 0) or 0)
-    return 0
 
 
 class OpenRouterError(RuntimeError):
@@ -105,7 +75,7 @@ def parse_arguments(raw: str) -> tuple[dict[str, str], str | None]:
     """Parse a tool call's JSON arguments, reporting what was wrong.
 
     OpenRouter hands arguments back as a JSON *string*, so malformed JSON is a
-    real failure mode here that the Anthropic path does not have.
+    failure mode here that the Anthropic route does not have.
     """
     try:
         parsed = json.loads(raw) if raw.strip() else {}
@@ -124,8 +94,24 @@ def parse_arguments(raw: str) -> tuple[dict[str, str], str | None]:
     return arguments, None
 
 
+def _reasoning_tokens(usage: dict[str, Any]) -> int:
+    """Thinking tokens, where the routed provider reports them.
+
+    Billed as output, so they are already inside `completion_tokens`. Recording
+    them separately is what shows a model spending 3,000 tokens deciding
+    whether to search for a haiku.
+    """
+    details = usage.get("completion_tokens_details")
+    return int(details.get("reasoning_tokens", 0) or 0) if isinstance(details, dict) else 0
+
+
+def _cached_tokens(usage: dict[str, Any]) -> int:
+    details = usage.get("prompt_tokens_details")
+    return int(details.get("cached_tokens", 0) or 0) if isinstance(details, dict) else 0
+
+
 class OpenRouterAdapter:
-    """Runs one prompt through OpenRouter, logging every tool call."""
+    """One prompt, one response, and whether it reached for the tool."""
 
     def __init__(self, spec: ModelSpec, *, effort: str = "high") -> None:
         api_key = os.environ.get("OPENROUTER_API_KEY", "").strip()
@@ -137,119 +123,43 @@ class OpenRouterAdapter:
         self._effort = effort
         self._api_key = api_key
 
-    def answer(
-        self,
-        prompt: str,
-        backend: SearchBackend,
-        config: HarnessConfig,
-    ) -> Turn:
-        from llmsearchbench.harness.adapters import Turn, _render
-
-        messages: list[dict[str, Any]] = [{"role": "user", "content": prompt}]
-        calls: list[ToolCall] = []
-        tokens_in = tokens_out = reasoning = cached = 0
-        turns = 0
-        stop_reason = ""
+    def answer(self, prompt: str, temperature: float = 0.0) -> Turn:
         started = time.monotonic()
+        payload: dict[str, Any] = {
+            "model": self._spec.id,
+            "messages": [{"role": "user", "content": prompt}],
+            "tools": [SEARCH_TOOL],
+            "max_tokens": 4096,
+        }
+        if self._spec.supports_temperature:
+            payload["temperature"] = temperature
 
-        for _ in range(config.max_calls + 2):
-            payload: dict[str, Any] = {
-                "model": self._spec.id,
-                "messages": messages,
-                "tools": [SEARCH_TOOL],
-                "max_tokens": 4096,
-            }
-            if self._spec.supports_temperature:
-                payload["temperature"] = config.temperature
+        body = _post(payload, self._api_key)
+        usage = body.get("usage") or {}
+        choices = body.get("choices") or []
+        if not choices:
+            raise OpenRouterError("response contained no choices")
 
-            body = _post(payload, self._api_key)
-            turns += 1
-            usage = body.get("usage") or {}
-            tokens_in += int(usage.get("prompt_tokens", 0))
-            tokens_out += int(usage.get("completion_tokens", 0))
-            reasoning += _reasoning_tokens(usage)
-            cached += _cached_tokens(usage)
-
-            choices = body.get("choices") or []
-            if not choices:
-                raise OpenRouterError("response contained no choices")
-            stop_reason = str(choices[0].get("finish_reason") or "")
-            message = choices[0].get("message") or {}
-            tool_calls = message.get("tool_calls") or []
-
-            if not tool_calls:
-                text = str(message.get("content") or "")
-                return Turn(
-                    answer=text,
-                    calls=calls,
-                    tokens_in=tokens_in,
-                    tokens_out=tokens_out,
-                    reasoning_tokens=reasoning,
-                    cached_tokens=cached,
-                    latency_s=time.monotonic() - started,
-                    turns=turns,
-                    stop_reason=stop_reason,
+        message = choices[0].get("message") or {}
+        calls: list[ToolCall] = []
+        for call in message.get("tool_calls") or []:
+            function = call.get("function") or {}
+            arguments, schema_error = parse_arguments(str(function.get("arguments", "")))
+            calls.append(
+                ToolCall(
+                    name=str(function.get("name", "")),
+                    arguments=arguments,
+                    schema_error=schema_error,
                 )
-
-            if config.stop_at_first_call:
-                for call in tool_calls:
-                    function = call.get("function") or {}
-                    arguments, schema_error = parse_arguments(
-                        str(function.get("arguments", ""))
-                    )
-                    calls.append(
-                        ToolCall(
-                            name=str(function.get("name", "")),
-                            arguments=arguments,
-                            schema_error=schema_error,
-                        )
-                    )
-                return Turn(
-                    answer="",
-                    calls=calls,
-                    tokens_in=tokens_in,
-                    tokens_out=tokens_out,
-                    reasoning_tokens=reasoning,
-                    cached_tokens=cached,
-                    latency_s=time.monotonic() - started,
-                    turns=turns,
-                    stop_reason="stopped_at_first_call",
-                )
-
-            messages.append(message)
-            for call in tool_calls:
-                function = call.get("function") or {}
-                name = str(function.get("name", ""))
-                arguments, schema_error = parse_arguments(str(function.get("arguments", "")))
-                calls.append(
-                    ToolCall(name=name, arguments=arguments, schema_error=schema_error)
-                )
-
-                if name != "search":
-                    content = f"No tool named {name!r} is available."
-                elif schema_error is not None:
-                    content = f"Invalid arguments: {schema_error}"
-                elif not arguments.get("query", "").strip():
-                    content = "The query was empty."
-                else:
-                    content = _render(backend.search(arguments["query"], config.top_k))
-
-                messages.append(
-                    {
-                        "role": "tool",
-                        "tool_call_id": call.get("id", ""),
-                        "content": content or "No results.",
-                    }
-                )
+            )
 
         return Turn(
-            answer="",
+            answer=str(message.get("content") or ""),
             calls=calls,
-            tokens_in=tokens_in,
-            tokens_out=tokens_out,
-            reasoning_tokens=reasoning,
-            cached_tokens=cached,
+            tokens_in=int(usage.get("prompt_tokens", 0)),
+            tokens_out=int(usage.get("completion_tokens", 0)),
+            reasoning_tokens=_reasoning_tokens(usage),
+            cached_tokens=_cached_tokens(usage),
             latency_s=time.monotonic() - started,
-            turns=turns,
-            stop_reason=stop_reason,
+            stop_reason=str(choices[0].get("finish_reason") or ""),
         )

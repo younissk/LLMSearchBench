@@ -74,17 +74,6 @@ class TestInspectCalls:
     def test_empty_query(self) -> None:
         assert inspect_calls(attempt(queries=["   "])) == [CallProblem.EMPTY_QUERY]
 
-    def test_duplicate_query_burns_budget_for_nothing(self) -> None:
-        got = inspect_calls(attempt(queries=["same thing", "Same Thing!"]))
-        assert got == [CallProblem.DUPLICATE_QUERY]
-
-    def test_distinct_queries_are_not_duplicates(self) -> None:
-        assert inspect_calls(attempt(queries=["first", "second"])) == []
-
-    def test_over_budget(self) -> None:
-        queries = [f"q{i}" for i in range(8)]
-        assert CallProblem.OVER_BUDGET in inspect_calls(attempt(queries=queries))
-
     def test_each_problem_is_reported_once_per_item(self) -> None:
         got = inspect_calls(attempt(queries=["", "", ""]))
         assert got == [CallProblem.EMPTY_QUERY]

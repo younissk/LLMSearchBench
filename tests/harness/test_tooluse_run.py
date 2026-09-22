@@ -1,16 +1,13 @@
-"""The tool-use run loop, driven by a fake Messages API. No network, no keys."""
+"""The run loop, driven by a fake API. No network, no keys, no search."""
 
 from __future__ import annotations
 
-from collections.abc import Sequence
 from pathlib import Path
 from typing import Any
 
 import pytest
 
 from llmsearchbench.harness.adapters import AnthropicAdapter, validate_search_arguments
-from llmsearchbench.harness.config import HarnessConfig
-from llmsearchbench.harness.protocols import Document
 from llmsearchbench.harness.tooluse import completed_task_ids, run_tasks
 from llmsearchbench.providers import get_model
 from llmsearchbench.types.tooluse import Bucket, ToolUseTask
@@ -35,8 +32,6 @@ class Response:
 
 
 class FakeMessages:
-    """Replays a scripted list of responses and records every request."""
-
     def __init__(self, script: list[Response]) -> None:
         self._script = list(script)
         self.requests: list[dict[str, Any]] = []
@@ -54,15 +49,6 @@ def adapter_for(script: list[Response], model_id: str = "claude-opus-5") -> Anth
     adapter._effort = "high"  # type: ignore[attr-defined]
     adapter._client = Block(messages=FakeMessages(script))  # type: ignore[attr-defined]
     return adapter
-
-
-class StubBackend:
-    def __init__(self) -> None:
-        self.queries: list[str] = []
-
-    def search(self, query: str, top_k: int) -> Sequence[Document]:
-        self.queries.append(query)
-        return [Document(url="https://example.invalid/a", title="A", text="an answer")]
 
 
 def task(task_id: str = "t1", bucket: Bucket = Bucket.SEARCH) -> ToolUseTask:
@@ -105,80 +91,48 @@ class TestValidateSearchArguments:
 
 
 class TestAdapter:
-    def test_an_answer_without_a_search_records_no_calls(self) -> None:
-        adapter = adapter_for([answered()])
-        turn = adapter.answer("prompt", StubBackend(), HarnessConfig())
+    def test_an_answer_without_a_search(self) -> None:
+        turn = adapter_for([answered()]).answer("prompt")
         assert turn.answer == "an answer"
         assert turn.calls == []
+        assert not turn.searched
         assert turn.tokens_in == 100 and turn.tokens_out == 50
-        assert turn.latency_s >= 0
-        assert turn.turns == 1
-        assert turn.stop_reason == "end_turn"
 
-    def test_a_search_is_executed_and_recorded(self) -> None:
-        backend = StubBackend()
+    def test_a_search_is_recorded_and_the_episode_ends(self) -> None:
+        """The decision is the measurement; nothing is executed."""
         adapter = adapter_for([searched("sleep divorce"), answered()])
-        turn = adapter.answer("prompt", backend, HarnessConfig())
+        turn = adapter.answer("prompt")
         assert [call.query for call in turn.calls] == ["sleep divorce"]
-        assert backend.queries == ["sleep divorce"]
+        assert turn.searched
+        # One request only: the scripted second response was never reached.
+        assert len(adapter._client.messages.requests) == 1  # type: ignore[attr-defined]
 
-    def test_tokens_accumulate_across_turns(self) -> None:
-        adapter = adapter_for([searched(), answered()])
-        turn = adapter.answer("prompt", StubBackend(), HarnessConfig())
-        assert turn.tokens_in == 200 and turn.tokens_out == 100
-        assert turn.turns == 2, "a search costs a second round trip"
-
-    def test_a_malformed_call_is_recorded_and_the_model_gets_a_chance_to_recover(
-        self,
-    ) -> None:
-        """A bad call is data, not an exception - the run must continue."""
+    def test_a_malformed_call_is_recorded_not_raised(self) -> None:
         adapter = adapter_for(
-            [
-                Response(
-                    "tool_use",
-                    [Block(type="tool_use", id="tu_1", name="search", input={})],
-                ),
-                answered(),
-            ]
+            [Response("tool_use", [Block(type="tool_use", id="t", name="search", input={})])]
         )
-        turn = adapter.answer("prompt", StubBackend(), HarnessConfig())
+        turn = adapter.answer("prompt")
         assert turn.calls[0].schema_error is not None
-        assert "query" in turn.calls[0].schema_error
 
-    def test_a_wrong_tool_is_recorded_and_not_executed(self) -> None:
-        backend = StubBackend()
-        adapter = adapter_for([searched(name="calculator"), answered()])
-        turn = adapter.answer("prompt", backend, HarnessConfig())
+    def test_a_wrong_tool_is_recorded(self) -> None:
+        turn = adapter_for([searched(name="calculator")]).answer("prompt")
         assert turn.calls[0].name == "calculator"
-        assert backend.queries == []
-
-    def test_an_empty_query_is_not_sent_to_the_backend(self) -> None:
-        backend = StubBackend()
-        adapter = adapter_for([searched(query="   "), answered()])
-        adapter.answer("prompt", backend, HarnessConfig())
-        assert backend.queries == []
-
-    def test_a_model_that_never_stops_is_cut_off_past_the_budget(self) -> None:
-        """Over-budget has to be observable, so the loop runs one turn past it."""
-        adapter = adapter_for([searched(f"q{i}") for i in range(12)])
-        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(max_calls=3))
-        assert len(turn.calls) > 3
 
     def test_sampling_is_omitted_for_models_that_reject_it(self) -> None:
         """Opus 5 and Sonnet 5 return 400 when temperature is sent."""
         adapter = adapter_for([answered()], model_id="claude-opus-5")
-        adapter.answer("prompt", StubBackend(), HarnessConfig())
+        adapter.answer("prompt")
         assert "temperature" not in adapter._client.messages.requests[0]  # type: ignore[attr-defined]
 
     def test_sampling_is_sent_for_models_that_accept_it(self) -> None:
         adapter = adapter_for([answered()], model_id="claude-haiku-4-5")
-        adapter.answer("prompt", StubBackend(), HarnessConfig())
+        adapter.answer("prompt")
         assert "temperature" in adapter._client.messages.requests[0]  # type: ignore[attr-defined]
 
     def test_the_search_tool_is_not_strict(self) -> None:
         """Strict mode would make malformed calls impossible to observe."""
         adapter = adapter_for([answered()])
-        adapter.answer("prompt", StubBackend(), HarnessConfig())
+        adapter.answer("prompt")
         tool = adapter._client.messages.requests[0]["tools"][0]  # type: ignore[attr-defined]
         assert "strict" not in tool
 
@@ -187,14 +141,7 @@ class TestRunTasks:
     def test_writes_each_attempt_as_it_lands(self, tmp_path: Path) -> None:
         out = tmp_path / "attempts.jsonl"
         adapter = adapter_for([answered(), answered(), answered()])
-        run_tasks(
-            [task("a"), task("b"), task("c")],
-            "claude-opus-5",
-            adapter,
-            StubBackend(),
-            HarnessConfig(),
-            out_path=out,
-        )
+        run_tasks([task("a"), task("b"), task("c")], "claude-opus-5", adapter, out_path=out)
         assert completed_task_ids(out) == {"a", "b", "c"}
 
     def test_an_interrupted_run_keeps_what_it_paid_for(self, tmp_path: Path) -> None:
@@ -207,54 +154,11 @@ class TestRunTasks:
                 return super().create(**request)
 
         adapter = adapter_for([])
-        adapter._client = Block(messages=Exploding([answered(), answered()]))  # type: ignore[attr-defined]
+        adapter._client = Block(messages=Exploding([answered()]))  # type: ignore[attr-defined]
 
         with pytest.raises(ConnectionError):
-            run_tasks(
-                [task("a"), task("b"), task("c")],
-                "claude-opus-5",
-                adapter,
-                StubBackend(),
-                HarnessConfig(),
-                out_path=out,
-            )
+            run_tasks([task("a"), task("b")], "claude-opus-5", adapter, out_path=out)
         assert completed_task_ids(out) == {"a"}
 
     def test_completed_ids_is_empty_when_nothing_has_run(self, tmp_path: Path) -> None:
         assert completed_task_ids(tmp_path / "absent.jsonl") == set()
-
-
-class TestDecisionOnly:
-    """Stopping at the first tool call, so no search ever runs."""
-
-    def test_the_search_is_never_executed(self) -> None:
-        backend = StubBackend()
-        adapter = adapter_for([searched("who won?")])
-        adapter.answer("prompt", backend, HarnessConfig(stop_at_first_call=True))
-        assert backend.queries == []
-
-    def test_the_call_is_still_recorded(self) -> None:
-        """The decision is what this mode measures; it must survive."""
-        adapter = adapter_for([searched("who won?")])
-        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(stop_at_first_call=True))
-        assert [call.query for call in turn.calls] == ["who won?"]
-        assert turn.stop_reason == "stopped_at_first_call"
-
-    def test_a_malformed_first_call_is_still_caught(self) -> None:
-        adapter = adapter_for(
-            [Response("tool_use", [Block(type="tool_use", id="t", name="search", input={})])]
-        )
-        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(stop_at_first_call=True))
-        assert turn.calls[0].schema_error is not None
-
-    def test_it_costs_one_round_trip(self) -> None:
-        """The saving is the point: no second turn, no search subscription."""
-        adapter = adapter_for([searched()])
-        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(stop_at_first_call=True))
-        assert turn.turns == 1
-
-    def test_a_model_that_does_not_search_is_unaffected(self) -> None:
-        adapter = adapter_for([answered("Paris")])
-        turn = adapter.answer("prompt", StubBackend(), HarnessConfig(stop_at_first_call=True))
-        assert turn.answer == "Paris"
-        assert turn.calls == []

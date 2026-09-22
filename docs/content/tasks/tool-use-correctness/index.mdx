@@ -59,12 +59,12 @@ like, and [how the set was built](./building.mdx) for how they were chosen.
 ## Running it
 
 ```bash
-cp .env.example .env    # then fill in one model key and one search key
+cp .env.example .env    # then fill in one model key
 make data               # fetch the source datasets, about 38 MB
 make tasks              # build the task set
 
-llmsearchbench run --model claude-opus-5 --backend tavily
-llmsearchbench score --model claude-opus-5
+llmsearchbench run --model qwen/qwen3.5-27b
+llmsearchbench score --model qwen/qwen3.5-27b
 ```
 
 Full setup, costs, and what each flag does: [Running it](./running.mdx).

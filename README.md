@@ -28,12 +28,10 @@ src/llmsearchbench/
     metrics.py  the per-answer formulas
     aggregate.py  records collapsed into one published row
     compare.py  a reproduction checked against a release
-  harness/      running a model against a task set
-    config.py   the knobs held fixed across a release
-    protocols.py  the seams a model, backend, and judge plug into
-    loop.py     the run loop
-    adapters.py wiring an id to an implementation
-    fakes.py    implementations that need no network
+  harness/      putting a prompt to a model
+    adapters.py talking to a model; the tool is offered, never executed
+    openrouter.py  the OpenRouter route
+    tooluse.py  the run loop
   storage/      artefacts on disk
     jsonl.py    the line-oriented plumbing
     artefacts.py  the typed layer over it
@@ -79,22 +77,25 @@ make help        # every target
 ## Running the benchmark
 
 ```bash
-cp .env.example .env    # one model key, one search key
+cp .env.example .env    # one model key
 make data               # source datasets, checksum-verified
 make tasks              # build the task set
 
-uv run llmsearchbench run --model claude-opus-5 --backend tavily --limit 20
-uv run llmsearchbench score --model claude-opus-5
+uv run llmsearchbench run --model qwen/qwen3.5-27b --limit 20
+uv run llmsearchbench score --model qwen/qwen3.5-27b
 ```
 
 `run` prints a cost estimate and asks before spending anything, writes each
 attempt as it lands, and resumes from where it stopped if interrupted. Scoring
 is free and offline — rescore without paying for the run again.
 
+The model is offered a search tool and never gets to use it: when it reaches
+for the tool, the item ends and the call is recorded. That decision is the
+measurement, so no search API is involved and only a model key is needed.
+
 Models live in `src/llmsearchbench/providers/registry.py`, each with its price;
-a model with no price cannot be published. Search goes through Tavily, Brave,
-or Serper — every model in a release must use the same one, and the run records
-which. Full setup and costs: [Running it](docs/content/tasks/tool-use-correctness/running.mdx).
+a model with no price cannot be published. Full setup and costs:
+[Running it](docs/content/tasks/tool-use-correctness/running.mdx).
 
 ## Publishing a release
 

@@ -1,8 +1,7 @@
 """Running the tool-use-correctness task.
 
-One prompt, one decision, one record. The loop is deliberately thin: the
-scoring lives in `llmsearchbench.scoring.tooluse`, and everything this module
-writes is raw observation — what the model said, and every call it made.
+One prompt, one response, one record. Nothing is executed on the model's
+behalf: the tool is offered, and whether it was reached for is the measurement.
 """
 
 from __future__ import annotations
@@ -12,8 +11,6 @@ from pathlib import Path
 from typing import Protocol
 
 from llmsearchbench.harness.adapters import Turn
-from llmsearchbench.harness.config import HarnessConfig
-from llmsearchbench.harness.protocols import SearchBackend
 from llmsearchbench.storage import append_line
 from llmsearchbench.types.tooluse import ToolUseAttempt, ToolUseTask
 
@@ -22,24 +19,14 @@ ProgressHook = Callable[[int, int, ToolUseTask, ToolUseAttempt], None]
 
 
 class PromptAdapter(Protocol):
-    """What the run loop needs from a provider adapter.
+    """What the run loop needs from a provider adapter."""
 
-    Narrower than the QA `ModelAdapter`: this task hands over a bare prompt and
-    wants the call log back, not a structured answer.
-    """
-
-    def answer(self, prompt: str, backend: SearchBackend, config: HarnessConfig) -> Turn: ...
+    def answer(self, prompt: str, temperature: float = 0.0) -> Turn: ...
 
 
-def run_task(
-    task: ToolUseTask,
-    model: str,
-    adapter: PromptAdapter,
-    backend: SearchBackend,
-    config: HarnessConfig,
-) -> ToolUseAttempt:
+def run_task(task: ToolUseTask, model: str, adapter: PromptAdapter) -> ToolUseAttempt:
     """Put one prompt to the model and record what it did."""
-    turn = adapter.answer(task.prompt, backend, config)
+    turn = adapter.answer(task.prompt)
     return ToolUseAttempt(
         task_id=task.id,
         model=model,
@@ -50,7 +37,6 @@ def run_task(
         reasoning_tokens=turn.reasoning_tokens,
         cached_tokens=turn.cached_tokens,
         latency_s=turn.latency_s,
-        turns=turn.turns,
         stop_reason=turn.stop_reason,
     )
 
@@ -59,8 +45,6 @@ def run_tasks(
     tasks: Sequence[ToolUseTask],
     model: str,
     adapter: PromptAdapter,
-    backend: SearchBackend,
-    config: HarnessConfig,
     *,
     out_path: Path | None = None,
     on_item: ProgressHook | None = None,
@@ -68,11 +52,11 @@ def run_tasks(
     """Run a whole task set, writing each attempt as it lands.
 
     Appending per item rather than at the end means an interrupted run keeps
-    everything it already paid for — and these runs cost real money.
+    everything it already paid for.
     """
     attempts: list[ToolUseAttempt] = []
     for index, task in enumerate(tasks, start=1):
-        attempt = run_task(task, model, adapter, backend, config)
+        attempt = run_task(task, model, adapter)
         if out_path is not None:
             append_line(out_path, attempt.model_dump_json())
         if on_item is not None:
@@ -82,7 +66,7 @@ def run_tasks(
 
 
 def completed_task_ids(path: Path) -> set[str]:
-    """Task ids already recorded in an attempts file, so a run can resume."""
+    """Task ids already recorded, so a run can resume."""
     if not path.exists():
         return set()
     from llmsearchbench.storage import read_jsonl

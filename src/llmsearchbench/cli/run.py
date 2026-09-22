@@ -17,14 +17,8 @@ from rich.progress import (
 from rich.table import Table
 
 from llmsearchbench.cli._shared import EXIT_BAD_INPUT, EXIT_NOT_WIRED
-from llmsearchbench.harness import (
-    BackendNotConfiguredError,
-    HarnessConfig,
-    NotConfiguredError,
-    build_adapter,
-    build_backend,
-)
-from llmsearchbench.harness.search import LIVE_BACKENDS, SearchError
+from llmsearchbench.harness import NotConfiguredError, build_adapter
+from llmsearchbench.harness.openrouter import OpenRouterError
 from llmsearchbench.harness.tooluse import completed_task_ids, run_tasks
 from llmsearchbench.paths import RESULTS, TASKS
 from llmsearchbench.providers import UnknownModelError, get_model, provider_label
@@ -37,8 +31,6 @@ from llmsearchbench.ui import console, fail, warn
 app = typer.Typer()
 
 TASK_SET = "tool-use-correctness"
-#: Nothing calls out to a search API until you pick one.
-DEFAULT_BACKEND = "null"
 
 
 def slug(model_id: str) -> str:
@@ -88,14 +80,6 @@ def run(
     model: Annotated[str, typer.Option(help="Model id; see `llmsearchbench models`.")],
     task_set: Annotated[Path, typer.Option(help="The task set.")] = TASKS / f"{TASK_SET}.jsonl",
     out: Annotated[Path, typer.Option(help="Where to write attempts.")] = RESULTS / "local",
-    backend: Annotated[str, typer.Option(help="Search backend.")] = DEFAULT_BACKEND,
-    decision_only: Annotated[
-        bool,
-        typer.Option(
-            "--decision-only",
-            help="Stop the moment the model reaches for the tool. No search runs.",
-        ),
-    ] = False,
     effort: Annotated[str, typer.Option(help="low | medium | high | xhigh | max.")] = "high",
     limit: Annotated[int | None, typer.Option(help="Run only the first N items.")] = None,
     bucket: Annotated[
@@ -127,29 +111,16 @@ def run(
 
     try:
         adapter = build_adapter(model, effort=effort)
-        search = build_backend(backend)
     except UnknownModelError as error:
         fail(str(error.args[0]))
         raise typer.Exit(EXIT_BAD_INPUT) from None
-    except (NotConfiguredError, BackendNotConfiguredError) as error:
+    except NotConfiguredError as error:
         fail(str(error))
         raise typer.Exit(EXIT_NOT_WIRED) from None
 
-    if decision_only:
-        console.print(
-            "[muted]decision-only: the run stops at the first tool call. "
-            "Measures the search-or-not decision and the first call's shape; "
-            "not multi-call behaviour or answers.[/muted]"
-        )
-    elif backend not in LIVE_BACKENDS:
-        warn(
-            f"backend {backend!r} returns no results - decisions and call quality "
-            "are still measured, but answers cannot be right. Not publishable."
-        )
-
     estimate = _estimate(tasks, model)
     console.print(
-        f"{len(tasks)} item(s) · {model} ({provider_label(model)}) · {backend} · "
+        f"{len(tasks)} item(s) · {model} ({provider_label(model)}) · "
         f"effort {effort} · roughly [metric]${estimate:.2f}[/metric]"
     )
     if not yes and not typer.confirm("Run it?", default=True):
@@ -173,18 +144,10 @@ def run(
             progress.update(bar, advance=1, description=f"{model}  {searched} searched")
 
         try:
-            run_tasks(
-                tasks,
-                model,
-                adapter,
-                search,
-                HarnessConfig(stop_at_first_call=decision_only),
-                out_path=attempts_path,
-                on_item=on_item,
-            )
-        except SearchError as error:
+            run_tasks(tasks, model, adapter, out_path=attempts_path, on_item=on_item)
+        except OpenRouterError as error:
             progress.stop()
-            fail(f"search backend failed: {error}")
+            fail(str(error))
             warn(f"partial results are in {attempts_path}; rerun to resume")
             raise typer.Exit(EXIT_NOT_WIRED) from None
 

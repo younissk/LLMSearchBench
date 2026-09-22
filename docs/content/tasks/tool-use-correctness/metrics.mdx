@@ -58,11 +58,8 @@ wrong:
 | `wrong-tool` | `calculator(expr="2+2")` when only `search` exists |
 | `schema-error` | `search(q="...")` when the argument is named `query` |
 | `empty-query` | `search(query="")` |
-| `duplicate-query` | `search(query="sleep divorce")` twice in a row |
-| `over-budget` | a seventh call, when the limit is six |
 
-Each problem counts once per item. Three empty queries on one item is one
-`empty-query` failure, not three.
+Each problem counts once per item.
 
 The headline number is the share of calling items with nothing wrong. Let $C$
 be the items where the model called anything, and $P_i$ the problems found on

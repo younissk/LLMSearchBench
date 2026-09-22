@@ -26,9 +26,6 @@ from llmsearchbench.taskgen.filters import fold
 from llmsearchbench.types import BenchModel
 from llmsearchbench.types.tooluse import Bucket, ToolUseAttempt, ToolUseTask
 
-#: Search calls allowed per item before the harness stops the model.
-DEFAULT_CALL_BUDGET = 6
-
 
 class CallProblem(StrEnum):
     """What can be wrong with a tool call, independent of whether to make it."""
@@ -39,10 +36,6 @@ class CallProblem(StrEnum):
     SCHEMA_ERROR = "schema-error"
     #: Called search with nothing to search for.
     EMPTY_QUERY = "empty-query"
-    #: Issued a query already issued for this item — burns budget for nothing.
-    DUPLICATE_QUERY = "duplicate-query"
-    #: Kept calling past the harness budget.
-    OVER_BUDGET = "over-budget"
 
 
 class TaskOutcome(BenchModel):
@@ -122,45 +115,24 @@ def answer_matches(answer: str, gold: Sequence[str]) -> bool:
     return any(fold(alias) in folded for alias in gold if alias.strip())
 
 
-def inspect_calls(
-    attempt: ToolUseAttempt,
-    *,
-    search_tool: str = "search",
-    call_budget: int = DEFAULT_CALL_BUDGET,
-) -> list[CallProblem]:
+def inspect_calls(attempt: ToolUseAttempt, *, search_tool: str = "search") -> list[CallProblem]:
     """Everything wrong with how this attempt used the tool."""
     problems: list[CallProblem] = []
-    seen: set[str] = set()
 
     for call in attempt.calls:
         if call.name != search_tool:
             problems.append(CallProblem.WRONG_TOOL)
-            continue
-        if call.schema_error:
+        elif call.schema_error:
             problems.append(CallProblem.SCHEMA_ERROR)
-            continue
-        query = call.query.strip()
-        if not query:
+        elif not call.query.strip():
             problems.append(CallProblem.EMPTY_QUERY)
-            continue
-        normalised = fold(query)
-        if normalised in seen:
-            problems.append(CallProblem.DUPLICATE_QUERY)
-        seen.add(normalised)
-
-    if len(attempt.calls) > call_budget:
-        problems.append(CallProblem.OVER_BUDGET)
 
     # Order-stable de-duplication: one item reports each problem kind once.
     return list(dict.fromkeys(problems))
 
 
 def outcome_for(
-    task: ToolUseTask,
-    attempt: ToolUseAttempt,
-    *,
-    search_tool: str = "search",
-    call_budget: int = DEFAULT_CALL_BUDGET,
+    task: ToolUseTask, attempt: ToolUseAttempt, *, search_tool: str = "search"
 ) -> TaskOutcome:
     answer_correct: bool | None = None
     if task.bucket is not Bucket.NO_TOOL:
@@ -173,7 +145,7 @@ def outcome_for(
         expected_search=task.expects_search,
         searched=attempt.searched,
         call_count=len(attempt.calls),
-        problems=inspect_calls(attempt, search_tool=search_tool, call_budget=call_budget),
+        problems=inspect_calls(attempt, search_tool=search_tool),
         answer_correct=answer_correct,
     )
 
@@ -188,7 +160,6 @@ def score(
     attempts: Sequence[ToolUseAttempt],
     *,
     search_tool: str = "search",
-    call_budget: int = DEFAULT_CALL_BUDGET,
 ) -> ToolUseScore:
     """Collapse one model's attempts into a published result.
 
@@ -203,10 +174,7 @@ def score(
             f"{len(missing)} task(s) have no attempt from {model!r}, first few: {missing[:3]}"
         )
 
-    outcomes = [
-        outcome_for(task, by_id[task.id], search_tool=search_tool, call_budget=call_budget)
-        for task in tasks
-    ]
+    outcomes = [outcome_for(task, by_id[task.id], search_tool=search_tool) for task in tasks]
 
     buckets = [
         BucketScore(
