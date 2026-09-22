@@ -1,0 +1,94 @@
+[project]
+name = "llmsearchbench"
+version = "0.1.0"
+description = "A small, reproducible benchmark for how language models use search"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+authors = [
+    { name = "younissk", email = "62797468+younissk@users.noreply.github.com" }
+]
+keywords = ["benchmark", "llm", "search", "retrieval", "evaluation"]
+dependencies = [
+    "pydantic>=2.13.5",
+    "rich>=15.0.0",
+    "typer>=0.27.2",
+]
+
+[project.urls]
+Homepage = "https://younissk.github.io/LLMSearchBench/"
+Repository = "https://github.com/younissk/LLMSearchBench"
+Changelog = "https://younissk.github.io/LLMSearchBench/changelog"
+
+[project.scripts]
+llmsearchbench = "llmsearchbench.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+    "ruff>=0.8",
+    "mypy>=1.13",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q --strict-markers --strict-config"
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+source = ["src/llmsearchbench"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 96
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W",   # pycodestyle
+    "F",        # pyflakes
+    "I",        # isort
+    "N",        # pep8-naming
+    "UP",       # pyupgrade
+    "B",        # bugbear
+    "SIM",      # simplify
+    "C4",       # comprehensions
+    "PTH",      # use pathlib, not os.path
+    "RET",      # return-statement hygiene
+    "ARG",      # unused arguments
+    "TID",      # tidy imports
+    "PLE",      # pylint errors
+    "PLW",      # pylint warnings
+    "RUF",      # ruff-specific
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.per-file-ignores]
+# Test fakes implement protocols, so they carry parameters they do not use.
+"tests/*" = ["S101", "ARG"]
+# Citations are reproduced exactly as the authors publish them. Rewrapping a
+# BibTeX title to satisfy a line-length rule would misquote the source.
+"src/llmsearchbench/datasets/registry.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.13"
+packages = ["llmsearchbench"]
+strict = true
+warn_unreachable = true
+plugins = ["pydantic.mypy"]
+
+[tool.pydantic-mypy]
+init_typed = true
+warn_required_dynamic_aliases = true

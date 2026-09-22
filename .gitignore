@@ -1,0 +1,33 @@
+# node
+node_modules/
+
+# docusaurus
+docs/build/
+docs/.docusaurus/
+docs/.cache-loader/
+
+# env & secrets
+.env
+.env.local
+
+# python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# datasets — re-fetchable, pinned by data/datasets.lock.json
+data/raw/
+data/processed/
+
+# local runs — published releases under results/<version>/ are committed
+results/local/
+
+# os
+.DS_Store
