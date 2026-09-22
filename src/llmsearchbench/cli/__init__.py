@@ -27,6 +27,7 @@ from llmsearchbench.cli._shared import (
     EXIT_NOT_WIRED,
     EXIT_OK,
 )
+from llmsearchbench.dotenv import load_dotenv
 from llmsearchbench.ui import console
 
 __all__ = ["EXIT_BAD_INPUT", "EXIT_FAILED", "EXIT_NOT_WIRED", "EXIT_OK", "app", "main"]
@@ -43,6 +44,10 @@ for group in (run.app, results.app, catalogue.app, attribution.app):
 
 app.add_typer(data.app, name="data")
 app.add_typer(tasks.app, name="tasks")
+
+
+# Keys live in .env; load them before any command reads the environment.
+load_dotenv()
 
 
 def _version_callback(value: bool) -> None:

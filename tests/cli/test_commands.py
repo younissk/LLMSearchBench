@@ -131,126 +131,72 @@ class TestPublishCommand:
 
 class TestRunCommand:
     @staticmethod
-    def _write_task_set(directory: Path) -> None:
-        (directory / "v0.1.0.jsonl").write_text(
+    def _task_set(directory: Path) -> Path:
+        path = directory / "tasks.jsonl"
+        path.write_text(
             json.dumps(
                 {
-                    "id": "t-001",
-                    "question": "q",
-                    "gold_answer": "a",
-                    "gold_sources": [],
-                    "category": "negative",
+                    "id": "t1",
+                    "bucket": "no_tool",
+                    "prompt": "hi",
+                    "gold_answer": [],
+                    "source": "test",
+                    "subcategory": "test",
+                    "adversarial": False,
+                    "rationale": "",
                 }
             )
             + "\n",
             encoding="utf-8",
         )
+        return path
 
     def test_a_missing_task_set_exits_two(self, tmp_path: Path) -> None:
         result = runner.invoke(
             app,
-            ["run", "--release", "v9.9.9", "--model", "x", "--tasks-dir", str(tmp_path)],
+            ["run", "--model", "claude-opus-5", "--task-set", str(tmp_path / "absent.jsonl")],
         )
         assert result.exit_code == 2
-        assert "no task set" in result.stderr
-
-    def test_a_catalogued_model_with_no_adapter_says_where_to_wire_it(
-        self, tmp_path: Path
-    ) -> None:
-        """Failing loudly beats silently substituting a different model."""
-        self._write_task_set(tmp_path)
-        result = runner.invoke(
-            app,
-            [
-                "run",
-                "--release",
-                "v0.1.0",
-                "--model",
-                "claude-opus-5",
-                "--tasks-dir",
-                str(tmp_path),
-            ],
-        )
-        assert result.exit_code == 3
-        assert "adapters.py" in result.stderr
+        assert "make tasks" in result.stderr
 
     def test_a_model_outside_the_catalogue_exits_two(self, tmp_path: Path) -> None:
-        """A typo in a model id must not look like a missing adapter."""
-        self._write_task_set(tmp_path)
+        """A typo in a model id must not look like a missing key."""
+        task_set = self._task_set(tmp_path)
         result = runner.invoke(
-            app,
-            [
-                "run",
-                "--release",
-                "v0.1.0",
-                "--model",
-                "claude-opus-4",
-                "--tasks-dir",
-                str(tmp_path),
-            ],
+            app, ["run", "--model", "not-a-model", "--task-set", str(task_set)]
         )
         assert result.exit_code == 2
         assert "unknown model" in result.stderr
 
-    def test_a_subset_run_says_it_is_not_a_valid_result(self, tmp_path: Path) -> None:
-        self._write_task_set(tmp_path)
+    def test_a_missing_key_says_which_variable_to_set(
+        self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+        task_set = self._task_set(tmp_path)
         result = runner.invoke(
             app,
             [
                 "run",
-                "--release",
-                "v0.1.0",
                 "--model",
                 "claude-opus-5",
-                "--tasks-dir",
+                "--task-set",
+                str(task_set),
+                "--out",
                 str(tmp_path),
-                "--tasks",
-                "1",
             ],
         )
-        assert "not a valid result" in result.stderr
-
-
-class TestAggregateCommand:
-    @staticmethod
-    def _write_records(path: Path, count: int) -> None:
-        path.write_text(
-            "\n".join(
-                json.dumps(
-                    {
-                        "task_id": f"t-{i:03d}",
-                        "model": "m",
-                        "answer": "a",
-                        "citations": [],
-                        "verdict": "correct",
-                        "tokens_in": 1,
-                        "tokens_out": 1,
-                        "latency_s": 1.0,
-                        "search_calls": 1,
-                    }
-                )
-                for i in range(count)
-            )
-            + "\n",
-            encoding="utf-8",
-        )
-
-    def test_reports_what_it_read_before_failing_on_missing_prices(
-        self, tmp_path: Path
-    ) -> None:
-        raw = tmp_path / "raw.jsonl"
-        self._write_records(raw, 3)
-        result = runner.invoke(app, ["aggregate", "--release", "v0.1.0", "--raw", str(raw)])
         assert result.exit_code == 3
-        assert "3 records" in result.stdout
-        assert "providers/registry.py" in result.stderr
+        assert "ANTHROPIC_API_KEY" in result.stderr
 
-    def test_an_empty_raw_file_exits_two(self, tmp_path: Path) -> None:
-        raw = tmp_path / "raw.jsonl"
-        raw.write_text("", encoding="utf-8")
-        result = runner.invoke(app, ["aggregate", "--release", "v0.1.0", "--raw", str(raw)])
+
+class TestScoreCommand:
+    def test_missing_attempts_says_how_to_produce_them(self, tmp_path: Path) -> None:
+        result = runner.invoke(
+            app,
+            ["score", "--model", "claude-opus-5", "--attempts", str(tmp_path / "none.jsonl")],
+        )
         assert result.exit_code == 2
-        assert "no records" in result.stderr
+        assert "llmsearchbench run" in result.stderr
 
 
 class TestModelsCommand:
@@ -259,9 +205,10 @@ class TestModelsCommand:
         assert result.exit_code == 0
         assert "claude-opus-5" in result.stdout
 
-    def test_marks_models_that_would_publish_a_cost_of_zero(self) -> None:
+    def test_shows_when_each_model_was_priced(self) -> None:
+        """A price with no date cannot be re-checked, and prices move."""
         result = runner.invoke(app, ["models"])
-        assert "UNPRICED" in result.stdout
+        assert "2026-" in result.stdout
 
 
 class TestDataCommand:
