@@ -63,8 +63,8 @@ cp .env.example .env    # then fill in one model key
 make data               # fetch the source datasets, about 38 MB
 make tasks              # build the task set
 
-llmsearchbench run --model qwen/qwen3.5-27b
-llmsearchbench score --model qwen/qwen3.5-27b
+uv run llmsearchbench run --model qwen/qwen3.5-27b
+uv run llmsearchbench score --model qwen/qwen3.5-27b
 ```
 
 Full setup, costs, and what each flag does: [Running it](./running.mdx).

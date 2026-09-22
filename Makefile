@@ -105,6 +105,16 @@ tasks-stats: ## Describe the committed task set
 models: ## List the model catalogue
 	$(UV) run llmsearchbench models
 
+.PHONY: run
+run: ## Run a model against the task set — make run MODEL=qwen/qwen3.5-27b
+	@test -n "$(MODEL)" || { echo "set MODEL=<id>, see make models"; exit 2; }
+	$(UV) run llmsearchbench run --model $(MODEL) $(ARGS)
+
+.PHONY: score
+score: ## Score a finished run — make score MODEL=qwen/qwen3.5-27b
+	@test -n "$(MODEL)" || { echo "set MODEL=<id>, see make models"; exit 2; }
+	$(UV) run llmsearchbench score --model $(MODEL)
+
 .PHONY: validate
 validate: ## Validate a summary — make validate SUMMARY=results/v0.1.0/summary.json
 	@test -n "$(SUMMARY)" || { echo "set SUMMARY=<path to summary.json>"; exit 2; }

@@ -153,10 +153,10 @@ Typer for the interface, Rich for the output. Both are confined to `cli.py` and
 from a notebook or another program with no console attached.
 
 ```bash
-llmsearchbench --help
-llmsearchbench models          # the catalogue, with prices and their dates
-llmsearchbench data list       # the dataset registry
-llmsearchbench data download   # fetch, with a progress bar
+uv run llmsearchbench --help
+uv run llmsearchbench models          # the catalogue, with prices and their dates
+uv run llmsearchbench data list       # the dataset registry
+uv run llmsearchbench data download   # fetch, with a progress bar
 ```
 
 Exit codes are part of the contract, because CI gates on them: `0` success,

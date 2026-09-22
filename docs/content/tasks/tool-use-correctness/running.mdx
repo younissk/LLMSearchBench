@@ -7,6 +7,24 @@ description: Keys, commands, costs, and what to do when a run breaks.
 
 # Running it
 
+## Why `uv run`
+
+The `llmsearchbench` command is installed into the project's virtualenv, not
+onto your `PATH`. `uv run` finds it without activating anything:
+
+```bash
+uv run llmsearchbench --help
+```
+
+If you would rather type it bare, activate the venv once per shell:
+
+```bash
+source .venv/bin/activate
+llmsearchbench --help
+```
+
+Or use the `make` targets, which handle this for you.
+
 ## 1. A key
 
 ```bash
@@ -37,7 +55,7 @@ make tasks    # build the 360 items
 ## 3. Run
 
 ```bash
-llmsearchbench run --model qwen/qwen3.5-27b
+uv run llmsearchbench run --model qwen/qwen3.5-27b
 ```
 
 It prints what it is about to do and roughly what it will cost, then asks
@@ -72,7 +90,7 @@ them to a timeout would be the expensive kind of bug.
 ## 4. Score
 
 ```bash
-llmsearchbench score --model claude-opus-5
+uv run llmsearchbench score --model claude-opus-5
 ```
 
 ```text
@@ -183,6 +201,6 @@ route is recorded with the run. Compare like with like.
 | Message | Fix |
 | --- | --- |
 | `ANTHROPIC_API_KEY is not set` | fill it in `.env`, or export it |
-| `unknown model 'x'` | check `llmsearchbench models` |
+| `unknown model 'x'` | check `uv run llmsearchbench models` |
 | `no task set at …` | run `make tasks` |
 | an OpenRouter error | the run stopped; rerun to resume from where it got to |
