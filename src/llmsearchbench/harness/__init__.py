@@ -29,13 +29,16 @@ from llmsearchbench.harness.protocols import (
 )
 from llmsearchbench.harness.search import (
     BACKENDS,
+    LIVE_BACKENDS,
     BackendNotConfiguredError,
+    NullBackend,
     SearchError,
     build_backend,
 )
 
 __all__ = [
     "BACKENDS",
+    "LIVE_BACKENDS",
     "SEARCH_TOOL",
     "AnthropicAdapter",
     "BackendNotConfiguredError",
@@ -47,6 +50,7 @@ __all__ = [
     "ModelAdapter",
     "ModelAnswer",
     "NotConfiguredError",
+    "NullBackend",
     "RecordingBackend",
     "SearchBackend",
     "SearchError",

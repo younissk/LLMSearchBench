@@ -24,10 +24,11 @@ from llmsearchbench.harness import (
     build_adapter,
     build_backend,
 )
-from llmsearchbench.harness.search import SearchError
+from llmsearchbench.harness.search import LIVE_BACKENDS, SearchError
 from llmsearchbench.harness.tooluse import completed_task_ids, run_tasks
 from llmsearchbench.paths import RESULTS, TASKS
 from llmsearchbench.providers import UnknownModelError, get_model, provider_label
+from llmsearchbench.scoring import runstats
 from llmsearchbench.scoring.tooluse import score
 from llmsearchbench.storage import read_jsonl
 from llmsearchbench.types.tooluse import Bucket, ToolUseAttempt, ToolUseTask
@@ -39,12 +40,34 @@ TASK_SET = "tool-use-correctness"
 DEFAULT_BACKEND = "tavily"
 
 
+def slug(model_id: str) -> str:
+    """A filename-safe model id. Provider-prefixed ids contain a slash."""
+    return model_id.replace("/", "--")
+
+
 def _load_tasks(path: Path, limit: int | None, buckets: list[str] | None) -> list[ToolUseTask]:
     tasks = [ToolUseTask.model_validate(raw) for raw in read_jsonl(path)]
     if buckets:
         wanted = {Bucket(name) for name in buckets}
         tasks = [task for task in tasks if task.bucket in wanted]
-    return tasks[:limit] if limit else tasks
+    if not limit:
+        return tasks
+
+    # Take the limit evenly across buckets. A flat slice would return only the
+    # first bucket, which makes a smoke run measure nothing about the others.
+    by_bucket: dict[Bucket, list[ToolUseTask]] = {}
+    for task in tasks:
+        by_bucket.setdefault(task.bucket, []).append(task)
+
+    picked: list[ToolUseTask] = []
+    order = list(by_bucket)
+    while len(picked) < limit and any(by_bucket[bucket] for bucket in order):
+        for bucket in order:
+            if len(picked) >= limit:
+                break
+            if by_bucket[bucket]:
+                picked.append(by_bucket[bucket].pop(0))
+    return sorted(picked, key=lambda task: task.id)
 
 
 def _estimate(tasks: list[ToolUseTask], model_id: str) -> float:
@@ -84,7 +107,7 @@ def run(
         fail(str(error))
         raise typer.Exit(EXIT_BAD_INPUT) from None
 
-    attempts_path = out / f"{model}-attempts.jsonl"
+    attempts_path = out / f"{slug(model)}-attempts.jsonl"
     done = completed_task_ids(attempts_path) if resume else set()
     if done:
         tasks = [task for task in tasks if task.id not in done]
@@ -103,6 +126,12 @@ def run(
     except (NotConfiguredError, BackendNotConfiguredError) as error:
         fail(str(error))
         raise typer.Exit(EXIT_NOT_WIRED) from None
+
+    if backend not in LIVE_BACKENDS:
+        warn(
+            f"backend {backend!r} returns no results - decisions and call quality "
+            "are still measured, but answers cannot be right. Not publishable."
+        )
 
     estimate = _estimate(tasks, model)
     console.print(
@@ -157,7 +186,7 @@ def score_command(
     out: Annotated[Path | None, typer.Option(help="Where to write the score.")] = None,
 ) -> None:
     """Score a finished run."""
-    attempts_path = attempts or RESULTS / "local" / f"{model}-attempts.jsonl"
+    attempts_path = attempts or RESULTS / "local" / f"{slug(model)}-attempts.jsonl"
     if not attempts_path.exists():
         fail(f"no attempts at {attempts_path} - run `llmsearchbench run --model {model}`")
         raise typer.Exit(EXIT_BAD_INPUT)
@@ -176,12 +205,22 @@ def score_command(
         fail(str(error))
         raise typer.Exit(EXIT_BAD_INPUT) from None
 
+    stats = runstats.compute(model, scored_tasks, recorded)
     _render(result)
+    _render_stats(stats)
 
-    target = out or RESULTS / "local" / f"{model}-score.json"
+    target = out or RESULTS / "local" / f"{slug(model)}-score.json"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(
-        json.dumps(result.model_dump(mode="json"), indent=2, sort_keys=True) + "\n",
+        json.dumps(
+            {
+                "score": result.model_dump(mode="json"),
+                "run": stats.model_dump(mode="json"),
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
         encoding="utf-8",
     )
     console.print(f"\n[ok]wrote[/ok] {target}")
@@ -246,3 +285,92 @@ def _render(result: object) -> None:
     answers.add_row("memory", f"{result.answer_accuracy_memory:.1%}")
     answers.add_row("search", f"{result.answer_accuracy_search:.1%}")
     console.print(answers)
+
+
+def _render_stats(stats: runstats.RunStats) -> None:
+    """Cost, tokens, and time. What the run spent, not how good it was."""
+    money = Table(title="4. Cost", title_justify="left", header_style="heading")
+    money.add_column("Measure")
+    money.add_column("Value", justify="right")
+    if stats.cost.priced:
+        money.add_row("total", f"${stats.cost.total_usd:.4f}")
+        money.add_row("per item", f"${stats.cost.mean_usd:.5f}")
+        money.add_row("per 1,000 items", f"${stats.cost.per_1k_items_usd:.2f}")
+        money.add_row(
+            "input / output", f"${stats.cost.input_usd:.4f} / ${stats.cost.output_usd:.4f}"
+        )
+        money.add_row(
+            "[warn]wasted on needless searches[/warn]",
+            f"${stats.cost.wasted_usd:.4f} ({stats.cost.wasted_share:.1%})",
+        )
+        money.add_row("per right decision", f"${stats.cost.usd_per_correct_decision:.5f}")
+    else:
+        money.add_row("[warn]unpriced[/warn]", "add prices in providers/registry.py")
+    console.print(money)
+
+    tokens = Table(title="5. Tokens", title_justify="left", header_style="heading")
+    tokens.add_column("Measure")
+    tokens.add_column("Total", justify="right")
+    tokens.add_column("Mean", justify="right")
+    tokens.add_row("input", f"{stats.tokens.input_total:,}", f"{stats.tokens.input_mean:,.0f}")
+    tokens.add_row(
+        "output", f"{stats.tokens.output_total:,}", f"{stats.tokens.output_mean:,.0f}"
+    )
+    if stats.tokens.reasoning_total:
+        tokens.add_row(
+            "of which thinking",
+            f"{stats.tokens.reasoning_total:,} ({stats.tokens.reasoning_share:.0%})",
+            f"{stats.tokens.reasoning_mean:,.0f}",
+        )
+    if stats.tokens.cached_total:
+        tokens.add_row("cached input", f"{stats.tokens.cached_total:,}", "")
+    tokens.add_row(
+        "output median / p95 / max",
+        "",
+        f"{stats.tokens.output_median:,.0f} / {stats.tokens.output_p95:,.0f} / "
+        f"{stats.tokens.output_max:,}",
+    )
+    console.print(tokens)
+
+    clock = Table(title="6. Time", title_justify="left", header_style="heading")
+    clock.add_column("Measure")
+    clock.add_column("Value", justify="right")
+    clock.add_row("total", f"{stats.time.total_s:,.1f}s")
+    clock.add_row("mean / median", f"{stats.time.mean_s:.1f}s / {stats.time.median_s:.1f}s")
+    clock.add_row("p95 / max", f"{stats.time.p95_s:.1f}s / {stats.time.max_s:.1f}s")
+    clock.add_row(
+        "searched vs direct",
+        f"{stats.time.mean_s_searched:.1f}s vs {stats.time.mean_s_direct:.1f}s "
+        f"(+{stats.time.search_overhead_s:.1f}s)",
+    )
+    clock.add_row("throughput", f"{stats.items_per_minute:.1f} items/min")
+    console.print(clock)
+
+    effort = Table(title="7. Effort per bucket", title_justify="left", header_style="heading")
+    effort.add_column("Bucket")
+    effort.add_column("Items", justify="right")
+    effort.add_column("Out tokens", justify="right")
+    effort.add_column("Thinking", justify="right")
+    effort.add_column("Latency", justify="right")
+    effort.add_column("Calls", justify="right")
+    effort.add_column("Cost", justify="right")
+    for bucket in stats.buckets:
+        effort.add_row(
+            bucket.bucket.value,
+            str(bucket.items),
+            f"{bucket.tokens_out_mean:,.0f}",
+            f"{bucket.reasoning_mean:,.0f}" if stats.tokens.reasoning_total else "-",
+            f"{bucket.latency_mean_s:.1f}s",
+            f"{bucket.search_calls_mean:.2f}",
+            f"${bucket.cost_usd:.4f}" if stats.cost.priced else "-",
+        )
+    console.print(effort)
+
+    console.print(
+        f"[muted]{stats.turns_total} API turns ({stats.turns_mean:.2f}/item) · "
+        f"{stats.search_calls_total} search calls · "
+        f"{stats.items_searching_repeatedly} item(s) searched more than once · "
+        f"answers averaged {stats.answer_chars_mean:.0f} characters"
+        + (f" · {stats.failed_items} failed" if stats.failed_items else "")
+        + "[/muted]"
+    )

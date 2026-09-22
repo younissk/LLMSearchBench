@@ -85,6 +85,16 @@ MODELS: dict[str, ModelSpec] = {
         # openrouter.ai/models. A model with no price cannot be published:
         # `models_without_prices()` is what a release checks.
         ModelSpec(
+            id="qwen/qwen3.5-27b",
+            label="Qwen3.5 27B",
+            provider="openrouter",
+            price_in_per_mtok=0.195,
+            price_out_per_mtok=1.560,
+            priced_on="2026-09-22",
+            supports_temperature=True,
+            notes="a thinking model; output tokens include reasoning",
+        ),
+        ModelSpec(
             id="anthropic/claude-sonnet-5",
             label="Claude Sonnet 5 (OpenRouter)",
             provider="openrouter",

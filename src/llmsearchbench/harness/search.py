@@ -165,14 +165,38 @@ class SerperBackend:
         return documents[:top_k]
 
 
-BACKENDS: dict[str, type[TavilyBackend | BraveBackend | SerperBackend]] = {
+class NullBackend:
+    """Answers every query with nothing. Needs no key and no network.
+
+    For checking that a run works end to end before paying for a search
+    subscription. The tool decision and the call quality are still measured
+    truthfully — the model really did choose to search — but answers on the
+    search bucket cannot be right, because nothing was ever retrieved. A run on
+    this backend is not publishable, and `llmsearchbench run` says so.
+    """
+
+    key_env = ""
+
+    def __init__(self, api_key: str = "") -> None:
+        self._api_key = api_key
+
+    def search(self, query: str, top_k: int) -> Sequence[Document]:  # noqa: ARG002
+        return []
+
+
+#: Backends that return real results. `null` is deliberately excluded from
+#: anything that treats a run as publishable.
+LIVE_BACKENDS = ("tavily", "brave", "serper")
+
+BACKENDS: dict[str, type[TavilyBackend | BraveBackend | SerperBackend | NullBackend]] = {
     "tavily": TavilyBackend,
     "brave": BraveBackend,
     "serper": SerperBackend,
+    "null": NullBackend,
 }
 
 
-def build_backend(name: str) -> TavilyBackend | BraveBackend | SerperBackend:
+def build_backend(name: str) -> TavilyBackend | BraveBackend | SerperBackend | NullBackend:
     """Construct a backend by name, reading its key from the environment."""
     try:
         backend_class = BACKENDS[name]
@@ -181,6 +205,9 @@ def build_backend(name: str) -> TavilyBackend | BraveBackend | SerperBackend:
         raise BackendNotConfiguredError(
             f"unknown search backend {name!r}. Known: {known}."
         ) from None
+
+    if backend_class is NullBackend:
+        return NullBackend()
 
     api_key = os.environ.get(backend_class.key_env, "").strip()
     if not api_key:
