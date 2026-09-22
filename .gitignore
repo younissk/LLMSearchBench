@@ -34,3 +34,6 @@ results/local/
 
 # scratch space for generators before review
 .build/
+
+# smoke runs on the null backend are not results
+results/smoke/

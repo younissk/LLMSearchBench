@@ -144,7 +144,8 @@ class TestTime:
 
     def test_throughput(self) -> None:
         tasks = [task("a"), task("b")]
-        stats = compute(PRICED_MODEL, tasks, [attempt("a", latency=30.0), attempt("b", latency=30.0)])
+        attempts = [attempt("a", latency=30.0), attempt("b", latency=30.0)]
+        stats = compute(PRICED_MODEL, tasks, attempts)
         assert stats.items_per_minute == pytest.approx(2.0)
 
 

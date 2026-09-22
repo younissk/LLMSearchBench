@@ -30,6 +30,13 @@ these:
 | `tavily` | [app.tavily.com](https://app.tavily.com) | generous free tier, cleanest snippets |
 | `brave` | [brave.com/search/api](https://brave.com/search/api) | free tier, independent index |
 | `serper` | [serper.dev](https://serper.dev) | Google results, cheapest per call |
+| `null` | — | returns nothing; for checking the plumbing works |
+
+`null` needs no key. It still measures the decision and the call quality
+honestly — the model really did choose to search — but nothing is retrieved, so
+answers on the search bucket cannot be right, and models tend to retry when
+results come back empty, which inflates the call count. A `null` run is a smoke
+test, not a result. `llmsearchbench run` says so before it starts.
 
 `.env` is gitignored. Anything already exported in your shell wins over the
 file, so `ANTHROPIC_API_KEY=... llmsearchbench run` still works.
@@ -97,6 +104,66 @@ llmsearchbench score --model claude-opus-5
 
 Scoring is free and offline. It reads the attempts file, so you can rescore
 after changing the scorer without paying for the run again.
+
+## What you get back
+
+Seven tables. Three are the correctness measurements; four are what the run
+spent. From a real 30-item smoke run of Qwen3.5 27B on the `null` backend:
+
+```text
+1. Decision                          Failure modes
+┏━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┓     over-search (memory)    40.0%
+┃ Bucket  ┃ Items ┃ Right call ┃     over-search (no_tool)    0.0%
+┡━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━┩     under-search             0.0%
+│ memory  │    10 │      60.0% │     adversarial accuracy   100.0%
+│ search  │    10 │     100.0% │
+│ no_tool │    10 │     100.0% │
+│ overall │    30 │      86.7% │
+└─────────┴───────┴────────────┘
+
+4. Cost                              5. Tokens
+total                     $0.0401    input          36,042   mean 1,201
+per 1,000 items            $1.34     output         21,198   mean   707
+wasted on needless searches          of which thinking
+                  $0.0041 (10.1%)                10,504 (50%)  mean 350
+per right decision      $0.00154     output median/p95/max  577 / 1,402 / 4,403
+
+6. Time                              7. Effort per bucket
+total                     642.4s     bucket   out  think  latency  calls   cost
+mean / median     21.4s / 16.8s      memory   226    103     8.7s   1.60  $0.0056
+p95 / max        48.3s / 119.6s      search  1,144   681    35.4s   3.80  $0.0222
+searched vs direct                   no_tool   750   266    20.1s   0.00  $0.0123
+        29.9s vs 14.0s (+15.9s)
+throughput         2.8 items/min
+```
+
+Worth knowing about each:
+
+**Cost.** Computed from the catalogue price at scoring time, not stored — a
+price correction does not mean re-running anything. **Wasted spend** is the
+money that went on items the model should never have searched: those extra
+turns bought nothing, and it is the dollar value of a bad tool policy. **Cost
+per right decision** is total spend over correct search-or-not calls, which is
+the number to compare across models of different prices.
+
+**Tokens.** Thinking tokens are reported separately where the provider breaks
+them out, but they are *inside* the output total — reasoning models bill them as
+output. Median and p95 sit beside the mean because one 4,400-token item
+distorts an average of thirty.
+
+**Time.** `searched vs direct` is what reaching for the tool costs in seconds.
+p95 and max are there because a mean hides a stall.
+
+**Effort per bucket** is the table that usually says the most. Above, the model
+spends five times the output tokens and four times the wall clock on `search`
+items as on `memory` ones — appropriate. But it also spends 750 output tokens
+and 266 thinking tokens per `no_tool` item, which is a lot of deliberation for
+"write a haiku".
+
+:::note[These are not results]
+30 items on the `null` backend. It is enough to show the shape of the output
+and not nearly enough to rank anything.
+:::
 
 ## What a run costs
 
