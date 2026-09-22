@@ -62,12 +62,19 @@ class RequestTimeoutError(RuntimeError):
 
 
 def _read_with_deadline(response: Any, deadline: float) -> bytes:
-    """Read a response body, giving up if it takes too long overall."""
+    """Read a response body, giving up if it takes too long overall.
+
+    Uses `read1`, which returns as soon as *any* data is available. Plain
+    `read(n)` blocks until it has all n bytes, so a server that trickles keeps
+    the call inside one `read` forever and the deadline below is never reached
+    — which is exactly how one prompt hung a run past five minutes.
+    """
+    read = getattr(response, "read1", None) or response.read
     chunks: list[bytes] = []
     while True:
         if time.monotonic() > deadline:
             raise RequestTimeoutError(f"no complete response within {DEADLINE:.0f}s")
-        chunk = response.read(CHUNK)
+        chunk = read(CHUNK)
         if not chunk:
             return b"".join(chunks)
         chunks.append(chunk)
