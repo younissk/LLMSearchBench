@@ -43,6 +43,7 @@ DEFAULT_SEED = 20260922
 #: run is cheap enough to re-execute rather than trust.
 DEFAULT_MEMORY = 120
 DEFAULT_SEARCH = 120
+DEFAULT_NO_TOOL = 120
 
 
 class BuildReport(BenchModel):

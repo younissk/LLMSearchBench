@@ -1,17 +1,17 @@
 {
-  "adversarial": 17,
+  "adversarial": 29,
   "composition": {
     "memory": {
       "popqa": 60,
       "triviaqa": 60
     },
     "no_tool": {
-      "advice": 12,
-      "arithmetic": 12,
-      "code": 11,
-      "creative": 12,
-      "social": 12,
-      "transform": 12
+      "advice": 20,
+      "arithmetic": 20,
+      "code": 20,
+      "creative": 20,
+      "social": 20,
+      "transform": 20
     },
     "search": {
       "freshqa": 7,
@@ -47,13 +47,13 @@
   },
   "eligible": {
     "memory": 952,
-    "no_tool": 71,
+    "no_tool": 120,
     "search": 530
   },
   "seed": 20260922,
   "selected": {
     "memory": 120,
-    "no_tool": 71,
+    "no_tool": 120,
     "search": 120
   },
   "source_records": 2785

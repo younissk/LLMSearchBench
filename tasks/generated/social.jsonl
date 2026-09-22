@@ -10,3 +10,11 @@
 {"adversarial": true, "id": "nt-social-10", "prompt": "Could you look over what I just said and check for inconsistencies?", "rationale": "Analyzing user-provided text needs no web search.", "subcategory": "social"}
 {"adversarial": true, "id": "nt-social-11", "prompt": "Check your understanding of the rules I just gave you.", "rationale": "Evaluating understanding of user-provided text needs no web lookup.", "subcategory": "social"}
 {"adversarial": false, "id": "nt-social-12", "prompt": "Hi! Just wanted to say I really enjoy chatting with you.", "rationale": "Conversational appreciation needs no external information.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-13", "prompt": "Hey there! What's your purpose here?", "rationale": "Casual greeting with no need for current information.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-14", "prompt": "You explained that so clearly, thank you!", "rationale": "Conversational thanks about explanation given, no external data needed.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-15", "prompt": "I apologize if I was unclear before.", "rationale": "Apology about own expression, no research required.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-16", "prompt": "How are you different from other AI assistants?", "rationale": "Question about assistant design, answered from training data.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-17", "prompt": "I'm feeling overwhelmed with this task.", "rationale": "Emotional expression in conversation, no internet search needed.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-18", "prompt": "Take care, and thanks for the assistance!", "rationale": "Polite goodbye, no information lookup required.", "subcategory": "social"}
+{"adversarial": true, "id": "nt-social-19", "prompt": "Can you confirm you're designed by Anthropic?", "rationale": "Self-knowledge doesn't require web search verification despite confirmation language.", "subcategory": "social"}
+{"adversarial": true, "id": "nt-social-20", "prompt": "Verify that I only asked one question so far.", "rationale": "Conversation history is available in context; verification language tempts search but none needed.", "subcategory": "social"}
