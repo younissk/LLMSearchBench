@@ -10,10 +10,10 @@ All of them are Pydantic models: frozen, and `extra="forbid"`, so a typo'd key
 in an artefact fails at load rather than silently dropping a metric.
 """
 
-from llmsearchbench.types.base import BenchModel, SiteModel
+from llmsearchbench.types.base import BenchModel, Fraction, SiteModel
 from llmsearchbench.types.enums import Category, Verdict
+from llmsearchbench.types.leaderboard import LeaderboardRow, TaskLeaderboard
 from llmsearchbench.types.manifest import Manifest
-from llmsearchbench.types.results import Fraction, ResultRow, Summary
 from llmsearchbench.types.runs import RunRecord
 from llmsearchbench.types.tasks import Task
 
@@ -21,11 +21,11 @@ __all__ = [
     "BenchModel",
     "Category",
     "Fraction",
+    "LeaderboardRow",
     "Manifest",
-    "ResultRow",
     "RunRecord",
     "SiteModel",
-    "Summary",
     "Task",
+    "TaskLeaderboard",
     "Verdict",
 ]

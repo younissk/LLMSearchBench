@@ -13,11 +13,13 @@
   gap: 0.6rem;
   padding: 0.75rem 0.9rem;
   border-bottom: 1px solid var(--lsb-grid);
+  font-size: 0.8rem;
+  color: var(--lsb-ink-muted);
 }
 
 .search {
-  flex: 1 1 12rem;
-  min-width: 10rem;
+  flex: 1 1 10rem;
+  min-width: 9rem;
   padding: 0.4rem 0.6rem;
   font: inherit;
   font-size: 0.85rem;
@@ -32,54 +34,21 @@
   outline-offset: 1px;
 }
 
-.select {
-  padding: 0.4rem 0.5rem;
-  font: inherit;
-  font-size: 0.85rem;
-  color: var(--lsb-ink);
-  background: var(--ifm-background-color);
-  border: 1px solid var(--lsb-hairline);
-  border-radius: 7px;
-}
-
-.count {
-  font-size: 0.78rem;
-  color: var(--lsb-ink-muted);
-  font-variant-numeric: tabular-nums;
-}
-
-.button {
-  padding: 0.4rem 0.7rem;
-  font: inherit;
-  font-size: 0.8rem;
-  color: var(--lsb-ink-secondary);
-  background: transparent;
-  border: 1px solid var(--lsb-hairline);
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.button:hover {
-  color: var(--lsb-ink);
-  border-color: var(--lsb-axis);
-}
-
 .scroll {
   overflow-x: auto;
 }
 
 .table {
-  /* infima sets `display: block` on tables; the grid is a real table */
   display: table;
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.86rem;
+  font-size: 0.85rem;
   margin: 0;
 }
 
 .table th,
 .table td {
-  padding: 0.5rem 0.9rem;
+  padding: 0.5rem 0.8rem;
   border-bottom: 1px solid var(--lsb-grid);
   white-space: nowrap;
 }
@@ -91,7 +60,7 @@
   background: var(--lsb-surface);
   text-align: right;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--lsb-ink-muted);
@@ -113,8 +82,11 @@
   color: var(--lsb-ink);
 }
 
-.provider {
-  color: var(--lsb-ink-secondary);
+.modelId {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--lsb-ink-muted);
 }
 
 .sortButton {
@@ -149,8 +121,14 @@
 
 .bestMark {
   color: var(--status-good);
-  margin-left: 0.35rem;
+  margin-left: 0.3rem;
   font-size: 0.8em;
+}
+
+.partial {
+  color: var(--status-warning);
+  margin-left: 0.35rem;
+  font-size: 0.78em;
 }
 
 .table tbody tr:hover {
@@ -161,9 +139,9 @@
   border-bottom: 0;
 }
 
-.empty {
-  padding: 1.5rem 0.9rem;
-  text-align: center;
+.footnote {
+  padding: 0.7rem 0.9rem;
+  font-size: 0.75rem;
   color: var(--lsb-ink-muted);
-  font-size: 0.85rem;
+  border-top: 1px solid var(--lsb-grid);
 }

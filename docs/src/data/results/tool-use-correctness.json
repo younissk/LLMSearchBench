@@ -1,0 +1,50 @@
+{
+  "task": "tool-use-correctness",
+  "title": "Tool-use correctness",
+  "generated": "2026-09-22",
+  "taskItems": 360,
+  "rows": [
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "provider": "OpenRouter",
+      "items": 360,
+      "complete": true,
+      "decisionAccuracy": 0.8361111111111111,
+      "memoryAccuracy": 0.675,
+      "searchAccuracy": 0.8666666666666667,
+      "noToolAccuracy": 0.9666666666666667,
+      "adversarialAccuracy": 0.896551724137931,
+      "wellFormedRate": 1.0,
+      "overSearchMemory": 0.325,
+      "overSearchNoTool": 0.03333333333333333,
+      "underSearch": 0.13333333333333333,
+      "costUsd": 0.157766505,
+      "isFree": false,
+      "tokensOutMean": 242.56944444444446,
+      "reasoningShare": 0.4756140853134841,
+      "latencyMeanS": 5.355394998956277
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "provider": "OpenRouter",
+      "items": 360,
+      "complete": true,
+      "decisionAccuracy": 0.6361111111111111,
+      "memoryAccuracy": 0.19166666666666668,
+      "searchAccuracy": 0.9583333333333334,
+      "noToolAccuracy": 0.7583333333333333,
+      "adversarialAccuracy": 0.6896551724137931,
+      "wellFormedRate": 1.0,
+      "overSearchMemory": 0.8083333333333333,
+      "overSearchNoTool": 0.24166666666666667,
+      "underSearch": 0.041666666666666664,
+      "costUsd": 0.013592600000000002,
+      "isFree": false,
+      "tokensOutMean": 82.83333333333333,
+      "reasoningShare": 0.0,
+      "latencyMeanS": 1.3106897713820218
+    }
+  ]
+}

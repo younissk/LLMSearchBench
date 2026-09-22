@@ -115,21 +115,13 @@ score: ## Score a finished run — make score MODEL=qwen/qwen3.5-27b
 	@test -n "$(MODEL)" || { echo "set MODEL=<id>, see make models"; exit 2; }
 	$(UV) run llmsearchbench score --model $(MODEL)
 
-.PHONY: validate
-validate: ## Validate a summary — make validate SUMMARY=results/v0.1.0/summary.json
-	@test -n "$(SUMMARY)" || { echo "set SUMMARY=<path to summary.json>"; exit 2; }
-	$(UV) run llmsearchbench validate $(SUMMARY)
-
-.PHONY: diff
-diff: ## Compare a rerun against a release — make diff ACTUAL=... REFERENCE=...
-	@test -n "$(ACTUAL)" || { echo "set ACTUAL=<path to your summary.json>"; exit 2; }
-	@test -n "$(REFERENCE)" || { echo "set REFERENCE=<path to the published summary.json>"; exit 2; }
-	$(UV) run llmsearchbench diff $(ACTUAL) $(REFERENCE)
+.PHONY: leaderboard
+leaderboard: ## Compare every model that has been run
+	$(UV) run llmsearchbench leaderboard
 
 .PHONY: publish
-publish: ## Copy a summary into the site — make publish SUMMARY=results/v0.2.0/summary.json
-	@test -n "$(SUMMARY)" || { echo "set SUMMARY=<path to summary.json>"; exit 2; }
-	$(UV) run llmsearchbench publish $(SUMMARY) --site $(DOCS_DIR)
+publish: ## Regenerate the leaderboard the documentation site renders
+	$(UV) run llmsearchbench publish
 
 # --- Documentation site ---------------------------------------------------
 

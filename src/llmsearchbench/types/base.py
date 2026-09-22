@@ -14,8 +14,13 @@ alias. Pydantic serialises by alias, so the JSON on disk is unchanged.
 
 from __future__ import annotations
 
-from pydantic import BaseModel, ConfigDict
+from typing import Annotated
+
+from pydantic import BaseModel, ConfigDict, Field
 from pydantic.alias_generators import to_camel
+
+#: A metric expressed as a share, not a percentage. 0.871, never 87.1.
+Fraction = Annotated[float, Field(ge=0.0, le=1.0)]
 
 
 class BenchModel(BaseModel):

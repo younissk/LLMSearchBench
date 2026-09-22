@@ -2,8 +2,8 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css';
-import {getRelease, LATEST} from '@site/src/data';
-import {pct, usd} from '@site/src/components/charts/format';
+import {getLeaderboard} from '@site/src/data';
+import {pct} from '@site/src/components/charts/format';
 
 function Stat({value, label, note}: {value: string; label: string; note?: string}) {
   return (
@@ -16,9 +16,11 @@ function Stat({value, label, note}: {value: string; label: string; note?: string
 }
 
 export default function Home() {
-  const release = getRelease(LATEST);
-  const best = [...release.rows].sort((a, b) => b.accuracy - a.accuracy)[0];
-  const cheapest = [...release.rows].sort((a, b) => a.costPer1k - b.costPer1k)[0];
+  const board = getLeaderboard('tool-use-correctness');
+  const ranked = [...board.rows].sort(
+    (a, b) => b.decisionAccuracy - a.decisionAccuracy,
+  );
+  const best = ranked[0];
 
   return (
     <Layout
@@ -27,12 +29,12 @@ export default function Home() {
     >
       <header className={styles.hero}>
         <div className="container">
-          <div className={styles.eyebrow}>{release.version} · {release.date}</div>
-          <h1 className={styles.title}>How well do models actually search?</h1>
+          <div className={styles.eyebrow}>updated {board.generated}</div>
+          <h1 className={styles.title}>Does the model know when to search?</h1>
           <p className={styles.lede}>
-            A small, fully reproducible benchmark measuring retrieval quality, citation
-            fidelity, and the cost of getting a grounded answer. Every number on this site
-            comes from a versioned run you can re-execute.
+            A small, fully reproducible benchmark. Give a model a search tool, then
+            measure whether it reaches for it at the right moments — and whether it
+            calls it properly when it does.
           </p>
           <div className={styles.actions}>
             <Link className="button button--primary button--lg" to="/results">
@@ -47,40 +49,48 @@ export default function Home() {
 
       <main className="container">
         <div className={styles.stats}>
-          <Stat value={String(release.taskCount)} label="Tasks" note="per model, per run" />
-          <Stat value={String(release.rows.length)} label="Models evaluated" />
-          <Stat value={pct(best.accuracy)} label="Best accuracy" note={best.model} />
-          <Stat value={usd(cheapest.costPer1k)} label="Cheapest / 1k tasks" note={cheapest.model} />
+          <Stat value={String(board.taskItems)} label="Prompts" note="per model, per run" />
+          <Stat value={String(board.rows.length)} label="Models run" />
+          <Stat
+            value={best ? pct(best.decisionAccuracy) : '—'}
+            label="Best decision accuracy"
+            note={best?.label}
+          />
+          <Stat
+            value={best ? pct(best.memoryAccuracy) : '—'}
+            label="…of which on known facts"
+            note="where models struggle most"
+          />
         </div>
 
         <h2 className={styles.sectionTitle}>Start here</h2>
         <p className={styles.sectionLede}>
-          The benchmark is deliberately small: it should run end to end on one machine in
-          under an hour, and every claim should be checkable.
+          The benchmark is deliberately small: a full run costs cents and finishes in
+          minutes, so every number here can be re-checked rather than trusted.
         </p>
         <div className={styles.cards}>
-          <Link className={styles.card} to="/docs/methodology/tasks">
-            <div className={styles.cardTitle}>Task design</div>
+          <Link className={styles.card} to="/docs/tasks/tool-use-correctness/buckets">
+            <div className={styles.cardTitle}>The three kinds of prompt</div>
             <div className={styles.cardBody}>
-              What the {release.taskCount} tasks ask for, and why those and not others.
+              What the {board.taskItems} prompts look like, and why each one is there.
             </div>
           </Link>
-          <Link className={styles.card} to="/docs/methodology/scoring">
-            <div className={styles.cardTitle}>Scoring</div>
+          <Link className={styles.card} to="/docs/tasks/tool-use-correctness/metrics">
+            <div className={styles.cardTitle}>What we measure</div>
             <div className={styles.cardBody}>
-              The metric definitions, in full, with their formulas.
+              Three scores, kept separate, with a worked example.
             </div>
           </Link>
-          <Link className={styles.card} to="/docs/reproduce">
-            <div className={styles.cardTitle}>Reproduce a run</div>
+          <Link className={styles.card} to="/docs/tasks/tool-use-correctness/running">
+            <div className={styles.cardTitle}>Run it yourself</div>
             <div className={styles.cardBody}>
-              Clone, set keys, run one command, diff your numbers against ours.
+              One key, two commands. A short run costs cents.
             </div>
           </Link>
-          <Link className={styles.card} to="/docs/versioning">
-            <div className={styles.cardTitle}>Versioning policy</div>
+          <Link className={styles.card} to="/docs/tasks/tool-use-correctness/qwen-coverage">
+            <div className={styles.cardTitle}>Model coverage</div>
             <div className={styles.cardBody}>
-              What a benchmark release freezes, and when results stop being comparable.
+              Which models have been run, and which are still on the list.
             </div>
           </Link>
         </div>

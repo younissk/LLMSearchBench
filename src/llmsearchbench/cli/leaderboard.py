@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import json
+from datetime import date
 from pathlib import Path
 from typing import Annotated
 
@@ -10,10 +10,12 @@ import typer
 from rich.table import Table
 
 from llmsearchbench.cli._shared import EXIT_BAD_INPUT
-from llmsearchbench.paths import RESULTS, TASKS
+from llmsearchbench.paths import RESULTS, SITE, TASKS
+from llmsearchbench.providers import UnknownModelError, get_model, provider_label
 from llmsearchbench.scoring import runstats
 from llmsearchbench.scoring.tooluse import score
 from llmsearchbench.storage import load_attempts, read_jsonl
+from llmsearchbench.types import LeaderboardRow, TaskLeaderboard
 from llmsearchbench.types.tooluse import Bucket, ToolUseTask
 from llmsearchbench.ui import console, fail, warn
 
@@ -119,36 +121,88 @@ def leaderboard(
     )
 
 
-@app.command("export")
-def export(
+@app.command("publish")
+def publish(
     results_dir: Annotated[Path, typer.Option(help="Where attempts live.")] = (
         RESULTS / "local"
     ),
     task_set: Annotated[Path, typer.Option(help="The task set.")] = TASKS / f"{TASK_SET}.jsonl",
-    out: Annotated[Path, typer.Option(help="Where to write the summary.")] = (
-        RESULTS / "local" / "leaderboard.json"
-    ),
+    site: Annotated[Path, typer.Option(help="The documentation site root.")] = SITE,
+    include_partial: Annotated[
+        bool, typer.Option(help="Publish runs that did not finish.")
+    ] = False,
 ) -> None:
-    """Write every model's score and run statistics to one file."""
+    """Write the leaderboard the documentation site renders.
+
+    Regenerated from the recorded attempts, so a scoring change is a re-export
+    rather than a re-run.
+    """
     tasks = [ToolUseTask.model_validate(raw) for raw in read_jsonl(task_set)]
-    payload = []
+    rows: list[LeaderboardRow] = []
+    skipped = 0
+
     for path in sorted(results_dir.glob("*-attempts.jsonl")):
-        model = unslug(path.stem)
+        model_id = unslug(path.stem)
         attempts = load_attempts(path)
         answered = {a.task_id for a in attempts}
         scored_tasks = [t for t in tasks if t.id in answered]
         if not scored_tasks:
             continue
-        payload.append(
-            {
-                "model": model,
-                "items": len(scored_tasks),
-                "complete": len(scored_tasks) == len(tasks),
-                "score": score(model, scored_tasks, attempts).model_dump(mode="json"),
-                "run": runstats.compute(model, scored_tasks, attempts).model_dump(mode="json"),
-            }
+
+        complete = len(scored_tasks) == len(tasks)
+        if not complete and not include_partial:
+            skipped += 1
+            continue
+
+        result = score(model_id, scored_tasks, attempts)
+        stats = runstats.compute(model_id, scored_tasks, attempts)
+        try:
+            spec = get_model(model_id)
+            label, provider, is_free = spec.label, provider_label(model_id), spec.is_free
+        except UnknownModelError:
+            label, provider, is_free = model_id, "unknown", False
+
+        buckets = {b.bucket: b.accuracy for b in result.buckets}
+
+        rows.append(
+            LeaderboardRow(
+                model=model_id,
+                label=label,
+                provider=provider,
+                items=len(scored_tasks),
+                complete=complete,
+                decision_accuracy=result.decision_accuracy,
+                memory_accuracy=buckets.get(Bucket.MEMORY, 0.0),
+                search_accuracy=buckets.get(Bucket.SEARCH, 0.0),
+                no_tool_accuracy=buckets.get(Bucket.NO_TOOL, 0.0),
+                adversarial_accuracy=result.adversarial_accuracy,
+                well_formed_rate=result.well_formed_rate,
+                over_search_memory=result.over_search_memory,
+                over_search_no_tool=result.over_search_no_tool,
+                under_search=result.under_search,
+                cost_usd=stats.cost.total_usd,
+                is_free=is_free,
+                tokens_out_mean=stats.tokens.output_mean,
+                reasoning_share=stats.tokens.reasoning_share,
+                latency_mean_s=stats.time.mean_s,
+            )
         )
 
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    console.print(f"[ok]wrote[/ok] {out}  ({len(payload)} model(s))")
+    rows.sort(key=lambda row: -row.decision_accuracy)
+    board = TaskLeaderboard(
+        task=TASK_SET,
+        title="Tool-use correctness",
+        generated=date.today().isoformat(),
+        task_items=len(tasks),
+        rows=rows,
+    )
+
+    target = site / "src" / "data" / "results" / f"{TASK_SET}.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(
+        board.model_dump_json(indent=2, exclude_none=True) + "\n", encoding="utf-8"
+    )
+
+    console.print(f"[ok]wrote[/ok] {target}  ({len(rows)} model(s))")
+    if skipped:
+        warn(f"{skipped} unfinished run(s) left out; pass --include-partial to publish them")

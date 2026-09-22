@@ -13,8 +13,6 @@ import pytest
 from typer.testing import CliRunner
 
 from llmsearchbench.cli import app
-from llmsearchbench.storage import save_summary
-from tests.conftest import make_row, make_summary
 
 runner = CliRunner()
 
@@ -24,109 +22,6 @@ def wide_terminal(monkeypatch: pytest.MonkeyPatch) -> None:
     """Rich wraps to the terminal width; pin it so assertions do not depend on it."""
     monkeypatch.setenv("COLUMNS", "200")
     monkeypatch.setenv("TERM", "dumb")
-
-
-class TestDiffCommand:
-    def test_matching_summaries_exit_zero(self, tmp_path: Path) -> None:
-        path = tmp_path / "summary.json"
-        save_summary(path, make_summary())
-        result = runner.invoke(app, ["diff", str(path), str(path)])
-        assert result.exit_code == 0
-        assert "match" in result.stdout
-
-    def test_a_failed_reproduction_exits_nonzero(self, tmp_path: Path) -> None:
-        """CI has to be able to gate on this."""
-        actual = tmp_path / "actual.json"
-        reference = tmp_path / "reference.json"
-        save_summary(actual, make_summary(make_row(accuracy=0.50)))
-        save_summary(reference, make_summary(make_row(accuracy=0.90)))
-
-        result = runner.invoke(app, ["diff", str(actual), str(reference)])
-        assert result.exit_code == 1
-        assert "Out of tolerance" in result.stdout
-        assert "accuracy" in result.stdout
-
-    def test_a_missing_model_is_named(self, tmp_path: Path) -> None:
-        actual = tmp_path / "actual.json"
-        reference = tmp_path / "reference.json"
-        save_summary(actual, make_summary(make_row("a")))
-        save_summary(reference, make_summary(make_row("a"), make_row("b")))
-
-        result = runner.invoke(app, ["diff", str(actual), str(reference)])
-        assert result.exit_code == 1
-        assert "missing" in result.stdout
-
-
-class TestValidateCommand:
-    def test_a_sane_summary_passes(self, tmp_path: Path) -> None:
-        path = tmp_path / "summary.json"
-        save_summary(path, make_summary())
-        result = runner.invoke(app, ["validate", str(path)])
-        assert result.exit_code == 0
-        assert "valid" in result.stdout
-
-    def test_an_out_of_range_metric_fails_and_names_the_field(self, tmp_path: Path) -> None:
-        """Accuracy is a fraction; 87.1 means someone published percentages."""
-        path = tmp_path / "summary.json"
-        raw = make_summary().model_dump(exclude_none=True)
-        raw["rows"][0]["accuracy"] = 87.1
-        path.write_text(json.dumps(raw), encoding="utf-8")
-
-        result = runner.invoke(app, ["validate", str(path)])
-        assert result.exit_code == 1
-        assert "rows.0.accuracy" in result.stderr
-
-    def test_a_duplicate_model_row_fails(self, tmp_path: Path) -> None:
-        """Two rows for one model render as two indistinguishable lines."""
-        path = tmp_path / "summary.json"
-        raw = make_summary().model_dump(exclude_none=True)
-        raw["rows"].append(dict(raw["rows"][0]))
-        path.write_text(json.dumps(raw), encoding="utf-8")
-
-        result = runner.invoke(app, ["validate", str(path)])
-        assert result.exit_code == 1
-        assert "duplicate model rows" in result.stderr
-
-    def test_placeholder_data_warns_but_does_not_fail(self, tmp_path: Path) -> None:
-        path = tmp_path / "summary.json"
-        raw = make_summary().model_dump(exclude_none=True)
-        raw["placeholder"] = True
-        path.write_text(json.dumps(raw), encoding="utf-8")
-
-        result = runner.invoke(app, ["validate", str(path)])
-        assert result.exit_code == 0
-        assert "placeholder" in result.stderr
-
-    def test_a_missing_field_is_named(self, tmp_path: Path) -> None:
-        path = tmp_path / "summary.json"
-        path.write_text(json.dumps({"version": "v0.1.0"}), encoding="utf-8")
-
-        result = runner.invoke(app, ["validate", str(path)])
-        assert result.exit_code == 1
-        assert "date" in result.stderr
-
-    def test_an_unexpected_key_is_rejected(self, tmp_path: Path) -> None:
-        """A typo'd key should fail at load, not silently drop a metric."""
-        path = tmp_path / "summary.json"
-        raw = make_summary().model_dump(exclude_none=True)
-        raw["rows"][0]["acccuracy"] = 0.5
-        path.write_text(json.dumps(raw), encoding="utf-8")
-
-        result = runner.invoke(app, ["validate", str(path)])
-        assert result.exit_code == 1
-        assert "acccuracy" in result.stderr
-
-
-class TestPublishCommand:
-    def test_writes_into_the_site_and_says_what_is_still_manual(self, tmp_path: Path) -> None:
-        source = tmp_path / "summary.json"
-        site = tmp_path / "site"
-        save_summary(source, make_summary(version="v0.3.0"))
-
-        result = runner.invoke(app, ["publish", str(source), "--site", str(site)])
-        assert result.exit_code == 0
-        assert (site / "src" / "data" / "releases" / "v0.3.0.json").exists()
-        assert "index.ts" in result.stdout
 
 
 class TestRunCommand:

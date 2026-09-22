@@ -10,19 +10,13 @@ from pydantic import ValidationError
 
 from llmsearchbench.storage import (
     append_record,
-    load_manifest,
     load_records,
-    load_summary,
     load_tasks,
-    publish_to_site,
     read_jsonl,
-    release_dir,
-    save_manifest,
-    save_summary,
     write_jsonl,
 )
-from llmsearchbench.types import Category, Manifest, Task
-from tests.conftest import make_record, make_row, make_summary
+from llmsearchbench.types import Category, Task
+from tests.conftest import make_record
 
 
 class TestJsonl:
@@ -148,80 +142,6 @@ class TestTasks:
         )
         with pytest.raises(ValidationError, match="category"):
             load_tasks(path)
-
-
-class TestSummary:
-    def test_round_trip(self, tmp_path: Path) -> None:
-        path = tmp_path / "summary.json"
-        summary = make_summary(make_row("a"), make_row("b"))
-        save_summary(path, summary)
-        assert load_summary(path) == summary
-
-    def test_written_json_is_indented_and_newline_terminated(self, tmp_path: Path) -> None:
-        """The site's data files are committed; noisy diffs make review harder."""
-        path = tmp_path / "summary.json"
-        save_summary(path, make_summary())
-        text = path.read_text(encoding="utf-8")
-        assert text.endswith("\n")
-        assert "\n  " in text
-
-    def test_notes_are_omitted_when_absent(self, tmp_path: Path) -> None:
-        path = tmp_path / "summary.json"
-        save_summary(path, make_summary())
-        assert "notes" not in json.loads(path.read_text(encoding="utf-8"))
-
-    def test_row_lookup_by_model(self) -> None:
-        summary = make_summary(make_row("a"), make_row("b"))
-        assert summary.row("b") is not None
-        assert summary.row("absent") is None
-
-
-class TestPublish:
-    def test_writes_into_the_site_data_directory(self, tmp_path: Path) -> None:
-        summary = make_summary(version="v0.2.0")
-        target = publish_to_site(summary, tmp_path)
-        assert target == tmp_path / "src" / "data" / "releases" / "v0.2.0.json"
-        assert load_summary(target) == summary
-
-
-class TestManifest:
-    def test_round_trip_preserves_the_pins_that_make_a_claim_checkable(
-        self, tmp_path: Path
-    ) -> None:
-        path = tmp_path / "manifest.json"
-        manifest = Manifest(
-            version="v0.1.0",
-            date="2026-09-22",
-            harness_commit="abc1234",
-            judge_model="claude-opus-5",
-            model_ids={"Claude Opus 5": "claude-opus-5"},
-            retrieval_backend="frozen-snapshot-2026-09",
-            task_count=120,
-        )
-        save_manifest(path, manifest)
-        assert load_manifest(path) == manifest
-
-    def test_optional_fields_default(self, tmp_path: Path) -> None:
-        path = tmp_path / "manifest.json"
-        path.write_text(
-            json.dumps(
-                {
-                    "version": "v0.1.0",
-                    "date": "2026-09-22",
-                    "harness_commit": "abc1234",
-                    "judge_model": "claude-opus-5",
-                }
-            ),
-            encoding="utf-8",
-        )
-        manifest = load_manifest(path)
-        assert manifest.model_ids == {}
-        assert manifest.task_count == 0
-
-
-class TestReleaseDir:
-    def test_joins_root_and_version(self, tmp_path: Path) -> None:
-        assert release_dir(tmp_path, "v0.1.0") == tmp_path / "v0.1.0"
 
 
 class TestLoadAttempts:

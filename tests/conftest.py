@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import pytest
 
-from llmsearchbench.types import Category, ResultRow, RunRecord, Summary, Task, Verdict
+from llmsearchbench.types import Category, RunRecord, Task, Verdict
 
 
 @pytest.fixture
@@ -78,27 +78,3 @@ def records() -> list[RunRecord]:
 @pytest.fixture
 def gold_sources(tasks: list[Task]) -> dict[str, list[str]]:
     return {task.id: task.gold_sources for task in tasks}
-
-
-def make_row(model: str = "test-model", **overrides: float | str) -> ResultRow:
-    values: dict[str, object] = {
-        "model": model,
-        "provider": "Test Provider",
-        "accuracy": 0.80,
-        "citation_f1": 0.70,
-        "hallucination_rate": 0.06,
-        "latency_p50": 6.0,
-        "cost_per_1k": 12.0,
-        "search_calls": 3.0,
-    }
-    values.update(overrides)
-    return ResultRow.model_validate(values)
-
-
-def make_summary(*rows: ResultRow, version: str = "v0.1.0") -> Summary:
-    return Summary(
-        version=version,
-        date="2026-09-22",
-        task_count=120,
-        rows=list(rows) or [make_row()],
-    )

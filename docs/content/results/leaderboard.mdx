@@ -2,22 +2,48 @@
 id: leaderboard
 title: Leaderboard
 sidebar_position: 1
+description: Every model run against the tool-use-correctness task.
 ---
 
-# Leaderboard
+# Tool-use correctness
 
-Sortable, filterable, and downloadable. Click any column header to re-sort; the
-✓ marks the best value in a column.
+Sortable. Click a column header to re-sort; the ✓ marks the best value.
 
-<ResultsGrid />
+<Leaderboard task="tool-use-correctness" />
 
-<MetricBar metric="accuracy" title="Accuracy" colorByProvider />
+## Reading it
 
-<MetricBar metric="citationF1" title="Citation F1" colorByProvider />
+**Decision** is the headline: how often the model made the right search-or-not
+call across all three kinds of prompt.
 
-<MetricBar
-  metric="costPer1k"
-  title="Cost per 1 000 tasks"
-  colorByProvider
-  footnote="Lower is better. List prices at run date; excludes judge tokens."
-/>
+The three bucket columns say *where* it goes wrong, and they fail differently:
+
+| Column | A low number means |
+| --- | --- |
+| `memory` | it searched facts it already knew — a confidence problem |
+| `search` | it answered from memory things it could not know — a calibration problem |
+| `no_tool` | it reached for the tool when there was no fact at all — a reflex problem |
+
+**Traps** is decision accuracy on the 29 items worded to bait a search while
+supplying everything needed. A model can score well overall and fail every one.
+
+**Calls OK** is the share of calling items whose call was well formed — right
+tool, valid arguments, non-empty query.
+
+**Cost** is a full run at the provider's listed price. It is not a quality
+signal; it is there so a small model that does nearly as well is visible.
+
+## What the numbers do not say
+
+A partial run is marked and cannot hold a best-in-column mark — its numbers are
+over fewer items and are not comparable.
+
+Answer accuracy is not on this table. Nothing is retrieved, so an answer to a
+`search` prompt has nothing to be right from; see
+[what this task cannot tell you](../tasks/tool-use-correctness/limitations.mdx).
+
+Regenerate this table from the recorded runs with:
+
+```bash
+uv run llmsearchbench publish
+```
