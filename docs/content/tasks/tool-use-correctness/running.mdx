@@ -7,7 +7,29 @@ description: Keys, commands, costs, and what to do when a run breaks.
 
 # Running it
 
-You need two keys: one for a model, one for a search tool.
+## The short version
+
+You need a model key. You do **not** need a search key to start:
+
+```bash
+llmsearchbench run --model qwen/qwen3.5-27b --decision-only
+```
+
+`--decision-only` ends each item the moment the model reaches for the tool.
+Since the decision is made *before* any result comes back, running the search
+adds nothing to what this task measures — and skipping it means no search
+subscription, one round trip instead of two, and no retry loop when results
+come back empty.
+
+| | Measured | Not measured |
+| --- | --- | --- |
+| `--decision-only` | the search-or-not call; the first call's shape | repeat calls, over-budget looping, answers |
+| `--backend null` | the above, plus multi-call behaviour | answers (nothing is retrieved) |
+| `--backend tavily` | everything | — |
+
+Only the third is publishable. Start with the first.
+
+## Keys
 
 ## 1. Keys
 
@@ -15,15 +37,15 @@ You need two keys: one for a model, one for a search tool.
 cp .env.example .env
 ```
 
-Then fill in **one model key**:
+Fill in **one model key**:
 
 | Key | Gets you |
 | --- | --- |
 | `OPENROUTER_API_KEY` | many models through one account — [openrouter.ai](https://openrouter.ai/models) |
 | `ANTHROPIC_API_KEY` | the first-party `claude-*` models |
 
-…and **one search key**. The model is given exactly one tool, backed by one of
-these:
+For anything beyond `--decision-only`, you also need **one search key**. The
+model is given exactly one tool, backed by one of these:
 
 | Backend | Where | Notes |
 | --- | --- | --- |
@@ -66,14 +88,16 @@ Useful flags:
 
 | Flag | What for |
 | --- | --- |
+| `--decision-only` | no search runs; no search key needed |
 | `--limit 20` | a short smoke run before committing to the whole set |
 | `--bucket no_tool` | run one bucket; repeatable |
 | `--effort low` | cheaper, faster; also a fair thing to measure |
 | `--no-resume` | start over instead of skipping finished items |
 | `--yes` | skip the confirmation, for scripts |
 
-Start with `--limit 20`. It costs cents and catches a bad key or a wrong
-backend in a minute rather than an hour.
+`--limit` is spread across the three buckets, so a short run still measures all
+of them. Start with `--limit 20 --decision-only`: it costs cents, needs no
+search key, and catches a bad model id in a minute rather than an hour.
 
 ### It resumes
 
