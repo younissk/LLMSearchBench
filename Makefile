@@ -89,6 +89,16 @@ attribution-check: ## Fail if the generated attribution files are stale
 	$(UV) run llmsearchbench attribution
 	git diff --exit-code -- attribution docs/content/data-sources.md data/datasets.lock.json
 
+# --- Task sets ------------------------------------------------------------
+
+.PHONY: tasks
+tasks: ## Rebuild the tool-use-correctness task set from source data
+	$(UV) run llmsearchbench tasks build
+
+.PHONY: tasks-stats
+tasks-stats: ## Describe the committed task set
+	$(UV) run llmsearchbench tasks stats
+
 # --- Benchmark ------------------------------------------------------------
 
 .PHONY: models

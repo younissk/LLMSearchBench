@@ -20,7 +20,7 @@ from typing import Annotated
 import typer
 
 from llmsearchbench import __version__
-from llmsearchbench.cli import attribution, catalogue, data, results, run
+from llmsearchbench.cli import attribution, catalogue, data, results, run, tasks
 from llmsearchbench.cli._shared import (
     EXIT_BAD_INPUT,
     EXIT_FAILED,
@@ -42,6 +42,7 @@ for group in (run.app, results.app, catalogue.app, attribution.app):
     app.registered_commands.extend(group.registered_commands)
 
 app.add_typer(data.app, name="data")
+app.add_typer(tasks.app, name="tasks")
 
 
 def _version_callback(value: bool) -> None:
