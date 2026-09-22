@@ -49,8 +49,8 @@ Details on the [metrics page](./metrics.mdx).
 | --- | ---: | --- |
 | `memory` — facts the model should know | 120 | no |
 | `search` — facts it cannot know | 120 | yes |
-| `no_tool` — nothing to look up | 71 | no |
-| **total** | **311** | |
+| `no_tool` — nothing to look up | 120 | no |
+| **total** | **360** | |
 
 Built from [RetrievalQA](../../data-sources.md) plus prompts written for this
 task. See [the three kinds of prompt](./buckets.mdx) for what each one looks
@@ -59,12 +59,12 @@ like, and [how the set was built](./building.mdx) for how they were chosen.
 ## Running it
 
 ```bash
-make data     # fetch the source datasets, about 38 MB
-make tasks    # rebuild the task set
+cp .env.example .env    # then fill in one model key and one search key
+make data               # fetch the source datasets, about 38 MB
+make tasks              # build the task set
+
+llmsearchbench run --model claude-opus-5 --backend tavily
+llmsearchbench score --model claude-opus-5
 ```
 
-:::info Not runnable yet
-The task set and the scorer are finished and tested. Actually running a model
-against it needs a provider adapter, which is not wired up yet. No results are
-published.
-:::
+Full setup, costs, and what each flag does: [Running it](./running.mdx).

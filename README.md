@@ -79,19 +79,22 @@ make help        # every target
 ## Running the benchmark
 
 ```bash
-cp .env.example .env    # add the provider keys you want to evaluate
+cp .env.example .env    # one model key, one search key
+make data               # source datasets, checksum-verified
+make tasks              # build the task set
 
-uv run llmsearchbench run --release v0.1.0 --model claude-opus-5 --out results/local
-uv run llmsearchbench diff results/local/summary.json results/v0.1.0/summary.json
+uv run llmsearchbench run --model claude-opus-5 --backend tavily --limit 20
+uv run llmsearchbench score --model claude-opus-5
 ```
 
-Provider adapters are not wired up yet — `run` fails with a pointer to
-`src/llmsearchbench/adapters.py`, which is deliberate. A benchmark that quietly
-substitutes a different model produces numbers nobody can place.
+`run` prints a cost estimate and asks before spending anything, writes each
+attempt as it lands, and resumes from where it stopped if interrupted. Scoring
+is free and offline — rescore without paying for the run again.
 
-Everything that does not need a network already works and is tested: scoring,
-aggregation, the artefact formats, reproduction diffing, and the run loop
-itself (driven by fakes in `tests/test_runner.py`).
+Models live in `src/llmsearchbench/providers/registry.py`, each with its price;
+a model with no price cannot be published. Search goes through Tavily, Brave,
+or Serper — every model in a release must use the same one, and the run records
+which. Full setup and costs: [Running it](docs/content/tasks/tool-use-correctness/running.mdx).
 
 ## Publishing a release
 

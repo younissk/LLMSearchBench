@@ -184,7 +184,7 @@ RetrievalQA has nothing usable here. Every one of its 2,785 records is a
 factual question with an answer. There are no poems, no sums, no "summarise
 this".
 
-So these 71 were written for the task, twelve per category, in six categories:
+So these 120 were written for the task, twenty per category, in six categories:
 
 | Category | Example |
 | --- | --- |
@@ -201,7 +201,8 @@ current events.
 One was thrown out on review. It asked about an invented function while
 claiming it was part of PyTorch — and checking whether a real library has a
 given function *is* a fair reason to search. It is kept, with the reason, in
-`tasks/generated/REJECTED.jsonl`.
+`tasks/generated/REJECTED.jsonl`, and the rule it broke is now stated up front
+to whoever writes the next batch.
 
 ## The whole pipeline
 
@@ -216,10 +217,10 @@ flowchart LR
   E --> F["952 + 530 left"]
   F --> G["sample one per<br/>source in turn"]
   G --> H["120 + 120"]
-  I["71 written<br/>by hand"] --> J["review"]
+  I["121 written<br/>by hand"] --> J["review"]
   J -- "1 rejected" --> X
-  J --> K["71 no_tool"]
-  H --> L["311 items"]
+  J --> K["120 no_tool"]
+  H --> L["360 items"]
   K --> L
 ```
 

@@ -24,6 +24,7 @@ const sidebars: SidebarsConfig = {
             'tasks/tool-use-correctness/metrics',
             'tasks/tool-use-correctness/building',
             'tasks/tool-use-correctness/limitations',
+            'tasks/tool-use-correctness/running',
           ],
         },
       ],

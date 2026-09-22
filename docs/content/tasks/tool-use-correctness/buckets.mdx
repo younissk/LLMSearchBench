@@ -90,7 +90,7 @@ for a tool out of habit.
 
 ## Trick questions
 
-17 of the 71 `no_tool` items are written to bait a search. They sound like
+29 of the 120 `no_tool` items are written to bait a search. They sound like
 lookups. They are not.
 
 ```text
@@ -122,13 +122,13 @@ still fall for every one of these.
 
 <BarChart
   title="Task set composition"
-  subtitle="311 items across three buckets"
+  subtitle="360 items, evenly split"
   format={(v) => String(Math.round(v))}
   footnote="Only the search bucket expects a tool call."
   data={[
     {label: 'memory', value: 120, group: 'expect no search'},
     {label: 'search', value: 120, group: 'expect search'},
-    {label: 'no_tool', value: 71, group: 'expect no search'},
+    {label: 'no_tool', value: 120, group: 'expect no search'},
   ]}
 />
 
@@ -136,7 +136,7 @@ still fall for every one of these.
 | --- | ---: | ---: | --- |
 | `memory` | 120 | 0 | RetrievalQA |
 | `search` | 120 | 0 | RetrievalQA |
-| `no_tool` | 71 | 17 | written for this task |
+| `no_tool` | 120 | 29 | written for this task |
 
-Roughly two thirds of the set expects **no** search. That is deliberate. Over-
-searching is the easier failure to hide, so the set is built to catch it.
+Two thirds of the set expects **no** search. That is deliberate. Over-searching
+is the easier failure to hide, so the set is built to catch it.

@@ -99,23 +99,23 @@ becomes a quiz.
 
 ## A worked example
 
-:::warning Invented numbers
+:::warning[Invented numbers]
 Nothing below is a real result. The numbers exist to show the arithmetic.
 :::
 
-Say a model runs the full 311 items and behaves like this:
+Say a model runs the full 360 items and behaves like this:
 
 | Bucket | Items | Searched | Correct decision |
 | --- | ---: | ---: | ---: |
 | `memory` | 120 | 30 | 90 |
 | `search` | 120 | 108 | 108 |
-| `no_tool` | 71 | 7 | 64 |
+| `no_tool` | 120 | 12 | 108 |
 
 Then:
 
-- **Decision accuracy** = $(90 + 108 + 64) / 311 = 262/311 = 84.2\%$
+- **Decision accuracy** = $(90 + 108 + 108) / 360 = 306/360 = 85.0\%$
 - **Over-search on `memory`** = $30/120 = 25.0\%$
-- **Over-search on `no_tool`** = $7/71 = 9.9\%$
+- **Over-search on `no_tool`** = $12/120 = 10.0\%$
 - **Under-search** = $(120 - 108)/120 = 10.0\%$
 
 Read that as: the model is reasonable overall, but it does not trust its own
@@ -123,13 +123,12 @@ knowledge. One in four questions it could have answered outright, it looked up
 anyway. The reflex problem is much smaller — it rarely searches when there is
 no fact at all.
 
-Now suppose it made 145 calls across 152 calling items, and 12 of those items
-had a problem:
+Now suppose it called the tool on 150 items, and 12 of those had a problem:
 
-- **Well-formed rate** = $(152 - 12)/152 = 92.1\%$
+- **Well-formed rate** = $(150 - 12)/150 = 92.0\%$
 
 The three scores together say: *decent judgement, poor self-confidence, mostly
-clean calls.* A single blended score would have said "84%" and told you nothing
+clean calls.* A single blended score would have said "85%" and told you nothing
 about what to fix.
 
 ## How one item is scored

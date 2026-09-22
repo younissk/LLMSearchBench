@@ -1,0 +1,148 @@
+---
+id: running
+title: Running it
+sidebar_position: 6
+description: Keys, commands, costs, and what to do when a run breaks.
+---
+
+# Running it
+
+You need two keys: one for a model, one for a search tool.
+
+## 1. Keys
+
+```bash
+cp .env.example .env
+```
+
+Then fill in **one model key**:
+
+| Key | Gets you |
+| --- | --- |
+| `OPENROUTER_API_KEY` | many models through one account — [openrouter.ai](https://openrouter.ai/models) |
+| `ANTHROPIC_API_KEY` | the first-party `claude-*` models |
+
+…and **one search key**. The model is given exactly one tool, backed by one of
+these:
+
+| Backend | Where | Notes |
+| --- | --- | --- |
+| `tavily` | [app.tavily.com](https://app.tavily.com) | generous free tier, cleanest snippets |
+| `brave` | [brave.com/search/api](https://brave.com/search/api) | free tier, independent index |
+| `serper` | [serper.dev](https://serper.dev) | Google results, cheapest per call |
+
+`.env` is gitignored. Anything already exported in your shell wins over the
+file, so `ANTHROPIC_API_KEY=... llmsearchbench run` still works.
+
+## 2. Build the task set
+
+```bash
+make data     # source datasets, about 38 MB, checksum-verified
+make tasks    # build the 360 items
+```
+
+## 3. Run
+
+```bash
+llmsearchbench run --model claude-opus-5 --backend tavily
+```
+
+It prints what it is about to do and roughly what it will cost, then asks
+before spending anything:
+
+```text
+360 item(s) · claude-opus-5 (Anthropic) · tavily · effort high · roughly $3.32
+Run it? [Y/n]
+```
+
+Useful flags:
+
+| Flag | What for |
+| --- | --- |
+| `--limit 20` | a short smoke run before committing to the whole set |
+| `--bucket no_tool` | run one bucket; repeatable |
+| `--effort low` | cheaper, faster; also a fair thing to measure |
+| `--no-resume` | start over instead of skipping finished items |
+| `--yes` | skip the confirmation, for scripts |
+
+Start with `--limit 20`. It costs cents and catches a bad key or a wrong
+backend in a minute rather than an hour.
+
+### It resumes
+
+Each attempt is written to `results/local/<model>-attempts.jsonl` the moment it
+lands. If the run dies — rate limit, dropped connection, laptop closed — rerun
+the same command and it picks up where it stopped. Runs cost real money; losing
+them to a timeout would be the expensive kind of bug.
+
+## 4. Score
+
+```bash
+llmsearchbench score --model claude-opus-5
+```
+
+```text
+1. Decision
+┏━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┓
+┃ Bucket  ┃ Items ┃ Right call ┃
+┡━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━┩
+│ memory  │   120 │      75.0% │
+│ search  │   120 │      90.0% │
+│ no_tool │   120 │      90.0% │
+│ overall │   360 │      85.0% │
+└─────────┴───────┴────────────┘
+```
+
+*(Illustrative numbers — no run has been published yet.)*
+
+Scoring is free and offline. It reads the attempts file, so you can rescore
+after changing the scorer without paying for the run again.
+
+## What a run costs
+
+Roughly, for all 360 items:
+
+| Model | Estimate |
+| --- | --- |
+| `claude-haiku-4-5` | under $1 |
+| `claude-sonnet-5` | about $1.50 |
+| `claude-opus-5` | about $3.50 |
+
+Plus search calls — a few hundred at most, which is inside every backend's free
+tier. The exact figure depends on how often the model searches, which is the
+thing being measured.
+
+## Adding a model
+
+Models are catalogued in `src/llmsearchbench/providers/registry.py`, with their
+prices:
+
+```python
+ModelSpec(
+    id="openai/gpt-5",              # exactly as the provider names it
+    label="GPT-5 (OpenRouter)",     # what the results table shows
+    provider="openrouter",
+    price_in_per_mtok=0.00,         # from the provider's pricing page
+    price_out_per_mtok=0.00,
+    priced_on="2026-09-22",         # when you last checked
+)
+```
+
+The price is not optional. It feeds the published cost column, and a release
+checks that no model would publish a cost of zero.
+
+:::note[Routing changes results]
+A model called through OpenRouter is not strictly the same as the same model
+called first-party — tool-call formatting and default sampling can differ. The
+route is recorded with the run. Compare like with like.
+:::
+
+## When it breaks
+
+| Message | Fix |
+| --- | --- |
+| `ANTHROPIC_API_KEY is not set` | fill it in `.env`, or export it |
+| `TAVILY_API_KEY is not set` | same, or pick a different `--backend` |
+| `unknown model 'x'` | check `llmsearchbench models` |
+| `no task set at …` | run `make tasks` |
+| `search backend failed: …` | the run stopped; rerun to resume from where it got to |
