@@ -11,6 +11,12 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Tasks',
+      collapsed: false,
+      items: ['tasks/tool-use-correctness'],
+    },
+    {
+      type: 'category',
       label: 'Results',
       collapsed: false,
       items: ['results/leaderboard', 'results/analysis'],
