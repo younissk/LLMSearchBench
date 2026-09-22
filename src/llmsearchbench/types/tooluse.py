@@ -116,9 +116,7 @@ class ToolUseAttempt(BenchModel):
     cached_tokens: int = Field(default=0, ge=0)
 
     latency_s: float = Field(default=0.0, ge=0)
-    #: API round trips. One means it answered without searching.
-    turns: int = Field(default=0, ge=0)
-    #: The provider's last stop reason, kept for debugging odd runs.
+    #: The provider's stop reason, kept for debugging odd runs.
     stop_reason: str = ""
     #: Set when the item failed outright; the attempt is recorded either way.
     error: str = ""

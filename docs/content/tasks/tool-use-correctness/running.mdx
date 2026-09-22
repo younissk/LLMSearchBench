@@ -70,6 +70,7 @@ Useful flags:
 
 | Flag | What for |
 | --- | --- |
+| `--concurrency 12` | parallel requests; default 8, `1` runs serially |
 | `--limit 20` | a short smoke run before committing to the whole set |
 | `--bucket no_tool` | run one bucket; repeatable |
 | `--effort low` | cheaper, faster; also a fair thing to measure |
@@ -79,6 +80,24 @@ Useful flags:
 `--limit` is spread across the three buckets, so a short run still measures all
 of them. Start with `--limit 20`: it costs cents and catches a bad model id in
 a minute rather than an hour.
+
+### Speed
+
+Items are independent, so they run in parallel — eight at a time by default.
+It matters more than it looks: the three buckets take very different amounts of
+work, and the slow one is a third of the set.
+
+| Bucket | Mean output | Mean latency |
+| --- | ---: | ---: |
+| `memory` | 160 tokens | 3.4s |
+| `search` | 132 tokens | 3.3s |
+| `no_tool` | 436 tokens | 9.4s |
+
+A `memory` item is one sentence, a `search` item stops at the tool call, but a
+`no_tool` item is a real written answer. Serially the last 108 items of a run
+took about 36 minutes; at `--concurrency 12` they took 80 seconds.
+
+Raise it if your provider allows; drop to `1` if you are being rate limited.
 
 ### It resumes
 

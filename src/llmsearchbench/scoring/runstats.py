@@ -67,14 +67,6 @@ class TimeStats(BenchModel):
     median_s: float = Field(ge=0)
     p95_s: float = Field(ge=0)
     max_s: float = Field(ge=0)
-    #: Mean seconds for items where the model searched, and where it did not.
-    mean_s_searched: float = Field(default=0, ge=0)
-    mean_s_direct: float = Field(default=0, ge=0)
-
-    @property
-    def search_overhead_s(self) -> float:
-        """What reaching for the tool costs in time."""
-        return self.mean_s_searched - self.mean_s_direct
 
 
 class CostStats(BenchModel):
@@ -125,21 +117,12 @@ class RunStats(BenchModel):
     cost: CostStats
     buckets: list[BucketStats] = Field(default_factory=list)
 
-    turns_total: int = Field(ge=0)
-    turns_mean: float = Field(ge=0)
     search_calls_total: int = Field(ge=0)
     search_calls_mean: float = Field(ge=0)
-    #: Items where the model searched more than once.
-    items_searching_repeatedly: int = Field(default=0, ge=0)
     #: Items where the provider reported any thinking at all.
     items_with_reasoning: int = Field(default=0, ge=0)
 
     answer_chars_mean: float = Field(default=0, ge=0)
-
-    #: True when the run stopped at the first tool call. Several figures then
-    #: mean something different: searched episodes end early by construction,
-    #: so comparing their latency to a direct answer's is not informative.
-    decision_only: bool = False
 
     @property
     def items_per_minute(self) -> float:
@@ -170,7 +153,6 @@ def compute(
     latencies = [a.latency_s for a in scored]
     outputs = [a.tokens_out for a in scored]
     searched = [a for a in scored if a.searched]
-    direct = [a for a in scored if not a.searched]
     costs = {a.task_id: _cost(a, price_in, price_out) for a in scored}
     total_usd = sum(costs.values())
 
@@ -201,8 +183,6 @@ def compute(
         median_s=median(latencies) if latencies else 0.0,
         p95_s=percentile(latencies, 0.95),
         max_s=max(latencies) if latencies else 0.0,
-        mean_s_searched=_mean([a.latency_s for a in searched]),
-        mean_s_direct=_mean([a.latency_s for a in direct]),
     )
 
     cost = CostStats(
@@ -241,12 +221,8 @@ def compute(
         time=time_stats,
         cost=cost,
         buckets=buckets,
-        turns_total=sum(a.turns for a in scored),
-        turns_mean=_mean([a.turns for a in scored]),
         search_calls_total=sum(len(a.calls) for a in scored),
         search_calls_mean=_mean([len(a.calls) for a in scored]),
-        items_searching_repeatedly=sum(1 for a in scored if len(a.calls) > 1),
         items_with_reasoning=sum(1 for a in scored if a.reasoning_tokens > 0),
         answer_chars_mean=_mean([a.answer_chars for a in scored]),
-        decision_only=any(a.stop_reason == "stopped_at_first_call" for a in scored),
     )

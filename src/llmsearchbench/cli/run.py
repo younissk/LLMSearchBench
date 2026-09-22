@@ -19,7 +19,7 @@ from rich.table import Table
 from llmsearchbench.cli._shared import EXIT_BAD_INPUT, EXIT_NOT_WIRED
 from llmsearchbench.harness import NotConfiguredError, build_adapter
 from llmsearchbench.harness.openrouter import OpenRouterError
-from llmsearchbench.harness.tooluse import completed_task_ids, run_tasks
+from llmsearchbench.harness.tooluse import DEFAULT_CONCURRENCY, completed_task_ids, run_tasks
 from llmsearchbench.paths import RESULTS, TASKS
 from llmsearchbench.providers import UnknownModelError, get_model, provider_label
 from llmsearchbench.scoring import runstats
@@ -81,6 +81,9 @@ def run(
     task_set: Annotated[Path, typer.Option(help="The task set.")] = TASKS / f"{TASK_SET}.jsonl",
     out: Annotated[Path, typer.Option(help="Where to write attempts.")] = RESULTS / "local",
     effort: Annotated[str, typer.Option(help="low | medium | high | xhigh | max.")] = "high",
+    concurrency: Annotated[
+        int, typer.Option(help="Parallel requests. 1 runs serially.")
+    ] = DEFAULT_CONCURRENCY,
     limit: Annotated[int | None, typer.Option(help="Run only the first N items.")] = None,
     bucket: Annotated[
         list[str] | None, typer.Option(help="Restrict to a bucket; repeatable.")
@@ -121,7 +124,8 @@ def run(
     estimate = _estimate(tasks, model)
     console.print(
         f"{len(tasks)} item(s) · {model} ({provider_label(model)}) · "
-        f"effort {effort} · roughly [metric]${estimate:.2f}[/metric]"
+        f"effort {effort} · {concurrency} at a time · "
+        f"roughly [metric]${estimate:.2f}[/metric]"
     )
     if not yes and not typer.confirm("Run it?", default=True):
         raise typer.Exit(0)
@@ -144,12 +148,25 @@ def run(
             progress.update(bar, advance=1, description=f"{model}  {searched} searched")
 
         try:
-            run_tasks(tasks, model, adapter, out_path=attempts_path, on_item=on_item)
+            results = run_tasks(
+                tasks,
+                model,
+                adapter,
+                out_path=attempts_path,
+                on_item=on_item,
+                concurrency=concurrency,
+            )
         except OpenRouterError as error:
             progress.stop()
             fail(str(error))
             warn(f"partial results are in {attempts_path}; rerun to resume")
             raise typer.Exit(EXIT_NOT_WIRED) from None
+
+    failures = [attempt for attempt in results if attempt.failed]
+    if failures:
+        warn(f"{len(failures)} item(s) failed; rerun to retry just those")
+        for attempt in failures[:3]:
+            console.print(f"  [error]{attempt.task_id}[/error]: {attempt.error}")
 
     console.print(f"[ok]wrote[/ok] {attempts_path}")
     console.print(f"[muted]next: llmsearchbench score --model {model}[/muted]")
@@ -315,17 +332,6 @@ def _render_stats(stats: runstats.RunStats) -> None:
     clock.add_row("total", f"{stats.time.total_s:,.1f}s")
     clock.add_row("mean / median", f"{stats.time.mean_s:.1f}s / {stats.time.median_s:.1f}s")
     clock.add_row("p95 / max", f"{stats.time.p95_s:.1f}s / {stats.time.max_s:.1f}s")
-    if stats.decision_only:
-        clock.add_row(
-            "[muted]searched vs direct[/muted]",
-            "[muted]not comparable in decision-only mode[/muted]",
-        )
-    else:
-        clock.add_row(
-            "searched vs direct",
-            f"{stats.time.mean_s_searched:.1f}s vs {stats.time.mean_s_direct:.1f}s "
-            f"({stats.time.search_overhead_s:+.1f}s)",
-        )
     clock.add_row("throughput", f"{stats.items_per_minute:.1f} items/min")
     console.print(clock)
 
@@ -350,9 +356,7 @@ def _render_stats(stats: runstats.RunStats) -> None:
     console.print(effort)
 
     console.print(
-        f"[muted]{stats.turns_total} API turns ({stats.turns_mean:.2f}/item) · "
-        f"{stats.search_calls_total} search calls · "
-        f"{stats.items_searching_repeatedly} item(s) searched more than once · "
+        f"[muted]{stats.search_calls_total} search calls · "
         f"answers averaged {stats.answer_chars_mean:.0f} characters"
         + (f" · {stats.failed_items} failed" if stats.failed_items else "")
         + "[/muted]"

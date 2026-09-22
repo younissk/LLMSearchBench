@@ -144,21 +144,84 @@ class TestRunTasks:
         run_tasks([task("a"), task("b"), task("c")], "claude-opus-5", adapter, out_path=out)
         assert completed_task_ids(out) == {"a", "b", "c"}
 
-    def test_an_interrupted_run_keeps_what_it_paid_for(self, tmp_path: Path) -> None:
+    def test_a_ctrl_c_keeps_what_it_paid_for(self, tmp_path: Path) -> None:
+        """Provider errors are recorded, but a real interrupt still stops the run
+        — and everything already written survives it."""
         out = tmp_path / "attempts.jsonl"
 
-        class Exploding(FakeMessages):
+        class Interrupted(FakeMessages):
             def create(self, **request: Any) -> Response:
                 if len(self.requests) >= 1:
-                    raise ConnectionError("the provider went away")
+                    raise KeyboardInterrupt
                 return super().create(**request)
 
         adapter = adapter_for([])
-        adapter._client = Block(messages=Exploding([answered()]))  # type: ignore[attr-defined]
+        adapter._client = Block(messages=Interrupted([answered()]))  # type: ignore[attr-defined]
 
-        with pytest.raises(ConnectionError):
-            run_tasks([task("a"), task("b")], "claude-opus-5", adapter, out_path=out)
+        with pytest.raises(KeyboardInterrupt):
+            run_tasks(
+                [task("a"), task("b")], "claude-opus-5", adapter, out_path=out, concurrency=1
+            )
+        assert completed_task_ids(out) == {"a"}
+
+    def test_a_provider_error_is_recorded_rather_than_raised(self, tmp_path: Path) -> None:
+        out = tmp_path / "attempts.jsonl"
+
+        class Broken(FakeMessages):
+            def create(self, **request: Any) -> Response:
+                raise ConnectionError("the provider went away")
+
+        adapter = adapter_for([])
+        adapter._client = Block(messages=Broken([]))  # type: ignore[attr-defined]
+
+        attempts = run_tasks([task("a")], "m", adapter, out_path=out, concurrency=1)
+        assert attempts[0].failed
         assert completed_task_ids(out) == {"a"}
 
     def test_completed_ids_is_empty_when_nothing_has_run(self, tmp_path: Path) -> None:
         assert completed_task_ids(tmp_path / "absent.jsonl") == set()
+
+
+class TestConcurrency:
+    def test_every_item_is_recorded(self, tmp_path: Path) -> None:
+        out = tmp_path / "attempts.jsonl"
+        adapter = adapter_for([answered() for _ in range(20)])
+        tasks = [task(f"t{i}") for i in range(20)]
+        run_tasks(tasks, "claude-opus-5", adapter, out_path=out, concurrency=4)
+        assert completed_task_ids(out) == {t.id for t in tasks}
+
+    def test_serial_mode_still_works(self, tmp_path: Path) -> None:
+        out = tmp_path / "attempts.jsonl"
+        adapter = adapter_for([answered(), answered()])
+        run_tasks([task("a"), task("b")], "claude-opus-5", adapter, out_path=out, concurrency=1)
+        assert completed_task_ids(out) == {"a", "b"}
+
+    def test_one_failure_does_not_lose_the_rest(self, tmp_path: Path) -> None:
+        """A provider hiccup 300 items in should not throw away the run."""
+        out = tmp_path / "attempts.jsonl"
+
+        class SometimesBroken(FakeMessages):
+            def create(self, **request: Any) -> Response:
+                prompt = request["messages"][0]["content"]
+                if "boom" in prompt:
+                    raise ConnectionError("the provider went away")
+                return Response("end_turn", [Block(type="text", text="fine")])
+
+        adapter = adapter_for([])
+        adapter._client = Block(messages=SometimesBroken([]))  # type: ignore[attr-defined]
+
+        good = task("good")
+        bad = ToolUseTask(
+            id="bad",
+            bucket=Bucket.MEMORY,
+            prompt="boom",
+            gold_answer=["x"],
+            source="test",
+            subcategory="test",
+        )
+        attempts = run_tasks([good, bad], "m", adapter, out_path=out, concurrency=2)
+        by_id = {a.task_id: a for a in attempts}
+        assert by_id["good"].answer == "fine"
+        assert by_id["bad"].failed
+        assert "ConnectionError" in by_id["bad"].error
+        assert completed_task_ids(out) == {"good", "bad"}

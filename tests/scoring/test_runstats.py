@@ -31,7 +31,6 @@ def attempt(
     reasoning: int = 0,
     latency: float = 2.0,
     calls: int = 0,
-    turns: int = 1,
     answer: str = "an answer",
 ) -> ToolUseAttempt:
     return ToolUseAttempt(
@@ -43,7 +42,6 @@ def attempt(
         tokens_out=tokens_out,
         reasoning_tokens=reasoning,
         latency_s=latency,
-        turns=turns,
     )
 
 
@@ -126,14 +124,6 @@ class TestTokens:
 
 
 class TestTime:
-    def test_search_overhead_is_the_gap_between_searched_and_direct(self) -> None:
-        tasks = [task("a"), task("b")]
-        attempts = [attempt("a", latency=10.0, calls=1), attempt("b", latency=4.0)]
-        stats = compute(PRICED_MODEL, tasks, attempts)
-        assert stats.time.mean_s_searched == pytest.approx(10.0)
-        assert stats.time.mean_s_direct == pytest.approx(4.0)
-        assert stats.time.search_overhead_s == pytest.approx(6.0)
-
     def test_p95_and_max_catch_the_stall_a_mean_hides(self) -> None:
         tasks = [task(str(i)) for i in range(10)]
         attempts = [attempt(str(i), latency=1.0) for i in range(9)]
@@ -165,14 +155,6 @@ class TestBuckets:
 
 
 class TestCounters:
-    def test_turns_and_calls(self) -> None:
-        tasks = [task("a"), task("b")]
-        attempts = [attempt("a", calls=3, turns=2), attempt("b", turns=1)]
-        stats = compute(PRICED_MODEL, tasks, attempts)
-        assert stats.search_calls_total == 3
-        assert stats.turns_total == 3
-        assert stats.items_searching_repeatedly == 1
-
     def test_attempts_without_a_matching_task_are_ignored(self) -> None:
         """A stale attempts file should not inflate the totals."""
         stats = compute(PRICED_MODEL, [task("a")], [attempt("a"), attempt("ghost")])
@@ -184,15 +166,8 @@ class TestCounters:
         assert stats.failed_items == 1
 
 
-class TestDecisionOnlyRuns:
-    def test_a_decision_only_run_is_flagged(self) -> None:
-        """Several figures mean something different when episodes end early."""
-        stopped = attempt("a", calls=1).model_copy(
-            update={"stop_reason": "stopped_at_first_call"}
-        )
-        stats = compute(PRICED_MODEL, [task("a")], [stopped])
-        assert stats.decision_only
-
-    def test_a_normal_run_is_not(self) -> None:
-        finished = attempt("a").model_copy(update={"stop_reason": "end_turn"})
-        assert not compute(PRICED_MODEL, [task("a")], [finished]).decision_only
+class TestCallCounts:
+    def test_search_calls_are_totalled(self) -> None:
+        tasks = [task("a"), task("b")]
+        attempts = [attempt("a", calls=1), attempt("b")]
+        assert compute(PRICED_MODEL, tasks, attempts).search_calls_total == 1
