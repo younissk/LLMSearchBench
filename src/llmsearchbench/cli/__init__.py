@@ -20,7 +20,15 @@ from typing import Annotated
 import typer
 
 from llmsearchbench import __version__
-from llmsearchbench.cli import attribution, catalogue, data, results, run, tasks
+from llmsearchbench.cli import (
+    attribution,
+    catalogue,
+    data,
+    leaderboard,
+    results,
+    run,
+    tasks,
+)
 from llmsearchbench.cli._shared import (
     EXIT_BAD_INPUT,
     EXIT_FAILED,
@@ -39,7 +47,7 @@ app = typer.Typer(
     add_completion=False,
 )
 
-for group in (run.app, results.app, catalogue.app, attribution.app):
+for group in (run.app, results.app, catalogue.app, attribution.app, leaderboard.app):
     app.registered_commands.extend(group.registered_commands)
 
 app.add_typer(data.app, name="data")

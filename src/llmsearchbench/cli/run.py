@@ -24,7 +24,7 @@ from llmsearchbench.paths import RESULTS, TASKS
 from llmsearchbench.providers import UnknownModelError, get_model, provider_label
 from llmsearchbench.scoring import runstats
 from llmsearchbench.scoring.tooluse import score
-from llmsearchbench.storage import read_jsonl
+from llmsearchbench.storage import load_attempts, read_jsonl
 from llmsearchbench.types.tooluse import Bucket, ToolUseAttempt, ToolUseTask
 from llmsearchbench.ui import console, fail, warn
 
@@ -186,7 +186,7 @@ def score_command(
         raise typer.Exit(EXIT_BAD_INPUT)
 
     tasks = [ToolUseTask.model_validate(raw) for raw in read_jsonl(task_set)]
-    recorded = [ToolUseAttempt.model_validate(raw) for raw in read_jsonl(attempts_path)]
+    recorded = load_attempts(attempts_path)
     answered = {attempt.task_id for attempt in recorded}
     scored_tasks = [task for task in tasks if task.id in answered]
 
