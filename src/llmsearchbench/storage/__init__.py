@@ -2,10 +2,12 @@
 
 from llmsearchbench.storage.artefacts import (
     INDENT,
+    LEGACY_ATTEMPT_FIELDS,
     MANIFEST_FILENAME,
     RAW_FILENAME,
     SUMMARY_FILENAME,
     append_record,
+    load_attempts,
     load_manifest,
     load_records,
     load_summary,
@@ -20,11 +22,13 @@ from llmsearchbench.storage.jsonl import append_line, read_jsonl, write_jsonl
 
 __all__ = [
     "INDENT",
+    "LEGACY_ATTEMPT_FIELDS",
     "MANIFEST_FILENAME",
     "RAW_FILENAME",
     "SUMMARY_FILENAME",
     "append_line",
     "append_record",
+    "load_attempts",
     "load_manifest",
     "load_records",
     "load_summary",

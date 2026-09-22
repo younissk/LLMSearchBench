@@ -222,3 +222,39 @@ class TestManifest:
 class TestReleaseDir:
     def test_joins_root_and_version(self, tmp_path: Path) -> None:
         assert release_dir(tmp_path, "v0.1.0") == tmp_path / "v0.1.0"
+
+
+class TestLoadAttempts:
+    def test_reads_current_attempts(self, tmp_path: Path) -> None:
+        from llmsearchbench.storage import load_attempts
+        from llmsearchbench.types.tooluse import ToolUseAttempt
+
+        path = tmp_path / "attempts.jsonl"
+        attempt = ToolUseAttempt(task_id="t1", model="m", answer="hi")
+        path.write_text(attempt.model_dump_json() + "\n", encoding="utf-8")
+        assert load_attempts(path) == [attempt]
+
+    def test_tolerates_a_field_that_has_since_been_removed(self, tmp_path: Path) -> None:
+        """Attempts files cost real money; removing a field must not orphan them."""
+        from llmsearchbench.storage import load_attempts
+
+        path = tmp_path / "attempts.jsonl"
+        path.write_text(
+            json.dumps({"task_id": "t1", "model": "m", "answer": "hi", "turns": 2}) + "\n",
+            encoding="utf-8",
+        )
+        assert load_attempts(path)[0].task_id == "t1"
+
+    def test_a_genuinely_unknown_field_still_fails(self, tmp_path: Path) -> None:
+        """The legacy list is explicit, so a typo is still caught."""
+        from pydantic import ValidationError
+
+        from llmsearchbench.storage import load_attempts
+
+        path = tmp_path / "attempts.jsonl"
+        path.write_text(
+            json.dumps({"task_id": "t1", "model": "m", "tokens_ni": 5}) + "\n",
+            encoding="utf-8",
+        )
+        with pytest.raises(ValidationError, match="tokens_ni"):
+            load_attempts(path)

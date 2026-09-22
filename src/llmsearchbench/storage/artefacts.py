@@ -19,6 +19,7 @@ from pathlib import Path
 
 from llmsearchbench.storage.jsonl import append_line, read_jsonl, write_jsonl
 from llmsearchbench.types import Manifest, RunRecord, Summary, Task
+from llmsearchbench.types.tooluse import ToolUseAttempt
 
 RAW_FILENAME = "raw.jsonl"
 SUMMARY_FILENAME = "summary.json"
@@ -69,6 +70,25 @@ def load_manifest(path: Path) -> Manifest:
 def save_manifest(path: Path, manifest: Manifest) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(manifest.model_dump_json(indent=INDENT) + "\n", encoding="utf-8")
+
+
+#: Fields that used to be recorded and no longer are. Attempts files are
+#: expensive to produce, so a removed field must not make an old run
+#: unreadable — but the models stay `extra="forbid"`, so a typo in a *current*
+#: field is still caught. Removing a field means adding it here.
+LEGACY_ATTEMPT_FIELDS = frozenset({"turns"})
+
+
+def load_attempts(path: Path) -> list[ToolUseAttempt]:
+    """Load an attempts file, tolerating fields that have since been removed."""
+    attempts = []
+    for raw in read_jsonl(path):
+        attempts.append(
+            ToolUseAttempt.model_validate(
+                {k: v for k, v in raw.items() if k not in LEGACY_ATTEMPT_FIELDS}
+            )
+        )
+    return attempts
 
 
 def release_dir(root: Path, version: str) -> Path:
