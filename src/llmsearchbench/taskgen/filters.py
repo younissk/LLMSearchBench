@@ -6,7 +6,7 @@ report say *why* the pool shrank, rather than only that it did — see the
 statistics table in the task's documentation page.
 
 Every rule here exists because of something found in the source data. The
-analysis behind them is in `docs/content/tasks/tool-use-correctness.md`.
+analysis behind them is in `docs/content/tasks/tool-use-correctness/building.mdx`.
 """
 
 from __future__ import annotations

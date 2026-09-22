@@ -1,0 +1,70 @@
+---
+id: index
+title: Overview
+sidebar_position: 1
+description: Does the model know when to search, and when to leave the search tool alone?
+---
+
+# Tool-use correctness
+
+Give a model a search tool. Then ask it three kinds of question.
+
+```text
+1. What is the capital of Kerman Province?
+2. A Rightmove analysis says an "unlucky" number 13 on the front door
+   knocks how much off a property's value?
+3. Write a haiku about a robot discovering kindness for the first time.
+```
+
+A good model searches for **only the second one**.
+
+It already knows the first. There is nothing to look up for the third. This
+task measures how often a model gets that choice right — and, when it does
+search, whether it calls the tool properly.
+
+## Why this matters
+
+Two ways to fail, and both look fine from the outside:
+
+- **Searches too much.** Every answer is slow and costs more than it should.
+  The model knew the answer and did not trust itself.
+- **Searches too little.** The model confidently makes things up about
+  anything that happened after its training cutoff.
+
+Neither shows up as a bad-looking answer. You have to count the tool calls.
+
+## What gets measured
+
+Three things, kept separate:
+
+1. **Did it make the right call?** Search or no search.
+2. **Was the call well formed?** Valid arguments, a real query, no repeats.
+3. **Was the answer right?** Reported last, on purpose.
+
+Details on the [metrics page](./metrics.mdx).
+
+## The task set
+
+| | Items | Should it search? |
+| --- | ---: | --- |
+| `memory` — facts the model should know | 120 | no |
+| `search` — facts it cannot know | 120 | yes |
+| `no_tool` — nothing to look up | 71 | no |
+| **total** | **311** | |
+
+Built from [RetrievalQA](../../data-sources.md) plus prompts written for this
+task. See [the three kinds of prompt](./buckets.mdx) for what each one looks
+like, and [how the set was built](./building.mdx) for how they were chosen.
+
+## Running it
+
+```bash
+make data     # fetch the source datasets, about 38 MB
+make tasks    # rebuild the task set
+```
+
+:::info Not runnable yet
+The task set and the scorer are finished and tested. Actually running a model
+against it needs a provider adapter, which is not wired up yet. No results are
+published.
+:::

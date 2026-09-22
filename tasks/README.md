@@ -32,7 +32,7 @@ make tasks-stats   # describe what is committed
 The build is seeded, so a rebuild reproduces the committed file exactly — a test
 asserts it. `tool-use-correctness.report.json` records how many candidates each
 admission rule rejected; the reasoning behind the rules is on the
-[task's documentation page](../docs/content/tasks/tool-use-correctness.md).
+[task documentation](../docs/content/tasks/tool-use-correctness/).
 
 `generated/` holds the `no_tool` prompts, which have no upstream source and were
 written for this benchmark. Items cut during review stay in `REJECTED.jsonl`

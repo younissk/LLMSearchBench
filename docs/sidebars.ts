@@ -13,7 +13,20 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Tasks',
       collapsed: false,
-      items: ['tasks/tool-use-correctness'],
+      items: [
+        {
+          type: 'category',
+          label: 'Tool-use correctness',
+          collapsed: false,
+          link: {type: 'doc', id: 'tasks/tool-use-correctness/index'},
+          items: [
+            'tasks/tool-use-correctness/buckets',
+            'tasks/tool-use-correctness/metrics',
+            'tasks/tool-use-correctness/building',
+            'tasks/tool-use-correctness/limitations',
+          ],
+        },
+      ],
     },
     {
       type: 'category',

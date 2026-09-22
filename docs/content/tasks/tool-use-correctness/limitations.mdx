@@ -1,0 +1,95 @@
+---
+id: limitations
+title: What this task cannot tell you
+sidebar_position: 5
+description: Where the numbers stop being trustworthy.
+---
+
+# What this task cannot tell you
+
+Every benchmark has edges. These are this one's.
+
+## The `memory` labels come from someone else's models
+
+RetrievalQA decided what counts as "answerable from memory" by testing models
+in early 2024. A newer model may well know things those models did not.
+
+If it does, it gets punished for being right:
+
+```text
+Q: What is Herlyn Espinal's occupation?
+
+   labelled: search bucket, because 2024 models did not know
+   a 2026 model:  answers "journalist" correctly, without searching
+   scored as:     under-search, a failure
+```
+
+**So treat the under-search rate as a ceiling, not a measurement.** The real
+number is somewhere below it.
+
+## Some vague questions still get through
+
+The check for generic entities uses a blunt rule: the subject has to be several
+words, or one long word. That lets through things like:
+
+```text
+Q: Who is the author of Regeneration?
+   accepted answer: one specific author
+   reality: several books are called Regeneration
+```
+
+And it also throws out perfectly good questions:
+
+```text
+Q: Who is the author of The Latimers?   <- rejected, though it is answerable
+```
+
+Erring toward throwing out is deliberate. A question nobody can answer makes a
+model look worse than it is, which is the more damaging mistake.
+
+## A few accepted answers are simply wrong
+
+TriviaQA answer lists have been mangled somewhere upstream. Accents dropped,
+spaces removed, plain misspellings:
+
+```text
+Eyjafjallajkull   should be   Eyjafjallajökull
+Leos Jancek       should be   Leoš Janáček
+tedhughes         should be   ted hughes
+ENDROCRINOLOGY    should be   endocrinology
+```
+
+Most are caught, because a mangled answer does not appear in its own source
+text and check 1 removes it. Acronym collisions survive:
+
+```text
+Q: Michael Jackson was one of ten children. Who is the youngest, born in 1966?
+   accepted answers: janet, JANET(UK), UKERNA
+```
+
+`JANET(UK)` is a British computer network. The entity linker matched the wrong
+Janet.
+
+## One prompt, one decision
+
+Every item is a single turn. There is no follow-up, no challenge, no chance for
+the model to change its mind.
+
+That means a model that answers from memory, gets told "are you sure?", and
+*then* searches scores the same as one that never searches at all. Real
+assistants get second chances. This task does not model that.
+
+## It does not measure search quality
+
+Whether the query was any good, whether the results were relevant, whether the
+model read them properly — none of that is scored here. A model can issue a
+well-formed, useless query and score full marks on call quality.
+
+That is [the other task's](../../methodology/scoring.mdx) job.
+
+## The no-tool bucket is small and hand-made
+
+71 items, written for this task rather than sampled from anything real. They
+are checked and deliberately varied, but they are not a sample of how people
+actually talk to assistants. Take the no-tool over-search rate as a signal, not
+a precise figure.
