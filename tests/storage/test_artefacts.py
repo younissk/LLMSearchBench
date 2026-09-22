@@ -1,0 +1,224 @@
+"""On-disk artefacts: the round trip, and the failure modes that lose a run."""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import pytest
+from pydantic import ValidationError
+
+from llmsearchbench.storage import (
+    append_record,
+    load_manifest,
+    load_records,
+    load_summary,
+    load_tasks,
+    publish_to_site,
+    read_jsonl,
+    release_dir,
+    save_manifest,
+    save_summary,
+    write_jsonl,
+)
+from llmsearchbench.types import Category, Manifest, Task
+from tests.conftest import make_record, make_row, make_summary
+
+
+class TestJsonl:
+    def test_round_trip(self, tmp_path: Path) -> None:
+        path = tmp_path / "rows.jsonl"
+        rows = [{"a": 1}, {"a": 2}]
+        write_jsonl(path, rows)
+        assert list(read_jsonl(path)) == rows
+
+    def test_blank_lines_are_skipped(self, tmp_path: Path) -> None:
+        path = tmp_path / "rows.jsonl"
+        path.write_text('{"a": 1}\n\n   \n{"a": 2}\n', encoding="utf-8")
+        assert list(read_jsonl(path)) == [{"a": 1}, {"a": 2}]
+
+    def test_a_corrupt_line_names_the_line_number(self, tmp_path: Path) -> None:
+        """A half-written line from an interrupted run must not be a silent skip."""
+        path = tmp_path / "rows.jsonl"
+        path.write_text('{"a": 1}\n{"a": \n', encoding="utf-8")
+        with pytest.raises(ValueError, match=r":2:"):
+            list(read_jsonl(path))
+
+    def test_unicode_survives_the_round_trip(self, tmp_path: Path) -> None:
+        path = tmp_path / "rows.jsonl"
+        text = "Ada Lovelace \u2014 1843 \u00b7 na\u00efve"
+        write_jsonl(path, [{"answer": text}])
+        assert next(iter(read_jsonl(path)))["answer"] == text
+
+
+class TestRecords:
+    def test_append_keeps_earlier_records(self, tmp_path: Path) -> None:
+        """An interrupted run must keep everything it already paid for."""
+        path = tmp_path / "raw.jsonl"
+        append_record(path, make_record("t-001"))
+        append_record(path, make_record("t-002"))
+        assert [r.task_id for r in load_records(path)] == ["t-001", "t-002"]
+
+    def test_append_creates_the_directory(self, tmp_path: Path) -> None:
+        path = tmp_path / "deep" / "nested" / "raw.jsonl"
+        append_record(path, make_record())
+        assert path.exists()
+
+    def test_record_round_trip_preserves_every_field(self, tmp_path: Path) -> None:
+        path = tmp_path / "raw.jsonl"
+        original = make_record(
+            "t-042", citations=["https://x.example"], unsupported_claims=2, total_claims=7
+        )
+        append_record(path, original)
+        assert load_records(path) == [original]
+
+    def test_claim_counts_default_when_absent(self, tmp_path: Path) -> None:
+        """Older runs predate per-claim support and must still load."""
+        path = tmp_path / "raw.jsonl"
+        path.write_text(
+            json.dumps(
+                {
+                    "task_id": "t-001",
+                    "model": "m",
+                    "answer": "a",
+                    "citations": [],
+                    "verdict": "correct",
+                    "tokens_in": 1,
+                    "tokens_out": 1,
+                    "latency_s": 1.0,
+                    "search_calls": 1,
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        assert load_records(path)[0].total_claims == 0
+
+
+class TestTasks:
+    def test_load_tasks(self, tmp_path: Path) -> None:
+        path = tmp_path / "v0.1.0.jsonl"
+        write_jsonl(
+            path,
+            [
+                {
+                    "id": "t-001",
+                    "question": "q",
+                    "gold_answer": "a",
+                    "gold_sources": ["https://example.org/a"],
+                    "category": "single-hop",
+                    "freshness_cutoff": "2026-01-01",
+                }
+            ],
+        )
+        assert load_tasks(path) == [
+            Task(
+                id="t-001",
+                question="q",
+                gold_answer="a",
+                gold_sources=["https://example.org/a"],
+                category=Category.SINGLE_HOP,
+                freshness_cutoff="2026-01-01",
+            )
+        ]
+
+    def test_a_task_missing_gold_sources_is_rejected(self, tmp_path: Path) -> None:
+        path = tmp_path / "v0.1.0.jsonl"
+        write_jsonl(
+            path,
+            [{"id": "t-001", "question": "q", "gold_answer": "a", "category": "single-hop"}],
+        )
+        with pytest.raises(ValidationError, match="gold_sources"):
+            load_tasks(path)
+
+    def test_an_unknown_category_is_rejected(self, tmp_path: Path) -> None:
+        """Categories are a closed set; a new one changes the task-set proportions."""
+        path = tmp_path / "v0.1.0.jsonl"
+        write_jsonl(
+            path,
+            [
+                {
+                    "id": "t-001",
+                    "question": "q",
+                    "gold_answer": "a",
+                    "gold_sources": [],
+                    "category": "trick-question",
+                }
+            ],
+        )
+        with pytest.raises(ValidationError, match="category"):
+            load_tasks(path)
+
+
+class TestSummary:
+    def test_round_trip(self, tmp_path: Path) -> None:
+        path = tmp_path / "summary.json"
+        summary = make_summary(make_row("a"), make_row("b"))
+        save_summary(path, summary)
+        assert load_summary(path) == summary
+
+    def test_written_json_is_indented_and_newline_terminated(self, tmp_path: Path) -> None:
+        """The site's data files are committed; noisy diffs make review harder."""
+        path = tmp_path / "summary.json"
+        save_summary(path, make_summary())
+        text = path.read_text(encoding="utf-8")
+        assert text.endswith("\n")
+        assert "\n  " in text
+
+    def test_notes_are_omitted_when_absent(self, tmp_path: Path) -> None:
+        path = tmp_path / "summary.json"
+        save_summary(path, make_summary())
+        assert "notes" not in json.loads(path.read_text(encoding="utf-8"))
+
+    def test_row_lookup_by_model(self) -> None:
+        summary = make_summary(make_row("a"), make_row("b"))
+        assert summary.row("b") is not None
+        assert summary.row("absent") is None
+
+
+class TestPublish:
+    def test_writes_into_the_site_data_directory(self, tmp_path: Path) -> None:
+        summary = make_summary(version="v0.2.0")
+        target = publish_to_site(summary, tmp_path)
+        assert target == tmp_path / "src" / "data" / "releases" / "v0.2.0.json"
+        assert load_summary(target) == summary
+
+
+class TestManifest:
+    def test_round_trip_preserves_the_pins_that_make_a_claim_checkable(
+        self, tmp_path: Path
+    ) -> None:
+        path = tmp_path / "manifest.json"
+        manifest = Manifest(
+            version="v0.1.0",
+            date="2026-09-22",
+            harness_commit="abc1234",
+            judge_model="claude-opus-5",
+            model_ids={"Claude Opus 5": "claude-opus-5"},
+            retrieval_backend="frozen-snapshot-2026-09",
+            task_count=120,
+        )
+        save_manifest(path, manifest)
+        assert load_manifest(path) == manifest
+
+    def test_optional_fields_default(self, tmp_path: Path) -> None:
+        path = tmp_path / "manifest.json"
+        path.write_text(
+            json.dumps(
+                {
+                    "version": "v0.1.0",
+                    "date": "2026-09-22",
+                    "harness_commit": "abc1234",
+                    "judge_model": "claude-opus-5",
+                }
+            ),
+            encoding="utf-8",
+        )
+        manifest = load_manifest(path)
+        assert manifest.model_ids == {}
+        assert manifest.task_count == 0
+
+
+class TestReleaseDir:
+    def test_joins_root_and_version(self, tmp_path: Path) -> None:
+        assert release_dir(tmp_path, "v0.1.0") == tmp_path / "v0.1.0"

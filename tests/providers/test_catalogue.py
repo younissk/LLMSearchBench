@@ -1,0 +1,66 @@
+"""The model and provider catalogue."""
+
+from __future__ import annotations
+
+import pytest
+
+from llmsearchbench.providers import (
+    MODELS,
+    PROVIDERS,
+    UnknownModelError,
+    get_model,
+    get_provider,
+    models_without_prices,
+    provider_label,
+)
+
+
+class TestLookup:
+    def test_known_model(self) -> None:
+        assert get_model("claude-opus-5").label == "Claude Opus 5"
+
+    def test_unknown_model_lists_what_is_known(self) -> None:
+        with pytest.raises(UnknownModelError, match="claude-opus-5"):
+            get_model("gpt-nonexistent")
+
+    def test_unknown_provider_lists_what_is_known(self) -> None:
+        with pytest.raises(KeyError, match="anthropic"):
+            get_provider("not-a-provider")
+
+    def test_provider_label_is_what_the_results_table_shows(self) -> None:
+        assert provider_label("claude-opus-5") == "Anthropic"
+
+
+class TestCatalogueIntegrity:
+    def test_every_model_points_at_a_registered_provider(self) -> None:
+        for model in MODELS.values():
+            assert model.provider in PROVIDERS, f"{model.id} has provider {model.provider!r}"
+
+    def test_every_provider_declares_a_credential_variable(self) -> None:
+        for provider in PROVIDERS.values():
+            assert provider.env_var.isupper()
+
+    def test_model_keys_match_their_ids(self) -> None:
+        """The dict key is the string sent to the API; a mismatch runs the wrong model."""
+        for key, model in MODELS.items():
+            assert key == model.id
+
+    def test_labels_are_unique(self) -> None:
+        """Two rows with the same label would be indistinguishable on the results table."""
+        labels = [model.label for model in MODELS.values()]
+        assert len(labels) == len(set(labels))
+
+    def test_a_priced_model_records_when_it_was_priced(self) -> None:
+        """A price with no date cannot be re-checked, and prices move."""
+        for model in MODELS.values():
+            if model.price_in_per_mtok > 0 or model.price_out_per_mtok > 0:
+                assert model.priced_on, f"{model.id} has prices but no priced_on date"
+
+
+class TestPricingGate:
+    def test_unpriced_models_are_reported(self) -> None:
+        """Publishing a cost of zero would be a lie, so a release checks this first."""
+        unpriced = {model.id for model in models_without_prices()}
+        assert unpriced == set(MODELS), (
+            "some models now have prices - fill in the rest, then tighten this test"
+        )
