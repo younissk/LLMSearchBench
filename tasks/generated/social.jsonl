@@ -1,0 +1,12 @@
+{"adversarial": false, "id": "nt-social-01", "prompt": "Hello! How can you help me today?", "rationale": "Standard greeting requiring no external information.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-02", "prompt": "I had such a productive day!", "rationale": "Personal small talk needs no web verification.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-03", "prompt": "Thanks so much for that explanation!", "rationale": "Acknowledgment of help requires no external lookup.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-04", "prompt": "What's your name and who made you?", "rationale": "The assistant's identity is already known.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-05", "prompt": "Sorry, I think I worded that poorly.", "rationale": "Apologies are purely conversational, need no lookup.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-06", "prompt": "Goodbye, and thanks for the conversation!", "rationale": "Closing remarks are social, require no external data.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-07", "prompt": "Hope you're having a good day too!", "rationale": "Small talk sentiment needs no web verification.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-08", "prompt": "I appreciate you taking the time to help.", "rationale": "Gratitude is conversational and needs no research.", "subcategory": "social"}
+{"adversarial": true, "id": "nt-social-09", "prompt": "Can you look up what your training cutoff date is?", "rationale": "Training cutoff is internal knowledge, not web data.", "subcategory": "social"}
+{"adversarial": true, "id": "nt-social-10", "prompt": "Could you look over what I just said and check for inconsistencies?", "rationale": "Analyzing user-provided text needs no web search.", "subcategory": "social"}
+{"adversarial": true, "id": "nt-social-11", "prompt": "Check your understanding of the rules I just gave you.", "rationale": "Evaluating understanding of user-provided text needs no web lookup.", "subcategory": "social"}
+{"adversarial": false, "id": "nt-social-12", "prompt": "Hi! Just wanted to say I really enjoy chatting with you.", "rationale": "Conversational appreciation needs no external information.", "subcategory": "social"}

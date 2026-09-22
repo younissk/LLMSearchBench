@@ -1,0 +1,1 @@
+{"id": "nt-code-04", "prompt": "What does `tensor.quickflow()` do for GPU tensor operations? Our PyTorch code uses it for batching.", "reason": "Claims the invented function tensor.quickflow() is part of PyTorch, a real public library. Checking whether a named public API exists is a defensible reason to search, so the no-tool label is not safe."}

@@ -1,0 +1,60 @@
+{
+  "adversarial": 17,
+  "composition": {
+    "memory": {
+      "popqa": 60,
+      "triviaqa": 60
+    },
+    "no_tool": {
+      "advice": 12,
+      "arithmetic": 12,
+      "code": 11,
+      "creative": 12,
+      "social": 12,
+      "transform": 12
+    },
+    "search": {
+      "freshqa": 7,
+      "popqa": 38,
+      "realtimeqa": 38,
+      "triviaqa": 37
+    }
+  },
+  "dropped": {
+    "memory": {
+      "ambiguous-generic-entity": 154,
+      "ambiguous-short-entity": 13,
+      "answer-absent-from-context": 9,
+      "blank-alias": 243,
+      "disambiguation-alias": 15,
+      "duplicate-question": 94,
+      "leaked-quoting": 21,
+      "time-relative": 5,
+      "unstable-superlative": 8
+    },
+    "no_tool": {},
+    "search": {
+      "ambiguous-generic-entity": 190,
+      "ambiguous-short-entity": 15,
+      "answer-absent-from-context": 244,
+      "disambiguation-alias": 45,
+      "duplicate-question": 24,
+      "leaked-quoting": 26,
+      "synthetic-corpus": 75,
+      "time-relative": 115,
+      "unstable-superlative": 7
+    }
+  },
+  "eligible": {
+    "memory": 952,
+    "no_tool": 71,
+    "search": 530
+  },
+  "seed": 20260922,
+  "selected": {
+    "memory": 120,
+    "no_tool": 71,
+    "search": 120
+  },
+  "source_records": 2785
+}

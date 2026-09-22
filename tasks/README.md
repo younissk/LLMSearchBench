@@ -4,20 +4,36 @@ Benchmark task sets, one JSONL per release, committed.
 
 ```text
 tasks/
-  v0.1.0.jsonl      the frozen task set for release v0.1.0
-  candidates/       questions drawn from source data, not yet admitted
+  tool-use-correctness.jsonl         the built task set, committed
+  tool-use-correctness.report.json   where every candidate went
+  generated/                         prompts written for this benchmark
+  generated/REJECTED.jsonl           generated items cut on review, with reasons
 ```
 
-One line per task:
+## tool-use correctness
+
+The first task. Each line is one prompt plus what the model is expected to do
+about the search tool:
 
 ```json
-{"id": "t-001", "question": "...", "gold_answer": "...", "gold_sources": ["https://..."], "category": "multi-hop", "freshness_cutoff": "2026-01-01"}
+{"id": "tuc-sea-realtimeqa_20231013_3", "bucket": "search", "prompt": "...", "gold_answer": ["£5,000"], "source": "retrievalqa", "source_id": "realtimeqa_20231013_3", "subcategory": "realtimeqa", "adversarial": false, "rationale": "..."}
 ```
 
-A candidate becomes a task only after clearing all three admission rules —
-not answerable from memory, answerable with the tool, and stable across a week.
-The rules and the categories are described under
-[Methodology → Task design](../docs/content/methodology/tasks.md).
+Three buckets: `memory` (the model should already know it), `search` (it cannot
+know it), and `no_tool` (there is nothing to look up). Only `search` expects a
+tool call.
 
-Task sets are built from the datasets in [`../data/`](../data/README.md). Run
-`make data` first.
+```bash
+make data          # the source datasets have to be present first
+make tasks         # rebuild, deterministic given the seed
+make tasks-stats   # describe what is committed
+```
+
+The build is seeded, so a rebuild reproduces the committed file exactly — a test
+asserts it. `tool-use-correctness.report.json` records how many candidates each
+admission rule rejected; the reasoning behind the rules is on the
+[task's documentation page](../docs/content/tasks/tool-use-correctness.md).
+
+`generated/` holds the `no_tool` prompts, which have no upstream source and were
+written for this benchmark. Items cut during review stay in `REJECTED.jsonl`
+with the reason, rather than being deleted.
