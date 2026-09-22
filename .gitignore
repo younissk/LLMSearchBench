@@ -37,3 +37,5 @@ results/local/
 
 # smoke runs on the null backend are not results
 results/smoke/
+
+# sweep outputs; re-runnable, and large

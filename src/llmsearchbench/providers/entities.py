@@ -39,4 +39,7 @@ class ModelSpec(BenchModel):
     #: False for models that ignore `temperature`; those are run three times
     #: and the modal verdict is taken.
     supports_temperature: bool = True
+    #: True when a price of zero is the real price, not a missing one. A free
+    #: endpoint usually rate-limits hard, so runs may need low concurrency.
+    is_free: bool = False
     notes: str = ""
