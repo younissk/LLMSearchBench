@@ -3,7 +3,7 @@ id: grading
 title: How it is graded
 sidebar_label: How it is graded
 sidebar_position: 4
-description: Typed outputs, arithmetic where arithmetic suffices, and a judge that has to quote its evidence.
+description: Typed outputs, arithmetic where arithmetic suffices, and a decision model that cannot invent its evidence.
 ---
 
 # How it is graded
@@ -15,7 +15,7 @@ Four measures, and only one of them consults a model.
 | nDCG@10, precision, recall, F1 | arithmetic | a function of the parsed reply and human labels |
 | Abstention and fabrication | arithmetic | `relevant: []` is a boolean |
 | Answer correctness | arithmetic | lenient string match against the gold answer |
-| **Groundedness** | **a judge** | no string match can tell whether a claim rests on the cited passage |
+| **Groundedness** | **a decision model** | no string match can tell whether a claim rests on the cited passage |
 
 Keeping the model out of the first three is not fastidiousness. A judge is an
 instrument that can change its mind between releases, and a benchmark whose
@@ -95,13 +95,69 @@ calling. Format compliance is reported separately, never folded into accuracy.
 
 :::
 
-## The judge, and why it cannot cheat
+## The judge: Jev, a decision model
 
-Groundedness asks: does each claim in the answer actually appear in the
-candidates the model cited? A judge is needed — and a judge that can simply
-assert "yes, supported" is worth nothing.
+Groundedness asks whether the claims in an answer appear in the candidates the
+model cited. A judge is needed — and a judge that can simply assert "yes,
+supported" is worth nothing.
 
-So a verdict has to carry its evidence:
+The default judge is **[Jev](https://docs.typesafe.ai/)**, TypeSafe AI's
+decision model, pinned at `jev-1.13.0`. It is not a chat model: it takes a
+block of text and a set of typed questions, and returns an answer per question
+with a probability. A "noul" is a yes/no question whose answer is P(true).
+
+It is the right shape for this job for one reason above the rest: **it cannot
+write text**. The harness supplies the passages, Jev votes on them, and there
+is no span for it to invent. A generative judge has to be *made* honest; Jev is
+never given the chance. Its only failure mode is a wrong vote, which is exactly
+what the κ audit below measures.
+
+```json
+POST https://api.typesafe.ai/v1/systemone
+{
+  "model": "jev-1.13.0",
+  "state": "QUESTION…\n\nANSWER GIVEN…\n\nRESULT [3]…\n\nRESULT [4]…",
+  "questions": {
+    "supported_by_3": {"type": "noul", "instructions": "Is every factual claim in the ANSWER GIVEN stated in RESULT [3]?"},
+    "supported_by_4": {"type": "noul", "instructions": "…"},
+    "supported_anywhere": {"type": "noul", "instructions": "…"}
+  }
+}
+```
+
+One question per cited result, so a wrong vote can be traced to the passage
+that caused it, plus one about the answer overall. Every question is answered
+in a single parallel pass, so an item costs one request.
+
+Probabilities become verdicts with an explicit band of *not sure*:
+
+| P(supported) | Verdict |
+| --- | --- |
+| ≥ 0.65 | `correct` |
+| ≤ 0.35 | `incorrect` |
+| between | `unjudgeable` |
+
+The middle band is the model reporting that it does not know. Rounding it to a
+side would invent confidence nobody has, and the existing `unjudgeable` cap of
+2% of a release applies to it.
+
+`jev-1.13.0` rather than `jev-latest`: a published number cannot come from a
+model that moves underneath it, the same reason every dataset file carries a
+checksum.
+
+**Availability.** Jev is not in OpenRouter's model catalogue — I checked, zero
+matches — so it is called directly at `api.typesafe.ai` with `TYPESAFE_API_KEY`,
+the same arrangement as Moonshot and Avey. Third-party write-ups put it at
+about $0.042 per million input tokens with output tokens free and 70–500 ms
+latency; TypeSafe's own pricing page 404s, so treat those figures as reported
+rather than verified. On 120 items it is small change either way.
+
+## The generative judge, kept for the audit
+
+The quote-carrying judge is still here, for the sample a human reads: a
+probability says *how sure*, but not *why*, and an auditor wants the sentence.
+That judge is made honest a different way — a verdict has to carry its
+evidence:
 
 ```json
 {"verdicts": [
@@ -121,6 +177,8 @@ survive a string search.
 Matching is whitespace- and accent-insensitive and nothing looser. A judge that
 normalises a dash has still copied faithfully; a judge that paraphrases has not.
 
+Either judge is restricted the same way.
+
 ### What the judge is not allowed to touch
 
 - **Relevance.** TREC assessors graded these candidates. A model overruling
@@ -133,7 +191,9 @@ normalises a dash has still copied faithfully; a judge that paraphrases has not.
 
 ### Every verdict is pinned
 
-`JudgeRun` carries the judge model and a `prompt_version` (`groundedness-1`).
+`JudgeRun` carries the judge model, its kind (`typed` or `quoted`) and a
+`prompt_version` (`grounded-noul-1` for Jev, `groundedness-1` for the
+generative judge).
 Change the wording, bump the version — old verdicts then cannot be silently
 compared with new ones. Same reasoning as `priced_on` on a model's prices.
 
@@ -142,8 +202,10 @@ is not a pass.
 
 ## Two numbers that will be published about the judge itself
 
-1. **Discarded verdicts** — how often the judge quoted something that was not
-   there. That is its own fabrication rate, measured rather than assumed.
+1. **Discarded verdicts** — how often the generative judge quoted something
+   that was not there. That is its own fabrication rate, measured rather than
+   assumed. Jev has no equivalent, because it never quotes: its analogue is the
+   share of answers that land in the `unjudgeable` band.
 2. **Agreement with a human on a 30-item sample**, as Cohen's κ. Until that
    number exists, the judge is an unvalidated instrument and the groundedness
    column should be read as provisional.
@@ -152,6 +214,7 @@ is not a pass.
 
 The scoring, the judge prompt and the verification are written and tested
 (`llmsearchbench.scoring.discrimination`, `llmsearchbench.scoring.judging`).
-What does not exist yet is the harness that puts the task to models, the judge
-client that calls the judge, and the leaderboard. No model has been run against
-this task.
+The Jev client is written too (`llmsearchbench.harness.typesafe`). What does
+not exist yet is the harness that puts the task to models, the loop that walks
+the judge over a run's answers, and the leaderboard. No model has been run
+against this task, and no key for TypeSafe is configured.

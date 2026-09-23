@@ -26,7 +26,11 @@ from llmsearchbench.types.discrimination import (
     NoiseTier,
 )
 from llmsearchbench.types.enums import Verdict
-from llmsearchbench.types.judging import DiscriminationOutput, GroundednessVerdict
+from llmsearchbench.types.judging import (
+    DiscriminationOutput,
+    GroundednessVerdict,
+    JudgeKind,
+)
 
 
 def task(**overrides: object) -> DiscriminationTask:
@@ -284,3 +288,122 @@ class TestJudging:
         run = judge_run(task=task(), reply='{"verdicts": []}', model="m", judge_model="j")
         assert run.prompt_version == "groundedness-1"
         assert run.judge_model == "j"
+
+
+class TestTypedJudge:
+    """Jev returns a probability over text we supplied, so there is nothing
+    for it to invent — only a vote to get wrong."""
+
+    def test_the_state_carries_only_the_cited_results(self) -> None:
+        from llmsearchbench.scoring.judging import typed_state
+
+        state = typed_state(task(), DiscriminationOutput(relevant=["1"], answer="Buffalo"))
+        assert "Buffalo, New York" in state
+        assert "Apples are a fruit" not in state
+
+    def test_one_question_per_cited_result_plus_an_overall_one(self) -> None:
+        from llmsearchbench.scoring.judging import typed_questions
+
+        questions = typed_questions(DiscriminationOutput(relevant=["1", "3"], answer="x"))
+        assert set(questions) == {"supported_by_1", "supported_by_3", "supported_anywhere"}
+        assert all(q["type"] == "noul" for q in questions.values())
+
+    def test_probabilities_become_verdicts_with_a_band_of_not_sure(self) -> None:
+        from llmsearchbench.scoring.judging import verdict_for
+
+        assert verdict_for(0.95) is Verdict.CORRECT
+        assert verdict_for(0.05) is Verdict.INCORRECT
+        # The middle is the model saying it does not know, and rounding that to
+        # a side would invent confidence nobody has.
+        assert verdict_for(0.5) is Verdict.UNJUDGEABLE
+
+    def test_a_run_is_recorded_with_its_probabilities(self) -> None:
+        from llmsearchbench.scoring.judging import typed_run
+
+        run = typed_run(
+            task=task(),
+            output=DiscriminationOutput(relevant=["1"], answer="Criqui is from Buffalo"),
+            answers={
+                "supported_by_1": {"type": "noul", "noul": 0.92},
+                "supported_anywhere": {"type": "noul", "noul": 0.88},
+            },
+            model="m",
+            judge_model="jev-1.13.0",
+        )
+        assert run.kind is JudgeKind.TYPED
+        assert run.grounded is True
+        assert [v.probability for v in run.verdicts] == [0.92, 0.88]
+        # Nothing was quoted, so nothing needed checking.
+        assert all(v.quote_verified for v in run.verdicts)
+
+    def test_a_low_probability_fails_the_run(self) -> None:
+        from llmsearchbench.scoring.judging import typed_run
+
+        run = typed_run(
+            task=task(),
+            output=DiscriminationOutput(relevant=["1"], answer="Criqui won a Grammy"),
+            answers={"supported_by_1": {"type": "noul", "noul": 0.02}},
+            model="m",
+            judge_model="jev-1.13.0",
+        )
+        assert run.grounded is False
+
+    def test_an_answer_that_is_not_a_noul_is_ignored(self) -> None:
+        from llmsearchbench.scoring.judging import typed_run
+
+        run = typed_run(
+            task=task(),
+            output=DiscriminationOutput(relevant=["1"], answer="x"),
+            answers={"supported_by_1": {"type": "choice", "choice": "yes"}},
+            model="m",
+            judge_model="jev-1.13.0",
+        )
+        assert run.verdicts == []
+        assert run.grounded is None and run.error
+
+
+class TestJevClient:
+    def test_a_missing_key_fails_loudly(self, monkeypatch: pytest.MonkeyPatch) -> None:
+        from llmsearchbench.harness.typesafe import NotConfiguredError
+
+        monkeypatch.delenv("TYPESAFE_API_KEY", raising=False)
+        with pytest.raises(NotConfiguredError, match="TYPESAFE_API_KEY"):
+            from llmsearchbench.harness.typesafe import JevClient
+
+            JevClient()
+
+    def test_the_model_is_pinned_not_floating(self) -> None:
+        """A released number cannot come from a model that moves under it."""
+        from llmsearchbench.harness.typesafe import DEFAULT_MODEL
+
+        assert DEFAULT_MODEL != "jev-latest"
+        assert DEFAULT_MODEL.startswith("jev-")
+
+    def test_an_unanswered_question_is_an_error_not_a_no(
+        self, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """Silence about a question must never read as a 'no'."""
+        import io
+        import json as json_module
+
+        from llmsearchbench.harness import typesafe
+        from llmsearchbench.harness.typesafe import JevClient, JevError, noul
+
+        class Response(io.BytesIO):
+            def __enter__(self) -> Response:
+                return self
+
+            def __exit__(self, *_: object) -> None:
+                return None
+
+        body = json_module.dumps(
+            {"answers": {"a": {"type": "noul", "noul": 0.9}}, "usage": {"input_tokens": 10}}
+        ).encode()
+        monkeypatch.setattr(typesafe.urllib.request, "urlopen", lambda *a, **k: Response(body))
+
+        client = JevClient(api_key="test")
+        with pytest.raises(JevError, match="unanswered question"):
+            client.ask("some text", {"a": noul("is it?"), "b": noul("and this?")})
+
+        # The one that was answered comes back intact.
+        assert client.ask("some text", {"a": noul("is it?")})["a"]["noul"] == 0.9

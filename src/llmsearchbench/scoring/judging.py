@@ -1,10 +1,18 @@
 """Groundedness: is each claim in the answer actually in the evidence?
 
 This is the one number in the benchmark a model produces, so it is built to be
-checked rather than trusted. A verdict has to name a candidate and quote the
-span it rests on, and the quote is then looked for in that candidate's text. If
-it is not there, the verdict is discarded — the judge cannot assert support
-that does not exist, because the assertion has to survive a string search.
+checked rather than trusted. Two judges can produce it, and they are made
+honest in different ways.
+
+A **decision model** (Jev) is the default. It answers typed yes/no questions
+about text the harness supplied and returns a probability; it cannot write
+prose, so it cannot invent evidence. A wrong vote is its only failure mode.
+
+A **generative judge** is kept for the audit sample, where a human reading the
+verdicts wants a reason and a quote. It is made honest by having to quote:
+a verdict names a candidate and quotes the span it rests on, the harness
+looks for that span in that candidate, and a verdict whose quote is not
+there is discarded. The assertion has to survive a string search.
 
 What the judge is *not* allowed to do:
 
@@ -30,6 +38,7 @@ from llmsearchbench.types.enums import Verdict
 from llmsearchbench.types.judging import (
     DiscriminationOutput,
     GroundednessVerdict,
+    JudgeKind,
     JudgeRun,
 )
 
@@ -199,3 +208,109 @@ def grounded_rate(runs: Sequence[JudgeRun]) -> tuple[float | None, int]:
     if not ruled:
         return None, discarded
     return sum(1 for value in ruled if value) / len(ruled), discarded
+
+
+# --- the typed judge --------------------------------------------------------
+
+#: Bumped whenever the question wording below changes.
+TYPED_PROMPT_VERSION = "grounded-noul-1"
+
+#: Where a probability becomes a verdict. The band between the two is not
+#: indecision on our part — it is the model reporting that it is not sure, and
+#: recording that as `unjudgeable` is more honest than rounding it to a side.
+SUPPORTED_ABOVE = 0.65
+UNSUPPORTED_BELOW = 0.35
+
+
+def typed_state(task: DiscriminationTask, output: DiscriminationOutput) -> str:
+    """The text a decision model is asked about.
+
+    Only the cited candidates go in, for the same reason the generative judge
+    only sees those: support found in a passage the model never read is not
+    support for what the model did.
+    """
+    cited = [c for c in task.candidates if c.id in set(output.relevant)]
+    results = "\n\n".join(f"RESULT [{c.id}]\n{c.text}" for c in cited)
+    return (
+        f"QUESTION\n{task.question}\n\n"
+        f"ANSWER GIVEN\n{output.answer}\n\n"
+        f"{results or 'RESULTS\\n(none were cited)'}"
+    )
+
+
+def typed_questions(output: DiscriminationOutput) -> dict[str, dict[str, str]]:
+    """One yes/no question per cited result, plus one about the answer overall.
+
+    Asked per result rather than in aggregate so a wrong vote can be traced to
+    the passage that caused it.
+    """
+    from llmsearchbench.harness.typesafe import noul
+
+    questions = {
+        f"supported_by_{candidate_id}": noul(
+            f"Is every factual claim in the ANSWER GIVEN stated in RESULT "
+            f"[{candidate_id}]? Answer about what the result says, not about "
+            f"whether the answer is true in the world."
+        )
+        for candidate_id in output.relevant
+    }
+    questions["supported_anywhere"] = noul(
+        "Is every factual claim in the ANSWER GIVEN stated somewhere in the "
+        "results shown? Answer about what the results say, not about whether "
+        "the answer is true in the world."
+    )
+    return questions
+
+
+def verdict_for(probability: float) -> Verdict:
+    """Turn P(supported) into a ruling, with an explicit band of 'not sure'."""
+    if probability >= SUPPORTED_ABOVE:
+        return Verdict.CORRECT
+    if probability <= UNSUPPORTED_BELOW:
+        return Verdict.INCORRECT
+    return Verdict.UNJUDGEABLE
+
+
+def typed_run(
+    *,
+    task: DiscriminationTask,
+    output: DiscriminationOutput,
+    answers: dict[str, Any],
+    model: str,
+    judge_model: str,
+) -> JudgeRun:
+    """Turn Jev's answers into the same record shape the generative judge uses.
+
+    `quote_verified` is True throughout: a typed verdict carries no quote,
+    because the model never wrote one. There is nothing to check and nothing
+    that could have been invented — the text it voted on came from here.
+    """
+    from llmsearchbench.harness.typesafe import JevClient
+
+    verdicts: list[GroundednessVerdict] = []
+    for key, answer in answers.items():
+        probability = JevClient.probability(answer if isinstance(answer, dict) else {})
+        if probability is None:
+            continue
+        candidate_id = key.removeprefix("supported_by_") if key != "supported_anywhere" else ""
+        verdicts.append(
+            GroundednessVerdict(
+                verdict=verdict_for(probability),
+                claim=output.answer[:200] or "(no answer given)",
+                candidate_id=candidate_id,
+                quote="",
+                reasoning=f"P(supported) = {probability:.2f}",
+                quote_verified=True,
+                probability=probability,
+            )
+        )
+
+    return JudgeRun(
+        task_id=task.id,
+        model=model,
+        judge_model=judge_model,
+        prompt_version=TYPED_PROMPT_VERSION,
+        kind=JudgeKind.TYPED,
+        verdicts=verdicts,
+        error="" if verdicts else "no usable answer came back from the decision model",
+    )

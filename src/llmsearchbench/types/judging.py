@@ -14,10 +14,28 @@ Two kinds of record live here, and the difference matters:
 
 from __future__ import annotations
 
+from enum import StrEnum
+
 from pydantic import Field
 
 from llmsearchbench.types.base import BenchModel
 from llmsearchbench.types.enums import Verdict
+
+
+class JudgeKind(StrEnum):
+    """How a verdict was produced, because the two cannot fake the same things.
+
+    A generative judge writes prose, so it can assert support that is not
+    there; its verdicts are only counted when the span it quoted is found in
+    the candidate it named. A decision model returns a typed answer over text
+    the harness supplied and never writes any text at all, so there is nothing
+    to fabricate — the failure mode is a wrong vote, not an invented quote.
+    """
+
+    #: A generative model that had to quote its evidence.
+    QUOTED = "quoted"
+    #: A decision model returning a calibrated probability.
+    TYPED = "typed"
 
 
 class ParseProblem(BenchModel):
@@ -71,8 +89,13 @@ class GroundednessVerdict(BenchModel):
     reasoning: str = ""
 
     #: Set by the harness, not the judge: False when the quote could not be
-    #: found in the cited candidate. Such a verdict does not count.
+    #: found in the cited candidate. Such a verdict does not count. Always True
+    #: for a typed verdict, which carries no quote to check.
     quote_verified: bool = False
+
+    #: P(supported) from a decision model. None for a generative judge, which
+    #: gives an opinion and no calibration.
+    probability: float | None = Field(default=None, ge=0, le=1)
 
 
 class JudgeRun(BenchModel):
@@ -90,12 +113,13 @@ class JudgeRun(BenchModel):
     #: Bumped whenever the judging prompt changes, so old verdicts are not
     #: silently compared with new ones.
     prompt_version: str = Field(min_length=1)
+    kind: JudgeKind = JudgeKind.QUOTED
     verdicts: list[GroundednessVerdict] = Field(default_factory=list)
     error: str = ""
 
     @property
     def usable(self) -> list[GroundednessVerdict]:
-        """Verdicts whose quote was found where the judge said it was."""
+        """Verdicts that survived whatever check their kind allows."""
         return [v for v in self.verdicts if v.quote_verified]
 
     @property
