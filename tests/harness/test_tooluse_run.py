@@ -254,11 +254,20 @@ class TestPromptedProtocol:
     caveat attached to every number it produces."""
 
     def _adapter(self) -> object:
-        from llmsearchbench.harness.openai_compat import AveyAdapter
-        from llmsearchbench.providers import get_model
+        """A catalogued model, switched to the prompted protocol.
 
-        adapter = AveyAdapter.__new__(AveyAdapter)
-        adapter._spec = get_model("avey/olive")  # type: ignore[attr-defined]
+        Built here rather than named: the protocol is a property of a
+        provider's server settings, and a provider that fixes its flags should
+        not break this test.
+        """
+        from llmsearchbench.harness.openai_compat import OpenRouterAdapter
+        from llmsearchbench.providers import get_model
+        from llmsearchbench.types.enums import ToolProtocol
+
+        adapter = OpenRouterAdapter.__new__(OpenRouterAdapter)
+        adapter._spec = get_model("qwen/qwen3-8b").model_copy(  # type: ignore[attr-defined]
+            update={"tool_protocol": ToolProtocol.PROMPTED}
+        )
         adapter._effort = "high"  # type: ignore[attr-defined]
         adapter._api_key = "test"  # type: ignore[attr-defined]
         return adapter
