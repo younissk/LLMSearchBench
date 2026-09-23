@@ -7,14 +7,8 @@ import board from '@site/src/data/results/search-result-discrimination.json';
 interface Slice {
   name: string;
   items: number;
-  rankable: number;
-  ndcg: number | null;
-  precision: number | null;
-  recall: number | null;
-  f1: number | null;
-  noisePicked: number;
-  abstentionAccuracy: number;
-  answerAccuracy: number | null;
+  correct: number;
+  accuracy: number;
 }
 
 interface Row {
@@ -25,10 +19,10 @@ interface Row {
   paramsB: number | null;
   scored: number;
   failed: number;
-  unparsed: number;
+  fabricated: number;
+  wronglyRefused: number;
   overall: Slice;
   slices: Slice[];
-  groundedRate: number | null;
 }
 
 interface Board {
@@ -42,11 +36,9 @@ interface Board {
 
 const DATA = board as unknown as Board;
 
-const SLICES = ['overall', 'web', 'wikipedia', 'no_answer', 'easy', 'medium', 'hard'];
+const SLICES = ['overall', 'wikipedia', 'no_answer', 'easy', 'medium', 'hard'];
 
-/** A dash where a measure does not apply — never a zero, which is a claim. */
-const pct = (value: number | null) =>
-  value === null ? '—' : `${(value * 100).toFixed(1)}%`;
+const pct = (value: number) => `${(value * 100).toFixed(1)}%`;
 
 function sliceOf(row: Row, name: string): Slice | undefined {
   return name === 'overall' ? row.overall : row.slices.find((s) => s.name === name);
@@ -60,7 +52,7 @@ export default function DiscriminationResults() {
       DATA.rows
         .map((row) => ({row, cells: sliceOf(row, slice)}))
         .filter((entry): entry is {row: Row; cells: Slice} => Boolean(entry.cells))
-        .sort((a, b) => b.cells.abstentionAccuracy - a.cells.abstentionAccuracy),
+        .sort((a, b) => b.cells.accuracy - a.cells.accuracy),
     [slice],
   );
 
@@ -71,9 +63,8 @@ export default function DiscriminationResults() {
       {partial && (
         <div className={styles.notice}>
           <strong>A sample, not the task.</strong> Each model was put through{' '}
-          {DATA.sampleItems} of the {DATA.taskItems} items, spread evenly across the three
-          categories. These numbers are a check that the task runs, not a measurement of
-          the field.
+          {DATA.sampleItems} of the {DATA.taskItems} scorable items, spread evenly across
+          the categories. A check that the task runs, not a measurement of the field.
         </div>
       )}
 
@@ -100,12 +91,10 @@ export default function DiscriminationResults() {
             <tr>
               <th scope="col">Model</th>
               <th scope="col">Items</th>
-              <th scope="col">nDCG@10</th>
-              <th scope="col">Precision</th>
-              <th scope="col">Recall</th>
-              <th scope="col">Noise picked</th>
-              <th scope="col">Abstention</th>
-              <th scope="col">Answer</th>
+              <th scope="col">Correct</th>
+              <th scope="col">Accuracy</th>
+              <th scope="col">Answered anyway</th>
+              <th scope="col">Refused wrongly</th>
               <th scope="col">Failed</th>
             </tr>
           </thead>
@@ -119,18 +108,11 @@ export default function DiscriminationResults() {
                   </span>
                   <span className={styles.modelId}>{row.model}</span>
                 </td>
-                <td className={styles.numeric}>
-                  {cells.items}
-                  {cells.rankable !== cells.items && (
-                    <span className={styles.muted}> / {cells.rankable} rankable</span>
-                  )}
-                </td>
-                <td className={styles.numeric}>{pct(cells.ndcg)}</td>
-                <td className={styles.numeric}>{pct(cells.precision)}</td>
-                <td className={styles.numeric}>{pct(cells.recall)}</td>
-                <td className={styles.numeric}>{pct(cells.noisePicked)}</td>
-                <td className={styles.numeric}>{pct(cells.abstentionAccuracy)}</td>
-                <td className={styles.numeric}>{pct(cells.answerAccuracy)}</td>
+                <td className={styles.numeric}>{cells.items}</td>
+                <td className={styles.numeric}>{cells.correct}</td>
+                <td className={styles.numeric}>{pct(cells.accuracy)}</td>
+                <td className={styles.numeric}>{row.fabricated}</td>
+                <td className={styles.numeric}>{row.wronglyRefused}</td>
                 <td className={clsx(styles.numeric, row.failed > 0 && styles.warn)}>
                   {row.failed}
                 </td>
@@ -141,12 +123,13 @@ export default function DiscriminationResults() {
       </div>
 
       <div className={styles.footnote}>
-        Sorted by abstention accuracy — on this task set that is the column that
-        separates models. <strong>Noise picked</strong> is the share of cited candidates a
-        human graded 0. A dash means the measure does not apply: a <code>no_answer</code>
-        item has nothing to rank and nothing to recall. <strong>Failed</strong> items
-        never returned a reply and are not scored as zero. Groundedness is absent because
-        no judge has been run.
+        One question per item: was the answer right? Where the results carry the answer,
+        right means giving it; where they do not, right means saying so.{' '}
+        <strong>Answered anyway</strong> counts items whose results had no answer and got
+        one regardless — true or not, it did not come from the results.{' '}
+        <strong>Refused wrongly</strong> is the opposite mistake. Both are whole-run
+        counts, not per slice. <strong>Failed</strong> items never returned a reply and
+        are not scored as wrong.
       </div>
     </div>
   );

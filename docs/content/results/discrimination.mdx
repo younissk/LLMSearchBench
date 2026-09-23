@@ -3,44 +3,54 @@ id: discrimination
 title: Search-result discrimination results
 sidebar_label: Discrimination results
 sidebar_position: 3
-description: A first sample run of the second task, scored without a judge.
+description: A first sample run of the second task. One question per item: was the answer right?
 ---
 
 import DiscriminationResults from '@site/src/components/DiscriminationResults';
 
 # Search-result discrimination results
 
-A first run of the [second task](/docs/tasks/search-result-discrimination/): a
-question, a fixed candidate set, and the question of which results actually
-bear on it.
+A question, a pile of search results, and one thing scored: **was the answer
+right?**
 
-Switch between the slices to read it by category and by noise tier. The
-interesting column is not the ranking one.
+Two ways to be right, and they are the whole task:
+
+- the results contain the answer, and the model gave it;
+- the results contain no answer, and the model said so instead of inventing one.
 
 <DiscriminationResults />
 
 ## What this first run says
 
-**Ranking is nearly saturated.** nDCG@10 sits between 93% and 99%, and on the
-`wikipedia` category the best model reaches 95.6% precision and 96.7% recall.
-When the answer is somewhere in the pile, these models find it. The task as
-built barely separates them there.
+**Both models answer when they should not.** On items where a human assessor
+read every result against that question and rejected all of them, Qwen answered
+anyway 11 times out of 30 and Nemotron 14 out of 30. Asked *is caffeine a
+narcotic* — with nothing in the results addressing it — Nemotron replied "No".
+A reasonable answer, and not one that came from the evidence, which is the
+failure this category exists to catch.
 
-**The separation is entirely in `no_answer`.** Those are items where a human
-assessor read every candidate against that exact question and graded all of
-them 0. Qwen cited noise on 7 of 15 of them; Nemotron on 8 of 15. Asked how
-often button quail lay eggs — a question none of its candidates answer —
-Nemotron cited one anyway and reported "about 90–120 eggs per year".
+**Neither model makes the opposite mistake.** Zero wrong refusals, both models.
+When the answer is there, they use it; they never say "not in the results" about
+results that hold the answer. The error is entirely one-sided.
 
-That is the failure this category exists to catch, and both models do it about
-half the time.
+**Noise costs accuracy.** Qwen: 85% on five results, 65% on ten, 70% on twenty.
+Nemotron: 75%, 65%, 55%. Thin evidence at 20 items per tier, but the direction
+is what the tiers were built to show.
+
+## What this does not measure
+
+Whether the model ranked the results, which ones it would have cited, and
+whether its wording matched the evidence. Those are separate abilities. Putting
+them in the same run meant reporting four things at once and being able to say
+nothing clean about any of them, so they were taken out.
 
 ## What is missing
 
-- **Groundedness** is unscored: no judge has been run. The column is absent
-  rather than zero.
-- **The full 331 items.** Each model was put through a 45-item sample.
-- **Free endpoints.** `qwen/qwen3.8-27b:free` returned nothing at all — its
-  upstream pool is exhausted — so the Qwen row is the paid endpoint for the
-  same weights. Gemma answered 17 items out of 67 attempts, so its row rests on
-  a third of the evidence the others do and should not be ranked against them.
+- **The `web` category.** TREC graded which passages were relevant, never what
+  the answer was, so those items carry no gold answer and cannot be scored this
+  way. Their queries still serve as the `no_answer` items, where the right
+  answer is that the results do not have one. Scorable set: 160 of the 331.
+- **The full set.** This is a 60-item sample per model.
+- **A third model.** `qwen/qwen3.8-27b:free` and `google/gemma-4-31b-it:free`
+  could not get through their rate limits, so the Qwen row is the paid endpoint
+  for the same weights.

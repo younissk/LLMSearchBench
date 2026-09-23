@@ -2,8 +2,8 @@
   "task": "search-result-discrimination",
   "title": "Search-result discrimination",
   "generated": "2026-09-23",
-  "taskItems": 331,
-  "sampleItems": 67,
+  "taskItems": 160,
+  "sampleItems": 60,
   "rows": [
     {
       "model": "qwen/qwen3.8-27b",
@@ -11,96 +11,48 @@
       "provider": "OpenRouter",
       "isFree": false,
       "paramsB": 27.781427952,
-      "scored": 45,
-      "failed": 2,
-      "unparsed": 0,
+      "scored": 60,
+      "failed": 0,
+      "fabricated": 11,
+      "wronglyRefused": 0,
       "overall": {
         "name": "overall",
-        "items": 45,
-        "rankable": 30,
-        "ndcg": 0.9907962139959763,
-        "precision": 0.8422222222222222,
-        "recall": 0.8166666666666667,
-        "f1": 0.8044973544973545,
-        "noisePicked": 0.19407407407407407,
-        "abstentionAccuracy": 0.7777777777777778,
-        "answerAccuracy": 0.7333333333333333
+        "items": 60,
+        "correct": 44,
+        "accuracy": 0.7333333333333333
       },
       "slices": [
         {
-          "name": "web",
-          "items": 15,
-          "rankable": 15,
-          "ndcg": 0.9869443753820734,
-          "precision": 0.7288888888888889,
-          "recall": 0.6666666666666666,
-          "f1": 0.657883597883598,
-          "noisePicked": 0.07111111111111111,
-          "abstentionAccuracy": 0.8,
-          "answerAccuracy": null
-        },
-        {
           "name": "wikipedia",
-          "items": 15,
-          "rankable": 15,
-          "ndcg": 0.9946480526098791,
-          "precision": 0.9555555555555556,
-          "recall": 0.9666666666666667,
-          "f1": 0.9511111111111111,
-          "noisePicked": 0.04444444444444444,
-          "abstentionAccuracy": 1.0,
-          "answerAccuracy": 0.7333333333333333
+          "items": 30,
+          "correct": 25,
+          "accuracy": 0.8333333333333334
         },
         {
           "name": "no_answer",
-          "items": 15,
-          "rankable": 0,
-          "ndcg": null,
-          "precision": null,
-          "recall": null,
-          "f1": null,
-          "noisePicked": 0.4666666666666667,
-          "abstentionAccuracy": 0.5333333333333333,
-          "answerAccuracy": null
+          "items": 30,
+          "correct": 19,
+          "accuracy": 0.6333333333333333
         },
         {
           "name": "easy",
-          "items": 15,
-          "rankable": 10,
-          "ndcg": 1.0,
-          "precision": 0.9,
-          "recall": 0.85,
-          "f1": 0.8666666666666666,
-          "noisePicked": 0.13333333333333333,
-          "abstentionAccuracy": 0.8,
-          "answerAccuracy": 0.8
+          "items": 20,
+          "correct": 17,
+          "accuracy": 0.85
         },
         {
           "name": "medium",
-          "items": 15,
-          "rankable": 10,
-          "ndcg": 0.9770065694682943,
-          "precision": 0.8,
-          "recall": 0.8,
-          "f1": 0.7633333333333333,
-          "noisePicked": 0.3333333333333333,
-          "abstentionAccuracy": 0.6666666666666666,
-          "answerAccuracy": 0.8
+          "items": 20,
+          "correct": 13,
+          "accuracy": 0.65
         },
         {
           "name": "hard",
-          "items": 15,
-          "rankable": 10,
-          "ndcg": 0.9953820725196346,
-          "precision": 0.8266666666666668,
-          "recall": 0.8,
-          "f1": 0.7834920634920636,
-          "noisePicked": 0.11555555555555556,
-          "abstentionAccuracy": 0.8666666666666667,
-          "answerAccuracy": 0.6
+          "items": 20,
+          "correct": 14,
+          "accuracy": 0.7
         }
-      ],
-      "groundedRate": null
+      ]
     },
     {
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -108,193 +60,48 @@
       "provider": "OpenRouter",
       "isFree": true,
       "paramsB": null,
-      "scored": 44,
-      "failed": 9,
-      "unparsed": 0,
+      "scored": 60,
+      "failed": 10,
+      "fabricated": 14,
+      "wronglyRefused": 0,
       "overall": {
         "name": "overall",
-        "items": 44,
-        "rankable": 29,
-        "ndcg": 0.9307373308679556,
-        "precision": 0.7541871921182266,
-        "recall": 0.7413793103448276,
-        "f1": 0.7095785440613027,
-        "noisePicked": 0.25292207792207794,
-        "abstentionAccuracy": 0.7272727272727273,
-        "answerAccuracy": 0.6666666666666666
+        "items": 60,
+        "correct": 39,
+        "accuracy": 0.65
       },
       "slices": [
         {
-          "name": "web",
-          "items": 14,
-          "rankable": 14,
-          "ndcg": 0.900323556281155,
-          "precision": 0.5979591836734695,
-          "recall": 0.7857142857142857,
-          "f1": 0.6484126984126984,
-          "noisePicked": 0.18775510204081633,
-          "abstentionAccuracy": 0.7857142857142857,
-          "answerAccuracy": null
-        },
-        {
           "name": "wikipedia",
-          "items": 15,
-          "rankable": 15,
-          "ndcg": 0.9591235204823028,
-          "precision": 0.9,
-          "recall": 0.7,
-          "f1": 0.7666666666666667,
-          "noisePicked": 0.03333333333333333,
-          "abstentionAccuracy": 0.9333333333333333,
-          "answerAccuracy": 0.6666666666666666
+          "items": 30,
+          "correct": 23,
+          "accuracy": 0.7666666666666667
         },
         {
           "name": "no_answer",
-          "items": 15,
-          "rankable": 0,
-          "ndcg": null,
-          "precision": null,
-          "recall": null,
-          "f1": null,
-          "noisePicked": 0.5333333333333333,
-          "abstentionAccuracy": 0.4666666666666667,
-          "answerAccuracy": null
+          "items": 30,
+          "correct": 16,
+          "accuracy": 0.5333333333333333
         },
         {
           "name": "easy",
-          "items": 15,
-          "rankable": 10,
-          "ndcg": 0.9630929753571458,
-          "precision": 0.7333333333333333,
-          "recall": 0.7,
-          "f1": 0.6833333333333333,
-          "noisePicked": 0.17777777777777776,
-          "abstentionAccuracy": 0.7333333333333333,
-          "answerAccuracy": 0.8
+          "items": 20,
+          "correct": 15,
+          "accuracy": 0.75
         },
         {
           "name": "medium",
-          "items": 15,
-          "rankable": 10,
-          "ndcg": 0.9850344905534755,
-          "precision": 0.7571428571428571,
-          "recall": 0.75,
-          "f1": 0.6888888888888889,
-          "noisePicked": 0.3619047619047619,
-          "abstentionAccuracy": 0.6666666666666666,
-          "answerAccuracy": 0.6
+          "items": 20,
+          "correct": 13,
+          "accuracy": 0.65
         },
         {
           "name": "hard",
-          "items": 14,
-          "rankable": 9,
-          "ndcg": 0.8344564373405,
-          "precision": 0.7740740740740741,
-          "recall": 0.7777777777777778,
-          "f1": 0.7617283950617284,
-          "noisePicked": 0.21666666666666665,
-          "abstentionAccuracy": 0.7857142857142857,
-          "answerAccuracy": 0.6
+          "items": 20,
+          "correct": 11,
+          "accuracy": 0.55
         }
-      ],
-      "groundedRate": null
-    },
-    {
-      "model": "google/gemma-4-31b-it:free",
-      "label": "Gemma 4 31B (free)",
-      "provider": "OpenRouter",
-      "isFree": true,
-      "paramsB": null,
-      "scored": 17,
-      "failed": 50,
-      "unparsed": 0,
-      "overall": {
-        "name": "overall",
-        "items": 17,
-        "rankable": 12,
-        "ndcg": 0.9666734288776732,
-        "precision": 0.7277777777777777,
-        "recall": 0.7916666666666666,
-        "f1": 0.7365079365079366,
-        "noisePicked": 0.25098039215686274,
-        "abstentionAccuracy": 0.7058823529411765,
-        "answerAccuracy": 0.6666666666666666
-      },
-      "slices": [
-        {
-          "name": "web",
-          "items": 6,
-          "rankable": 6,
-          "ndcg": 0.9601065947059505,
-          "precision": 0.6777777777777777,
-          "recall": 0.8333333333333334,
-          "f1": 0.7285714285714286,
-          "noisePicked": 0.15555555555555556,
-          "abstentionAccuracy": 0.8333333333333334,
-          "answerAccuracy": null
-        },
-        {
-          "name": "wikipedia",
-          "items": 6,
-          "rankable": 6,
-          "ndcg": 0.9732402630493958,
-          "precision": 0.7777777777777778,
-          "recall": 0.75,
-          "f1": 0.7444444444444445,
-          "noisePicked": 0.05555555555555555,
-          "abstentionAccuracy": 0.8333333333333334,
-          "answerAccuracy": 0.6666666666666666
-        },
-        {
-          "name": "no_answer",
-          "items": 5,
-          "rankable": 0,
-          "ndcg": null,
-          "precision": null,
-          "recall": null,
-          "f1": null,
-          "noisePicked": 0.6,
-          "abstentionAccuracy": 0.4,
-          "answerAccuracy": null
-        },
-        {
-          "name": "easy",
-          "items": 6,
-          "rankable": 5,
-          "ndcg": 0.9839441578296375,
-          "precision": 0.8,
-          "recall": 0.8,
-          "f1": 0.8,
-          "noisePicked": 0.0,
-          "abstentionAccuracy": 0.8333333333333334,
-          "answerAccuracy": 0.6666666666666666
-        },
-        {
-          "name": "medium",
-          "items": 5,
-          "rankable": 3,
-          "ndcg": 1.0,
-          "precision": 0.6888888888888888,
-          "recall": 0.8333333333333334,
-          "f1": 0.6793650793650793,
-          "noisePicked": 0.38666666666666666,
-          "abstentionAccuracy": 0.8,
-          "answerAccuracy": 1.0
-        },
-        {
-          "name": "hard",
-          "items": 6,
-          "rankable": 4,
-          "ndcg": 0.9200900893459728,
-          "precision": 0.6666666666666666,
-          "recall": 0.75,
-          "f1": 0.7,
-          "noisePicked": 0.3888888888888889,
-          "abstentionAccuracy": 0.5,
-          "answerAccuracy": 0.5
-        }
-      ],
-      "groundedRate": null
+      ]
     }
   ]
 }

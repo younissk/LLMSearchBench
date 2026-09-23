@@ -27,7 +27,7 @@ from llmsearchbench.harness.discrimination import (
 )
 from llmsearchbench.paths import RESULTS, SITE, TASKS
 from llmsearchbench.providers import UnknownModelError, get_model, provider_label
-from llmsearchbench.scoring.discrimination import Slice, parse_output, score, score_item
+from llmsearchbench.scoring.discrimination import Slice, score, score_item
 from llmsearchbench.storage import read_jsonl
 from llmsearchbench.types.discrimination import Category, DiscriminationTask
 from llmsearchbench.types.leaderboard import (
@@ -46,6 +46,17 @@ def slug(model_id: str) -> str:
     return model_id.replace("/", "--")
 
 
+def scorable(task: DiscriminationTask) -> bool:
+    """Can this item be marked right or wrong from the answer alone?
+
+    The web category cannot: TREC judged which passages were relevant, not what
+    the answer was, so there is nothing to compare an answer against. Its
+    queries still earn their place as the no-answer items, where the right
+    answer is that the results do not have one.
+    """
+    return bool(task.gold_answer) or not task.supporting_ids
+
+
 def load_tasks(
     task_set: Path, local_set: Path, limit: int | None, categories: list[str] | None
 ) -> list[DiscriminationTask]:
@@ -58,7 +69,7 @@ def load_tasks(
     rows = list(read_jsonl(task_set))
     if local_set.exists():
         rows += list(read_jsonl(local_set))
-    tasks = [DiscriminationTask.model_validate(row) for row in rows]
+    tasks = [task for task in map(DiscriminationTask.model_validate, rows) if scorable(task)]
 
     if categories:
         wanted = {Category(name) for name in categories}
@@ -86,14 +97,8 @@ def as_site_slice(slice_: Slice) -> DiscriminationSlice:
     return DiscriminationSlice(
         name=slice_.name,
         items=slice_.items,
-        rankable=slice_.rankable,
-        ndcg=slice_.ndcg,
-        precision=slice_.precision,
-        recall=slice_.recall,
-        f1=slice_.f1,
-        noise_picked=slice_.noise_picked,
-        abstention_accuracy=slice_.abstention_accuracy,
-        answer_accuracy=slice_.answer_accuracy,
+        correct=slice_.correct,
+        accuracy=slice_.accuracy,
     )
 
 
@@ -199,8 +204,9 @@ def score_command(
         TASKS / "local" / f"{TASK_SET}-local.jsonl"
     ),
     results_dir: Annotated[Path, typer.Option(help="Where attempts live.")] = RESULTS / "local",
+    show: Annotated[int, typer.Option(help="Print this many wrong answers.")] = 0,
 ) -> None:
-    """Score a recorded run. No judge: every number here is arithmetic."""
+    """Score a recorded run: was the answer right?"""
     attempts_path = results_dir / f"{slug(model)}-{TASK_SET}.jsonl"
     attempts = load_attempts(attempts_path)
     if not attempts:
@@ -208,73 +214,45 @@ def score_command(
         raise typer.Exit(EXIT_BAD_INPUT)
 
     by_id = {task.id: task for task in load_tasks(task_set, local_set, None, None)}
-    scores = []
-    for attempt in attempts:
-        task = by_id.get(attempt.task_id)
-        if task is None or attempt.failed:
-            continue
-        output, problems = parse_output(attempt.reply, [c.id for c in task.candidates])
-        scores.append(score_item(task, output, problems))
-
+    scores = [
+        score_item(by_id[a.task_id], a.reply)
+        for a in attempts
+        if a.task_id in by_id and not a.failed
+    ]
     if not scores:
-        fail("every attempt failed; nothing to score")
+        fail("nothing scorable in this run")
         raise typer.Exit(EXIT_BAD_INPUT)
 
-    result = score(model, scores)
-    failed = sum(1 for a in attempts if a.failed)
+    result = score(model, scores, failed=sum(1 for a in attempts if a.failed))
 
     table = Table(
-        title=f"{model} - {result.overall.items} scored item(s)",
+        title=f"{model} - {result.overall.correct}/{result.overall.items} correct",
         title_justify="left",
         header_style="heading",
     )
     table.add_column("Slice")
     table.add_column("Items", justify="right")
-    table.add_column("Rankable", justify="right")
-    table.add_column("nDCG@10", justify="right")
-    table.add_column("Precision", justify="right")
-    table.add_column("Recall", justify="right")
-    table.add_column("Noise picked", justify="right")
-    table.add_column("Abstention", justify="right")
-    table.add_column("Answer", justify="right")
+    table.add_column("Correct", justify="right")
+    table.add_column("Accuracy", justify="right")
 
-    def cell(value: float | None) -> str:
-        """A dash where the measure does not apply, never a zero."""
-        return "-" if value is None else f"{value:.3f}"
-
-    def row(slice_: Slice, *, heading: bool = False) -> None:
-        table.add_row(
-            f"[heading]{slice_.name}[/heading]" if heading else slice_.name,
-            str(slice_.items),
-            str(slice_.rankable),
-            cell(slice_.ndcg),
-            cell(slice_.precision),
-            cell(slice_.recall),
-            cell(slice_.noise_picked),
-            cell(slice_.abstention_accuracy),
-            cell(slice_.answer_accuracy),
-        )
-
-    row(result.overall, heading=True)
-    for slice_ in result.by_category + result.by_tier:
-        row(slice_)
+    for slice_, heading in [(result.overall, True)] + [
+        (s, False) for s in result.by_category + result.by_tier
+    ]:
+        name = f"[heading]{slice_.name}[/heading]" if heading else slice_.name
+        table.add_row(name, str(slice_.items), str(slice_.correct), f"{slice_.accuracy:.1%}")
     console.print(table)
 
-    if result.unparsed:
-        warn(f"{result.unparsed} reply/replies could not be parsed; they are not scored")
-    if failed:
-        warn(f"{failed} item(s) failed outright and were left out")
-    if result.parse_problems:
-        detail = ", ".join(
-            f"{kind} {count}" for kind, count in sorted(result.parse_problems.items())
-        )
-        console.print(f"[muted]parse repairs: {detail}[/muted]")
     console.print(
-        "[muted]a dash means the measure does not apply: a no_answer item has "
-        "nothing to rank and nothing to recall, so it counts only toward "
-        "abstention and noise picked.[/muted]"
+        f"[muted]{result.fabricated} answered when the results had no answer; "
+        f"{result.wrongly_refused} refused when they did.[/muted]"
     )
-    console.print("[muted]groundedness is not scored here: no judge has been run.[/muted]")
+    if result.failed:
+        warn(f"{result.failed} item(s) never came back and are not scored")
+
+    for item in [s for s in scores if not s.correct][:show]:
+        expected = "INSUFFICIENT" if item.unanswerable else "an answer"
+        console.print(f"\n[warn]{item.task_id}[/warn] expected {expected}")
+        console.print(f"  got: {item.answer[:200]}")
 
 
 @app.command("publish-discrimination")
@@ -288,11 +266,7 @@ def publish_command(
     results_dir: Annotated[Path, typer.Option(help="Where attempts live.")] = RESULTS / "local",
     site: Annotated[Path, typer.Option(help="The documentation site root.")] = SITE,
 ) -> None:
-    """Write what the documentation site renders for this task.
-
-    Regenerated from the recorded replies, so a scoring change is a re-export
-    rather than a re-run.
-    """
+    """Write what the documentation site renders for this task."""
     tasks = load_tasks(task_set, local_set, None, None)
     by_id = {task.id: task for task in tasks}
     sizes = model_sizes()
@@ -302,25 +276,23 @@ def publish_command(
     for path in sorted(results_dir.glob(f"*-{TASK_SET}.jsonl")):
         model_id = path.stem.replace("--", "/", 1).replace(f"-{TASK_SET}", "")
         attempts = load_attempts(path)
-        scores = []
-        for attempt in attempts:
-            task = by_id.get(attempt.task_id)
-            if task is None or attempt.failed:
-                continue
-            output, problems = parse_output(attempt.reply, [c.id for c in task.candidates])
-            scores.append(score_item(task, output, problems))
+        scores = [
+            score_item(by_id[a.task_id], a.reply)
+            for a in attempts
+            if a.task_id in by_id and not a.failed
+        ]
         if not scores:
             warn(f"{model_id}: nothing scorable; not published")
             continue
 
-        result = score(model_id, scores)
+        result = score(model_id, scores, failed=sum(1 for a in attempts if a.failed))
         try:
             spec = get_model(model_id)
             label, provider, is_free = spec.label, provider_label(model_id), spec.is_free
         except UnknownModelError:
             label, provider, is_free = model_id, "unknown", False
 
-        sample = max(sample, len(attempts))
+        sample = max(sample, result.overall.items)
         rows.append(
             DiscriminationRow(
                 model=model_id,
@@ -329,14 +301,15 @@ def publish_command(
                 is_free=is_free,
                 params_b=sizes.get(model_id),
                 scored=result.overall.items,
-                failed=sum(1 for a in attempts if a.failed),
-                unparsed=result.unparsed,
+                failed=result.failed,
+                fabricated=result.fabricated,
+                wrongly_refused=result.wrongly_refused,
                 overall=as_site_slice(result.overall),
                 slices=[as_site_slice(s) for s in result.by_category + result.by_tier],
             )
         )
 
-    rows.sort(key=lambda row: -(row.overall.abstention_accuracy))
+    rows.sort(key=lambda row: -row.overall.accuracy)
     board = DiscriminationBoard(
         task=TASK_SET,
         title="Search-result discrimination",
@@ -348,12 +321,7 @@ def publish_command(
 
     target = site / "src" / "data" / "results" / f"{TASK_SET}.json"
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(
-        board.model_dump_json(indent=2, exclude_none=False) + "\n", encoding="utf-8"
-    )
+    target.write_text(board.model_dump_json(indent=2) + "\n", encoding="utf-8")
     console.print(f"[ok]wrote[/ok] {target}  ({len(rows)} model(s))")
     if sample < len(tasks):
-        warn(
-            f"a sample run: {sample} of {len(tasks)} items. The page says so, "
-            "but do not read it as the task."
-        )
+        warn(f"a sample run: {sample} of {len(tasks)} scorable items")

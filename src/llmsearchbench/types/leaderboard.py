@@ -111,25 +111,12 @@ class TaskItemMatrix(SiteModel):
 
 
 class DiscriminationSlice(SiteModel):
-    """One model's averages over a category, a noise tier, or everything.
-
-    Every rate is optional because not every measure applies to every slice: a
-    no-answer item has nothing to rank and nothing to recall, and a zero there
-    would be a claim rather than a blank.
-    """
+    """One group of items, and how many the model got right."""
 
     name: str = Field(min_length=1)
     items: int = Field(ge=0)
-    #: How many of `items` could be ranked at all.
-    rankable: int = Field(ge=0)
-
-    ndcg: float | None = Field(default=None, ge=0, le=1)
-    precision: float | None = Field(default=None, ge=0, le=1)
-    recall: float | None = Field(default=None, ge=0, le=1)
-    f1: float | None = Field(default=None, ge=0, le=1)
-    noise_picked: Fraction = 0.0
-    abstention_accuracy: Fraction = 0.0
-    answer_accuracy: float | None = Field(default=None, ge=0, le=1)
+    correct: int = Field(ge=0)
+    accuracy: Fraction = 0.0
 
 
 class DiscriminationRow(SiteModel):
@@ -141,18 +128,16 @@ class DiscriminationRow(SiteModel):
     is_free: bool = False
     params_b: float | None = Field(default=None, gt=0)
 
-    #: Items scored, and items that failed outright. A failure is not a zero.
     scored: int = Field(ge=0)
+    #: Items that never came back. Not scored as wrong.
     failed: int = Field(default=0, ge=0)
-    #: Replies no parser could read. Counted, never scored.
-    unparsed: int = Field(default=0, ge=0)
+    #: The two ways to be wrong, kept apart: answering when the results had no
+    #: answer, and refusing when they did.
+    fabricated: int = Field(default=0, ge=0)
+    wrongly_refused: int = Field(default=0, ge=0)
 
     overall: DiscriminationSlice
     slices: list[DiscriminationSlice] = Field(default_factory=list)
-
-    #: Groundedness, once a judge has run. None until then — and a blank column
-    #: says that more honestly than a zero would.
-    grounded_rate: float | None = Field(default=None, ge=0, le=1)
 
 
 class DiscriminationBoard(SiteModel):
@@ -161,8 +146,7 @@ class DiscriminationBoard(SiteModel):
     task: str = Field(min_length=1)
     title: str = Field(min_length=1)
     generated: str = Field(min_length=1)
-    #: Items in the whole task set, so a sample run is obvious.
+    #: Scorable items in the whole task set, so a sample run is obvious.
     task_items: int = Field(ge=0)
-    #: How many items each model was actually put through.
     sample_items: int = Field(ge=0)
     rows: list[DiscriminationRow] = Field(default_factory=list)

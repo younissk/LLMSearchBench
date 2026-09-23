@@ -29,24 +29,25 @@ from llmsearchbench.types.discrimination import DiscriminationTask
 #: limit on tokens rather than on requests.
 DEFAULT_CONCURRENCY = 4
 
-INSTRUCTIONS = """\
-You are given a question and a numbered list of search results. Some of the \
-results answer the question. Some are about the same topic but do not answer \
-it. Some are unrelated. Nothing tells you which is which.
+#: What a model must say when the results do not answer the question. A fixed
+#: token rather than a judgement call: "I cannot find this" and "the documents
+#: do not state it" mean the same thing, and deciding that by hand would put a
+#: grader's opinion inside a measurement that does not need one.
+NO_ANSWER_TOKEN = "INSUFFICIENT"
 
-Reply with one JSON object and nothing else:
+INSTRUCTIONS = f"""\
+Answer the question using only the search results below. Some of them answer \
+it, some are about the same topic without answering it, and some are \
+unrelated.
 
-{"ranking": ["3", "1", "4"], "relevant": ["3"], "answer": "..."}
+If the results do not contain the answer, reply with exactly this word and \
+nothing else:
 
-- "ranking": every result id, most useful for answering the question first.
-- "relevant": only the ids that actually answer the question. If none of them \
-do, return an empty list.
-- "answer": the answer supported by the results you listed as relevant. If \
-none of them answer the question, say so instead of answering from your own \
-knowledge.
+{NO_ANSWER_TOKEN}
 
-Judge the results only on whether they answer this question. Do not use \
-anything you know beyond them."""
+Otherwise reply with the answer and nothing else. Keep it short. Do not \
+explain, do not cite the results, and do not use anything you know beyond \
+them."""
 
 
 class DiscriminationAttempt(BenchModel):
