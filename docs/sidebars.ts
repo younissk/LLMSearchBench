@@ -26,6 +26,7 @@ const sidebars: SidebarsConfig = {
             'tasks/tool-use-correctness/limitations',
             'tasks/tool-use-correctness/running',
             'tasks/tool-use-correctness/qwen-coverage',
+            'tasks/tool-use-correctness/open-weight-coverage',
           ],
         },
       ],
