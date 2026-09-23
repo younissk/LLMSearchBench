@@ -82,8 +82,16 @@
   color: var(--lsb-ink);
 }
 
+.modelName {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
 .modelId {
   display: block;
+  /* Lines up under the model name, clear of the vendor badge. */
+  padding-left: calc(18px + 0.45rem);
   font-size: 0.72rem;
   font-weight: 400;
   color: var(--lsb-ink-muted);

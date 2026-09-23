@@ -1,6 +1,7 @@
 import React, {useMemo, useState} from 'react';
 import clsx from 'clsx';
 import styles from './Leaderboard.module.css';
+import VendorIcon from '@site/src/components/VendorIcon';
 import {getLeaderboard, type LeaderboardRow} from '@site/src/data';
 
 type Direction = 'higher' | 'lower';
@@ -189,7 +190,14 @@ export default function Leaderboard({task, compact = false}: LeaderboardProps) {
                         isBest && styles.best,
                       )}
                     >
-                      {column.format(row)}
+                      {isModel ? (
+                        <span className={styles.modelName}>
+                          <VendorIcon model={row.model} />
+                          {row.label}
+                        </span>
+                      ) : (
+                        column.format(row)
+                      )}
                       {isModel && <span className={styles.modelId}>{row.model}</span>}
                       {isModel && !row.complete && (
                         <span className={styles.partial} title="run did not finish">
