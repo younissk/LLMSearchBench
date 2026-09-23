@@ -62,6 +62,7 @@ const sidebars: SidebarsConfig = {
     'data-sources',
     'reproduce',
     'versioning',
+    'status',
   ],
 };
 

@@ -79,6 +79,33 @@ reports produces numbers nobody can place.
 **The judge is part of a release's identity.** Changing the judge model is a
 MAJOR version bump even if the task set is untouched.
 
+**A missing measurement is not a zero.** A failed request, a reply with no text
+and no tool call, and a reply no parser could read are all recorded and left
+out of the score. Counting them as answers put a model that failed all 360
+items into mid-table once, and scored 478 silent replies across 17 models as
+deliberate decisions. A rerun retries them; scoring never guesses at them.
+
+**A measure that does not apply is not a zero either.** A `no_answer` item has
+nothing to rank and nothing to recall. Those columns are `None` and the
+averages skip them. Filling them with zeros once cost a model 28 points of
+precision for getting the items right.
+
+**Label provenance travels with the item.** `label_source` says who judged
+relevance (`human` or `derived`); `answer_source` says where a gold answer came
+from (`dataset`, `annotated`, `none`). Validators refuse an item that carries
+an answer without saying where it came from. Never average the two kinds into
+one number without saying so.
+
+**A model-written label has to be checkable.** An annotated answer must be a
+verbatim span of the passage it came from, and the script verifies that rather
+than trusting it. Same rule for a judge: a verdict must quote its evidence, and
+a quote that is not in the cited document is discarded.
+
+**Only what may be redistributed is committed.** MS MARCO grants
+non-commercial research use and extends no licence, so its passages are built
+locally and git-ignored while a manifest of ids and checksums is committed.
+Check a source's terms before adding its text to `tasks/`.
+
 ## Two schemas, one shape
 
 `summary.json` is written by Python and read by TypeScript, and they disagree on
@@ -148,18 +175,29 @@ mention the tooling used to write the change.
 
 ## State of play
 
-The harness runs end to end. `llmsearchbench run`
-works against OpenRouter and the first-party Anthropic API.
+Kept short on purpose. The full picture — every number, every known-broken
+provider, every decision and why — is in `docs/content/status.mdx`, which
+renders as **Where it stands** on the site. Update that page, not this section.
 
-Known open decisions, before a first task set can be built:
+- **Task 1, tool-use correctness:** done. 360 items, 36 models, published.
+- **Task 2, search-result discrimination:** built. 331 items, 199 scorable,
+  one model run. Scores the answer and nothing else.
+- **Task 3, search quality:** design only.
+- **No judge runs yet.** The design is written up and tested; the groundedness
+  column is absent rather than zero.
 
-- RetrievalQA passages carry `title` and `text` but **no URLs**, while
-  `gold_sources` is a URL set and citation F1 scores against it. Citation
-  scoring needs either a passage-to-URL mapping or a per-source variant.
-- RetrievalQA `context` is not one shape: `toolqa` entries are bare strings,
-  one `realtimeqa` entry is an empty object, and `score`/`id` are absent from
-  some passages. Any converter must handle all five variants.
-- Model prices in `providers/registry.py` are all `0.0`. Publishing a cost of
-  zero would be a lie; `models_without_prices()` exists so a release can refuse.
-- The results currently on the site are placeholder data
-  (`"placeholder": true`), and the site renders a warning banner saying so.
+Provider gotchas that will waste an afternoon otherwise: Moonshot rejects any
+`temperature` but 1; Avey serves tools on `/llm/responses` only and is rate
+limited to roughly one item per seven minutes; two of the three free OpenRouter
+endpoints return nothing at all.
+
+## Running things
+
+- `npm run build` is the only check that catches broken links — the dev server
+  serves an SPA fallback for every path, so a broken link returns 200 there.
+- The docs dev server needs `NODE_OPTIONS=--max-old-space-size=8192`.
+- Never `pkill -f` on a pattern that matches the command you are running from.
+  It kills the shell, and anything later in the same compound command never
+  happens. This has cost two shells and one half-written script.
+- Run each model as its own process. A saturated endpoint held up a working one
+  for an hour when they shared a sequential loop.
