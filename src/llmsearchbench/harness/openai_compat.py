@@ -36,8 +36,9 @@ CHUNK = 1 << 16
 #: Waits between retries of a rate-limited request, in seconds. A 429 is the
 #: provider asking for a slower pace, not a broken item, so retrying beats
 #: recording 335 failures — which is what one run against a staging endpoint
-#: did before this existed.
-BACKOFF = (2.0, 8.0, 20.0)
+#: did before this existed. The last wait is long because a staging endpoint
+#: measured here stayed rate-limited for minutes, not seconds.
+BACKOFF = (5.0, 20.0, 60.0, 150.0)
 
 #: The one tool, in the shape these APIs expect. Deliberately not `strict`:
 #: strict mode would make a malformed call impossible to observe.
@@ -253,7 +254,7 @@ class ChatCompletionsAdapter:
                     f"socket timed out after {SOCKET_TIMEOUT:.0f}s"
                 ) from error
 
-        if "error" in body:
+        if body.get("error"):
             raise ChatCompletionsError(str(body["error"]))
         return body
 
@@ -332,15 +333,93 @@ class OpenRouterAdapter(ChatCompletionsAdapter):
     }
 
 
-class AveyAdapter(ChatCompletionsAdapter):
-    """Avey's hosted endpoint.
+#: The same tool in the Responses shape, which puts the function flat rather
+#: than nested under `function`.
+RESPONSES_SEARCH_TOOL: dict[str, Any] = {
+    "type": "function",
+    "name": "search",
+    "description": SEARCH_TOOL["function"]["description"],
+    "parameters": SEARCH_TOOL["function"]["parameters"],
+}
 
-    Avey also exposes an OpenAI *Responses*-shaped route at `/llm/responses`,
-    but the chat-completions route is what this benchmark needs, because it is
-    the one that carries `tools`.
+
+class ResponsesAdapter(ChatCompletionsAdapter):
+    """Providers that speak the OpenAI *Responses* shape.
+
+    Same transport and the same one-turn rule as the chat-completions route;
+    only the request and reply shapes differ. The reply is a list of output
+    items rather than a message, and a tool call arrives as its own item.
     """
 
-    endpoint = "https://staging1.api.avey.ai/llm/chat/completions"
+    def _payload(self, prompt: str, temperature: float) -> dict[str, Any]:
+        content = PROMPTED_PREAMBLE + prompt if self.prompted else prompt
+        payload: dict[str, Any] = {
+            "model": self.wire_name(self._spec.id),
+            "input": content,
+        }
+        if not self.prompted:
+            payload["tools"] = [RESPONSES_SEARCH_TOOL]
+        if self._spec.supports_temperature:
+            payload["temperature"] = temperature
+        return payload
+
+    def answer(self, prompt: str, temperature: float = 0.0) -> Turn:
+        started = time.monotonic()
+        body = self._post(self._payload(prompt, temperature))
+
+        output = body.get("output") or []
+        calls: list[ToolCall] = []
+        texts: list[str] = []
+        for item in output:
+            kind = item.get("type")
+            if kind == "function_call":
+                arguments, schema_error = parse_arguments(str(item.get("arguments", "")))
+                calls.append(
+                    ToolCall(
+                        name=str(item.get("name", "")),
+                        arguments=arguments,
+                        schema_error=schema_error,
+                    )
+                )
+            elif kind == "message":
+                texts += [
+                    str(part.get("text", ""))
+                    for part in item.get("content") or []
+                    if part.get("type") == "output_text"
+                ]
+
+        text = "".join(texts)
+        if self.prompted:
+            prompted_call = parse_prompted_call(text)
+            if prompted_call is not None:
+                calls.append(prompted_call)
+
+        usage = body.get("usage") or {}
+        out_details = usage.get("output_tokens_details") or {}
+        in_details = usage.get("input_tokens_details") or {}
+
+        return Turn(
+            answer=text,
+            calls=calls,
+            tool_protocol=self._spec.tool_protocol,
+            tokens_in=int(usage.get("input_tokens", 0)),
+            tokens_out=int(usage.get("output_tokens", 0)),
+            reasoning_tokens=int(out_details.get("reasoning_tokens", 0) or 0),
+            cached_tokens=int(in_details.get("cached_tokens", 0) or 0),
+            latency_s=time.monotonic() - started,
+            stop_reason=str(body.get("status") or ""),
+        )
+
+
+class AveyAdapter(ResponsesAdapter):
+    """Avey's hosted endpoint.
+
+    The chat-completions route rejects any request carrying `tools` — their
+    vLLM server is started without the tool-calling flags. The Responses route
+    accepts them, so that is the one this benchmark uses.
+    """
+
+    endpoint = "https://staging1.api.avey.ai/llm/responses"
     key_env = "AVEY_API_KEY"
 
 
