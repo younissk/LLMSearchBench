@@ -299,7 +299,11 @@ MODELS: dict[str, ModelSpec] = {
             price_in_per_mtok=0.9500,
             price_out_per_mtok=4.0000,
             priced_on="2026-09-23",
-            notes="open weights; price is the OpenRouter listing, used as a proxy",
+            supports_temperature=False,
+            notes=(
+                "open weights; price is the OpenRouter listing, used as a proxy. "
+                "Moonshot rejects any temperature but 1, so none is sent."
+            ),
         ),
         ModelSpec(
             id="moonshot/kimi-k3",
@@ -308,7 +312,11 @@ MODELS: dict[str, ModelSpec] = {
             price_in_per_mtok=3.0000,
             price_out_per_mtok=15.0000,
             priced_on="2026-09-23",
-            notes="open weights; price is the OpenRouter listing, used as a proxy",
+            supports_temperature=False,
+            notes=(
+                "open weights; price is the OpenRouter listing, used as a proxy. "
+                "Moonshot rejects any temperature but 1, so none is sent."
+            ),
         ),
         ModelSpec(
             id="avey/olive",
