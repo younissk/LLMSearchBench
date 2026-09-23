@@ -83,6 +83,7 @@
   "gold_answer": [
     "Joseph E. Grosberg"
   ],
+  "answer_source": "dataset",
   "noise_tier": "medium",
   "label_source": "derived",
   "source": "hotpotqa",

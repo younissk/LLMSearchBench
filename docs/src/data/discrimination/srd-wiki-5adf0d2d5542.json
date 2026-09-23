@@ -153,6 +153,7 @@
   "gold_answer": [
     "Saint Joseph's College"
   ],
+  "answer_source": "dataset",
   "noise_tier": "hard",
   "label_source": "derived",
   "source": "hotpotqa",

@@ -62,6 +62,23 @@ class LabelSource(StrEnum):
     DERIVED = "derived"
 
 
+class AnswerSource(StrEnum):
+    """Where an item's gold answer came from.
+
+    A dataset's own answer and one a model wrote are not the same evidence, and
+    an item says which it carries rather than leaving a reader to assume.
+    """
+
+    #: The source dataset shipped the answer. HotpotQA does.
+    DATASET = "dataset"
+    #: Written by an annotator model from passages a human graded relevant,
+    #: with a verbatim quote checked against the passage. Weaker than a
+    #: dataset's own answer, and never mixed into one number with it silently.
+    ANNOTATED = "annotated"
+    #: No answer, because the results do not contain one.
+    NONE = "none"
+
+
 class Candidate(BenchModel):
     """One search result put in front of the model."""
 
@@ -95,9 +112,10 @@ class DiscriminationTask(BenchModel):
     #: `no_answer`, where there are none.
     supporting_ids: list[str] = Field(default_factory=list)
 
-    #: Accepted answers, where the source dataset has them. Empty for the web
-    #: category, whose judgements are about relevance and not about an answer.
+    #: Accepted answers, where there are any. Empty for `no_answer`, where the
+    #: right response is that the results do not contain one.
     gold_answer: list[str] = Field(default_factory=list)
+    answer_source: AnswerSource = AnswerSource.NONE
 
     noise_tier: NoiseTier
     label_source: LabelSource
@@ -128,6 +146,14 @@ class DiscriminationTask(BenchModel):
     @property
     def has_answer(self) -> bool:
         return self.category is not Category.NO_ANSWER
+
+    @model_validator(mode="after")
+    def _answer_source_matches_the_answer(self) -> Self:
+        if self.gold_answer and self.answer_source is AnswerSource.NONE:
+            raise ValueError("an item with a gold answer must say where it came from")
+        if not self.gold_answer and self.answer_source is not AnswerSource.NONE:
+            raise ValueError(f"{self.answer_source} claims an answer this item does not have")
+        return self
 
     @model_validator(mode="after")
     def _labels_cover_candidates(self) -> Self:

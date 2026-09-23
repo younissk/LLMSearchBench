@@ -10,6 +10,7 @@ from __future__ import annotations
 from llmsearchbench.harness.discrimination import NO_ANSWER_TOKEN
 from llmsearchbench.scoring.discrimination import refused, score, score_item
 from llmsearchbench.types.discrimination import (
+    AnswerSource,
     Candidate,
     Category,
     DiscriminationTask,
@@ -32,6 +33,7 @@ def task(**overrides: object) -> DiscriminationTask:
         "relevance": {"1": 3, "2": 0, "3": 3, "4": 0},
         "supporting_ids": ["1", "3"],
         "gold_answer": ["Notre Dame"],
+        "answer_source": AnswerSource.DATASET,
         "noise_tier": NoiseTier.EASY,
         "label_source": LabelSource.DERIVED,
         "source": "hotpotqa",
@@ -48,6 +50,7 @@ def unanswerable() -> DiscriminationTask:
         relevance={"1": 0, "2": 0, "3": 0, "4": 0},
         supporting_ids=[],
         gold_answer=[],
+        answer_source=AnswerSource.NONE,
     )
 
 
@@ -172,15 +175,50 @@ class TestAnswerMatching:
 
     def test_a_gold_answer_written_as_a_fragment(self) -> None:
         """HotpotQA writes answers as sentence fragments."""
-        item = task(gold_answer=["at Westlake Recording Studios in Los Angeles"])
+        item = task(
+            gold_answer=["at Westlake Recording Studios in Los Angeles"],
+            answer_source=AnswerSource.DATASET,
+        )
         assert score_item(item, "Westlake Recording Studios in Los Angeles").correct
 
     def test_punctuation_inside_a_gold_answer(self) -> None:
-        item = task(gold_answer=['"Woody" Allen'])
+        item = task(gold_answer=['"Woody" Allen'], answer_source=AnswerSource.DATASET)
         assert score_item(item, "Woody Allen").correct
 
     def test_leniency_does_not_reach_a_different_answer(self) -> None:
-        assert not score_item(task(gold_answer=["Notre Dame"]), "Alabama").correct
+        item = task(gold_answer=["Notre Dame"], answer_source=AnswerSource.DATASET)
+        assert not score_item(item, "Alabama").correct
 
     def test_an_answer_inside_a_sentence_still_counts(self) -> None:
         assert score_item(task(), "The team was Notre Dame, per the results.").correct
+
+
+class TestAnswerProvenance:
+    """An item must say where its answer came from, and cannot claim one it
+    does not have. The web answers are written by a model, not by a dataset,
+    and a reader has to be able to tell."""
+
+    def test_an_answer_needs_a_source(self) -> None:
+        import pytest
+        from pydantic import ValidationError
+
+        with pytest.raises(ValidationError, match="where it came from"):
+            task(gold_answer=["Notre Dame"], answer_source=AnswerSource.NONE)
+
+    def test_a_source_cannot_claim_an_answer_that_is_absent(self) -> None:
+        import pytest
+        from pydantic import ValidationError
+
+        with pytest.raises(ValidationError, match="claims an answer"):
+            task(
+                category=Category.NO_ANSWER,
+                relevance={"1": 0, "2": 0, "3": 0, "4": 0},
+                supporting_ids=[],
+                gold_answer=[],
+                answer_source=AnswerSource.ANNOTATED,
+            )
+
+    def test_an_annotated_answer_scores_like_any_other(self) -> None:
+        """Provenance is recorded, not applied as a discount."""
+        item = task(gold_answer=["High blood pressure"], answer_source=AnswerSource.ANNOTATED)
+        assert score_item(item, "High blood pressure").correct

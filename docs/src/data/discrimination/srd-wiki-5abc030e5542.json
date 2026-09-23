@@ -153,6 +153,7 @@
   "gold_answer": [
     "1945 to 1951"
   ],
+  "answer_source": "dataset",
   "noise_tier": "hard",
   "label_source": "derived",
   "source": "hotpotqa",

@@ -83,6 +83,7 @@
   "gold_answer": [
     "Chief of the Operations Staff of the Armed Forces High Command"
   ],
+  "answer_source": "dataset",
   "noise_tier": "medium",
   "label_source": "derived",
   "source": "hotpotqa",

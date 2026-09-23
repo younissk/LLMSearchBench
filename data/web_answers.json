@@ -1,0 +1,218 @@
+{
+  "104861": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "$3.75 per square foot",
+    "passage_source_id": "1017092",
+    "prompt_version": "web-answers-2",
+    "query": "cost of interior concrete flooring",
+    "quote": "Integral colored concrete floor cost: $3.75 dollars per square foot"
+  },
+  "1063750": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "sinking of the Lusitania",
+    "passage_source_id": "4337532",
+    "prompt_version": "web-answers-2",
+    "query": "why did the us volunterilay enter ww1",
+    "quote": "The Sinking of the Lusitania"
+  },
+  "1103812": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "Russia, Belarus, and Ukraine",
+    "passage_source_id": "8220085",
+    "prompt_version": "web-answers-2",
+    "query": "who formed the commonwealth of independent states",
+    "quote": "leaders of Russia, Belarus, and Ukraine met"
+  },
+  "1114646": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "cold sores",
+    "passage_source_id": "6704400",
+    "prompt_version": "web-answers-2",
+    "query": "what is famvir prescribed for",
+    "quote": "Famvir (Famciclovir) is approved by the FDA for the treatment of cold sores"
+  },
+  "1117099": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "plate boundary along continental margin",
+    "passage_source_id": "1798612",
+    "prompt_version": "web-answers-2",
+    "query": "what is a active margin",
+    "quote": "active or leading margins: plate boundary located along a continental margin"
+  },
+  "1121402": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "soil erosion",
+    "passage_source_id": "182368",
+    "prompt_version": "web-answers-2",
+    "query": "what can contour plowing reduce",
+    "quote": "plowing along the contours of the land in order to minimize soil erosion"
+  },
+  "1124210": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "xylem",
+    "passage_source_id": "2258592",
+    "prompt_version": "web-answers-2",
+    "query": "tracheids are part of _____.",
+    "quote": "Tracheids are found in the xylem of all higher plants"
+  },
+  "1133167": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "80 to 90 degrees Fahrenheit",
+    "passage_source_id": "434125",
+    "prompt_version": "web-answers-2",
+    "query": "how is the weather in jamaica",
+    "quote": "The average temperature in Jamaica is between 80 and 90 degrees Fahrenheit."
+  },
+  "118440": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "bone marrow transplantation",
+    "passage_source_id": "1569786",
+    "prompt_version": "web-answers-2",
+    "query": "define bmt medical",
+    "quote": "BMT: Bone marrow transplantation, a procedure in which doctors replace bone marrow that is diseased"
+  },
+  "146187": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "one slice cheese vs two",
+    "passage_source_id": "8434619",
+    "prompt_version": "web-answers-2",
+    "query": "difference between a mcdouble and a double cheeseburger",
+    "quote": "There are two slices of cheese on the double cheeseburger instead of just the one slice of cheese that comes on the McDouble"
+  },
+  "148538": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "RN is license, BSN is degree",
+    "passage_source_id": "2455774",
+    "prompt_version": "web-answers-2",
+    "query": "difference between rn and bsn",
+    "quote": "RN is a professional license. BSN and ADN are college degrees."
+  },
+  "169208": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "yes, three tax brackets 3-5%",
+    "passage_source_id": "2888367",
+    "prompt_version": "web-answers-2",
+    "query": "does mississippi have an income tax",
+    "quote": "Mississippi has three marginal tax brackets, ranging from 3.00% (the lowest Mississippi tax bracket) to 5.00% (the highest Mississippi tax bracket)"
+  },
+  "207786": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "counter current heat exchange",
+    "passage_source_id": "1029962",
+    "prompt_version": "web-answers-2",
+    "query": "how are some sharks warm blooded",
+    "quote": "counter current heat exchange"
+  },
+  "258062": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "less than two hours",
+    "passage_source_id": "1348968",
+    "prompt_version": "web-answers-2",
+    "query": "how long does it take to remove wisdom tooth",
+    "quote": "A dental surgeon can remove wisdom teeth in less than two hours"
+  },
+  "264014": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "1 to 2 1/2 months",
+    "passage_source_id": "3338825",
+    "prompt_version": "web-answers-2",
+    "query": "how long is life cycle of flea",
+    "quote": "usually lasts from about 1 to 2 \u00c2\u00bd months"
+  },
+  "330975": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "$48,000 to $65,000",
+    "passage_source_id": "3297856",
+    "prompt_version": "web-answers-2",
+    "query": "how much would it cost to install my own wind turbine",
+    "quote": "the average wind turbine can cost $48,000 to $65,000 to install"
+  },
+  "359349": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "average of the two base lengths",
+    "passage_source_id": "1830517",
+    "prompt_version": "web-answers-2",
+    "query": "how to find the midsegment of a trapezoid",
+    "quote": "The median's length is the average of the two base lengths"
+  },
+  "443396": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "Lanterman-Petris-Short Act",
+    "passage_source_id": "3721948",
+    "prompt_version": "web-answers-2",
+    "query": "lps laws definition",
+    "quote": "Lanterman-Petris-Short (LPS) Act"
+  },
+  "47210": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "$184 to $255",
+    "passage_source_id": "2546001",
+    "prompt_version": "web-answers-2",
+    "query": "average wedding dress alteration cost",
+    "quote": "between $184 - $255"
+  },
+  "490595": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "Rivest, Shamir, Adleman, 1977",
+    "passage_source_id": "4842890",
+    "prompt_version": "web-answers-2",
+    "query": "rsa definition key",
+    "quote": "it was invented in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman"
+  },
+  "833860": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "cheese and chocolate",
+    "passage_source_id": "2206194",
+    "prompt_version": "web-answers-2",
+    "query": "what is the most popular food in switzerland",
+    "quote": "cheese and chocolate"
+  },
+  "855410": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "skin care/anti-aging products",
+    "passage_source_id": "8651770",
+    "prompt_version": "web-answers-2",
+    "query": "what is theraderm used for",
+    "quote": "clinical-grade skin care products, including anti-aging creams and moisturizers"
+  },
+  "87181": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "High blood pressure",
+    "passage_source_id": "1700168",
+    "prompt_version": "web-answers-2",
+    "query": "causes of left ventricular hypertrophy",
+    "quote": "High blood pressure usually causes left ventricular enlargement (hypertrophy)"
+  },
+  "962179": {
+    "annotated": "2026-09-23",
+    "annotator": "claude-sonnet-5",
+    "answer": "1865",
+    "passage_source_id": "2329699",
+    "prompt_version": "web-answers-2",
+    "query": "when was the salvation army founded",
+    "quote": "The Salvation Army began in 1865"
+  }
+}

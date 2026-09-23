@@ -153,6 +153,7 @@
   "gold_answer": [
     "Girl Meets World"
   ],
+  "answer_source": "dataset",
   "noise_tier": "hard",
   "label_source": "derived",
   "source": "hotpotqa",

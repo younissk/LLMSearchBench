@@ -29,6 +29,7 @@
   },
   "notes": [
     "Every model sees the same candidates in the same order; the order is a seeded shuffle, so position carries no signal.",
+    "Web answers are written by an annotator model from passages a human graded relevant, each resting on a quote checked against its passage. Items record that as `answer_source: annotated`.",
     "TREC grades are human relevance judgements. HotpotQA grades are derived from its supporting facts and only ever 0 or 3.",
     "The web category has no gold answer: TREC judged relevance, not answers. Answer correctness is scored on the wikipedia category only."
   ],

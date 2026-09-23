@@ -48,6 +48,7 @@
   "gold_answer": [
     "centre-back"
   ],
+  "answer_source": "dataset",
   "noise_tier": "easy",
   "label_source": "derived",
   "source": "hotpotqa",

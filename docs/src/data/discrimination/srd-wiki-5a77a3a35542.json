@@ -153,6 +153,7 @@
   "gold_answer": [
     "the Harpe brothers"
   ],
+  "answer_source": "dataset",
   "noise_tier": "hard",
   "label_source": "derived",
   "source": "hotpotqa",

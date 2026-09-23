@@ -153,6 +153,7 @@
   "gold_answer": [
     "June 22, 1953"
   ],
+  "answer_source": "dataset",
   "noise_tier": "hard",
   "label_source": "derived",
   "source": "hotpotqa",

@@ -153,6 +153,7 @@
   "gold_answer": [
     "actor, writer, producer, and director"
   ],
+  "answer_source": "dataset",
   "noise_tier": "hard",
   "label_source": "derived",
   "source": "hotpotqa",

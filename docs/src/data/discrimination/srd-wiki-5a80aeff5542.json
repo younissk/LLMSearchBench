@@ -83,6 +83,7 @@
   "gold_answer": [
     "first freshman to finish as the runner-up"
   ],
+  "answer_source": "dataset",
   "noise_tier": "medium",
   "label_source": "derived",
   "source": "hotpotqa",

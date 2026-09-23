@@ -48,6 +48,7 @@
   "gold_answer": [
     "December 12, 1967"
   ],
+  "answer_source": "dataset",
   "noise_tier": "easy",
   "label_source": "derived",
   "source": "hotpotqa",

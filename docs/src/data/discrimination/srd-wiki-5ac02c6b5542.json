@@ -153,6 +153,7 @@
   "gold_answer": [
     "is a song written and produced by André 3000"
   ],
+  "answer_source": "dataset",
   "noise_tier": "hard",
   "label_source": "derived",
   "source": "hotpotqa",

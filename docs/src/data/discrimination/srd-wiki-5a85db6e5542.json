@@ -48,6 +48,7 @@
   "gold_answer": [
     "37,776"
   ],
+  "answer_source": "dataset",
   "noise_tier": "easy",
   "label_source": "derived",
   "source": "hotpotqa",

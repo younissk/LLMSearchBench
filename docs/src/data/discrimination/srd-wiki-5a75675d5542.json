@@ -48,6 +48,7 @@
   "gold_answer": [
     "Ice Princess"
   ],
+  "answer_source": "dataset",
   "noise_tier": "easy",
   "label_source": "derived",
   "source": "hotpotqa",

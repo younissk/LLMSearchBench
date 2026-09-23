@@ -83,6 +83,7 @@
   "gold_answer": [
     "officer"
   ],
+  "answer_source": "dataset",
   "noise_tier": "medium",
   "label_source": "derived",
   "source": "hotpotqa",

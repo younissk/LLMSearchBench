@@ -36,6 +36,7 @@ from llmsearchbench.paths import DATA_PROCESSED, DATA_RAW
 from llmsearchbench.storage import write_jsonl
 from llmsearchbench.types import BenchModel
 from llmsearchbench.types.discrimination import (
+    AnswerSource,
     Candidate,
     Category,
     DiscriminationTask,
@@ -46,6 +47,10 @@ from llmsearchbench.types.discrimination import (
 TREC = DATA_RAW / "trec-dl"
 HOTPOT = DATA_RAW / "hotpotqa" / "hotpot-distractor-validation.parquet"
 JUDGED_PASSAGES = DATA_PROCESSED / "msmarco-judged-passages.jsonl.gz"
+#: Answers written for the web queries by an annotator model, each resting on
+#: a quote checked against a passage a human graded relevant. Optional: build
+#: without it and the web items simply carry no answer.
+WEB_ANSWERS = DATA_RAW.parent / "web_answers.json"
 
 #: Held fixed so a rebuild reproduces the shipped set.
 DEFAULT_SEED = 20260923
@@ -178,6 +183,7 @@ def assemble(
     source_id: str,
     subcategory: str,
     gold_answer: Sequence[str],
+    answer_source: AnswerSource,
     rationale: str,
     rng: random.Random,
     variant_of: str = "",
@@ -204,6 +210,7 @@ def assemble(
         relevance=relevance,
         supporting_ids=sorted((cid for cid, grade in relevance.items() if grade >= 2), key=int),
         gold_answer=list(gold_answer),
+        answer_source=answer_source,
         noise_tier=noise_tier,
         label_source=label_source,
         source=source,
@@ -251,6 +258,12 @@ def trec_items(
     as independent items.
     """
     passages = read_passages(JUDGED_PASSAGES)
+    annotated: dict[str, str] = {}
+    if WEB_ANSWERS.exists():
+        annotated = {
+            query_id: str(record["answer"])
+            for query_id, record in json.loads(WEB_ANSWERS.read_text(encoding="utf-8")).items()
+        }
 
     pool: list[tuple[str, str, str, dict[str, int]]] = []
     for year in ("2019", "2020"):
@@ -326,7 +339,10 @@ def trec_items(
                     source=f"trec-dl-{year}",
                     source_id=query_id,
                     subcategory=f"dl{year[2:]}",
-                    gold_answer=[],
+                    gold_answer=[annotated[query_id]] if query_id in annotated else [],
+                    answer_source=(
+                        AnswerSource.ANNOTATED if query_id in annotated else AnswerSource.NONE
+                    ),
                     rationale=(
                         "TREC assessors graded every candidate against this query; the "
                         "irrelevant ones were retrieved for it, so they are on topic "
@@ -370,6 +386,7 @@ def trec_items(
                 source_id=query_id,
                 subcategory=f"dl{year[2:]}-no-answer",
                 gold_answer=[],
+                answer_source=AnswerSource.NONE,
                 rationale=(
                     "Every candidate here was read by a TREC assessor against this "
                     "query and graded 0. The right response is that the results do "
@@ -500,6 +517,7 @@ def hotpot_items(*, size: int, seed: int, recorder: Recorder) -> list[Discrimina
                 source_id=source_id,
                 subcategory=f"{row['type']}-{row['level']}",
                 gold_answer=[answer],
+                answer_source=AnswerSource.DATASET,
                 rationale=(
                     "HotpotQA marks which paragraphs its supporting sentences came "
                     "from; those are graded 3 and the rest 0. The grade is inferred "
@@ -547,6 +565,9 @@ def build(
         notes=[
             "Every model sees the same candidates in the same order; the order is a "
             "seeded shuffle, so position carries no signal.",
+            "Web answers are written by an annotator model from passages a human "
+            "graded relevant, each resting on a quote checked against its passage. "
+            "Items record that as `answer_source: annotated`.",
             "TREC grades are human relevance judgements. HotpotQA grades are derived "
             "from its supporting facts and only ever 0 or 3.",
             "The web category has no gold answer: TREC judged relevance, not answers. "
