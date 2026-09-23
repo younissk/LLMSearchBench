@@ -1,0 +1,46 @@
+---
+id: discrimination
+title: Search-result discrimination results
+sidebar_label: Discrimination results
+sidebar_position: 3
+description: A first sample run of the second task, scored without a judge.
+---
+
+import DiscriminationResults from '@site/src/components/DiscriminationResults';
+
+# Search-result discrimination results
+
+A first run of the [second task](/docs/tasks/search-result-discrimination/): a
+question, a fixed candidate set, and the question of which results actually
+bear on it.
+
+Switch between the slices to read it by category and by noise tier. The
+interesting column is not the ranking one.
+
+<DiscriminationResults />
+
+## What this first run says
+
+**Ranking is nearly saturated.** nDCG@10 sits between 93% and 99%, and on the
+`wikipedia` category the best model reaches 95.6% precision and 96.7% recall.
+When the answer is somewhere in the pile, these models find it. The task as
+built barely separates them there.
+
+**The separation is entirely in `no_answer`.** Those are items where a human
+assessor read every candidate against that exact question and graded all of
+them 0. Qwen cited noise on 7 of 15 of them; Nemotron on 8 of 15. Asked how
+often button quail lay eggs — a question none of its candidates answer —
+Nemotron cited one anyway and reported "about 90–120 eggs per year".
+
+That is the failure this category exists to catch, and both models do it about
+half the time.
+
+## What is missing
+
+- **Groundedness** is unscored: no judge has been run. The column is absent
+  rather than zero.
+- **The full 331 items.** This is a 45-item sample per model.
+- **Free endpoints.** `qwen/qwen3.8-27b:free` returned nothing at all — its
+  upstream pool is exhausted — so the Qwen row is the paid endpoint for the
+  same weights. Gemma's row rests on far fewer items than the others and should
+  not be compared with them.

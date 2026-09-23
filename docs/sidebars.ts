@@ -51,7 +51,12 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Results',
       collapsed: false,
-      items: ['results/leaderboard', 'results/explore', 'examples-index'],
+      items: [
+        'results/leaderboard',
+        'results/explore',
+        'results/discrimination',
+        'examples-index',
+      ],
     },
     'data-format',
     'data-sources',

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from datetime import date
 from pathlib import Path
 from typing import Annotated
 
@@ -16,6 +17,7 @@ from rich.progress import (
 from rich.table import Table
 
 from llmsearchbench.cli._shared import EXIT_BAD_INPUT, EXIT_NOT_WIRED
+from llmsearchbench.cli.leaderboard import model_sizes
 from llmsearchbench.harness import NotConfiguredError, build_adapter
 from llmsearchbench.harness.discrimination import (
     DEFAULT_CONCURRENCY,
@@ -23,11 +25,16 @@ from llmsearchbench.harness.discrimination import (
     completed_task_ids,
     run_tasks,
 )
-from llmsearchbench.paths import RESULTS, TASKS
+from llmsearchbench.paths import RESULTS, SITE, TASKS
 from llmsearchbench.providers import UnknownModelError, get_model, provider_label
 from llmsearchbench.scoring.discrimination import Slice, parse_output, score, score_item
 from llmsearchbench.storage import read_jsonl
 from llmsearchbench.types.discrimination import Category, DiscriminationTask
+from llmsearchbench.types.leaderboard import (
+    DiscriminationBoard,
+    DiscriminationRow,
+    DiscriminationSlice,
+)
 from llmsearchbench.ui import console, fail, warn
 
 app = typer.Typer()
@@ -72,6 +79,22 @@ def load_tasks(
             if by_category[key]:
                 picked.append(by_category[key].pop(0))
     return picked
+
+
+def as_site_slice(slice_: Slice) -> DiscriminationSlice:
+    """The scorer's slice in the shape the site reads."""
+    return DiscriminationSlice(
+        name=slice_.name,
+        items=slice_.items,
+        rankable=slice_.rankable,
+        ndcg=slice_.ndcg,
+        precision=slice_.precision,
+        recall=slice_.recall,
+        f1=slice_.f1,
+        noise_picked=slice_.noise_picked,
+        abstention_accuracy=slice_.abstention_accuracy,
+        answer_accuracy=slice_.answer_accuracy,
+    )
 
 
 def load_attempts(path: Path) -> list[DiscriminationAttempt]:
@@ -252,3 +275,85 @@ def score_command(
         "abstention and noise picked.[/muted]"
     )
     console.print("[muted]groundedness is not scored here: no judge has been run.[/muted]")
+
+
+@app.command("publish-discrimination")
+def publish_command(
+    task_set: Annotated[Path, typer.Option(help="The shipped task set.")] = (
+        TASKS / f"{TASK_SET}.jsonl"
+    ),
+    local_set: Annotated[Path, typer.Option(help="The locally built half.")] = (
+        TASKS / "local" / f"{TASK_SET}-local.jsonl"
+    ),
+    results_dir: Annotated[Path, typer.Option(help="Where attempts live.")] = RESULTS / "local",
+    site: Annotated[Path, typer.Option(help="The documentation site root.")] = SITE,
+) -> None:
+    """Write what the documentation site renders for this task.
+
+    Regenerated from the recorded replies, so a scoring change is a re-export
+    rather than a re-run.
+    """
+    tasks = load_tasks(task_set, local_set, None, None)
+    by_id = {task.id: task for task in tasks}
+    sizes = model_sizes()
+
+    rows: list[DiscriminationRow] = []
+    sample = 0
+    for path in sorted(results_dir.glob(f"*-{TASK_SET}.jsonl")):
+        model_id = path.stem.replace("--", "/", 1).replace(f"-{TASK_SET}", "")
+        attempts = load_attempts(path)
+        scores = []
+        for attempt in attempts:
+            task = by_id.get(attempt.task_id)
+            if task is None or attempt.failed:
+                continue
+            output, problems = parse_output(attempt.reply, [c.id for c in task.candidates])
+            scores.append(score_item(task, output, problems))
+        if not scores:
+            warn(f"{model_id}: nothing scorable; not published")
+            continue
+
+        result = score(model_id, scores)
+        try:
+            spec = get_model(model_id)
+            label, provider, is_free = spec.label, provider_label(model_id), spec.is_free
+        except UnknownModelError:
+            label, provider, is_free = model_id, "unknown", False
+
+        sample = max(sample, len(attempts))
+        rows.append(
+            DiscriminationRow(
+                model=model_id,
+                label=label,
+                provider=provider,
+                is_free=is_free,
+                params_b=sizes.get(model_id),
+                scored=result.overall.items,
+                failed=sum(1 for a in attempts if a.failed),
+                unparsed=result.unparsed,
+                overall=as_site_slice(result.overall),
+                slices=[as_site_slice(s) for s in result.by_category + result.by_tier],
+            )
+        )
+
+    rows.sort(key=lambda row: -(row.overall.abstention_accuracy))
+    board = DiscriminationBoard(
+        task=TASK_SET,
+        title="Search-result discrimination",
+        generated=date.today().isoformat(),
+        task_items=len(tasks),
+        sample_items=sample,
+        rows=rows,
+    )
+
+    target = site / "src" / "data" / "results" / f"{TASK_SET}.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(
+        board.model_dump_json(indent=2, exclude_none=False) + "\n", encoding="utf-8"
+    )
+    console.print(f"[ok]wrote[/ok] {target}  ({len(rows)} model(s))")
+    if sample < len(tasks):
+        warn(
+            f"a sample run: {sample} of {len(tasks)} items. The page says so, "
+            "but do not read it as the task."
+        )

@@ -108,3 +108,61 @@ class TaskItemMatrix(SiteModel):
     generated: str = Field(min_length=1)
     items: list[ItemMeta] = Field(default_factory=list)
     models: list[ModelItems] = Field(default_factory=list)
+
+
+class DiscriminationSlice(SiteModel):
+    """One model's averages over a category, a noise tier, or everything.
+
+    Every rate is optional because not every measure applies to every slice: a
+    no-answer item has nothing to rank and nothing to recall, and a zero there
+    would be a claim rather than a blank.
+    """
+
+    name: str = Field(min_length=1)
+    items: int = Field(ge=0)
+    #: How many of `items` could be ranked at all.
+    rankable: int = Field(ge=0)
+
+    ndcg: float | None = Field(default=None, ge=0, le=1)
+    precision: float | None = Field(default=None, ge=0, le=1)
+    recall: float | None = Field(default=None, ge=0, le=1)
+    f1: float | None = Field(default=None, ge=0, le=1)
+    noise_picked: Fraction = 0.0
+    abstention_accuracy: Fraction = 0.0
+    answer_accuracy: float | None = Field(default=None, ge=0, le=1)
+
+
+class DiscriminationRow(SiteModel):
+    """One model's published result on the discrimination task."""
+
+    model: str = Field(min_length=1)
+    label: str = Field(min_length=1)
+    provider: str = Field(min_length=1)
+    is_free: bool = False
+    params_b: float | None = Field(default=None, gt=0)
+
+    #: Items scored, and items that failed outright. A failure is not a zero.
+    scored: int = Field(ge=0)
+    failed: int = Field(default=0, ge=0)
+    #: Replies no parser could read. Counted, never scored.
+    unparsed: int = Field(default=0, ge=0)
+
+    overall: DiscriminationSlice
+    slices: list[DiscriminationSlice] = Field(default_factory=list)
+
+    #: Groundedness, once a judge has run. None until then — and a blank column
+    #: says that more honestly than a zero would.
+    grounded_rate: float | None = Field(default=None, ge=0, le=1)
+
+
+class DiscriminationBoard(SiteModel):
+    """Every model run against the discrimination task."""
+
+    task: str = Field(min_length=1)
+    title: str = Field(min_length=1)
+    generated: str = Field(min_length=1)
+    #: Items in the whole task set, so a sample run is obvious.
+    task_items: int = Field(ge=0)
+    #: How many items each model was actually put through.
+    sample_items: int = Field(ge=0)
+    rows: list[DiscriminationRow] = Field(default_factory=list)
