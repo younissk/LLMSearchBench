@@ -53,6 +53,29 @@ VENDORS = {
     "sakana": "Sakana",
 }
 
+#: Providers reached directly rather than through OpenRouter, so they do not
+#: appear in its catalogue and are described by hand.
+DIRECT_PROVIDERS = """## Avey
+
+Reached directly at `staging1.api.avey.ai`, not through OpenRouter.
+
+| Model | Weights | Reasoning | Tools | Run? |
+| --- | --- | --- | :---: | :---: |
+| `avey/olive` | not published | yes, always on | **N** | blocked |
+
+`avey/olive` **cannot run this benchmark as deployed.** Its vLLM server was
+started without `--enable-auto-tool-choice` and `--tool-call-parser`, so any
+request carrying `tools` is rejected with a 400. Every variant fails:
+`tool_choice` omitted or `auto` errors, a forced function errors, and
+`tool_choice: "none"` is accepted but by definition never calls the tool — which
+is the thing being measured. The provider has to set those flags; there is no
+client-side workaround.
+
+The adapter and catalogue entry are in place, so the model runs the moment they
+do. Avey publishes no price, so its cost figures would read zero and must not be
+compared with a priced model.
+"""
+
 #: Exact Hugging Face repo for each OpenRouter id we have checked. Absence from
 #: this map means "not checked", which the table reports honestly rather than
 #: guessing.
@@ -234,6 +257,8 @@ def main() -> None:
             )
         lines.append("")
 
+    lines += [DIRECT_PROVIDERS, ""]
+
     lines += [
         "## How a model gets on the run list",
         "",
@@ -244,7 +269,8 @@ def main() -> None:
         "Xiaomi's v2.6 tier, and Mistral's commercial tier — all API-only.",
         "2. **Tool calling supported.** The benchmark *is* a tool call. Several "
         "open-weight models fail here, including Tencent's Hunyuan A13B and the "
-        "DeepSeek R1 distills.",
+        "DeepSeek R1 distills — and one whole provider, Avey, whose server has "
+        "tool calling switched off.",
         "3. **Adds something.** One model per family per size tier. Vision and coder "
         "variants are skipped unless they answer a specific question — a coder model "
         "is included as a control, to see whether code tuning changes tool judgement.",

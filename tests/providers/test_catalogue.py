@@ -59,10 +59,31 @@ class TestCatalogueIntegrity:
 
 class TestPricingGate:
     def test_every_catalogued_model_has_a_price(self) -> None:
-        """Publishing a cost of zero would be a lie, so a release checks this first."""
+        """Publishing a cost of zero would be a lie, so a release checks this first.
+
+        A free endpoint or a provider that publishes no price is exempt; both
+        say so on the model itself.
+        """
         assert models_without_prices() == []
 
     def test_model_ids_carry_no_date_suffix(self) -> None:
         """Dated snapshot ids are not the published model strings."""
         for model_id in MODELS:
             assert not model_id[-8:].isdigit(), f"{model_id} looks date-suffixed"
+
+
+class TestUnpricedProviders:
+    def test_a_price_unknown_model_does_not_trip_the_pricing_gate(self) -> None:
+        """Avey publishes no price; that is different from a forgotten one."""
+        from llmsearchbench.providers import MODELS, models_without_prices
+
+        unknown = [m for m in MODELS.values() if m.price_unknown]
+        assert unknown, "expected at least one price-unknown model"
+        assert not any(m.price_unknown for m in models_without_prices())
+
+    def test_a_price_unknown_model_says_so_in_its_notes(self) -> None:
+        from llmsearchbench.providers import MODELS
+
+        for model in MODELS.values():
+            if model.price_unknown:
+                assert "price" in model.notes.lower()

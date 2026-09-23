@@ -225,3 +225,23 @@ class TestConcurrency:
         assert by_id["bad"].failed
         assert "ConnectionError" in by_id["bad"].error
         assert completed_task_ids(out) == {"good", "bad"}
+
+
+class TestProviderErrorExplanation:
+    """Some provider errors are not ours to fix, and should say so."""
+
+    def test_the_vllm_tool_choice_error_is_explained(self) -> None:
+        from llmsearchbench.harness.openai_compat import ChatCompletionsAdapter
+
+        raw = (
+            '{"error":{"message":"tool choice requires '
+            '--enable-auto-tool-choice and --tool-call-parser to be set"}}'
+        )
+        explained = ChatCompletionsAdapter.explain(raw)
+        assert "cannot run until the provider sets those flags" in explained
+        assert "Nothing to fix on this side" in explained
+
+    def test_an_unrecognised_error_is_passed_through_unchanged(self) -> None:
+        from llmsearchbench.harness.openai_compat import ChatCompletionsAdapter
+
+        assert ChatCompletionsAdapter.explain("rate limited") == "rate limited"

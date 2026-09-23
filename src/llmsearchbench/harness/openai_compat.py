@@ -164,7 +164,8 @@ class ChatCompletionsAdapter:
             with urllib.request.urlopen(request, timeout=SOCKET_TIMEOUT) as response:
                 body: dict[str, Any] = json.loads(read_with_deadline(response, deadline))
         except urllib.error.HTTPError as error:
-            raise ChatCompletionsError(f"{error.code}: {error.read()[:300]!r}") from error
+            detail = error.read()[:400].decode(errors="replace")
+            raise ChatCompletionsError(f"{error.code}: {self.explain(detail)}") from error
         except urllib.error.URLError as error:
             raise ChatCompletionsError(f"unreachable: {error.reason}") from error
         except RequestTimeoutError as error:
@@ -177,6 +178,24 @@ class ChatCompletionsAdapter:
         if "error" in body:
             raise ChatCompletionsError(str(body["error"]))
         return body
+
+    @staticmethod
+    def explain(message: str) -> str:
+        """Turn a provider error into something actionable where we can.
+
+        The vLLM tool-choice error is worth catching by hand: it is a
+        server-side launch flag, so no amount of retrying or rephrasing on our
+        side will fix it, and the raw message does not say that.
+        """
+        if "enable-auto-tool-choice" in message:
+            return (
+                "the provider's vLLM server was started without tool calling "
+                "enabled (--enable-auto-tool-choice and --tool-call-parser). "
+                "This benchmark needs the model to choose freely whether to "
+                "call the tool, so it cannot run until the provider sets those "
+                "flags. Nothing to fix on this side."
+            )
+        return message
 
     def answer(self, prompt: str, temperature: float = 0.0) -> Turn:
         started = time.monotonic()
@@ -226,6 +245,18 @@ class OpenRouterAdapter(ChatCompletionsAdapter):
         "HTTP-Referer": "https://github.com/younissk/LLMSearchBench",
         "X-Title": "LLMSearchBench",
     }
+
+
+class AveyAdapter(ChatCompletionsAdapter):
+    """Avey's hosted endpoint.
+
+    Avey also exposes an OpenAI *Responses*-shaped route at `/llm/responses`,
+    but the chat-completions route is what this benchmark needs, because it is
+    the one that carries `tools`.
+    """
+
+    endpoint = "https://staging1.api.avey.ai/llm/chat/completions"
+    key_env = "AVEY_API_KEY"
 
 
 class MoonshotAdapter(ChatCompletionsAdapter):

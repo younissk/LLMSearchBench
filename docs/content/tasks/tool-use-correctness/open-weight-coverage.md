@@ -65,7 +65,7 @@ Open-weight status is verified against Hugging Face at generation time, not assu
 | `deepseek-v4-flash-vision-exp` | not checked | — | effort levels | y | $0.078 | — |
 | `deepseek-v4-pro` | yes | mit | effort levels | y | $0.256 | — |
 | `deepseek-v4-pro-0813` | not checked | — | effort levels | y | $0.469 | — |
-| `deepseek-v4.1-flash` | yes | mit | effort levels | y | $0.056 | — |
+| `deepseek-v4.1-flash` | yes | mit | effort levels | y | $0.133 | — |
 | `deepseek-v4.1-flash:batch` | not checked | — | effort levels | y | $0.040 | — |
 
 ## Nemotron
@@ -214,12 +214,33 @@ Open-weight status is verified against Hugging Face at generation time, not assu
 | `fugu-ultra-v2` | not checked | — | effort levels | y | $3.084 | — |
 | `sakana-namazu` | **no** | — | effort levels | y | $0.438 | — |
 
+## Avey
+
+Reached directly at `staging1.api.avey.ai`, not through OpenRouter.
+
+| Model | Weights | Reasoning | Tools | Run? |
+| --- | --- | --- | :---: | :---: |
+| `avey/olive` | not published | yes, always on | **N** | blocked |
+
+`avey/olive` **cannot run this benchmark as deployed.** Its vLLM server was
+started without `--enable-auto-tool-choice` and `--tool-call-parser`, so any
+request carrying `tools` is rejected with a 400. Every variant fails:
+`tool_choice` omitted or `auto` errors, a forced function errors, and
+`tool_choice: "none"` is accepted but by definition never calls the tool — which
+is the thing being measured. The provider has to set those flags; there is no
+client-side workaround.
+
+The adapter and catalogue entry are in place, so the model runs the moment they
+do. Avey publishes no price, so its cost figures would read zero and must not be
+compared with a priced model.
+
+
 ## How a model gets on the run list
 
 Three gates, in order:
 
 1. **Weights published.** No repository on Hugging Face, no entry. This rules out Sakana's Fugu line, Meta's Muse line, Tencent's HY4, DotsStudio's dots-3, Xiaomi's v2.6 tier, and Mistral's commercial tier — all API-only.
-2. **Tool calling supported.** The benchmark *is* a tool call. Several open-weight models fail here, including Tencent's Hunyuan A13B and the DeepSeek R1 distills.
+2. **Tool calling supported.** The benchmark *is* a tool call. Several open-weight models fail here, including Tencent's Hunyuan A13B and the DeepSeek R1 distills — and one whole provider, Avey, whose server has tool calling switched off.
 3. **Adds something.** One model per family per size tier. Vision and coder variants are skipped unless they answer a specific question — a coder model is included as a control, to see whether code tuning changes tool judgement.
 
 ## Licences worth reading before fine-tuning

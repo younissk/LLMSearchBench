@@ -36,6 +36,12 @@ PROVIDERS: dict[str, Provider] = {
             docs_url="https://openrouter.ai/docs",
         ),
         Provider(
+            key="avey",
+            label="Avey",
+            env_var="AVEY_API_KEY",
+            docs_url="https://staging1.api.avey.ai",
+        ),
+        Provider(
             key="moonshot",
             label="Moonshot",
             env_var="KIMI_API_KEY",
@@ -312,6 +318,19 @@ MODELS: dict[str, ModelSpec] = {
             priced_on="2026-09-23",
             notes="open weights; price is the OpenRouter listing, used as a proxy",
         ),
+        ModelSpec(
+            id="avey/olive",
+            label="Avey Olive",
+            provider="avey",
+            price_in_per_mtok=0.0,
+            price_out_per_mtok=0.0,
+            priced_on="",
+            price_unknown=True,
+            notes=(
+                "cannot run yet: the provider's vLLM server has tool calling "
+                "disabled. Avey publishes no price, so cost reads zero."
+            ),
+        ),
         # Add more OpenRouter models here with their listed prices from
         # openrouter.ai/models. A model with no price cannot be published:
         # `models_without_prices()` is what a release checks.
@@ -497,9 +516,16 @@ def provider_label(model_id: str) -> str:
 
 
 def models_without_prices() -> list[ModelSpec]:
-    """Models that would publish a cost of zero. Checked before a release."""
+    """Models whose price was forgotten, which would publish a cost of zero.
+
+    Free endpoints and providers that publish no price are excluded: a zero
+    there is a fact, not an omission. Both are flagged on the model itself.
+    """
     return [
         model
         for model in MODELS.values()
-        if not model.is_free and model.price_in_per_mtok <= 0 and model.price_out_per_mtok <= 0
+        if not model.is_free
+        and not model.price_unknown
+        and model.price_in_per_mtok <= 0
+        and model.price_out_per_mtok <= 0
     ]

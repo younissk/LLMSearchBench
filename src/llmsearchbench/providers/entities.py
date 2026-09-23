@@ -42,4 +42,7 @@ class ModelSpec(BenchModel):
     #: True when a price of zero is the real price, not a missing one. A free
     #: endpoint usually rate-limits hard, so runs may need low concurrency.
     is_free: bool = False
+    #: True when the provider publishes no price. Cost figures will read zero
+    #: and must not be compared against a priced model.
+    price_unknown: bool = False
     notes: str = ""
