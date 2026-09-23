@@ -5,6 +5,7 @@
     llmsearchbench leaderboard
     llmsearchbench publish
     llmsearchbench examples
+    llmsearchbench run-discrimination --model <id>
     llmsearchbench models
     llmsearchbench data        list | download | verify
     llmsearchbench attribution
@@ -24,6 +25,7 @@ from llmsearchbench.cli import (
     attribution,
     catalogue,
     data,
+    discriminate,
     examples,
     leaderboard,
     run,
@@ -47,7 +49,14 @@ app = typer.Typer(
     add_completion=False,
 )
 
-for group in (run.app, catalogue.app, attribution.app, leaderboard.app, examples.app):
+for group in (
+    run.app,
+    catalogue.app,
+    attribution.app,
+    leaderboard.app,
+    examples.app,
+    discriminate.app,
+):
     app.registered_commands.extend(group.registered_commands)
 
 app.add_typer(data.app, name="data")

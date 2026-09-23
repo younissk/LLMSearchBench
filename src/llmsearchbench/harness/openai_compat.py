@@ -292,6 +292,46 @@ class ChatCompletionsAdapter:
         """The id this provider expects. Overridden where ours is prefixed."""
         return model_id
 
+    def complete(self, prompt: str, temperature: float = 0.0) -> Turn:
+        """One prompt, one reply, no tools offered.
+
+        The search-result-discrimination task hands the results over in the
+        prompt; there is nothing to call. Offering a tool anyway would change
+        what is being measured and would fail outright on the providers whose
+        servers have tool calling switched off.
+        """
+        started = time.monotonic()
+        payload: dict[str, Any] = {
+            "model": self.wire_name(self._spec.id),
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": MAX_TOKENS,
+        }
+        if self._spec.supports_temperature:
+            payload["temperature"] = temperature
+
+        body = self._post(payload)
+        choices = body.get("choices") or []
+        if not choices:
+            raise ChatCompletionsError("response contained no choices")
+
+        message = choices[0].get("message") or {}
+        text = str(message.get("content") or "")
+        finish = str(choices[0].get("finish_reason") or "")
+        if not text.strip() and str(message.get("reasoning") or "").strip():
+            finish = f"{finish or 'stop'}, reasoning only"
+
+        usage = body.get("usage") or {}
+        return Turn(
+            answer=text,
+            calls=[],
+            tokens_in=int(usage.get("prompt_tokens", 0)),
+            tokens_out=int(usage.get("completion_tokens", 0)),
+            reasoning_tokens=reasoning_tokens(usage),
+            cached_tokens=cached_tokens(usage),
+            latency_s=time.monotonic() - started,
+            stop_reason=finish,
+        )
+
     def _post(self, payload: dict[str, Any]) -> dict[str, Any]:
         request = urllib.request.Request(
             self.endpoint,

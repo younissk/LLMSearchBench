@@ -407,3 +407,62 @@ class TestJevClient:
 
         # The one that was answered comes back intact.
         assert client.ask("some text", {"a": noul("is it?")})["a"]["noul"] == 0.9
+
+
+class TestRunLoop:
+    """The prompt, and what counts as a reply."""
+
+    def test_the_prompt_carries_every_candidate_with_its_id(self) -> None:
+        from llmsearchbench.harness.discrimination import build_prompt
+
+        prompt = build_prompt(task())
+        assert "[1]" in prompt and "[4]" in prompt
+        assert "Apples are a fruit" in prompt
+        assert "who replaced him" in prompt
+
+    def test_the_prompt_never_leaks_the_grades(self) -> None:
+        """The answer key travels in the same object; it must not reach the model.
+
+        The gold answer itself is not secret — it is sitting in one of the
+        candidates, which is what makes the item answerable. What must not
+        leak is which candidate that is.
+        """
+        from llmsearchbench.harness.discrimination import build_prompt
+
+        item = task()
+        prompt = build_prompt(item)
+        assert "supporting" not in prompt.lower()
+        assert "grade" not in prompt.lower()
+        for candidate_id, grade in item.relevance.items():
+            assert f'"{candidate_id}": {grade}' not in prompt
+
+    def test_an_empty_reply_is_a_failure_not_an_abstention(self) -> None:
+        """Saying nothing is not the same as saying the results do not answer."""
+        from llmsearchbench.harness.adapters import Turn
+        from llmsearchbench.harness.discrimination import run_task
+
+        class Silent:
+            def complete(self, prompt: str, temperature: float = 0.0) -> Turn:
+                return Turn(
+                    answer="  ",
+                    calls=[],
+                    tokens_in=10,
+                    tokens_out=4096,
+                    latency_s=1.0,
+                    stop_reason="length",
+                )
+
+        attempt = run_task(task(), "m", Silent())
+        assert attempt.failed
+        assert "length" in attempt.error
+
+    def test_a_provider_error_is_recorded_rather_than_raised(self) -> None:
+        from llmsearchbench.harness.adapters import Turn
+        from llmsearchbench.harness.discrimination import run_task
+
+        class Broken:
+            def complete(self, prompt: str, temperature: float = 0.0) -> Turn:
+                raise ConnectionError("the provider went away")
+
+        attempt = run_task(task(), "m", Broken())
+        assert attempt.failed and "ConnectionError" in attempt.error

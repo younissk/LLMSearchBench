@@ -317,6 +317,29 @@ MODELS: dict[str, ModelSpec] = {
                 "Moonshot rejects any temperature but 1, so none is sent."
             ),
         ),
+        # Free OpenRouter endpoints, used to smoke-test a new task before any
+        # money is spent on it. They rate limit hard, so a run against these is
+        # a check that the task works, not a measurement of the field.
+        ModelSpec(
+            id="google/gemma-4-31b-it:free",
+            label="Gemma 4 31B (free)",
+            provider="openrouter",
+            price_in_per_mtok=0.0,
+            price_out_per_mtok=0.0,
+            priced_on="2026-09-23",
+            is_free=True,
+            notes="open weights; free endpoint, heavily rate limited",
+        ),
+        ModelSpec(
+            id="nvidia/nemotron-3-super-120b-a12b:free",
+            label="Nemotron 3 Super 120B-A12B (free)",
+            provider="openrouter",
+            price_in_per_mtok=0.0,
+            price_out_per_mtok=0.0,
+            priced_on="2026-09-23",
+            is_free=True,
+            notes="open weights; free endpoint of a model already run on the paid route",
+        ),
         ModelSpec(
             id="avey/olive",
             label="Avey Olive",
