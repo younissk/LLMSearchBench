@@ -49,6 +49,28 @@ def run_task(task: ToolUseTask, model: str, adapter: PromptAdapter) -> ToolUseAt
             error=f"{type(error).__name__}: {error}",
         )
 
+    # A reply with no text and no call is not a decision not to search — it is
+    # nothing. Two ways to get one, both seen in real runs: a model that spent
+    # its whole budget thinking (`finish_reason: length`), and one that
+    # returned an empty message. Scoring either as "chose not to search" would
+    # credit it on two buckets out of three for having said nothing at all.
+    if not turn.calls and not turn.answer.strip():
+        return ToolUseAttempt(
+            task_id=task.id,
+            model=model,
+            tokens_in=turn.tokens_in,
+            tokens_out=turn.tokens_out,
+            reasoning_tokens=turn.reasoning_tokens,
+            cached_tokens=turn.cached_tokens,
+            latency_s=turn.latency_s,
+            stop_reason=turn.stop_reason,
+            tool_protocol=turn.tool_protocol,
+            error=(
+                "no answer and no tool call"
+                + (f" (stop reason {turn.stop_reason!r})" if turn.stop_reason else "")
+            ),
+        )
+
     return ToolUseAttempt(
         task_id=task.id,
         model=model,

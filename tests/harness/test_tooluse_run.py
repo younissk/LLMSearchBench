@@ -328,3 +328,80 @@ class TestParsePromptedCall:
 
         call = parse_prompted_call("I do not know this offhand.\nSEARCH: Avey Olive model")
         assert call is not None and call.arguments == {"query": "Avey Olive model"}
+
+
+class TestTextEmittedCalls:
+    """Some models write the call into the reply instead of the tool field.
+
+    Their provider serves them without a matching tool-call parser, so the
+    text arrives verbatim. The decision to search was still made.
+    """
+
+    def test_a_qwen_style_call_is_read(self) -> None:
+        from llmsearchbench.harness.openai_compat import parse_text_calls
+
+        text = (
+            "I will look this up.\n<function=search>\n"
+            "<parameter=query>\nstreams parallelize\n</parameter>\n</function>"
+        )
+        calls = parse_text_calls(text)
+        assert len(calls) == 1
+        assert calls[0].name == "search"
+        assert calls[0].query == "streams parallelize"
+        assert calls[0].emitted_as_text
+
+    def test_a_chatml_style_call_is_read(self) -> None:
+        from llmsearchbench.harness.openai_compat import parse_text_calls
+
+        calls = parse_text_calls(
+            '<tool_call>{"name": "search", "arguments": {"query": "who won"}}</tool_call>'
+        )
+        assert len(calls) == 1 and calls[0].query == "who won"
+        assert calls[0].emitted_as_text
+
+    def test_ordinary_prose_is_not_a_call(self) -> None:
+        from llmsearchbench.harness.openai_compat import parse_text_calls
+
+        assert parse_text_calls("The function search() is not being called here.") == []
+
+    def test_scoring_reports_it_as_a_call_problem(self) -> None:
+        from llmsearchbench.scoring.tooluse import CallProblem, inspect_calls
+        from llmsearchbench.types.tooluse import ToolCall, ToolUseAttempt
+
+        attempt = ToolUseAttempt(
+            task_id="t",
+            model="m",
+            answer="text",
+            calls=[ToolCall(name="search", arguments={"query": "x"}, emitted_as_text=True)],
+        )
+        assert inspect_calls(attempt) == [CallProblem.TEXT_CALL]
+        # Still a search: the model decided to look it up.
+        assert attempt.searched
+
+
+class TestEmptyReplies:
+    """A reply with no text and no call is not a decision."""
+
+    def test_an_empty_reply_is_recorded_as_a_failure(self, tmp_path: Path) -> None:
+        out = tmp_path / "attempts.jsonl"
+        adapter = adapter_for([Response("end_turn", [Block(type="text", text="   ")])])
+        attempts = run_tasks([task("a")], "m", adapter, out_path=out, concurrency=1)
+        assert attempts[0].failed
+        assert "no answer and no tool call" in attempts[0].error
+        # Not done, so a rerun retries it rather than scoring the silence.
+        assert completed_task_ids(out) == set()
+
+    def test_a_truncated_reply_keeps_its_stop_reason(self, tmp_path: Path) -> None:
+        """A model that spent the whole budget thinking never decided."""
+        adapter = adapter_for([Response("max_tokens", [])])
+        attempts = run_tasks(
+            [task("a")], "m", adapter, out_path=tmp_path / "a.jsonl", concurrency=1
+        )
+        assert attempts[0].failed and "max_tokens" in attempts[0].error
+
+    def test_an_answer_is_still_a_decision(self, tmp_path: Path) -> None:
+        adapter = adapter_for([answered("Paris.")])
+        attempts = run_tasks(
+            [task("a")], "m", adapter, out_path=tmp_path / "a.jsonl", concurrency=1
+        )
+        assert not attempts[0].failed

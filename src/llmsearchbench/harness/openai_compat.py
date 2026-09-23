@@ -17,7 +17,7 @@ import urllib.error
 import urllib.request
 from typing import Any, ClassVar
 
-from llmsearchbench.harness.adapters import Turn
+from llmsearchbench.harness.adapters import Turn, validate_search_arguments
 from llmsearchbench.providers import ModelSpec
 from llmsearchbench.types.enums import ToolProtocol
 from llmsearchbench.types.tooluse import ToolCall
@@ -32,6 +32,11 @@ DEADLINE = 180.0
 
 #: How much body to read per chunk while checking the deadline.
 CHUNK = 1 << 16
+
+#: Output budget for one turn. 4096 was not enough: a reasoning model can
+#: spend that much thinking and stop before it says or calls anything, which
+#: is not a decision and so cannot be scored.
+MAX_TOKENS = 8192
 
 #: Waits between retries of a rate-limited request, in seconds. A 429 is the
 #: provider asking for a slower pace, not a broken item, so retrying beats
@@ -101,6 +106,71 @@ def parse_prompted_call(text: str) -> ToolCall | None:
             name="search", arguments={}, schema_error="missing required argument 'query'"
         )
     return ToolCall(name="search", arguments={"query": query}, schema_error=None)
+
+
+#: Tool calls some models write into the reply text instead of using the
+#: provider's tool-calling field. Each one was measured coming back from a real
+#: model, not guessed at:
+#:
+#: * `<function=search><parameter=query>…` — Qwen's coder models
+#: * `<tool_call>{"name": …, "arguments": {…}}</tool_call>` — the ChatML form
+#:
+#: The provider serves these models without a matching tool-call parser, so the
+#: text arrives verbatim. Reading it matters: the model *did* decide to search,
+#: and counting that as "chose not to search" would put a whole model's
+#: behaviour on the wrong side of the measurement.
+TEXT_FUNCTION_CALL = re.compile(
+    r"<function=(?P<name>[\w.-]+)\s*>(?P<body>.*?)(?:</function>|\Z)",
+    re.DOTALL,
+)
+TEXT_PARAMETER = re.compile(
+    r"<parameter=(?P<key>[\w.-]+)\s*>(?P<value>.*?)(?:</parameter>|\Z)",
+    re.DOTALL,
+)
+CHATML_TOOL_CALL = re.compile(r"<tool_call>\s*(?P<json>\{.*?\})\s*</tool_call>", re.DOTALL)
+
+
+def parse_text_calls(text: str) -> list[ToolCall]:
+    """Read tool calls a model wrote into its reply text.
+
+    Returns them marked `emitted_as_text`, which scoring reports as a call
+    problem: the decision was right to record, the call was not usable.
+    """
+    calls: list[ToolCall] = []
+
+    for match in TEXT_FUNCTION_CALL.finditer(text):
+        raw = {
+            parameter["key"]: parameter["value"].strip()
+            for parameter in TEXT_PARAMETER.finditer(match["body"])
+        }
+        arguments, schema_error = validate_search_arguments(raw)
+        calls.append(
+            ToolCall(
+                name=match["name"],
+                arguments=arguments,
+                schema_error=schema_error,
+                emitted_as_text=True,
+            )
+        )
+
+    for match in CHATML_TOOL_CALL.finditer(text):
+        try:
+            parsed = json.loads(match["json"])
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(parsed, dict):
+            continue
+        arguments, schema_error = validate_search_arguments(parsed.get("arguments", {}))
+        calls.append(
+            ToolCall(
+                name=str(parsed.get("name", "")),
+                arguments=arguments,
+                schema_error=schema_error,
+                emitted_as_text=True,
+            )
+        )
+
+    return calls
 
 
 class ChatCompletionsError(RuntimeError):
@@ -208,7 +278,7 @@ class ChatCompletionsAdapter:
         payload: dict[str, Any] = {
             "model": self.wire_name(self._spec.id),
             "messages": [{"role": "user", "content": content}],
-            "max_tokens": 4096,
+            "max_tokens": MAX_TOKENS,
         }
         # A server with tool calling disabled rejects the request outright when
         # `tools` is present, whatever `tool_choice` says.
@@ -287,6 +357,12 @@ class ChatCompletionsAdapter:
 
         message = choices[0].get("message") or {}
         text = str(message.get("content") or "")
+        finish = str(choices[0].get("finish_reason") or "")
+        # Some models return `content: null` with everything in `reasoning`.
+        # That is deliberation, not an answer and not a call, so it does not
+        # become the answer — but the stop reason should say what happened.
+        if not text.strip() and str(message.get("reasoning") or "").strip():
+            finish = f"{finish or 'stop'}, reasoning only"
 
         calls: list[ToolCall] = []
         if self.prompted:
@@ -304,6 +380,9 @@ class ChatCompletionsAdapter:
                 )
             )
 
+        if not calls:
+            calls = parse_text_calls(text)
+
         return Turn(
             answer=text,
             calls=calls,
@@ -313,7 +392,7 @@ class ChatCompletionsAdapter:
             reasoning_tokens=reasoning_tokens(usage),
             cached_tokens=cached_tokens(usage),
             latency_s=time.monotonic() - started,
-            stop_reason=str(choices[0].get("finish_reason") or ""),
+            stop_reason=finish,
         )
 
 
@@ -389,6 +468,8 @@ class ResponsesAdapter(ChatCompletionsAdapter):
                 ]
 
         text = "".join(texts)
+        if not calls:
+            calls = parse_text_calls(text)
         if self.prompted:
             prompted_call = parse_prompted_call(text)
             if prompted_call is not None:

@@ -89,6 +89,10 @@ class ToolCall(BenchModel):
     arguments: dict[str, str] = Field(default_factory=dict)
     #: Set when the arguments did not satisfy the tool schema.
     schema_error: str | None = None
+    #: True when the model wrote the call into its reply text instead of using
+    #: the provider's tool-calling field. The decision to search was still
+    #: made, so it counts as a search — but the call itself is malformed.
+    emitted_as_text: bool = False
 
     @property
     def query(self) -> str:

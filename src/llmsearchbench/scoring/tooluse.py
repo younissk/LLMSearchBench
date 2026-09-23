@@ -36,6 +36,9 @@ class CallProblem(StrEnum):
     SCHEMA_ERROR = "schema-error"
     #: Called search with nothing to search for.
     EMPTY_QUERY = "empty-query"
+    #: Wrote the call into the reply text rather than using the tool-calling
+    #: field. Nothing downstream could execute it.
+    TEXT_CALL = "text-call"
 
 
 class TaskOutcome(BenchModel):
@@ -120,6 +123,8 @@ def inspect_calls(attempt: ToolUseAttempt, *, search_tool: str = "search") -> li
     problems: list[CallProblem] = []
 
     for call in attempt.calls:
+        if call.emitted_as_text:
+            problems.append(CallProblem.TEXT_CALL)
         if call.name != search_tool:
             problems.append(CallProblem.WRONG_TOOL)
         elif call.schema_error:
