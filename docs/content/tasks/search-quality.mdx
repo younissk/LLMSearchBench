@@ -1,0 +1,75 @@
+---
+id: search-quality
+title: Search quality
+sidebar_label: Search quality
+sidebar_position: 2
+description: A planned second task — once a model decides to search, is the query any good?
+---
+
+# Search quality
+
+:::info[Coming soon]
+
+Nothing here has been run yet. There is no data, no code and no leaderboard for
+this task — this page records what it is meant to measure so the design can be
+argued with before anything is built.
+
+:::
+
+## The gap this fills
+
+[Tool-use correctness](./tool-use-correctness/) stops at the decision. The
+moment a model reaches for `search`, the episode ends and the call is recorded;
+the query itself is only checked for being well formed.
+
+That leaves an obvious question unanswered. Two models can both correctly decide
+to search and be nowhere near each other in usefulness:
+
+| Prompt | Model A searches for | Model B searches for |
+| --- | --- | --- |
+| "Who won the 2026 Australian Open men's singles final?" | `2026 Australian Open` | `2026 Australian Open men's singles final winner` |
+| "What did the court rule in the Meituan antitrust appeal?" | `Meituan` | `Meituan antitrust appeal ruling` |
+
+Both decisions are right. One query would return the answer; the other returns a
+tournament homepage and a company profile. The first task scores those two
+models identically, and it is correct to do so — it is measuring something else.
+
+## What it would measure
+
+Given items where searching **is** the right move, three things about the query:
+
+1. **Specificity** — does the query carry the entities and the constraint from
+   the prompt, or does it drop the part that makes the question a question?
+2. **Retrievability** — would this query actually surface the answer? This is
+   the only measure here that needs a real search backend, and it is the reason
+   the task does not exist yet.
+3. **Recovery** — given results that do not contain the answer, does the model
+   reformulate, or repeat itself and then guess?
+
+## Why it is not built yet
+
+Three things are undecided, and building before deciding them would produce
+numbers nobody could interpret:
+
+- **It cannot stay offline.** Tool-use correctness never executes a search,
+  which is what makes it cheap, deterministic and free of a search vendor's
+  ranking. Measuring retrievability means executing searches, so results become
+  a function of *which* index answered and *when* — a benchmark that silently
+  re-scores itself every week is not a benchmark.
+- **Scoring a query is not obvious.** String overlap with a reference query
+  rewards imitation rather than usefulness. Judging with a model makes the
+  judge part of the measurement.
+- **"Good" depends on the backend.** A query tuned for a keyword index is not
+  the query you want for a semantic one.
+
+A frozen corpus with recorded results for a fixed query set would answer the
+first two. That is the likely shape, and it is a larger piece of work than the
+first task was.
+
+## What exists today
+
+Nothing runnable. The prompts this task would use are already in the
+[`search` bucket](./tool-use-correctness/buckets) of the first task — items
+where a model cannot answer from memory — so the input side is mostly solved.
+
+Follow the [changelog](/changelog) for when this moves.

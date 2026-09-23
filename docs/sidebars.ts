@@ -29,6 +29,7 @@ const sidebars: SidebarsConfig = {
             'tasks/tool-use-correctness/open-weight-coverage',
           ],
         },
+        'tasks/search-quality',
       ],
     },
     {
