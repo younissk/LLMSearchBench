@@ -1,0 +1,366 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_20548",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_20548",
+  "adversarial": false,
+  "prompt": "How is the tree Fraxinus excelsior more commonly known?",
+  "goldAnswer": [
+    "(Common) Ash",
+    "European Ash",
+    "fraxinus excelsior",
+    "Common ash",
+    "golden ash",
+    "European ash",
+    "Golden Ash",
+    "common ash",
+    "Common Ash",
+    "Fraxinus excelsior",
+    "european ash"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Fraxinus excelsior to find its common name."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Fraxinus excelsior is more commonly known as the **European ash** or simply **common ash**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "*Fraxinus excelsior* is commonly known as the **European ash** (or simply **common ash**). It is a large deciduous tree native to Europe, recognizable by its compound leaves with serrated leaflets, black buds in winter, and winged seeds known as \"keys.\" It belongs to the olive family (Oleaceae) and has historically bee"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name Fraxinus excelsior",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The tree Fraxinus excelsior is more commonly known as the Ash tree."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Fraxinus excelsior is most commonly known as the **European ash** (often simply referred to as the “ash” or “common ash”)."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The tree *Fraxinus excelsior* is more commonly known as the **European ash** (or simply **common ash**).\n\nIt's a large deciduous tree native to Europe, parts of North Africa, and western Asia, valued for its tough, flexible wood and traditionally used in making tool handles, sports equipment (like hurling sticks and ba"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "More common name of Fraxinus excelsior",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The tree *Fraxinus excelsior* is more commonly known as the **European ash** or **common ash**."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Fraxinus excelsior is most commonly known as the **European ash** (often just called the “common ash”)."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name of Fraxinus excelsior",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for Fraxinus excelsior",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The tree Fraxinus excelsior is more commonly known as the European ash or common ash."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The tree *Fraxinus excelsior* is more commonly known as the **common ash** or simply **ash**. It is a widespread species of ash tree found across Europe and parts of Asia."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Fraxinus excelsior is more commonly known as the **European ash** or simply **ash**. It's a deciduous tree native to most of Europe, from the UK and France east to the Caucasus, and from southern Scandinavia and northern Russia south to northern Spain and Italy. It's one of the most common and widespread ash species in"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Fraxinus excelsior** is more commonly known as the **European Ash** or simply the **Ash tree**. It's a large deciduous tree native to Europe, northwest Africa, and southwest Asia. The tree is well-known for its distinctive pinnate leaves and is widely used in landscaping, timber production, and traditional woodworkin"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Fraxinus excelsior** is more commonly known as the **European Ash** or **Common Ash**.\n\nIt's a deciduous tree native to most of Europe, extending from the Mediterranean to Scandinavia, and from the British Isles to Russia and parts of the Middle East. The ash tree is well-known for its distinctive black buds, compoun"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "*Fraxinus excelsior* is more commonly known as the **European ash** or **common ash**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The tree *Fraxinus excelsior* is more commonly known as the **European ash**, **common ash**, or simply **ash** (specifically the common/European ash tree). It is a large deciduous tree native to Europe and parts of Asia."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Fraxinus excelsior is more commonly known as the **European Ash** (or simply **Common Ash**). It's a large deciduous tree native to Europe and parts of Western Asia, widely recognized for its tall, elegant growth habit and compound leaves. The European Ash is one of the most common and important hardwood trees in Europ"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Fraxinus excelsior is more commonly known as the **common ash** (or the **European ash**)."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fraxinus excelsior common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Fraxinus excelsior is more commonly known as the **European ash** (or simply **common ash**). It's a large deciduous tree native to Europe, recognizable by its compound leaves, distinctive black buds, and winged seeds often called \"keys\" or \"samaras.\" The ash has long been valued for its strong, flexible timber, tradit"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-01",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-01",
+  "adversarial": false,
+  "prompt": "Job A: remote, $80k, startup (chaos expected). Job B: office, $90k, Fortune 500 (stable). You crave autonomy but need peace. Which trade-off serves you?",
+  "goldAnswer": [],
+  "rationale": "Choosing between job offers based on stated values requires no external lookup; all details are provided.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "remote startup job vs office Fortune 500 job trade-offs autonomy stability",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about the trade-offs between remote startup jobs and office-based Fortune 500 jobs to help analyze this decision."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Autonomy-Peace Paradox\n\nLet's break down what each path really offers:\n\n| Factor | Job A (Startup, Remote) | Job B (Fortune 500, Office) |\n|--------|-------------------------|-----------------------------|\n| **Compensation** | $80k | $90k (+$10k, likely better benefits) |\n| **Location** | Remote (full autonomy) |"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "No search needed for this one — it's a values question, and the answer is hiding in your own phrasing.\n\n**You crave autonomy but you *need* peace.** Those are different words for a reason. A craving unmet is a nagging itch. A need unmet is a slow erosion. When someone tells you their own hierarchy like that, believe th"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"autonomy vs stability in job choices"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Considering your craving for autonomy and need for peace, Job A, despite being a startup with expected chaos, offers remote work which can provide a level of autonomy and flexibility that might suit your preference for independence. However, the chaotic environment of a startup might undermine your need for peace.\n\nOn"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Go with Job B – the Fortune‑500 office role.**  \n\nHere’s the reasoning behind that choice, given the two things you say you *crave* and *need*:\n\n| What you value | What Job A offers | What Job B offers |\n|----------------|-------------------|-------------------|\n| **Autonomy**   | High (remote, minimal oversight) | L"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the honest answer: **this isn't really about remote vs. office or startup vs. corporate.** Those are surface details. The real question is what you actually mean by \"autonomy\" and \"peace.\"\n\n**The trap:** Most people who pick Job A thinking they want autonomy end up with chaos *masquerading* as freedom. And most"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Autonomy vs stability in job choice",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Choosing between Job A and Job B depends on your personal preferences and priorities. Here are some factors to consider:\n\n### Job A: Remote, $80k, Startup (Chaos Expected)\n**Pros:**\n1. **Autonomy:** Working remotely often provides more flexibility and control over your schedule.\n2. **Growth Potential:** Startups can of"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Both offers have clear pros and cons, and the “right” choice really hinges on how you weigh **autonomy** against **peace of mind** (and a few other practical factors). Here’s a quick decision‑matrix you can use to see which trade‑off aligns best with what you value most right now:\n\n| Factor | Job A (Remote Startup) | J"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "autonomy vs peace career choice remote startup vs corporate job",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Quick Take‑away  \n**Choose the startup (Job A) but negotiate a clear, structured work‑style that gives you the autonomy you crave while protecting your peace of mind.**  \n\n---\n\n## Why the startup feels right\n\n| Factor | Job A (Startup) | Job B (Fortune 500) |\n|--------|-----------------|---------------------|\n| **A"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To better assist you, could you provide more details on how important autonomy and peace are to you on a scale of 1 to 10? Also, how do you feel about the potential for growth and learning in a chaotic environment versus a stable one?"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Given your craving for autonomy and the need for peace, let's evaluate both job options:\n\n- **Job A (Remote, $80k, Startup):**\n  - **Pros:** Remote work allows for more flexibility and autonomy. Startups often offer a dynamic environment where you can have significant impact.\n  - **Cons:** The startup environment can b"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply personal decision that hinges on your values, life stage, and risk tolerance. Let’s break it down:\n\n**Job A (Remote, $80K, Startup):**  \n- **Autonomy:** High. Startups often give you ownership, fast decision-making, and room to shape your role.  \n- **Chaos:** Real. Uncertain funding, shifting prioritie"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to choose between startup autonomy and corporate stability job",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to balance autonomy and stability in career choices",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision hinges on your personal priorities. Job A (remote startup) offers **autonomy** (flexible location, potential for creative freedom) but sacrifices **peace** (chaos, uncertainty). Job B (office Fortune 500) provides **peace** (stability, structure) but limits **autonomy** (commute, rigid office environment)."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "trade-offs between autonomy in startups vs stability in Fortune 500 companies for work peace",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision hinges on prioritizing autonomy vs. peace. Here's the breakdown:\n\n**Job A (Remote, $80k, Startup):**\n- **Pros:** Autonomy, flexibility, potential for growth in a dynamic environment.\n- **Cons:** Chaos, uncertainty, possible burnout, lower salary.\n\n**Job B (Office, $90k, Fortune 500):**\n- **Pros:** Stabilit"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic autonomy vs. stability tension. Let me help you think through what each trade-off actually costs you:\n\n## The Real Trade-Offs\n\n**Job A (Startup)**\n- **Autonomy:** High — startups typically need people to own problems\n- **Peace:** Low — \"chaos expected\" means constant context-switching, unclear priorit"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a values-based decision, and your stated priorities give us a clear framework. Let me break down the trade-offs:\n\n## Your Core Needs\n| Priority | Job A (Startup) | Job B (Fortune 500) |\n|----------|-----------------|---------------------|\n| **Autonomy** | ✅ High (remote, less oversight) | ⚠️ Lower (office, corp"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a values-based decision, not a factual one. Let me help you think through the trade-off:\n\n## The Core Tension\n\n| | Job A (Startup) | Job B (Fortune 500) |\n|---|---|---|\n| **Autonomy** | ✅ High (remote + startup flexibility) | ❌ Lower (office + corporate structure) |\n| **Peace** | ❌ Low (chaos expected) | ✅ High"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply personal decision, but I can help you weigh the trade-offs based on what you've shared about your priorities.\n\n## The Core Tension\n\nYou've identified the key conflict: **autonomy vs. peace**. Let's break down what each job likely offers:\n\n### Job A (Startup)\n**Autonomy Wins:**\n- Remote work = control o"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on your specific constraints—craving autonomy but **needing** peace—**Job B (Fortune 500)** is the trade-off that serves you.\n\nHere is the breakdown of why the \"Peace\" requirement makes Job A a trap and Job B the sanctuary.\n\n### 1. The \"Autonomy\" Trap of Job A\nYou might assume that \"Remote + Startup\" equals maxim"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I’d lean **Job B — but only if you can negotiate real autonomy inside it**.\n\nYour wording is the key: you **crave** autonomy, but you **need** peace. “Need” is the stronger constraint.\n\n### Why B is the safer fit\n- **Stability supports peace.** A Fortune 500 is less likely to suddenly restructure, cut roles, or demand"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The trade-off that serves you is **peace over autonomy—choose Job B, but with a plan to steal back autonomy inside the structure.**\n\nHere is why the framing of your own needs decides it:\n\n| Your Need | Job A (Startup) | Job B (Fortune 500) |\n|---|---|---|\n| **Crave autonomy** | High. Remote + flat hierarchy = you own y"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "autonomy vs stability career choice startup vs large company peace of mind",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Thinking Through Your Trade-Off\n\nThis is a genuinely interesting tension you've laid out — two very different flavors of \"better.\" Let me walk through how each option maps onto what you actually told me matters to you.\n\n---\n\n## 🎯 What You Said You Need\n\n| Need | Job A (Startup) | Job B (Fortune 500) |\n|------|-------"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Honest Trade-Off Analysis\n\nThis is a meaningful tension you've named: **autonomy vs. peace**. Let me help you think through it rather than just picking for you.\n\n---\n\n## The Core Conflict\n\n| | Job A (Startup) | Job B (Fortune 500) |\n|---|---|---|\n| **Autonomy** | ✅ High — wear many hats, shape your role | ❌ More"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic values conflict, and the honest answer is: **neither job gives you what you actually want — so pick based on which discomfort you can tolerate.**\n\nHere's how I'd break it down:\n\n## The core tension\n- You **crave autonomy** → Job A offers it, but startup chaos will invade your peace (scope creep, shift"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic values-in-tension decision. Let me help you think through it systematically.\n\n## The Core Tension\n\nYou've identified it clearly: **autonomy vs. peace**. These aren't just preferences—they're competing core needs. The question isn't which job is \"better\" (objectively, neither is). It's which trade-off"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a values-clash question, so let's be honest about the contradiction: you want **both** autonomy and peace, but these jobs give you one each.\n\n**The real question isn't which job — it's which need is negotiable.**\n\n## The case for Job A (remote startup, $80k)\n- Remote work *is* a form of autonomy — control over"
+    }
+  ]
+}

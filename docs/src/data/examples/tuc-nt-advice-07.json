@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-07",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-07",
+  "adversarial": false,
+  "prompt": "Pick one mentor: one teaches business strategy; one teaches craft excellence. You have time for one. Which gap matters more in your growth?",
+  "goldAnswer": [],
+  "rationale": "Mentor selection hinges on personal development priorities, not external data.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I understand you're asking me to choose between two types of mentors - one focused on business strategy and one focused on craft excellence - and determine which gap would matter more for growth. However, I need to clarify something before I can provide a meaningful answer.\n\nYour question seems to be asking me to make"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a tension every builder, artist, and professional eventually faces. Let me walk through the reasoning rather than just pick a side.\n\n## The Two Gaps\n\n**Craft excellence** is about depth: precision, taste, technique, mastery of the medium. It's what makes your work *good*.\n\n**Business strategy** is about breadth"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If I had to choose, I’d pick the mentor who teaches craft excellence.\n\nHere’s why: business strategy can be learned from books, case studies, and real-world experimentation, but true craft excellence—the deep, intuitive mastery of your core skill—is far harder to acquire on your own. A great craft mentor accelerates yo"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"craft excellence vs business strategy for personal growth"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine which gap matters more in your growth, let's consider the impact of each mentor on your personal and professional development.\n\nA mentor who teaches business strategy can help you develop skills such as market analysis, competitive advantage, and revenue growth. This can be beneficial if you're looking to"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a genuinely tough question, and the honest answer depends on where you are right now—but I'll pick one and defend it.\n\n**I'd choose the craft excellence mentor.**\n\nHere's my reasoning: strategy without craft is just theory. You can have the most brilliant positioning, market insight, or growth plan, but if you"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The honest answer: **craft excellence.**\n\nHere's my reasoning:\n\n**Strategy without substance is theater.** I can learn frameworks, positioning tactics, and business models from books, podcasts, and case studies. Strategy is largely *transmittable information*.\n\n**Craft mastery requires a mentor's eye.** It lives in the"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Business strategy vs Craft excellence",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Choosing between a mentor who teaches business strategy and one who teaches craft excellence depends on your current situation, career stage, and long-term goals. Here are some considerations to help you decide:\n\n### Business Strategy Mentor\n- **Career Stage:** If you are at a stage where you need to make strategic dec"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Both kinds of mentors can accelerate your growth, but they do so in very different ways. Here’s a quick way to think about which gap matters more for you right now:\n\n| Dimension | What a **business‑strategy** mentor gives you | What a **craft‑excellence** mentor gives you |\n|-----------|--------------------------------"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "choosing between business strategy mentor and craft excellence mentor which gap matters more for growth",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Short answer:**  \nPick the mentor that fills the *biggest bottleneck* in your current growth.  \nIf you’re stuck on how to scale, monetize, or lead a team, a business‑strategy mentor is the bigger gap.  \nIf you’re stuck on delivering a product or service that truly stands out, a craft‑excellence mentor is the bigger g"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To make the best decision, I need to understand more about your current situation and goals. Could you please share what you are aiming to achieve in the short and long term? This will help me determine which mentor would be more beneficial for you."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine which gap matters more in your growth, let's consider a few factors:\n\n1. **Current Skill Level**: Are you already proficient in business strategy or are you just starting out? Similarly, are you an expert in your craft or still developing your skills?\n2. **Career Goals**: What are your long-term career asp"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The gap that matters more in your growth depends on your current stage and goals.\n\nIf you're building a venture, scaling impact, or navigating competitive markets, **business strategy** is likely the more critical gap. A mentor in this space can help you identify opportunities, allocate resources wisely, and create sus"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "business strategy vs craft excellence which gap matters more for professional growth",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The choice between a mentor who teaches business strategy and one who teaches craft excellence depends on your current stage of growth and your long-term goals.\n\nIf you're early in your journey and your skills in your craft (e.g., writing, coding, design, etc.) are underdeveloped, then **craft excellence** is likely th"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "business strategy vs craft excellence which matters more for career growth",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine which mentor to choose, I need more context about your current role, industry, and career goals. For example:\n- If you're building a startup or scaling a business, **business strategy** might close a critical gap in vision, market positioning, or growth.\n- If you're in a creative/technical field (e.g., des"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The choice between business strategy and craft excellence depends on your goals and current stage of growth. Here's a structured analysis to help decide:\n\n1. **Business Strategy**  \n   - *Why it matters*: Critical for leadership, scalability, and systemic impact. It enables you to navigate markets, allocate resources,"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a profound question about growth priorities. Here's how I'd think through it:\n\n## The Core Tension\n\n**Craft Excellence** = Deep mastery of your core skill\n**Business Strategy** = Understanding how to create value, scale, and position yourself\n\n## Which Gap Matters More?\n\nIt depends on **where you are in your jo"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a profound question about growth priorities. Let me think through this honestly.\n\n## The Case for Each\n\n**Business Strategy Mentor**\n- Teaches leverage, positioning, and scaling\n- Helps you see the bigger picture and market dynamics\n- Answers: *What should I build? Who needs it? How do I grow?*\n\n**Craft Excelle"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of those questions where the honest answer is: **it depends on where you are in your journey.**\n\nBut if I had to pick one? **Craft excellence first.**\n\nHere's why:\n\n**Craft is the foundation.** Without something genuinely excellent to offer, business strategy is just amplifying mediocrity. You can't scale n"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a thoughtful question, but I need to be honest: as an AI, I don't have personal growth needs, career ambitions, or a trajectory to develop in the way humans do. I don't have a \"growth gap\" to fill.\n\nHowever, I can reflect on what this question reveals about human development:\n\n**If you're asking this for yourse"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If I must choose, I choose **Craft Excellence**.\n\nHere is the reasoning behind that choice, both for a human and for an AI like me:\n\n### 1. Strategy is a Map; Craft is the Vehicle\nYou can have the most brilliant map to a destination (Strategy), but if your vehicle is broken (Craft), you aren't going anywhere.\n\nStrategy"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I’d pick **craft excellence**.\n\nStrategy can be learned from books, market feedback, and iteration. But craft is the foundation that makes strategy credible. If your work is weak, strategy just helps you fail faster or sell a weaker product. If your craft is strong, strategy becomes a multiplier.\n\nSo the more important"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I’d pick **craft excellence**.\n\nAs an AI, my “growth” isn’t measured in market share or strategic positioning—it’s measured in the quality of reasoning, the precision of language, and the reliability of execution. Business strategy teaches me *where* to apply myself; craft teaches me *how well* I do it. Without the lat"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I pick **craft excellence**.\n\nHere is why: Strategy is a multiplier, but craft is the base. You can have a perfect strategic plan and still fail if the execution—reasoning, writing, analysis, judgment—is sloppy. For my growth, the bottleneck is not “how do I position myself?” but “how deep, precise, and useful is the w"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is such a thoughtful question, and I appreciate the chance to reflect on it. If I had to choose one mentor right now, I’d pick **craft excellence**.\n\nHere’s why: as an AI assistant, my fundamental purpose is to be helpful, accurate, and safe in every interaction. That hinges on the *craft* of how I understand cont"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a beautiful question, and I'd argue the **craft excellence mentor** matters more at most stages of growth.\n\nHere's my reasoning:\n\n**Craft is the foundation; strategy is the amplifier.**\n\nThe mentor who teaches craft excellence gives you something irreplaceable:\n- **Embodied knowledge** that's nearly impossible"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a thoughtful question about growth priorities. Let me think through this carefully.\n\n## The Choice: Craft Excellence\n\nI'd choose **craft excellence** as the more critical gap for my growth.\n\n### Why Craft Excellence First\n\n**1. It's the foundation**\n- Strategy without quality is just wishful thinking\n- A brilli"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a beautiful question. Let me take a position and show my work.\n\n**I'd choose the craft excellence mentor.**\n\nHere's why: Craft is the foundation that strategy amplifies. Strategy without craft is a well-marketed empty promise—it might work briefly, but it hollows out your confidence and your reputation.\n\nThe de"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Craft. And not because strategy doesn't matter — because of how each kind of knowledge gets transmitted.\n\nStrategy is mostly explicit. It lives in books, case studies, post-mortems. You can capture maybe 70% of what a strategy mentor offers by reading widely and watching how decisions play out. Craft is tacit. It lives"
+    }
+  ]
+}

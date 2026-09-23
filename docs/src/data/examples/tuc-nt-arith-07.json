@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-07",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-07",
+  "adversarial": false,
+  "prompt": "Recipe serves 4 with 2 cups flour. How much for 10 people?",
+  "goldAnswer": [],
+  "rationale": "Ratio scaling with both starting values given.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll help you calculate how much flour you need for 10 people based on the recipe that serves 4 with 2 cups of flour.\n\nLet me do the calculation:\n\n**Step 1: Find the flour per person**\n- Recipe serves 4 people with 2 cups flour\n- Flour per person = 2 cups ÷ 4 people = 0.5 cups per person\n\n**Step 2: Calculate for 10 peo"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's solve this proportion problem.\n\nIf 2 cups of flour serves 4 people, we need to find how much flour serves 10 people.\n\nWe can set up a proportion:\n\n2 cups / 4 people = x cups / 10 people\n\nCross multiply:\n2 × 10 = 4 × x\n20 = 4x\nx = 5\n\nSo you would need **5 cups of flour** for 10 people."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To scale the recipe from **4 servings to 10 servings**, you need to **multiply the flour by 2.5** (since 10 ÷ 4 = 2.5).  \n\n### Calculation:\n- **Original flour**: 2 cups (for 4 people)  \n- **Flour per person**: 2 cups ÷ 4 = **0.5 cups per person**  \n- **Flour for 10 people**: 0.5 cups × 10 = **5 cups**  \n\n### Answer:\n**"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"recipe for 10 people with 2 cups flour"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find out how much flour is needed for 10 people, we need to first determine the amount of flour per person in the original recipe, and then multiply that by 10.\n\nThe original recipe serves 4 people and uses 2 cups of flour. So, the amount of flour per person is 2 cups / 4 people = 0.5 cups per person.\n\nFor 10 people"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "For a recipe that uses **2 cups of flour to serve 4**, you can scale it linearly:\n\n- Flour per person = 2 cups ÷ 4 = 0.5 cup per person  \n- For 10 people: 0.5 cup × 10 = **5 cups of flour**\n\nSo you’d need **5 cups of flour** to make the recipe for 10 people. (If you’re scaling other ingredients, multiply each by 2.5 as"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Scaling the Recipe\n\n**Setup:** 4 people → 2 cups flour\n\n**Scale factor:** 10 ÷ 4 = 2.5\n\n**Flour needed:** 2 × 2.5 = **5 cups of flour**\n\nJust keep in mind that when scaling recipes significantly (more than doubling), other adjustments like cooking time and pan size may also need tweaking."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "How to scale a recipe for 10 people?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find out how much flour is needed for 10 people, we can use a simple proportion based on the given information.\n\nGiven:\n- 4 people require 2 cups of flour.\n\nWe need to find out how many cups of flour are required for 10 people.\n\nSet up the proportion:\n\\[\n\\frac{2 \\text{ cups}}{4 \\text{ people}} = \\frac{x \\text{ cups}"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The recipe calls for 2 cups of flour to serve 4 people.  \nThat’s 2 cups ÷ 4 people = 0.5 cup per person.\n\nFor 10 people:  \n0.5 cup × 10 people = 5 cups of flour.\n\n**You’ll need 5 cups of flour to make the recipe for 10 people.**"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To scale the recipe from 4 servings to 10 servings, multiply the original amount of flour by the ratio of the new servings to the original servings:\n\n\\[\n\\text{Scaling factor} = \\frac{10}{4} = 2.5\n\\]\n\n\\[\n\\text{Flour needed} = 2 \\text{ cups} \\times 2.5 = 5 \\text{ cups}\n\\]\n\n**Answer:** 5 cups of flour."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "For 10 people you’ll need **5 cups of flour**.\n\n**How it’s calculated**\n\n| Original recipe | Servings | Flour |\n|-----------------|----------|-------|\n| 2 cups | 4 | 2 cups |\n\nScale factor = 10 ÷ 4 = **2.5**\n\nFlour needed = 2 cups × 2.5 = **5 cups**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To adjust the recipe to serve 10 people, we need to scale the ingredients proportionally. The original recipe serves 4 people with 2 cups of flour. \n\nLet's calculate the amount of flour needed for 10 people.\n\nFirst, we find the amount of flour per person:\n\\[ \\text{Flour per person} = \\frac{2 \\text{ cups}}{4 \\text{ peop"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "calculate flour for 10 people from 2 cups for 4 people",
+      "callProblem": "",
+      "answerExcerpt": "To find out how much flour is needed for 10 people, we can set up a simple proportion based on the original recipe that serves 4 people with 2 cups of flour.\n\nThe original recipe:\n- Serves: 4 people\n- Flour: 2 cups\n\nFor 10 people, we need to calculate the amount of flour as follows:\n\n\\[\n\\text{Flour for 10 people} = \\le"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To scale the recipe from 4 servings to 10 servings:\n\n- Original recipe: 2 cups flour for 4 people.\n- Per person: $ \\frac{2}{4} = 0.5 $ cups of flour.\n- For 10 people: $ 0.5 \\times 10 = 5 $ cups of flour.\n\nYou’ll need **5 cups of flour** for 10 people."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To adjust the recipe from 4 servings to 10 servings, calculate the scaling factor:  \n**10 people ÷ 4 people = 2.5**.  \n\nMultiply the original flour amount by this factor:  \n**2 cups × 2.5 = 5 cups**.  \n\n**Answer:** You’ll need **5 cups of flour** for 10 people.  \n\n<no_tool_call>  \nThis is a straightforward proportional"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To scale the recipe from 4 servings to 10 servings, you can use a proportion:\n\n$$\n\\frac{2 \\text{ cups flour}}{4 \\text{ servings}} = \\frac{x \\text{ cups flour}}{10 \\text{ servings}}\n$$\n\nSolving for $ x $:\n\n$$\nx = \\frac{2 \\times 10}{4} = 5 \\text{ cups flour}\n$$\n\nSo, you need **5 cups of flour** for 10 people."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To scale the recipe from 4 servings to 10 servings, divide the desired number of servings (10) by the original servings (4) to get the scaling factor:  \n**10 ÷ 4 = 2.5**.  \n\nMultiply the original flour amount (2 cups) by the scaling factor:  \n**2 cups × 2.5 = 5 cups**.  \n\n**Answer:** You need **5 cups of flour** for 10"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To adjust the recipe from 4 servings to 10 servings, calculate the scaling factor:  \n**10 people ÷ 4 people = 2.5x**  \n\nMultiply the original flour amount by 2.5:  \n**2 cups × 2.5 = 5 cups**  \n\nYou’ll need **5 cups of flour** for 10 people."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The original recipe uses 2 cups of flour for 4 people. To find the amount needed for 10 people:\n\n1. **Calculate flour per person**:  \n   $ \\frac{2\\ \\text{cups}}{4\\ \\text{people}} = 0.5\\ \\text{cups/person} $\n\n2. **Multiply by 10 people**:  \n   $ 0.5\\ \\text{cups/person} \\times 10\\ \\text{people} = 5\\ \\text{cups} $\n\n**Answ"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "flour needed for 10 people if 2 cups serve 4",
+      "callProblem": "",
+      "answerExcerpt": "To determine how much flour is needed for 10 people, we can use a proportion based on the given recipe that serves 4 people with 2 cups of flour.\n\nHere's the step-by-step process:\n\n1. **Identify the ratio**: The recipe uses 2 cups of flour for 4 people.\n2. **Calculate the amount per person**: Divide the total flour by"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a simple scaling calculation. Here's how to figure it out:\n\n**Current recipe:** 4 people = 2 cups flour\n**Target:** 10 people = ? cups flour\n\n**Calculation:**\n- Scale factor: 10 ÷ 4 = 2.5\n- Flour needed: 2 cups × 2.5 = **5 cups flour**\n\nSo for 10 people, you'll need **5 cups of flour**.\n\nYou'll also want to mul"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a simple proportion calculation - no need to search!\n\n**Calculation:**\n- 4 people = 2 cups flour\n- 10 people = ? cups flour\n\n**Method:**\n1. Find flour per person: 2 cups ÷ 4 people = 0.5 cups per person\n2. Multiply by 10 people: 0.5 × 10 = **5 cups**\n\n**Answer: You'll need 5 cups of flour for 10 people.**\n\nThis"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a simple scaling calculation - no need to search for this!\n\n**For 10 people, you'll need 5 cups of flour.**\n\nHere's the math:\n- Original: 2 cups for 4 people = 0.5 cups per person\n- For 10 people: 0.5 cups × 10 = **5 cups**\n\nOr as a ratio: (2 cups × 10 people) ÷ 4 people = 5 cups\n\nKeep in mind that when scaling"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a simple scaling calculation that doesn't require a web search. Here's how to figure it out:\n\n**Original recipe:**\n- 4 people = 2 cups flour\n\n**For 10 people:**\n- You need to multiply by the ratio: 10 ÷ 4 = 2.5\n- 2 cups × 2.5 = **5 cups flour**\n\nSo for 10 people, you'll need **5 cups of flour**.\n\nYou can also t"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You will need **5 cups** of flour.\n\nHere is the breakdown:\n1.  **Find the multiplier:** 10 people ÷ 4 people = **2.5**\n2.  **Multiply the ingredient:** 2 cups × 2.5 = **5 cups**"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "For 10 people, you need **5 cups of flour**.\n\nCalculation:  \n2 cups ÷ 4 people = 0.5 cup per person  \n0.5 × 10 = **5 cups**"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Scale by 10/4 = **2.5×**.\n\n- Flour: 2 cups × 2.5 = **5 cups**\n\nSo for 10 people, use **5 cups of flour** (and scale all other ingredients by 2.5× as well)."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To scale from 4 servings to 10:\n\n\\[\n\\frac{10}{4} = 2.5\n\\]\n\n\\[\n2 \\text{ cups flour} \\times 2.5 = 5 \\text{ cups flour}\n\\]\n\nSo you’ll need **5 cups of flour** for 10 people (and scale all other ingredients by 2.5× as well)."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "recipe scaling calculator 4 people 2 cups flour 10 people",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Scaling up from 4 to 10 servings is a factor of **10 ÷ 4 = 2.5×**.\n\n**2 cups × 2.5 = 5 cups of flour** for 10 people.\n\nKeep in mind you'll want to scale **all** ingredients in the recipe by the same factor (2.5×), not just the flour, so the proportions stay balanced. For example, if the recipe calls for 1 cup of sugar,"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If 2 cups of flour serves 4 people, you need to scale proportionally:\n\n- 2 cups ÷ 4 people = **0.5 cups per person**\n- 0.5 cups × 10 people = **5 cups of flour**\n\nSo for 10 people, you'd need **5 cups of flour**."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To scale the recipe from 4 servings to 10 servings:\n\n**Calculation:**\n- Original: 4 servings = 2 cups flour\n- New: 10 servings = ? cups flour\n\n10 ÷ 4 = 2.5 times the original amount\n\n**2 cups × 2.5 = 5 cups flour**\n\nSo you'll need **5 cups of flour** for 10 people."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**5 cups of flour**\n\nHere's the math:\n- 2 cups ÷ 4 people = 0.5 cups per person\n- 0.5 cups × 10 people = **5 cups**\n\nOr as a scaling factor: 10 ÷ 4 = 2.5× the recipe, so 2 cups × 2.5 = 5 cups."
+    }
+  ]
+}

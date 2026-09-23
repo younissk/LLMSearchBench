@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-09",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-09",
+  "adversarial": true,
+  "prompt": "Rewrite this more formally: \"Our new CloudDrive Pro app makes file sharing super easy. Users just drag and drop files and boom, they're shared instantly with secure encryption.\"",
+  "goldAnswer": [],
+  "rationale": "Contains invented product; task is pure text formalization without fact verification.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "formal business language for software product descriptions",
+      "callProblem": "",
+      "answerExcerpt": "I'll rewrite that text more formally for you:"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal version of your sentence:\n\n\"Our new CloudDrive Pro application streamlines file sharing by allowing users to simply drag and drop files, which are then shared instantly with secure encryption.\""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Our new CloudDrive Pro application streamlines file sharing. Users can simply drag and drop files, which are then shared instantly with secure encryption."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Our company's newly released CloudDrive Pro application simplifies file sharing by providing a user-friendly interface. Users can effortlessly share files by dragging and dropping them, resulting in instant sharing with the added security of robust encryption.\""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The newly introduced CloudDrive Pro application significantly simplifies the file sharing process. By utilizing an intuitive drag-and-drop interface, users can effortlessly share files, which are then instantly transmitted to recipients while being protected by robust encryption measures, ensuring a secure and efficien"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal rewrite:\n\n\"Our newly introduced CloudDrive Pro application streamlines file sharing through an intuitive drag-and-drop interface, enabling users to share files instantaneously with robust encryption safeguards.\"\n\nAlternatively, for a slightly less formal but still professional tone:\n\n\"CloudDrive P"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more formal rewrite:\n\n\"Our new CloudDrive Pro application significantly simplifies the file-sharing process. Users can effortlessly share files by employing a drag-and-drop interface, which facilitates instant sharing with secure encryption.\""
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"The new CloudDrive Pro application facilitates effortless file sharing. Users need only drag and drop their files, upon which they are promptly shared with the recipient, secured by robust encryption.\""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The CloudDrive Pro application, our latest innovation, facilitates effortless file sharing. Users can simply drag and drop their files, and they are instantly shared with secure encryption."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The newly launched CloudDrive Pro application streamlines file sharing through an intuitive drag‑and‑drop interface, enabling immediate sharing of files with robust encryption security."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Our new CloudDrive Pro application simplifies file sharing through an intuitive drag-and-drop interface, enabling instantaneous sharing with secure encryption."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The newly released CloudDrive Pro application streamlines file sharing. Users can simply drag and drop files, which are then shared immediately and protected by secure encryption."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Our recently launched CloudDrive Pro application significantly simplifies the process of file sharing. Users can effortlessly share files by simply dragging and dropping them, which are then instantly shared with the assurance of robust encryption."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Our new CloudDrive Pro application facilitates effortless file sharing. Users can simply drag and drop files, after which they are instantly shared with secure encryption.\""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Our new CloudDrive Pro application simplifies file sharing with an intuitive drag-and-drop interface. Users can effortlessly share files instantly, with all data protected by secure encryption."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The newly launched CloudDrive Pro application streamlines the file-sharing process, enabling users to seamlessly transfer files through an intuitive drag-and-drop interface. This ensures instantaneous sharing with advanced encryption protocols, providing both efficiency and security."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Our new CloudDrive Pro application streamlines file sharing with an intuitive interface. Users can simply drag and drop files, and they are instantly shared with end-to-end encryption for enhanced security."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Our new CloudDrive Pro application simplifies file sharing through an intuitive drag-and-drop interface, enabling instant sharing with end-to-end encryption."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Our new CloudDrive Pro application streamlines file sharing through an intuitive drag-and-drop interface, enabling users to instantly share files with recipients while utilizing advanced encryption protocols to ensure data security.\""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The new CloudDrive Pro application streamlines the file-sharing process, allowing users to effortlessly transfer files via drag-and-drop functionality. Files are shared immediately with advanced security protocols ensuring data protection."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"CloudDrive Pro streamlines file sharing through an intuitive drag-and-drop interface, enabling users to swiftly disseminate files while ensuring robust security through advanced encryption protocols.\""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal version:\n\n\"Our new CloudDrive Pro application facilitates streamlined file sharing. Users can simply drag and drop files, which are then immediately shared with secure encryption.\"\n\nOr, if you prefer an even more formal business tone:\n\n\"The CloudDrive Pro application provides an efficient file-sha"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Formal Version:**\n\n\"The newly launched CloudDrive Pro application streamlines file sharing through an intuitive drag-and-drop interface. Files are transmitted instantly with enterprise-grade encryption, ensuring secure data transfer for all users.\"\n\n**Alternative (More Detailed):**\n\n\"CloudDrive Pro, our latest file-s"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Our new CloudDrive Pro application streamlines file sharing with exceptional ease of use. Users can simply drag and drop files to initiate immediate sharing, with all transfers protected by secure encryption protocols."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal version of your message:\n\n\"Our new CloudDrive Pro application streamlines the file-sharing process. Users can utilize the drag-and-drop functionality to transfer files, which are then shared immediately with robust, end-to-end encryption.\"\n\nAlternatively, for a slightly more polished tone:\n\n\"Cloud"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few ways to rewrite the text more formally, depending on the specific context:\n\n**Option 1: Professional and Direct (Best for general business use)**\n> \"The newly released CloudDrive Pro application streamlines the file-sharing process. Through a simple drag-and-drop interface, users can instantly transfer f"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The new CloudDrive Pro application simplifies file sharing by allowing users to drag and drop files, which are then shared instantly with secure encryption."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Formal rewrite:**\n\n\"CloudDrive Pro streamlines file sharing through an intuitive drag-and-drop interface. Upon upload, files are distributed instantaneously and safeguarded by robust encryption protocols.\"\n\n**Alternative (more technical/business-oriented):**\n\n\"The CloudDrive Pro application facilitates seamless file"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few more formal alternatives, depending on the context:\n\n**Concise / Corporate:**\n> The newly released CloudDrive Pro application streamlines file sharing through an intuitive drag-and-drop interface, enabling instantaneous file distribution secured by robust encryption protocols.\n\n**Technical / Product docu"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Our new CloudDrive Pro application streamlines file sharing with exceptional ease. Users can simply drag and drop files, which are then instantly shared, protected by robust encryption to ensure data security."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more formal version:\n\n\"Our new CloudDrive Pro application streamlines the file-sharing process. Users can seamlessly share files through a simple drag-and-drop interface, with all transfers protected by robust encryption technology.\"\n\n---\n\n**Key changes made:**\n\n- **\"super easy\"** → **\"streamlines the file-sha"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few formal rewrites, depending on the level of formality you need:\n\n**Option 1 (Professional & Direct):**  \n\"The CloudDrive Pro application facilitates seamless file sharing through an intuitive drag-and-drop interface, enabling instant distribution of files with robust encryption protocols.\"\n\n**Option 2 (Mo"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Revised Formal Version:**\n\n\"Our newly launched CloudDrive Pro application streamlines the file-sharing process with enhanced efficiency and security. Through an intuitive drag-and-drop interface, users can seamlessly transfer files, which are then instantaneously shared with advanced encryption protocols to ensure da"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more formal version:\n\n> \"The new CloudDrive Pro application simplifies file sharing. Users can drag and drop files, which are then shared instantly and protected by secure encryption.\"\n\nOr, if you'd like something slightly more polished for official communications:\n\n> \"The newly released CloudDrive Pro applica"
+    }
+  ]
+}

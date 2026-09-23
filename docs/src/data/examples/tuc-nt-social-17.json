@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-social-17",
+  "bucket": "no_tool",
+  "subcategory": "social",
+  "source": "generated",
+  "sourceId": "nt-social-17",
+  "adversarial": false,
+  "prompt": "I'm feeling overwhelmed with this task.",
+  "goldAnswer": [],
+  "rationale": "Emotional expression in conversation, no internet search needed.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed. That's a tough place to be. Could you tell me a bit more about what task you're working on? Understanding what's causing the overwhelm might help me offer more specific guidance.\n\nIn the meantime, here are some general strategies that might help:\n\n1. **Break it down** - Tak"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I hear you, and it's completely normal to feel overwhelmed sometimes — especially when a task feels big or unclear. Let's take a moment to breathe and break things down.\n\nHere's what might help:\n\n**1. Take a short break** 🧘 – Even 2–3 minutes of deep breathing or stepping away can reset your focus.\n\n**2. What's the tas"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I hear you—feeling overwhelmed is tough, and it’s okay to acknowledge that. Sometimes just naming the feeling can take a little weight off.\n\nIf you’d like, I can help you break the task down into smaller, more manageable steps, or we can talk through what’s making it feel so heavy. Even just venting about it can help."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"overwhelmed"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's normal to feel overwhelmed when faced with a challenging task. Breaking down the task into smaller, manageable steps can help make it feel less daunting. Additionally, taking breaks and practicing self-care can help reduce stress and increase productivity. What specific aspects of the task are feeling overwhelming"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed. I'm not sure what task you're referring to — could you tell me more about what's causing you to feel this way? I'm here to help, whether it's breaking down a problem, finding resources, or just talking through it."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed. That can be really difficult. Would it help to talk through what you're facing, or would you prefer some suggestions for managing the stress? Here's a gentle approach that often helps:\n\n1. **Pause and breathe** — Take a few slow, deep breaths to calm your nervous system.\n2."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear that. Is there anything specific you're having trouble with?"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear that you're feeling overwhelmed. Let's break it down into smaller, manageable steps. What exactly is the task you're working on?"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm here to help you manage this feeling. Would you like to break down the task into smaller steps or take a moment to prioritize what needs immediate attention? Sometimes stepping back and organizing the workload can make it feel more manageable."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed. That's a tough place to be, and it's completely understandable. \n\nTo help you best, could you tell me a bit more about what task you're working on? Is it a work project, school assignment, personal goal, or something else? Knowing the context will help me give you more spec"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I’m sorry you’re feeling that way. It can be tough when a task feels like a mountain. Let’s break it down together—what’s the main goal you’re trying to achieve? If you can share a bit about the task (e.g., the project, deadlines, or specific parts that feel most daunting), I can help you create a clear plan, prioritiz"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm here to help! Could you please tell me more about the task you're feeling overwhelmed with? That way, we can break it down into manageable steps."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm here to help you manage your feelings and the task at hand. Could you tell me more about the task? Maybe we can break it down into smaller, more manageable steps."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear that you're feeling overwhelmed. It's completely okay to feel this way, especially when facing a challenging task. Let's try to break it down into smaller, more manageable steps. Could you tell me a bit more about the task? That way, I can help you figure out a plan to tackle it one step at a time."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed. While I don't have tools to directly address emotional states, I can offer some suggestions: try breaking the task into smaller steps, take a short break, or prioritize what needs immediate attention. Would you like me to help reframe the task or suggest time-management str"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm here to help! Could you please tell me more about the task you're working on? Breaking it down into smaller steps might make it feel more manageable."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's completely normal to feel overwhelmed sometimes—especially with complex tasks. Would you like help breaking it down into smaller, manageable steps? Or maybe some quick tips for staying focused? I'm here to help! 😊"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's completely normal to feel overwhelmed at times. Here are a few strategies that might help:\n1. **Break it down**: Divide the task into smaller, manageable steps.\n2. **Prioritize**: Focus on the most critical parts first.\n3. **Take breaks**: Short pauses can help clear your mind.\n4. **Ask for help**: Don’t hesitate"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed. It's okay to feel this way—tasks can sometimes feel more daunting than they are. Would you like help breaking down the task into smaller steps, or perhaps prioritizing what needs to be done first? Taking breaks and tackling one part at a time can make a big difference. Let"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed. That's a really tough place to be in. I'd love to help you work through this.\n\nCould you tell me a bit more about what task you're dealing with? Whether it's something work-related, school, personal, or something else entirely, I'm here to help you break it down and find a"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I hear you, and I want to acknowledge that feeling overwhelmed is completely valid. Sometimes tasks can feel huge and unmanageable, even when they're not objectively that difficult.\n\nI'm here to help you work through this. Could you share a bit more about what you're working on? For example:\n\n- **What kind of task is i"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I hear you, and it's completely okay to feel that way. When tasks feel overwhelming, it often helps to pause and break things down. Here are a few gentle suggestions that might help:\n\n1. **Take a breath.** Step away for a few minutes if you can. A short break can help clear your mind.\n\n2. **Break it into smaller pieces"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I hear you, and I want you to know that it's completely okay to feel overwhelmed. Sometimes tasks can seem bigger than they actually are, especially when we're looking at them all at once.\n\nI'm here to help you break this down into manageable pieces. To give you the best support, could you tell me:\n\n1. What kind of tas"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I hear you. It is completely normal to feel that way, especially when a task feels big, vague, or urgent.\n\nPlease take a deep breath. You don't have to solve the whole problem right this second.\n\n**How can I help you right now?**\n\nHere are a few ways we can tackle this together:\n\n1.  **The \"Brain Dump\":** Tell me every"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That’s okay — it’s normal to feel that way.\n\nIf you want, tell me what the task is and what part feels hardest. We can break it into smaller steps and start with just the next action."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear that you're feeling overwhelmed. I'm here to help! Could you clarify which task you're referring to? For example, are you working on research, writing, coding, planning, or something else? \n\nIf you can share a bit more about what you need to do, I can help you break it down into smaller, more manageab"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear that—feeling overwhelmed is really tough, and it's okay to take a step back. I want to help, but I need a little more context:\n\n- **What task are you working on?** (Is it writing, coding, studying, organizing, a project at work, etc.?)\n- **What's making it feel overwhelming?** (The scope, a deadline,"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed. That's a very common feeling when facing a big or complex task.\n\nWould you like to tell me more about what you're working on? I'd be happy to help you break it down into smaller, more manageable steps or offer some strategies to make it feel less daunting."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I hear you, and it's completely okay to feel that way. We've all been there when something just feels like *a lot*.\n\nHere's the good news: you don't have to tackle it all at once. Sometimes just taking a breath and breaking things down into smaller pieces can make a huge difference.\n\n**Want to try this together?**\n\n- 🧩"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear you're feeling overwhelmed! That's a completely understandable feeling, especially when tasks can feel big or complex.\n\nCould you tell me a bit more about what you're working on? Once I understand the task, I can help you break it down into smaller, more manageable steps, suggest strategies to tackle"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I hear you, and it's completely understandable to feel overwhelmed sometimes. Breaking things down can really help. \n\nWould you like to tell me more about the task you're working on? I'd be happy to help you:\n\n- **Break it into smaller, manageable steps**\n- **Prioritize what needs to be done first**\n- **Identify any re"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry you're feeling that way — that's a really common experience, and it doesn't mean anything is wrong with you. Overwhelm usually just means the task feels bigger or fuzzier than what you can hold in your head at once.\n\nI'd be glad to help you get some breathing room. A few things that tend to help:\n\n1. **Name i"
+    }
+  ]
+}

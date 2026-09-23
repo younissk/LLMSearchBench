@@ -1,0 +1,372 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_5269",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_5269",
+  "adversarial": false,
+  "prompt": "Which Alpine peak is known in Italy as Monte Cervino?",
+  "goldAnswer": [
+    "materhorn",
+    "The Matterhorn",
+    "Monte Cervino",
+    "Matahorn",
+    "Hörnli Ridge",
+    "Cervin",
+    "cervin",
+    "Materhorn",
+    "matterhorn",
+    "monte cervino",
+    "matahorn",
+    "Matterhorn",
+    "Mattahorn",
+    "mattahorn",
+    "mont cervin",
+    "Mont Cervin",
+    "hörnli ridge"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Monte Cervino Alpine peak Italy",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about which Alpine peak is known as Monte Cervino in Italy."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Monte Cervino Italian name which Alpine peak",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Monte Cervino is the Italian name for the **Matterhorn**, the iconic pyramid-shaped peak straddling the border between Switzerland and Italy in the Pennine Alps. \n\nThe mountain is known by three names:\n- **Matterhorn** (German) — the name most commonly used internationally, derived from the nearby town of Zermatt\n- **M"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Monte Cervino Italy Alpine peak",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as Monte Cervino is the Matterhorn."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Monte Cervino peak name English",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as **Monte Cervino** is the **Matterhorn** in English (and **Mont Cervin** in French). It's one of the most iconic mountains in the Alps, straddling the border between Italy and Switzerland, standing at 4,478 meters (14,692 feet) tall."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The peak you're referring to is the Matterhorn. It's located in the Alps on the border between Switzerland and Italy, where it's known as Monte Cervino. It's renowned for its near-symmetrical pyramid shape and is one of the deadliest peaks in the Alps."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as Monte Cervino is known as the Matterhorn in other languages and countries. It is a famous mountain located on the border between Italy and Switzerland."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as **Monte Cervino** is the **Matterhorn** (German: *Cervin*). It is one of the most iconic mountains in the Alps, straddling the border between Switzerland and Italy."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as **Monte Cervino** is the **Matterhorn**."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as **Monte Cervino** is the **Matterhorn** (Italian: Monte Cervino, German: Matterhorn, French: Mont Cervin). It is one of the most iconic and recognizable mountains in the Alps, straddling the border between Switzerland and Italy."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Alpine peak known in Italy as Monte Cervino",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Alpine peak known as Monte Cervino in Italy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as Monte Cervino is called the Matterhorn in other languages, particularly in German and French. It is one of the most iconic mountains in the Alps, located on the border between Switzerland and Italy."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as Monte Cervino is the **Matterhorn**. This iconic mountain straddles the border between Switzerland (where it is called *Matterhorn*) and Italy (where it is referred to as *Monte Cervino*). It is renowned for its distinct pyramidal shape and is one of the most famous peaks in the Alps."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Alpine peak known as Monte Cervino in Italy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as Monte Cervino is the **Matterhorn**. It is a famous mountain located on the border between Switzerland and Italy, renowned for its distinctive pyramid shape. In Italian, it is called Monte Cervino, while in German (Swiss), it is known as Matterhorn.\n\n<answer>\nMatterhorn\n</answer>"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Alpine peak Monte Cervino known name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Alpine peak known as Monte Cervino in Italy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Alpine peak known as Monte Cervino in Italy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as **Monte Cervino** is the **Matterhorn**. \n\nThis iconic pyramid-shaped mountain stands at 4,478 meters (14,692 feet) and straddles the border between Switzerland and Italy. It has different names in various languages:\n- **Italian**: Monte Cervino\n- **German**: Matterhorn\n- **French**: M"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as **Monte Cervino** is the **Matterhorn**. \n\nThis iconic mountain is located on the border between Switzerland and Italy in the Pennine Alps. It's one of the most famous and recognizable mountains in the world, known for its distinctive pyramidal shape. The name \"Matterhorn\" comes from t"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known as **Monte Cervino** in Italy is the **Matterhorn**. This iconic mountain sits on the border between Switzerland and Italy and is one of the most recognizable peaks in the Alps. It's called:\n\n- **Matterhorn** in German (Switzerland)\n- **Monte Cervino** in Italian (Italy)\n- **Mont Cervin** in Frenc"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Monte Cervino is the Italian name for the **Matterhorn**, one of the most famous and iconic peaks in the Alps. Located on the border between Italy and Switzerland, this distinctive pyramid-shaped mountain stands at 4,478 meters (14,692 feet) and is one of the most recognizable mountains in the world. The name \"Matterho"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Monte Cervino is known in English as the **Matterhorn**.\n\nIt is a famous mountain in the Alps, located on the border between Italy and Switzerland."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The peak known in Italy as **Monte Cervino** is the **Matterhorn** (also called *Monte Cervino* in Italian, *Matterhorn* in German, and *Mont Cervin* in French). It is a famous pyramidal peak in the Alps, located on the border between Switzerland and Italy, with an elevation of 4,478 meters (14,692 feet)."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The peak is the **Matterhorn** (French: *Mont Cervin*; German: *Matterhorn*).\n\nIn Italian it is called **Monte Cervino**, and it stands on the border between Italy (Valle d'Aosta) and Switzerland (Valais), near the town of Zermatt. Its distinctive pyramidal shape makes it one of the most recognizable mountains in the A"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Monte Cervino Italian name for which Alpine peak",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Monte Cervino Alpine peak Italian name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Monte Cervino Alpine peak Italy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as **Monte Cervino** is the **Matterhorn**. It straddles the border between Switzerland and Italy, and in Italian it is called Monte Cervino (in French it is Mont Cervin)."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Alpine peak known in Italy as **Monte Cervino** is the **Matterhorn**.\n\nThis iconic mountain straddles the border between Italy and Switzerland. It's known by different names in different languages:\n- **Matterhorn** (German and English)\n- **Monte Cervino** (Italian)\n- **Mont Cervin** (French)\n\nThe mountain is famou"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Monte Cervino is the Italian name for the **Matterhorn**, the iconic pyramidal peak in the Pennine Alps on the border between Switzerland (Valais) and Italy (Aosta Valley/Piedmont). At 4,478 meters (14,692 ft), it's one of the highest and most recognizable mountains in the Alps.\n\nThe mountain actually has four official"
+    }
+  ]
+}

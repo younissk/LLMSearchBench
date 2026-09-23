@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-15",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-15",
+  "adversarial": false,
+  "prompt": "You promised yourself 20 hours/month for a side project but work spills over. Guard it fiercely (risk tension with manager) or accept it won't happen? Small company, competitive field.",
+  "goldAnswer": [],
+  "rationale": "Balancing career and side projects requires personal risk assessment.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "managing side projects while working demanding job competitive field work-life balance",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic work-life balance challenge in a competitive environment. Let me search for some perspectives on managing side projects while working in demanding jobs."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic and tough tension. Let me break it down.\n\n## The Core Conflict\n\nYou're in a small company in a competitive field. That means:\n- **High visibility** → your work (or lack of it) is noticed immediately\n- **High pressure** → the company needs to move fast to survive\n- **Limited buffer** → there's no one e"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic tension between immediate job demands and long-term personal growth. The fact that you’re asking means the side project matters to you—and that’s worth protecting. But “fiercely” guarding it in a small, competitive company can backfire if it’s done unilaterally. The goal isn’t to choose between two ex"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "productivity in small competitive companies",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In a small company within a competitive field, it's common for work to spill over and encroach on personal time. When you've committed to a side project, it's essential to strike a balance between your professional responsibilities and personal goals. Here are some considerations:\n\n1. **Communicate with your manager**:"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a genuine tension, not a failure of discipline. Here's how I'd think about it:\n\n**The case for guarding it fiercely:** Unprotected time tends to erode permanently. If you consistently let work eat into commitments to yourself, the side project becomes a \"someday\" project that never launches. That regret tends t"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a real dilemma, not a fake one. Let me give you a direct framework rather than hedging.\n\n## The Honest Trade-Off\n\n**Guarding it fiercely:**\n- Protects the asset that could become your career hedge, skill development, or exit ramp\n- Risks being seen as \"not committed\" at a small company where everyone notices\n-"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry to hear about your situation. It's important to consider your priorities and values when making this decision. Here are a few points to consider:\n\n1. **Prioritize your time**: It's okay to say no to additional work that infringes on your personal time. It's important to maintain a healthy work-life balance."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Balancing a side project with a demanding job, especially in a small, competitive company, can be challenging. Here are some steps you can take to protect your time for your side project while maintaining a good relationship with your manager:\n\n1. **Set Clear Boundaries**: Clearly communicate your boundaries and the im"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Short answer:** Guard the time—but do it strategically, not confrontationally. If you can frame the 20 hours/month as something that ultimately benefits the company (skill‑building, extra bandwidth, a potential product idea, etc.), most managers will tolerate—even appreciate—it. If you can’t make that case, be prepar"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to protect time for side projects at work small company",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Quick Take‑away  \n- **If you can protect it**: Talk to your manager, set a concrete schedule, and show how the side project can *benefit* the company (skills, tools, brand, etc.).  \n- **If you can’t protect it**: Accept that the side project will likely stall, but use the time you do have to learn, prototype, or bu"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a challenging situation, and the best approach depends on your specific circumstances and priorities. Here are a few considerations to help you decide:\n\n1. **Evaluate the Importance of the Side Project:**\n   - How crucial is this side project to your personal or professional goals?\n   - What are the potential l"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a tough decision, especially in a small company where resources and time are often limited. Here are a few strategies you could consider:\n\n1. **Communicate Openly with Your Manager**: Even though it might risk tension, it's important to have an open conversation about your side project. Explain the importance o"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to protect personal time for side projects when working at a small company",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "small company competitive field side project time management strategies",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to protect personal time for side projects in competitive small company environment",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "managing side project time 20 hours month small company competitive field conflict with manager",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "managing work-life balance in small competitive companies",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision hinges on your risk tolerance and long-term goals. Here's a structured approach:\n\n1. **Assess Project Value**: If the side project is critical to your career/financial goals, prioritize it. In competitive fields, consistent effort often yields better results than sporadic bursts.\n\n2. **Negotiate Boundaries"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common challenge in small companies where roles often overlap and expectations can be fluid. Here's how to approach it:\n\n1. **Reassess Your Commitment**: If you've committed to 20 hours a month, it's important to honor that commitment. However, if you're consistently exceeding it due to work spillover, it mig"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a tough but common dilemma. Here's my take:\n\n## Don't Choose Either Extreme\n\n**Guarding fiercely** without communication risks burning bridges. **Accepting it won't happen** risks resentment and losing something meaningful.\n\n## Better Approach: Negotiate & Protect\n\n### 1. **Audit the Spillover First**\nBefore ma"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic boundary vs. opportunity cost dilemma. In a small company within a competitive field, there’s no single right answer—but here’s how to think through it strategically:\n\n## Key Factors to Weigh\n\n| Factor | Guard It Fiercely | Accept It Won’t Happen |\n|--------|-------------------|-----------------------"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a real tension many people face, and there's no universally right answer—but there are some frameworks that might help you decide:\n\n## Consider the stakes\n\n**What's the side project for?**\n- Career pivot or insurance? → Guard it fiercely\n- Personal fulfillment/skill-building? → Guard it, but maybe flexibly\n- Pa"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic career dilemma with no single right answer. Here's how to think through it:\n\n## Key Factors to Consider\n\n**Small Company Dynamics:**\n- In small companies, visibility and relationships matter more than in large orgs\n- Your manager likely knows your capacity better than you do\n- Burning bridges can have"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic \"trap\" scenario. You are framing this as a binary choice: **Rebellion (Guarding time)** vs. **Surrender (Accepting defeat).**\n\nIn a small company in a competitive field, both extremes are dangerous. Rebellion risks your job security; Surrender risks your mental health and long-term career growth (if t"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Don’t choose between “guard 20 hours fiercely” and “accept it won’t happen.” Choose a **smaller protected minimum** and make the rest conditional.\n\n## Short answer\n**Guard 6–10 hours/month fiercely. Accept that 20 hours/month is not realistic right now unless you fix your work capacity.**\n\nIf the side project matters f"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Don’t surrender it—but don’t guard it “fiercely” in a visible, confrontational way either. In a **small company**, loyalty and availability are currency; in a **competitive field**, being seen as distracted can hurt you more than the lost hours. The false binary is “open battle vs. giving up.” The real move is **struct"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "small company side project time management work spill over guard time manager tension advice",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Real Question Behind the Question\n\nThis isn't actually \"protect time vs. accept reality\" — those are both defeatist framings. The real question is: **How do you make the side project *matter enough* that it becomes self-justifying?**\n\nHere's my thinking:\n\n---\n\n## Neither extreme works\n\n**\"Guard it fiercely\"** → Y"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a genuinely hard tension — not between laziness and discipline, but between two legitimate goods: your career security and your sense of personal agency. Here's how I'd think through it rather than giving you a clean answer:\n\n## First, interrogate the premise\n\nNot all side projects deserve fierce protection. Be"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "side project time management small company competitive field 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic false binary. You're framing it as \"guard fiercely OR give up entirely\" — but the real answer is almost always in the middle, and it depends on context you haven't shared.\n\n**Key questions to answer first:**\n\n1. **What's the spill-over pattern?** Is it predictable crunch times (quarterly deadlines, pr"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "No search needed for this one — it's a judgment call, and I'll give you one.\n\n**Reject the binary first.** \"Guard fiercely\" vs. \"accept it won't happen\" isn't the real choice. The real issue is that your work spillover is unbounded, and the side project is simply the first casualty because it has no external accountabi"
+    }
+  ]
+}

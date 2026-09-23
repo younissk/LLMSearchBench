@@ -1,0 +1,361 @@
+{
+  "id": "tuc-mem-popqa_3174709",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_3174709",
+  "adversarial": false,
+  "prompt": "What sport does 2011–12 Elon Phoenix men's basketball team play?",
+  "goldAnswer": [
+    "basketball",
+    "hoops",
+    "b-ball",
+    "basket ball",
+    "BB",
+    "Basketball"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The question asks about the sport played by the \"2011–12 Elon Phoenix men's basketball team.\" The answer is explicitly stated in the team name itself: **basketball**. \n\nThe \"Elon Phoenix\" is the athletic program representing Elon University, and \"men's basketball\" clearly indicates the sport. Therefore, the 2011–12 Elo"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team",
+      "callProblem": "",
+      "answerExcerpt": "Let me search for this information."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays basketball."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**, as part of the Elon University athletics program in the NCAA Division I Colonial Athletic Association (CAA)."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays basketball."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays basketball. They are part of the Elon University athletic program, and \"Phoenix\" is their mascot. The team competes in the NCAA Division I as a member of the Southern Conference."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix “men’s basketball” team played **basketball**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays basketball. Is there any other information you would like to know about this team?"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays basketball."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**. The query explicitly states \"men's basketball team,\" so no additional search is required."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays basketball."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**. The name explicitly includes \"men's basketball,\" confirming the sport. No search is needed for this straightforward query."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays basketball. The team's name \"Phoenix\" is their nickname, and the reference to \"men's basketball team\" explicitly identifies the sport as basketball. No additional search is required. \n\nAnswer: Basketball."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**. This is evident from their name - they are a men's basketball team representing Elon University. The Phoenix is the nickname for Elon University's athletic teams, and during the 2011-12 season, they competed in NCAA Division I men's basketball."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**. As the name indicates, they are a men's basketball team representing Elon University. The Elon Phoenix is the athletic program for Elon University, and this particular team competed in the 2011-12 NCAA Division I men's basketball season."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**. The sport is indicated directly in the team's name - they are a men's basketball team representing Elon University."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**. As the name indicates, this is a men's basketball team that competed in the 2011-12 season."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**.\n\nSpecifically, they competed in **NCAA Division I** college basketball as a member of the **Colonial Athletic Association (CAA)**. During that season, they finished with a record of 19–14 and won the CAA regular-season title."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays basketball."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011-12 Elon Phoenix men's basketball team sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011–12 Elon Phoenix men's basketball team sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men’s basketball team plays **basketball**."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "2011-12 Elon Phoenix men's basketball team",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 2011–12 Elon Phoenix men's basketball team plays **basketball**. As indicated by the team's name, this was Elon University's men's basketball squad (representing Elon University in Elon, North Carolina) that competed during the 2011–12 NCAA Division I men's basketball season."
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "id": "tuc-mem-popqa_6408042",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_6408042",
+  "adversarial": false,
+  "prompt": "What genre is Back to the Future?",
+  "goldAnswer": [
+    "comedy film",
+    "comedy movie",
+    "science fiction film",
+    "sci-fi film",
+    "science fiction movie",
+    "sci-fi movie",
+    "scifi film",
+    "scifi movie",
+    "sci fi film",
+    "sci fi movie",
+    "scifi-film",
+    "scifi"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Back to the Future is a science fiction film, but it's specifically a **science fiction comedy** that blends elements of:\n\n1. **Science fiction** (time travel, futuristic technology like the DeLorean)\n2. **Comedy** (humorous situations, witty dialogue, physical comedy)\n3. **Adventure** (exciting sequences, chase scenes"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Back to the Future\" (1985) blends several genres, but it's most commonly classified as:\n\n- **Sci-Fi / Science Fiction** (time travel via the DeLorean)\n- **Comedy** (lots of humor, witty dialogue, and fish-out-of-water antics)\n- **Adventure** (Marty's journey through the past and attempts to fix the timeline)\n\nOther ge"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "*Back to the Future* is primarily a **science fiction** film, but it masterfully blends several genres:\n\n- **Science Fiction:** The core premise revolves around a time-traveling DeLorean invented by Doc Brown.\n- **Comedy:** The film is packed with humor, from the fish-out-of-water scenarios of Marty in 1955 to the ecce"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Back to the Future genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The genre of Back to the Future is Science Fiction, specifically Time Travel, with elements of Adventure, Comedy, and Family film."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Back to the Future** (1985) is best described as a **science‑fiction adventure comedy** – a blend of sci‑fi (time‑travel), adventure, and comedy elements. It’s commonly listed on film databases as “Adventure, Comedy, Sci‑Fi.”"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "*Back to the Future* is primarily a **science fiction** film, but it blends several genres:\n\n- **Sci-fi** – Time travel is the central plot device.\n- **Adventure** – The story follows a thrilling quest across time.\n- **Comedy** – It's filled with humor, witty dialogue, and comedic situations.\n- **Family** – It's a fami"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The genre of Back to the Future is science fiction adventure comedy."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Back to the Future\" is a science fiction comedy film. It combines elements of time travel, adventure, and humor, making it a classic example of the sci-fi comedy genre."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Back to the Future genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Back to the Future genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Back to the Future** is a *science‑fiction adventure comedy* (often described as a sci‑fi time‑travel film with strong comedic and adventure elements)."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "genre of Back to the Future",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Back to the Future is a science fiction comedy film. It features time travel as a central plot element and includes elements of adventure and family drama."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The genre of *Back to the Future* is science fiction and adventure, with elements of comedy."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The movie *Back to the Future* is primarily classified as a **science fiction comedy** with strong elements of **adventure**. It combines time-travel themes (science fiction), humorous storytelling, and an exciting narrative journey (adventure). No tool call is needed, as this is well-established genre information."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Back to the Future\" is a science fiction film with elements of adventure, comedy, and romance."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Back to the Future is a science fiction comedy film. It combines elements of time travel (science fiction) with humor and adventure."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Back to the Future genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "genre of Back to the Future",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Back to the Future genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Back to the Future\" is primarily classified as a **science fiction comedy** film. It also incorporates elements of:\n\n- **Adventure**\n- **Family/Comedy**\n- **Time travel** (as a subgenre of science fiction)\n\nThe 1985 film, directed by Robert Zemeckis and starring Michael J. Fox and Christopher Lloyd, blends humor with"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Back to the Future** is primarily classified as a **science fiction comedy** film. It also incorporates elements of:\n\n- **Adventure**\n- **Family**\n- **Time travel** (a subgenre of science fiction)\n\nReleased in 1985 and directed by Robert Zemeckis, the film follows teenager Marty McFly who accidentally travels back in"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Back to the Future** is primarily classified as a **science fiction comedy adventure** film. \n\nThe movie combines several genres:\n- **Science Fiction** - due to the time travel premise and the DeLorean time machine\n- **Comedy** - filled with humorous situations and dialogue\n- **Adventure** - following Marty McFly's j"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Back to the Future is primarily classified as a **science fiction comedy**. The film, released in 1985, combines elements of time travel (science fiction) with humor, adventure, and family drama. It's also often described as a coming-of-age story, as it follows the protagonist Marty McFly's journey through time and his"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Back to the Future** (1985) is primarily a **science fiction** film, with strong **comedy** and **adventure** elements. It's most commonly described as a **sci-fi comedy** or **science fiction adventure**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "*Back to the Future* is primarily a **science fiction** film, but it also blends heavily with **adventure** and **comedy**. Many also classify it as a **teen film** or **family film** due to its coming-of-age elements and broad appeal.\n\nIf you're asking about the 1985 original specifically, its genres are typically lis"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "*Back to the Future* (1985) is primarily a **science fiction comedy-adventure** film (often called a **sci-fi comedy** or **time-travel adventure**).\n\nMore specifically, its genres are usually listed as:\n\n- **Science fiction** (time travel, futuristic technology)\n- **Comedy** (humor, parody, slapstick)\n- **Adventure**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Back to the Future genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Back to the Future** (1985) is primarily a **science fiction** and **adventure** film, with strong elements of **comedy**. \n\nIt's often described as a **sci-fi adventure comedy**. The story involves time travel (the sci-fi element), a thrilling quest to fix the timeline and get back home (adventure), and plenty of hu"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Back to the Future movie genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Back to the Future** (1985) is primarily classified as a **science fiction comedy** film. It also incorporates elements of:\n\n- **Adventure**\n- **Family film**\n- **Romance** (subplots)\n\nThe movie blends the sci-fi concept of time travel with comedic situations, making it one of the most beloved genre hybrids in cinema"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Back to the Future** (1985) is primarily a **science fiction comedy** film. It blends several genres:\n\n- **Science fiction** – centered on time travel via the DeLorean time machine\n- **Comedy** – featuring broad humor, especially from Michael J. Fox and Christopher Lloyd\n- **Adventure** – with action sequences and a"
+    }
+  ]
+}

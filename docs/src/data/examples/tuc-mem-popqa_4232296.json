@@ -1,0 +1,361 @@
+{
+  "id": "tuc-mem-popqa_4232296",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_4232296",
+  "adversarial": false,
+  "prompt": "What is the capital of Kingdom of Jerusalem?",
+  "goldAnswer": [
+    "Jerusalem",
+    "Yerushalayim",
+    "J'lem",
+    "Aelia Capitolina",
+    "Al-Quds",
+    "Jerusalem, Middle East"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Kingdom of Jerusalem was a Crusader state established in the Levant after the First Crusade. Its capital was **Jerusalem** (from 1099 until 1187, when it fell to Saladin). After the loss of Jerusalem, the capital moved to **Acre** (from 1191 until 1291, when the kingdom finally fell). \n\nSo, the capital was:\n- **Jer"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was **Jerusalem** itself (from 1099 to 1187), and after the loss of Jerusalem, the capital moved to **Acre** (also known as Akko or Saint-Jean-d'Acre) from 1191 until the kingdom's fall in 1291."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the **Kingdom of Jerusalem** was **Jerusalem** itself, which gave the kingdom its name. The Kingdom of Jerusalem was a Crusader state established in 1099 after the First Crusade captured the city from the Fatimid Caliphate.\n\nHowever, the capital changed over time:\n\n- **1099–1187**: Jerusalem served as th"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Kingdom of Jerusalem capital",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was **Jerusalem** itself, which gives the Crusader state its title. It was established in 1099 after the First Crusade, when Christian forces captured the city from Muslim rule, and Godfrey of Bouillon was chosen as the first ruler (initially with the title \"Advocate of the Holy"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Capital of Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was Jerusalem itself. The Kingdom of Jerusalem was a Crusader state established in the Levant after the First Crusade (1096–1099). Jerusalem served as its political and cultural center."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of the Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was **Jerusalem** itself."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Kingdom of Jerusalem was a crusader state that existed from 1099 to 1291. The capital of the Kingdom of Jerusalem was Jerusalem. Would you like more information about the history or governance of this kingdom?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was Jerusalem."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Kingdom of Jerusalem, a Crusader state established during the First Crusade in 1099, had its capital in **Jerusalem**. The city was captured by the Crusaders in 1099 and became the political and religious center of the kingdom."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was Jerusalem. The kingdom, established after the First Crusade in 1099, was named after its capital city, which remained the seat of power until its fall to Saladin in 1187. After that, the kingdom's capital was temporarily moved to Acre, but the original and primary capital was"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem historical accuracy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was **Jerusalem**. Established in 1099 following the First Crusade, the city served as the political, religious, and cultural center of the Crusader state. While other cities like Acre or Tyre held strategic importance, Jerusalem remained the de facto capital throughout the kingd"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Kingdom of Jerusalem, established during the First Crusade, did not have a single, fixed capital throughout its existence. However, the city of Jerusalem itself was the primary and most significant religious and political center of the kingdom. At various times, the kingdom's administrative functions were also cond"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Kingdom of Jerusalem had different capitals during its existence:\n\n1. **Jerusalem** (1099-1187): The original capital when the kingdom was established after the First Crusade. King Baldwin I made Jerusalem his seat of power.\n\n2. **Acre (Akko)** (1191-1291): After Saladin recaptured Jerusalem in 1187, the capital wa"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was **Jerusalem** itself, which is why the kingdom was named after it. The kingdom was established in 1099 after the First Crusade captured the city.\n\nHowever, after Jerusalem was recaptured by Saladin in 1187, the capital was moved to **Acre** (also known as Akko), which became"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **Kingdom of Jerusalem** had different capitals during its existence (1099-1291):\n\n1. **Jerusalem** (1099-1187) - The original capital when the kingdom was established after the First Crusade\n\n2. **Acre** (1191-1291) - After Jerusalem was recaptured by Saladin in 1187, the capital was moved to Acre (also known as A"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was **Jerusalem** from its founding in 1099 until 1187. After the city was captured by Saladin's forces in 1187, the capital was relocated to **Acre** (modern-day Akko, Israel), which served as the seat of the kingdom until its final fall in 1291."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of the Kingdom of Jerusalem was **Jerusalem**.\n\nAfter Jerusalem was recaptured by Saladin in 1187, the Crusader kingdom’s effective capital moved to **Acre** for its remaining period."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem history Acre Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem Jerusalem Acre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Kingdom of Jerusalem capital",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem medieval crusader state",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of Kingdom of Jerusalem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Kingdom of Jerusalem had **two capitals** during its history:\n\n## **Jerusalem (1099–1187)**\nJerusalem was the original and primary capital after the First Crusade captured the city in 1099. It remained the capital until Saladin captured it in 1187.\n\n## **Acre (1191–1291)**\nAfter the loss of Jerusalem, the capital m"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **Kingdom of Jerusalem** (established in 1099 after the First Crusade) had two capitals over its history:\n\n1. **Jerusalem** (1099–1187) — The original capital, held until it was captured by Saladin after the Battle of Hattin in 1187.\n\n2. **Acre** (1191–1291) — After the Third Crusade, the kingdom re-established its"
+    }
+  ]
+}

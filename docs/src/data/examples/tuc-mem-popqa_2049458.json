@@ -1,0 +1,357 @@
+{
+  "id": "tuc-mem-popqa_2049458",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_2049458",
+  "adversarial": false,
+  "prompt": "Who is the author of Catullus 85?",
+  "goldAnswer": [
+    "Catullus",
+    "Gaius Valerius Catullus"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Roman poet Catullus (Gaius Valerius Catullus) is the author of Catullus 85. This famous poem, which begins \"Odi et amo\" (\"I hate and I love\"), is one of Catullus's most well-known works from his collection of poems.\n\nCatullus was a Latin poet of the late Roman Republic who lived circa 84–54 BCE. His poems, particul"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is the Roman poet **Gaius Valerius Catullus** (c. 84 – c. 54 BCE). \n\nCatullus 85 is one of his most famous poems, consisting of just two lines:\n\n> *Odi et amo. Quare id faciam, fortasse requiris.*\n> *Nescio, sed fieri sentio et excrucior.*\n\n(\"I hate and I love. Why do I do that, perhaps you as"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is the Roman poet **Gaius Valerius Catullus** (c. 84 – c. 54 BCE). \n\nThe poem is one of the most famous in his collection, known for its opening line: *\"Odi et amo\"* (\"I hate and I love\")."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "author of Catullus 85",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is Gaius Valerius Catullus, a Roman poet."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Catullus 85 author",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Catullus 85 was written by the Roman poet **Gaius Valerius Catullus** (commonly known simply as **Catullus**, c. 84–c. 54 BCE). \n\nThe poem is one of his most famous works, often referred to by its opening words \"Odi et amo\" (I hate and I love). It reads:\n\n> Odi et amo. Quare id faciam, fortasse requiris?\n> Nescio, sed"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Author of Catullus 85",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Catullus 85 is a poem attributed to Gaius Valerius Catullus, a Roman poet of the 1st century BC. The poem is one of the shorter works in his collection and is known for its emotional intensity and concise expression."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "author of Catullus 85",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Catullus 85 author",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Catullus 85 was written by the Roman poet **Gaius Valerius Catullus** (c. 70 – c. 50 BCE), commonly known simply as **Catullus**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is Gaius Valerius Catullus, a Roman poet of the 1st century BC. This poem is part of a collection of his works that have survived and are widely studied in classical literature. If you need more information about the poem or Catullus, feel free to ask!"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "author of Catullus 85",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is Gaius Valerius Catullus, a Roman poet of the 1st century BCE. This poem is one of his most famous works and includes the well-known line \"Odi et amo\" (\"I hate and I love\")."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is the Roman poet **Gaius Valerius Catullus** (c. 84–54 BCE). This poem, famous for the line *\"Odi et amo\"* (\"I hate and I love\"), is part of his collected works, which survive as *Carmina* (Songs). No external search is required, as this is a well-established fact in classical literature."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is Gaius Valerius Catullus, a Roman poet from the 1st century BCE."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is **Gaius Valerius Catullus**, a Roman poet from the 1st century BCE. Catullus 85 is part of his collection of lyric poems, often referred to as \"Catullus\" in scholarly contexts. No search is needed, as this is well-established in classical literature."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of \"Catullus 85\" is **Gaius Valerius Catullus**, a Roman poet of the late Republic era. All poems in the *Carmina Catulliana* (the collection of Catullus's works) are traditionally attributed to him, though some modern scholars debate the authorship of individual poems. For Catullus 85, however, it remains w"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is Gaius Valerius Catullus, a Roman poet from the late Republic. This poem is part of his collected works, though some scholars have debated its authenticity over time."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "author of Catullus 85",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is **Gaius Valerius Catullus**, a Roman poet who lived in the 1st century BCE (approximately 84-54 BCE). \n\nCatullus 85 is one of his most famous poems, known for its opening line \"Odi et amo\" (\"I hate and I love\"). It's a brief but powerful expression of the poet's conflicted feelings about a"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is **Gaius Valerius Catullus** (commonly known simply as Catullus), a Roman poet who lived in the 1st century BCE (c. 84–54 BCE).\n\nCatullus 85 is one of his most famous short poems, consisting of just two lines:\n\n> *Odi et amo. Quare id faciam, fortasse requiris.*\n> *Nescio, sed fieri sentio e"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is **Gaius Valerius Catullus**, a Roman poet who lived in the 1st century BCE (approximately 84-54 BCE). \n\nCatullus 85 is one of his most famous poems, consisting of just two lines in Latin:\n\n*\"Odi et amo. Quare id faciam, fortasse requiris?*\n*Nescio, sed fieri sentio et excrucior.\"*\n\nWhich tr"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is **Gaius Valerius Catullus**, a Roman poet who lived during the 1st century BC (c. 84-54 BC). Catullus 85 is one of his most famous poems, a love poem addressed to his beloved Lesbia (likely a pseudonym for his real-life lover). The poem is notable for its passionate and emotional expression"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is the Roman poet **Gaius Valerius Catullus** (c. 84 – c. 54 BC).\n\nThe poem is one of his most famous works, consisting of only two lines and beginning with the phrase *\"Odi et amo\"* (\"I hate and I love\")."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is **Gaius Valerius Catullus** (c. 84–54 BC), the Roman poet of the neoteric school. The poem is part of his surviving collection of 116 poems, and like most of them, it is addressed to his beloved Lesbia.\n\nCatullus 85 specifically is a short lyric in which the speaker (Lesbia, in this case) d"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of **Catullus 85** (the famous two-line poem *“Odi et amo. Quare id faciam, fortasse requiris…”*) is the Roman poet **Gaius Valerius Catullus** (c. 84–54 BCE). It is poem 85 in his collection, the *Carmina*."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "author of Catullus 85 poem",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Catullus 85 author",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Catullus 85 author",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Catullus 85 is a poem by the Roman poet **Gaius Valerius Catullus**."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is **Gaius Valerius Catullus** (c. 84–54 BCE), the Roman poet.\n\nCatullus 85 is one of his most famous short poems, known for its opening line \"Odi et amo\" (\"I hate and I love\"). The complete poem reads:\n\n> *Odi et amo. Quare id faciam, fortasse requiris.*  \n> *Nescio, sed fieri sentio et excru"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The author of Catullus 85 is **Catullus** (Gaius Valerius Catullus), the Roman poet who lived from roughly 84–54 BCE. The numbering refers to his place in the standard collection of his poems.\n\nCatullus 85 is one of his most famous epigrams, known by its opening words *Odi et amo* (\"I hate and I love\"):\n\n> *Odi et amo."
+    }
+  ]
+}

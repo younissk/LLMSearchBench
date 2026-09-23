@@ -25,6 +25,10 @@ export interface LeaderboardRow {
   overSearchNoTool: number;
   underSearch: number;
 
+  /** Billions of parameters, measured from the published weights. Absent for a
+   *  closed model, and never estimated. */
+  paramsB?: number;
+
   /** USD for the whole run. */
   costUsd: number;
   /** The part of `costUsd` spent searching when it should not have. */

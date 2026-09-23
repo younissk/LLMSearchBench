@@ -1,0 +1,242 @@
+{
+  "deepseek/deepseek-r1": {
+    "fetched": "2026-09-23",
+    "parameters": 684489845504,
+    "repo": "deepseek-ai/DeepSeek-R1",
+    "source": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1"
+  },
+  "deepseek/deepseek-v3.2": {
+    "fetched": "2026-09-23",
+    "parameters": 685355329792,
+    "repo": "deepseek-ai/DeepSeek-V3.2",
+    "source": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V3.2"
+  },
+  "deepseek/deepseek-v4-flash": {
+    "fetched": "2026-09-23",
+    "parameters": 290944616402,
+    "repo": "deepseek-ai/DeepSeek-V4-Flash",
+    "source": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4-Flash"
+  },
+  "meituan/longcat-2.0": {
+    "fetched": "2026-09-23",
+    "parameters": 1775560491136,
+    "repo": "meituan-longcat/LongCat-2.0",
+    "source": "https://huggingface.co/api/models/meituan-longcat/LongCat-2.0"
+  },
+  "meta-llama/llama-3.1-8b-instruct": {
+    "fetched": "2026-09-23",
+    "parameters": 8030261248,
+    "repo": "meta-llama/Llama-3.1-8B-Instruct",
+    "source": "https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "meta-llama/llama-3.3-70b-instruct": {
+    "fetched": "2026-09-23",
+    "parameters": 70553706496,
+    "repo": "meta-llama/Llama-3.3-70B-Instruct",
+    "source": "https://huggingface.co/api/models/meta-llama/Llama-3.3-70B-Instruct"
+  },
+  "minimax/minimax-m2": {
+    "fetched": "2026-09-23",
+    "parameters": 228689764864,
+    "repo": "MiniMaxAI/MiniMax-M2",
+    "source": "https://huggingface.co/api/models/MiniMaxAI/MiniMax-M2"
+  },
+  "minimax/minimax-m3": {
+    "fetched": "2026-09-23",
+    "parameters": 427040140160,
+    "repo": "MiniMaxAI/MiniMax-M3",
+    "source": "https://huggingface.co/api/models/MiniMaxAI/MiniMax-M3"
+  },
+  "mistralai/mistral-nemo": {
+    "fetched": "2026-09-23",
+    "parameters": 12247782400,
+    "repo": "mistralai/Mistral-Nemo-Instruct-2407",
+    "source": "https://huggingface.co/api/models/mistralai/Mistral-Nemo-Instruct-2407"
+  },
+  "mistralai/mistral-small-3.2-24b-instruct": {
+    "fetched": "2026-09-23",
+    "parameters": 24011361280,
+    "repo": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "source": "https://huggingface.co/api/models/mistralai/Mistral-Small-3.2-24B-Instruct-2506"
+  },
+  "moonshot/kimi-k2.6": {
+    "fetched": "2026-09-23",
+    "parameters": 1026879376368,
+    "repo": "moonshotai/Kimi-K2.6",
+    "source": "https://huggingface.co/api/models/moonshotai/Kimi-K2.6"
+  },
+  "moonshot/kimi-k3": {
+    "fetched": "2026-09-23",
+    "parameters": 2779931837184,
+    "repo": "moonshotai/Kimi-K3",
+    "source": "https://huggingface.co/api/models/moonshotai/Kimi-K3"
+  },
+  "nvidia/nemotron-3-nano-30b-a3b": {
+    "fetched": "2026-09-23",
+    "parameters": 31577937344,
+    "repo": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "source": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+  },
+  "nvidia/nemotron-3-super-120b-a12b": {
+    "fetched": "2026-09-23",
+    "parameters": 123611012096,
+    "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "source": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+  },
+  "openai/gpt-oss-120b": {
+    "fetched": "2026-09-23",
+    "parameters": 116829156672,
+    "repo": "openai/gpt-oss-120b",
+    "source": "https://huggingface.co/api/models/openai/gpt-oss-120b"
+  },
+  "openai/gpt-oss-20b": {
+    "fetched": "2026-09-23",
+    "parameters": 20914757184,
+    "repo": "openai/gpt-oss-20b",
+    "source": "https://huggingface.co/api/models/openai/gpt-oss-20b"
+  },
+  "qwen/qwen-2.5-72b-instruct": {
+    "fetched": "2026-09-23",
+    "parameters": 72706203648,
+    "repo": "Qwen/Qwen2.5-72B-Instruct",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen2.5-72B-Instruct"
+  },
+  "qwen/qwen-2.5-7b-instruct": {
+    "fetched": "2026-09-23",
+    "parameters": 7615616512,
+    "repo": "Qwen/Qwen2.5-7B-Instruct",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct"
+  },
+  "qwen/qwen3-235b-a22b-2507": {
+    "fetched": "2026-09-23",
+    "parameters": 235093634560,
+    "repo": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-235B-A22B-Instruct-2507"
+  },
+  "qwen/qwen3-235b-a22b-thinking-2507": {
+    "fetched": "2026-09-23",
+    "parameters": 235093634560,
+    "repo": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-235B-A22B-Thinking-2507"
+  },
+  "qwen/qwen3-30b-a3b-instruct-2507": {
+    "fetched": "2026-09-23",
+    "parameters": 30532122624,
+    "repo": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B-Instruct-2507"
+  },
+  "qwen/qwen3-30b-a3b-thinking-2507": {
+    "fetched": "2026-09-23",
+    "parameters": 30532122624,
+    "repo": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B-Thinking-2507"
+  },
+  "qwen/qwen3-32b": {
+    "fetched": "2026-09-23",
+    "parameters": 32762123264,
+    "repo": "Qwen/Qwen3-32B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-32B"
+  },
+  "qwen/qwen3-8b": {
+    "fetched": "2026-09-23",
+    "parameters": 8190735360,
+    "repo": "Qwen/Qwen3-8B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-8B"
+  },
+  "qwen/qwen3-coder-30b-a3b-instruct": {
+    "fetched": "2026-09-23",
+    "parameters": 30532122624,
+    "repo": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-30B-A3B-Instruct"
+  },
+  "qwen/qwen3.5-122b-a10b": {
+    "fetched": "2026-09-23",
+    "parameters": 125086497008,
+    "repo": "Qwen/Qwen3.5-122B-A10B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3.5-122B-A10B"
+  },
+  "qwen/qwen3.5-27b": {
+    "fetched": "2026-09-23",
+    "parameters": 27781427952,
+    "repo": "Qwen/Qwen3.5-27B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3.5-27B"
+  },
+  "qwen/qwen3.5-397b-a17b": {
+    "fetched": "2026-09-23",
+    "parameters": 403397928944,
+    "repo": "Qwen/Qwen3.5-397B-A17B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3.5-397B-A17B"
+  },
+  "qwen/qwen3.5-9b": {
+    "fetched": "2026-09-23",
+    "parameters": 9653104368,
+    "repo": "Qwen/Qwen3.5-9B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B"
+  },
+  "qwen/qwen3.6-27b": {
+    "fetched": "2026-09-23",
+    "parameters": 27781427952,
+    "repo": "Qwen/Qwen3.6-27B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3.6-27B"
+  },
+  "qwen/qwen3.8-27b": {
+    "fetched": "2026-09-23",
+    "parameters": 27781427952,
+    "repo": "Qwen/Qwen3.8-27B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B"
+  },
+  "qwen/qwen3.8-27b:free": {
+    "fetched": "2026-09-23",
+    "parameters": 27781427952,
+    "repo": "Qwen/Qwen3.8-27B",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B"
+  },
+  "tencent/hy3": {
+    "fetched": "2026-09-23",
+    "parameters": 298786155776,
+    "repo": "tencent/HY3",
+    "source": "https://huggingface.co/api/models/tencent/HY3"
+  },
+  "thinkingmachines/inkling": {
+    "fetched": "2026-09-23",
+    "parameters": 952377623626,
+    "repo": "thinkingmachines/Inkling",
+    "source": "https://huggingface.co/api/models/thinkingmachines/Inkling"
+  },
+  "thinkingmachines/inkling-small": {
+    "fetched": "2026-09-23",
+    "parameters": 265956439090,
+    "repo": "thinkingmachines/Inkling-Small",
+    "source": "https://huggingface.co/api/models/thinkingmachines/Inkling-Small"
+  },
+  "xiaomi/mimo-v2.5": {
+    "fetched": "2026-09-23",
+    "parameters": 310775040000,
+    "repo": "XiaomiMiMo/MiMo-V2.5",
+    "source": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.5"
+  },
+  "xiaomi/mimo-v2.5-pro": {
+    "fetched": "2026-09-23",
+    "parameters": 1023182841600,
+    "repo": "XiaomiMiMo/MiMo-V2.5-Pro",
+    "source": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.5-Pro"
+  },
+  "z-ai/glm-4.7-flash": {
+    "fetched": "2026-09-23",
+    "parameters": 31221488576,
+    "repo": "zai-org/GLM-4.7-Flash",
+    "source": "https://huggingface.co/api/models/zai-org/GLM-4.7-Flash"
+  },
+  "z-ai/glm-5": {
+    "fetched": "2026-09-23",
+    "parameters": 753864139008,
+    "repo": "zai-org/GLM-5",
+    "source": "https://huggingface.co/api/models/zai-org/GLM-5"
+  },
+  "z-ai/glm-5.3-flash": {
+    "fetched": "2026-09-23",
+    "parameters": 321323031390,
+    "repo": "zai-org/GLM-5.3-Flash",
+    "source": "https://huggingface.co/api/models/zai-org/GLM-5.3-Flash"
+  }
+}

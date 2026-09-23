@@ -1,0 +1,374 @@
+{
+  "id": "tuc-mem-popqa_6073694",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_6073694",
+  "adversarial": false,
+  "prompt": "In what country is Union State Bank, Wisconsin?",
+  "goldAnswer": [
+    "United States of America",
+    "the United States of America",
+    "America",
+    "U.S.A.",
+    "USA",
+    "U.S.",
+    "US",
+    "the US",
+    "the USA",
+    "US of A",
+    "the United States",
+    "U. S. A.",
+    "U. S.",
+    "the States",
+    "the U.S.",
+    "'Merica",
+    "U.S",
+    "United States",
+    "'Murica"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin location country",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Union State Bank in Wisconsin to find out which country it's located in."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank is located in the United States."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank, Wisconsin is in the United States — specifically in the state of Wisconsin. The name \"Wisconsin\" in the bank's title refers to its location within that U.S. state."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank is located in the United States, specifically in Wisconsin. It is a community bank with its headquarters in Milwaukee, Wisconsin."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank in Wisconsin is located in the **United States of America**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank, Wisconsin location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank West Bend Wisconsin",
+      "callProblem": "",
+      "answerExcerpt": "The Union State Bank in Wisconsin is located in the United States. Specifically, it is based in West Bend, Wisconsin. However, if you are looking for more detailed information about the bank's operations or any recent news related to it, I can help by searching the web."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank is located in the United States. Specifically, it is in Wisconsin, which is a state in the U.S."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank is located in Wisconsin, which is a state in the United States of America. Therefore, the country is the United States."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank is located in Wisconsin, which is a state in the United States of America. Therefore, the country is the United States."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Union State Bank located in Wisconsin is in the United States. Wisconsin is a state within the U.S., so the bank's country is the **United States of America**."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank, Wisconsin location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank is located in Wisconsin, United States. Specifically, it is situated in the city of Union, Wisconsin. Union is a small town in Dodge County, Wisconsin, and the bank serves the local community in this area."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin location country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank, Wisconsin is located in the **United States of America**. Wisconsin is one of the 50 states in the U.S., so any bank with \"Wisconsin\" in its name would be in the United States."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank, Wisconsin is located in the **United States of America**. Wisconsin is one of the 50 states in the U.S., so any bank located in Wisconsin is in the United States."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Union State Bank, Wisconsin is located in the **United States**. Wisconsin is a state in the U.S., so any bank with that location designation would be in the United States."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "United States"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin location country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Union State Bank Wisconsin location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    }
+  ]
+}

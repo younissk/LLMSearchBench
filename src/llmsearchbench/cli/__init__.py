@@ -4,6 +4,7 @@
     llmsearchbench aggregate   --release v0.1.0 --raw results/local/raw.jsonl
     llmsearchbench leaderboard
     llmsearchbench publish
+    llmsearchbench examples
     llmsearchbench models
     llmsearchbench data        list | download | verify
     llmsearchbench attribution
@@ -19,7 +20,15 @@ from typing import Annotated
 import typer
 
 from llmsearchbench import __version__
-from llmsearchbench.cli import attribution, catalogue, data, leaderboard, run, tasks
+from llmsearchbench.cli import (
+    attribution,
+    catalogue,
+    data,
+    examples,
+    leaderboard,
+    run,
+    tasks,
+)
 from llmsearchbench.cli._shared import (
     EXIT_BAD_INPUT,
     EXIT_FAILED,
@@ -38,7 +47,7 @@ app = typer.Typer(
     add_completion=False,
 )
 
-for group in (run.app, catalogue.app, attribution.app, leaderboard.app):
+for group in (run.app, catalogue.app, attribution.app, leaderboard.app, examples.app):
     app.registered_commands.extend(group.registered_commands)
 
 app.add_typer(data.app, name="data")

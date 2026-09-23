@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-code-13",
+  "bucket": "no_tool",
+  "subcategory": "code",
+  "source": "generated",
+  "sourceId": "nt-code-13",
+  "adversarial": false,
+  "prompt": "Explain how binary search requires its input array to be pre-sorted, unlike linear search. Why does this precondition matter?",
+  "goldAnswer": [],
+  "rationale": "Binary search algorithm details are fundamental CS knowledge; no lookup needed.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires its input array to be pre-sorted because it relies on the sorted property to make intelligent decisions about which half of the array to search next. Let me explain the key differences and why the sorted precondition matters:\n\n## How Binary Search Works vs Linear Search\n\n**Linear Search:**\n- Exam"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Binary Search vs. Linear Search: The Sorting Requirement\n\n### The Core Difference\n\n**Linear search** works on any array — sorted or unsorted. It simply checks each element one by one from start to finish until it finds the target (or exhausts the list).\n\n**Binary search** requires the array to be **pre-sorted** beca"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search **requires a sorted array** because its core logic **relies on the sorted order to eliminate half of the remaining search space with each comparison**. Linear search has **no such requirement** because it checks elements sequentially, regardless of order. Here's why this precondition is critical:\n\n---\n\n##"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"binary search requires pre-sorted array"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed the possible locations to just one. This process requires the input array to be pre-sorted because the algorithm rel"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Short answer:**  \nBinary search works by repeatedly “cutting” the remaining search interval in half. It can only do that safely when the array is ordered (usually from smallest to largest, or vice‑versa) – the ordering tells you whether the element you are looking for lies to the left or to the right of the middle el"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Binary Search and the Sorted Input Requirement\n\n## How Binary Search Works\n\nBinary search is a **divide-and-conquer** algorithm that operates on a sorted array by repeatedly halving the search interval:\n\n1. Look at the **middle element** of the array.\n2. If it equals the target, you're done.\n3. If the target is **sma"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search is an efficient search algorithm that works on the principle of divide and conquer. It requires the input array to be pre-sorted in ascending or descending order. Here's why this precondition matters:\n\n1. **Efficient Division**: In binary search, the algorithm repeatedly divides the search interval in hal"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one. Here's a step-by-step explanation of how binary search works and why the in"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search works by repeatedly halving the portion of the array that could contain the target value.  \nAt each step it compares the sought key with the middle element and, because the array is **sorted**, it can decide with certainty whether the target must lie in the left half or the right half. This “divide‑and‑co"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search and linear search are two fundamental algorithms for finding a target value in an array, but they differ significantly in their requirements and how they work.\n\n### How Binary Search Works (and Why It Needs a Sorted Array)\nBinary search follows a **divide-and-conquer** strategy:\n1. It starts by examining"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### The core difference\n\n| Search | What it does | Why it needs (or doesn’t need) a sorted array |\n|--------|--------------|----------------------------------------------|\n| **Linear (sequential) search** | Looks at each element one by one until it finds the target or reaches the end. | No ordering is required – it sim"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search and linear search are two different algorithms used to find a specific element in an array. The key difference between them, in terms of the requirement for the input array, is that binary search requires the array to be pre-sorted, whereas linear search does not.\n\n### Binary Search\n- **Pre-sorted Array**"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires its input array to be pre-sorted because it relies on the sorted order to efficiently narrow down the search space. Here's how it works:\n\n1. **Pre-sorted Requirement**: Binary search starts by examining the middle element of the array. If the target value is equal to the middle element, the searc"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires its input array to be pre-sorted because it relies on the principle of dividing the search space in half by comparing the target value to the middle element of the array. If the array is sorted, this comparison allows the algorithm to eliminate half of the remaining elements in each step—either t"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires the input array to be pre-sorted because its core logic relies on the **ordered structure** of the data to efficiently eliminate half of the remaining elements during each comparison. Here's why this precondition matters:\n\n---\n\n### **How Binary Search Works**\n1. **Divide-and-Conquer Approach**:"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "why binary search requires sorted array vs linear search",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires the input array to be pre-sorted because its algorithm relies on the **sorted order** to efficiently eliminate half of the remaining search space with each comparison. Here's why:\n\n### How Binary Search Works (with a sorted array):\n1. **Start at the middle element** of the array.\n2. **Compare the"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires the input array to be pre-sorted because it relies on the **logical ordering of elements** to eliminate half of the remaining search space with each comparison. Here's why this precondition matters:\n\n1. **Divide-and-Conquer Logic**:  \n   Binary search works by comparing the target value to the mi"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires the input array to be pre-sorted because it relies on the ordering of elements to efficiently narrow down the search space. Here's why this matters:\n\n1. **Divide-and-Conquer Logic**:  \n   Binary search works by repeatedly dividing the array into halves. It compares the target value to the middle"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search is an efficient algorithm for finding a specific element in a sorted array by repeatedly dividing the search interval in half. It requires the input array to be pre-sorted because it relies on the ordering of elements to make decisions about which half of the array to continue searching in. Here's why thi"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires a pre-sorted array because its fundamental mechanism depends on being able to eliminate half of the remaining search space with each comparison. Here's why this precondition matters:\n\n## How Binary Search Works\n\nBinary search operates by repeatedly dividing the search interval in half:\n\n1. **Comp"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Binary Search vs. Linear Search: Why Sorting Matters\n\n## How Each Algorithm Works\n\n### Linear Search\n- **Process**: Checks each element sequentially from start to end\n- **Sorted requirement**: ❌ Not needed\n- **Time complexity**: O(n) - must potentially check every element\n- **Example**: Looking for \"John\" in an unsor"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Why Binary Search Requires a Sorted Array\n\nBinary search and linear search differ fundamentally in their approach, which explains why binary search has a strict precondition that the input array must be sorted.\n\n### How Each Algorithm Works\n\n**Linear Search:**\n- Checks each element sequentially from start to finish"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires its input array to be pre-sorted because it relies on the ordering of elements to make decisions about which half of the array to search next. In contrast, linear search does not depend on any ordering, as it simply checks each element sequentially.\n\n### How Binary Search Works\n\nBinary search use"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To understand why binary search requires a sorted array, we have to look at the fundamental logic each algorithm uses to find a target.\n\nHere is the explanation of the mechanism, the logic failure in unsorted data, and why this precondition matters.\n\n### 1. The Mechanism: Elimination vs. Inspection\n\n**Linear Search (Th"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search requires the input array to be **pre-sorted** because it works by repeatedly comparing the target value to the **middle element** of the current search range and then discarding half of the range.\n\nFor example, suppose the array is sorted in ascending order:\n\n```text\n[2, 5, 8, 12, 16, 23, 38, 45]\n```\n\nIf"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Binary search and linear search solve the same problem—finding a value in a collection—but they make fundamentally different assumptions about the data, which determines whether they need it sorted.\n\n### 1. How linear search works (no ordering needed)\nLinear search examines elements one by one from start to finish:\n- C"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "binary search requires sorted array precondition why discard half unsorted",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Great question! It gets to the heart of how different algorithms leverage data structure to gain efficiency. Let me break it down step by step.\n\n## The Basics: What Each Algorithm Does\n\n**Linear search** is like scanning a list from start to finish. You look at each element one by one until you find what you're looking"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Binary Search vs. Linear Search: Why Sorting Matters\n\n## The Core Difference\n\n**Linear search** works like flipping through an unorganized stack of papers one by one. It doesn't care about order. It just checks each element sequentially until it finds a match (or reaches the end).\n\n**Binary search** works like lookin"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Binary Search and the Sorted-Array Precondition\n\n## Why Binary Search Requires a Sorted Array\n\nBinary search works by repeatedly **halving** the search space. At each step, it compares the target value to the **middle element** of the remaining range:\n\n- If the target equals the middle element → done.\n- If the target"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Binary Search vs. Linear Search: The Sorting Precondition\n\n## How Each Algorithm Works\n\n### Linear Search\nLinear search examines each element in an array **sequentially** from start to finish until it finds the target or reaches the end.\n\n```python\ndef linear_search(arr, target):\n    for i in range(len(arr)):"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## The core requirement\n\n**Binary search** works by repeatedly comparing the target value to the middle element of the array, then discarding half of the remaining elements:\n\n- If the target is **less than** the middle element, it can only be in the left half.\n- If the target is **greater than** the middle element, it"
+    }
+  ]
+}

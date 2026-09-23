@@ -28,6 +28,8 @@ export interface ScatterChartProps {
   quadrantLabels?: [string, string, string, string];
   /** Legend for the dot-area encoding, when `size` is used. */
   sizeLabel?: string;
+  /** Log x axis, for a measure that spans orders of magnitude. */
+  xScale?: 'linear' | 'log';
   footnote?: string;
   height?: number;
 }
@@ -67,6 +69,7 @@ export default function ScatterChart({
   guides,
   quadrantLabels,
   sizeLabel,
+  xScale = 'linear',
   footnote,
   height = 420,
 }: ScatterChartProps) {
@@ -82,9 +85,18 @@ export default function ScatterChart({
   const innerWidth = Math.max(120, width - padding.left - padding.right);
   const innerHeight = height - padding.top - padding.bottom;
 
-  const [x0, x1] = extent([...points.map((p) => p.x), ...(guides?.x != null ? [guides.x] : [])]);
+  // A log axis is taken in log space throughout, so padding and ticks land
+  // where the eye expects rather than bunching at the left.
+  const logged = xScale === 'log';
+  const fwd = (v: number) => (logged ? Math.log10(Math.max(v, 1e-9)) : v);
+  const back = (v: number) => (logged ? 10 ** v : v);
+
+  const [x0, x1] = extent([
+    ...points.map((p) => fwd(p.x)),
+    ...(guides?.x != null ? [fwd(guides.x)] : []),
+  ]);
   const [y0, y1] = extent([...points.map((p) => p.y), ...(guides?.y != null ? [guides.y] : [])]);
-  const sx = (v: number) => padding.left + ((v - x0) / (x1 - x0)) * innerWidth;
+  const sx = (v: number) => padding.left + ((fwd(v) - x0) / (x1 - x0)) * innerWidth;
   const sy = (v: number) => padding.top + innerHeight - ((v - y0) / (y1 - y0)) * innerHeight;
 
   const sizes = points.map((p) => p.size ?? 0);
@@ -151,11 +163,11 @@ export default function ScatterChart({
           <text
             key={`x${i}`}
             className={styles.axisLabel}
-            x={sx(t)}
+            x={sx(back(t))}
             y={padding.top + innerHeight + 16}
             textAnchor="middle"
           >
-            {fx(t)}
+            {fx(back(t))}
           </text>
         ))}
 

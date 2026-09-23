@@ -1,0 +1,92 @@
+{
+  "openai": {
+    "file": "openai.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
+    "fetched": "2026-09-23",
+    "note": "OpenAI blossom symbol, in use since February 2025. Wikimedia Commons, public domain, credited to OpenAI. openai.com serves 403 to non-browser clients, and simple-icons has no OpenAI entry."
+  },
+  "qwen": {
+    "file": "qwen.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/qwen.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0). Upstream source recorded by simple-icons: https://qwen.ai"
+  },
+  "deepseek": {
+    "file": "deepseek.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/deepseek.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0). Upstream source recorded by simple-icons: https://www.deepseek.com"
+  },
+  "z-ai": {
+    "file": "z-ai.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/zdotai.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0), title \"Z.ai\". Upstream source recorded by simple-icons: https://z-cdn.chatglm.cn/z-ai/static/logo.svg"
+  },
+  "moonshot": {
+    "file": "moonshot.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/moonshotai.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0), title \"Moonshot AI\". Upstream source recorded by simple-icons: https://www.moonshot.cn"
+  },
+  "meta-llama": {
+    "file": "meta-llama.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg",
+    "fetched": "2026-09-23",
+    "note": "Meta corporate infinity mark, not a Llama-specific mark. simple-icons (CC0). Upstream source recorded by simple-icons: https://www.meta.com"
+  },
+  "mistralai": {
+    "file": "mistralai.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/mistralai.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0). Upstream source recorded by simple-icons: https://chat.mistral.ai"
+  },
+  "nvidia": {
+    "file": "nvidia.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/nvidia.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0). Upstream source recorded by simple-icons: https://www.nvidia.com/en-us"
+  },
+  "minimax": {
+    "file": "minimax.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/minimax.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0). Upstream source recorded by simple-icons: https://github.com/MiniMax-AI/MiniMax-01/blob/57cf223b177e99636c7711a0f179e9fdc9c38e8a/figures/minimax.svg"
+  },
+  "xiaomi": {
+    "file": "xiaomi.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/xiaomi.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0). Upstream source recorded by simple-icons: https://www.mi.com/global"
+  },
+  "thinkingmachines": {
+    "file": "thinkingmachines.png",
+    "source": "https://thinkingmachines.ai/images/apple-touch-icon.png",
+    "fetched": "2026-09-23",
+    "note": "PNG, 180x180. Thinking Machines Lab publishes no SVG mark: the site header logo is styled text, and the site ships only PNG favicons. No simple-icons entry and no Wikimedia Commons SVG."
+  },
+  "meituan": {
+    "file": "meituan.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meituan.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0). Upstream source recorded by simple-icons: https://www.meituan.com/media"
+  },
+  "tencent": {
+    "file": "tencent.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tencenthy.svg",
+    "fetched": "2026-09-23",
+    "note": "Tencent Hunyuan mark (simple-icons title \"Tencent Hy\"), not the Tencent corporate logo. Chosen because the models in this benchmark are Hunyuan. simple-icons (CC0). Upstream source recorded by simple-icons: https://hy.tencent.ai"
+  },
+  "avey": {
+    "file": "avey.svg",
+    "source": "https://avey.ai/",
+    "fetched": "2026-09-23",
+    "note": "Extracted verbatim from the inline <svg class=\"logo\"> in the avey.ai homepage header; only the site-specific height=\"100%\" and class=\"logo\" attributes were removed so it renders standalone. Geometry and brand fill (#77E0FF) unchanged. Wordmark, aspect ratio 79:36."
+  },
+  "anthropic": {
+    "file": "anthropic.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/anthropic.svg",
+    "fetched": "2026-09-23",
+    "note": "simple-icons (CC0). Upstream source recorded by simple-icons: https://www.anthropic.com"
+  }
+}

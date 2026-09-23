@@ -1,5 +1,8 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import clsx from 'clsx';
 import styles from './VendorIcon.module.css';
+import sources from '@site/static/img/vendors/sources.json';
 
 interface Vendor {
   /** How the vendor writes its own name. */
@@ -14,10 +17,9 @@ interface Vendor {
  * Keyed by the namespace of a model id, which is how every provider we use
  * spells the vendor: `deepseek/deepseek-r1` -> `deepseek`.
  *
- * Letter marks rather than brand logos: a logo file is a trademark we would be
- * redistributing, and half of these vendors publish no SVG at all — a mixed set
- * would look worse than a consistent one. Drop an SVG in
- * `static/img/vendors/<key>.svg` and set `logo` to swap one in.
+ * The colour and letters here are the fallback, used when a vendor has no logo
+ * file. Where one exists it wins — see `sources.json`, which records where each
+ * mark came from and when.
  */
 const VENDORS: Record<string, Vendor> = {
   openai: {name: 'OpenAI', mark: 'OA', color: '#0b7a62'},
@@ -61,7 +63,27 @@ export interface VendorIconProps {
  * is hidden from screen readers rather than repeating that name.
  */
 export default function VendorIcon({model, size = 18}: VendorIconProps) {
-  const vendor = VENDORS[vendorKey(model)] ?? UNKNOWN;
+  const key = vendorKey(model);
+  const vendor = VENDORS[key] ?? UNKNOWN;
+  const logo = (sources as Record<string, {file: string} | undefined>)[key];
+  const src = useBaseUrl(`/img/vendors/${logo?.file ?? ''}`);
+
+  if (logo) {
+    // Most of these marks are single-colour black, which disappears on the
+    // dark surface — so each one sits on its own light chip rather than
+    // directly on the page.
+    return (
+      <span
+        className={clsx(styles.badge, styles.chip)}
+        style={{width: size, height: size}}
+        title={vendor.name}
+        aria-hidden="true"
+      >
+        <img className={styles.logo} src={src} alt="" />
+      </span>
+    );
+  }
+
   return (
     <span
       className={styles.badge}

@@ -1,0 +1,357 @@
+{
+  "id": "tuc-sea-triviaqa_qw_16531",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_qw_16531",
+  "adversarial": false,
+  "prompt": "After an earlier experiment by AOL's QuantumLink Serial what was the episodic online story (1995-7) which first included paid advertising banners and product placement?",
+  "goldAnswer": [
+    "spot or thespot com",
+    "The Spot, or thespot.com"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "1995-1997 episodic online story paid advertising banners product placement AOL QuantumLink Serial",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about this early online story from 1995-1997 that included paid advertising banners and product placement."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL QuantumLink Serial episodic online story 1995-7 paid advertising banners product placement first",
+      "callProblem": "",
+      "answerExcerpt": "Let me search for this information."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL QuantumLink Serial episodic online story 1995 1997 paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first online story with paid advertising banners and product placement 1995-7",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The episodic online story that first included paid advertising banners and product placement, after an earlier experiment by AOL's QuantumLink Serial, was \"The Spot\"."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "1995 1997 episodic online story first paid advertising banners product placement AOL QuantumLink Serial",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The series you're referring to is **\"The Spot\"** (www.thespot.com), which ran from 1995 to 1997.\n\n\"The Spot\" was an episodic online story presented in the format of a communal diary/journal, following the lives of several young adults sharing a beach house in Santa Monica. It was created by Scott Zakarin and developed"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Episodic online story 1995-7 with paid advertising banners and product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The episodic online story you're referring to is \"The Spot,\" which was created by Wired Magazine and was one of the first online narratives to include paid advertising banners and product placement. It was launched in 1996, slightly later than the timeframe you mentioned, but it is notable for its early use of these ad"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL QuantumLink Serial episodic online story 1995-7 paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-1997 first paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL QuantumLink Serial 1995-1997 episodic online story paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-1997 with paid advertising banners and product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-7 paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-1997 paid advertising banners product placement AOL QuantumLink Serial",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "1995-1997 episodic online story first paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-1997 with paid advertising banners and product placement after AOL QuantumLink Serial experiment",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-1997 first paid advertising banners product placement AOL QuantumLink Serial",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first episodic online story with paid advertising 1995-7",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-7 paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the episodic online story from 1995-1997 that first included paid advertising banners and product placement after AOL's QuantumLink Serial experiment, I will search for relevant information about early internet storytelling and advertising practices.\n<function=search>\n<parameter=query>\nepisodic online story 199"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-1997 first paid advertising banners product placement AOL QuantumLink",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "1995-1997 episodic online story paid advertising banners product placement AOL QuantumLink Serial",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-1997 paid advertising banners product placement AOL QuantumLink Serial",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL QuantumLink Serial episodic online story 1995-1997 paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL's QuantumLink Serial episodic online story 1995-7 paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995 1997 first paid advertising banners product placement AOL QuantumLink Serial",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL QuantumLink Serial earlier experiment episodic online story 1995 1997 paid advertising banners product placement first",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL QuantumLink Serial episodic online story 1995 1997 first paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995 1997 first paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995-1997 first paid advertising banners product placement QuantumLink Serial AOL",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "episodic online story 1995 1997 first included paid advertising banners product placement AOL QuantumLink Serial",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "AOL QuantumLink Serial episodic online story 1995-1997 paid advertising banners product placement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**The Spot** (at thespot.com).\n\n*The Spot* was an episodic web drama — often described as the first \"web series\" or web soap opera — launched in 1995 by Scott Zakarin, who had previously created the *QuantumLink Serial* interactive story on Quantum Link (the service that became America Online) back in 1988.\n\n*The Spot*"
+    }
+  ]
+}

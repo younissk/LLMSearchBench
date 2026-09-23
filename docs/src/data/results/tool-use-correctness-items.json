@@ -2574,6 +2574,13 @@
       "calls": "......+..........+................+...+...................++...........................................+....................+......++......+.............+......+.....+.+.+..+.++..+.+.....+..+..+.++.+.+.........+.++...+....+..+.++++..+.............................................................................................................................."
     },
     {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "decisions": "OAAAAAOAAAOAOOOAOOOAAAAAOAOAAAOOAOOAAOAAAOAOAOAAOOOOAAOOAOOAOAAOAAAOAAOAOOOOAOAAAAOAAOOAOAAAOAAOAOAAOAOOAOAOAAAOAAOOAOOAUUSUSSSUUSUSSUUUSUUSUUUUUUUUUUSUUSUSUSUSUSSSUSUSUSSSUUSSUSSSSSSSSUSSUSSUSUSUSSUUSUSSUSSUSUSSSSSUSSSSSSSUSSUSSSSUUSSSSSUSOOOOOOOAOOOAOOAOOAOAAAOOOAOOOOAAAOAOOAOAOOOAAOOAAAOAAAOAAAAOAAAAAAAAAAAOAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAA",
+      "calls": "+.....+...+.+++.+++.....+.+...++.++..+...+.+.+..++++..++.++.+..+...+..+.++++.+....+..++.+...+..+.+..+.++.+.+...+..++.++...+.+++..+.++...+..+..........+..+.+.+.+.+++.+.+.+++..++.++++++++.++.++.+.+.++..+.++.++.+.+++++.+++++++.++.++++..+++++.++++++++.+++.++.++.+...+++.++++...+.++.+.+++..++...+...+....+...........+...+.........................................+.."
+    },
+    {
       "model": "mistralai/mistral-small-3.2-24b-instruct",
       "label": "Mistral Small 3.2 24B",
       "toolProtocol": "native",
@@ -2586,6 +2593,13 @@
       "toolProtocol": "native",
       "decisions": "OAAOOAOAAAOOOOOOOOOAAOAAOOOAOOAAOAOOAOOOAOOOOOOOOOOOAOAOAOAOAAOOAOAOAAAOOOAAOAAOAOAOOAOOOAOAAOOOOAOOOOAOOOOOAOOAAAOOOAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSUSSUUSSUSSSUSSSSUSSSUSSSSSSSSSSSSUSUSUUUSSUSSSSSSUUUSUSSUUUSSSUSUSSSUSAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAOAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "calls": "+..++.+...+++++++++..+..+++.++..+.++.+++.+++++++++++.+.+.+.+..++.+.+...+++..+..+.+.++.+++.+..++++.++++.+++++.++...+++...+++++++++++++++++++++++++++++++++.++++++++++++++++.++..++.+++.++++.+++.++++++++++++.+.+...++.++++++...+.++...+++.+.+++.+............+................................+............+..........+.................................................."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOOOOOOOOOOOOOOAOOOOOOOOOOOOOOOOOOOAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOAOOOOOOOOOOOOAOOOOOOOOOOOOOOOAOOOOOOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSOOOOOAOOOOOOOOOOOOOOAAAAAAAAAAAAAAAAAAOAOAOAAOOOOOAAOOOOAAOOAOOOAAOOAOOOOAOOOAAOAAAAAAAAOAAAAAAOAAAAAOAAAAAAAAAAAOAAAAAO",
+      "calls": "+++++.++++++++++++++.+++++++++++++++++++.+++++++++++++++++++++++++++++++++++++++++++.++++++++++++.+++++++++++++++.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.++++++++++++++..................+.+.+..+++++..++++..++.+++..++.++++.+++..+........+......+.....+...........+.....+"
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2628,6 +2642,27 @@
       "toolProtocol": "native",
       "decisions": "OAAAOAOAAAAOAAAOAOAAAOAAOAOAOOOOOOOOOAOOAOAOOOOOOAAOOAAAOOAOOOOOAOAAAAOOOOOOOOOAOAOAAAOAOAAOOAOOOAOOOOOOAOOOAOOOOOOOAAOASSSUSSSSSSSSSSUSSSSSSSSSSSUSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSUSSSSSSSUSSSSSSSUOOOAOAAOOAOOOAOAOAOOAAAAAAAAAAAAAAAAAAAAOAOAOOOOAOOOOOAAAOOOAAOAAAAAAOAOOOAAAOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "calls": "+...+.+....+...+.+...+..+.+.+++++++++.++.+.++++++..++...++.+++++.+....+++++++++.+.+...+.+..++.+++.++++++.+++.+++++++..+.+++.++++++++++.+++++++++++.++++++++++++++++.++++++++++++++++++++++++++++++++++++++++.++++++++++++++++++.+++++++.+++++++.+++.+..++.+++.+.+.++....................+.+.++++.+++++...+++..+......+.+++...+.+........................................"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "decisions": "OAOOOAOAAAAOAOAAAOAOAOAAOOOAOOOOOOOOOAOOAOOOOOAOOAAOOAAAOOAOOAOAAAAAAAAAOOOOAOAAAAOOAAOAOAAAOOOOOAOOAOAOOAOOAOOAAAOAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSUSSSSSSUSSSSSSSSSUSSUAAOOOOOOOAOAOAOOOAOAAAAAAAAAAAAAAAAAAAAAAAAAAOAOAAAAAAAAAAAAAAAAAAAAAOAOAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+.+++.+....+.+...+.+.+..+++.+++++++++.++.+++++.++..++...++.++.+.........++++.+....++..+.+...+++++.++.+.++.++.++...+.....++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++++++++++++++++++++++++++++.++++++++++.++++++.+++++++++.++...+++++++.+.+.+++.+..........................+.+.....................+.+...+............................................"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOOOOAOOOOAAOAOAOOOOOOOOOOAOOOOOOOOAOOOOOOOOAOOOOAOOOOOOAOAOOAAAOOAOOAOAOAAAOOAAAOOOAAOOAAAOOOOOOAOOOOOAOOAAOOOOAOASSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSUSSUSSSSSSSSSSSSSSSSSSSSSSSUSSUSSSSSSSSSSSSSSUSSSSSSSSSSUSUSSSOOOAAAAOOAOOOAOAAAOOAAAAAAAAAAAAAAAAAAAAAAAAAOAAAOAAAAAAAAAOAAAAAAAAAAAAAAAOAOAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++++.++++.++++..+.+.++++++++++.++++++++.++++++++.++++.++++++.+.++...++.++.+.+...++...+++..++...++++++.+++++.++..++++.+.+++.+++++++++++++++++++++++++++++++++++++++++++++.++++++++.++.+++++++++++++++++++++++.++.++++++++++++++.++++++++++.+.++++++....++.+++.+...++.........................+...+.........+...............+.+..........+..............................."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "decisions": "OOOOOOOAAAAOOOOOAOOOAOOAOOOAOOOOOOOOOAOOAOOOOOOOOOOOOOAOOAOOOAOAAAAAAAAOOOOOAOOOAOOAAAOAAOAAOOAOOAOOOOAOOOOOAOOAAOOOAAOASSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSUSSSSSSSSSSSSSUSSSSSSSSSUSSSUSSUSSSSSSSSSSUUUSSSSSSSSSSSSSSUSSSAAAAAAAAAAOOOAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++++++....+++++.+++.++.+++.+++++++++.++.+++++++++++++.++.+++.+........+++++.+++.++...+..+..++.++.++++.+++++.++..+++..+.+++.+++++++++++++++++++++++++++++++++++++++++++++++++++.+.+++++++++++++.+++++++++.+++.++.++++++++++...++++++++++++++.+++..........+++.....+.....................................................................+..............................."
     },
     {
       "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -2705,6 +2740,13 @@
       "toolProtocol": "native",
       "decisions": "OOOAOAOAOAAAAAOOOOOAAOAOOOOOOOOOOAOOOOOOAOOOOOOOOOOAOAOAOOOOOAOOAAAAAAOAOOOOOOOAAAAAAAAAAAAAAAAAAAOOAAOOOOOAAOOAAOOAAAOASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSUSSSSSSSUSUSSSSSSSSSSUSSSSSSUAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAOAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "calls": "+++.+.+.+.....+++++..+.++++++++++.++++++.++++++++++.+.+.+++++.++......+.+++++++...................++..+++++..++..++...+.++++++++++++++++++++++++++++++++++++++++++++.++++++++++++++++++++++++++++++++++++++.+++++++.+++++++.+.++++++++++.++++++................+........................+....+..........................................+..............................."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "decisions": "OAOOOOOAAAAAAAOAAOAAAOAAOAOAOOOOOOOOAOOOAOOOOOOOOOOOOOAAOAOOAAOAAAAAAAAAOAOOAOAAAOAAAAAAAAAAOAAAOAOOOAAOOOAAAAAAAAAOOAAASSSSSSSSSSSSSSSSUSSSSSSSSSSSSSUSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUUSUUSUSSSSSSUSSSSSUSUSSUSSSSSSSSUUSUSAAAAAAAOOAAOOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAOOAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+.+++++.......+..+...+..+.+.++++++++.+++.+++++++++++++..+.++..+.........+.++.+...+..........+...+.+++..+++.........++...++++++++++++++++.+++++++++++++.+++++++++++++.+++++++++++++++++++++++++++++++++++++..+..+.++++++.+++++.+.++.++++++++..+.+.......++..++.+..............................+............++............................+..............................."
     },
     {
       "model": "z-ai/glm-5",

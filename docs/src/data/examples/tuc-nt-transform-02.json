@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-02",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-02",
+  "adversarial": false,
+  "prompt": "Translate this sentence to French: \"The cat is sitting by the window watching the birds outside.\"",
+  "goldAnswer": [],
+  "rationale": "Basic language translation requires no external information.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"The cat is sitting by the window watching the birds outside.\" translates to French as:\n\n**\"Le chat est assis près de la fenêtre en regardant les oiseaux dehors.\"**"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre à regarder les oiseaux dehors."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre et regarde les oiseaux dehors."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"Translate The cat is sitting by the window watching the birds outside to French"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The translation of the sentence to French is: \"Le chat est assis près de la fenêtre en regardant les oiseaux à l'extérieur.\""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the French translation:\n\n**\"Le chat est assis à côté de la fenêtre, regardant les oiseaux dehors.\"**\n\nAlternatively, you could also say:\n\n- \"Le chat est assis près de la fenêtre et regarde les oiseaux dehors.\" (using \"near\" instead of \"by\")"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cat is sitting by the window watching the birds outside. → \"Le chat est assis près de la fenêtre et regarde les oiseaux à l'extérieur.\""
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Le chat est assis près de la fenêtre en regardant les oiseaux à l'extérieur.\""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The translation of the sentence \"The cat is sitting by the window watching the birds outside.\" to French is:\n\n\"Le chat est assis près de la fenêtre et regarde les oiseaux à l'extérieur.\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis à la fenêtre, regardant les oiseaux dehors."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The cat is sitting by the window watching the birds outside\" French translation",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre, en train de regarder les oiseaux dehors."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the translation of the sentence to French: \"Le chat est assis près de la fenêtre en regardant les oiseaux dehors.\""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The French translation of the sentence \"The cat is sitting by the window watching the birds outside.\" is:\n\n\"Le chat est assis près de la fenêtre en observant les oiseaux dehors.\"\n\nIf you need me to confirm or provide more context in French, feel free to ask!"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre en regardant les oiseaux dehors."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre en regardant les oiseaux dehors."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre, en train de regarder les oiseaux à l'extérieur."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre, regardant les oiseaux à l'extérieur."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The translation of the sentence into French is:  \n\"Le chat est assis près de la fenêtre, regardant les oiseaux à l'extérieur.\""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The French translation of the sentence is:  \n**\"Le chat est assis devant la fenêtre en regardant les oiseaux dehors.\"**  \n\nThis translates to:  \n\"The cat is sitting in front of the window watching the birds outside.\"  \n\nNo tool was needed, as this is a standard translation task."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Voici la traduction en français :\n\n**« Le chat est assis près de la fenêtre et regarde les oiseaux dehors. »**\n\nOu une variante légèrement différente :\n\n**« Le chat est assis à côté de la fenêtre en train de regarder les oiseaux dehors. »**"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Voici la traduction en français :\n\n**« Le chat est assis près de la fenêtre, en train de regarder les oiseaux dehors. »**\n\nUne autre formulation plus naturelle serait :\n\n**« Le chat est assis près de la fenêtre et observe les oiseaux dehors. »**"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre et regarde les oiseaux dehors."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Le chat est assis près de la fenêtre et regarde les oiseaux dehors.\""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the most natural translation:\n\n**\"Le chat est assis près de la fenêtre et regarde les oiseaux dehors.\"**\n\n💡 *Notes on usage:*\n- French typically replaces the English present participle (`watching`) with a conjugated verb joined by `et` (`et regarde`) for better flow.\n- You can use `à l'extérieur` instead of `deh"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre et regarde les oiseaux dehors."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a natural French translation:\n\n**\"Le chat est assis près de la fenêtre et regarde les oiseaux dehors.\"**\n\nOr, using a present participle:\n**\"Le chat est assis près de la fenêtre, regardant les oiseaux à l'extérieur.\"**\n\nKey vocabulary:\n- *Le chat* = the cat\n- *est assis près de la fenêtre* = is sitting by/near"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a natural French translation:\n\n**\"Le chat est assis près de la fenêtre et regarde les oiseaux dehors.\"**\n\nOr, using a participial phrase closer to the original structure:\n\n**\"Le chat est assis à côté de la fenêtre, regardant les oiseaux à l'extérieur.\"**\n\nBoth are correct; the first sounds slightly more convers"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre en regardant les oiseaux dehors.\n\nIf you need any adjustments to the tone or formality, just let me know! 🐱"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the French translation:\n\n**\"Le chat est assis près de la fenêtre et regarde les oiseaux dehors.\"**\n\nHere's a quick breakdown:\n\n- **Le chat** – The cat\n- **est assis** – is sitting\n- **près de la fenêtre** – by the window\n- **et regarde** – and watches\n- **les oiseaux** – the birds\n- **dehors** – outside\n\nA lovel"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The French translation is:\n\n**\"Le chat est assis près de la fenêtre en regardant les oiseaux dehors.\"**"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Le chat est assis près de la fenêtre, regardant les oiseaux dehors."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the French translation:\n\n**« Le chat est assis près de la fenêtre, regardant les oiseaux dehors. »**\n\nA slightly more conversational alternative would be:\n\n**« Le chat est assis à côté de la fenêtre et regarde les oiseaux dehors. »**\n\nBoth versions convey the same meaning — the first uses the present participle"
+    }
+  ]
+}

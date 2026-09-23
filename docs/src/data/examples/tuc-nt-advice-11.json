@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-11",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-11",
+  "adversarial": true,
+  "prompt": "Move to MetroCity ($2k/mo rent, 8% unemployment, tech-heavy market) or SuburbCity ($800/mo, 4% unemployment, fewer roles)? Switching careers. Optimize for opportunity or affordability?",
+  "goldAnswer": [],
+  "rationale": "City metrics are all given; the decision is strategic reasoning, though location details might invite external search.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career switching tech market opportunities vs affordability 2024",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for current information about career switching considerations in tech-heavy markets versus more affordable areas to help you make this decision."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "switching careers should I move to high cost tech city or low cost suburban city",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a **high-stakes career pivot decision**, and the \"opportunity vs. affordability\" framing is a false dichotomy. **Your priority should be *transition speed* into your *target field*—not just raw opportunity or cost.** Here’s how to decide, based on real-world career-switching dynamics:\n\n### 🔍 Critical Factors Yo"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "<search>{\"query\": \"best cities for career change in the US\"};</search>\n\n<search>{\"query\": \"cities with high demand for career changers\"};</search>\n\n<search>{\"query\": \"affordable cities for career changers\"};</search>"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "When considering a move to either MetroCity or SuburbCity, especially while switching careers, it's essential to weigh the factors of opportunity and affordability carefully. Here's a breakdown of the key points for each location:\n\n### MetroCity\n- **Higher Rent**: With a rent of $2,000/month, living in MetroCity is sig"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic tradeoff question. Let me break it down:\n\n## Key Considerations\n\n### MetroCity ($2k/mo, 8% unemployment, tech-heavy)\n- **Pros**: More roles, networking opportunities, industry concentration\n- **Cons**: High cost of living, competitive market, more stress\n- **Best for**: Early career, need to build exp"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Career Switch Framework: MetroCity vs. SuburbCity\n\nThis is a classic dilemma during career transitions. Here's how I'd think through it:\n\n## The Case for MetroCity (Opportunity-Optimized)\n- **Higher density of entry-level/transitional roles** — critical when pivoting careers\n- **Tech ecosystem** = more adjacent roles"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Compare MetroCity and SuburbCity for living, job opportunities, and cost of living.",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "When deciding between MetroCity and SuburbCity, especially while switching careers, it's important to weigh the pros and cons of each option based on your personal and professional goals. Here are some factors to consider:\n\n### MetroCity\n**Pros:**\n1. **Opportunity:** A tech-heavy market means more job opportunities, es"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Quick Take‑away\n\n| Factor | **MetroCity** | **SuburbCity** |\n|--------|---------------|----------------|\n| **Rent (1‑bed)** | $2,000 / mo | $800 / mo |\n| **Overall Unemployment** | 8 % | 4 % |\n| **Job Market** | Tech‑heavy, many openings (especially for new‑career entrants) | Fewer roles, more diversified (retail,"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career switch move to high cost city with more jobs vs low cost city with fewer jobs advice",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Quick Take‑away  \n| Factor | MetroCity | SuburbCity |\n|--------|-----------|------------|\n| **Rent** | $2,000/mo | $800/mo |\n| **Unemployment** | 8 % | 4 % |\n| **Industry mix** | Tech‑heavy, many startups & incumbents | Mostly retail, services, light manufacturing |\n| **Average tech salary** | $110 k–$140 k | $70 k"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "tech job market and living conditions in MetroCity",
+      "callProblem": "",
+      "answerExcerpt": "To make an informed decision, we need to consider several factors such as your current financial situation, career goals, and personal preferences. However, I can help gather more information about the job market and living conditions in both cities to provide a better comparison. \n\nLet's start by searching for more de"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "job market in MetroCity tech industry",
+      "callProblem": "",
+      "answerExcerpt": "To make an informed decision, we need to consider both the cost of living and career opportunities in MetroCity versus SuburbCity. Let's start by gathering some information about the job market in these cities, particularly focusing on tech roles."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "MetroCity vs SuburbCity cost of living job market tech industry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career switch metro city vs suburb cost of living job opportunities tech market",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "MetroCity vs SuburbCity cost of living and job market comparison tech industry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "MetroCity tech job market availability for career switchers vs SuburbCity job opportunities",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "MetroCity vs SuburbCity job market trends for career changers 2023",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "current job market trends for tech industry in MetroCity and SuburbCity 2023",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a strategic career decision that depends heavily on your specific situation. Let me break down the trade-offs:\n\n## MetroCity (Opportunity Play)\n**Pros:**\n- Tech-heavy market = more roles, better networking, higher salary ceiling\n- 8% unemployment suggests active hiring (companies competing for talent)\n- Career"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic **opportunity vs. stability** tradeoff. Since you're switching careers, the decision framework changes significantly compared to someone staying in their field. Let me break down the key considerations:\n\n## The Career-Switch Factor\n\n**MetroCity Pros:**\n- Tech-heavy market = more networking opportuniti"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic opportunity vs. stability tradeoff, especially critical during a career switch. Here's a framework to decide:\n\n## Key Considerations\n\n### 🎯 **Career Switch Context** (Most Important)\n| Question | Leans MetroCity | Leans SuburbCity |\n|----------|-----------------|------------------|\n| What field are yo"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic opportunity vs. affordability trade-off. Here's how to decide:\n\n## **Choose MetroCity if:**\n- **Career growth is your priority** – Tech-heavy markets typically have more entry-level roles, networking opportunities, and faster skill acquisition\n- **You have savings** – Can absorb the $1.2k/month rent d"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on the data provided, the math and market conditions point strongly toward **SuburbCity**, but with a specific strategy to mitigate the \"fewer roles\" downside.\n\nHere is the breakdown of why MetroCity is a trap in this specific scenario and how to optimize your move.\n\n### 1. The \"MetroCity Trap\" (High Risk)\nMetroC"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Short answer:**  \n**Choose SuburbCity unless MetroCity has a clear, realistic path to the specific career you’re switching into.**  \nFor a career switch, I would usually **optimize for affordability first, opportunity second** — because affordability gives you time, and time is what lets you actually land the new car"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career switch relocate expensive city high rent vs affordable suburb fewer jobs framework decision",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "MetroCity $2k rent 8% unemployment tech-heavy market SuburbCity $800/mo 4% unemployment career switch",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic career-switching dilemma—balancing the allure of a vibrant tech hub against the practicality of a more affordable base. Let’s break it down together.\n\n## **MetroCity (Tech Hub)**\n- **Pros:**  \n  - Dense network of tech companies, meetups, and potential mentors.  \n  - More roles to apply to, even if un"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic trade-off between opportunity and affordability, and the right choice really depends on your personal circumstances and career goals. Let me break down the key considerations:\n\n## MetroCity (Higher Opportunity, Higher Cost)\n**Pros:**\n- **Tech-heavy market** means more companies, networking events, and"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic runway-vs-opportunity tradeoff, and the math is more interesting than it first looks. Here's how I'd break it down.\n\n## The cost side\n\n**Rent delta: $1,200/mo = $14,400/year.** During a career switch, you're likely earning less (entry-level salary, contract work, or nothing for a stretch), so fixed co"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic tradeoff, and the right choice depends heavily on your specific situation. Here's my analysis:\n\n## The Career-Switcher's Dilemma\n\n**MetroCity (Opportunity-Optimized)**\n- **Pros:** Tech-heavy market = more entry points, networking events, mentorship opportunities, and companies willing to take chances"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Optimize for opportunity — with one big caveat about your savings.** When you're switching careers, the metro is almost always the right call, and here's why the unemployment numbers are misleading you.\n\n**The 8% vs. 4% comparison is a trap.** Unemployment rate is an aggregate. What matters for a career switcher is t"
+    }
+  ]
+}

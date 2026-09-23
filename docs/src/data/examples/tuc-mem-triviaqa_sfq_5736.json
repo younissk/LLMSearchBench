@@ -1,0 +1,365 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_5736",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_5736",
+  "adversarial": false,
+  "prompt": "In August2007, the record producer and entrepreneur known as 'Mr. Manchester died aged 57. What was his name?",
+  "goldAnswer": [
+    "tony wilson",
+    "Anthony H Wilson",
+    "Mr Manchester",
+    "anthony h wilson",
+    "Anthony H. Wilson",
+    "mr manchester",
+    "Tony Wilson",
+    "anthony howard wilson",
+    "Anthony Howard Wilson",
+    "TONY WILSON"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Mr. Manchester\" record producer died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about this record producer and entrepreneur known as \"Mr. Manchester\" who died in August 2007 at age 57."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer entrepreneur died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": "Let me search for this information."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That was **Anthony \"Tony\" Wilson** (20 February 1950 – 10 August 2007).\n\nTony Wilson was a British record label owner, radio and television presenter, and nightclub owner who earned the nickname \"Mr Manchester\" for his tireless promotion of Manchester's culture and music scene. He was best known for:\n\n- **Factory Recor"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer death 57 August 2007",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer death 2007",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Mr. Manchester\" died aged 57 August 2007",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The producer known as \"Mr. Manchester\" who died in August 2007 was **Tony Wilson** (Anthony H. Wilson). He was the founder of Factory Records, which released music by Joy Division, New Order, and the Happy Mondays. He was also a television presenter and helped establish the Haçienda nightclub in Manchester. He died of"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Record producer and entrepreneur known as 'Mr. Manchester died aged 57 in August 2007",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The record producer and entrepreneur known as 'Mr. Manchester' who died in August 2007 at the age of 57 was named Martin Hannett. He was a significant figure in the post-punk and early industrial music scenes, best known for his innovative production work with bands like Joy Division."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester died August 2007 age 57 record producer entrepreneur",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester died August 2007 record producer entrepreneur aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer entrepreneur died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "record producer and entrepreneur known as 'Mr. Manchester' died August 2007",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "record producer and entrepreneur known as 'Mr. Manchester' died in August 2007 at age 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer entrepreneur died August 2007 age 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The record producer and entrepreneur known as 'Mr. Manchester' who died in August 2007 at age 57 was **Tony Wilson** (full name Anthony H. Wilson). He was a pivotal figure in Manchester's music scene, founding Factory Records and managing bands like Joy Division and New Order. His nickname \"Mr. Manchester\" reflected hi"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer entrepreneur died August 2007 age 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "record producer known as 'Mr. Manchester' died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "record producer known as Mr. Manchester died August 2007",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester died August 2007 real name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer entrepreneur died August 2007 age 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer entrepreneur died August 2007 age 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer entrepreneur died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Mr. Manchester\" record producer died August 2007",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Mr. Manchester\" record producer entrepreneur died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr Manchester died August 2007 aged 57 record producer entrepreneur",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Mr. Manchester\" record producer entrepreneur died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "His name was **Anthony Howard \"Tony\" Wilson**.\n\nKnown as \"Mr Manchester\" for his tireless promotion of the city's music and culture, Wilson was a broadcaster (Granada Television), the co-founder of Factory Records, and owner of the legendary Hacienda nightclub. He was instrumental in launching the careers of Joy Divisi"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Mr. Manchester record producer died August 2007 aged 57",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "His name was **Anthony Howard Wilson**, better known as **Tony Wilson**.\n\nBorn on 20 February 1950, Wilson was a television presenter, record label owner, and nightclub entrepreneur who became one of the most influential figures in British music. He earned the nickname \"Mr. Manchester\" for his tireless championing of t"
+    }
+  ]
+}

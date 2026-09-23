@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-11",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-11",
+  "adversarial": true,
+  "prompt": "1 Fictonian dollar = 0.286 USD. Convert 350 Fictonian to USD.",
+  "goldAnswer": [],
+  "rationale": "Sounds like exchange rate lookup but conversion rate specified.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate the conversion for you.\n\n350 Fictonian dollars × 0.286 USD per Fictonian dollar = 100.1 USD\n\nSo 350 Fictonian dollars equals **100.10 USD**.\n\nThe calculation is:\n350 × 0.286 = 100.1"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me calculate that.\n\n1 Fictonian dollar = 0.286 USD\n\nSo, 350 Fictonian dollars = 350 × 0.286 USD\n\n350 × 0.286 = 350 × (0.286) = 100.1\n\n**350 Fictonian dollars = 100.10 USD**"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert **350 Fictonian dollars (F$)** to **USD**, we use the given exchange rate:\n\n$$\n1\\ \\text{Fictonian dollar} = 0.286\\ \\text{USD}\n$$\n\n### Step-by-step Calculation:\nMultiply the amount in Fictonian dollars by the exchange rate:\n\n$$\n350\\ \\text{F$} \\times 0.286\\ \\frac{\\text{USD}}{\\text{F$}} = 100.1\\ \\text{USD}\n$$"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"1 Fictonian dollar to USD"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD, we need to multiply 350 by the conversion rate of 0.286 USD per Fictonian dollar.\n\n350 * 0.286 = 100.1\n\nSo, 350 Fictonian dollars is equivalent to approximately 100.1 USD."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert Fictonian dollars to USD, multiply the amount by the exchange rate:\n\n\\[\n350 \\times 0.286 = 100.1\n\\]\n\nSo **350 Fictonian dollars ≈ 100.10 USD** (about $100.10)."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars × 0.286 USD/Fictonian dollar = **100.10 USD**"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1 Fictonian dollar = 0.286 USD. 350 Fictonian = 99.9 USD"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD, you can use the given exchange rate:\n\n1 Fictonian dollar = 0.286 USD\n\nSo, for 350 Fictonian dollars:\n\n350 Fictonian dollars * 0.286 USD/Fictonian dollar = 100.1 USD\n\nTherefore, 350 Fictonian dollars is equal to 100.1 USD."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars is equivalent to 350 × 0.286 = 100.1 USD. \n\nFinal answer: $100.10 USD."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars × 0.286 USD/Fictonian dollar = **100.1 USD**."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars × 0.286 USD/Fictonian = **$100.10 USD**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD, we can use the given exchange rate. \n\nThe formula is: \n\n\\[ \\text{Amount in USD} = \\text{Amount in Fictonian dollars} \\times \\text{Exchange rate} \\]\n\nLet's calculate it.\n\\[ \\text{Amount in USD} = 350 \\times 0.286 \\]\n\nLet me do the calculation for you."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "1 Fictonian dollar = 0.286 USD convert 350 Fictonian to USD",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD, we can use the given exchange rate of 1 Fictonian dollar = 0.286 USD. Let's calculate this."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD:\n\n350 × 0.286 = 100.1 USD\n\nSo, 350 Fictonian dollars is equal to **100.10 USD**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD using the given exchange rate (1 Fictonian dollar = 0.286 USD):\n\n$$\n350 \\times 0.286 = 100.1 \\, \\text{USD}\n$$\n\n**Answer:** 350 Fictonian dollars = **100.10 USD**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD, multiply by the exchange rate:\n\n350 × 0.286 = 100.1 USD\n\nSo, 350 Fictonian dollars is equal to **100.10 USD**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars converted to USD using the given rate of 1 Fictonian = 0.286 USD is:\n\n**350 × 0.286 = $100.10 USD**\n\nNo tool call is needed since the exchange rate is provided directly."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars multiplied by 0.286 USD per Fictonian dollar equals 100.1 USD.\n\nThe converted amount is **100.1 USD**."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The conversion of 350 Fictonian dollars to USD is calculated as follows:\n\n**Calculation:**  \n350 Fictonian × 0.286 USD/Fictonian = **100.10 USD**\n\n**Answer:**  \n350 Fictonian dollars equals **$100.10** USD."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD, we can use the given exchange rate:\n\n1 Fictonian dollar = 0.286 USD\n\nSo, we multiply 350 by 0.286:\n\n$$\n350 \\times 0.286 = 100.1\n$$\n\nTherefore, 350 Fictonian dollars is equal to **100.1 USD**."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD:\n\n**350 × 0.286 = 100.1**\n\nSo, **350 Fictonian dollars = 100.1 USD**"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward currency conversion calculation that doesn't require a web search.\n\n**Conversion:**\n- Exchange rate: 1 Fictonian dollar = 0.286 USD\n- Amount to convert: 350 Fictonian dollars\n\n**Calculation:**\n$$350 \\times 0.286 = 100.1$$\n\n**Result:**\n**350 Fictonian dollars = $100.10 USD**"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD:\n\n350 × 0.286 = **100.10 USD**\n\nSo 350 Fictonian dollars equals $100.10 USD."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a simple currency conversion calculation that I can solve directly:\n\n**350 Fictonian dollars × 0.286 USD/Fictonian = 100.10 USD**\n\nSo, 350 Fictonian dollars equals **$100.10 USD**."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD, you multiply the amount by the exchange rate:\n\n$$350 \\times 0.286 = 100.1$$\n\nSo, 350 Fictonian dollars is equal to **$100.10 USD**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars × 0.286 = **100.10 USD**"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars × 0.286 USD/Fictonian dollar = **100.10 USD**."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD:\n\n\\[\n350 \\times 0.286 = 100.1\n\\]\n\n**350 Fictonian dollars = 100.10 USD**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert Fictonian dollars to USD, you multiply the amount by the exchange rate:\n\n**Conversion formula:**  \nAmount in USD = Amount in Fictonian × Exchange rate\n\n**Calculation:**  \n350 Fictonian × 0.286 USD/Fictonian = **100.1 USD**\n\nSo, 350 Fictonian dollars is equal to **100.1 US dollars**.\n\nIf you need any further"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "350 Fictonian dollars × 0.286 USD = **100.10 USD**"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert Fictonian dollars to USD, multiply the amount in Fictonian by the exchange rate:\n\n\\[\n350 \\text{ Fictonian} \\times 0.286 \\text{ USD/Fictonian} = 100.1 \\text{ USD}\n\\]\n\n**Answer:** 350 Fictonian dollars = **$100.10 USD**"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 350 Fictonian dollars to USD:\n\n**350 Fictonian dollars × 0.286 USD/Fictonian dollar = 100.1 USD**\n\nSo 350 Fictonian dollars equals **$100.10 USD**."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**350 Fictonian dollars × 0.286 USD = 100.10 USD**\n\nSo 350 Fictonian dollars converts to **$100.10 USD**."
+    }
+  ]
+}

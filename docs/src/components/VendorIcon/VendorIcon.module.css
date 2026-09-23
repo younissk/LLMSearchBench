@@ -11,3 +11,15 @@
   /* The badge sits on the page surface, not on the vendor colour. */
   box-shadow: 0 0 0 1px rgb(0 0 0 / 8%) inset;
 }
+
+.chip {
+  background: #fff;
+  padding: 2px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}

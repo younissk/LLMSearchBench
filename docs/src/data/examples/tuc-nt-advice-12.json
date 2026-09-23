@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-12",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-12",
+  "adversarial": true,
+  "prompt": "Launch product: $8k marketing reaches 2000 users; $20k reaches 6000. Need 3k users by month 6. You have $50k total runway. What's the play?",
+  "goldAnswer": [],
+  "rationale": "Marketing ROI and targets are specified; the decision is math and risk judgment, though market data might seem needed.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "marketing cost per user acquisition curve diminishing returns",
+      "callProblem": "",
+      "answerExcerpt": "I need to analyze this marketing budget optimization problem. Let me search for information about marketing cost curves and user acquisition strategies to better understand typical patterns."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Play: Spend $20k on Option B\n\nHere's the breakdown:\n\n## The Economics\n\n| Option | Cost | Users | $/User |\n|--------|------|-------|--------|\n| A | $8,000 | 2,000 | **$4.00** |\n| B | $20,000 | 6,000 | **$3.33** |\n\nOption B is **17% more efficient** on a per-user basis.\n\n## The Decision\n\n**Go with Option B once ($2"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the optimal play to hit **3,000 users by month 6** while preserving runway and maximizing efficiency:\n\n---\n\n### **The Smart Move: Spend $20k for 6,000 Users**\n#### **Why this wins:**\n1. **Cost Efficiency**  \n   - **$20k option**: $3.33/user (6,000 users)  \n   - **$8k option**: $4.00/user (2,000 users)  \n   → The"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "cost per user acquisition, marketing budget optimization, user growth strategy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine the best course of action, let's analyze the information provided:\n\n1. $8,000 marketing budget reaches 2,000 users.\n2. $20,000 marketing budget reaches 6,000 users.\n3. The goal is to reach 3,000 users by month 6.\n4. The total available budget (runway) is $50,000.\n\nFirst, let's calculate the cost per user f"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"$8k marketing reaches 2000 users\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Play\n\n## Math First\n\n| Budget | Users | CAC |\n|--------|-------|-----|\n| $8k | 2,000 | $4 |\n| $20k | 6,000 | $3.33 |\n\n**Marginal CAC flattens with scale** — that's good news. Spend more, get cheaper users.\n\nYour target: **3,000 users by month 6** (500/month average, or ~1,500/month in latter months).\n\n## The Plan"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **Initial Launch (Month 1-2):**\n   - Allocate $8k for the first campaign to reach the first 2000 users.\n\n2. **Evaluate and Optimize (Month 3):**\n   - Analyze the performance of the initial campaign.\n   - Optimize the campaign based on the data and insights gathered.\n\n3. **Scale Up (Month 4-5):**\n   - With the remain"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine the best marketing strategy to reach 3,000 users by month 6 with a total runway of $50,000, let's break down the costs and potential reach:\n\n1. **Cost per User Calculation:**\n   - $8,000 reaches 2,000 users: Cost per user = $8,000 / 2,000 = $4 per user\n   - $20,000 reaches 6,000 users: Cost per user = $20,"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Strategic play**\n\n1. **Estimate the required spend**  \n   - $8 k → 2 k users → $4 / user  \n   - $20 k → 6 k users → $3.33 / user  \n   - The relationship is roughly linear: Users ≈ 0.33 × Spend – $666.  \n   - To hit **3 k users** → Spend ≈ $11 k (≈ $3.5 / user).\n\n2. **Budget allocation**  \n   - Allocate **≈ $11 k–$12"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "$8k marketing reaches 2000 users $20k reaches 6000 users need 3k users by month 6 $50k runway what's the play",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "$8k marketing reaches 2000 users cost per user $4 per user $20k reaches 6000 cost per user $3.33 per user marketing budget plan 3k users month 6 $50k runway",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine the best strategy, we need to consider the cost-effectiveness of each marketing spend and how it aligns with the goal of reaching 3,000 users by month 6. Let's break down the options:\n\n1. **$8k marketing spend reaches 2000 users:**\n   - Cost per user: $8k / 2000 users = $4 per user\n\n2. **$20k marketing spe"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To achieve your goal of reaching 3,000 users by month 6 with a $50k budget, we need to determine the most efficient way to allocate your marketing spend. Given that:\n\n- $8k reaches 2000 users\n- $20k reaches 6000 users\n\nWe can calculate the cost per user for each scenario and then plan accordingly.\n\nFirst, let's calcula"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine the best marketing strategy to reach 3,000 users by month 6 with a $50k total budget, let's analyze the options based on the provided data:\n\n### Given:\n- **$8k** spend → reaches **2,000 users**\n- **$20k** spend → reaches **6,000 users**\n- Goal: **3,000 users by month 6**\n- Total runway: **$50k**\n\n---\n\n###"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine the optimal marketing strategy, we analyze the cost efficiency between the two given options:\n\n- **$8k** yields **2,000 users** → **$4/user**\n- **$20k** yields **6,000 users** → **~$3.33/user**\n\nThe $20k option is more cost-effective per user. However, the goal is **3,000 users**, which falls between the t"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "marketing budget allocation for user acquisition growth 3000 users in 6 months",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine the optimal marketing spend to reach 3,000 users within a $50k budget, we analyze the given data:\n\n- **$8k** → **2,000 users** ($4/user)  \n- **$20k** → **6,000 users** (~$3.33/user)  \n\nThis shows a **declining cost per user** as spend increases, indicating economies of scale. Using linear interpolation bet"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "marketing budget allocation for user acquisition cost efficiency",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "marketing cost per user calculation for user acquisition",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To achieve 3,000 users by month 6 with a $50K total runway, we need to strategically allocate resources between marketing and product development while ensuring sustainable growth. Here's a breakdown of the optimal strategy:\n\n### 1. **Analyze Historical Data**\nFrom the data provided:\n- $8K marketing reached 2,000 users"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a great resource allocation question. Let me break down the math and strategy:\n\n## The Numbers\n\n| Spend | Users | Cost/User |\n|-------|-------|-----------|\n| $8k | 2,000 | $4.00 |\n| $20k | 6,000 | $3.33 |\n\n**Key insight:** There's clear **economies of scale** - efficiency improves ~17% as you spend more.\n\n## Th"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "SaaS user acquisition budget allocation best practices 2025 marketing spend runway",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## The Play: Phased, Efficient Spend with Runway Protection\n\n### Quick Math\n| Spend | Users | Cost/User |\n|-------|-------|-----------|\n| $8k   | 2,000 | $4.00     |\n| $20k  | 6,000 | $3.33     |\n\n**Economies of scale are real** - bigger spend = better efficiency.\n\n### Recommended Strategy\n\n**1. Allocate $12-15k for us"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "product launch marketing budget allocation strategy customer acquisition cost optimization",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on the data provided, here is the breakdown of the unit economics and the recommended strategic play.\n\n### 1. The Math (Unit Economics)\nFirst, we need to determine your Customer Acquisition Cost (CAC) at different scales.\n\n*   **Scenario A ($8k spend):**\n    *   $8,000 / 2,000 users = **$4.00 per user**\n*   **Sce"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"$8k marketing reaches 2000 users\" \"$20k reaches 6000\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"$8k marketing reaches 2000 users\" \"$20k reaches 6000\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Looking at your numbers, let's break down the user acquisition economics and figure out the optimal play.\n\n## **Marketing Efficiency Analysis**\n\nFirst, let's calculate your **Customer Acquisition Cost (CAC)** at each spend level:\n- **$8k → 2,000 users**: CAC = **$4.00/user**\n- **$20k → 6,000 users**: CAC = **$3.33/user"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Launch Marketing Analysis\n\n## The Math First\n\n| Option | Cost | Users | **Cost Per User** |\n|--------|------|-------|-------------------|\n| Campaign A | $8k | 2,000 | **$4.00** |\n| Campaign B | $20k | 6,000 | **$3.33** ✅ |\n\nThe $20k option is **17% more efficient** per user.\n\n---\n\n## My Recommended Play\n\n**Run the $2"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "product launch marketing budget allocation 3k users 6 months",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**The math first:**\n\nYour data shows improving efficiency at scale:\n- $8k → 2,000 users ($4/user)\n- $20k → 6,000 users ($3.33/user)\n\nTo hit 3,000 users, you'd need roughly **$11-14k** in spend (interpolating between your data points).\n\n---\n\n## The Play: Staged Commitment\n\n**Don't dump $14k upfront.** Here's why and wha"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## The math first\n\n| Option | Spend | Users | CAC |\n|---|---|---|---|\n| $8k tier | $8k | 2,000 | $4.00 |\n| $20k tier | $20k | 6,000 | $3.33 |\n| Two $8k tiers | $16k | 4,000 | $4.00 |\n\nKey insight: the $20k tier isn't just bigger, it's *more efficient*. And the marginal 2,000 users (going from 4,000 → 6,000) cost only *"
+    }
+  ]
+}

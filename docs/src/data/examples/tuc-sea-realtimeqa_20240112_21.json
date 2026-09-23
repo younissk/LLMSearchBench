@@ -1,0 +1,356 @@
+{
+  "id": "tuc-sea-realtimeqa_20240112_21",
+  "bucket": "search",
+  "subcategory": "realtimeqa",
+  "source": "retrievalqa",
+  "sourceId": "realtimeqa_20240112_21",
+  "adversarial": false,
+  "prompt": "What is the total amount of funding that the U.S. Environmental Protection Agency has awarded for electric school buses as of 2024?",
+  "goldAnswer": [
+    "$2 billion"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. Environmental Protection Agency electric school bus funding awards 2024 total amount",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for current information about the EPA's electric school bus funding awards as of 2024."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus funding total awarded 2024",
+      "callProblem": "",
+      "answerExcerpt": "Let me search for this information."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA Clean School Bus Program total funding awarded electric school buses 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. Environmental Protection Agency electric school bus funding 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "total amount of funding awarded for electric school buses as of 2024 EPA",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. Environmental Protection Agency total funding awarded electric school buses 2024",
+      "callProblem": "",
+      "answerExcerpt": "I don't have that exact figure readily available in my knowledge base. Let me search for the most current information."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "total amount of funding that the U.S. Environmental Protection Agency has awarded for electric school buses as of 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "total amount of funding that the U.S. Environmental Protection Agency has awarded for electric school buses as of 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus funding total awarded 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus funding awarded total amount as of 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus grant program total funding awarded 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "total funding U.S. Environmental Protection Agency electric school buses 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "total funding U.S. Environmental Protection Agency electric school buses 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. EPA electric school bus funding total 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. EPA total funding awarded for electric school buses as of 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. Environmental Protection Agency electric school buses funding total 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. EPA electric school bus funding total amount as of 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. EPA electric school bus funding total 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. Environmental Protection Agency electric school bus funding 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus funding total amount awarded 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus funding total awarded 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus funding total awarded 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. EPA funding awarded electric school buses total amount 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "total EPA funding awarded electric school buses 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA total funding awarded electric school buses 2024 Clean School Bus Program",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus funding awarded total 2024 Clean School Bus Program",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. Environmental Protection Agency total funding awarded electric school buses as of 2024 Clean School Bus Program",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. Environmental Protection Agency funding electric school buses 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. Environmental Protection Agency electric school bus funding total 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school bus funding total amount awarded 2024 Clean School Bus Program",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for the most current information about EPA electric school bus funding as of 2024."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA electric school buses total funding awarded 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "EPA Clean School Bus Program total funding awarded electric school buses 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 export {default as BarChart} from './BarChart';
-export {default as BoxPlotChart} from './BoxPlotChart';
 export {default as DumbbellChart} from './DumbbellChart';
 export {default as GroupedBarChart} from './GroupedBarChart';
 export {default as HeatmapChart} from './HeatmapChart';

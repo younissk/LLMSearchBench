@@ -1,0 +1,357 @@
+{
+  "id": "tuc-sea-triviaqa_qw_15541",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_qw_15541",
+  "adversarial": false,
+  "prompt": "What science does Sir Arthur Conan Doyle's creation, Sherlock Holmes, practise?",
+  "goldAnswer": [
+    "detection",
+    "Detection"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sherlock Holmes scientific methods deductive reasoning forensic science",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the famous fictional detective created by Sir Arthur Conan Doyle, is known for practising **deductive reasoning** and **forensic science**. \n\nHowever, to get more precise and detailed information about the specific scientific methods and disciplines Holmes employed, let me search for more comprehensive"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the fictional detective created by Sir Arthur Conan Doyle, practises **forensic science** — but more specifically, he is a master of **deductive reasoning** applied through what he calls \"the science of deduction.\"\n\nHolmes employs a wide range of scientific disciplines in his detective work, including:"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes practices a unique blend of **forensic science, chemistry, and deductive reasoning**, which he famously calls \"the science of deduction.\"\n\nWhile he is a detective, not a scientist in the traditional academic sense, his methods are deeply rooted in the scientific method and the specific sciences of his e"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sherlock Holmes science",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes practises forensic science."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sherlock Holmes science of deduction phrase",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sir Arthur Conan Doyle's Sherlock Holmes is a fictional **consulting detective** — not a scientist in the formal sense. However, in the stories Holmes frequently practises and applies several scientific disciplines, most notably:\n\n- **Forensic science** — Holmes is often credited as one of the earliest fictional pionee"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sir Arthur Conan Doyle's character Sherlock Holmes is a fictional detective, not a scientist. He uses scientific methods of observation, reasoning, and forensic skills to solve mysteries and crimes, but he does not practise a specific science."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the famous fictional detective created by Sir Arthur Conan Doyle, is not a practitioner of a single science but rather employs a wide range of scientific methods and disciplines in his investigative work. Some of the key areas of science and knowledge that Holmes utilizes include:\n\n1. **Forensic Scienc"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the fictional detective created by Sir Arthur Conan Doyle, is famously associated with **forensic science**. He applies scientific methods and principles to criminal investigations, such as analyzing fingerprints, ballistics, chemical substances, and other evidence to solve crimes. His approach exempli"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sherlock Holmes science of deduction",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes is essentially a **forensic scientist**.  In the stories he applies a wide range of scientific disciplines—most notably:\n\n| Discipline | What Holmes does with it |\n|------------|--------------------------|\n| **Forensic chemistry** | Analyzes substances (poisons, dyes, inks, etc.) to identify their compo"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the fictional character created by Sir Arthur Conan Doyle, practises the science of deduction, often referred to as deductive reasoning. This involves using a combination of observation, logical reasoning, and a deep understanding of human behavior to solve crimes and mysteries. However, it's worth not"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sherlock Holmes scientific methods",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, created by Sir Arthur Conan Doyle, is a fictional detective who primarily practices the science of deduction and forensic science. He uses his observational skills and logical reasoning to solve complex cases. To provide more specific details about the scientific methods he employs, I will conduct a we"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the fictional character created by Sir Arthur Conan Doyle, practices the science of **deductive reasoning** and **forensic science**. He is renowned for his keen observational skills, logical reasoning, and the application of scientific methods to solve crimes. Holmes uses techniques such as fingerprin"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the fictional detective created by Sir Arthur Conan Doyle, practices **the science of deduction**. This is explicitly referenced in the stories, particularly in *A Study in Scarlet*, where Holmes explains his methods to Dr. Watson as a systematic application of deductive reasoning to solve crimes. Whil"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the fictional detective created by Sir Arthur Conan Doyle, practises forensic science. He uses methods such as fingerprint analysis, chemical analysis, and logical deduction to solve crimes. His approach to investigation is highly scientific and meticulous, making him a pioneer in the use of scientific"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What science does Sherlock Holmes practice?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes practices forensic science and deductive reasoning. He applies scientific methods to criminal investigation, emphasizing observation, logic, and analytical reasoning to solve cases. His approach is often referred to as \"detective fiction's archetype\" and blends pseudoscientific techniques with meticulou"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "science practiced by Sherlock Holmes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sir Arthur Conan Doyle's creation, Sherlock Holmes, primarily practices **forensic science** and applies **deductive reasoning** in his detective work.\n\nHolmes was ahead of his time in utilizing various scientific disciplines, including:\n\n1. **Chemistry** - He conducted chemical experiments and analyzed substances at c"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the famous fictional detective created by Sir Arthur Conan Doyle, practices **deductive reasoning** and is often described as a master of **the science of deduction**.\n\nWhile not a formal scientific discipline, Holmes applies scientific methods to criminal investigation, including:\n\n- **Observation** -"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes practices **forensic science** and is known as a \"consulting detective\" who applies scientific methods to solve crimes. \n\nSpecifically, Holmes is renowned for his expertise in:\n\n1. **Chemistry** - He frequently conducts chemical analyses in his laboratory at 221B Baker Street, including testing for pois"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes, the fictional detective created by Sir Arthur Conan Doyle, practices **forensic science** and **deductive reasoning** in his investigations.\n\nMore specifically, Holmes is known for applying several scientific disciplines to his detective work, including:\n\n1. **Chemistry** - He frequently uses chemical"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes practices the **science of deduction** (deductive reasoning).\n\nHe is a \"consulting detective\" who famously refers to his method of solving crimes as the \"science of deduction.\" In his investigations, he also heavily utilizes **forensic science**, including chemistry, toxicology, and ballistics, to gathe"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What science does Sir Arthur Conan Doyle's creation, Sherlock Holmes, practise?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sherlock Holmes science of deduction Arthur Conan Doyle",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes practises the **“science of deduction”** — he is a consulting detective who uses logical reasoning, observation, and forensic science to solve crimes.\n\nIn the stories, Holmes himself describes his method as **deduction** (or “the science of deduction”). He also employs practical sciences such as **chemi"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What science does Sherlock Holmes practise",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sherlock Holmes science of deduction",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sherlock Holmes science deduction abductive reasoning forensic science",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sherlock Holmes practises **forensic science** — more specifically, he's famous for applying scientific methods to criminal investigation, particularly:\n\n- **Forensic chemistry** – analyzing chemicals, toxins, and substances (like in \"A Study in Scarlet\" and \"The Sign of Four\")\n- **Footprint and tyre track analysis**\n-"
+    }
+  ]
+}

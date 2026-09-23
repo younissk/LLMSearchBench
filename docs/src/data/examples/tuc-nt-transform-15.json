@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-15",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-15",
+  "adversarial": false,
+  "prompt": "Convert to bullet points: 'The onboarding process includes three phases: orientation, training, and assessment. Each takes one to two weeks.'",
+  "goldAnswer": [],
+  "rationale": "Reformatting supplied text structure needs no external research or verification.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are the key points from the onboarding process description:\n\n- The onboarding process includes three phases:\n  - Orientation\n  - Training  \n  - Assessment\n- Each phase takes one to two weeks to complete"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- Orientation (1–2 weeks)\n- Training (1–2 weeks)\n- Assessment (1–2 weeks)"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"onboarding process phases and duration"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "* Orientation\n* Training\n* Assessment\n\nNote: Each of these phases typically takes one to two weeks to complete."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "• The onboarding process includes three phases: orientation, training, and assessment\n• Each phase takes one to two weeks"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- **Orientation**: 1-2 weeks\n - **Training**: 1-2 weeks\n - **Assessment**: 1-2 weeks"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases: orientation, training, and assessment.  \n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- Orientation (1-2 weeks)\n- Training (1-2 weeks)\n- Assessment (1-2 weeks)"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- **Orientation** – 1 to 2 weeks  \n- **Training** – 1 to 2 weeks  \n- **Assessment** – 1 to 2 weeks"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases: orientation, training, and assessment.\n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "convert text to bullet points online tool",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases: orientation, training, and assessment.  \n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation (1–2 weeks)\n  - Training (1–2 weeks)\n  - Assessment (1–2 weeks)"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases: orientation, training, and assessment.\n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- Orientation: 1-2 weeks  \n- Training: 1-2 weeks  \n- Assessment: 1-2 weeks"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- Orientation  \n- Training  \n- Assessment  \n\nEach phase takes one to two weeks."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases: orientation, training, and assessment.  \n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "• The onboarding process has three phases: orientation, training, and assessment.\n• Each phase lasts one to two weeks."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the information converted to bullet points:\n\n*   **Orientation** – 1–2 weeks\n*   **Training** – 1–2 weeks\n*   **Assessment** – 1–2 weeks"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "• The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n• Each phase takes one to two weeks"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the text converted to bullet points:\n\n- The onboarding process includes three phases, each lasting one to two weeks:\n  - Orientation\n  - Training\n  - Assessment"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few ways to format it:\n\n**Option 1 (phases listed separately):**\n- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks.\n\n**Option 2 (combined):**\n- Orientation — 1 to 2 weeks\n- Training — 1 to 2 weeks\n- Assessment — 1 to 2 weeks\n\n**Opt"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "• The onboarding process has three phases: orientation, training, and assessment.\n• Each phase takes one to two weeks to complete.\n\nOr, broken down by phase:\n\n• **Orientation** — 1 to 2 weeks\n• **Training** — 1 to 2 weeks\n• **Assessment** — 1 to 2 weeks"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- Orientation phase (takes one to two weeks)\n- Training phase (takes one to two weeks)\n- Assessment phase (takes one to two weeks)"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation (1–2 weeks)\n  - Training (1–2 weeks)\n  - Assessment (1–2 weeks)"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "• The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n• Each phase takes one to two weeks"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "- The onboarding process includes three phases: orientation, training, and assessment.\n- Each phase takes one to two weeks.\n\nOr, if you'd prefer the phases broken out individually:\n\n- The onboarding process includes three phases:\n  - Orientation\n  - Training\n  - Assessment\n- Each phase takes one to two weeks."
+    }
+  ]
+}

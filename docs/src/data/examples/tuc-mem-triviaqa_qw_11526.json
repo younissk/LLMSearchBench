@@ -1,0 +1,375 @@
+{
+  "id": "tuc-mem-triviaqa_qw_11526",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_qw_11526",
+  "adversarial": false,
+  "prompt": "Where is the Australian parliament based?",
+  "goldAnswer": [
+    "Limestone Plains",
+    "un locode aucbr",
+    "canberra",
+    "Canberra, AU-ACT",
+    "canberran",
+    "Canberra (Australia)",
+    "Canberran",
+    "canberra australia",
+    "Capital of australia",
+    "capital of australia",
+    "Capital of Australia",
+    "limestone plains",
+    "Canberra",
+    "canberra au act",
+    "canberra act",
+    "Canberra, ACT",
+    "canberra australian capital territory",
+    "UN/LOCODE:AUCBR",
+    "Canberra, Australia",
+    "Canberra, Australian Capital Territory"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Australian Parliament location Canberra Parliament House",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in Canberra, the capital city of Australia. Specifically, Parliament House is located on Capital Hill in Canberra, Australian Capital Territory."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian federal parliament is based in **Canberra**, the national capital, at **Parliament House** on Capital Hill. The building was officially opened in 1988, replacing the older (provisional) Parliament House that now houses the Museum of Australian Democracy."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia. It sits at **Parliament House** on Capital Hill."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Australian parliament location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian parliament is based in Canberra, which is the capital city of Australia."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian parliament is based in Canberra, the capital city of Australia. Specifically, it meets at Parliament House, which is located on Capital Hill in Canberra. The parliament has been meeting there since 1988, when it moved from the provisional Parliament House (which is now known as the Old Parliament House)."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia. Specifically, it sits on **Capital Hill** in the Parliamentary Triangle, which is a ceremonial area in the city. The Parliament House, which opened in 1988, was designed by American architect Mitchell/Giurgola & Thorp."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in Canberra, the capital of Australia. It is located on Capital Hill, in the parkland area known as Parliamentary Triangle. The Parliament House, where the Australian Parliament meets, was opened in 1988 and is a significant landmark of the city."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in Canberra, the capital city of Australia. The parliamentary buildings are located on Capital Hill, and the main building is known as Parliament House. It has been the meeting place for the Australian Parliament since it was opened in 1988, replacing the provisional Parliament House"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, which is the capital city of Australia. This was established to resolve the rivalry between Sydney and Melbourne, the two largest cities at the time of Australia's federation. The Parliament House in Canberra serves as the meeting place of the Parliament of Australia."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Australian parliament location Canberra Parliament House",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Parliament of Australia sits in **Canberra**, the capital city of the country.  \n- The **House of Representatives** meets in the **House of Representatives Building**.  \n- The **Senate** meets in the **Senate House**.  \n- Both buildings are part of the larger **Parliament House** complex, located on Parliament Hous"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in Canberra, the capital city of Australia."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "location of Australian parliament",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in Canberra, the capital city of Australia. It is located in the Parliament House on Capital Hill in the Australian Capital Territory (ACT)."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Where is the Australian parliament based?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in Canberra, the capital city of Australia. It is located in the Parliament House, which is situated on Capital Hill in the central area of Canberra."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in Canberra, the capital city of Australia. The Parliament House, which houses the Federal Parliament, is located in the Parliamentary Triangle in Canberra. \n\nNo tool call is needed as this is a well-established fact."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian parliament is based in Canberra, which is the capital city of Australia."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Where is the Australian parliament based?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in Canberra, the capital city of Australia. The Parliament House, where the Australian Parliament meets, is located in the heart of Canberra. It houses both the House of Representatives and the Senate, which are the two chambers of the Australian Parliament."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia. Specifically, it meets in **Parliament House**, which is located on Capital Hill in Canberra. Canberra was purpose-built as the nation's capital and is situated in the Australian Capital Territory (ACT), roughly halfway between Sydney an"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian parliament is based in **Canberra**, the capital city of Australia. Specifically, it meets in **Parliament House**, which is located on Capital Hill in the Parliamentary Triangle area of Canberra.\n\nCanberra was chosen as the capital in 1908 as a compromise between Sydney and Melbourne, the two largest ci"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia. Specifically, it meets in **Parliament House**, which is located on Capital Hill in Canberra. This has been the seat of the Australian Parliament since 1988, when the new Parliament House was opened. Before that, from 1927 to 1988, Parli"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia. Specifically, it is housed in **Parliament House**, which is located on the Parliamentary Triangle in Canberra, near Lake Burley Griffin.\n\nParliament House was officially opened in 1988 and serves as the meeting place for the Parliament"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian parliament is based in **Canberra**, the capital city of Australia.\n\nSpecifically, it meets in **Parliament House**, which is located on Capital Hill in the Australian Capital Territory (ACT)."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Parliament House, Canberra**, in the Australian Capital Territory (ACT)."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia. Specifically, it sits in **Parliament House** on Capital Hill in the Australian Capital Territory (ACT).\n\nThe Parliament consists of two houses:\n- The **Senate** (upper house)\n- The **House of Representatives** (lower house)\n\nBoth chambe"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital of Australia. It meets at **Parliament House** in **Canberra, Australian Capital Territory** (ACT)."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia. Specifically, it sits at **Parliament House** in Canberra, Australian Capital Territory. Canberra was purpose-built as the nation's capital in the early 20th century, and the current Parliament House opened in 1988."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, which is the capital city of Australia. Specifically, the Parliament meets at **Parliament House**, located on Capital Hill in Canberra, Australian Capital Territory (ACT). The current Parliament House was opened in 1988 and serves as the meeting place for both chambe"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia. More specifically, it's located in the Australian Capital Territory (ACT) on **Capital Hill**, where the Parliament House building stands. This is the seat of both houses of Parliament: the House of Representatives and the Senate."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian federal parliament is based in **Canberra**, the capital city of Australia. Specifically, it meets at **Parliament House** located in the Australian Capital Territory (ACT). \n\nThis building has been the home of the Australian Parliament since 1988, when it replaced the Old Parliament House (which is now"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Australian Parliament is based in **Canberra**, the capital city of Australia, which is located in the Australian Capital Territory (ACT).\n\nThe Parliament meets at **Parliament House**, which was opened in 1988 and sits on Capital Hill in Canberra. It replaced the previous Provisional Parliament House (now known as"
+    }
+  ]
+}

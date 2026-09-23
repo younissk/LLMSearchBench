@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-08",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-08",
+  "adversarial": false,
+  "prompt": "Current role: high pay, misaligned values. New offer: lower pay, mission-driven. You have 6 months emergency fund. What does integrity weigh in this trade?",
+  "goldAnswer": [],
+  "rationale": "Values-based career trade-offs are personal judgment calls, not lookup-able facts.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career transition lower pay mission alignment integrity values",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for perspectives on career transitions involving pay cuts for mission alignment."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Integrity in the Crosshairs: Values vs. Compensation\n\nThis is a classic \"high wire\" decision — and the fact that you're even asking about integrity suggests you already feel the friction. Let me hold the tension seriously.\n\n## What Integrity *Really* Weighs Here\n\n### 1. The Most Hidden Cost: *Daily Identity Erosion*"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's a profound crossroads, and the fact you're framing it around **integrity** (not just \"happiness\" or \"money\") shows deep self-awareness. Integrity isn't just a \"nice-to-have\" here—it's the **core currency of your long-term well-being and effectiveness.** Let's break down its weight in this trade:\n\n### Why Integri"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "integrity vs financial stability",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Integrity plays a significant role in this trade-off. When considering a career change from a high-paying role with misaligned values to a lower-paying, mission-driven position, integrity can be a guiding principle. Here are some aspects to consider:\n\n1. **Alignment with personal values**: Integrity involves being true"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a personal question only you can answer, but here's a framework worth considering:\n\n**The integrity question isn't really about the pay gap—it's about what you can sustain.**\n\nSix months of runway is meaningful. It means you're not choosing between survival and values. You're choosing between comfort and alignm"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Weight of Integrity in a Pay-for-Purpose Trade\n\n## The Core Tension\n\nYou're weighing something real: **temporal comfort** (high pay, financial security) against **durable alignment** (values, meaning, contribution). Integrity isn't a sentimental bonus here—it's a *load-bearing variable* in the calculation.\n\n## Wh"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's a tough decision! On one hand, you value integrity and mission-driven work. On the other, you have financial responsibilities. Have you considered negotiating a higher salary or better benefits at your current job?"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision to prioritize integrity in a career transition is deeply personal and depends on various factors, including your values, long-term goals, and financial situation. Here are some considerations to help weigh the importance of integrity in this trade-off:\n\n### 1. **Personal Values and Fulfillment**\n   - **Ali"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Framing the Trade‑off\n\n| Dimension | Current Role | New Offer |\n|-----------|--------------|-----------|\n| **Compensation** | High salary (covers living expenses, savings, discretionary spending) | Lower salary (may require tighter budgeting) |\n| **Values Alignment** | Misaligned – you’re doing work that conflicts"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "integrity career decision high pay vs mission driven lower pay values alignment",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### The “Integrity” Question in a Career Trade‑off\n\n| **What you’re weighing** | **Why integrity matters** | **Practical take‑aways** |\n|--------------------------|---------------------------|--------------------------|\n| **Staying in a high‑pay, value‑misaligned role** | *Integrity* = staying true to your own ethics,"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "When considering a job change from a high-paying role with misaligned values to a lower-paying, mission-driven position, the concept of integrity plays a significant role. Here are some factors to consider:\n\n1. **Personal Values and Mission Alignment**: Integrity often involves acting in accordance with your personal v"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Integrity is a fundamental value that can weigh heavily in career decisions. Here are some points to consider when evaluating the trade-off between higher pay and mission-driven work:\n\n1. **Alignment with Personal Values**: If your personal values align more closely with the mission-driven organization, staying true to"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Integrity in this career crossroads weighs heavily — it’s not just about doing what’s right when it’s easy, but aligning your livelihood with your values, especially over the long term.\n\nHere’s how integrity factors into the decision:\n\n1. **Values Alignment**: If the mission-driven role reflects your core beliefs — sus"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "role of integrity in career decisions balancing high pay misaligned values vs lower pay mission-driven with emergency fund",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to evaluate career change based on integrity and values vs salary",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "integrity career decision lower pay mission-driven work emergency fund",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career transition integrity vs salary emergency fund impact",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision between a high-paying job with misaligned values and a lower-paying, mission-driven role involves weighing financial security against personal integrity. Here’s a structured analysis:\n\n1. **Integrity as a Non-Negotiable**: If your core values (e.g., ethics, purpose) are fundamentally incompatible with your"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply personal decision that depends on your values, financial situation, and long-term goals. Here's a structured way to think through it:\n\n1. **Clarify Your Values**: Reflect on what matters most to you—financial security, personal fulfillment, or contributing to something meaningful. Integrity often means"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a profound question that cuts to the heart of what makes work meaningful. Let me help you think through how integrity factors into this decision.\n\n## The Integrity Weighing\n\n**Integrity as Internal Alignment:**\n- Living in misalignment between your values and daily work creates what psychologists call \"cognitiv"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply personal decision, but I can help you think through how integrity weighs in this trade-off.\n\n## The Integrity Dimension\n\n**Integrity isn't just about what you do—it's about who you become.**\n\nWhen you stay in a role with misaligned values, you're making a daily choice to prioritize financial security o"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a profound question that gets at the heart of how we live our values. Here's a framework for weighing integrity in this trade:\n\n## **What Integrity Actually Costs**\n\n**Staying put (high pay, misaligned):**\n- **Internal tax:** Cognitive dissonance drains energy daily. You're renting out your time to something yo"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a profound question about the intersection of ethics, economics, and self-knowledge. Here's what integrity weighs in this trade:\n\n## What Integrity Demands\n\n**Integrity isn't about choosing the \"right\" answer—it's about choosing the answer that aligns with who you are.** In this scenario, integrity weighs heavi"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic \"Soul vs. Security\" dilemma. When you ask what integrity weighs in this trade, you are essentially asking: **What is the cost of cognitive dissonance versus the cost of financial reduction?**\n\nHere is a breakdown of how to weigh integrity in this specific scenario, factoring in your 6-month safety net"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Integrity should weigh **heavily**, but not automatically as the deciding factor. The key is whether the misalignment is **core** or **peripheral**.\n\n### 1. If the current role conflicts with core values\nIf staying means:\n- supporting harm,\n- deception,\n- exploitation,\n- work that actively damages people or the environ"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career change lower salary emergency fund 6 months financial planning values alignment",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career change lower salary mission driven values alignment integrity emergency fund",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of the most meaningful career crossroads a person can face, and I’m glad you’re giving it such thoughtful consideration. The question of what integrity “weighs” in this trade isn’t just about numbers—it’s about aligning your daily work with your deeper sense of purpose.\n\nLet’s break it down a little, not to"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Integrity Calculus\n\nThis is a genuinely important crossroads, and the fact that you're asking tells me integrity already has significant weight for you. Let me help you think through it honestly.\n\n## What integrity actually \"costs\" when ignored\n\nWorking against your values isn't just a philosophical discomfort—it"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "values alignment career satisfaction research integrity decision making",
+      "callProblem": "",
+      "answerExcerpt": "This is a profound question that touches on the intersection of practical reality and moral integrity. Let me gather some perspectives on values-based decision making and career satisfaction to help you weigh this trade."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a meaningful question that sits at the intersection of ethics, practicality, and self-knowledge. Let me offer a framework rather than a prescription.\n\n## What Integrity Actually Costs\n\nIntegrity isn't free. If it were, it wouldn't be a virtue—it would be a convenience. The real measure is what you're willing to"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Integrity weighs heavily in this trade — but not automatically in favor of the mission job. Here's how I'd break it down.\n\n**First, distinguish two kinds of misalignment.** If your current work makes you *complicit* — you have to lie, mislead, or harm people you'd defend outside the office — that erodes integrity daily"
+    }
+  ]
+}

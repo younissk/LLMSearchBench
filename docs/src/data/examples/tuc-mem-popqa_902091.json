@@ -1,0 +1,374 @@
+{
+  "id": "tuc-mem-popqa_902091",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_902091",
+  "adversarial": false,
+  "prompt": "In what country is 112th United States Colored Infantry?",
+  "goldAnswer": [
+    "United States of America",
+    "the United States of America",
+    "America",
+    "U.S.A.",
+    "USA",
+    "U.S.",
+    "US",
+    "the US",
+    "the USA",
+    "US of A",
+    "the United States",
+    "U. S. A.",
+    "U. S.",
+    "the States",
+    "the U.S.",
+    "'Merica",
+    "U.S",
+    "United States",
+    "'Murica"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry location country",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about the 112th United States Colored Infantry to determine which country it was located in."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry country of origin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry history",
+      "callProblem": "",
+      "answerExcerpt": "I don't know the answer to this specific question from my training data. Let me search for information about the 112th United States Colored Infantry."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a regiment of the Union Army during the American Civil War. Therefore, it is not located in any specific country today. The regiment was organized and served in the United States."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a regiment in the United States Army during the American Civil War. It was part of the Union forces and thus associated with the **United States**. \n\nAnswer: The country is the **United States**."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a regiment of the Union Army during the American Civil War, so it was part of the **United States of America**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry location",
+      "callProblem": "",
+      "answerExcerpt": "To provide an accurate answer, I need to search for information about the 112th United States Colored Infantry. I will do that now."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry history",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a unit in the Union Army during the American Civil War. It is important to note that this unit does not exist as a current entity, but rather as part of military history. The term \"United States Colored Infantry\" refers to African American soldiers who fought for the Union d"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a regiment in the Union Army during the American Civil War. It was formed in the United States, specifically in Tennessee, and served as part of the United States Colored Troops (USCT). Therefore, the country is the United States."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a unit in the United States Army during the American Civil War. It was composed of African American soldiers and served in the Union Army. Therefore, the unit was in the **United States**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a regiment in the Union Army during the American Civil War. The \"United States\" in its name indicates it was part of the United States military. Therefore, the country is the **United States**.\n\n<answer>\nUnited States\n</answer>"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a regiment that served during the American Civil War. It was part of the Union Army and was composed of African American soldiers. This regiment was organized in the state of Louisiana in 1864. Therefore, the country where this regiment was active is the United States of Ame"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a regiment in the **United States**. \n\nThis was a Union Army regiment during the American Civil War (1861-1865). The United States Colored Troops (USCT) were regiments composed primarily of African American soldiers who fought for the Union. The 112th US Colored Infantry was"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 112th United States Colored Infantry was a regiment of the **United States** Army during the American Civil War. It was part of the United States Colored Troops (USCT), which were regiments composed of African American soldiers who served in the Union Army from 1863 to 1867.\n\nSo the country is the **United States o"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry country location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry country location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry country location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry country location regiment",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry location country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "112th United States Colored Infantry",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **112th United States Colored Infantry** was a regiment of the **United States of America** — specifically, it served in the Union Army during the American Civil War as part of the United States Colored Troops (USCT), the corps of African American soldiers.\n\nIt was raised in the United States in 1864, organized at"
+    }
+  ]
+}

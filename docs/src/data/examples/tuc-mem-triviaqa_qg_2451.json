@@ -1,0 +1,360 @@
+{
+  "id": "tuc-mem-triviaqa_qg_2451",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_qg_2451",
+  "adversarial": false,
+  "prompt": "A \"coyote\" is a slang term used to describe someone who smuggles what across the U.S. border?",
+  "goldAnswer": [
+    "Peeple",
+    "👥",
+    "People",
+    "people",
+    "peeple"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term border smuggling US Mexico",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about the slang term \"coyote\" in the context of border smuggling."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term for someone who smuggles **people** (typically undocumented migrants) across the U.S.-Mexico border."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term for a person who smuggles **people** (typically undocumented immigrants) across the U.S. border, most commonly the U.S.-Mexico border."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggling U.S. border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe someone who smuggles people, often undocumented immigrants, across the U.S. border."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggles what across the US border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is slang for someone who smuggles **people** (immigrants) across the U.S.-Mexico border.\n\nThe term refers to guides who lead migrants across the border, often through dangerous desert terrain, in exchange for payment. This practice is part of what's generally called human smuggling or human trafficking."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What does a coyote smuggle across the U.S. border?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term \"coyote\" in slang refers to someone who smuggles people across the U.S. border, often illegally. These individuals facilitate the illegal entry of immigrants into the United States, typically for a fee."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggle across US border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggles what across the U.S. border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A “coyote” is slang for a person who smuggles **people**—typically migrants—across the U.S. border."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "what do coyotes smuggle across the U.S. border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"coyote\" slang border smuggle what",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe someone who smuggles people, typically undocumented immigrants, across the U.S. border."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe someone who smuggles **people**, specifically undocumented immigrants, across the U.S. border. This term is commonly associated with human smuggling operations along the U.S.-Mexico border."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggle across U.S. border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggling U.S. border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggling U.S. border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term U.S. border smuggling",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "slang term coyote smuggling across U.S. border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe someone who smuggles **people** (specifically undocumented immigrants) across the U.S. border, particularly the U.S.-Mexico border.\n\nThe term is commonly used in immigration and border security contexts to refer to human smugglers who help people cross the border illegally, o"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe someone who smuggles **people** (immigrants) across the U.S. border, particularly from Mexico into the United States.\n\nThe term is derived from the animal's reputation for cunning and adaptability. These individuals typically charge fees to help undocumented immigrants cross"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe someone who smuggles **people** (specifically undocumented immigrants) across the U.S.-Mexico border. These individuals are paid to help people cross the border illegally, often through dangerous routes and methods. The term has been in use for decades and is widely recognize"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe someone who smuggles **undocumented immigrants** across the U.S. border, particularly the U.S.-Mexico border.\n\nThe term comes from the Spanish word \"coyote,\" which refers to the animal, but in this context, it's used metaphorically to describe individuals who charge fees to t"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe someone who smuggles **illegal immigrants** (or undocumented immigrants) across the U.S. border.\n\nThe term is derived from the Spanish word *coyote*."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A “coyote” is a slang term for someone who smuggles **people**—typically undocumented immigrants—across the U.S. border."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **\"coyote\"** is slang for a person who smuggles **people** (specifically migrants/undocumented immigrants) across the U.S.–Mexico border, usually for a fee. \n\nSo the answer is **people / immigrants / migrants** (human smuggling)."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggles across U.S. border meaning",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "coyote slang term smuggles what across U.S. border",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term used to describe a person who smuggles **people** (migrants/immigrants) across the U.S.-Mexico border, typically for a fee. It is most commonly associated with illegal immigration, where coyotes are paid to guide or transport individuals across the border outside of legal channels."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A “coyote” is a slang term for a human smuggler who guides or transports **illegal immigrants** (undocumented migrants) across the U.S. border."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term for someone who **smuggles people** (human beings) across the U.S. border, particularly the U.S.-Mexico border.\n\nCoyotes are paid guides who help undocumented immigrants cross illegally into the United States. They typically charge fees to lead individuals or groups through remote desert area"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"coyote\" is a slang term for someone who smuggles **people (undocumented immigrants/migrants)** across the U.S.–Mexico border, typically in exchange for payment.\n\nThe term comes from the coyote animal, which is known for being cunning and resourceful—qualities associated with these human smugglers who guide migrants"
+    }
+  ]
+}

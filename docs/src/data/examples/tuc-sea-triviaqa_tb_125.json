@@ -1,0 +1,359 @@
+{
+  "id": "tuc-sea-triviaqa_tb_125",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_tb_125",
+  "adversarial": false,
+  "prompt": "What legal term, whose etymology comes from how editors traditionally indicated corrections to a written copy, means that a portion of contract is void but the other part is enforceable?",
+  "goldAnswer": [
+    "Blue pencil test",
+    "blue pencil doctrine",
+    "Blue pencil doctrine",
+    "blue pencil test"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editors corrections written copy portion contract void other part enforceable",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about this legal term."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editors indicating corrections written copy contract portion void rest enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term is the **blue pencil rule** (also called the **blue pencil doctrine**). It originates from the traditional use of a blue pencil by editors to mark deletions or corrections in written copy. In contract law, it allows a court to strike out an unenforceable portion of a contract while leaving the remainder intact"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term for voidable contract with corrections",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The legal term you are referring to is \"severable\" or more specifically, a \"severability clause,\" but the term that comes from how editors traditionally indicated corrections to a written copy is \"blue pencil.\" However, the most common term whose etymology comes from the traditional editing practice is \"blue penciling,"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editors indicated corrections to a written copy portion of contract void other part enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The legal term you're looking for is **\"severability\"** (often used in the phrase \"severability clause\").\n\nThe etymology traces back to typesetting and printing terminology. When an editor wanted to indicate that a particular piece of text should be removed or changed, they would \"**stet**\" (Latin for \"let it stand\") t"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term you're looking for is \"blue pencil.\" It originates from the practice of editors using blue pencils to mark sections of a contract that are void or invalid, while leaving the rest enforceable."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The legal term you're referring to is \"blue pencil.\" The term \"blue pencil\" comes from the practice of editors using a blue pencil to mark corrections or deletions on a manuscript. In the context of contracts, a \"blue pencil\" refers to the act of a court striking out or voiding a specific portion of a contract that is"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term blue pencil doctrine etymology editors corrections written copy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term from editing tradition meaning part of contract is void but other part is enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term for portion of contract void but other part enforceable etymology editor corrections",
+      "callProblem": "",
+      "answerExcerpt": "The legal term you're referring to is likely \"severability.\" This term comes from the practice of editors marking changes or corrections in a document, and in contract law, it means that if one part of a contract is found to be invalid or unenforceable, the rest of the contract can still be valid and enforceable.\n\nHowe"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The legal term you're referring to is **\"blue pencil doctrine.\"**\n\nThis term originates from the practice of editors using blue pencils to mark corrections in manuscripts. In legal contexts, the \"blue pencil doctrine\" refers to the principle that a court may strike out (or \"blue pencil\") an unenforceable or invalid por"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editors corrections contract void enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term for contract portion void but other part enforceable etymology editor corrections",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term for contract portion void but other part enforceable etymology editors corrections",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term from editor corrections meaning part of contract void but rest enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term from editors' corrections meaning part of contract is void",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term contract portion void enforceable editor corrections blue pencil",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term editors corrections written copy contract void portion enforceable etymology",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editors corrections written copy contract portion void enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editors corrections written copy contract void enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editors corrections contract void enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term severability etymology editors corrections written copy contract void enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term is the **“blue-pencil rule”** (or **blue-pencil doctrine**).\n\n- **Meaning**: If part of a contract is invalid or unenforceable, a court may “strike out” that offending portion and still enforce the rest, provided the remaining parts are independent and sensible on their own.\n- **Etymology**: Editors and proofr"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editors corrections written copy blue pencil contract void portion enforceable rest",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology comes from how editors traditionally indicated corrections to a written copy portion of contract void but other part enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term etymology editor corrections contract void portion enforceable \"blue pencil\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "legal term blue pencil doctrine etymology editors corrections contract void part enforceable",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term you're looking for is the **\"blue pencil doctrine\"** (also called the \"blue pencil rule\").\n\n**The etymology:** Editors and proofreaders traditionally used a blue pencil to mark up, strike out, or correct text on a written copy. The legal term borrows from this practice — under the doctrine, a court can literal"
+    }
+  ]
+}

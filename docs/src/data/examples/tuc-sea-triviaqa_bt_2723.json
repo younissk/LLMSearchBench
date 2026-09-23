@@ -1,0 +1,359 @@
+{
+  "id": "tuc-sea-triviaqa_bt_2723",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_bt_2723",
+  "adversarial": false,
+  "prompt": "What is the German term for wine made from fully ripened grapes",
+  "goldAnswer": [
+    "kabinettwein",
+    "Kabinettwein",
+    "kabinett",
+    "Kabinett"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for the German term for wine made from fully ripened grapes."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is **Spätlese** (literally \"late harvest\"). \n\nThis is a Prädikat (quality level) in the German wine classification system, indicating that the grapes were harvested later than normal, allowing them to reach full ripeness and develop more concentrated flavors and h"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is \"Trockenbeerenauslese\" or more specifically, the term that refers to the ripeness level of the grapes is \"Trocken\". However, the term that refers to the level of ripeness and the resulting wine style is \"Prädikat\". The Prädikat system includes several levels of"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is **\"Spätlese\"** (literally \"late harvest\"). This term refers to wines made from grapes that are harvested later than usual, allowing them to fully ripen on the vine, which results in higher sugar content and typically a richer, more concentrated wine.\n\nSpätlese"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is \"Qualitätswein bestimmter Anbaugebiete\", often abbreviated as \"QbA\"."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is \"Spätlese.\" It is a classification in the German wine system that indicates the wine is made from grapes that are harvested later than the regular harvest, resulting in a richer, sweeter wine."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In German the phrase that describes grapes that have reached full ripeness is **„vollreife Trauben“**.  \nWhen you want to refer specifically to the wine that comes from those fully ripened grapes, you usually say:\n\n- **„vollreife Traubenwein“** (literally “wine from fully ripe grapes”), or  \n- simply **„vollreife Traub"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is \"Auslese.\""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is **Spätlese**. This refers to a category in the German wine classification system where grapes are harvested later than usual to achieve higher ripeness, resulting in richer and more concentrated flavors compared to standard harvest wines (like Kabinett). \n\nNo t"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is **\"Spätlese\"**.\n\nSpätlese refers to a type of German wine made from grapes that are harvested later than usual, allowing them to ripen fully and develop higher sugar content. This term is commonly used in the context of Riesling wines and is part of the German"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German wine terms Spätlese",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is \"Spätlese\" (late harvest). This term is used in German wine classification and refers to wines made from grapes that are harvested later than usual, allowing them to reach full ripeness and often resulting in sweeter wines."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term wine fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term for wine made from fully ripened grapes is **Kabinett**.\n\nIn the German wine classification system (Prädikatswein), Kabinett represents the lightest style of quality wine, made from fully ripened grapes harvested at normal ripeness levels. It's typically a lighter, more delicate wine with lower alcohol"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German wine term fully ripened grapes Kabinett",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German term is **Spätlese** — a “late harvest” wine made from fully ripened grapes."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term wine made from fully ripened grapes Spätlese Auslese",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German wine term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term for wine made from fully ripened grapes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "German term wine made from fully ripened grapes Kabinett",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Spätlese** — literally meaning \"late harvest.\"\n\nIn the German Prädikat wine classification system, Spätlese refers to wine made from fully ripened grapes that are picked at least seven days after the normal harvest, allowing them to develop more sugar and intensity. It sits above Kabinett (made from normally ripened"
+    }
+  ]
+}

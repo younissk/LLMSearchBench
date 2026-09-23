@@ -1,0 +1,357 @@
+{
+  "id": "tuc-mem-popqa_6502612",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_6502612",
+  "adversarial": false,
+  "prompt": "What color is Arsenal F.C.?",
+  "goldAnswer": [
+    "red",
+    "red color"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. team colors",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Arsenal F.C.'s colors."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal Football Club's primary color is **red**, specifically a shade known as \"Arsenal red.\" The club's traditional home kit features red shirts with white sleeves, white shorts, and white socks. This iconic red-and-white combination has been associated with the club since 1913, when they moved to Highbury and adopte"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "<final_summary>\nArsenal F.C.'s **primary colors are red and white**. Here's a breakdown:\n\n1. **Home Kit**:  \n   - **Red shirts with white sleeves** (a signature look since the 1930s).  \n   - **White shorts** and **red socks**.  \n   This iconic combination is deeply tied to the club's identity.\n\n2. **Away/Third Kits**:"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. colors",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s traditional colors are red and white. The team's home kit typically features a red shirt with white sleeves, and their away kit can vary in color but often includes red and white accents."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. colors",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s traditional colors are **red and white**. The home kit typically features a red shirt with white sleeves, paired with white shorts and red (or sometimes black) socks. The club's nickname, \"The Gunners,\" and their iconic crest featuring a cannon reflect their playing style and heritage."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. color",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C., commonly known as Arsenal, is an English professional football club based in Islington, London. The club's traditional home colors are red and white. Their home kit typically features a red shirt with white sleeves, white shorts, and red socks. These colors are a significant part of the club's identity an"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. colors",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. team colors",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal FC’s traditional colours are **red and white** – the home kit is a red shirt with white sleeves, white shorts and red socks. The club’s away and third kits vary, but the iconic red‑and‑white palette remains the club’s primary identity."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The primary colors for Arsenal Football Club are red and white. The team is often referred to as \"The Gunners\" and their home kit traditionally features a red shirt with white sleeves and shorts."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C. is known for its club colors of red and white. The primary color is red. Would you like more information on Arsenal F.C.?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C. is primarily associated with red and white. Their home kit typically consists of a red shirt with white sleeves, red shorts, and red socks."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C. is primarily known for their red home kits, often referred to as \"The Gunners.\" Their traditional colors are red shirts with white sleeves, paired with white shorts and black socks. This has been their iconic look for decades."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C. is primarily known for their red and white colors. The club's traditional home kit features a red shirt with white sleeves and red shorts, often accompanied by red socks. The red color is sometimes referred to as \"Arsenal red\" and is a defining feature of the team's identity."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s primary color is **red**. Their traditional home kit features a red shirt, and red is the dominant color associated with the club. They also incorporate white and black in some of their kits and branding, but red is the most iconic and widely recognized color. \n\nNo tool call is needed since this is a wel"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. official colors",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. colors",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s traditional colors are **red and white**. Their iconic home kit features red shirts with white sleeves, which has been their signature look for many decades. This distinctive color combination is one of the most recognizable in football.\n\nThe club also uses white as their primary away color, and they hav"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s traditional colors are **red and white**. Their iconic home kit features:\n\n- **Red shirts** with white sleeves\n- **White shorts**\n- **Red socks**\n\nThis color scheme has been associated with the club for many decades and is one of the most recognizable in English football. The club is often referred to as"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s primary colors are **red and white**. Their traditional home kit features a red shirt with white sleeves, which has been their iconic look for most of the club's history. They also typically wear white shorts and socks with their home kit. The red and white colors are deeply associated with the club's id"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C. is known for their iconic **red and white** colors. The club's home kit traditionally features a red shirt with white sleeves, white shorts, and red socks. This color scheme has been associated with the club since its founding in 1886 and is one of the most recognizable in English football."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s primary color is **red**.\n\nThey are best known for their home kit, which consists of red shirts and white shorts."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.’s main colors are **red and white** — typically red shirts, white shorts, and black socks."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s primary colors are **red and white**.\n\nTheir traditional home kit features a red shirt with white sleeves and white shorts, which has been a hallmark of the club since the 1930s (famously introduced by manager Herbert Chapman). They are often nicknamed \"The Gunners\" and \"The Red and White Army\" in refere"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s primary colors are **red and white**. Their home kit is traditionally red shirts with white sleeves and white shorts, and they are nicknamed \"The Gunners\" (in part due to the red color of their shirts, historically associated with the Royal Artillery)."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Arsenal F.C. team colors",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Arsenal F.C.'s** traditional home colors are **red** (for the shirts) with **white** sleeves, paired with **white** shorts. This iconic red-and-white combination has been associated with the club since the early 20th century.\n\nTheir away kits have varied over the years, but the red and white home kit is what most peo"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C. is known for their **red and white** colors. Their traditional home kit consists of:\n\n- **Red shirts** (with white sleeves in some variations)\n- **White shorts**\n- **White socks**\n\nThe club is commonly referred to as \"The Gunners\" and their red and white colors are iconic in English football. The red color"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s primary colors are **red and white**. \n\nTheir traditional home kit features:\n- **Red shirts** with white sleeves\n- **White shorts** \n- **Red and white socks**\n\nThis iconic red and white color scheme has been Arsenal's trademark since the 1913-14 season. The club is often nicknamed \"The Reds\" due to their"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Arsenal F.C.'s colors are **red and white**.\n\nTheir traditional home kit is a red shirt with white sleeves (often paired with white shorts and socks with red accents). This iconic look dates back to 1933, when white sleeves were added to the plain red shirt. Because of the color, Arsenal are often nicknamed \"The Gunner"
+    }
+  ]
+}

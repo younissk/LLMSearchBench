@@ -1,0 +1,379 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_21625",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_21625",
+  "adversarial": false,
+  "prompt": "Which World War II Aircraft was known as the 'Flying Stringbag'?",
+  "goldAnswer": [
+    "Swordfish aeroplane",
+    "swordfish aeroplane",
+    "fairey swordfish mk iii",
+    "Stringbag",
+    "FAIREY SWORDFISH",
+    "swordfish aircraft",
+    "Swordfish (aeroplane)",
+    "stringbag",
+    "Swordfish (airplane)",
+    "swordfish plane",
+    "swordfish airplane",
+    "Swordfish (bomber)",
+    "Fairey Swordfish Mk.III",
+    "Swordfish bomber",
+    "Swordfish plane",
+    "Swordfish aircraft",
+    "Swordfish (plane)",
+    "Swordfish (aircraft)",
+    "fairey swordfish mk 2",
+    "Fairey Swordfish",
+    "fairey swordfish",
+    "Fairey Swordfish Mk 2",
+    "swordfish bomber",
+    "Swordfish airplane"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft known as 'Flying Stringbag' nickname",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The aircraft known as the \"Flying Stringbag\" was the **Fairey Swordfish**, a British biplane torpedo bomber used by the Fleet Air Arm during World War II.\n\nIt earned this nickname because of its somewhat outdated and fragile-looking appearance — a fabric-covered biplane with a complex web of struts and wires (the \"stri"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft known as the Flying Stringbag",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II Aircraft known as the 'Flying Stringbag'",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Fairey Swordfish, a British torpedo bomber, was known as the 'Flying Stringbag' or 'Stringbag' due to its outdated appearance and slow speed, but it proved to be a highly effective and durable aircraft during World War II."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Flying Stringbag\" World War II aircraft",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **Fairey Swordfish** was known as the \"Flying Stringbag\" during World War II. This British biplane torpedo bomber, built by the Fairey Aviation Company, earned the affectionate nickname due to its seemingly outdated design (it was a fabric-covered biplane in an era of monoplanes) and its ability to carry an improba"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The aircraft known as the 'Flying Stringbag' during World War II was the Fairey Swordfish. It was a biplane torpedo bomber and was operated by the Fleet Air Arm of the Royal Navy."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The World War II aircraft known as the \"Flying Stringbag\" is the Fairey Swordfish. This biplane torpedo bomber was used primarily by the British Fleet Air Arm and played a significant role in several key battles, including the sinking of the German battleship Bismarck in 1941. The nickname \"Stringbag\" was affectionatel"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Flying Stringbag WWII aircraft",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Flying Stringbag World War II aircraft",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Flying Stringbag\" aircraft World War II",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II Aircraft known as the 'Flying Stringbag'",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II Aircraft known as the 'Flying Stringbag'",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The World War II aircraft known as the \"Flying Stringbag\" was the Fairey Swordfish."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The World War II aircraft known as the 'Flying Stringbag' was the **Fairey Swordfish**. This British biplane torpedo bomber earned the nickname due to its seemingly outdated, fabric-covered design—which resembled a simple \"string bag\"—yet it proved remarkably effective in operations such as the Battle of Taranto and th"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft known as Flying Stringbag",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft known as Flying Stringbag",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Which World War II aircraft was known as the Flying Stringbag?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft Flying Stringbag",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The World War II aircraft known as the 'Flying Stringbag' was the **Avro Lancaster**. This nickname was given to the bomber due to its distinctive shape and the way it appeared to be filled with bags or sacks, especially when loaded with bombs. The Avro Lancaster was a British heavy bomber used extensively by the Royal"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft Flying Stringbag nickname",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **Avro Lancaster** was the World War II aircraft known as the \"Flying Stringbag.\"\n\nThis British four-engine heavy bomber earned this nickname due to its somewhat patchwork construction and the perception that it was held together with minimal structural integrity - much like a string bag. Despite this unflattering"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft Flying Stringbag nickname",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft known as Flying Stringbag",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The World War II aircraft known as the \"Flying Stringbag\" was the **Handley Page Halifax**.\n\nIt was a British four-engine heavy bomber used by the Royal Air Force (RAF). The nickname was given because the aircraft was perceived to be loosely constructed and prone to structural failure, particularly in its early version"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft nickname \"Flying Stringbag\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Flying Stringbag\" World War II aircraft nickname",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft known as Flying Stringbag",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Flying Stringbag\" World War II aircraft",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Flying Stringbag\" World War II aircraft",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The aircraft known as the \"Flying Stringbag\" was the **Fairey Swordfish**, a British biplane torpedo bomber used by the Royal Navy's Fleet Air Arm during World War II.\n\nDespite looking obsolete by the outbreak of the war — it was a slow, fabric-covered biplane with an open cockpit — the Swordfish achieved remarkable su"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "World War II aircraft \"Flying Stringbag\" nickname",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **Fairey Swordfish** was the aircraft affectionately known as the \"Flying Stringbag.\"\n\nThis nickname reflected its seemingly outdated appearance — it was a fabric-covered biplane with an open cockpit, fixed landing gear, and a lattice of struts and wires, looking like something from the First World War rather than"
+    }
+  ]
+}

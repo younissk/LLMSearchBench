@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-06",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-06",
+  "adversarial": false,
+  "prompt": "Book costs $40 with 25% discount. What is the final price?",
+  "goldAnswer": [],
+  "rationale": "Percentage discount calculation with all values supplied.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to calculate 25% discount on $40 book",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about calculating discounts to confirm the standard approach."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's calculate the final price.\n\n1. The original price is $40.\n2. The discount is 25%.\n\nDiscount amount = 25% of $40 = 0.25 × $40 = $10\n\nFinal price = Original price − Discount amount = $40 − $10 = **$30**\n\nSo, the final price is **$30**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "<final_summary>\nTo calculate the final price of the book after a 25% discount:\n\n1. **Calculate the discount amount**:  \n   $ 25\\% \\text{ of } \\$40 = 0.25 \\times 40 = \\$10 $.\n\n2. **Subtract the discount from the original price**:  \n   $ \\$40 - \\$10 = \\$30 $.\n\n**Final Price**: **\\$30**.  \n\nAlternatively, you can calculat"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"Book price after 25% discount"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the final price of the book after a 25% discount, we first need to calculate the amount of the discount and then subtract it from the original price.\n\nThe original price of the book is $40.\nThe discount is 25% of $40, which is 0.25 * $40 = $10.\n\nSo, the final price of the book after the discount is $40 - $10 ="
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 25 % discount on a $40 book is  \n\n\\(0.25 \\times 40 = \\$10\\).\n\nSubtract the discount from the original price:\n\n\\(40 - 10 = \\$30\\).\n\n**Final price: \\$30.**"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Final Price Calculation\n\n**Original price:** $40\n**Discount:** 25%\n\n**Step 1:** Calculate the discount amount\n$40 × 0.25 = $10\n\n**Step 2:** Subtract the discount from the original price\n$40 − $10 = **$30**\n\nThe final price is **$30**."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "40 * (1 - 0.25) = 30"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the final price of the book after a 25% discount, follow these steps:\n\n1. **Calculate the discount amount:**\n   \\[\n   \\text{Discount Amount} = \\text{Original Price} \\times \\left(\\frac{\\text{Discount Percentage}}{100}\\right)\n   \\]\n   \\[\n   \\text{Discount Amount} = 40 \\times \\left(\\frac{25}{100}\\right) = 40"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price after a 25% discount on a $40 book is calculated as follows:\n\n1. **Calculate the discount amount**:  \n   $ 25\\% \\text{ of } \\$40 = 0.25 \\times 40 = \\$10 $.\n\n2. **Subtract the discount from the original price**:  \n   $ \\$40 - \\$10 = \\$30 $.\n\n**Final Answer**:  \n\\$30"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The book originally costs $40. A 25% discount reduces the price by $10 (since 25% of $40 = $10). Therefore, the final price is $40 - $10 = **$30**."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The discount is 25 % of $40:\n\n\\[\n0.25 \\times 40 = 10\n\\]\n\nSubtract that from the original price:\n\n\\[\n40 - 10 = \\$30\n\\]\n\n**Final price: $30**"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price of the book after applying the 25% discount can be calculated as follows:\n\n1. Calculate the discount amount: \\( 40 \\times 0.25 \\)\n2. Subtract the discount amount from the original price: \\( 40 - (40 \\times 0.25) \\)\n\nLet's do the calculation.\n\\[ 40 \\times 0.25 = 10 \\]\n\\[ 40 - 10 = 30 \\]\n\nSo, the final pr"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "calculate discount amount and final price of $40 with 25% discount",
+      "callProblem": "",
+      "answerExcerpt": "To find the final price after a 25% discount on a book that originally costs $40, we can calculate it as follows:\n\n1. Calculate the discount amount: \\( \\text{Discount Amount} = \\text{Original Price} \\times \\frac{\\text{Discount Percentage}}{100} \\)\n2. Subtract the discount amount from the original price to get the final"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the final price after a 25% discount:\n\n1. Calculate the discount amount:  \n   $ 40 \\times 0.25 = 10 $\n\n2. Subtract the discount from the original price:  \n   $ 40 - 10 = 30 $\n\nThe final price of the book is **$30**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price after a 25% discount on a $40 book is calculated as follows:\n\n1. Calculate the discount amount:  \n   $ 40 \\times 0.25 = 10 $\n\n2. Subtract the discount from the original price:  \n   $ 40 - 10 = 30 $\n\n**Final price: $30**  \n\nNo tool call needed — this is a straightforward arithmetic calculation."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The discount amount is 25% of $40, which is:\n\n$$\n0.25 \\times 40 = 10\n$$\n\nSubtracting the discount from the original price:\n\n$$\n40 - 10 = 30\n$$\n\nThe final price is $30."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price of the book after a 25% discount is calculated as follows:\n\n- Original price: $40\n- Discount amount: 25% of $40 = $10\n- Final price: $40 - $10 = $30\n\nNo tool call is needed since this is a straightforward calculation. \n\n**Answer:** The final price is $30."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price of the book after a 25% discount is calculated as follows:\n\n1. **Calculate the discount amount**:  \n   $ 25\\% \\text{ of } \\$40 = 0.25 \\times 40 = \\$10 $.\n\n2. **Subtract the discount from the original price**:  \n   $ \\$40 - \\$10 = \\$30 $.\n\n**Answer**: The final price is **\\$30**."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price after a 25% discount on a $40 book is calculated as follows:\n\n1. **Calculate the discount amount**:  \n   25% of $40 = 0.25 × 40 = **$10**.\n\n2. **Subtract the discount from the original price**:  \n   $40 - $10 = **$30**.\n\n**Final Price**: $30."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the final price of the book after applying the 25% discount, follow these steps:\n\n1. Calculate the discount amount by multiplying the original price by the discount percentage.\n   - Discount Amount = Original Price × (Discount Percentage / 100)\n   - Discount Amount = $40 × (25 / 100) = $10\n\n2. Subtract the"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation I can do without searching:\n\n**Calculation:**\n- Original price: $40\n- Discount: 25% of $40 = $10\n- Final price: $40 - $10 = **$30**\n\nThe final price of the book is **$30**."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation I can help you with directly!\n\n**Book Price Calculation:**\n- Original price: $40\n- Discount: 25%\n- Discount amount: $40 × 0.25 = $10\n- **Final price: $40 - $10 = $30**\n\nThe final price after the 25% discount is **$30**."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is **$30**.\n\nHere's the calculation:\n- Original price: $40\n- Discount: 25% of $40 = $10\n- Final price: $40 - $10 = **$30**\n\nOr you can calculate it as: $40 × 0.75 = $30"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price of the book is **$30**.\n\nHere's the calculation:\n- Original price: $40\n- Discount: 25% of $40 = $10\n- Final price: $40 - $10 = $30\n\nAlternatively: $40 × 0.75 = $30"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price of the book is **$30**.\n\nHere is the breakdown:\n1.  **Calculate the discount amount:** $40 \\times 0.25 = $10$\n2.  **Subtract the discount from the original price:** $40 - $10 = $30$"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is **$30**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is **$30**.\n\nCalculation:\n- Discount: $40 × 25% = **$10**\n- Final price: $40 − $10 = **$30**\n\n(Or: $40 × 0.75 = $30)"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The discount is 25% of $40:\n\n- Discount amount: $40 × 0.25 = **$10**\n- Final price: $40 − $10 = **$30**\n\nSo the final price is **$30**."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A 25% discount on a $40 book means you save $10 (because 25% of $40 is $10). So the final price is $40 - $10 = **$30**."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Calculating the Final Price\n\nHere's the breakdown:\n\n| Step | Calculation |\n|------|------------|\n| Original price | $40.00 |\n| Discount (25%) | $40 × 0.25 = **$10.00** |\n| **Final price** | $40 − $10 = **$30.00** |\n\nThe final price of the book is **$30**. 📚"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The discount is 25 % of the original price.\n\n1. **Calculate the discount amount**  \n   \\[\n   25\\% \\times \\$40 = 0.25 \\times 40 = \\$10\n   \\]\n\n2. **Subtract the discount from the original price**  \n   \\[\n   \\$40 - \\$10 = \\$30\n   \\]\n\n**Final price:** **\\$30**."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is **$30**.\n\nHere's the calculation:\n- Original price: $40\n- Discount: 25% of $40 = $40 × 0.25 = $10\n- Final price: $40 - $10 = **$30**"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is **$30**.\n\nHere's the calculation:\n- Discount: 25% of $40 = $10\n- Final price: $40 − $10 = **$30**"
+    }
+  ]
+}

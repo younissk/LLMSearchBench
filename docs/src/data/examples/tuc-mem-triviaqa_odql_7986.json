@@ -1,0 +1,368 @@
+{
+  "id": "tuc-mem-triviaqa_odql_7986",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_odql_7986",
+  "adversarial": false,
+  "prompt": "What is the common name for the perennial-flowering houseplant, 'Saintpaulia'?",
+  "goldAnswer": [
+    "saintpaulia ionantha",
+    "violeta africana",
+    "african violets",
+    "African Violets",
+    "African violets",
+    "African violet",
+    "Saintpaulia",
+    "saintpaulia",
+    "Violeta africana",
+    "African Violet",
+    "african violet",
+    "AFRICAN VIOLET",
+    "Saintpaulia ionantha"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name houseplant",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about the common name for the plant genus 'Saintpaulia'."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for *Saintpaulia* is the **African violet**. It's a popular perennial-flowering houseplant known for its velvety leaves and delicate, colorful blooms."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for *Saintpaulia* is **African violet**."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name Saintpaulia houseplant",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant, 'Saintpaulia', is African Violet."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for **Saintpaulia** is the **African violet**. It is a popular perennial-flowering houseplant known for its fuzzy leaves and clusters of vibrant purple, pink, blue, or white flowers."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant 'Saintpaulia' is African Violet."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant 'Saintpaulia' is the African Violet."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for *Saintpaulia* is **African violet**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant 'Saintpaulia' is African Violet."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for Saintpaulia perennial-flowering houseplant",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant 'Saintpaulia' is the African violet."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant *Saintpaulia* is **African violet**. This name refers to its native origin in East Africa and its violet-like flowers, though it is not closely related to true violets (genus *Viola*)."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant *Saintpaulia* is **African violet**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant 'Saintpaulia' is **African violet**. This plant is widely recognized for its vibrant flowers and is a popular choice for indoor gardening. No search tool was needed, as this is a well-established common name."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for Saintpaulia plant",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant 'Saintpaulia' is **African Violet**.\n\nDespite its name, African Violets are not true violets (which belong to the genus Viola). They are native to Tanzania and southeastern Kenya in East Africa. These popular houseplants are known for their fuzzy leaves and beautif"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant 'Saintpaulia' is the **African violet**.\n\nThese plants are native to Tanzania and surrounding regions in East Africa. They are popular houseplants known for their velvety leaves and colorful flowers that can bloom throughout the year with proper care. They typicall"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for **Saintpaulia** is the **African Violet**. \n\nDespite its name, it's not actually a violet (which belongs to the genus Viola), but it was named for its resemblance to violet flowers. African Violets are native to Tanzania and neighboring regions in East Africa. They're popular houseplants known for t"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant genus 'Saintpaulia' is **African violet**.\n\nThese popular houseplants are native to Tanzania and are well-known for their attractive, fuzzy leaves and colorful, violet-colored flowers (though they can also produce pink, white, and other colored blooms). They're bel"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant *Saintpaulia* is the **African violet**.\n\nThey are native to the tropical regions of East Africa (specifically Tanzania and Kenya) and are named after Baroness Saint Paul, the wife of the German colonial governor who discovered them. Despite their name, they are no"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the perennial-flowering houseplant *Saintpaulia* is the **African violet**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name houseplant",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name perennial flowering houseplant",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Saintpaulia** is commonly known as the **African violet**.\n\nThis beloved houseplant is native to Tanzania and Kenya in East Africa and is prized for its beautiful, velvety flowers that come in shades of purple, pink, white, blue, and bi-colors. African violets are popular because they can bloom multiple times a year"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Saintpaulia common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for *Saintpaulia* is **African violet**.\n\nAfrican violets are popular flowering houseplants known for their fuzzy, rounded leaves and clusters of small, colorful flowers that can bloom year-round indoors. Despite their common name, they're not true violets (Violaceae family) but are actually in the Gesn"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for *Saintpaulia* is the **African violet**.\n\nThese popular houseplants are native to eastern tropical Africa (particularly Tanzania and Kenya) and are beloved for their compact rosettes of fuzzy leaves and clusters of violet, purple, pink, or white flowers. They were named after Baron Walter von Saint"
+    }
+  ]
+}

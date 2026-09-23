@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-07",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-07",
+  "adversarial": false,
+  "prompt": "Summarize this paragraph: \"Dolphins are known for their intelligence and social behavior. They live in groups called pods. They communicate through clicks and whistles. They hunt together for fish.\"",
+  "goldAnswer": [],
+  "rationale": "Pure summarization of provided facts, no external verification needed.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods. They communicate using clicks and whistles and cooperate to hunt fish together."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a summary of the paragraph:\n\nDolphins are intelligent, social animals that live in groups called pods, communicate using clicks and whistles, and hunt for fish cooperatively."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in pods, communicate using clicks and whistles, and cooperatively hunt for fish."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "dolphins social behavior and hunting habits",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The paragraph describes dolphins as intelligent and social animals that live in groups (pods), communicate with each other through clicks and whistles, and work together to hunt for fish."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social marine mammals that live in groups called pods, communicate using clicks and whistles, and cooperate to hunt fish."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in pods, communicate using clicks and whistles, and hunt cooperatively for fish."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent and social creatures that live in groups called pods. They communicate using clicks and whistles and often hunt fish together."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are highly intelligent and social animals that live in groups called pods. They communicate using clicks and whistles and often hunt for fish together."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social marine mammals that live in groups called pods, communicate using clicks and whistles, and cooperate to hunt fish."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods. They communicate using clicks and whistles and cooperate to hunt for fish."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in pods, communicate with clicks and whistles, and hunt fish cooperatively."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent and social animals that live in groups called pods. They communicate using clicks and whistles and often hunt for fish together."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent and social animals that live in groups called pods. They communicate using clicks and whistles and work together to hunt for fish."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods. They communicate using clicks and whistles and cooperate to hunt for fish."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social marine mammals that live in groups known as pods. They use clicks and whistles to communicate and often cooperate to hunt fish."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in pods, communicate using clicks and whistles, and hunt for fish cooperatively."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods. They communicate through clicks and whistles and hunt cooperatively for fish."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social marine animals that live in groups called pods. They communicate using clicks and whistles and collaborate to hunt for fish."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent and social marine mammals that live in groups called pods. They communicate using clicks and whistles and hunt cooperatively for fish."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent and social animals that live in groups called pods. They communicate using clicks and whistles and often hunt together for fish."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a summary of the paragraph:\n\nDolphins are intelligent, social animals that live in groups called pods. They use clicks and whistles to communicate and work together when hunting for fish."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Summary:**\n\nDolphins are intelligent, social animals that live in groups called pods. They communicate using clicks and whistles and cooperate when hunting for fish."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods. They communicate using clicks and whistles and cooperate to hunt for fish."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Summary:**\n\nDolphins are intelligent, social marine animals that live in groups called pods. They communicate through clicks and whistles and work together to hunt for fish."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods, where they communicate and hunt cooperatively."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods, communicate using clicks and whistles, and hunt fish together."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods. They communicate using clicks and whistles and work together to hunt fish."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are highly intelligent, social marine mammals that live in groups called pods. They communicate using clicks and whistles and cooperate to hunt fish together."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social marine mammals that live in groups called pods. They communicate using clicks and whistles and cooperate to hunt fish."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Summary\n\nDolphins are intelligent, social animals that live in groups called **pods**. They communicate using clicks and whistles, and cooperate to hunt fish together."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Summary:** Dolphins are intelligent, social animals that live in groups called pods, where they communicate using clicks and whistles and hunt fish cooperatively."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in pods, communicate through clicks and whistles, and hunt cooperatively for fish."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Dolphins are intelligent, social animals that live in groups called pods, where they communicate using clicks and whistles and hunt fish cooperatively."
+    }
+  ]
+}

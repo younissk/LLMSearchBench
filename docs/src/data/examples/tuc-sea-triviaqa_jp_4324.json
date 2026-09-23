@@ -1,0 +1,357 @@
+{
+  "id": "tuc-sea-triviaqa_jp_4324",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_jp_4324",
+  "adversarial": false,
+  "prompt": "What Monopoly square is furthest from Go?",
+  "goldAnswer": [
+    "Free Parking",
+    "free parking"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board squares distance from Go furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Monopoly board distances to determine which square is furthest from Go."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly square furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Monopoly square furthest from Go is **Free Parking**.\n\nHere's why: A standard Monopoly board has 40 squares arranged in a loop. Since Go is at position 0, the square exactly halfway around the board—20 spaces away—is the furthest possible distance. Counting clockwise from Go, the 20th square is Free Parking."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly square furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Monopoly square furthest from Go is Boardwalk."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board positions list 0-40 Free Parking position number",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Monopoly Square Furthest from Go\n\nThis is actually a fun puzzle because the answer depends on which **edition** of Monopoly you're playing!\n\n## Official Rulebook Answer\nAccording to the official Monopoly rules, the square that triggers an audit by the Tax man or IRS is traditionally considered to be the furthest"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The square that is furthest from \"GO\" in Monopoly is \"GO TO JAIL\". It is the only square that cannot be landed on directly by rolling the dice, and it is located 20 spaces away from \"GO\"."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the standard Monopoly board, the square furthest from \"Go\" is often considered to be \"Free Parking.\" However, this can depend on how you measure distance. If you count the number of spaces from \"Go,\" \"Free Parking\" is 20 spaces away, which is the maximum number of spaces on a Monopoly board before you loop back to \""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly square furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly square furthest from Go answer 'Go to Jail'",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly square furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board layout with positions",
+      "callProblem": "",
+      "answerExcerpt": "To determine which Monopoly square is furthest from \"Go,\" we need to consider the layout of the Monopoly board. Typically, the squares are arranged in a circle with \"Go\" at the starting point. The square furthest from \"Go\" would be the one directly opposite it on the board.\n\nLet's calculate this based on the standard M"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Monopoly square that is furthest from Go is **Boardwalk**. It is located 39 spaces from Go, making it the last property on the standard U.S. Monopoly board before returning to Go."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board squares order furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board furthest square from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly square furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly square furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Which Monopoly square is furthest from Go?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine which Monopoly square is furthest from \"Go,\" we need to consider the layout of a standard Monopoly board. The board has 40 squares, starting with \"Go\" and proceeding in a clockwise direction. The squares are arranged as follows:\n\n1. Go\n2. Mediterranean Avenue\n3. Community Chest\n4. Baltic Avenue\n5. Income T"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The square furthest from Go on a standard Monopoly board is **Free Parking**.\n\nHere's why: A standard Monopoly board has 40 squares total. Go is at position 0 (or 40), and the squares are numbered sequentially around the board. Free Parking is at position 20, which is exactly halfway around the board from Go.\n\nThis mak"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic Monopoly trivia question that I can answer from general knowledge!\n\nOn a standard Monopoly board with 40 spaces (numbered 0-39), **Free Parking (space 20)** is the furthest square from Go.\n\nHere's why:\n- The board has 40 spaces total arranged in a square\n- Go is at position 0\n- Free Parking is at posi"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the standard US Monopoly board, **Free Parking** is the square furthest from Go. \n\nThe Monopoly board has 40 spaces total, and Free Parking is space #20 - exactly halfway around the board from Go (space #0). This means it requires 20 spaces of movement to reach from Go, making it the furthest point on the board."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "On a standard Monopoly board, the square furthest from **Go** is **Free Parking**.\n\nHere's why:\n- The Monopoly board has 40 spaces total\n- **Go** is at position 0 (the starting point)\n- **Free Parking** is at position 20, which is exactly halfway around the board\n\nIf you were to travel from Go to Free Parking, you'd ne"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board spaces in order around the board list all 40",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board spaces list in order 40 spaces Go to Go distance opposite square furthest from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Monopoly square that is furthest from Go is **Free Parking**. \n\nHere’s why:\n\n- The Monopoly board is a square track with 40 spaces, starting at Go (space 0) and going around.\n- The four corners are:\n  - **Go** (space 0)\n  - **Jail** (space 10)\n  - **Free Parking** (space 20)\n  - **Go to Jail** (space 30)\n- Free Par"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board furthest square from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly farthest square from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Monopoly board spaces list order from Go",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Boardwalk** (the dark blue property that costs $400) is the furthest square from Go.\n\nIf you count Go itself as square 0, Boardwalk sits at square 39 — just one space short of completing the full circuit around the board. It's followed by Luxury Tax (square 38) and Park Place (square 37) as the next-furthest squares."
+    }
+  ]
+}

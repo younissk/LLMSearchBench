@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-13",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-13",
+  "adversarial": false,
+  "prompt": "A shirt costs $60. Apply 20% off, then an additional $5 off coupon. What's the final price?",
+  "goldAnswer": [],
+  "rationale": "Compound discount calculated from supplied prices and percentages.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll help you calculate the final price step by step.\n\n**Step 1: Start with the original price**\nOriginal price: $60\n\n**Step 2: Apply 20% off**\n20% of $60 = $60 × 0.20 = $12\nPrice after 20% off: $60 - $12 = $48\n\n**Step 3: Apply the additional $5 off coupon**\nPrice after $5 coupon: $48 - $5 = $43\n\n**Final answer: $43**"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's calculate step by step:\n\n1. **Original price**: $60\n2. **20% off**: 20% of $60 = $12 discount\n   - Price after 20% off: $60 - $12 = $48\n3. **Additional $5 off coupon**: $48 - $5 = $43\n\n**Final price: $43**"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine the final price of the shirt, we apply the discounts in the specified order:\n\n1. **Apply 20% off the original price of $60:**  \n   - Calculate 20% of $60:  \n     $$\n     0.20 \\times 60 = 12\n     $$  \n   - Subtract the discount from the original price:  \n     $$\n     60 - 12 = 48\n     $$  \n   **Price after"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"20% off $60 + $5 off"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the final price, first, calculate the discount from the 20% off: 20% of $60 = 0.20 * $60 = $12. \n\nThen, subtract this discount from the original price: $60 - $12 = $48.\n\nNext, apply the additional $5 off coupon: $48 - $5 = $43.\n\nThe final price is $43."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The shirt originally costs $60.\n\n1. **Apply the 20 % discount**  \n   \\(20\\% \\text{ of } \\$60 = 020 \\times 60 = \\$12\\)  \n   Subtract the discount: \\(\\$60 - \\$12 = \\$48\\).\n\n2. **Apply the \\$5 coupon**  \n   \\(\\$48 - \\$5 = \\$43\\).\n\n**Final price:** **\\$43**."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the calculation:\n\n- **Original price:** $60\n- **20% off:** $60 × 0.20 = $12 discount → $60 − $12 = $48\n- **$5 off coupon:** $48 − $5 = **$43**\n\nThe final price is **$43**."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's calculate it step by step.\n\nFirst, apply the 20% discount to the original price:\n20% of $60 = 0.20 * $60 = $12\n\nSo the price after the first discount is:\n$60 - $12 = $48\n\nNext, apply the additional $5 off coupon:\n$48 - $5 = $43\n\nTherefore, the final price of the shirt is $43."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the final price of the shirt, follow these steps:\n\n1. **Calculate the 20% discount:**\n   - 20% of $60 is calculated as \\( 0.20 \\times 60 = 12 \\).\n   - Subtract this discount from the original price: \\( 60 - 12 = 48 \\).\n\n2. **Apply the additional $5 off coupon:**\n   - Subtract the $5 coupon from the discoun"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The shirt originally costs \\$60.  \n\n1. Apply a 20% discount:  \n   \\(0.20 \\times 60 = \\$12\\) off, so the price becomes \\(60 - 12 = \\$48\\).  \n\n2. Apply the additional \\$5 off coupon:  \n   \\(48 - 5 = \\$43\\).  \n\n**Final price: \\$43**."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The shirt originally costs $60.\n\n1. Apply 20% off:  \n   20% of $60 = $12  \n   Price after discount = $60 - $12 = $48\n\n2. Apply the additional $5 off coupon:  \n   Final price = $48 - $5 = $43\n\n**Final price: $43**"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "First, 20 % off of $60 is:\n\n\\(0.20 \\times 60 = 12\\)\n\nSubtract that from the original price:\n\n\\(60 - 12 = 48\\)\n\nThen apply the $5 off coupon:\n\n\\(48 - 5 = 43\\)\n\n**Final price: $43**"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "20 percent off of 60 dollars",
+      "callProblem": "",
+      "answerExcerpt": "First, we apply the 20% discount to the original price of $60, and then we subtract the $5 coupon from the discounted price. Let's calculate this step by step.\n\n1. Calculate 20% off of $60.\n2. Subtract $5 from the result of step 1.\n\nLet's start with the first step."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the final price of the shirt after applying the discounts, we can follow these steps:\n\n1. Calculate the price after the 20% discount.\n2. Subtract the additional $5 coupon from the discounted price.\n\nLet's calculate this.\n \"arguments\": {\"original_price\": 60, \"discount_percentage\": 20, \"additional_coupon\": 5}}"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "First, apply the 20% discount to the original price of $60:\n\n20% of $60 = 0.20 × $60 = $12\n\nSubtract that discount from the original price:\n\n$60 - $12 = $48\n\nNow apply the additional $5 off coupon:\n\n$48 - $5 = $43\n\nThe final price is **$43**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The shirt's original price is $60.  \n1. Apply 20% off: $60 × 0.20 = $12 discount → $60 - $12 = **$48**  \n2. Apply $5 off coupon: $48 - $5 = **$43**  \n\nFinal price: **$43**  \n\n<note>  \nNo tool call needed — this is a straightforward arithmetic calculation.  \n</note>"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "First, apply the 20% discount to the $60 shirt:\n\n20% of $60 = 0.20 × 60 = $12\n\nSubtract the discount: $60 - $12 = $48\n\nNow apply the $5 off coupon:\n\n$48 - $5 = $43\n\nThe final price is $43."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The shirt originally costs $60. \n\n1. Apply 20% off:  \n   $ 60 \\times 0.20 = 12 $, so $ 60 - 12 = 48 $.\n\n2. Apply $5 coupon:  \n   $ 48 - 5 = 43 $.\n\n**Final price: $43**."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is calculated by first applying a 20% discount to the original $60 shirt, resulting in a $48 price. Then, subtracting the $5 coupon gives a final price of **$43**. \n\nNo tool was needed for this calculation."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price of the shirt after applying the discounts is calculated as follows:\n\n1. **Original price**: $60  \n2. **Apply 20% discount**:  \n   $ 20\\% \\text{ of } \\$60 = 0.20 \\times 60 = \\$12 $  \n   $ \\$60 - \\$12 = \\$48 $  \n3. **Apply $5 coupon**:  \n   $ \\$48 - \\$5 = \\$43 $  \n\n**Final price**: \\$43"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation I can do without searching:\n\n**Step 1:** Apply 20% off to the original $60 price\n- 20% of $60 = $12\n- $60 - $12 = **$48**\n\n**Step 2:** Apply the additional $5 off coupon\n- $48 - $5 = **$43**\n\nThe final price is **$43**."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward math calculation, so I don't need to search for this.\n\n**Step-by-step calculation:**\n\n1. **Original price:** $60\n\n2. **Apply 20% off:**\n   - 20% of $60 = $60 × 0.20 = $12\n   - Price after discount = $60 - $12 = $48\n\n3. **Apply $5 off coupon:**\n   - $48 - $5 = $43\n\n**Final price: $43**"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me calculate this step by step:\n\n**Step 1: Apply 20% off**\n- 20% of $60 = $12\n- Price after 20% discount = $60 - $12 = **$48**\n\n**Step 2: Apply $5 off coupon**\n- $48 - $5 = **$43**\n\n**Final Price: $43**"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can calculate this directly without needing to search the web.\n\n**Step 1: Apply 20% off the original price**\n- 20% of $60 = $60 × 0.20 = $12\n- Price after discount = $60 - $12 = $48\n\n**Step 2: Apply the additional $5 off coupon**\n- $48 - $5 = $43\n\n**Final Price: $43**"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is **$43**.\n\nHere is the breakdown:\n1.  **20% off:** $60 \\times 0.20 = $12$ discount.\n    *   $60 - $12 = $48$\n2.  **$5 off coupon:**\n    *   $48 - $5 = $43$"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is **$43**.\n\n- 20% off $60 = $12 discount → $48  \n- Additional $5 off → **$43**"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The final price is **$43**.\n\nHere's the breakdown:\n- Original price: $60\n- 20% discount: $60 × 0.20 = **$12 off** → $48\n- Additional $5 coupon: $48 − $5 = **$43**"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "First take 20% off the original price:\n\n- 20% of $60 = $12\n- $60 − $12 = **$48**\n\nThen apply the $5 coupon:\n\n- $48 − $5 = **$43**\n\n**Final price: $43**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's calculate the final price step by step:\n\n1. **Original price:** $60  \n2. **Apply 20% discount:**  \n   - 20% of $60 = $60 × 0.20 = $12  \n   - New price = $60 – $12 = **$48**  \n3. **Apply the $5 coupon:**  \n   - Final price = $48 – $5 = **$43**\n\nSo, the final price of the shirt is **$43**."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Breaking It Down Step by Step\n\n1. **Original price:** $60.00\n2. **20% off:** $60.00 × 0.20 = **$12.00 off** → $60.00 − $12.00 = **$48.00**\n3. **$5 coupon off:** $48.00 − $5.00 = **$43.00**\n\n### ✅ Final price: **$43.00**\n\nA nice little savings of $17 off the original price — nearly 28% total discount! 🎉"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can calculate this for you:\n\n1. **Original price:** $60\n\n2. **Apply 20% off:**\n   - 20% of $60 = $12\n   - $60 - $12 = **$48**\n\n3. **Apply $5 off coupon:**\n   - $48 - $5 = **$43**\n\n**Final price: $43**"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Final price: $43**\n\nHere's the breakdown:\n1. **20% off $60:** $60 × 0.80 = **$48**\n2. **$5 coupon:** $48 − $5 = **$43**\n\nYou save $17 total (about 28% off the original price)."
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-12",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-12",
+  "adversarial": true,
+  "prompt": "StudyApp: 500K users month 1, 750K month 3. What percent increase?",
+  "goldAnswer": [],
+  "rationale": "Sounds like company stats but all numbers provided in prompt.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate the percent increase from month 1 to month 3.\n\n**Step 1: Identify the numbers**\n- Month 1: 500,000 users\n- Month 3: 750,000 users\n\n**Step 2: Calculate the increase**\nIncrease = Month 3 - Month 1 = 750,000 - 500,000 = 250,000 users\n\n**Step 3: Calculate the percent increase**\nPercent increase = (Increase ÷"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me calculate the percent increase from month 1 to month 3.\n\n**Step 1: Identify the values**\n- Month 1: 500,000 users\n- Month 3: 750,000 users\n\n**Step 2: Calculate the increase**\n- Increase = 750,000 − 500,000 = 250,000 users\n\n**Step 3: Calculate the percent increase**\n- Percent increase = (Increase ÷ Original) × 10"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**50% increase**\n\nCalculation:\n- Change: 750K − 500K = 250K\n- Percent increase: 250K ÷ 500K × 100 = **50%**\n\nNote: This is the total increase from month 1 to month 3. If you wanted the average monthly growth rate (compound), it would be about 22.5% per month, since the growth happened over two months."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"StudyApp user growth percent increase"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the percent increase, first, find the difference in users between month 3 and month 1: 750,000 - 500,000 = 250,000. Then, divide this difference by the original number of users: 250,000 / 500,000 = 0.5. Finally, convert this to a percentage by multiplying by 100: 0.5 * 100 = 50%. The percent increase is 50%."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The app grew from **500 K** users in month 1 to **750 K** users in month 3.\n\n**Percent increase** (overall)  \n\n\\[\n\\frac{750\\text{K} - 500\\text{K}}{500\\text{K}} \\times 100\\%\n= \\frac{250\\text{K}}{500\\text{K}} \\times 100\\%\n= 0.5 \\times 100\\%\n= \\mathbf{50\\%}\n\\]\n\nSo the user base increased by **50 %** from month 1 to month"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Percent Increase Calculation\n\n**From 500K → 750K users**\n\n**Formula:** ((New − Old) / Old) × 100\n\n**Calculation:**\n- Difference: 750K − 500K = 250K\n- 250K / 500K = 0.5\n- 0.5 × 100 = **50%**\n\nStudyApp grew by **50%** from month 1 to month 3."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "150%"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent increase in the number of users from month 1 to month 3, you can use the following formula:\n\n\\[\n\\text{Percent Increase} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100\n\\]\n\nIn this case:\n- The old value (month 1) is 500,000 users.\n- The new value (month 3"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The user base grew from 500 K to 750 K users.  \n\nPercent increase = \\(\\frac{750{,}000 - 500{,}000}{500{,}000} \\times 100\\% = \\frac{250{,}000}{500{,}000} \\times 100\\% = 0.5 \\times 100\\% = 50\\%\\).\n\n**Answer:** A 50 % increase."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent increase from month 1 (500K users) to month 3 (750K users) is calculated as follows:\n\n\\[\n\\text{Percent Increase} = \\left( \\frac{\\text{New Value} - \\text{Original Value}}{\\text{Original Value}} \\right) \\times 100\n\\]\n\n\\[\n= \\left( \\frac{750,000 - 500,000}{500,000} \\right) \\times 100 = \\left( \\frac{250,000}{500"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "From 500 k to 750 k is an increase of 250 k users.  \n\\[\n\\text{Percent increase} = \\frac{250\\,000}{500\\,000}\\times 100\\% = 50\\%\n\\]\n\nSo the user base grew by **50 %** from month 1 to month 3."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "calculate percent increase from 500K to 750K",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent increase, we can use the formula:\n\n\\[ \\text{Percent Increase} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100 \\]\n\nIn this case, the old value is 500K users (month 1) and the new value is 750K users (month 3).\n\nLet's calculate the percent increase."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "percent increase calculation for 500K to 750K users",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent increase in users from month 1 to month 3, we can use the following formula:\n\n\\[\n\\text{Percent Increase} = \\left( \\frac{\\text{Month 3 Users} - \\text{Month 1 Users}}{\\text{Month 1 Users}} \\right) \\times 100\n\\]\n\nGiven:\n- Month 1 Users: 500K\n- Month 3 Users: 750K\n\nLet's calculate the percent incre"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent increase from 500,000 users in month 1 to 750,000 users in month 3:\n\n1. Find the increase in users:  \n   $ 750,000 - 500,000 = 250,000 $\n\n2. Divide the increase by the original number (500,000):  \n   $ \\frac{250,000}{500,000} = 0.5 $\n\n3. Convert to percentage:  \n   $ 0.5 \\times 100 = 50\\% $\n\nTh"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent increase from 500K users (month 1) to 750K users (month 3) is calculated as follows:\n\n**Formula**:  \n$$\n\\text{Percent Increase} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100\n$$\n\n**Calculation**:  \n$$\n\\left( \\frac{750{,}000 - 500{,}000}{500{,}000} \\right) \\times 100"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent increase in users from month 1 to month 3:\n\n1. **Initial users (month 1):** 500,000  \n2. **Final users (month 3):** 750,000  \n\nThe formula for percent increase is:\n\n$$\n\\text{Percent Increase} = \\left( \\frac{\\text{Final} - \\text{Initial}}{\\text{Initial}} \\right) \\times 100\n$$\n\nSubstitute the val"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent increase from 500K users (month 1) to 750K users (month 3) is calculated as follows:\n\n$$\n\\text{Percent Increase} = \\left( \\frac{750,000 - 500,000}{500,000} \\right) \\times 100 = 50\\%\n$$\n\n**Answer:** 50% increase."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent increase in users from month 1 to month 3 is calculated as follows:\n\n1. **Difference**: 750,000 - 500,000 = 250,000  \n2. **Percentage Increase**: (250,000 / 500,000) × 100 = **50%**\n\nAnswer: A **50% increase** in users over the two-month period."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percentage increase from 500,000 to 750,000 users is calculated as follows:\n\n**Formula**:  \n% Increase = [(New Value - Original Value) / Original Value] × 100  \n\n**Calculation**:  \n[(750,000 - 500,000) / 500,000] × 100 = (250,000 / 500,000) × 100 = **50%**  \n\n**Answer**: A 50% increase."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation I can do without searching:\n\n**Percent Increase = ((New Value - Original Value) / Original Value) × 100**\n\n- Original Value (Month 1): 500K\n- New Value (Month 3): 750K\n\n**Calculation:**\n- Difference: 750K - 500K = 250K\n- Percent Increase: (250K / 500K) × 100 = **50%**\n\nThe user bas"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation - no need to search!\n\n**Percent Increase Calculation:**\n\n- Month 1: 500,000 users\n- Month 3: 750,000 users\n\n**Formula:** ((New - Original) ÷ Original) × 100\n\n**Calculation:**\n- Difference: 750,000 - 500,000 = 250,000\n- Percent: (250,000 ÷ 500,000) × 100 = **50%**\n\n**Answer: 50% inc"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Percent Increase Calculation\n\n**Formula:** ((New Value - Original Value) / Original Value) × 100\n\n**Calculation:**\n- Month 1: 500K users\n- Month 3: 750K users\n- Increase: 750K - 500K = 250K\n\n**Percent Increase:** (250K / 500K) × 100 = **50%**\n\nStudyApp grew by **50%** from month 1 to month 3."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation I can help you with:\n\n**Percent Increase Calculation:**\n\n- Month 1: 500K users\n- Month 3: 750K users\n\n**Formula:** ((New Value - Original Value) / Original Value) × 100\n\n**Calculation:**\n- Increase = 750K - 500K = 250K\n- Percent Increase = (250K / 500K) × 100 = **50%**\n\n**Answer: 5"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent increase is **50%**.\n\nHere is the breakdown:\n\n1.  **Find the difference:** $750,000 - 500,000 = 250,000$\n2.  **Divide by the original amount:** $250,000 / 500,000 = 0.5$\n3.  **Convert to percentage:** $0.5 \\times 100 = 50\\%$"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent increase is **50%**.\n\nCalculation:  \n\\( \\frac{750K - 500K}{500K} \\times 100 = 50\\% \\)"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That’s a **50% increase**.\n\nCalculation:  \n(750,000 − 500,000) / 500,000 = 250,000 / 500,000 = **0.50 = 50%**"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The increase is **50%**.\n\nCalculation:\n- Growth = 750K − 500K = **250K**\n- Percent increase = (250K / 500K) × 100 = **50%**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's a **50% increase** in users from month 1 to month 3.\n\n**The math:**\n- Starting users: 500,000\n- Ending users: 750,000\n- Increase: 250,000\n\n**Formula:** (250,000 ÷ 500,000) × 100 = **50%**\n\nNice growth for StudyApp! Is there anything else you'd like to calculate, like growth rate per month or projected numbers?"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## StudyApp User Growth\n\nHere's the calculation:\n\n| Metric | Value |\n|--------|-------|\n| Month 1 | 500K users |\n| Month 3 | 750K users |\n| Increase | 250K users |\n\n**Percentage Increase:**\n\n$$\\frac{750K - 500K}{500K} \\times 100 = \\frac{250K}{500K} \\times 100 = \\textbf{50\\%}$$\n\nThe StudyApp grew by **50%** from month 1"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent increase from month 1 to month 3:\n\n**Given:**\n- Month 1 users: 500K\n- Month 3 users: 750K\n\n**Calculation:**\n1. Find the difference: 750K - 500K = 250K\n2. Divide by the original value: 250K ÷ 500K = 0.5\n3. Convert to percentage: 0.5 × 100 = 50%\n\n**Answer: 50% increase** from month 1 to month 3."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent increase from month 1 to month 3 is **50%**.\n\n**Calculation:**\n- Month 1: 500K users\n- Month 3: 750K users\n- Increase: 750K - 500K = 250K users\n- Percent increase: (250K ÷ 500K) × 100 = **50%**"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Percent Increase Calculation\n\n**Formula:** (New − Old) / Old × 100\n\n**Calculation:**\n$$\\frac{750{,}000 - 500{,}000}{500{,}000} \\times 100 = \\frac{250{,}000}{500{,}000} \\times 100 = \\textbf{50\\%}$$\n\nStudyApp grew **50%** from month 1 to month 3 — that's a 250K user gain over two months."
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-20",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-20",
+  "adversarial": false,
+  "prompt": "Translate to German: 'The museum is open every day except Monday, from ten in the morning until five in the evening.'",
+  "goldAnswer": [],
+  "rationale": "Translation of supplied sentence requires language knowledge, not internet lookup.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "German translation \"The museum is open every day except Monday, from ten in the morning until five in the evening\"",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for the correct German translation of this sentence to ensure accuracy."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist täglich außer montags von zehn Uhr morgens bis fünf Uhr abends geöffnet."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "<final_summary>\nDas Museum ist täglich außer montags von zehn Uhr morgens bis fünf Uhr abends geöffnet.\n</final_summary>"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"The museum is open every day except Monday, from ten in the morning until five in the evening. German translation"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer Montag von zehn Uhr morgens bis fünf Uhr abends geöffnet."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The German translation is:\n\n**\"Das Museum ist jeden Tag außer Montag von zehn Uhr morgens bis fünf Uhr abends geöffnet.\"**\n\nOr alternatively (more commonly used in German):\n\n**\"Das Museum hat täglich außer montags von 10 bis 17 Uhr geöffnet.\"**"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Das Museum ist täglich außer montags geöffnet, von zehn Uhr morgens bis fünf Uhr abends.\"\n\nAlternatively, a slightly more formal version:\n\n\"Das Museum ist jeden Tag außer Montag von zehn bis siebzehn Uhr geöffnet.\""
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer Montag von zehn Uhr morgens bis fünf Uhr abends geöffnet."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer montags von zehn Uhr morgens bis fünf Uhr abends geöffnet."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist täglich geöffnet, außer montags, von 10:00 Uhr bis 17:00 Uhr."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The museum is open every day except Monday, from ten in the morning until five in the evening\" German",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag, außer am Montag, von zehn Uhr morgens bis fünf Uhr abends geöffnet."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer Montag geöffnet, von zehn Uhr morgens bis fünf Uhr nachmittags."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The translation of the sentence to German is: 'Das Museum ist jeden Tag außer Montag von zehn Uhr morgens bis fünf Uhr nachmittags geöffnet.' \n\nIf you need me to confirm or provide more context in German, feel free to ask!"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag geöffnet, außer montags, von zehn Uhr morgens bis fünf Uhr abends."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist täglich außer montags von zehn Uhr morgens bis fünf Uhr abends geöffnet."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist täglich geöffnet, außer montags, von zehn Uhr morgens bis fünf Uhr abends."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist täglich geöffnet, außer montags, von 10 Uhr bis 17 Uhr."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist täglich geöffnet, außer montags, von 10 Uhr bis 17 Uhr."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The museum is open every day except Monday, from ten in the morning until five in the evening.\n\n**Translation:**  \n\"Das Museum ist täglich geöffnet, außer montags, von zehn Uhr morgens bis fünf Uhr abends.\""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag geöffnet außer montags von zehn Uhr morgens bis fünf Uhr abends."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Das Museum ist jeden Tag außer Montag geöffnet, von zehn Uhr morgens bis fünf Uhr abends.\""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the German translation:\n\n**\"Das Museum ist jeden Tag außer montags von zehn Uhr morgens bis fünf Uhr abends geöffnet.\"**\n\nAlternatively, a slightly more formal version using numerals:\n\n**\"Das Museum ist täglich außer montags von 10 Uhr bis 17 Uhr geöffnet.\"**\n\nBoth versions are correct and commonly used in Germa"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer Montag geöffnet, von zehn Uhr morgens bis fünf Uhr abends.\n\nOder etwas natürlicher:\nDas Museum ist täglich außer montags von 10 bis 17 Uhr geöffnet."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer Montag von 10 Uhr bis 17 Uhr geöffnet."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the translation:\n\n**\"Das Museum ist jeden Tag außer montags von 10 Uhr morgens bis 17 Uhr abends geöffnet.\"**\n\n💡 *Note:* In German, it's very common to use the 24-hour format and drop \"morgens/abends\" for a more natural, official phrasing (as you'd typically see on a sign):\n**\"Das Museum ist täglich außer montag"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer am Montag von zehn Uhr morgens bis fünf Uhr abends geöffnet."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "„Das Museum ist jeden Tag außer Montag von zehn Uhr morgens bis fünf Uhr abends geöffnet.“\n\n(Natürlicher/kürzer auch: „Das Museum ist täglich außer montags von 10 bis 17 Uhr geöffnet.“)"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer Montag von zehn Uhr morgens bis fünf Uhr abends geöffnet.\n\n(Alternative: „… von zehn Uhr vormittags bis fünf Uhr nachmittags geöffnet.“)"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the German translation:\n\n**\"Das Museum ist jeden Tag außer Montag von zehn Uhr morgens bis fünf Uhr abends geöffnet.\"**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the German translation:\n\n**„Das Museum ist jeden Tag außer montags von zehn Uhr morgens bis fünf Uhr nachmittags geöffnet.\"**\n\nA few notes on the translation:\n- **„außer montags\"** – In German, the adverbial form *montags* (with the *-s* ending) is commonly used for recurring days, meaning \"on Mondays\" in a hab"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer Montag von zehn Uhr morgens bis fünf Uhr abends geöffnet."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Das Museum ist jeden Tag außer montags von 10 Uhr morgens bis 17 Uhr geöffnet."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**German translation:**\n\n„Das Museum ist jeden Tag außer montags geöffnet, von zehn Uhr morgens bis fünf Uhr abends.\"\n\n**Alternative phrasing:**\n\n„Das Museum hat täglich außer montags geöffnet, von zehn Uhr vormittags bis fünf Uhr nachmittags.\"\n\nA few notes:\n- **außer montags** = \"except (on) Mondays\" — in German, days"
+    }
+  ]
+}

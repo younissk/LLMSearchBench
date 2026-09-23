@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-code-12",
+  "bucket": "no_tool",
+  "subcategory": "code",
+  "source": "generated",
+  "sourceId": "nt-code-12",
+  "adversarial": false,
+  "prompt": "Explain O(n log n) complexity using merge sort. Why not O(n²)?",
+  "goldAnswer": [],
+  "rationale": "Big O notation and sort analysis are stable CS fundamentals",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll explain O(n log n) complexity using merge sort and why it's not O(n²).\n\n## Merge Sort Complexity: O(n log n)\n\nMerge sort is a divide-and-conquer algorithm that achieves O(n log n) time complexity through its recursive structure:\n\n### How Merge Sort Works:\n\n1. **Divide**: Split the array into two halves\n2. **Conque"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## O(n log n) Explained Through Merge Sort\n\nLet me break this down clearly.\n\n### What Merge Sort Does\n\nMerge sort is a **divide-and-conquer** algorithm:\n\n1. **Divide**: Split the array in half repeatedly until you have single elements\n2. **Conquer**: Merge those single elements back together in sorted order\n\n### Why O("
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a clear explanation of **why Merge Sort has O(n log n) time complexity** and **why it's *not* O(n²)**, using the algorithm's structure and contrasting it with quadratic algorithms like Bubble Sort.\n\n### Core Idea: Divide and Conquer\nMerge Sort works by **recursively splitting the array into halves** until subarr"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"O(n log n) complexity using merge sort"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To understand why merge sort has a time complexity of O(n log n) and not O(n²), let's break down the merge sort algorithm and analyze its components.\n\nMerge sort is a divide-and-conquer algorithm that works by splitting an input array into two halves, recursively sorting each half, and then merging the two sorted halve"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Understanding O(n log n) Complexity with Merge Sort\n\n## Why Merge Sort is O(n log n)\n\nMerge sort uses a **divide-and-conquer** strategy:\n\n1. **Divide**: Split the array into two halves\n2. **Conquer**: Recursively sort each half\n3. **Merge**: Combine the sorted halves\n\n```\nExample: [8, 3, 5, 2, 9, 1, 6, 4]\n\nSplitting:"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# O(n log n) Complexity Explained Through Merge Sort\n\n## What \"O(n log n)\" Actually Means\n\nIt means the work grows **linearly with n, multiplied by a factor of log n**. For n = 1,000,000:\n- n log n ≈ 20,000,000 operations\n- n² = 1,000,000,000,000 operations\n\nThat's a **50,000× difference**. Merge sort sits firmly in th"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Explain O(n log n) complexity using merge sort. Why not O(n²)?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Merge sort is a classic example of a divide-and-conquer algorithm that demonstrates \\(O(n \\log n)\\) time complexity. To understand why merge sort has \\(O(n \\log n)\\) complexity and not \\(O(n^2)\\), let's break down the algorithm step by step.\n\n### Merge Sort Algorithm\n\n1. **Divide**: The array is divided into two halves"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Merge sort runs in *O(n log n)* because it repeatedly splits the problem in half and then does a linear amount of work to combine the results.**  \n\nHere’s the intuition step‑by‑step:\n\n| Step | What happens | Cost per level | How many levels? |\n|------|--------------|----------------|------------------|\n| 1️⃣  | **Div"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Merge sort is a classic example of an algorithm with **O(n log n)** time complexity. Here’s why:\n\n### How Merge Sort Works\nMerge sort follows the **divide-and-conquer** strategy:\n1. **Divide**: Split the input array of size `n` into two halves (each of size `n/2`).\n2. **Conquer**: Recursively sort each half.\n3. **Combi"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "merge sort time complexity explanation O(n log n) why not O(n^2)",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Certainly! Let's break down the time complexity of merge sort and why it is O(n log n) rather than O(n²).\n\n### Merge Sort Overview\n\nMerge sort is a divide-and-conquer algorithm that works as follows:\n1. **Divide**: Split the array into two halves.\n2. **Conquer**: Recursively sort each half.\n3. **Combine**: Merge the tw"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Merge sort is a classic example of an algorithm that runs in \\(O(n \\log n)\\) time complexity. Let's break down why this is the case and why it's more efficient than \\(O(n^2)\\).\n\n### Explanation of O(n log n) Complexity\n\n1. **Divide Step**: Merge sort starts by dividing the array into two halves recursively until each s"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "O(n log n) is the time complexity of algorithms like merge sort, and it represents a balance between efficiency and scalability for sorting tasks. To understand why merge sort has O(n log n) complexity instead of O(n²), let’s break it down:\n\n### How Merge Sort Works:\n1. **Divide**: The input array is recursively split"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Merge sort achieves **O(n log n)** time complexity due to its **divide-and-conquer** structure, which avoids the quadratic inefficiency of algorithms like bubble sort or insertion sort. Here's why:\n\n---\n\n### **How Merge Sort Works**\n1. **Divide**: Split the array into halves recursively until subarrays of size 1 exist."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "O(n log n) complexity merge sort explanation why not O(n²)",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Merge sort achieves **O(n log n)** time complexity through a divide-and-conquer strategy, which avoids the **O(n²)** inefficiency of algorithms like bubble sort or selection sort. Here's why:\n\n---\n\n### **How Merge Sort Works**\n1. **Divide**: Split the array into two halves recursively until each subarray has 1 element"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Merge sort has a time complexity of **O(n log n)** because it divides the array into halves recursively (log n levels) and merges them in linear time (O(n) per level). Here's the breakdown:\n\n1. **Divide Step**: The array is split into halves recursively until subarrays of size 1 remain. This creates **log₂ n** levels o"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Merge sort has a time complexity of **O(n log n)** because it divides the input into halves (log n steps) and merges them in linear time (O(n) per step). Here's why it's not O(n²):\n\n1. **Divide-and-Conquer Structure**:  \n   - Merge sort splits the array into two halves recursively. This division reduces the problem siz"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To explain why merge sort has a time complexity of $ O(n \\log n) $ and not $ O(n^2) $, let's break it down step by step.\n\n### What is Merge Sort?\n\nMerge sort is a divide-and-conquer algorithm that works by recursively splitting an array into two halves until each subarray contains a single element. Then, it merges thes"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Understanding O(n log n) Complexity with Merge Sort\n\n## How Merge Sort Works\n\nMerge sort is a **divide-and-conquer** algorithm that:\n\n1. **Divides** the array in half recursively until you have single elements\n2. **Conquers** by merging the sorted halves back together\n\n```\nExample: [38, 27, 43, 3, 9, 82, 10]"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Understanding O(n log n) Complexity with Merge Sort\n\n## How Merge Sort Works\n\nMerge sort uses a **divide-and-conquer** strategy:\n\n```\nArray: [38, 27, 43, 3, 9, 82, 10]\n         ↓\n    Split in half repeatedly until single elements\n         ↓\n    Merge sorted halves back together\n```\n\n### The Process:\n1. **Divide**: Sp"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# O(n log n) Complexity Explained Through Merge Sort\n\n## How Merge Sort Works\n\nMerge sort uses a **divide-and-conquer** strategy:\n\n1. **Divide**: Split the array in half repeatedly until you have single elements\n2. **Conquer**: Merge the sorted halves back together\n\n```\nExample: [8, 3, 7, 1, 5, 2, 6, 4]\n\nLevel 0: [8, 3"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Understanding O(n log n) Complexity with Merge Sort\n\n## What Does O(n log n) Mean?\n\nBig O notation describes how an algorithm's runtime grows as input size increases:\n\n- **O(n)**: Linear time — runtime grows proportionally with input size\n- **O(n log n)**: Linearithmic time — runtime grows slightly faster than linear"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To understand why Merge Sort is $O(n \\log n)$ and not $O(n^2)$, we have to look at how the algorithm handles the data.\n\nThe short answer is: **Merge Sort reduces the problem size exponentially (halving it every time), whereas $O(n^2)$ algorithms reduce the problem size linearly (removing one item at a time).**\n\nHere is"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Merge sort is **O(n log n)** because it splits the problem in half repeatedly, and at each level of recursion it does only **linear work**.\n\n### How merge sort works\n\nFor an array of size `n`:\n\n1. Split it into two halves of size `n/2`.\n2. Recursively sort each half.\n3. Merge the two sorted halves.\n\nThe expensive part"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Merge sort** achieves **O(n log n)** because it combines two ideas:\n\n1. **Divide** the array in half repeatedly → **log n** levels of recursion.\n2. **Merge** two sorted halves → **O(n)** work per level.\n\nThat gives the recurrence:\n\n\\[\nT(n) = 2T\\left(\\frac{n}{2}\\right) + O(n)\n\\]\n\nSolving it (e.g., by the Master Theore"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "merge sort time complexity O(n log n) explanation recurrence T(n)=2T(n/2)+O(n)",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# O(n log n) vs O(n²): The Merge Sort Story 🎵\n\nLet me explain this like organizing a messy playlist of songs.\n\n## **How Merge Sort Works (The Divide & Conquer)**\n\nImagine you have **16 unsorted songs** you want to arrange alphabetically:\n\n1. **Divide**: Split the list in half → 8 and 8  \n   Then split again → 4, 4, 4,"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# O(n log n) Complexity: Merge Sort Explained\n\n## The Core Idea: Divide and Conquer\n\nMerge sort works in two phases:\n1. **Divide** → Split the array in half recursively\n2. **Merge** → Combine sorted halves back together\n\n```\n         [8, 3, 5, 1, 9, 2]        ← Start (n elements)\n            /           \\\n      [8, 3,"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# O(n log n) Complexity Explained with Merge Sort\n\n## Merge Sort Algorithm Overview\n\nMerge sort is a **divide-and-conquer** algorithm that works in three phases:\n\n1. **Divide**: Split the array in half recursively until you have single elements\n2. **Conquer**: Single elements are trivially sorted\n3. **Merge**: Combine"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Merge Sort and O(n log n)\n\n## How merge sort works\n\nMerge sort follows three steps:\n\n1. **Split** the array into two halves\n2. **Recursively sort** each half\n3. **Merge** the two sorted halves back together\n\n## Counting the work: two separate questions\n\nThe trick to analyzing merge sort is to separate *how much work"
+    }
+  ]
+}

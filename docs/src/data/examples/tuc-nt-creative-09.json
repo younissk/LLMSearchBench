@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-09",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-09",
+  "adversarial": false,
+  "prompt": "Create fictional book titles for a romance between a vampire and a mermaid.",
+  "goldAnswer": [],
+  "rationale": "Brainstorming titles requires creative invention, not research.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "vampire mermaid romance book titles examples",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for inspiration and examples of vampire-mermaid romance stories to help create compelling fictional book titles."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles for a vampire-mermaid romance:\n\n**Playful/Punny:**\n1. *Blood and Brine*\n2. *Fangs and Fins*\n3. *Sink or Suck*\n4. *A Kiss Before Drowning*\n5. *The Deepest Thirst*\n\n**Atmospheric & Gothic:**\n6. *Where the Moonlight Meets the Tide*\n7. *The Vampire's Siren*\n8. *Shadows Beneath the Waves*"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "<final_summary>\nHere are 20+ fictional book titles blending the dark allure of vampires with the oceanic mystery of mermaids, categorized by tone and theme:\n\n### 🌊 **Lyrical & Poetic**\n1. **Where the Tide Meets the Thirst**  \n2. **Saltwater and Crimson**  \n3. **The Siren’s Nocturne**  \n4. **Beneath a Blood-Red Moon**"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "fictional book titles romance vampire mermaid",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles for a romance between a vampire and a mermaid:\n\n1. \"Moonlit Tides\"\n2. \"Fathoms of Forever\"\n3. \"The Vampire's Catch\"\n4. \"Tidal Heartbeat\"\n5. \"Blood and Buoyancy\"\n6. \"The Mermaid's Eternal Night\"\n7. \"Love Beneath the Waves\"\n8. \"Immortal Depths\"\n9. \"Siren's Bite\"\n10. \"Forever Bound by S"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles for a vampire-mermaid romance:\n\n1. **\"Tides of the Damned\"**\n2. **\"Beneath the Moon's Crimson Glow\"**\n3. **\"The Blood and the Brine\"**\n4. **\"Eternal Depths\"**\n5. **\"Siren of the Midnight Shore\"**\n6. **\"A Love Unsinkable\"**\n7. **\"When Stars Fall to Sea\"**\n8. **\"The Vampire's Siren\"**"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Romance Titles: Vampire × Mermaid\n\nHere are some fictional book titles for a paranormal romance between a vampire and a mermaid:\n\n1. **\"Fangs Beneath the Tide\"**\n2. **\"The Blood & The Blue\"**\n4. **\"Eternal Waters\"**\n5. **\"Sire of the Sea\"**\n6. **\"Moonlit Currents\"**\n7. **\"The Depth of His Bite\"**\n8. **\"Of Salt and Sh"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. \"Eternal Tides: A Love Immortal\"\n2. \"Beneath the Crimson Waves\"\n3. \"Fangs and Fin: An Ocean of Love\"\n4. \"The Mermaid's Vampire\"\n5. \"Love's Blood Tide\"\n6. \"A Dance of Salt and Shadow\"\n7. \"The Siren's Embrace\"\n8. \"Vampires of the Deep\"\n9. \"Heart of the Coral Sea\"\n10. \"Bound by the Moon's Reflection\""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here are some fictional book titles for a romance between a vampire and a mermaid:\n\n1. \"Eternal Tides\"\n2. \"Blood and Brine\"\n3. \"The Siren's Embrace\"\n4. \"Moonlit Depths\"\n5. \"Love Beneath the Waves\"\n6. \"Fangs and Fin\"\n7. \"The Vampire and the Mermaid\"\n8. \"Dark Tides of Desire\"\n9. \"Beneath the Crimson Moon\"\n10. \"Whis"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some whimsical, romance‑filled titles that imagine a love story between a vampire and a mermaid:\n\n1. **“Midnight Tides”**  \n2. **“Eternal Waves”**  \n3. **“Blood‑Moon Mermaid”**  \n4. **“Siren of the Night”**  \n5. **“Crimson Coral Hearts”**  \n6. **“Moonlit Abyss”**  \n7. **“The Vampire’s Lure”**  \n8. **“Sea‑Bound"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles for a romance between a vampire and a mermaid:\n\n1. **Tides of Eternal Night**\n2. **When the Vampire Kissed the Siren**\n3. **Blood and Saltwater**\n4. **Moonlit Currents**\n5. **The Vampire's Mermaid Bride**\n6. **Depths of Immortal Love**\n7. **Where the Ocean Meets the Vampire's Heart**"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a handful of evocative, tongue‑in‑cheek titles that could belong to a romance novel featuring a vampire and a mermaid:\n\n| # | Title |\n|---|-------|\n| 1 | **Blood & Tides** |\n| 2 | **Midnight Siren** |\n| 3 | **Eternal Depths** |\n| 4 | **The Undead Wave** |\n| 5 | **Moonlit Currents** |\n| 6 | **Siren of the Night"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here are some fictional book titles for a romance between a vampire and a mermaid:\n\n1. \"Tides of Eternity\"\n2. \"Moonlit Depths\"\n3. \"Whispers of the Abyss\"\n4. \"Blood and Scales\"\n5. \"Shadows of the Sea\"\n6. \"Eternal Tides\"\n7. \"Siren's Embrace\"\n8. \"Crimson Waves\"\n9. \"Nightfall in the Ocean\"\n10. \"Love Beyond the Surfac"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here are a few fictional book titles for a romance between a vampire and a mermaid:\n\n1. \"Blood and Waves\"\n2. \"Moonlit Tides\"\n3. \"Eternal Depths\"\n4. \"Whispers of the Abyss\"\n5. \"Fangs and Scales\"\n\nIf you would like more options or specific details about these titles, let me know!"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. \"Tides of Eternal Night\"  \n2. \"Beneath the Moonlit Veil\"  \n3. \"Saltwater and Shadows\"  \n4. \"The Siren's Dark Embrace\"  \n5. \"Where the Ocean Meets the Night\"  \n6. \"Love in Crimson Tides\"  \n7. \"Whispers of Blood and Brine\"  \n8. \"Eternal Currents\"  \n9. \"A Kiss from the Abyss\"  \n10. \"Moonlight Over Midnight Waters\""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles for a romance between a vampire and a mermaid:\n\n1. **\"Tides of Crimson\"**  \n2. **\"Blood and Brine\"**  \n3. **\"Sanguine Currents\"**  \n4. **\"The Vampire’s Siren\"**  \n5. **\"Saltwater and Shadows\"**  \n6. **\"Eternal Depths, Eternal Night\"**  \n7. **\"Crimson Tides of Love\"**  \n8. **\"Moonlit"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional romance book titles blending vampire and mermaid themes:\n\n1. **\"Tides of Eternity: A Vampire's Love Beneath the Sea\"**  \n2. **\"Blood and Brine: The Forbidden Romance of Moonlight and Ocean\"**  \n3. **\"Where the Moon Meets the Deep: A Vampire’s Promise to a Mermaid\"**  \n4. **\"Eternal Currents: A L"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional romance book titles blending vampire and mermaid themes:\n\n1. **\"Blood Tide: A Vampire's Oceanic Promise\"**  \n2. **\"Eternal Siren: The Vampire and the Deep\"**  \n3. **\"Coral and Crimson: A Forbidden Current\"**  \n4. **\"Moonlit Abyss: Love in the Vampire's Depths\"**  \n5. **\"Fangs and Fins: A Mermaid"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are 12 fictional book titles blending vampire and mermaid romance themes:\n\n1. **\"Blood and Tides: A Saga of Eternal Longing\"**  \n2. **\"Whispers of the Moon and the Midnight Sea\"**  \n3. **\"Crimson Currents and Coral Kisses\"**  \n4. **\"Beneath the Blood-Red Moon\"**  \n5. **\"Echoes of the Deep and the Damned\"**  \n6. **"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles blending vampire and mermaid themes:\n\n1. **\"Blood and Tides: A Vampire's Eternal Love\"**  \n2. **\"Whispers of the Deep: A Mermaid's Forbidden Pact\"**  \n3. **\"Crimson Sirens: The Vampire-Mermaid Chronicles\"**  \n4. **\"The Abyssal Vow: A Tale of Shadow and Sea\"**  \n5. **\"Pearl of the Nig"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles for a vampire and mermaid romance:\n\n1. **Tides of Blood**\n2. **Beneath the Moonlit Waves**\n3. **The Vampire's Deep**\n4. **Salt and Crimson**\n5. **Where the Sea Meets the Night**\n6. **A Kiss from the Abyss**\n7. **Bloodline of the Ocean**\n8. **The Mermaid's Nocturne**\n9. **Shadows in t"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# 🩸🌊 Vampire & Mermaid Romance Book Titles\n\nHere are some fictional book titles for this unique paranormal romance pairing:\n\n## Poetic & Romantic\n1. **Blood and Brine**\n2. **Where the Tide Meets Twilight**\n3. **A Kiss Beneath the Waves**\n4. **Moonlight on Deep Water**\n5. **The Sea That Never Sleeps**\n\n## Dramatic & Dar"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Fictional Book Titles: Vampire × Mermaid Romance\n\n## Dramatic & Poetic\n1. **Blood and Saltwater**\n2. **Where the Tide Meets the Night**\n3. **Drowning in Moonlight**\n4. **The Vampire's Ocean**\n5. **Scales Against Fangs**\n\n## Mysterious & Dark\n6. **Beneath the Crimson Waves**\n7. **No Breath to Give**\n8. **The Deep Hung"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles for a vampire and mermaid romance:\n\n**Ethereal & Poetic**\n1. *Salt and Shadow*\n2. *The Deep's Last Kiss*\n3. *Beneath the Crimson Tide*\n4. *Where the Ocean Meets the Night*\n5. *Tides of Blood and Scales*\n\n**Dramatic & Intense**\n6. *The Vampire's Underwater Bride*\n7. *Blood in the Abys"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here’s a curated list of fictional book titles for a vampire-mermaid romance, organized by tone and style so you can match the vibe of your story:\n\n### 🌙 Dark & Atmospheric\n- *Blood in the Brine*\n- *The Crimson Current*\n- *Shadows Beneath the Waves*\n- *Where the Night Drowns*\n- *The Undead Tide*\n- *Fangs in the Abyss*"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Vampire × Mermaid Romance Titles\n\n**Gothic & Dark**\n- *The Drowning Dark* — \"He was death. She was the deep. Neither could survive the other.\"\n- *Blood of the Abyss* — \"The sea keeps its secrets. So does he.\"\n- *Where the Tide Meets the Tomb* — \"She sang him down into the dark. He followed.\"\n- *The Undead Tide* — \"Ev"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional romance titles spanning different moods—from gothic and poetic to steamy and whimsical:\n\n**Dark & Gothic**\n- *Salt and Shadow*\n- *The Tide That Bites*\n- *Crimson in the Deep*\n- *Veins of Brine*\n- *Nocturne for a Drowned Heart*\n\n**Poetic & Lyrical**\n- *Where the Moon Drinks the Sea*\n- *Blood on t"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some original fictional titles blending vampire and mermaid lore, arranged by vibe:\n\n**Dark & Epic**\n- *The Salt in Your Blood* — a vampire hunter turned to the dark, drawn to a mermaid who drinks not water, but moonlight.\n- *Bite of the Tide* — their first kiss happens where the river meets the sea, and neith"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "What a delightful and evocative pairing! Here are some fictional book titles that capture the essence of a romance between a vampire and a mermaid:\n\n1.  **Eternal Tides: A Vampire-Mermaid Tale**\n2.  **Crimson Depths: Forbidden Love Between Land and Sea**\n3.  **Moonlit Scales and Velvet Shadows**\n4.  **The Vampire's Mer"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# 🧛‍♂️🩸💕🌊🧜‍♀️ Fictional Book Titles: Vampire × Mermaid Romance\n\nHere are some titles across different vibes:\n\n## **Gothic & Dark**\n- *Blood in the Tides*\n- *The Salt of Her Veins*\n- *Fangs and Fins: A Gothic Romance*\n- *Pale As the Moon, Deep As the Sea*\n- *The Drowning Kiss*\n\n## **Poetic & Romantic**\n- *Between Twilig"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional book titles for a vampire-mermaid romance:\n\n1. **Salt in Her Blood** — A deadly craving meets the endless sea\n2. **Tide of Thorns**\n3. **The Bruises Beneath the Waves**\n4. **Blood in the Brine**\n5. **Fangs on the Foam**\n6. **What the Night Owes the Sea**\n7. **Sunset Drowns**\n8. **The Deep Red Be"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional romance book titles featuring a vampire and mermaid pairing:\n\n## **Romantic & Poetic**\n- *Blood & Brine*\n- *Tides of Darkness*\n- *Where the Moon Meets the Deep*\n- *The Vampire's Siren*\n- *Beneath a Crimson Tide*\n- *Dark Waters, Eternal Hearts*\n- *The Depth of Night*\n- *Salt in His Veins*\n\n## **P"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some fictional titles for your vampire-mermaid romance, sorted by vibe:\n\n**Dramatic & Atmospheric**\n- *Blood in the Water*\n- *The Tide That Bled*\n- *Beneath a Blood Moon*\n- *The Undying Sea*\n- *Salt and Shadow*\n- *Currents of Crimson*\n\n**Poetic & Lyrical**\n- *Moonlit Depths*\n- *An Ocean of Thirst*\n- *Nocturne"
+    }
+  ]
+}

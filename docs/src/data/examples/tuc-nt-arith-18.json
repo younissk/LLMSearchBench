@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-18",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-18",
+  "adversarial": false,
+  "prompt": "Test scores: 88, 94, 76, 92. What's the average?",
+  "goldAnswer": [],
+  "rationale": "Mean calculation from provided test scores only.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate the average of these test scores.\n\nThe scores are: 88, 94, 76, 92\n\nStep 1: Add all the scores together:\n88 + 94 = 182\n182 + 76 = 258\n258 + 92 = 350\n\nStep 2: Divide by the number of scores (4):\n350 ÷ 4 = 87.5\n\nThe average test score is **87.5**."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average is calculated by summing all the scores and dividing by the number of scores.\n\n**Sum:** 88 + 94 + 76 + 92 = **350**\n\n**Count:** 4 scores\n\n**Average:** 350 ÷ 4 = **87.5**\n\nSo the average test score is **87.5**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average is **87.5**.\n\nHere's the calculation:\n- Sum: 88 + 94 + 76 + 92 = 350\n- Count: 4\n- Average: 350 ÷ 4 = 87.5"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"average of 88, 94, 76, 92"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average, you add up all the scores and divide by the number of scores. \n\nThe sum of the scores is 88 + 94 + 76 + 92 = 350. \n\nThere are 4 scores. \n\nThe average is 350 / 4 = 87.5."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average is \\((88 + 94 + 76 + 92) \\div 4 = 350 \\div 4 = 87.5\\)."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average is **87.5**.\n\nCalculation: (88 + 94 + 76 + 92) ÷ 4 = 350 ÷ 4 = 87.5"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average, you add up all the numbers and then divide by the count of numbers.\n\n(88 + 94 + 76 + 92) ÷ 4 = 350 ÷ 4 = 87.5\n\nThe average is 87.5."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average of the test scores 88, 94, 76, and 92, follow these steps:\n\n1. **Sum the scores**:\n   \\[\n   88 + 94 + 76 + 92 = 350\n   \\]\n\n2. **Count the number of scores**:\n   There are 4 scores.\n\n3. **Divide the sum by the number of scores**:\n   \\[\n   \\frac{350}{4} = 87.5\n   \\]\n\nSo, the average of the test scores"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average of the test scores 88, 94, 76, and 92 is calculated by summing the scores and dividing by the number of scores:\n\n$$\n\\text{Average} = \\frac{88 + 94 + 76 + 92}{4} = \\frac{350}{4} = 87.5\n$$\n\n**Answer:** The average score is **87.5**."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average of the test scores 88, 94, 76, and 92 is **87.5**."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average of the scores 88, 94, 76, and 92 is **87.5**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the average of the test scores, we add all the scores together and then divide by the number of scores. Let's do the calculation:\n\n(88 + 94 + 76 + 92) / 4 = 350 / 4 = 87.5\n\nThe average of the test scores is 87.5."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "average of 88, 94, 76, 92",
+      "callProblem": "",
+      "answerExcerpt": "To find the average of the test scores, we need to sum all the scores and then divide by the number of scores. Let's calculate it."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average of the test scores, add them together and divide by the number of scores:\n\n$$\n(88 + 94 + 76 + 92) / 4 = 348 / 4 = 87\n$$\n\nThe average test score is **87**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average of the test scores 88, 94, 76, and 92 is calculated by adding all the scores and dividing by the number of scores:\n\n**Sum**: 88 + 94 + 76 + 92 = 350  \n**Number of scores**: 4  \n**Average**: 350 ÷ 4 = **87.5**\n\nNo tool call was needed since this is a straightforward arithmetic calculation."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average of the test scores, add them together and divide by the number of scores.\n\nScores: 88, 94, 76, 92\n\nSum = 88 + 94 + 76 + 92 = 350  \nNumber of scores = 4\n\nAverage = 350 ÷ 4 = 87.5\n\nThe average test score is **87.5**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average of the test scores 88, 94, 76, and 92 is calculated by summing the scores and dividing by the number of scores.\n\nSum = 88 + 94 + 76 + 92 = 350  \nAverage = 350 / 4 = 87.5\n\nNo tool call is needed for this straightforward calculation."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average of the test scores 88, 94, 76, and 92 is calculated by summing all the scores and dividing by the number of scores:\n\n$$\n\\frac{88 + 94 + 76 + 92}{4} = \\frac{350}{4} = 87.5\n$$\n\n**Answer:** The average is **87.5**."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average of the test scores 88, 94, 76, and 92 is calculated by adding all the scores together and then dividing by the number of scores. \n\n**Calculation:**  \n(88 + 94 + 76 + 92) / 4 = 350 / 4 = **87.5**\n\nThe average is **87.5**."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average of the test scores, I'll add them up and divide by the number of scores:\n\n**Sum:** 88 + 94 + 76 + 92 = 350\n\n**Average:** 350 ÷ 4 = **87.5**\n\nThe average test score is **87.5**."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the average of these test scores:\n\n**Step 1:** Add all the scores together\n88 + 94 + 76 + 92 = 350\n\n**Step 2:** Divide by the number of scores (4)\n350 ÷ 4 = 87.5\n\n**The average is 87.5**"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average of these test scores, I'll add them up and divide by the number of scores.\n\n**Calculation:**\n- Sum: 88 + 94 + 76 + 92 = 350\n- Number of scores: 4\n- Average: 350 ÷ 4 = **87.5**\n\nThe average test score is **87.5**."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average of the test scores (88, 94, 76, 92):\n\n1. **Add all the scores together:**\n   88 + 94 + 76 + 92 = 350\n\n2. **Divide by the number of scores (4):**\n   350 ÷ 4 = 87.5\n\n**The average test score is 87.5**"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average, add all the scores together and divide by the number of scores:\n\n1.  **Sum:** $88 + 94 + 76 + 92 = 350$\n2.  **Divide:** $350 / 4 = 87.5$\n\nThe average test score is **87.5**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average is **87.5**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average is **87.5**.\n\nCalculation: (88 + 94 + 76 + 92) ÷ 4 = 350 ÷ 4 = **87.5**"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average, add the scores and divide by the number of scores:\n\n\\[\n88 + 94 + 76 + 92 = 350\n\\]\n\n\\[\n\\frac{350}{4} = 87.5\n\\]\n\n**Average: 87.5**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The average of those test scores is **87.5**.\n\nHere’s how I calculated it:  \n- Sum of scores: 88 + 94 + 76 + 92 = 350  \n- Number of scores: 4  \n- Average = 350 ÷ 4 = 87.5  \n\nIf you have more scores to add or need help with anything else, just let me know! 😊"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average, add all the scores together and divide by the number of scores:\n\n**Sum:** 88 + 94 + 76 + 92 = **350**\n\n**Average:** 350 ÷ 4 = **87.5**\n\nYour average score is **87.5**. Nice work! 🎉"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Average = 87.5**\n\nCalculation:\n- Sum: 88 + 94 + 76 + 92 = 350\n- Average: 350 ÷ 4 = **87.5**"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the average, I'll add all the scores and divide by the number of scores.\n\n**Sum:** 88 + 94 + 76 + 92 = 350\n\n**Number of scores:** 4\n\n**Average:** 350 ÷ 4 = **87.5**"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Average = 87.5**\n\nCalculation: (88 + 94 + 76 + 92) ÷ 4 = 350 ÷ 4 = **87.5**"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-code-09",
+  "bucket": "no_tool",
+  "subcategory": "code",
+  "source": "generated",
+  "sourceId": "nt-code-09",
+  "adversarial": false,
+  "prompt": "What is a stack trace and why does it print function calls in reverse order?",
+  "goldAnswer": [],
+  "rationale": "Fundamental debugging concept, unchanged since the 1980s",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A stack trace is a report of the active stack frames at a particular point in time during the execution of a program, typically when an exception or error occurs. It shows the sequence of function calls that led to the current point of execution.\n\nThe reason stack traces print function calls in reverse order (from most"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a great question that touches on both the concept of stack traces and how the call stack works!\n\n## What is a Stack Trace?\n\nA **stack trace** (or traceback) is a report of the active stack frames at a particular point in time during a program's execution. It shows the sequence of function/method calls that led"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** (also called a backtrace) is a report of the active stack frames at a specific point during the execution of a program—most commonly when an unhandled exception or error occurs. It shows the chain of function calls that led to that moment, helping you understand how the program reached the problematic"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "stack trace and function calls in reverse order",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A stack trace is a report of the sequence of function calls that led to a particular point in a program's execution, typically when an error or exception occurs. It's called a \"stack\" trace because it's based on the call stack, which is a region of memory that stores information about the active functions in a program."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## What is a stack trace?\n\nA **stack trace** (also called a *stack back‑trace* or *call stack dump*) is a textual snapshot of the **call stack** at a particular moment in a program’s execution—most commonly when an unhandled exception or error occurs.\n\nEach entry in the trace (often called a *frame* or *stack frame*) r"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Stack Trace Explained\n\nA **stack trace** (also called a stack backtrace or call stack) is a report of the active function calls at a specific point in program execution — typically when an error or exception occurs. It shows the chain of functions that were called to reach the current point of execution.\n\n## What It"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A stack trace is a report of the active functions or methods on a program's call stack. It's typically generated when an error or exception occurs, helping developers diagnose the cause of the issue. The stack trace lists the sequence of function calls that led to the error, starting from the currently executing functi"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A stack trace, also known as a call stack or backtrace, is a report of the active stack frames at a particular point in time during the execution of a program. It is typically generated when an error or exception occurs, and it helps developers understand the sequence of function calls that led to the error.\n\nThe stack"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** (sometimes called a *backtrace* or *call stack trace*) is a report that a program prints when an error (usually an uncaught exception) occurs. It shows the chain of function calls that led to the point where the error was raised, giving you a snapshot of the program’s execution context at that moment."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "stack trace why printed in reverse order",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### 1. What is a stack trace?\n\nA **stack trace** (sometimes called a *backtrace* or *call stack trace*) is a snapshot of the active function calls that were on the call stack at the moment an exception, error, or crash occurred.  \nIt lists the functions (or methods) that were executing, in the order they were called, a"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A stack trace is a report of the active stack frames at a certain point in time during the execution of a program. Each stack frame represents a function call, and the stack trace shows the sequence of function calls that led to the current point of execution. It is called a \"stack\" because the data structure used to m"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "example of stack trace in programming",
+      "callProblem": "",
+      "answerExcerpt": "A stack trace is a report that indicates where an error or exception has occurred in the code. It shows the sequence of function calls that were active at the point where the error happened, starting from the current function and going up to the initial caller. The functions are listed in reverse order because they are"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** is a report of the active function calls in a program at a specific point in time, typically generated when an error or exception occurs. It shows the sequence of function calls that led to the current point of execution, helping developers diagnose and debug issues.\n\n### Why Are Function Calls Printe"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A stack trace is a report of the sequence of function calls that were active at the time an error or exception occurred in a program. It shows the \"call stack,\" which is a data structure that tracks active subroutines (functions/methods) in a program. Each time a function is called, it is added to the top of the stack;"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "what is a stack trace and why does it print function calls in reverse order",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "why stack trace prints function calls in reverse order",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** is a report of the active function calls (or \"stack frames\") in a program at a specific moment, typically when an error occurs. It shows the sequence of nested function calls that led to the current point in the program's execution, helping developers debug issues by tracing the origin of the problem."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A stack trace is a structured listing of the active functions or methods that were called leading up to a specific point in a program's execution, typically generated when an error or exception occurs. It provides a \"call chain\" that helps developers debug issues by showing the sequence of function invocations.\n\nThe re"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** is a report that shows the sequence of function calls that led to a particular point in program execution, typically when an error or exception occurs. It's an essential debugging tool that helps developers understand the flow of their program and identify where things went wrong.\n\n## Why Function Cal"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** (also called a call stack or traceback) is a report of the active function calls at a particular point during program execution, typically shown when an error or exception occurs. It helps developers understand the sequence of operations that led to the problem.\n\n## What Does a Stack Trace Show?\n\nA st"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## What is a Stack Trace?\n\nA **stack trace** (or stack traceback) is a report that shows the sequence of function calls that were active at a specific point during program execution. It's most commonly seen when an error or exception occurs, helping developers understand the path the program took to reach that point."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** is a diagnostic tool used in programming and debugging that shows the sequence of function calls that led to a particular point in a program's execution. It's particularly useful when an error or exception occurs, as it helps developers understand exactly where and how the error happened.\n\n## Why Stac"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** (also known as a stack backtrace or stack traceback) is a report of the active stack frames at a certain point in time during the execution of a program.\n\nIn simpler terms, it is a list of the functions that were running when your program crashed or paused. It tells you exactly where the error happene"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## What a stack trace is\n\nA stack trace (or backtrace) is a snapshot of your program's **call stack** at the moment something goes wrong. It lists every function that was actively executing at that instant, usually with file names and line numbers, so you can see the chain of calls that led to the failure.\n\n## How the"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** (or traceback) is a report showing the sequence of function calls that led to a particular point in a program—most commonly the point where an error or exception occurred. It lists the active \"stack frames,\" each representing a function call that hasn't yet returned.\n\n### Why reverse order?\n\nIt prints"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "why does stack trace print function calls in reverse order",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Great question! Let me break this down with a simple analogy and then dive into the technical details.\n\n## What is a stack trace?\n\nThink of a stack trace like a **recipe card** that shows you exactly how you got to where you are right now. When your program encounters an error (like a crash or exception), the stack tra"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Stack Traces Explained\n\n## What Is a Stack Trace?\n\nA **stack trace** (also called a \"backtrace\") is a snapshot of the **call stack** at a particular moment — usually when your program crashes or throws an exception. It shows you the chain of function calls that led to the error.\n\nThink of it like a breadcrumb trail:"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A **stack trace** is a report of the active stack frames at a specific point in a program's execution. It shows the sequence of function calls that led to the current point, helping developers understand how execution reached that point and where errors might have occurred.\n\n## How the Call Stack Works\n\nThe call stack"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## What is a Stack Trace?\n\nA **stack trace** (also called a backtrace or stack traceback) is a report of the active function calls at a specific point during program execution. It's most commonly seen when an error or exception occurs, helping developers understand how the program reached that point.\n\n---\n\n## Why Does"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## What a stack trace is\n\nA stack trace is a snapshot of the **call stack** at a specific moment during program execution — most commonly printed when an unhandled exception or error occurs. It lists every function that was active at that instant, usually with the file name and line number for each call, so you can see"
+    }
+  ]
+}

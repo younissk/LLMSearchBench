@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-17",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-17",
+  "adversarial": false,
+  "prompt": "Three roommates, uneven chores. One says 'I'm just not a cleaner.' Distribute fairly despite complaints, or accept their role and redistribute among two of you?",
+  "goldAnswer": [],
+  "rationale": "Household fairness requires interpersonal judgment, not external guidelines.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "fair chore distribution among roommates when one refuses to clean",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about fair chore distribution among roommates, especially when one refuses to do certain chores."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic roommate conflict. Let me break down the situation and options.\n\n## The Problem\n\nThree roommates, but one is opting out of cleaning, saying \"I'm just not a cleaner.\" This leaves two options:\n\n### Option A: Force fair distribution despite complaints\n- **Pro:** Everyone contributes equally in principle"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a **very common roommate dilemma**, and the \"I'm just not a cleaner\" excuse is a major red flag for long-term resentment. **Do NOT accept the imbalance and redistribute chores between just two of you.** Here's why, and how to handle it fairly:\n\n### Why Accepting the Imbalance Fails\n1.  **Resentment Explodes:**"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "fair distribution of chores among roommates with one who resists cleaning",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To distribute chores fairly among three roommates when one is unwilling to clean, consider the following steps:\n\n1. **Communicate**: Have an open and honest conversation with all roommates about the importance of shared responsibilities and the impact of uneven distribution on the others.\n\n2. **Assess Contributions**:"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few practical steps you can take to break the impasse and keep the household running smoothly.\n\n### 1. Have an open house‑meeting  \n- **Set a neutral time** to talk, not in the heat of an argument.  \n- **State the goal** you all share: a clean, livable space that everyone feels is fair.  \n- **Ask each person"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a relationship and fairness question, not a technical one — so no tool needed. Here's a practical breakdown:\n\n**Short answer:** Distribute fairly *with accountability*, but don't frame it as punishment. The goal is sustainability, not \"winning\" the argument.\n\n---\n\n### Why \"I'm just not a cleaner\" is a problemTh"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "How to divide chores fairly among roommates with different preferences?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "When dealing with uneven chore distribution among roommates, it's important to approach the situation with open communication, fairness, and mutual respect. Here are some steps you can take to address the issue:\n\n1. **Open Communication**: Have a calm and open discussion with your roommates. Express your concerns about"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "When roommates clash over chores, the goal is to find a system that feels fair to everyone—even if “fair” isn’t a perfectly even split of every task. Here are some practical ways to handle the situation you described:\n\n### 1. **Clarify What “Cleaning” Means to Each Person**\n- **List the specific tasks** that need to be"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "roommate refuses to clean chores I'm not a cleaner how to handle",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### 1.  Start with a calm, honest conversation\n\n- **Set the tone**: “I’ve noticed the chores aren’t split evenly and it’s been a bit stressful. Can we talk about how we can make it fairer for everyone?”\n- **Listen first**: Let the roommate explain why they say “I’m just not a cleaner.” Do they dislike the task, or do t"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "When dealing with uneven chore distribution among roommates, it's important to find a solution that is fair and sustainable for everyone involved. Here are a few steps you can take to address the situation:\n\n1. **Open Communication**: Have an open and honest conversation with your roommates. Discuss everyone's preferen"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This situation can be tricky, but it's important to ensure fairness and maintain a positive living environment. Here are a few steps you could take:\n\n1. **Communicate Openly**: Have an open and honest conversation with your roommates about the chores and how they feel about them. Sometimes, people might not realize tha"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common challenge in shared living situations. Fairness doesn't always mean equality—it means considering each person's capacity, time, and willingness to contribute. Here’s how to approach it:\n\n1. **Have an Honest Conversation**  \n   Sit down together and discuss everyone’s perspectives. The roommate who says"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "fair chore distribution among roommates when one refuses to clean",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to fairly distribute chores among roommates when one refuses to clean",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "fair chore distribution among three roommates when one refuses to clean",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To address the chore distribution dilemma among three roommates, consider the following balanced approach:\n\n1. **Open Communication**: Hold a discussion to understand the non-cleaning roommate’s limitations (e.g., time, skill, stress) and validate their perspective while expressing the impact of uneven work on others."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To address the situation with three roommates and uneven chores, here's a structured approach:\n\n1. **Open Communication**: Hold a discussion to understand each roommate's preferences, strengths, and limitations. Acknowledge the complaint about not being a cleaner and explore alternative roles they might prefer (e.g., c"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common roommate dilemma with no perfect solution, but here's a balanced approach:\n\n## Don't Just Accept the Imbalance\n\nLetting one person opt out entirely creates resentment and sets a bad precedent. However, forcing equal distribution without addressing the root cause often backfires.\n\n## Recommended Approac"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic roommate dilemma that comes down to **boundaries, fairness, and long-term sustainability**. Here's how to think through it:\n\n## The Core Issue\n\n\"I'm just not a cleaner\" is usually code for \"I don't want to do chores.\" Unless there's a documented disability or medical reason, this isn't a valid exempti"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common roommate dilemma with no perfect answer, but here's a framework to think through it:\n\n## First, Clarify the Situation\n\n**Is this about capability or willingness?**\n- \"I'm not a cleaner\" could mean they lack skills (teachable) or refuse to contribute (a boundary issue)\n- There's a difference between \"I"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common roommate dilemma that requires balancing fairness with relationship dynamics. Here's a practical approach:\n\n## Consider These Factors\n\n**1. Why the \"not a cleaner\" statement?**\n- Is it a genuine preference, or avoidance?\n- Do they have other commitments (work, health, etc.)?\n- Have you discussed this o"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The short answer is: **You must distribute fairly.**\n\nAccepting their role and redistributing the work between the two of you is a trap. It might seem like the path of least resistance now, but it is the fastest way to destroy a roommate relationship.\n\nHere is the breakdown of why you cannot accept the \"I'm not a clean"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Don’t make it “fair chores vs. accepting their role” as the only two options. The better answer is: **try a fair, enforceable system first; if they still refuse to contribute, then redistribute — but make it cost them something.**\n\nA roommate saying “I’m just not a cleaner” is not a valid permanent exemption. It may me"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "roommate says I'm not a cleaner how to distribute chores fairly",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"I'm just not a cleaner\" roommate chores three roommates uneven",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic roommate dilemma, and I can see why it’s frustrating. When someone says “I’m just not a cleaner,” it feels like they’re opting out of a shared responsibility—which can breed resentment. But let’s break it down and think about what “fair” really means in this situation.\n\n### Two perspectives:\n1. **Fair"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic roommate dilemma that balances fairness with practicality. Here's a thoughtful way to approach it:\n\n## 1. **Understand the claim**  \n\"I'm just not a cleaner\" could mean:  \n- They genuinely struggle with cleaning tasks  \n- They’ve always had others do it and see it as \"not their role\"  \n- They’re tryin"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic fairness-versus-practicality dilemma. Let me break it down:\n\n## The Core Issue\n\n\"I'm just not a cleaner\" is rarely about *ability*—it's about *refusal*. Unless they have a genuine disability or limitation, this is usually **weaponized incompetence**: claiming ineptitude to avoid responsibility.\n\n## Yo"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Neither option as stated — the dichotomy is false. \"I'm not a cleaner\" can be a legitimate preference, but it's never a valid claim to contribute nothing. Fairness in a shared household isn't about doing identical tasks; it's about comparable total burden. So the real move is to accept the *premise* while rejecting the"
+    }
+  ]
+}

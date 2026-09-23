@@ -1,0 +1,367 @@
+{
+  "id": "tuc-mem-triviaqa_odql_4912",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_odql_4912",
+  "adversarial": false,
+  "prompt": "Which US TV series of the 1960's starring Ray Walston as 'Uncle Martin' and Bill Bixby, was remade in 1999 as a film starring Christopher Lloyd and Jeff Daniels?",
+  "goldAnswer": [
+    "My Favourite Martian",
+    "my favourite martian",
+    "my favorite martians",
+    "Uncle Martin",
+    "My favourite martian",
+    "my favorite martian",
+    "tim o hara",
+    "My Favorite Martian",
+    "uncle martin",
+    "My Favorite Martians",
+    "Tim O'Hara",
+    "'MY FAVORITE MARTIAN'"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Ray Walston Uncle Martin Bill Bixby 1960s TV series",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about this TV series from the 1960s starring Ray Walston and Bill Bixby."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "1960s TV series Ray Walston Uncle Martin Bill Bixby 1999 film Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The US TV series you're thinking of is **My Favorite Martian**. \n\nIt originally aired from 1963 to 1966, starring Ray Walston as the Martian \"Uncle Martin\" and Bill Bixby as Tim O'Hara, the reporter who discovers him. The 1999 film adaptation starred Christopher Lloyd as Uncle Martin and Jeff Daniels as Tim O'Hara."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "US TV series 1960s Uncle Martin Bill Bixby remake 1999 Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The US TV series of the 1960s starring Ray Walston as 'Uncle Martin' and Bill Bixby was \"My Favorite Martian.\" It was remade in 1999 as a film starring Christopher Lloyd and Jeff Daniels."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "My Favorite Martian 1999 film Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV series you're thinking of is **My Favorite Martian** (1963–1966), starring Ray Walston as the Martian \"Uncle Martin\" and Bill Bixby as Tim O'Hara. It was remade in 1999 as a film of the same name, with Christopher Lloyd taking on the Uncle Martin role and Jeff Daniels playing the journalist character (now named"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "My Favorite Martian"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV series you're referring to is \"My Favorite Martian,\" which was originally titled \"My Favorite Martian\" and aired in the 1960s. However, the correct title of the series is \"My Favorite Martian,\" but it seems there might be a bit of confusion here.\n\nThe series you're thinking of is actually \"My Favorite Martian,\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Ray Walston Uncle Martin Bill Bixby 1960s TV series remade 1999 film Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Ray Walston Uncle Martin Bill Bixby 1960s TV series film 1999 Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "US TV series 1960s Uncle Martin Ray Walston Bill Bixby remake 1999 film Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "US TV series 1960s Ray Walston Uncle Martin Bill Bixby remake 1999 Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "1960s US TV series Ray Walston Uncle Martin Bill Bixby remake 1999 film Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The US TV series from the 1960s starring Ray Walston as \"Uncle Martin\" and Bill Bixby is *My Favorite Martian*. It was indeed remade as a film in 1999, starring Christopher Lloyd as the Martian and Jeff Daniels in the lead human role."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "1960s US TV series Ray Walston Bill Bixby Uncle Martin remake 1999 Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The US TV series from the 1960s starring Ray Walston as 'Uncle Martin' and Bill Bixby is **\"My Favorite Martian\"**. It was remade in 1999 as a film titled **\"My Favorite Martian\"**, starring Christopher Lloyd as the Martian and Jeff Daniels as the human lead.\n\n<answer>My Favorite Martian</answer>"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The original 1960s TV series is **\"My Favorite Martian\"**, which starred Ray Walston as Uncle Martin (a Martian) and Bill Bixby as the human neighbor. The 1999 film remake is **\"My Stepmother Is an Alien\"**, starring Christopher Lloyd and Jeff Daniels. However, note that the film was actually released in 1988, not 1999"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "1960s US TV series Ray Walston Uncle Martin Bill Bixby remake 1999 Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "1960s TV series Ray Walston Uncle Martin Bill Bixby 1999 film Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The answer is **\"My Three Sons\"**.\n\nThe original TV series ran from 1960-1972 and starred:\n- **Fred MacMurray** as Steve Douglas\n- **Ray Walston** as Uncle Martin\n- **Bill Bixby** as Ernie Douglas (one of the three sons)\n\nThe 1999 film remake was titled \"My Three Sons\" and starred:\n- **Christopher Lloyd** as Uncle Mart"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "1960s TV series Ray Walston Uncle Martin Bill Bixby 1999 remake Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "1960s TV series Ray Walston Uncle Martin Bill Bixby 1999 film Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV series is **My Favorite Martian** (1963–1966). It was remade as the 1999 film *My Favorite Martian*, starring Jeff Daniels as the Martian and Christopher Lloyd as Uncle Martin."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The series is **\"My Favorite Martian\"** (1963–1966).\n\n- **Ray Walston** played Uncle Martin (the Martian)\n- **Bill Bixby** played Tim O'Hara, the reporter who finds him\n\nIt was remade in 1999 as the feature film *My Favorite Martian*, with **Christopher Lloyd** as Uncle Martin and **Jeff Daniels** as Tim O'Hara."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Ray Walston Uncle Martin Bill Bixby TV series 1960s remade 1999 film Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Ray Walston Uncle Martin Bill Bixby TV series 1960s",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Ray Walston Uncle Martin Bill Bixby 1960s TV series remade 1999 Christopher Lloyd Jeff Daniels",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**My Favorite Martian** (1963‑1966) – the 1960s TV series that starred Ray Walston as “Uncle Martin” and Bill Bixby as Tim O’Hara – was remade in 1999 as the film *My Favorite Martian*, with Christopher Lloyd as Uncle Martin and Jeff Daniels as Tim O’Hara."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV series you're referring to is **\"My Favorite Martian\"**.\n\nThe original series aired from 1963 to 1966 on CBS. Ray Walston starred as \"Uncle Martin\" (the Martian), and Bill Bixby co-starred as Tim O'Hara, a newspaper reporter who discovers the stranded alien and poses him as his uncle.\n\nThe 1999 film remake starr"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The series was **My Favorite Martian**.\n\nThe original TV series aired on CBS from 1963 to 1966, with Ray Walston playing Uncle Martin, a Martian whose spaceship crash-lands on Earth. He takes refuge with newspaper reporter Tim O'Hara, played by Bill Bixby, while trying to repair his ship.\n\nThe 1999 film remake starred"
+    }
+  ]
+}

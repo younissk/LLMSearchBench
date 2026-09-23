@@ -1,0 +1,359 @@
+{
+  "id": "tuc-mem-popqa_2697463",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_2697463",
+  "adversarial": false,
+  "prompt": "What color is White House?",
+  "goldAnswer": [
+    "white",
+    "W",
+    "color white",
+    "#FFFFFF"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "White House exterior color paint",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about the color of the White House to provide you with accurate details."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white in color. It gets its name from the white-painted Aquia Creek sandstone that was used to construct the building. The white color is iconic and has been the building's signature look since it was first painted to protect the stone from weathering."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**.\n\nIt is painted a specific shade of white, and the name comes directly from its appearance. The iconic color was chosen after the original sandstone building was painted with a whitewash in 1798 to protect the porous stone from moisture and cracking."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "White House color",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white in color, as its name suggests. It is painted with a special type of white paint to maintain its iconic appearance."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "White House exterior paint color name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**. Its iconic white exterior comes from the white-painted sandstone used in its construction. It was first painted white in 1798 to protect the building from weather and cracking, though there's debate over whether the name actually derives from its color or from a different origin. Regardles"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House, located in Washington, D.C., is primarily white. The name \"White House\" itself is derived from the white-painted exterior. The building has been painted white with a grayish tint, which is a common color for public buildings in the United States. The white color is also a symbol of purity and cleanline"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white. Its name comes from the white paint applied to its sandstone exterior to protect it from the elements."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is painted **white**.  \nIn fact, the official paint used for the exterior is a specific shade called **“White House White.”** It’s a very light, neutral white that’s been used on the building’s façade since the early 20th century."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white. However, if you are asking about the specific shade or any recent changes, I can look that up for you. Would you like me to search for more detailed information?"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What color is the exterior of the White House?",
+      "callProblem": "",
+      "answerExcerpt": "The White House is painted white. This tradition started with the original building's construction in the early 1800s. However, if you're looking for verification or more detailed historical information, I can perform a web search."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white. Its name directly reflects its iconic white-colored exterior, which has been a defining feature since its construction. No tool call is needed as this is common knowledge."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is, as its name suggests, white. It is painted a shade of white known as \"White House White\" or \"Federal White.\" This color has been maintained for historical and aesthetic reasons since the building was first painted in the early 19th century.\n\nNo tool call is needed, as this is a well-known fact."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white. Its official name is the \"White House,\" and its exterior is famously painted white, a tradition that dates back to its construction in the late 18th century. The color was chosen in part to cover up damage from a British fire during the War of 1812 and has been maintained ever since."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is painted white, which is why it is called the \"White House.\" The building's original paint was a lead-based white pigment, and it has been maintained in white throughout its history, though the exact shade may have varied slightly over time."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white. It's painted white, which is actually how it got its name. The building has been painted white since 1798, after the original sandstone was damaged during the War of 1812 when British forces burned Washington, D.C. The white paint helped cover the scorch marks and has been maintained ever sinc"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**. It's actually named after its color! The building was originally constructed with sandstone, but in 1798, it was painted with a lime wash to protect the porous stone. Later, in 1817, it was painted with a white lead paint, which gave it the distinctive white appearance it's known for today"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**, as its name suggests! \n\nThe building is painted white, which is how it got its famous name. Originally, the exterior was made of gray sandstone, but it was painted white to protect the stone from weather damage. The name \"White House\" became official during President Theodore Roosevelt's a"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white. As its name suggests, the exterior of the building is painted white, which is why it's called the \"White House.\" The white color was chosen in the early 19th century and has been maintained as a distinctive feature of the building."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**.\n\nIt received its name in the 1810s after the exterior walls were painted with a whitewash to protect the sandstone from freezing."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**. It's been painted white since 1798, when the exterior sandstone walls were treated with a whitewash to protect them after fire damage in 1796. The building has kept its white color ever since, which is how it got its name."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**.\n\nMore specifically, it is built from Aquia Creek sandstone and has been painted white since the early 1800s (after being rebuilt following the War of 1812). The white paint helps protect the porous stone from weather damage, and the color is officially \"Whisper White.\""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white** (specifically a white-painted exterior, often described as off-white or cream). Its name comes from the whitewashed sandstone walls, and it is traditionally painted white."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white. Its exterior is painted a bright, clean white, which is how it got its name. The building is constructed from white-painted Aquia Creek sandstone."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**. \n\nAs you might guess from the name, the White House — the official residence and workplace of the President of the United States in Washington, D.C. — is painted white. This distinctive white color comes from the lime-based whitewash that was originally applied to protect its sandstone wal"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is white. It gets its name from its white-painted exterior, which was originally painted white in 1798 to cover the burn marks from a fire in 1814. The iconic white color has been maintained since then, making it one of the most recognizable buildings in the world."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white**. It gets its name from its distinctive white exterior color. The building has been painted white since its construction in the late 18th century - originally with a lime-based whitewash to protect the sandstone exterior, and later with white paint. This white color is one of the most iconic"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The White House is **white** — as its name suggests! It's painted white, and the building's exterior is made of Aquia Creek sandstone that has been painted white.\n\nA bit of history: the building was actually given its whitewashed finish back in 1798, when a lime-based whitewash was applied to protect the porous sandsto"
+    }
+  ]
+}

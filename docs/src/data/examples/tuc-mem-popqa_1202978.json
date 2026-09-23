@@ -1,0 +1,364 @@
+{
+  "id": "tuc-mem-popqa_1202978",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_1202978",
+  "adversarial": false,
+  "prompt": "In what country is canton of Marseille-La Pomme?",
+  "goldAnswer": [
+    "France",
+    "fr",
+    "FR",
+    "République française",
+    "La France",
+    "Republic of France",
+    "French Republic",
+    "FRA",
+    "the Hexagon"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme",
+      "callProblem": "",
+      "answerExcerpt": "The user is asking about the \"canton of Marseille-La Pomme.\" I need to determine which country this canton is located in. \n\nFirst, I should recall that \"canton\" is an administrative division used in several countries, most notably Switzerland and France. The name \"Marseille-La Pomme\" suggests a connection to Marseille,"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme",
+      "callProblem": "",
+      "answerExcerpt": "Let me search for this information."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The canton of Marseille-La Pomme is in **France**. It is an administrative canton located in the Bouches-du-Rhône department, within the Provence-Alpes-Côte d'Azur region of southeastern France. As its name suggests, it covers part of the city of Marseille, specifically the La Pompe... rather, the La Pomme neighborhood"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Marseille-La Pomme canton",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The canton of Marseille-La Pomme is located in **France**. More specifically, it is a former canton in the Bouches-du-Rhône department in the Provence-Alpes-Côte d'Azur region of southeastern France, within the city of Marseille."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The canton of Marseille-La Pomme is located in France."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There is no country or region known as \"canton of Marseille-La Pomme.\" Marseille is a city in France, specifically in the Provence-Alpes-Côte d'Azur region in southeastern France. It is possible that \"La Pomme\" refers to a neighborhood or a specific area within Marseille, but it is not a recognized administrative divis"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term \"canton of Marseille-La Pomme\" likely refers to a district or neighborhood within the city of Marseille, which is located in **France**. While \"canton\" is more commonly associated with Swiss administrative divisions, Marseille is a major city in southern France. The area known as La Pomme is part of Marseille'"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Marseille-La Pomme canton country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It seems there might be a misunderstanding in your question. Marseille is a city in France, and \"La Pompe\" is a neighborhood within Marseille. However, there is no \"canton of Marseille-La Pompe\" that I am aware of. Could you please clarify if you are referring to a specific administrative division or if you meant somet"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It seems there might be a misunderstanding in your question. Marseille is a city located in France, and it does not contain a canton named \"Marseille-La Pomme\". Could you please provide more context or clarify your question? If you meant a different location, please let me know the correct details so I can assist you b"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The canton of Marseille-La Pomme is located in France. It is part of the Bouches-du-Rhône department in the Provence-Alpes-Côte d'Azur region."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Canton of Marseille-La Pomme is located in France. It is part of the city of Marseille in the Bouches-du-Rhône department in the Provence-Alpes-Côte d'Azur region."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term \"canton of Marseille-La Pomme\" refers to a former administrative division in France. It was part of the department of Bouches-du-Rhône, which is located in the Provence-Alpes-Côte d'Azur region of France. Therefore, the country is France."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The canton of Marseille-La Pomme is in **France**. \n\nMarseille is a major city in southeastern France, and the canton system is part of France's administrative divisions. Marseille-La Pomme is one of the cantons within the city of Marseille, which is located in the Bouches-du-Rhône department in the Provence-Alpes-Côte"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "France"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pomme",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "canton of Marseille-La Pompe country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The canton of Marseille-La Pomme is located in **France**. It was an administrative division in the Bouches-du-Rhône department in the Provence-Alpes-Côte d'Azur region of southern France, within the city of Marseille. Note that it was a former canton — it was disbanded during the French canton reorganisation that took"
+    }
+  ]
+}

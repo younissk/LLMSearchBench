@@ -1,0 +1,363 @@
+{
+  "id": "tuc-sea-triviaqa_bt_4062",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_bt_4062",
+  "adversarial": false,
+  "prompt": "Which cardinal point does not appear in the names of the American states",
+  "goldAnswer": [
+    "東",
+    "eest",
+    "东",
+    "East",
+    "east",
+    "Eastward",
+    "eastward",
+    "Eest"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "American state names cardinal points north south east west",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about American state names and cardinal points to answer your question."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me think about this. The cardinal points are North, South, East, and West.\n\nLet me check which US states have these cardinal points in their names:\n\n- **North**: North Carolina, North Dakota\n- **South**: South Carolina, South Dakota\n- **East**: No US state has \"East\" in its name\n- **West**: West Virginia\n\nSo the ca"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal point that does not appear in any U.S. state name is **East**.  \n\n- **North** appears in North Carolina and North Dakota.  \n- **South** appears in South Carolina and South Dakota.  \n- **West** appears in West Virginia.  \n- **East** is not part of any state's name."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "cardinal point not in American state names",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "American states cardinal points",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "US state names containing east direction",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal point that does not appear in the names of any American state is **North**.\n\nThe other three cardinal directions are used:\n- **East**: There is no state with \"East\" directly, but East is implied through other means.\n- **South**: South Carolina, South Dakota\n- **West**: West Virginia\n\nWait, let me reconside"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Which cardinal point does not appear in the names of the American states?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine which cardinal point does not appear in the names of the American states, let's first list the cardinal points: North, South, East, and West.\n\nNow, let's check each cardinal point against the names of the American states:\n\n1. **North**:\n   - North Dakota\n   - North Carolina\n   - North Carolina (again, but"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The only cardinal direction that does **not** appear as part of the official name of any U.S. state is **East**.  \n\n- **North** appears in *North Dakota* and *North Carolina*.  \n- **South** appears in *South Dakota* and *South Carolina*.  \n- **West** appears in *West Virginia*.  \n\nThere is no state whose name includes"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "US states with East in name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal point that does **not** appear in any U.S. state name is **East**.  \n\n- **North** appears in North Carolina and North Dakota.  \n- **South** appears in South Carolina and South Dakota.  \n- **West** appears in West Virginia.  \n- **East** does not appear in any state name."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "cardinal points in American state names",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "list of us states",
+      "callProblem": "",
+      "answerExcerpt": "To find which cardinal point (North, South, East, West) does not appear in the names of American states, I will search for a list of U.S. states and check their names against these cardinal points."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "cardinal points in US state names",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal points are North, South, East, and West. Among U.S. state names:\n- **North** appears in *North Carolina* and *North Dakota*.\n- **South** appears in *South Carolina* and *South Dakota*.\n- **West** appears in *West Virginia*.\n- **East** does **not** appear in any state name.\n\nThus, **East** is the cardinal p"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "cardinal points in American state names north south east west",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "cardinal points in US state names",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal points are north, south, east, and west. Upon examining the names of U.S. states, **north**, **south**, and **west** appear in state names (e.g., North Carolina, South Dakota, West Virginia). However, **east** does not appear in the name of any American state. \n\nNo function call was needed, as this is a fa"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal points are North, South, East, and West. Examining the names of U.S. states, we find:\n\n- **North** appears in *North Carolina* and *North Dakota*.\n- **South** appears in *South Carolina* and *South Dakota*.\n- **West** appears in *West Virginia*.\n- **East** does **not** appear in the name of any U.S. state."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "list of all american states",
+      "callProblem": "",
+      "answerExcerpt": "To determine which cardinal point does not appear in the names of the American states, I will first list all the American states and then check which cardinal directions (North, South, East, West) are represented in their names. \n\n1. I will start by listing all the U.S. states.\n2. Then, I will examine each state's name"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "US states with cardinal directions in their names North South East West",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a question I can answer from general knowledge without needing to search.\n\nThe cardinal point that does **not** appear in the names of American states is **East**.\n\nHere's the breakdown:\n\n- **North**: North Carolina, North Dakota\n- **South**: South Carolina, South Dakota\n- **West**: West Virginia\n- **East**: No"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal point that does not appear in the names of American states is **East**.\n\nHere's the breakdown of cardinal directions in U.S. state names:\n\n- **North**: North Carolina, North Dakota\n- **South**: South Carolina, South Dakota\n- **West**: West Virginia\n- **East**: None\n\nThere is no U.S. state with \"East\" in it"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal direction that does not appear in the names of any American states is **East**.\n\nHere's what does appear:\n- **North**: North Carolina, North Dakota\n- **South**: South Carolina, South Dakota\n- **West**: West Virginia\n\nThere is no U.S. state with \"East\" in its name. While there are regions like East Tennesse"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The cardinal point that does not appear in the names of any American state is **East**.\n\nHere is the breakdown of the other cardinal points found in state names:\n*   **North:** North Carolina, North Dakota\n*   **South:** South Carolina, South Dakota\n*   **West:** West Virginia"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "East — no U.S. state has “East” in its name."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The four cardinal directions are **North, South, East, and West**.\n\nIn U.S. state names:\n- **North** — North Carolina, North Dakota\n- **South** — South Carolina, South Dakota\n- **West** — West Virginia\n- **East** — *none*\n\nSo the one that does **not** appear is **East** (there is no state called “East Virginia” or simi"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The four cardinal directions are **north, south, east,** and **west**.\n\nIn U.S. state names:\n- **North**: North Carolina, North Dakota\n- **South**: South Carolina, South Dakota\n- **West**: West Virginia\n\nBut **no state** has “East” in its name.\n\nSo the missing cardinal point is **East**."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "which US state has \"East\" in its name",
+      "callProblem": "",
+      "answerExcerpt": "Let me verify this to be sure."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "U.S. states with cardinal directions in names North South East West",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "US states with cardinal directions in their names north south east west",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**East** is the only cardinal point that doesn't appear in the name of any U.S. state.\n\nHere's the breakdown:\n- **North**: North Carolina, North Dakota\n- **South**: South Carolina, South Dakota\n- **West**: West Virginia\n- **East**: *(no state)*\n\nInterestingly, while \"West\" and \"North/South\" are used, there was never a"
+    }
+  ]
+}

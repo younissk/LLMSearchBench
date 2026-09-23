@@ -1,0 +1,370 @@
+{
+  "id": "tuc-sea-triviaqa_tb_1939",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_tb_1939",
+  "adversarial": false,
+  "prompt": "Can you connect Darwin and his research on Galapagos Islands to the book To Kill a Mockingbird?",
+  "goldAnswer": [
+    "True finch",
+    "finch",
+    "Finch",
+    "true finch",
+    "carduelidae",
+    "Finches",
+    "Carduelini",
+    "carduelini",
+    "Finch (bird)",
+    "fringillidae",
+    "Fringillidae",
+    "\"\"\"Finch\"\"\"",
+    "Carduelidae",
+    "finch bird",
+    "finches"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands To Kill a Mockingbird connections themes",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about connections between Darwin's research on the Galapagos Islands and the book \"To Kill a Mockingbird.\""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands connection To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": "This is a fascinating pair! Let me search for any existing connections or scholarly discussions linking these two, and then I'll weave together the thematic and conceptual threads."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's a fascinating and unexpected pairing. There is no direct, historical connection—Charles Darwin's work on evolution had no influence on Harper Lee's writing of *To Kill a Mockingbird*. However, we can build a powerful and insightful **thematic and metaphorical bridge** between them by focusing on the core ideas o"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands To Kill a Mockingbird connection",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "While Charles Darwin's research on the Galapagos Islands and Harper Lee's novel \"To Kill a Mockingbird\" may seem like unrelated topics, there is a connection to be made. \n\nIn \"To Kill a Mockingbird,\" the character of Tom Robinson, a black man falsely accused of raping a white woman, is a symbol of injustice and prejudi"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands To Kill a Mockingbird connection Harper Lee",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Connecting Darwin's Galápagos Research to To Kill a Mockingbird\n\nWhat a fascinating cross-disciplinary question! Here are several meaningful connections:\n\n## 1. **Evolution and Moral Development**\nDarwin's work on the Galápagos showed how species adapt and evolve over time based on their environment. Similarly, Scout"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Connecting Charles Darwin's research on the Galápagos Islands to Harper Lee's novel \"To Kill a Mockingbird\" might seem like an unusual task, as they belong to different fields—biology and literature, respectively. However, there are some thematic and conceptual links that can be drawn between the two:\n\n1. **Observation"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "connection between Charles Darwin's Galapagos Islands research and To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands connection to To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands To Kill a Mockingbird connection themes",
+      "callProblem": "schema-error",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "While Charles Darwin's research on the Galapagos Islands and Harper Lee's novel \"To Kill a Mockingbird\" are not directly connected, we can draw some thematic parallels between the two.\n\n1. **Observation and Insight**: Darwin's work on the Galapagos Islands involved meticulous observation and the collection of data, whi"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands To Kill a Mockingbird connection",
+      "callProblem": "",
+      "answerExcerpt": "While Charles Darwin's research on the Galapagos Islands and Harper Lee's novel \"To Kill a Mockingbird\" are both significant works in their respective fields, they address different themes and contexts. Darwin's work primarily focuses on the theory of evolution through natural selection, while \"To Kill a Mockingbird\" e"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There is no direct connection between Charles Darwin’s research on the Galápagos Islands and Harper Lee’s novel *To Kill a Mockingbird*. However, we can draw an indirect thematic link through the broader ideas of observation, understanding diversity, and challenging established beliefs.\n\nDarwin’s work on the Galápagos"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands To Kill a Mockingbird connection",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There is no direct connection between Charles Darwin and his research on the Galápagos Islands and the book *To Kill a Mockingbird* by Harper Lee. The two are separated by time, subject matter, and context:\n\n- **Charles Darwin** was a 19th-century naturalist whose observations of species on the Galápagos Islands contri"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There is no established connection between Charles Darwin's research on the Galapagos Islands and Harper Lee's novel *To Kill a Mockingbird*. Darwin's work focused on evolutionary biology and natural selection, while *To Kill a Mockingbird* is a literary exploration of racial injustice, morality, and childhood in the A"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "connection between Darwin's Galapagos research and To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Connection between Darwin's Galapagos research and To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "While Charles Darwin's research on the Galapagos Islands and Harper Lee's novel \"To Kill a Mockingbird\" are distinct in their subject matter and context, there are some thematic connections that can be drawn between them. Here's how they relate:\n\n1. **Scientific Inquiry vs. Social Justice**: Darwin's work in the Galapa"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a fascinating interdisciplinary question! While Darwin and \"To Kill a Mockingbird\" seem worlds apart, there are several meaningful connections:\n\n## 1. **The Symbolism of Birds**\n- **Darwin's Finches**: The finches of the Galapagos Islands were crucial to Darwin's theory of evolution. Each species adapted differ"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "To Kill a Mockingbird Darwin evolution connection",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands To Kill a Mockingbird connection",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos Islands connection To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "While Charles Darwin’s scientific work on the Galapagos Islands and Harper Lee’s *To Kill a Mockingbird* seem unrelated—one is a biological study of evolution, the other a novel about social injustice—they share profound thematic connections regarding **adaptation, observation, and the challenge to established dogma.**"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Yes—you can connect Charles Darwin’s research on the Galápagos Islands to *To Kill a Mockingbird* through themes of **observation, environment, adaptation, and moral development**. The connection is not literal, but it can work well as a thematic or analytical comparison.\n\n## 1. Both involve close observation of a “sys"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos connection To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Darwin Galapagos To Kill a Mockingbird connection",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Harper Lee Finch name meaning Darwin Galapagos connection To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": "This is a creative question! Let me explore some possible connections between Darwin's Galapagos research and *To Kill a Mockingbird*."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Connecting Darwin's Galapagos to *To Kill a Mockingbird*\n\nWhat a fascinating question! These seem like very different worlds—tropical islands with finches and a small Alabama town—but there are some rich thematic connections:\n\n## Social Darwinism and Racial Prejudice\n\nDarwin's theory of natural selection was tragical"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Charles Darwin Galapagos Islands connection to To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Harper Lee Finch family name Darwin finches connection To Kill a Mockingbird",
+      "callProblem": "",
+      "answerExcerpt": "What a fascinating connection to explore! Let me search for any documented links between Darwin's finches and Harper Lee's choice of the surname \"Finch\" for her characters."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "What a fun pairing — and it turns out there's a surprisingly literal connection hiding in plain sight.\n\n**The mockingbird itself**\n\nWhen Darwin visited the Galápagos in 1835 aboard the Beagle, the birds that first convinced him species varied from island to island weren't actually the famous finches — they were the **m"
+    }
+  ]
+}

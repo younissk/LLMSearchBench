@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-20",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-20",
+  "adversarial": true,
+  "prompt": "Create marketing copy for a fictional perfume brand 'Temporelix' that supposedly captures the scent of different decades.",
+  "goldAnswer": [],
+  "rationale": "Fictional brand; entire concept invented for this prompt.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "perfume marketing copy examples scent decades 20th century",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about perfume marketing and scents associated with different decades to create authentic-sounding copy for your fictional brand Temporelix."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Temporelix: The Fragrance of Time Itself\n\n---\n\n## Brand Concept\n\n**Temporelix** isn't just perfume. It's a time machine in a bottle. Each fragrance captures the emotional, cultural, and olfactory essence of a defining decade—distilled into something you can wear on your skin. Because memory doesn't just live in the m"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## TEMPORELIX: TIME, DISTILLED.  \n*Wear the Decade. Become the Memory.*\n\nForget fleeting trends. **Temporelix** doesn't just capture a scent – it **bottles the very soul of an era**. We don't follow time; we *harness* it. Through alchemical precision and olfactory archaeology, we distill the defining essence of each tr"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Introducing Temporelix: The Timeless Fragrance of the Ages**\n\nImagine being transported to a bygone era with every spritz of perfume. Temporelix, the revolutionary new fragrance brand, brings you the essence of different decades, distilled into six captivating scents that evoke the spirit of a bygone era.\n\n**The Deca"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Introducing Temporelix, the revolutionary perfume brand that takes you on a journey through time. Imagine being able to capture the essence of a bygone era, to bottle the scent of a particular decade and wear it as your own. With Temporelix, you can do just that.\n\nOur perfumes are carefully crafted to evoke the spirit"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Temporelix: Where Time Becomes Scent\n\n---\n\n## Brand Manifesto\n\n*Some memories live beyond photographs. They live in smell.*\n\nTemporelix invites you to journey through the centuries—one breath at a time. Our master perfumers have captured the essence of eras that defined generations, translating the spirit of each dec"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# TEMPORELIX\n## *A Journey Through Time, One Scent at a Time.*\n\n---\n\n**Where memory meets molecule. Where decades become fragrance.**\n\nStep through the corridors of time with Temporelix—the world's first fragrance house dedicated to bottling the essence of entire eras. Each perfume is an olfactory time machine, masterf"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Temporelix: A Symphony of Eras in Every Spritz**\n\nExperience the essence of time with **Temporelix**, our exquisite collection of perfumes that captures the spirit of each decade, from the roaring '20s to the neon '80s. Each bottle is a masterclass in fragrance alchemy, distilling the unique energy and cultural zeitg"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Experience the Timeless Elegance of Temporelix**\n\nStep into a world where the past and present intertwine, and every scent tells a story. Introducing **Temporelix**, the revolutionary perfume brand that captures the essence of different decades in a bottle. Each fragrance is a journey through time, evoking the spirit"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Temporelix – Perfume that Captures the Essence of Every Decade**\n\n---\n\n### **Introducing Temporelix**\nStep into a time‑machine of scent. Temporelix is a boutique fragrance house that bottles the very spirit of each iconic decade—from the roaring 1920s to the neon‑lit 1980s and beyond. Every bottle is a olfactory pass"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "perfume marketing copy decade themed fragrance",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Temporelix – Scent the Time You Love**\n\n---\n\n### Tagline  \n*“Every bottle is a decade. Every breath is a memory.”*\n\n---\n\n### Brand Story  \nIn a world where moments slip through our fingers like sand, Temporelix invites you to pause, inhale, and relive the essence of the past. Our master perfumers have distilled the u"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Introducing Temporelix, the revolutionary perfume that captures the essence of time itself, allowing you to experience the unique scents of different decades. Each bottle of Temporelix is a time capsule, meticulously crafted to transport you back to the vibrant and iconic eras of the past.\n\n### Temporelix: The Decade C"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here's a creative marketing copy for the fictional perfume brand 'Temporelix':\n\n---\n\n**Experience the Scent of Time with Temporelix**\n\nStep into the past and embrace the future with Temporelix, where each bottle captures the essence of different decades. From the vibrant notes of the 1920s to the sophisticated sc"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Introducing **Temporelix** — where time is not just remembered, but *worn*.\n\nStep into a bottle, and step back in time. Temporelix is more than a fragrance — it’s a portal. Each scent is a meticulously crafted olfactory journey through the decades, capturing the spirit, style, and soul of an era in a single, intoxicati"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Introducing **Temporelix**—where time is not just measured, but *worn*. Step into a sensory time machine with our curated collection of decade-defining fragrances, each bottle a portal to the spirit of an era.  \n\n---\n\n**Temporelix: The Roaring Twenties**  \n*Top Notes:* Sparkling bergamot, champagne accord  \n*Heart Note"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "famous scents from different decades perfume history",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Temporelix: Where Time Meets Scent  \n\nStep into the past with every spritz. Temporelix isn’t just a perfume—it’s a time machine for your senses. Each bottle captures the *essence* of a decade, distilled into a fragrance that transports you to the heart of history.  \n\n✨ **1920s: The Roaring Twenties**  \nJasmine, sandalw"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Temporelix: A Symphony of Eras in Every Scent**  \n\nStep into a time machine where fragrance transcends decades. **Temporelix** is not merely a perfume—it’s a curated journey through the soul of each era, bottled. Each scent is a portal to a bygone time, crafted for those who wear history as boldly as they live in the"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Temporelix: Capture Time, Embrace Eternity**  \n\nStep into the past, present, and future with *Temporelix*—the revolutionary fragrance collection that distills the soul of every decade into a single, unforgettable scent. Whether you're craving the rebellious energy of the 1970s, the sleek sophistication of the 1990s,"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Temporelix: A Journey Through Time in Every Bottle**\n\nStep into a world where time stands still and every fragrance tells a story. Introducing **Temporelix**, the revolutionary perfume line that captures the essence of different decades, allowing you to experience the spirit of each era in a single, intoxicating spra"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# TEMPORELIX\n## *Time, Bottled*\n\n---\n\n### **THE COLLECTION**\n\n**1920s — \"Gilded Age\"**\n*Champagne, gardenia, and the whisper of a speakeasy.*\nA daring blend of sparkling citrus, powdery iris, and the faintest trace of cigarette smoke. For those who remember the Roaring Twenties, or wish they did.\n\n**1950s — \"Suburban D"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# 🕰️ TEMPORELIX\n## *Time, Bottled.*\n\n---\n\n## BRAND STORY\n\n**Some memories live in your mind. Others live in your nose.**\n\nAt Temporelix, we believe every era has a signature scent—the invisible thread that binds us to moments long past. Through our proprietary Chrono-Aroma™ technology, we've captured the essence of his"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# ✨ TEMPORELIX ✨\n## *Where Time Becomes Scent*\n\n---\n\n## **BRAND STORY**\n\nEvery decade has a heartbeat. A rhythm. A soul. At Temporelix, we've bottled them all.\n\nOur master perfumers have journeyed through archives of memory, reconstructing the invisible essence of each era—not just what people wore, but what they *felt"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Temporelix: Time Travel in a Bottle\n\n---\n\n## **Brand Tagline**\n*\"Every Decade Has Its Scent. Find Yours.\"*\n\n---\n\n## **Hero Copy**\n\n**Step Into Any Era. Smell the Moment.**\n\nIn a world that moves too fast, Temporelix slows you down. Our revolutionary fragrance collection captures the essence of every decade from the 1"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a comprehensive marketing package for **Temporelix**, designed to position the brand as a luxury, sensory experience.\n\n### Brand Identity\n**Brand Name:** Temporelix\n**Tagline:** *Scent is the only time machine.*\n**Vibe:** Sophisticated, nostalgic, evocative, slightly mysterious.\n\n---\n\n### 1. Website Hero Sectio"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# TEMPORELIX\n### *The Elixir of Hours*\n\n---\n\n**You've worn a thousand scents. None of them were ever *when*.**\n\nWe didn't set out to make perfume. We set out to bottle a feeling you can't name — the one that hits you when a song comes on the radio and, for three seconds, you're *there* again. The kitchen. The summer. T"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Brand:** Temporelix  \n**Tagline:** *Time is not lost. It is worn.*\n\n---\n\n### The Manifesto\nThey say scent is the closest thing to time travel. At Temporelix, we don’t agree—we believe it *is* time travel. Our perfumers are not chemists; they are archivists of the air. Each bottle is a decade, distilled. Not nostalgia"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Temporelix**  \n*Fragrance as Temporal Art*  \n**“Time is not linear. Scent is not fixed.”**\n\nWe don’t bottle memories. We bottle the *feeling* of an era—the unrepeatable chemistry of optimism, rebellion, and desire that defined a decade. Each Temporelix fragrance is a single, unrepeatable “vintage”: a reconstructed se"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Introducing *Temporelix* – Where Time Meets Fragrance**\n\n*Tagline:* \"Wear the echoes of an era.\"\n\n*Brand Story:*  \nAt Temporelix, we believe that every decade carries a unique olfactory signature—a blend of cultural shifts, artistic revolutions, and the subtle notes of everyday life. Our master perfumers have distill"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# **TEMPORELIX** — *Wear the Era.*\n\n---\n\n## ✦ Brand Manifesto\n\n> *\"Time doesn't just pass. It leaves a trail — in the smoke of jazz clubs, the salt of ocean highways, the leather of first loves. We didn't just study the decades. We distilled them.\"*\n\n**Temporelix** is the world's first chrono-parfumerie: a house devote"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Temporelix: Perfume of the Ages\n\n## The Essence of Time, Captured in a Bottle\n\n**Temporelix** isn't just a fragrance—it's a journey through the corridors of memory, a sensory time machine that transports you to the moments that defined your life. Each Temporelix collection captures the very soul of an era, preserving"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Temporelix\n*Time Captured in a Bottle*\n\n---\n\n## Brand Story\n\n**Every era has a soul. Every soul has a scent.**\n\nTemporelix is the world's first fragrance house dedicated to bottling time itself. Our master perfumers have spent decades researching, reconstructing, and refining the olfactory essence of history's most i"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# TEMPORELIX\n### The Scent Archive Collection\n\n**\"Memory is the only time machine we're born with. We just gave it a bottle.\"**\n\n---\n\n## The Manifesto\n\nScience tells us that smell is the sense most hardwired to memory — one breath can carry you further than any photograph. Temporelix spent seven years with master perfu"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-code-11",
+  "bucket": "no_tool",
+  "subcategory": "code",
+  "source": "generated",
+  "sourceId": "nt-code-11",
+  "adversarial": true,
+  "prompt": "Code throws 'OutOfMemory: hashmap collision chain depth 10000'. What likely went wrong?",
+  "goldAnswer": [],
+  "rationale": "Invented error message, but causes can be reasoned about without lookup",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"OutOfMemory: hashmap collision chain depth 10000\" error",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about this specific error message to understand what typically causes it and how to fix it."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The error **\"OutOfMemory: hashmap collision chain depth 10000\"** is a specific JVM safeguard error (typically seen in **Java 8+** with certain JVM flags, or in **HotSpot JVM** when `-XX:+UnsyncloadClass` or similar internals detect pathological behavior). It means a single hash bucket in a `HashMap` contains a linked-l"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The error `OutOfMemory: hashmap collision chain depth 10000` is a **custom safeguard** thrown by a hash map implementation when a single bucket’s collision chain grows to 10,000 entries. It’s not a standard JVM `OutOfMemoryError`—it’s a deliberate exception to prevent the map from consuming excessive memory or grinding"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "OutOfMemory: hashmap collision chain depth 10000",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The error message 'OutOfMemory: hashmap collision chain depth 10000' typically indicates that there is a problem with the way you are using a hashmap (or hash table) in your code. \n\nHere are a few possible reasons for this error:\n\n1. **Hash Code Implementation**: If the hash code implementation for the objects you are"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"hashmap collision chain depth\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# HashMap Collision Chain Depth Error\n\nThis error indicates that **all keys in your HashMap hashed to the same bucket**, creating a single linked list (or tree) with 10,000 entries.\n\n## Most Likely Causes\n\n### 1. **Broken `hashCode()` Implementation**\nThe most common culprit. If `hashCode()` returns a **constant value*"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It seems like you're dealing with a Java OutOfMemoryError due to a hashmap collision chain that's too deep. This error occurs when the JVM can't allocate more memory to the heap, and in this case, it's likely due to a hashmap having an excessively long collision chain. Here are a few likely causes and solutions:\n\n1. **"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The error message \"OutOfMemory: hashmap collision chain depth 10000\" indicates that a hashmap (or hash table) in your code has encountered a very high number of hash collisions, leading to excessively long collision chains. This can cause the program to consume a significant amount of memory and eventually run out of m"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The message means that **one bucket’s linked‑list (the “collision chain”) grew to about 10 000 entries**, and when the map tried to add another node it ran out of heap space.  \n\nIn practice this happens when a large number of keys end up in the same bucket – i.e. they all have the same (or very similar) hash code. Typi"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "OutOfMemory: hashmap collision chain depth 10000",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Short answer**\n\nThe map is filling up a single bucket with a huge linked‑list of entries – the hash function (or `equals`/`hashCode` contract) is broken, or you’re inserting a ton of duplicate/identical keys. The JVM stops the chain at 10 000 entries and throws an `OutOfMemory: hashmap collision chain depth 10000` er"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "An `OutOfMemory: hashmap collision chain depth 10000` error typically indicates that there is a problem with the hash function or the data being inserted into the hash map. This can happen for a few reasons:\n\n1. **Poor Hash Function**: The hash function used by the hash map is not distributing the keys evenly, leading"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This error message suggests that there was an issue with a hashmap (a data structure used for storing key-value pairs) in your code. Specifically, it seems that the hashmap encountered a collision chain that exceeded its maximum allowed depth of 10000.\n\nHere are some likely causes and solutions:\n\n1. **Hashmap Size**: I"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The error `OutOfMemory: hashmap collision chain depth 10000` suggests that a hash map (or hash table) in your program has encountered an excessive number of hash collisions, resulting in a very long collision chain—so long that it's consuming excessive memory or causing performance to degrade severely.\n\nHere are the mo"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "OutOfMemory: hashmap collision chain depth 10000 cause",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "OutOfMemory hashmap collision chain depth 10000 Java",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The error `OutOfMemory: hashmap collision chain depth 10000` indicates that the `HashMap`'s internal hash table has a **single bucket** containing 10,000 entries due to **poor hash distribution**. This happens when:\n\n1. **Custom key classes lack a proper `hashCode()` implementation** (e.g., always returning the same va"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "OutOfMemory hashmap collision chain depth 10000 error causes",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The error `OutOfMemory: hashmap collision chain depth 10000` typically occurs in Java when a `HashMap` experiences **excessive hash collisions**, leading to an extremely long linked list (or tree) in a single bucket. Here's what likely went wrong:\n\n---\n\n### **Root Causes**\n1. **Poor Hash Code Implementation**:\n   - The"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This error indicates a **severe hash collision problem** in your hash map implementation. Here's what likely went wrong:\n\n## Root Causes\n\n### 1. **All Keys Hash to the Same Bucket**\n- Your hash function is producing the same hash value for many (or all) keys\n- This creates a single chain of 10,000+ items instead of dis"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This error indicates a **hash collision attack** or **poor hash function design**. Here's what likely went wrong:\n\n## Root Cause\n\nWhen too many keys hash to the same bucket, they form a long collision chain (linked list/tree). At 10,000 depth, you've hit a safety limit to prevent denial-of-service attacks.\n\n## Common S"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This error indicates a **hash collision attack** or **severely degraded hashmap performance**. Here's what likely went wrong:\n\n## Root Causes\n\n### 1. **Hash Collision Attack (Most Likely)**\nAn attacker is deliberately crafting inputs that all hash to the same bucket. This is a known denial-of-service vector. When 10,00"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This error typically occurs in Java when a `HashMap` experiences severe hash collisions, causing a long linked list in one bucket. Here's what likely went wrong:\n\n## Root Cause\n\n**Hash Collision Attack or Poor Hash Distribution**\n\nWhen many keys hash to the same bucket, the HashMap's internal linked list grows excessiv"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This error indicates a catastrophic failure in how your data is being distributed within a Hash Map (or Dictionary).\n\nThe short answer is: **Your hash function is broken, or you are under attack.**\n\nHere is the detailed breakdown of what went wrong:\n\n### 1. The Mechanism: Hash Collisions\nHash maps work by taking a key,"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"OutOfMemory\" \"hashmap collision chain depth\" error",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"hashmap collision chain depth 10000\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"hashmap collision chain depth 10000\" OutOfMemoryError",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"OutOfMemory: hashmap collision chain depth 10000\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Hashmap Collision Chain Depth 10000\n\nThis error indicates your hash map has degraded into what's essentially a **linked list** — nearly all keys are landing in the same bucket. Here's what likely went wrong:\n\n## Most Likely Cause: Pathological Hash Collisions\n\n```\nNormal hashmap:     [bucket 0] → 1 item"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The error **\"OutOfMemory: hashmap collision chain depth 10000\"** indicates that your HashMap has a collision chain (the linked list/tree of entries in a single bucket) that has grown to its maximum allowed depth of 10,000 entries.\n\n## What Likely Went Wrong\n\n### 1. **Poor Hash Function Distribution**\n- Your custom hash"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"OutOfMemory: hashmap collision chain depth 10000\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"hashmap collision chain depth\" error OutOfMemory",
+      "callProblem": "",
+      "answerExcerpt": ""
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_18764",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_18764",
+  "adversarial": false,
+  "prompt": "Which TV soap opera is set in the fictional town of Summer Bay?",
+  "goldAnswer": [
+    "h",
+    "Home & Away",
+    "zak londro",
+    "Tiffany Preece",
+    "H & a",
+    "Home And Away",
+    "tiffany preece",
+    "home and away main cast",
+    "Zak Londro",
+    "Home and away",
+    "Home and Away",
+    "Tameka and Bojana Main",
+    "tameka and bojana main",
+    "Home and away main cast",
+    "List of Home and Away crew members",
+    "home and away",
+    "home away",
+    "list of home and away crew members"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**. \n\nThis Australian television series has been airing since 1988 and is set in the fictional coastal town of Summer Bay, located in New South Wales. It's one of Australia's longest-running and most successful soap operas, known internationall"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**, the long-running Australian television soap opera that first aired in 1988."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**, an Australian soap that premiered in 1988. The show is set in the fictional coastal town of Summer Bay in New South Wales, Australia, and follows the lives of the town's residents. It was created by Alan Bateman and has become one of Austra"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Home and Away"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Summer Bay fictional town TV soap opera",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**, an Australian series that has been airing since 1988."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is \"Home and Away.\" It's an Australian television soap opera that has been airing since 1988. The show revolves around the lives of the people in the coastal town of Summer Bay and has been popular both in Australia and internationally."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in fictional town of Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The soap opera set in the fictional town of **Summer Bay** is **“Home and Away.”**"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in the fictional town of Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in the fictional town of Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is *Home and Away*."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**, an Australian drama that has been airing since 1988."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in fictional town of Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**. It is an Australian television series that has been airing since 1988, focusing on the lives of residents in the coastal town of Summer Bay."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in fictional town of Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**. This popular Australian soap opera has been airing since 1988 and follows the lives of residents in the coastal town of Summer Bay. It's one of Australia's longest-running and most successful television dramas, and has gained international"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Neighbours**. It's a long-running Australian television series that premiered in 1985 and is set in the fictional suburb of Summer Bay on the south coast of New South Wales. The show has been broadcast internationally and is particularly popular in the UK a"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**. It's an Australian television series that first aired in 1988 and is one of the longest-running soap operas in Australian television history. The show focuses on the lives, loves, and dramas of the residents of this coastal town in New Sout"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Neighbours**.\n\nNeighbours is an Australian television soap opera that first aired on 18th March 1985 on the Seven Network. The show is set in the fictional coastal town of Summer Bay, located in the state of Victoria. It has become one of the longest-runnin"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**.\n\nIt is an Australian soap opera that has been broadcast on the Seven Network since 1988."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The TV soap opera set in the fictional town of Summer Bay is **Home and Away**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The soap opera is **Home and Away** — the long-running Australian series is set in the fictional coastal town of **Summer Bay** in New South Wales."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in fictional town Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in fictional town Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in fictional town Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera set in Summer Bay",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "TV soap opera Summer Bay fictional town",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Home and Away is the Australian soap opera set in the fictional town of Summer Bay, located in New South Wales. It has been airing since 1988."
+    }
+  ]
+}

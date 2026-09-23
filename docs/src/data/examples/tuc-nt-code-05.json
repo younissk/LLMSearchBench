@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-code-05",
+  "bucket": "no_tool",
+  "subcategory": "code",
+  "source": "generated",
+  "sourceId": "nt-code-05",
+  "adversarial": false,
+  "prompt": "Write a Python function returning True if list elements are all unique, else False. Show your approach.",
+  "goldAnswer": [],
+  "rationale": "Standard algorithmic problem with well-known implementations, no external reference",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll write a Python function to check if all elements in a list are unique. Let me first think about the approach and then implement it.\n\n**Approach:**\n1. **Using a set**: Convert the list to a set and compare lengths. Since sets only contain unique elements, if the length of the set equals the length of the original l"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a Python function that checks if all elements in a list are unique:\n\n```python\ndef all_unique(lst):\n    \"\"\"\n    Returns True if all elements in the list are unique, otherwise False.\n    \n    Args:\n        lst (list): The input list to check.\n    \n    Returns:\n        bool: True if all elements are unique, False"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a clean Python function with two approaches — the concise set-based method and an explicit loop-based method for clarity.\n\n```python\ndef are_all_unique(lst):\n    \"\"\"\n    Return True if all elements in the list are unique, else False.\n    \n    Approach: Compare the length of the list with the length of a set"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"Python function returning True if list elements are all unique, else False"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Checking for Unique Elements in a List\n#### Approach\nTo check if all elements in a list are unique, we can compare the length of the original list to the length of a set created from the list. A set in Python is an unordered collection of unique elements.\n\n#### Code\n```python\ndef all_unique(lst):\n    \"\"\"\n    Return"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Checking if List Elements Are Unique in Python\n\nHere are a few approaches, from simplest to most efficient:\n\n## Approach 1: Using a Set (Most Common)\n\n```python\ndef all_unique(lst):\n    \"\"\"\n    Returns True if all elements in the list are unique, False otherwise.\n    \"\"\"\n    return len(lst) == len(set(lst))\n```\n\n**Ho"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Checking if List Elements Are Unique\n\nThere are several approaches to solve this problem. Let me show you the most common ones:\n\n## Approach 1: Using a Set (Most Pythonic & Efficient)\n\n```python\ndef are_all_unique(lst):\n    \"\"\"\n    Returns True if all elements in the list are unique, False otherwise.\n    Uses a set f"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a Python function that checks if all elements in a list are unique:\n\n```python\ndef are_all_elements_unique(lst):\n    return len(lst) == len(set(lst))\n```\n\nExplanation:\n\n1. `set(lst)` converts the list to a set, which automatically removes duplicate elements because sets only allow unique elements.\n2. `len(lst)`"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine if all elements in a list are unique, you can compare the length of the list with the length of the set created from the list. Sets in Python cannot contain duplicate elements, so if the lengths are the same, all elements in the list are unique. Here's a Python function that implements this approach:\n\n```p"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Approach**\n\nTo check whether all elements in a list are unique we can compare the size of the list with the size of a set built from that list:\n\n* A Python `set` automatically removes duplicate items.\n* If the original list contains no duplicates, the number of items in the set will be exactly the same as the number"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Approach**\n\nTo determine whether all elements in a list are unique, we can compare the length of the list with the length of a set created from that list.  \n- A set in Python automatically removes duplicate elements.  \n- If the list contains any duplicates, the set will be shorter than the original list.  \n- Therefor"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Below is a compact, idiomatic Python function that tells you whether every element in a list appears only once.\n\n```python\ndef all_unique(seq: list) -> bool:\n    \"\"\"\n    Return True if every element in *seq* is unique, otherwise False.\n\n    The implementation uses a set to keep track of the values we have already\n    s"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine if all elements in a list are unique, you can use a set to track the elements you've seen so far. If you encounter an element that is already in the set, you know that the list contains duplicates and can return `False`. If you finish iterating through the list without finding any duplicates, you can retur"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine if all elements in a list are unique, we can compare the length of the list with the length of a set created from the list. A set, by definition, contains only unique elements. If both lengths are equal, it means all elements in the list were unique.\n\nHere's a simple Python function to achieve this:\n\n```py"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\ndef are_all_unique(lst):\n    \"\"\"\n    Returns True if all elements in the list are unique, else False.\n    \n    Approach:\n    - Use a set to track seen elements.\n    - Iterate through the list.\n    - If an element is already in the set, return False.\n    - Otherwise, add the element to the set.\n    - If the lo"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine if all elements in a list are unique, we can leverage Python's `set` data structure, which automatically removes duplicates. Here's the solution:\n\n```python\ndef all_unique(lst):\n    \"\"\"Return True if all elements in the list are unique, else False.\"\"\"\n    return len(lst) == len(set(lst))\n```\n\n**Approach Ex"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\ndef are_all_unique(lst):\n    \"\"\"\n    Returns True if all elements in the list are unique, otherwise returns False.\n    \n    Approach:\n    - Use a set to track seen elements.\n    - Iterate through the list.\n    - If an element is already in the set, it's a duplicate, so return False.\n    - Otherwise, add the e"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine if all elements in a list are unique, we can leverage Python's `set` data structure, which automatically removes duplicates. The key insight is that if the length of the list equals the length of the set created from the list, all elements must be unique.\n\nHere's the implementation:\n\n```python\ndef all_uniq"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine if all elements in a list are unique, we can leverage the property of sets in Python, which automatically remove duplicate elements. By comparing the length of the original list to the length of a set created from the list, we can efficiently check for uniqueness. If the lengths are equal, all elements are"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine if all elements in a list are unique, we can leverage Python's built-in `set` data structure, which automatically removes duplicates. By comparing the length of the original list to the length of the set created from the list, we can efficiently check for uniqueness.\n\n### Approach\n1. **Convert the List to"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine whether all elements in a list are unique, we can use a set data structure in Python. A set automatically removes duplicate elements, so if the length of the set created from the list is equal to the length of the original list, then all elements in the list are unique.\n\nHere's the approach:\n1. Convert the"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Python Function to Check Unique Elements\n\nHere's a clean and efficient solution:\n\n```python\ndef all_unique(lst):\n    \"\"\"\n    Returns True if all elements in the list are unique, else False.\n    \"\"\"\n    return len(lst) == len(set(lst))\n```\n\n## How It Works\n\n1. **Convert to set**: `set(lst)` removes duplicates (sets on"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Python Function to Check if List Elements Are All Unique\n\nHere are several approaches to solve this problem, each with different trade-offs in terms of readability, performance, and memory usage.\n\n## Approach 1: Using Set (Most Pythonic)\n\n```python\ndef all_unique(lst):\n    \"\"\"Check if all elements in the list are uni"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Python Function to Check if All List Elements Are Unique\n\nHere's the most efficient and Pythonic approach:\n\n```python\ndef all_unique(lst):\n    \"\"\"\n    Returns True if all elements in the list are unique, False otherwise.\n    \"\"\"\n    return len(lst) == len(set(lst))\n```\n\n## How It Works\n\n1. **`set(lst)`** - Converts t"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a Python function that returns `True` if all elements in a list are unique, and `False` otherwise. I'll show you the most efficient and Pythonic approach, along with alternative methods and their trade-offs.\n\n### ✅ Recommended Approach: Set Length Comparison\n\n```python\ndef are_all_unique(lst):\n    \"\"\"\n    Return"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are the three most common ways to solve this, ranging from the most \"Pythonic\" to the most algorithmic.\n\n### Approach 1: The Pythonic Way (Using Sets)\nThis is the standard approach. A Python `set` is a collection that only allows unique elements. If we convert a list to a set, any duplicates are automatically remo"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\ndef all_unique(lst):\n    \"\"\"\n    Return True if all elements in lst are unique, otherwise False.\n    \"\"\"\n    return len(set(lst)) == len(lst)\n```\n\n### Approach\n\n1. Convert the list to a set.\n2. A set automatically removes duplicate values.\n3. If the length of the set is the same as the length of the original"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a clean, Pythonic approach using a `set` to detect duplicates in O(n) time.\n\n```python\ndef all_unique(lst):\n    \"\"\"\n    Return True if all elements in lst are unique, else False.\n    \"\"\"\n    return len(lst) == len(set(lst))\n\n# Examples\nprint(all_unique([1, 2, 3, 4]))   # True\nprint(all_unique([1, 2, 2, 4]))   #"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are two common ways, from simplest to most robust.\n\n### Approach 1: Compare lengths with a `set`\nA `set` keeps only unique elements. If the original list and the set have the same length, there were no duplicates.\n\n```python\ndef all_unique(lst):\n    return len(lst) == len(set(lst))\n```\n\n- **How it works**: `set(ls"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To check if all elements in a Python list are unique, the most efficient and \"Pythonic\" approach is to leverage the properties of a **set**. \n\nIn Python, a set is a collection that cannot contain duplicate elements. By converting the list to a set, we can simply compare the length of the original list to the length of"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Approach\n\nTo check if all elements in a list are unique, the simplest approach is to compare the length of the list with the length of a set created from that list. A set automatically removes duplicate elements, so if the lengths differ, there are duplicates.\n\nAlternatively, we can iterate through the list while ma"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Checking if List Elements Are All Unique\n\n## Approach 1: Set Comparison (Simplest & Most Pythonic)\n\nA set only stores unique elements. If converting the list to a set changes its length, there were duplicates.\n\n```python\ndef all_unique(lst):\n    return len(lst) == len(set(lst))\n```\n\n- **Time:** O(n)\n- **Space:** O(n)"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Python Function to Check if List Elements are Unique\n\nHere are several approaches, from simplest to most optimized:\n\n## Approach 1: Using Set Length Comparison (Most Pythonic)\n\n```python\ndef all_unique(lst):\n    \"\"\"\n    Returns True if all elements in the list are unique, else False.\n    \n    Approach: Compare length"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's my approach, starting with the simplest idea and building up.\n\n## Approach 1: Set comparison (simplest)\n\nA set can only contain unique values, so if converting the list to a set doesn't shrink it, everything was unique:\n\n```python\ndef all_unique(items):\n    return len(items) == len(set(items))\n```\n\n- **Time:** O"
+    }
+  ]
+}

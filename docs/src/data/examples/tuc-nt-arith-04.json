@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-04",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-04",
+  "adversarial": false,
+  "prompt": "January 15 is Wednesday. What day is January 24?",
+  "goldAnswer": [],
+  "rationale": "Day of week arithmetic using modulo; no calendar lookup needed.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "January 15 Wednesday January 24 day of week calculation",
+      "callProblem": "",
+      "answerExcerpt": "I'll help you figure out what day January 24 is if January 15 is Wednesday.\n\nLet me calculate this step by step:\n\nJanuary 15 is Wednesday\nJanuary 16 would be Thursday (1 day later)\nJanuary 17 would be Friday (2 days later)\nJanuary 18 would be Saturday (3 days later)\nJanuary 19 would be Sunday (4 days later)\nJanuary 20"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me figure this out step by step.\n\nJanuary 15 is Wednesday.\n- January 16 = Thursday\n- January 17 = Friday\n- January 18 = Saturday\n- January 19 = Sunday\n- January 20 = Monday\n- January 21 = Tuesday\n- January 22 = Wednesday\n- January 23 = Thursday\n- January 24 = Friday\n\nSo January 24 is **Friday**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 is **Friday**.\n\nHere's the step-by-step reasoning:\n\n1. **Calculate the number of days between January 15 and January 24**:  \n   January 24 - January 15 = **9 days**.\n\n2. **Determine how many weeks and extra days this represents**:  \n   Since there are 7 days in a week, divide 9 by 7:  \n   9 ÷ 7 = **1 week an"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"January 24, 2024 day of the week"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find out what day January 24 is, we can count the days from January 15. \n\nJanuary 15 is a Wednesday. \nJanuary 16 is a Thursday. \nJanuary 17 is a Friday. \nJanuary 18 is a Saturday. \nJanuary 19 is a Sunday. \nJanuary 20 is a Monday. \nJanuary 21 is a Tuesday. \nJanuary 22 is a Wednesday. \nJanuary 23 is a Thursday. \nJanua"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 falls on **Friday**.  \n\n(From Jan 15 (Wednesday) add 9 days; 9 mod 7 = 2, so two days forward → Thursday → **Friday**.)"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 is a Friday.\n\nFrom Jan 15 (Wed) to Jan 24 is 9 days later. 9 ÷ 7 = 1 week + 2 days, so Wednesday + 2 days = **Friday**."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "January 24, 2024 is a Thursday.",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If January 15 is a Wednesday, then:\n\n- January 16 is Thursday\n- January 17 is Friday\n- January 18 is Saturday\n- January 19 is Sunday\n- January 20 is Monday\n- January 21 is Tuesday\n- January 22 is Wednesday\n- January 23 is Thursday\n- January 24 is Friday\n\nSo, January 24 is a Friday."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 falls **9 days** after January 15. Since 9 mod 7 = 2, we move two days forward from Wednesday, landing on **Friday**."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 is a Friday."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 falls **two days after Wednesday**, so it is a **Friday**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "day of the week for January 24, given January 15 is Wednesday",
+      "callProblem": "",
+      "answerExcerpt": "To find out the day of the week for January 24, given that January 15 is a Wednesday, we can count the number of days between these two dates and determine the day of the week accordingly. Let's calculate it."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "day of week calculation from wednesday 15 to 24",
+      "callProblem": "",
+      "answerExcerpt": "We can calculate the day of the week for January 24 by counting the number of days from January 15 and then finding the corresponding day of the week. January 15 is a Wednesday, so we need to count 9 more days (since 24 - 15 = 9).\n\nLet's do this calculation."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 15 is a Wednesday. To find the day of the week for January 24, we can count the number of days between January 15 and January 24.\n\nJanuary 24 - January 15 = 9 days.\n\nNow, divide 9 by 7 (since there are 7 days in a week) to find the number of weeks and extra days:\n9 ÷ 7 = 1 week and 2 extra days.\n\nStarting from"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 15 is Wednesday. To find January 24:\n\n- Days between: 24 - 15 = 9 days\n- 9 days = 1 week (7 days) + 2 days\n- Wednesday + 2 days = Friday\n\nAnswer: January 24 is **Friday**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 15 is a Wednesday. To find out what day January 24 is, we can count the number of days between January 15 and January 24:\n\n- January 15 to January 24 is 9 days later.\n\nNow, let's count 9 days from Wednesday:\n- 1 day after Wednesday is Thursday\n- 2 days after Wednesday is Friday\n- 3 days after Wednesday is Satur"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 15 is Wednesday. To find the day of January 24:\n\n- From January 15 to January 24 is 9 days later.\n- 7 days after Wednesday is another Wednesday (January 22).\n- Adding 2 more days: Wednesday → Thursday (23rd) → Friday (24th).\n\n**Answer: January 24 is a Friday.**"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 15th of January is a Wednesday. Adding 9 days to reach the 24th (15 + 9 = 24) means advancing one week (7 days) plus 2 days. Wednesday + 7 days = Wednesday (same day), then adding 2 more days: **Thursday** and **Friday**. \n\nThus, **January 24 is a Friday**."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 15 is a Wednesday. January 24 is 9 days later. Since 9 divided by 7 leaves a remainder of 2, January 24 is 2 days after Wednesday. \n\nWednesday + 2 days = **Friday**.\n\nAnswer: Friday."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 is a **Friday**.\n\nHere's the calculation:\n- January 15 = Wednesday\n- January 24 is 9 days later\n- 9 days = 1 week (7 days) + 2 days\n- Wednesday + 2 days = Friday"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation - no need to search!\n\nIf January 15 is Wednesday, then:\n- January 24 is **9 days later** (24 - 15 = 9)\n- Since there are 7 days in a week, 9 days = 1 week + 2 extra days\n- Wednesday + 2 days = **Friday**\n\n**January 24 is Friday.**"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If January 15 is Wednesday, then January 24 is **Friday**.\n\nHere's the calculation:\n- January 24 - January 15 = 9 days later\n- 9 days = 1 week (7 days) + 2 days\n- Wednesday + 2 days = Friday"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 is a **Friday**.\n\nHere's how I calculated it:\n- January 15 = Wednesday\n- January 24 is 9 days later\n- 9 days = 1 week + 2 days\n- Wednesday + 2 days = Friday\n\nSo January 24 falls on a Friday."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 is a **Friday**.\n\nHere is the breakdown:\n1.  There are 9 days between January 15 and January 24 ($24 - 15 = 9$).\n2.  Since there are 7 days in a week, you can subtract 7 from 9 to find the remainder: $9 - 7 = 2$.\n3.  Counting 2 days forward from Wednesday (Thursday, Friday) lands you on Friday."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 24 is **Friday**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 15 is Wednesday. From the 15th to the 24th is 9 days later.\n\n9 ÷ 7 = 1 week and 2 days.\n\nWednesday + 2 days = **Friday**.\n\nSo January 24 is a **Friday**."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Since January 15 is a Wednesday, count forward:\n\n- 16: Thursday  \n- 17: Friday  \n- 18: Saturday  \n- 19: Sunday  \n- 20: Monday  \n- 21: Tuesday  \n- 22: Wednesday  \n- 23: Thursday  \n- **24: Friday**\n\nOr simply: 24 − 15 = 9 days later. 9 mod 7 = 2, so Wednesday + 2 days = **Friday**.\n\n**Answer: Friday**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "January 15 is Wednesday, and January 24 is 9 days later. Since 9 days is one full week plus two extra days, we add two days to Wednesday:\n\n- Wednesday + 1 day = Thursday  \n- Wednesday + 2 days = Friday\n\nSo **January 24 is a Friday**. 😊"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If January 15 is a Wednesday, then January 24 is **Friday**.\n\nHere’s a quick way to see it:  \nFrom the 15th to the 24th is 9 days later.  \n9 days = 1 week (7 days) + 2 extra days.  \nWednesday + 2 days = Friday.\n\nYou can also count day by day:  \n- 15th (Wed) → 16th (Thu) → 17th (Fri) → 18th (Sat) → 19th (Sun) → 20th (Mo"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If January 15 is Wednesday, then January 24 is **Friday**.\n\nHere's how to figure it out:\n- From January 15 to January 24 is 9 days\n- 9 days = 1 week + 2 days\n- Wednesday + 2 days = Friday"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**January 24 is a Friday.**\n\nHere's the reasoning: January 24 is 9 days after January 15. Since 9 days = 1 full week (7 days) + 2 extra days, you just move 2 days forward from Wednesday:\n\n- Wednesday + 2 days = **Friday**\n\nYou can also count it out: Jan 15 (Wed) → Jan 22 (Wed, one week later) → Jan 23 (Thu) → Jan 24 (F"
+    }
+  ]
+}

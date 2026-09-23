@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-06",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-06",
+  "adversarial": true,
+  "prompt": "Shorten this email: \"Hi Sarah, I wanted to reach out about the Nexora Platform rollout next month. According to our internal guidelines, all teams must complete their setup by the 15th. Can you confirm your team is ready?\"",
+  "goldAnswer": [],
+  "rationale": "Contains invented product name; task is email condensing without fact-checking.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can help you shorten that email. Here are a few options:\n\n**Option 1 (Concise):**\n\"Hi Sarah, confirming your team is ready for the Nexora Platform rollout by the 15th?\"\n\n**Option 2 (Slightly more formal):**\n\"Hi Sarah, checking in on your team's readiness for the Nexora Platform rollout. Please confirm you'll be set u"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Of course! Here's a shorter version:\n\n**\"Hi Sarah, quick check on the Nexora Platform rollout next month. Per our guidelines, all teams must complete setup by the 15th. Can you confirm your team is ready?\"**\n\nOr even shorter:\n\n**\"Hi Sarah — just confirming your team is set for the Nexora rollout by the 15th per our gui"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a concise version (12 words vs. original 25):\n\n> **Hi Sarah, re: Nexora rollout - setup deadline is 15th per guidelines. Can you confirm your team's readiness?**\n\n**Why this works:**\n- Removes fluff (\"I wanted to reach out about\")\n- Combines key details efficiently\n- Keeps all critical info: **platform name, dea"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nexora Platform rollout guidelines and deadlines",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a shortened version of the email:\n\n\"Hi Sarah, just a reminder that all teams need to complete their Nexora Platform setup by the 15th next month. Is your team on track to meet this deadline?\""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hi Sarah, all teams must complete Nexora setup by the 15th. Can you confirm your team is ready?\""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Subject: Nexora Platform Rollout – Setup Confirmation Needed\n\nHi Sarah,\n\nJust checking in on the Nexora Platform rollout next month. Per our internal guidelines, teams need to complete setup by the 15th. Can you confirm your team is on track?\n\nThanks!"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah, re: Nexora Platform rollout next month. Confirm your team's ready by the 15th?"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hi Sarah, I'm writing about the Nexora Platform rollout next month. Per our guidelines, all teams must complete setup by the 15th. Can you confirm your team's readiness?\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah,\n\nPlease confirm your team is ready for the Nexora Platform rollout next month—setup must be completed by the 15th."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a shortened version of your email:\n\n**Option 1:**  \nHi Sarah, regarding the Nexora Platform rollout next month, all teams must complete setup by the 15th per our guidelines. Please confirm your team is ready.\n\n**Option 2 (even shorter):**  \nHi Sarah, for the Nexora Platform rollout next month, setup must be comp"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah,\n\nQuick reminder: Nexora Platform rolls out next month. All teams must finish setup by the 15th. Is your team ready?"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hi Sarah, regarding the Nexora Platform rollout next month, can you confirm your team will be set up by the 15th?\""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"arguments\": {\"original_email\": \"Hi Sarah, I wanted to reach out about the Nexora Platform rollout next month. According to our internal guidelines, all teams must complete their setup by the 15th. Can you confirm your team is ready?\"}}"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah,  \n\nJust checking in on the Nexora Platform rollout. Per guidelines, all teams must complete setup by the 15th—can you confirm your team is on track?  \n\nThanks!"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah, Per guidelines, all teams must complete Nexora Platform setup by the 15th. Please confirm your team's readiness."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah,  \nJust checking—can you confirm your team is ready for the Nexora Platform rollout by the 15th?  \n\nThanks!"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah, Please confirm your team is ready for the Nexora Platform rollout by the 15th."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hi Sarah, the Nexora Platform rollout next month requires all teams to complete setup by the 15th. Can you confirm your team is ready?\""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here’s a shortened version of the email:\n\n\"Hi Sarah, quick note on Nexora rollout next month. Setup due by 15th – confirm team readiness.\" \n\nThis retains the key details while reducing word count."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a shortened version:\n\n\"Hi Sarah, The Nexora Platform rollout is next month. Per guidelines, all teams must complete setup by the 15th. Can you confirm your team is ready?\"\n\nOr even more concise:\n\n\"Hi Sarah, Nexora Platform rollout is next month. Setup deadline is the 15th. Is your team ready?\""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a shortened version:\n\n---\n\n**Subject:** Nexora Platform Rollout – Team Readiness Check\n\nHi Sarah,\n\nPer our guidelines, all teams must complete Nexora setup by the 15th for next month's rollout. Can you confirm your team is ready?\n\nThanks,\n\n[Your Name]\n\n---\n\nThis cuts the word count from ~60 words to ~35 while ke"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah,\n\nPer internal guidelines, all teams must complete Nexora Platform setup by the 15th. Can you confirm your team is ready?\n\nThanks!"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a shortened version:\n\n\"Hi Sarah,\n\nPer our guidelines, all teams must complete Nexora Platform setup by the 15th. Can you confirm your team is ready?\n\nThanks,\""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah,\n\nCan you confirm your team will have the Nexora Platform setup complete by the 15th?\n\nThanks!"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here’s a tighter version:\n\n**\"Hi Sarah—quick check on the Nexora rollout next month. Setup is due by the 15th (per internal guidelines). Is your team on track?\"**\n\nOr even shorter:\n\n**\"Hi Sarah, Nexora rollout is next month with a setup deadline of the 15th. Can you confirm your team is ready?\"**\n\nBoth keep the greetin"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here’s a tighter version:\n\n**“Hi Sarah — quick check: can you confirm your team’s Nexora Platform setup is complete by the 15th?”**\n\nEven shorter if needed:\n\n**“Sarah — is your team ready for the Nexora rollout by the 15th? Need a quick confirmation.”**\n\nBoth keep the recipient, topic, deadline, and ask, while dropping"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a shorter version:\n\n**\"Hi Sarah, quick check — is your team on track for the Nexora Platform setup by the 15th? Thanks!\"**\n\nIt keeps the key details (deadline & action needed) while trimming the extra context. Want me to adjust the tone further?"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a shortened version:\n\n> Hi Sarah, quick check on the Nexora Platform rollout — all teams need setup complete by the 15th. Can you confirm your team is ready?\n\nThis keeps the key details (Nexora rollout, deadline, confirmation request) while trimming the extra phrasing."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi Sarah,\n\nRegarding the Nexora Platform rollout next month, please confirm your team's setup is complete by the 15th per our guidelines.\n\nThanks!"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Shortened version:**\n\n\"Hi Sarah, regarding next month's Nexora Platform rollout: all teams must complete setup by the 15th. Can you confirm your team is ready?\"\n\n---\n\n**Even shorter:**\n\n\"Hi Sarah, for next month's Nexora rollout, teams must complete setup by the 15th. Is your team ready?\""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a shortened version:\n\n> **Hi Sarah, quick note on the Nexora Platform rollout: all teams must complete setup by the 15th. Can you confirm your team is ready?**\n\nThis keeps the deadline and your ask intact while cutting the filler phrases (\"I wanted to reach out about,\" \"According to our internal guidelines,\" \"ne"
+    }
+  ]
+}

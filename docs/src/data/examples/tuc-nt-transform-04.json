@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-04",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-04",
+  "adversarial": false,
+  "prompt": "Fix the grammar: \"She dont know why he was late to the meeting yesterday and she was worry about what happened.\"",
+  "goldAnswer": [],
+  "rationale": "Grammar correction uses only language rules, no external lookup needed.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "grammar correction \"she dont know\" \"she was worry\" correct verb forms",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for the correct grammar rules to fix this sentence properly."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected version of your sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\nHere's a breakdown of the changes:\n\n1. **\"dont\" → \"doesn't\"** — The third-person singular subject \"she\" requires \"doesn't\" (does not) instead of \"don't.\"\n2. **\"worry"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late for the meeting yesterday, and she is worried about what happened.\"**\n\n**Corrections made:**\n\n1. **\"dont\" → \"doesn't\"** — The subject \"she\" requires the third-person singular form of the verb.\n2. **\"was worry\" → \"is worried\"** — \"Worry\" is a verb, but"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"Correct grammar for She dont know why he was late to the meeting yesterday and she was worry about what happened.\""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence would be:\n\n\"She doesn't know why he was late to the meeting yesterday and she was worried about what happened.\"\n\nCorrected errors:\n\n- \"dont\" -> \"doesn't\" (subject-verb agreement and correct use of contraction)\n- \"worry\" -> \"worried\" (correct verb form to match the sentence's tense)"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday and she was worried about what happened.\"**\n\n**Changes made:**\n\n1. \"dont\" → \"doesn't\" (subject-verb agreement: third-person singular)\n2. \"worry\" → \"worried\" (correct form of the adjective or past continuous tense)"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected version:\n\n\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"\n\n**Corrections made:**\n\n1. **\"dont\" → \"doesn't\"** – With third-person singular subjects (he, she, it), the present tense needs the \"-s\" ending. \"Don't\" is used with I, you, we, or they."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "固定文法：她不知道他昨天为什么迟到开会，她为发生的事情担心。"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the corrected sentence: \"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "She doesn't know why he was late to the meeting yesterday, and she was worried about what happened."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "She doesn't know why he was late to the meeting yesterday, and she was worried about what happened."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "She doesn’t know why he was late to the meeting yesterday, and she was worried about what had happened."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is: \"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence would be: \"She doesn't know why he was late to the meeting yesterday and she is worried about what happened.\"\n\nHere's a brief explanation of the corrections:\n1. \"dont\" should be changed to \"doesn't\" for proper contraction of \"does not.\"\n2. \"worry\" should be changed to \"worried\" to agree with the"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "She doesn't know why he was late to the meeting yesterday, and she was worried about what happened."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is:  \n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\n### Key fixes:\n1. **\"dont\" → \"doesn't\"**: Third-person singular (\"she\") requires the contraction *\"doesn't\"* (not *\"dont\"*).  \n2. **\"worry\" → \"worried\"**: After *\"was\"*, the correct ad"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "She doesn't know why he was late to the meeting yesterday, and she was worried about what happened."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "She doesn't know why he was late to the meeting yesterday and she was worried about what happened."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is: \"She doesn't know why he was late to the meeting yesterday and she was worried about what happened.\" \n\nNo tools were needed for this grammar correction."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is: \"She doesn't know why he was late to the meeting yesterday and she was worried about what happened.\"\n\nChanges made:\n1. \"dont\" → \"doesn't\" (correct contraction for third-person singular)\n2. \"was worry\" → \"was worried\" (correct past participle form)"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday and she was worried about what happened.\"**\n\n**Corrections made:**\n1. **\"dont\" → \"doesn't\"** - Third person singular requires \"doesn't\" (she doesn't), not \"don't\"\n2. **\"worry\" → \"worried\"** - The past tense adjective form is ne"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\n**Corrections made:**\n1. **\"dont\" → \"doesn't\"** - Subject-verb agreement: \"She\" (third person singular) requires \"doesn't\" not \"don't\"\n2. **\"worry\" → \"worried\"** - After \"was,\" you"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\n**Errors fixed:**\n1. **\"dont\" → \"doesn't\"** – Subject-verb agreement (third person singular requires \"doesn't\")\n2. **\"worry\" → \"worried\"** – After \"was,\" you need the adjective/past"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday and she was worried about what happened.\"**\n\n**Changes made:**\n1. **\"dont\" → \"doesn't\"** - The subject \"she\" requires the third-person singular form \"doesn't\" (not \"dont\")\n2. **\"worry\" → \"worried\"** - After \"was,\" you need the"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few ways to fix the sentence, depending on the tense you want to use:\n\n**Option 1: Present tense (She still doesn't know)**\n> \"She **doesn't** know why he was late to the meeting yesterday, and she was **worried** about what happened.\"\n\n**Option 2: Past tense (She didn't know at that time)**\n> \"She **didn't*"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "She didn’t know why he was late to the meeting yesterday, and she was worried about what happened."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the corrected sentence:\n\n**\"She doesn't know why he was late for the meeting yesterday, and she was worried about what happened.\"**\n\nChanges made:\n- **\"She dont know\"** → **\"She doesn't know\"** (third-person singular needs *doesn't*)\n- **\"late to the meeting\"** → **\"late for the meeting\"** (more standard prepos"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are the fixes:\n\n**Corrected:**  \n\"She **didn't** know why he was late to the meeting yesterday, and she **was worried** about what **had happened**.\"\n\n**What changed:**\n- **\"dont\" → \"didn't\"** (or \"doesn't\" if she still doesn't know; \"didn't\" matches the past context of \"yesterday\")\n- **\"was worry\" → \"was worried\""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\nHere are the fixes I made:\n\n1. **\"don't\" → \"doesn't\"** — Since \"she\" is a third-person singular subject, it requires \"doesn't\" instead of \"don't.\"\n\n2. **\"worry\" → \"worried\"** — Afte"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\nHere are the two fixes:\n\n1. **\"dont\" → \"doesn't\"** — Third-person singular subjects (she/he/it) require *doesn't* (does not).\n2. **\"was worry\" → \"was worried\"** — The past participl"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is:\n\n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\n**Changes made:**\n1. **\"dont\" → \"doesn't\"** (or \"does not\") — \"She\" is third-person singular, so it needs the auxiliary verb \"does\" with the contraction \"doesn't.\"\n2. **\"was worry\" → \"w"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\nThe errors were:\n1. **\"dont\"** → **\"doesn't\"** (subject-verb agreement with \"she\")\n2. **\"was worry\"** → **\"was worried\"** (correct past tense form)\n\nI also added a comma before \"and"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"She doesn't know why he was late to the meeting yesterday, and she was worried about what happened.\"**\n\nThe fixes:\n1. **\"dont\" → \"doesn't\"** — third-person singular subjects (she/he/it) take \"doesn't,\" not \"don't,\" and the apostrophe is needed.\n2. **\"was worry\" → \"was worried\"** — \"wo"
+    }
+  ]
+}

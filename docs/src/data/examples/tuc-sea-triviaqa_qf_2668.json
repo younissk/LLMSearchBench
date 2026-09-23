@@ -1,0 +1,373 @@
+{
+  "id": "tuc-sea-triviaqa_qf_2668",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_qf_2668",
+  "adversarial": false,
+  "prompt": "Beaufort who created The Wind Scale had which profession ?",
+  "goldAnswer": [
+    "Sailor",
+    "expert seamen",
+    "Sailors",
+    "Mariner",
+    "seafarer",
+    "Boatmen",
+    "boatmen",
+    "Seafarers",
+    "Boatmanship",
+    "mariner",
+    "Seafarer",
+    "Expert seamen",
+    "sailor",
+    "seafarers",
+    "merchant mariner",
+    "boatmanship",
+    "sailors",
+    "Merchant mariner"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort Wind Scale creator profession",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Beaufort and his profession."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Sir Francis Beaufort profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Francis Beaufort, who created the Beaufort Wind Scale in 1805, was a **hydrographer and officer in the Royal Navy** (he eventually rose to the rank of Rear Admiral).\n\nHe was born in Ireland in 1774 and joined the Royal Navy at a young age. He became particularly renowned as a **hydrographer** — a scientist who studies"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort wind scale creator profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort created the wind scale profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Francis Beaufort (1774–1857), creator of the **Beaufort Scale**, was a **British Royal Navy officer and hydrographer**. He served as a naval officer for much of his career and later became the **Hydrographer of the Navy**, overseeing the charting of coastlines and waters for the Royal Navy. His famous wind scale, devel"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort scale creator profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Beaufort Scale, which is a measure of wind force, was created by Sir Francis Beaufort, who was a hydrographer and later an admiral in the British Royal Navy. His profession was primarily in the field of naval hydrography and cartography."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sir Francis Beaufort, the creator of the Beaufort Wind Scale, was a **British naval officer** (a Royal Navy captain who later rose to the rank of rear‑admiral)."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Francis Beaufort profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sir Francis Beaufort was a **Royal Navy officer and hydrographer**—he served as the Admiralty’s hydrographer and is best known for inventing the Beaufort wind‑force scale."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort who created The Wind Scale profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort Wind Scale profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort who created The Wind Scale profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort Wind Scale creator profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort Wind Scale creator profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Francis Beaufort profession creator of Beaufort Wind Scale",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort Wind Scale creator profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Beaufort Wind Scale was created by Sir Francis Beaufort, who was a **naval officer** and **hydrographer** in the British Royal Navy. His profession was primarily tied to maritime navigation and naval affairs. \n\n<final_answer>\nSir Francis Beaufort was a naval officer and hydrographer.\n</final_answer>"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort Wind Scale creator profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sir Francis Beaufort, who created the Beaufort Wind Scale, was a **British naval officer and hydrographer**. He served in the Royal Navy and later became the Hydrographer of the Admiralty. The wind scale he developed in 1805 was designed to provide a standardized way of describing wind speeds based on observed sea cond"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sir Francis Beaufort, who created the Beaufort Wind Scale, was an **Irish hydrographer and Royal Navy officer**. He served as a naval officer and later became the Hydrographer of the Navy. The Beaufort Wind Scale, which measures wind speed based on observed sea conditions, was developed in 1805 and officially adopted b"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sir Francis Beaufort, who created the Beaufort Wind Scale in 1805, was a **British naval officer** (specifically in the Royal Navy) and **hydrographer**. He later became the Hydrographer of the Navy, serving in that position from 1829 to 1855. The wind scale he developed became widely used for describing wind intensity"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Francis Beaufort, who created the Beaufort Wind Scale, was a **British admiral** and **hydrographer**. He served in the Royal Navy and is best known for developing the Beaufort scale in 1805, which is still used today to estimate wind speed based on observed sea conditions.\n\nHe was also a pioneer in oceanography and se"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort who created The Wind Scale profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Francis Beaufort, who created the Beaufort wind force scale in 1806, was a **Royal Navy officer and hydrographer** (an Irish-born naval officer who served as Hydrographer of the UK)."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Francis Beaufort profession created Beaufort scale",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Francis Beaufort profession created wind scale",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort who created The Wind Scale profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort who created The Wind Scale profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort wind scale creator profession",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Beaufort Wind Scale creator profession Francis Beaufort",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Sir Francis Beaufort** (1774–1857) was a **naval officer and hydrographer**. He was an Irish-born admiral in the British Royal Navy who served as the official Hydrographer of the Navy.\n\nHe devised the Beaufort Wind Force Scale around 1805, which measured wind speed based on observable conditions at sea (such as the s"
+    }
+  ]
+}

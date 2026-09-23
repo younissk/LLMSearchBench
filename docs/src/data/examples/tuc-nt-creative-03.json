@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-03",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-03",
+  "adversarial": false,
+  "prompt": "Suggest five creative metaphors for 'confusion' using different animals as comparisons.",
+  "goldAnswer": [],
+  "rationale": "Metaphor generation is a creative invention task, not research.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "creative animal metaphors for confusion comparison",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for creative animal metaphors for confusion to provide you with some interesting and varied examples."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for \"confusion\" using different animals:\n\n1. **\"A cat chasing its own tail\"** – Confusion as a futile, circular loop where you're frantically trying to catch something that's always just out of reach, going nowhere fast.\n\n2. **\"A flock of startled starlings\"** – Confusion as a sudden, c"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five **original, vivid metaphors for \"confusion\"** using unexpected animal behaviors—each highlighting a *different facet* of disorientation (mental fog, scattered focus, paralysis, etc.). I avoided clichés (\"confused as a chameleon\") and focused on **lesser-known animal traits** for freshness:\n\n---\n\n### 1. **"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "creative metaphors for confusion using different animals",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for 'confusion' using different animals as comparisons:\n\n1. \"Her mind was a monkey, swinging wildly from thought to thought, never quite grasping what was real.\" (This metaphor suggests a sense of chaotic and unpredictable thinking.)\n2. \"He felt like a lost puppy, wandering around in ci"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Five animal‑based metaphors for confusion**\n\n- **A moth in a hurricane of porch lights** – each flickering glow seems to promise direction, yet none leads anywhere.  \n- **An octopus tangled in its own tentacles** – every arm pulls toward a different desire, leaving the mind tied in knots.  \n- **A goldfish circling a"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for **confusion**, each using a different animal:\n\n1. **A herd of startled deer caught in headlights** — Standing frozen, eyes glazed, trying to process too much at once with no clear path forward.\n\n2. **An octopus juggling its own tentacles** — Attempting to manage multiple thoughts, t"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. Confusion is like a cat on a hot tin roof, pacing nervously and unsure which way to turn.\n2. Confusion is like a squirrel trying to cross a busy highway, darting in one direction, then another, unable to make a decision.\n3. Confusion is like a goldfish in a bowl, swimming in circles, unable to find its way out or un"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **A Chicken with its Head Cut Off**: This metaphor captures the frantic, aimless movement and lack of direction that often accompany confusion. Just as a chicken runs wildly without a clear purpose, a confused person may flail about, unsure of what to do or where to go.\n\n2. **A Deer Caught in Headlights**: This meta"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "creative animal metaphors for confusion",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **A flock of pigeons in a wind tunnel** – every bird flutters in its own direction, yet the whole group spirals, never settling on a single path.  \n2. **A dolphin tangled in a net of seaweed** – the creature’s sleek, purposeful glide is suddenly interrupted by a maze of green strands, leaving it flopping and searchi"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. Being as lost as a sheep without its shepherd, wandering aimlessly without direction.\n2. Feeling like a fish out of water, floundering to find its bearings in an unfamiliar environment.\n3. As disoriented as a rabbit caught in headlights, frozen and unsure of which way to turn.\n4. Like a cat chasing its own tail, goi"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here are five creative metaphors for 'confusion' using different animals as comparisons:\n\n1. Feeling like a bee lost in a labyrinth of flowers.\n2. Like a fish out of water trying to navigate a desert.\n3. As bewildered as a cat in a room full of rocking chairs.\n4. Feeling like a bird with a broken wing trying to f"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **Confusion is a school of sardines darting in all directions** – a tightly packed group moving unpredictably, each tiny fish reacting to the one beside it, creating swirling chaos with no clear path.\n\n2. **Confusion is an octopus in a maze of mirrors** – intelligent and flexible, yet overwhelmed by endless reflecti"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Confusion is an octopus juggling its own tentacles in a hurricane.  \nConfusion is a bee trapped in a sunlit window, mistaking glass for sky.  \nConfusion is a chameleon frantically shifting colors to match a kaleidoscope.  \nConfusion is a penguin stumbling across a desert, chasing mirages of ice.  \nConfusion is a hummin"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "creative metaphors for confusion using animals",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for 'confusion' using different animals:\n\n1. **A spider tangled in its own web**, each thread a question with no answer.  \n2. **An octopus swimming through a storm of its own ink**, unable to see the path ahead.  \n3. **A squirrel darting between branches**, each leap a wrong turn in a f"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **Confusion is a squirrel in a maze** – darting in every direction at once, yet never finding the exit.  \n2. **Confusion is a flock of starlings in a thunderstorm** – twisting and turning without a leader, caught in a chaotic dance.  \n3. **Confusion is a jellyfish in a rip current** – pulsing with effort, yet drifti"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for \"confusion\" using different animals:\n\n1. **A spider web caught in a storm** – tangled, frayed, and spiraling into chaos, much like thoughts entangled in confusion.  \n2. **A lost puppy chasing its tail in a maze** – bewildered, looping endlessly without direction.  \n3. **An octopus t"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for 'confusion' using different animals as comparisons:\n\n1. **Confusion is a cat in a room full of laser pointers** – Just as a cat might dart around frantically trying to catch multiple moving lights, confusion can make someone feel like they're chasing several ideas or directions at o"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for 'confusion' using different animals:\n\n1. **A cat in a room full of mirrors** – Like a feline seeing endless reflections of itself, confusion multiplies your thoughts until you can't tell which version of reality is real.\n\n2. **A deer caught in headlights** – Frozen between multiple"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for 'confusion' using different animals:\n\n1. **Like a hedgehog rolled into a ball** — spinning in tight circles, bristling with questions but unable to see which way is forward, trapped in your own protective confusion.\n\n2. **Like a moth circling a flame** — drawn toward every possible"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for confusion using different animals:\n\n1. **\"His mind was a moth trapped between three porch lights, fluttering frantically toward each glow but settling on none.\"**\n\n2. **\"She felt like a hermit crab that had outgrown its shell—exposed, vulnerable, and scrambling to find a home that f"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for 'confusion' using different animals:\n\n1. **A Lost Bird in a Storm**\n   \"Confusion is like a lost bird caught in a storm—wings beating furiously against the wind, circling the same empty sky, unable to find the path home.\"\n\n2. **A Tangled Octopus**\n   \"Confusion is a tangled octopus,"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for confusion using different animals:\n\n1.  **The Octopus:** \"Her thoughts were an **octopus** trying to tie its own shoelaces, eight limbs tangling into a chaotic knot of ink and noise.\"\n2.  **The Bat:** \"His understanding was a **bat** in a soundproof room, flailing through the dark,"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five animal metaphors for confusion, each capturing a different flavor of being lost:\n\n1. **A chameleon in a kaleidoscope** — turning every which way, trying to match a color that keeps shifting, never settling on what it's supposed to be.\n\n2. **A bat in a lighthouse** — sending out every echo it has, but the"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative animal metaphors for confusion:\n\n1. **A chameleon dropped into a bag of Skittles** — constantly shifting to match its surroundings, yet never blending in, overwhelmed by a rainbow of contradictory signals.\n\n2. **A cat locked in a hall of laser pointers** — darting frantically from dot to dot, mus"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "creative metaphors for confusion using animals",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative animal metaphors to capture the feeling of confusion:\n\n1. **Like a bat in a room full of ceiling fans** – darting in every direction, never sure which way is up or down, just trying to avoid the spinning chaos.\n\n2. **Like a goldfish swimming through a maze** – constantly bumping into the same inv"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative animal metaphors for confusion:\n\n---\n\n### 1. **A cat tangled in yarn**\nLike a cat that's pawed its way into a hopeless knot — the more it struggles, the more wrapped up it becomes. Confusion spirals tighter with every attempt to unravel it.\n\n### 2. **A bee in a hall of mirrors**\nImagine a bee dra"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative animal metaphors for confusion:\n\n**1. The Maze-Running Mouse**  \nConfusion is like a mouse trapped in a labyrinth, its tiny paws scurrying in endless circles, each turn leading to the same dead end, its whiskers twitching as it frantically searches for an exit that doesn't exist.\n\n**2. The Tangle"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five creative metaphors for confusion using animal comparisons:\n\n---\n\n**1. The Moth in a Hall of Mirrors**\n*Confusion is a moth trapped in a hall of mirrors—drawn to every flicker of light, darting toward reflections that lead nowhere, wings beating against glass that shows a hundred versions of the same dead"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are five animal metaphors for confusion:\n\n1. **An octopus with a Rubik's cube** — eight arms, eight different hunches, and no way to make them agree.\n\n2. **A chameleon on a plaid blanket** — every patch it looks at insists it should be a different color, so it ends up being none of them.\n\n3. **A bat at high noon**"
+    }
+  ]
+}

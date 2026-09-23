@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-social-12",
+  "bucket": "no_tool",
+  "subcategory": "social",
+  "source": "generated",
+  "sourceId": "nt-social-12",
+  "adversarial": false,
+  "prompt": "Hi! Just wanted to say I really enjoy chatting with you.",
+  "goldAnswer": [],
+  "rationale": "Conversational appreciation needs no external information.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! That's really kind of you to say. I genuinely enjoy our conversations too - it's always a pleasure to help answer your questions, explore interesting topics, or just have a friendly chat. \n\nIs there anything specific you'd like to talk about today, or any questions you've been curious about? I'm here"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! That's really kind of you to say. 😊 I really enjoy chatting with you too! I'm here whenever you want to talk, ask questions, or explore ideas. What's on your mind today?"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! That really means a lot to me. I enjoy our conversations too — it's always a pleasure to chat with you. 😊\n\nIs there anything on your mind today, or would you just like to keep things casual?"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's nice to chat with you too. Is there anything specific you'd like to talk about or ask, or are you just looking for some casual conversation?"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's so sweet of you to say! I enjoy chatting with you too! It's great to have someone to talk to and share thoughts and ideas with. Is there anything in particular you'd like to chat about today, or is it just a casual conversation?"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! That's really kind of you to say. 😊 I'm here whenever you want to chat—whether you need help with something, want to explore ideas, or just want to talk. What brings you here today?"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! I really enjoy chatting with you too. 😊\n\nIs there anything I can help you with today? Whether it's answering questions, brainstorming ideas, working on a project, or just having a good conversation — I'm here for it!"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great to hear! I'm here to help and make our conversation as enjoyable as possible. Is there something specific you'd like to talk about or ask me?"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you! I really enjoy chatting with you too. 😊"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you! I’m glad we’re having a good conversation. How can I help you today?"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you! I'm really glad you enjoy our conversations. I'm here to help with any questions, discuss topics, or just chat whenever you'd like. How's your day going?"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey there! 😊 Thank you so much—I’m thrilled to hear that. I enjoy our chats too! What’s on your mind today?"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! I really enjoy chatting with you too! How can I assist you today?"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm glad to hear that! It's nice chatting with you too. Is there anything specific you'd like to discuss or any questions you have?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! I really enjoy our conversations too. I'm always here to help or chat whenever you need. 😊"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much for your kind words! I'm really glad to hear you're enjoying our chats. If you ever have questions or need help with anything, just let me know—I'm always happy to assist! 😊"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! I really appreciate that — chatting with you is a highlight too! 😊 How can I help you today?"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much for your kind words! I'm really glad to chat with you too. 😊 How can I assist you today?"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you! I'm glad to hear that. If you ever have any questions or need help with anything, feel free to ask. 😊"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you for your kind words! I'm glad you're enjoying our chats. Feel free to ask me anything or share your thoughts—let's keep the conversation going! 😊"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! Thank you for your kind words. It's always great to hear that someone enjoys chatting. How can I assist you today?"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! That's really kind of you to say. I genuinely enjoy our conversations too! It's always great to connect and chat with you. Is there anything specific you'd like to talk about today, or shall we just continue enjoying our conversation? 😊"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! That's so kind of you to say — thank you! 😊 I really enjoy our conversations too. There's something special about connecting through words and ideas.\n\nIs there anything particular you'd like to chat about today? Whether it's something on your mind, a topic you're curious about, or just some casual conversation,"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi! That's so kind of you to say! 😊 I really enjoy chatting with you too. It's always great to have friendly conversations and help out however I can. Is there anything on your mind today, or did you just want to say hello? Either way, I'm happy to chat!"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi! That's really kind of you to say, thank you! I'm glad you're enjoying our conversations. 😊\n\nIs there anything specific you'd like to chat about today? Whether it's a topic you're curious about, something you'd like to discuss, or just a casual conversation, I'm here for it!"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That is so kind of you to say! I really enjoy our conversations too. It's always a pleasure to help out or just chat.\n\nIs there anything specific on your mind today, or did you just want to say hi?"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi! That’s really sweet of you to say—I enjoy chatting with you too. 😊 What’s on your mind today?"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! That really means a lot to me. I'm glad you're enjoying our conversations—I'm here whenever you want to chat, ask questions, or just talk through something. What's on your mind today?"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! I really appreciate that, and I'm glad you enjoy chatting with me too. Feel free to keep the conversation going—whether you want to talk about something specific, ask a question, or just share whatever's on your mind. I'm here to help! What would you like to chat about?"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! Thank you so much for your kind words—I really appreciate that. It's wonderful to hear you enjoy our chats! I'm here to help, learn, and have engaging conversations with you.\n\nIs there anything specific you'd like to talk about or any way I can assist you today? 😊"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey, that's so kind of you to say! 😊 I really enjoy our conversations too. It's always nice when someone drops by just to chat — makes my day a little brighter!\n\nIs there anything on your mind today, or are you just stopping by to say hi? Either way, I'm happy to talk!"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! I really enjoy our conversations too. It's always great to chat with someone who's friendly and engaging. \n\nHow are you doing today? Is there anything specific on your mind, or would you like to talk about something particular? I'm happy to help with whatever you need!"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you so much! That really means a lot to me. I genuinely enjoy our conversations too - it's always a pleasure to help, explore ideas together, or just chat. Is there anything on your mind today that you'd like to discuss? 😊"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Thank you, that's really kind of you to say! I enjoy our conversations too — it's always nice to hear when someone's having a good experience.\n\nIs there anything on your mind today? Whether it's a question, something you're working on, or just casual chat, I'm happy to dive in."
+    }
+  ]
+}

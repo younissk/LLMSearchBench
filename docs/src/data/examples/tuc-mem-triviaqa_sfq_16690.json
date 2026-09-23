@@ -1,0 +1,366 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_16690",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_16690",
+  "adversarial": false,
+  "prompt": "The Song of Simeon canticle is also known by which Latin name?",
+  "goldAnswer": [
+    "Song of Simeon",
+    "canticle of simeon",
+    "Nunc Dimittis",
+    "Canticle of Simeon",
+    "nunc dimittis",
+    "Simeon, Canticle of",
+    "song of simeon",
+    "Nunc dimittis",
+    "Nunc dimmitis",
+    "nunc dimmitis",
+    "simeon canticle of"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Song of Simeon canticle Latin name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Song of Simeon canticle Latin name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **Nunc dimittis**. \n\nThis name comes from the first two words of the canticle in the Latin Vulinate translation of the Bible."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Latin name for The Song of Simeon canticle",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name \"Nunc Dimittis\"."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Song of Simeon canticle Latin name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon is also known by the Latin name **\"Nunc Dimittis\"** (meaning \"Now you dismiss\"), taken from the opening words of the canticle in the Latin Vulgate Bible: *\"Nunc dimittis servum tuum, Domine...\"* (\"Now you dismiss your servant, Lord...\").\n\nIt is found in Luke 2:29–32, where the elderly Simeon praises"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Latin name of the Song of Simeon canticle",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name \"Nunc Dimittis.\" This name is derived from the opening words of the canticle in Latin, which translate to \"Now lettest thou thy servant depart in peace.\" The canticle is found in the Gospel of Luke (Luke 2:29-32) and is traditionally sung during evening prayer"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **Nunc Dimittis**. This name comes from the opening words of the canticle in Luke 2:29-32, where Simeon says, \"Lord, now lettest thou thy servant depart in peace\" (Latin: *Nunc dimittis servum tuum*). \n\nNo further search is needed, as this is a well-establishe"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Song of Simeon canticle Latin name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon is commonly referred to in Latin as the **“Nunc dimittis”** (often rendered in full as *Nunc dimittis in nomine Domini*)."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon, also known as the Nunc Dimittis, is a canticle that is sung or recited in Christian liturgical services. The Latin name \"Nunc Dimittis\" comes from the opening words of the canticle in Latin, which means \"Now dismiss your servant, Lord, in peace.\""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Song of Simeon Latin name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **Nunc Dimittis**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon, found in Luke 2:29-32, is traditionally known by its Latin incipit **\"Nunc dimittis\"**, which translates to \"Now you dismiss\" from the opening words of the canticle in the Latin Vulgate Bible. This name is widely used in Christian liturgical contexts, particularly in Anglican, Catholic, and Lutheran"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Song of Simeon Latin name canticle",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is commonly known in Latin as **Nunc Dimittis**. This name derives from the opening words of the canticle in the Latin Vulgate translation of Luke 2:29-32: *\"Nunc dimittis servum tuum, Domine, secundum verbum tuum in pace\"* (\"Now you let your servant depart in peace, according to your word\")"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **Nunc Dimittis**, derived from its opening words \"Nunc dimittis servum tuum, Domine, secundum verbum tuum in pace\" (Now you let your servant depart in peace...)."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon is also known by the Latin name **\"Nunc Dimittis\"**. This term comes from the biblical passage in Luke 2:29-32, where Simeon recites a prayer upon seeing the infant Jesus, concluding with the words *\"Nunc dimittis servum tuum, Domine, secundum verbum tuum\"* (\"Now you are dismissing your servant, Lord"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **Nunc Dimittis**.\n\nThis name comes from the opening words of the canticle in the Latin Vulgate translation: \"Nunc dimittis servum tuum, Domine...\" which translates to \"Now you dismiss your servant, O Lord...\"\n\nThe canticle is found in the Gospel of Luke (2:29"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **Nunc Dimittis**.\n\nThis name comes from the opening words of the canticle in the Latin Vulgate translation: \"Nunc dimittis servum tuum, Domine\" (Now you dismiss your servant, O Lord). The passage is found in the Gospel of Luke (2:29-32), where Simeon, a right"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **Nunc Dimittis**. This name comes from the opening words of the canticle in Latin: \"Nunc dimittis servum tuum, Domine...\" which translates to \"Now you dismiss your servant, Lord...\"\n\nThe canticle is found in the Gospel of Luke (2:29-32) and is traditionally u"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **Nunc Dimittis**.\n\nThis canticle comes from Luke 2:29-32 and is traditionally sung or recited in Christian liturgy, particularly in the Evening Prayer (Vespers) and Matins services. The name \"Nunc Dimittis\" translates to \"Now lettest thou,\" referring to Simeo"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon is also known by the Latin name **Nunc Dimittis**.\n\nThis name is taken from the first words of the canticle in the Latin Vulgate translation of the Bible (*Luke 2:29*): *\"Nunc dimittis servum tuum, Domine...\"* (\"Now you dismiss your servant, Lord...\")."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon is known in Latin as the **Nunc Dimittis**, from its opening words (\"Now you let your servant depart in peace,\" Luke 2:29). It is traditionally sung at Compline (Night Prayer) in the Liturgy of the Hours."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon (Luke 2:29–32) is also known by its Latin incipit **Nunc Dimittis** (\"Now you dismiss\")."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Song of Simeon canticle Latin name Nunc Dimittis",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon is most commonly known by its Latin incipit **Nunc dimittis**, which translates to “Now dismiss.” This name comes from the opening words of the canticle in Luke 2:29–32, where Simeon says, *“Nunc dimittis servum tuum, Domine, secundum verbum tuum, in pace”* (“Lord, now you dismiss your servant in pea"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Song of Simeon canticle Latin name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon is also known by its Latin title **Nunc dimittis**."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon canticle is also known by the Latin name **\"Nunc Dimittis.\"**\n\nThis name comes from the opening words of the canticle in Latin: \"Nunc dimittis servum tuum, Domine\" (meaning \"Now you dismiss your servant, Lord\"). The canticle is found in Luke 2:29-32, where Simeon praises God after seeing the infant J"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Song of Simeon is known by the Latin name **Nunc Dimittis**, which comes from the opening words of the canticle in the Vulgate: *\"Nunc dimittis servum tuum, Domine\"* (\"Now let your servant depart in peace, Lord\").\n\nThe canticle is found in the Gospel of Luke (2:29–32), where the elderly Simeon, who had been promise"
+    }
+  ]
+}

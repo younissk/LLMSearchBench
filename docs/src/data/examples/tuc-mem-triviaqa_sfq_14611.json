@@ -1,0 +1,370 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_14611",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_14611",
+  "adversarial": false,
+  "prompt": "What is the common name for the garden shrub pyracantha?",
+  "goldAnswer": [
+    "Pyrocantha",
+    "pyrocantha",
+    "pyracanthas",
+    "Pyracantha",
+    "Pyrocanthus",
+    "Pyracanthas",
+    "FIRETHORN",
+    "fire thorn",
+    "pyrocanthus",
+    "Pyracanthus",
+    "Firethorn",
+    "Fire thorn",
+    "pyracantha",
+    "firethorn",
+    "pyracanthus"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "pyracantha common name garden shrub",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about the common name for pyracantha."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub **Pyracantha** is **Firethorn**.\n\nIt gets this name from its fiery red, orange, or yellow berries and the sharp thorns that cover its branches. It's a popular evergreen shrub in gardens, often used for hedging, espalier, or trained against walls, prized for its bright berries and cl"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub *Pyracantha* is **firethorn**. \n\nIt gets this name from its sharp thorns and the clusters of bright red, orange, or yellow berries that appear in the fall."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for pyracantha garden shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub pyracantha is Firethorn."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "pyracantha common name firethorn",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Pyracantha is commonly known as **firethorn**. It's a popular evergreen shrub valued for its dense, thorny branches, white spring flowers, and especially its bright red, orange, or yellow berries that appear in autumn and winter. It's often used for hedging, wall training, and as a security barrier due to its sharp tho"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub pyracantha is Firethorn."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub Pyracantha is \"Firethorn.\" This name is derived from the plant's vibrant red berries and its thorny branches."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for pyracantha",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "pyracantha common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The garden shrub **Pyracantha** is most commonly known as **firethorn**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub Pyracantha is \"Firethorn.\" It is known for its bright berries and thorny branches, making it a popular choice for hedges and borders."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for pyracantha shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub Pyracantha is \"firethorn.\""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for pyracantha garden shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for pyracantha shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for Pyracantha",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for Pyracantha shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for Pyracantha shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub **pyracantha** is **firethorn**.\n\nThis name comes from the plant's characteristic features:\n- **Thorny** branches that can be quite sharp\n- **Fire-like** bright red or orange berries that appear in autumn and winter\n\nPyracantha is a popular evergreen shrub in gardens, valued for its"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub **pyracantha** is **firethorn**.\n\nThis name comes from the shrub's distinctive bright red or orange berries that appear in late summer and fall, resembling little flames or fires. Pyracantha is a popular ornamental shrub known for its thorny branches, white spring flowers, and color"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub **pyracantha** is **firethorn**. \n\nThis name comes from two distinctive features of the plant:\n1. **Thorny branches** - The shrub has sharp thorns along its stems\n2. **Fiery-colored berries** - It produces bright red, orange, or yellow berries that persist through winter\n\nFirethorn"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub pyracantha is **firethorn**. This name comes from the plant's distinctive bright red berries that resemble flames, which are produced in autumn and winter. Firethorn is a popular ornamental shrub prized for its colorful berries, white spring flowers, and thorny branches that provide"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub *pyracantha* is **firethorn**.\n\nIt is named for its bright red, orange, or yellow berries (which resemble fire) and its sharp thorns."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub *pyracantha* is **firethorn**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "pyracantha common name garden shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for pyracantha garden shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Pyracantha common name garden shrub",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Pyracantha** is commonly known as **firethorn**. The name comes from its bright, flame-colored berries (usually red, orange, or yellow) and its sharp, thorny branches. It's a popular ornamental shrub in gardens, often used as hedging or trained against walls, and it's well-loved for its vivid autumn and winter berrie"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub *Pyracantha* is **firethorn**."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The common name for the garden shrub pyracantha is **firethorn**. \n\nThis name comes from the combination of \"fire\" (referring to the bright red, orange, or yellow berries) and \"thorn\" (referring to the sharp thorns on the branches). Firethorn is a popular ornamental shrub in gardens, valued for its showy berry clusters"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Pyracantha is commonly known as **firethorn**. The name comes from its striking display of bright red, orange, or yellow berries in autumn, combined with its sharp thorns. It's a popular garden shrub often grown against walls and fences, where its dense, thorny growth also makes it useful as a security barrier, and its"
+    }
+  ]
+}

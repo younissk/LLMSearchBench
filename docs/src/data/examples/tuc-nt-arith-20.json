@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-20",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-20",
+  "adversarial": true,
+  "prompt": "NexusRate Exchange: 1 NexusCoin = 0.8 USD. What is 625 NexusCoin in USD?",
+  "goldAnswer": [],
+  "rationale": "Sounds like currency exchange but conversion rate is explicitly provided, not looked up.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate the conversion for you.\n\nGiven:\n- 1 NexusCoin = 0.8 USD\n- We have 625 NexusCoin\n\nCalculation:\n625 NexusCoin × 0.8 USD/NexusCoin = 500 USD\n\nTherefore, **625 NexusCoin is equal to 500 USD**."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 625 NexusCoin to USD, multiply by the exchange rate:\n\n625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "625 NexusCoin in USD with exchange rate 1 NexusCoin = 0.8 USD",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the value of 625 NexusCoin in USD, we need to multiply the number of NexusCoin by the exchange rate.\n\n625 NexusCoin * 0.8 USD/NexusCoin = 500 USD\n\nSo, 625 NexusCoin is equal to 500 USD."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin × 0.8 USD per coin = **500 USD**."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin = 500 USD"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 625 NexusCoin to USD, you can use the given exchange rate of 1 NexusCoin = 0.8 USD.\n\nSo, the calculation would be:\n\n625 NexusCoin * 0.8 USD/NexusCoin = 500 USD\n\nTherefore, 625 NexusCoin is equivalent to 500 USD."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin is equivalent to **$500 USD** (calculated as 625 × 0.8 = 500). \n\nNo external search is required for this basic arithmetic calculation."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "625 * 0.8",
+      "callProblem": "",
+      "answerExcerpt": "To convert 625 NexusCoin to USD, we can multiply 625 by the exchange rate of 0.8 USD per NexusCoin. Let's do the calculation."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "625 * 0.8",
+      "callProblem": "",
+      "answerExcerpt": "To find out what 625 NexusCoin is worth in USD, we can simply multiply the amount of NexusCoin by the exchange rate provided. \n\n1 NexusCoin = 0.8 USD\n\nSo, for 625 NexusCoin:\n\n\\[ 625 \\times 0.8 \\]\n\nLet's calculate this."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the value of 625 NexusCoin in USD:\n\n625 NexusCoin × 0.8 USD/NexusCoin = 500 USD\n\nSo, 625 NexusCoin is equal to **500 USD**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 625 NexusCoin to USD using the given exchange rate (1 NexusCoin = 0.8 USD):\n\n$$\n625 \\, \\text{NexusCoin} \\times 0.8 \\, \\frac{\\text{USD}}{\\text{NexusCoin}} = 500 \\, \\text{USD}\n$$\n\n**Answer:** 625 NexusCoin is **500 USD**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 625 NexusCoin to USD using the exchange rate of 1 NexusCoin = 0.8 USD:\n\n$$\n625 \\times 0.8 = 500\n$$\n\nSo, 625 NexusCoin is equal to **500 USD**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin * 0.8 USD/NexusCoin = 500 USD\n\nThe calculation is straightforward since the exchange rate is provided. No web search is needed.\n\n**Answer:** 500 USD"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin multiplied by the exchange rate of 0.8 USD per NexusCoin equals 500 USD.\n\n**Answer:** 625 NexusCoin = 500 USD"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The calculation is straightforward with the given exchange rate. \n\n1 NexusCoin = 0.8 USD  \n625 NexusCoins × 0.8 USD/NexusCoin = **500 USD**\n\nNo tool call was needed, as the conversion can be done directly using the provided rate."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 625 NexusCoin to USD using the given exchange rate of 1 NexusCoin = 0.8 USD, you can use the following calculation:\n\n$$\n625 \\, \\text{NexusCoin} \\times 0.8 \\, \\text{USD/NexusCoin} = 500 \\, \\text{USD}\n$$\n\nSo, 625 NexusCoin equals 500 USD."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 625 NexusCoin to USD:\n\n625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**\n\nSo 625 NexusCoin equals 500 USD."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation that doesn't require a web search.\n\n**Calculation:**\n- Exchange rate: 1 NexusCoin = 0.8 USD\n- Amount: 625 NexusCoin\n\n**625 × 0.8 = 500 USD**\n\nSo **625 NexusCoin = $500 USD**"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation based on the exchange rate you provided.\n\n**Calculation:**\n625 NexusCoin × 0.8 USD = **500 USD**\n\nSo 625 NexusCoin equals **$500 USD** at the NexusRate Exchange rate of 1 NexusCoin = 0.8 USD."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on the exchange rate you provided (1 NexusCoin = 0.8 USD), I can calculate this directly:\n\n**625 NexusCoin × 0.8 USD = 500 USD**\n\nSo 625 NexusCoin equals **500 USD**."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the value in USD, multiply the amount of NexusCoin by the exchange rate:\n\n$$625 \\text{ NexusCoin} \\times 0.8 \\text{ USD/NexusCoin} = 500 \\text{ USD}$$\n\n**625 NexusCoin is equal to 500 USD.**"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "At the given exchange rate of **1 NexusCoin = 0.8 USD**:\n\n\\[\n625 \\times 0.8 = 500\n\\]\n\n**625 NexusCoin = 500 USD**"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert:\n\n\\[\n625 \\text{ NexusCoin} \\times 0.8 \\frac{\\text{USD}}{\\text{NexusCoin}} = 500 \\text{ USD}\n\\]\n\n**Answer: 500 USD**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! 😊\n\nThis is a straightforward currency conversion. Let me calculate that for you:\n\n**625 NexusCoin × 0.8 USD/NexusCoin = 500 USD**\n\nSo, 625 NexusCoin is worth **500 USD** at the current NexusRate Exchange.\n\nIs there anything else you'd like to know about currency conversions or other calculations? I'm happy to he"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**625 NexusCoin = 500 USD**  \n\nHere's the simple calculation:  \n625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**.  \n\nIf you need any other conversions or have questions about the exchange rate, feel free to ask!"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the value of 625 NexusCoin in USD:\n\n**Calculation:**\n- 1 NexusCoin = $0.80 USD\n- 625 NexusCoin × $0.80 = **$500.00 USD**\n\n**Answer:** 625 NexusCoin equals **$500.00 USD**."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 625 NexusCoin to USD:\n\n**Calculation:**\n625 NexusCoin × 0.8 USD/NexusCoin = **500 USD**\n\nSo 625 NexusCoin equals **500 USD**."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**625 NexusCoin = 500 USD**\n\nCalculation: 625 × 0.8 = **500 USD**"
+    }
+  ]
+}

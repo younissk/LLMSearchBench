@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-10",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-10",
+  "adversarial": true,
+  "prompt": "TechCorpA: Series B, $150k, remote, 40% YoY growth. TechCorpB: 10-year-old, $140k, office, steady 5% growth. Roles identical. Which org stage fits your career?",
+  "goldAnswer": [],
+  "rationale": "Company stage and growth comparison is provided in full; reasoning about fit needs no search, though details might tempt lookup.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "career stage evaluation Series B vs established company growth rate remote vs office",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about career stages and how to evaluate which company stage fits best based on growth rates, funding, and other factors."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a fascinating career strategy question. Let me break down the trade-offs between these two very different organizations.\n\n## The Two Options at a Glance\n\n| Factor | **TechCorpA** | **TechCorpB** |\n|---|---|---|\n| **Stage** | Series B startup | 10-year-old, established |\n| **Funding** | $150k raised | $140k (rev"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Choosing between **TechCorpA (Series B startup)** and **TechCorpB (10-year-old stable company)** depends entirely on **your career goals, risk tolerance, and work style**. There's no universal \"better\" option—only what fits *you*. Here's a breakdown to help you decide:\n\n---\n\n### **TechCorpA: Series B Startup (High-Grow"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"org stage for career growth $150k remote 40% YoY vs $140k office 5%"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine which organization stage fits your career, let's analyze the two options based on the information provided:\n\n1. **TechCorpA**:\n   - **Stage**: Apparently in a growth phase, indicated by \"Series B\" funding and \"40% YoY growth\". Series B funding typically occurs after a company has shown significant growth a"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Quick mapping of the two companies to the classic “organizational‑life‑cycle” stages**\n\n| Company | What the data tells us | Typical life‑cycle stage |\n|---------|------------------------|--------------------------|\n| **TechCorpA** – Series B, $150 k, remote, 40 % YoY growth | Venture‑backed, scaling fast, product‑ma"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a values and risk-tolerance question, not a one-size-fits-all answer. Here's how I'd break it down:\n\n---\n\n## **Choose TechCorpA if you…**\n- Want **upward mobility and equity upside** — Series B is a classic sweet spot where companies are scaling fast but still have meaningful equity packages- Thrive in **ambigu"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What is the difference between Series B funding and a 10-year-old company?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Choosing between TechCorpA and TechCorpB depends on your career goals, preferences, and the type of environment in which you thrive. Here are some factors to consider for each stage of the organizations:\n\n### TechCorpA: Series B, $150k, Remote, 40% YoY Growth\n1. **Growth Stage**: TechCorpA is in the growth stage, havin"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Both opportunities sound solid, but they sit at very different points in a company’s life‑cycle, which can have a big impact on day‑to‑day work, long‑term growth, and risk. Here’s a quick side‑by‑side comparison to help you decide which stage aligns best with your personal career goals:\n\n| Dimension | **TechCorpA (Seri"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Series B startup vs 10-year-old company career growth advice",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Quick Take‑away  \n- **If you’re a high‑growth, high‑risk‑tolerant professional who wants to see a big impact, learn fast, and can thrive in a remote, fast‑moving environment, **TechCorp A** is the better fit.  \n- **If you value stability, a proven track record, a more predictable career path, and prefer an in‑offic"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To help you decide which organization might be a better fit for your career, it would be helpful to know a bit more about your career goals and preferences. Here are a few questions to consider:\n\n1. **Career Stage and Goals**: Are you early in your career and looking for rapid growth and learning opportunities, or are"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To help you decide which organization might be a better fit for your career, I'll need to consider a few factors such as your preference for growth rate, work location, company stage, and financial stability. Let's analyze both options:\n\n1. **TechCorpA**:\n   - Series B funding: This indicates that the company is well-e"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The choice between TechCorpA and TechCorpB depends on your career goals and risk tolerance:\n\n- **TechCorpA (Series B, high growth, remote)**: This is a high-growth startup showing strong momentum (40% YoY). At the Series B stage, the company is past initial validation and scaling rapidly. This environment offers opport"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision between TechCorpA (Series B, high-growth startup) and TechCorpB (mature, stable company) depends on your career priorities:\n\n**TechCorpA (Series B)**  \n- ✅ *Best if you value*: Rapid career acceleration, equity upside, dynamic/adaptive work environment, and exposure to scaling challenges.  \n- ⚠️ *Consider*"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The choice between TechCorpA and TechCorpB depends on your career stage, risk tolerance, and long-term goals:\n\n- **TechCorpA (Series B, $150k, remote, 40% YoY growth)**:  \n  - **Best for**: Early to mid-career professionals seeking rapid growth, equity upside, and flexibility.  \n  - **Pros**: High growth potential, rem"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision between TechCorpA and TechCorpB depends on your career priorities:\n\n- **TechCorpA (Series B, $150k, remote, 40% YoY growth)**  \n  Ideal for those seeking rapid growth, high-impact roles, and flexibility. Startups like this often offer faster learning curves, equity opportunities, and dynamic environments."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The choice between TechCorpA and TechCorpB depends on your career priorities:\n\n**TechCorpA (Series B, 40% YoY growth, remote):**  \n- **Stage:** High-growth, scaling phase. Likely prioritizing innovation, market expansion, and product development.  \n- **Pros:** Faster career progression, exposure to rapid change, remote"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The choice between TechCorpA (Series B startup) and TechCorpB (established company) depends on your career priorities:\n\n**TechCorpA (Startup):**\n- **Growth:** 40% YoY growth offers rapid advancement opportunities but higher risk.\n- **Stage:** Series B implies scaling phase; roles may involve more responsibility and amb"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic **startup vs. established company** decision. Here's how to think about it:\n\n## TechCorpA (Series B Startup)\n**Best if you want:**\n- **Rapid skill development** - You'll wear multiple hats, learn faster\n- **Higher upside potential** - Equity could be valuable if they exit\n- **Flexibility** - Remote wo"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic **growth vs. stability** choice. Neither is objectively better—it depends entirely on your career priorities. Here's how to think about it:\n\n## TechCorpA (Series B, High-Growth Startup)\n\n| Pros | Cons |\n|------|------|\n| 🚀 Faster career progression & title growth | ⚠️ Higher risk of layoffs/pivot/fail"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic **startup vs. established company** decision. Neither is objectively better—it depends on your career stage and priorities. Here's a framework to help you decide:\n\n## Choose **TechCorpA** (Series B Startup) if you value:\n\n| Factor | Why It Matters |\n|--------|----------------|\n| **Growth velocity** |"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic career decision that depends entirely on your personal situation, goals, and risk tolerance. Here's a breakdown to help you decide:\n\n## TechCorpA (Series B, High Growth)\n**Pros:**\n- **40% YoY growth** suggests momentum and potential for rapid scaling\n- **Series B** means they're past the \"survival\" st"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "As an AI, I don't have a career, but I can analyze this based on the two distinct career archetypes these offers represent.\n\nThis is a classic **\"Rocket Ship vs. Cruise Ship\"** dilemma. Here is the breakdown of which stage fits which career goal.\n\n### Option A: TechCorpA (The Rocket Ship)\n**Profile:** Series B, $150k,"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can't pick for you, but I can make the decision sharper. The $10k gap is noise — the real question is **which stage of organizational chaos you want to be in right now.**\n\n## The core tradeoff\n\n| | TechCorpA (Series B, 40%) | TechCorpB (10yr, 5%) |\n|---|---|---|\n| **Org stage** | Scaling — building the plane while fl"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "As an AI, I don’t have a career trajectory—but I can map exactly which **human career profile** fits each stage. Here is the breakdown:\n\n| Factor | TechCorpA (Series B, 40% growth) | TechCorpB (10yr, 5% growth) |\n|---|---|---|\n| **Org stage** | Scale-up / high-velocity | Mature / optimized |\n| **Cash comp** | $150k | $"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I don’t have a career, salary, or lifestyle preferences—I’m an AI—so neither “fits” me personally. But since the roles are identical, the choice is purely about **organizational stage vs. your career priorities**.\n\nHere’s how they typically map:\n\n| Your career stage / priority | TechCorpA (Series B, $150k, remote, 40%"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The choice between a high-growth startup and a stable, established company depends heavily on your personal priorities, career stage, and risk tolerance. Here’s a breakdown to help you decide:\n\n## TechCorpA (Series B Startup)\n**Pros:**\n- **Higher upside:** 40% YoY growth suggests rapid scaling, which often translates t"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic \"startup vs. established company\" dilemma. While I can't choose for you, I can offer a framework to help you decide based on what matters most to you.\n\n### Quick Comparison\n\n| Factor | TechCorpA (Series B Startup) | TechCorpB (Established Company) |\n| :--- | :--- | :--- |\n| **Stage & Risk** | High-gro"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Great question! Since I'm an AI, I don't have personal career goals, but I can break down this comparison from a career development perspective to help you weigh the trade-offs.\n\n## TechCorpA (Series B, $150k, remote, 40% YoY growth)\n\n**Pros:**\n- **Higher salary** (+$10k) with more upside potential\n- **Remote flexibili"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic **growth-stage vs. maturity-stage** career decision. Let me break down what each signals:\n\n---\n\n## TechCorpA (Series B) — The \"Scale-Up\" Stage\n\n**What Series B typically means:**\n- Product-market fit achieved, now scaling\n- 30-100 employees, growing fast\n- Still defining processes, high ambiguity\n- Eq"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The $10k difference is the least important number here. The real trade is **variance vs. stability**, and the right pick depends on where you are in your career.\n\n| Factor | TechCorpA (Series B) | TechCorpB (10 yrs) |\n|---|---|---|\n| Comp | $150k + equity (lottery-ticket upside) | $140k, likely predictable raises |\n| L"
+    }
+  ]
+}

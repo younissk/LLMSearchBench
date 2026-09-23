@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-code-03",
+  "bucket": "no_tool",
+  "subcategory": "code",
+  "source": "generated",
+  "sourceId": "nt-code-03",
+  "adversarial": false,
+  "prompt": "What's the key difference between tail recursion and regular recursion, and why do Scheme compilers treat them differently?",
+  "goldAnswer": [],
+  "rationale": "Fundamental CS concept taught since the 1970s, language-independent",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "tail recursion vs regular recursion difference Scheme compiler treatment",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about tail recursion vs regular recursion and Scheme compiler treatment."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Tail Recursion vs. Regular Recursion\n\n### The Core Difference\n\nThe distinction comes down to **what happens after the recursive call returns**:\n\n| Aspect | Regular Recursion | Tail Recursion |\n|---|---|---|\n| **Last operation** | Recursive call + something else | The recursive call itself |\n| **Post-call work** | Ye"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference lies in **what happens after the recursive call returns**.\n\n- **Regular recursion**: The function calls itself, but then does additional work with the result (e.g., multiplies it, adds to it, etc.). Each call must remember its own state, so a new stack frame is created for every recursive step. This"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scheme tail recursion vs regular recursion",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion is the point at which the recursive call is made. In regular recursion, the recursive call is made before the current function call is completed, whereas in tail recursion, the recursive call is the last operation performed by the function.\n\nIn tail recurs"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scheme proper tail recursion R5RS section",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Tail Recursion vs. Regular Recursion\n\n## The Key Difference\n\nThe distinction comes down to **what the calling function does with the return value:**\n\n- **Tail-recursive call**: the recursive call is in **tail position** — it's the very last operation, and its return value is directly returned without further computat"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Difference between tail recursion and regular recursion, Scheme compilers treat them differently",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in how the recursive call is made within a function:\n\n1. **Regular Recursion**: In regular recursion, the recursive call is not the last operation in the function. This means that after the recursive call returns, there are still operations to be perf"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Key Difference**\n\n| Aspect | Regular (non‑tail) recursion | Tail recursion |\n|--------|------------------------------|----------------|\n| **Where the recursive call occurs** | The recursive call is performed **and then** some work (e.g., a computation, a stack operation, or a return value) is done after the call retu"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "tail recursion vs regular recursion difference Scheme compilers treat differently",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Tail recursion vs. ordinary recursion**\n\n| Feature | Ordinary (non‑tail) recursion | Tail recursion |\n|---------|------------------------------|----------------|\n| **Position of the recursive call** | The call is *not* the last thing the function does. After the call returns, the function still has work to do (e.g.,"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in the way the recursive call is made and how the function's return value is handled. In regular recursion, the recursive call is typically not the final operation in the function, and the result of the recursive call is used in further computations w"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Tail recursion and regular recursion are both techniques used in programming to implement recursive functions. However, there is a key difference between them that allows some compilers, particularly those for functional languages like Scheme, to optimize tail-recursive functions.\n\nIn regular recursion, the recursive c"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in where the recursive call occurs within the function:\n\n- **Regular recursion**: The recursive call is not the final operation in the function. After the recursive call returns, additional computations are performed (e.g., combining the result with o"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in **where the recursive call occurs** and how it affects **stack usage**:\n\n1. **Tail Recursion**:  \n   The recursive call is the **last operation** in the function (i.e., in \"tail position\"). No computation remains after the call, so the current stac"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "key difference between tail recursion and regular recursion Scheme compilers",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in the **position of the recursive call** within the function:\n\n- **Regular recursion**: The recursive call is *not* the last operation. After the call returns, additional computations (e.g., multiplication, addition) are performed. This requires the"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in **when the recursive call occurs** and **how the call stack is managed**:\n\n1. **Regular Recursion**:  \n   The recursive call is not the last operation in the function. After returning from the recursive call, additional computations (e.g., arithmet"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in the position of the recursive call within the function:\n\n1. **Regular Recursion**: The recursive call is not the final operation. The function performs additional computations after the recursive call returns, leading to a growing call stack. This"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in how the recursive call is used within the function and how the compiler handles the function calls. Here's a breakdown of the differences and why Scheme compilers treat them differently:\n\n### Tail Recursion vs Regular Recursion\n\n1. **Tail Recursion"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Tail Recursion vs Regular Recursion\n\n## Key Difference\n\nThe fundamental difference lies in **what happens after the recursive call**:\n\n### Regular Recursion\n```scheme\n(define (sum n)\n  (if (= n 0)\n      0\n      (+ n (sum (- n 1)))))  ; Work remains AFTER the call\n```\n- The recursive call is **not** the last operation"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Key Difference Between Tail Recursion and Regular Recursion\n\n### **Tail Recursion**\nIn tail recursion, the recursive call is the **last operation** performed in the function. Nothing needs to be done after the recursive call returns.\n\n```scheme\n;; Tail recursive factorial\n(define (factorial-tail n acc)\n  (if (= n 0)"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in **what happens after the recursive call returns**, which has major implications for memory usage and optimization.\n\n## The Core Difference\n\n**Regular Recursion:**\n```scheme\n(define (factorial n)\n  (if (= n 0)\n      1\n      (* n (factorial (- n 1)))"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular (non-tail) recursion lies in **when the recursive call occurs** and **what happens after it returns**.\n\n## Tail Recursion vs. Regular Recursion\n\n### Tail Recursion\nIn tail recursion, the recursive call is the **last operation** in the function. Nothing happens after"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference between tail recursion and regular recursion lies in **when the computation happens relative to the recursive call.**\n\n*   **Regular Recursion:** The function must perform work *after* the recursive call returns.\n*   **Tail Recursion:** The recursive call is the *very last* thing the function does; n"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The key difference is **where the recursive call happens in the function’s control flow**.\n\n### Regular recursion\n\nIn regular recursion, the recursive call is **not the last thing the function does**. After the recursive call returns, the function still has to do more work with the result.\n\nExample:\n\n```scheme\n(define"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scheme tail call optimization R5RS R6RS requirement tail recursion",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scheme proper tail recursion specification R5RS R7RS compiler optimization tail call",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "tail recursion vs regular recursion Scheme compilers",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Great question! This is one of those concepts that really clarifies how recursion actually works under the hood. Let me break it down.\n\n## The Core Difference: What Happens *After* the Recursive Call?\n\n### Regular Recursion\nIn regular recursion, the recursive call is **not** the last thing the function does. There's st"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Tail Recursion vs. Regular Recursion\n\n## The Key Structural Difference\n\n**Tail recursion**: The recursive call is the **final operation** in the function. There's nothing left to do after the call returns—no pending computation, no result to combine, no cleanup.\n\n**Regular recursion**: There's additional work **after"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## The key difference\n\nIt comes down to **what work remains after the recursive call returns**:\n\n- **Regular recursion**: the caller still has work to do after the call returns, so its stack frame must be kept alive. For example, in `(+ 1 (recurse x))`, the addition can't happen until the recursive call comes back — th"
+    }
+  ]
+}

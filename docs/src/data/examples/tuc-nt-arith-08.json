@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-08",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-08",
+  "adversarial": false,
+  "prompt": "Convert 32 Fahrenheit to Celsius. Use C = (F-32) × 5/9.",
+  "goldAnswer": [],
+  "rationale": "Formula provided; straightforward substitution of given value.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate that for you.\n\nUsing the formula: C = (F - 32) × 5/9\n\nC = (32 - 32) × 5/9\nC = 0 × 5/9\nC = 0\n\nSo, 32°F is exactly 0°C. This is the freezing point of water, where Fahrenheit and Celsius scales intersect."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "32°F converted to Celsius using the formula:\n\n**C = (F - 32) × 5/9**\n\nC = (32 - 32) × 5/9  \nC = 0 × 5/9  \nC = **0°C**\n\nSo, **32°F = 0°C** (the freezing point of water)."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "32°F is equal to 0°C."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"32 Fahrenheit to Celsius in C = (F-32) \\u00d7 5/9"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32 Fahrenheit to Celsius, we use the formula C = (F-32) × 5/9. \n\nC = (32-32) × 5/9\nC = 0 × 5/9\nC = 0\n\nSo, 32 Fahrenheit is equal to 0 Celsius."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Using the formula C = (F-32) × 5/9:\n\nC = (32 - 32) × 5/9\nC = 0 × 5/9\nC = 0\n\n**32°F = 0°C**"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Converting 32°F to Celsius\n\n**Formula:** C = (F − 32) × 5/9\n\n**Substituting F = 32:**\n\n$$C = (32 - 32) \\times \\frac{5}{9}$$\n\n$$C = 0 \\times \\frac{5}{9}$$\n\n$$C = 0$$\n\n**Result: 32°F = 0°C** ✅\n\nThis makes sense — 32°F is the freezing point of water, which corresponds to 0°C."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Convert 32 Fahrenheit to Celsius. Use C = (F-32) × 5/9.",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32 degrees Fahrenheit to Celsius using the formula \\( C = (F - 32) \\times \\frac{5}{9} \\), follow these steps:\n\n1. Subtract 32 from the Fahrenheit temperature:\n   \\[\n   32 - 32 = 0\n   \\]\n\n2. Multiply the result by \\(\\frac{5}{9}\\):\n   \\[\n   0 \\times \\frac{5}{9} = 0\n   \\]\n\nSo, 32 degrees Fahrenheit is equal to"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "32 Fahrenheit is equal to 0 Celsius. \n\nUsing the formula:  \nC = (32 - 32) × 5/9 = 0 × 5/9 = 0°C.  \n\nNo tool call was needed since this is a direct calculation."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "0°C"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\\(C = (32 - 32) \\times \\dfrac{5}{9} = 0 \\times \\dfrac{5}{9} = 0^\\circ\\text{C}\\)"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32 Fahrenheit to Celsius, we can use the formula you provided: \\( C = (F - 32) \\times \\frac{5}{9} \\).\n\nLet's calculate it:\n\n\\( C = (32 - 32) \\times \\frac{5}{9} \\)\n\n\\( C = 0 \\times \\frac{5}{9} \\)\n\n\\( C = 0 \\)\n\nSo, 32 Fahrenheit is equal to 0 Celsius."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"arguments\": {\"fahrenheit\": 32}}"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Using the formula $ C = (F - 32) \\times \\frac{5}{9} $:\n\n$ C = (32 - 32) \\times \\frac{5}{9} = 0 \\times \\frac{5}{9} = 0 $.\n\nSo, 32°F is equal to 0°C."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The conversion from Fahrenheit to Celsius is calculated using the formula $ C = (F - 32) \\times \\frac{5}{9} $.\n\nPlugging in $ F = 32 $:\n$$\nC = (32 - 32) \\times \\frac{5}{9} = 0 \\times \\frac{5}{9} = 0\n$$\n\n**Answer:** 32°F is **0°C**. \n\nNo tool call needed since this is a direct calculation."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32 Fahrenheit to Celsius using the formula $ C = (F - 32) \\times \\frac{5}{9} $:\n\n1. Substitute $ F = 32 $ into the formula:\n   $$\n   C = (32 - 32) \\times \\frac{5}{9}\n   $$\n\n2. Simplify:\n   $$\n   C = 0 \\times \\frac{5}{9} = 0\n   $$\n\nSo, 32°F is equal to **0°C**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The conversion of 32°F to Celsius using the formula $ C = (F - 32) \\times \\frac{5}{9} $ is:\n\n$$\nC = (32 - 32) \\times \\frac{5}{9} = 0 \\times \\frac{5}{9} = 0\n$$\n\n**Answer:** 32°F is equal to **0°C**."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "32°F is equal to 0°C. \n\nUsing the formula:  \nC = (32 - 32) × 5/9 = 0 × 5/9 = 0°C"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The formula to convert Fahrenheit to Celsius is $ C = (F - 32) \\times \\frac{5}{9} $.  \n\nPlugging in $ F = 32 $:  \n$$\nC = (32 - 32) \\times \\frac{5}{9} = 0 \\times \\frac{5}{9} = 0\n$$  \n\n**Answer:** 32°F is equal to **0°C**."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32°F to Celsius using the formula $C = (F - 32) \\times \\frac{5}{9}$:\n\n1. Substitute $F = 32$ into the formula:\n   $$\n   C = (32 - 32) \\times \\frac{5}{9}\n   $$\n\n2. Simplify the expression:\n   $$\n   C = 0 \\times \\frac{5}{9} = 0\n   $$\n\nSo, 32°F is equal to 0°C."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32°F to Celsius using the formula C = (F-32) × 5/9:\n\nC = (32-32) × 5/9\nC = 0 × 5/9\nC = 0\n\n**32°F = 0°C**\n\nThis is the freezing point of water, which is a well-known reference point in temperature conversion."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32°F to Celsius using the formula **C = (F - 32) × 5/9**:\n\n**Step 1:** Substitute F = 32 into the formula\n```\nC = (32 - 32) × 5/9\n```\n\n**Step 2:** Calculate the difference\n```\nC = 0 × 5/9\n```\n\n**Step 3:** Multiply\n```\nC = 0\n```\n\n**Answer: 32°F = 0°C**\n\nThis makes sense because 32°F is the freezing point of w"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32°F to Celsius using the formula C = (F-32) × 5/9:\n\nC = (32-32) × 5/9\nC = 0 × 5/9\nC = 0\n\n**32°F = 0°C**\n\nThis makes sense because 32°F is the freezing point of water, which is 0°C on the Celsius scale."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Using the formula C = (F-32) × 5/9:\n\nC = (32-32) × 5/9\nC = 0 × 5/9\nC = 0\n\n**32°F = 0°C**\n\nThis makes sense because 32°F is the freezing point of water, which is 0°C."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32 degrees Fahrenheit to Celsius, we use the formula provided:\n\n$$C = (F - 32) \\times \\frac{5}{9}$$\n\nSubstitute $32$ for $F$:\n\n$$C = (32 - 32) \\times \\frac{5}{9}$$\n$$C = 0 \\times \\frac{5}{9}$$\n$$C = 0$$\n\n**32°F is equal to 0°C.**"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "0°C"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Using the formula:\n\nC = (32 − 32) × 5/9  \nC = 0 × 5/9  \nC = **0°C**"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Using the formula:\n\n\\[\nC = (F - 32) \\times \\frac{5}{9}\n\\]\n\nSubstitute \\( F = 32 \\):\n\n\\[\nC = (32 - 32) \\times \\frac{5}{9} = 0 \\times \\frac{5}{9} = 0\n\\]\n\n**32°F = 0°C** (the freezing point of water)."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## 32°F to Celsius\n\nUsing the formula: **C = (F - 32) × 5/9**\n\n**Step 1:** Subtract 32 from 32\n> 32 - 32 = **0**\n\n**Step 2:** Multiply by 5/9\n> 0 × 5/9 = **0**\n\n### Result: **32°F = 0°C**\n\nThis is actually a well-known reference point — 32°F is the freezing point of water! 🧊"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Converting 32°F to Celsius\n\nUsing the formula:\n\n**C = (F - 32) × 5/9**\n\nC = (32 - 32) × 5/9\nC = 0 × 5/9\n**C = 0°C**\n\nSo, **32°F = 0°C** — which is the freezing point of water! 🧊"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Using the formula \\(C = (F-32) \\times \\frac{5}{9}\\):\n\n\\[\nC = (32 - 32) \\times \\frac{5}{9} = 0 \\times \\frac{5}{9} = 0\n\\]\n\n**32°F = 0°C**"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert 32°F to Celsius:\n\nC = (F - 32) × 5/9\n\nC = (32 - 32) × 5/9\n\nC = 0 × 5/9\n\nC = 0\n\n**32°F = 0°C**\n\nThis makes sense because 32°F is the freezing point of water, which corresponds to 0°C."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**32°F = 0°C**\n\nUsing the formula:\n- C = (F − 32) × 5/9\n- C = (32 − 32) × 5/9\n- C = 0 × 5/9\n- C = **0°C**\n\nThis makes sense — 32°F is the freezing point of water, which corresponds to 0°C on the Celsius scale."
+    }
+  ]
+}

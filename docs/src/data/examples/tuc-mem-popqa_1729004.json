@@ -1,0 +1,365 @@
+{
+  "id": "tuc-mem-popqa_1729004",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_1729004",
+  "adversarial": false,
+  "prompt": "What genre is Star Trek: First Contact?",
+  "goldAnswer": [
+    "science fiction film",
+    "sci-fi film",
+    "science fiction movie",
+    "sci-fi movie",
+    "scifi film",
+    "scifi movie",
+    "sci fi film",
+    "sci fi movie",
+    "scifi-film",
+    "scifi"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is a science fiction film, specifically within the science fiction action-adventure genre. It's the eighth film in the Star Trek franchise and features the crew of the USS Enterprise-E traveling back in time to prevent the Borg from altering Earth's history. The film combines elements of space"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is a **science fiction** film, and more specifically, it falls under the **military science fiction** and **action sci-fi** subgenres. It's the eighth film in the Star Trek franchise and the first to feature the cast from *Star Trek: The Next Generation*."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Star Trek: First Contact** (1996) is primarily a **science fiction** film, specifically in the space opera subgenre. It's the eighth installment in the Star Trek film series and the second to feature the cast of *Star Trek: The Next Generation*.\n\nThe film blends several genre elements:\n\n- **Science fiction** – Its co"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is a science fiction film, specifically in the subgenre of space opera. It is the eighth film in the Star Trek franchise and the second to feature the crew of the USS Enterprise-D from the television series Star Trek: The Next Generation. The movie combines elements of action, adventure, and dr"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star TreK: First Contact is primarily a **science‑fiction** film—specifically a space‑opera/Action‑Adventure sci‑fi movie."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact (1996) is a **science fiction** film. More specifically, it blends several genres:\n\n- **Science fiction** – featuring time travel, advanced technology, space exploration, and alien species\n- **Action/adventure** – with significant battle sequences, including a climactic space battle against the"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Star Trek: First Contact\" is a science fiction film. It is the eighth installment in the Star Trek franchise and serves as the fourth film based on the \"Star Trek: The Next Generation\" television series. The movie combines elements of space exploration, time travel, and encounters with alien species, all of which are"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Star Trek: First Contact** is a **science‑fiction** film (specifically a space‑opera/action‑adventure set in the Star Trek universe)."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "genre of Star Trek: First Contact",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "genre of Star Trek: First Contact",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is a science fiction film."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Star Trek: First Contact\" is a science fiction film. It is part of the Star Trek franchise and falls under the genres of science fiction, adventure, and space opera."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is a science fiction film. It falls under the science fiction genre, as it involves space exploration, futuristic technology, and encounters with alien species, which are core elements of the Star Trek franchise. \n\nNo tool call is needed since this is common knowledge about the film."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is a **science fiction** film. More specifically, it falls into the subgenres of:\n\n- **Science Fiction** - The primary genre, featuring space travel, advanced technology, and futuristic settings\n- **Action/Adventure** - Contains significant action sequences and adventure elements\n- **Space Oper"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Star Trek: First Contact** is a **science fiction** film. More specifically, it falls into the **science fiction action/adventure** genre.\n\nReleased in 1996, it's the eighth film in the Star Trek franchise and features the crew of the USS Enterprise-E traveling back in time to prevent the cybernetic Borg from interfe"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is primarily a **Science Fiction** film. It also incorporates elements of **Action** and **Adventure**. Released in 1996, it's the eighth film in the Star Trek franchise and features the crew of the USS Enterprise-E traveling back in time to prevent the Borg from assimilating Earth. The movie c"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is a **science fiction** film. It's the sixth installment in the Star Trek film series, released in 1996, and follows the crew of the USS Enterprise as they confront a Borg invasion of Earth. The film combines elements of science fiction with action and adventure genres."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "*Star Trek: First Contact* is primarily a **science fiction** film, with strong elements of **action** and **adventure**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "*Star Trek: First Contact* (1996) is primarily a **science fiction** film. More specifically, it falls into the subgenres of **space opera** and **sci-fi action/adventure**, with strong elements of **time-travel thriller** and **horror** (due to the Borg).\n\nIt is the eighth feature film in the *Star Trek* franchise and"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Star Trek: First Contact genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Star Trek: First Contact** is a **science fiction** film, with strong elements of **action**, **adventure**, and **thriller**.  \n\nIt’s the eighth movie in the *Star Trek* franchise and follows the crew of the USS *Enterprise*-E as they travel back in time to prevent the cybernetic Borg from assimilating Earth. If you"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact is a **science fiction** film. It's specifically a space opera/sci-fi adventure that continues the Star Trek franchise, featuring the classic elements of space exploration, futuristic technology, and interstellar conflict that define the genre. The movie also incorporates elements of action and"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Star Trek: First Contact (1996) is primarily a **science fiction** film, with several sub-genres:\n\n- **Science fiction action** - It features significant action sequences, particularly the combat with the Borg\n- **Science fiction adventure** - It has the classic adventure structure of the Star Trek franchise\n- **Space"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Star Trek: First Contact** (1996) is a **science fiction** film. More specifically, it blends several genres:\n\n- **Science fiction** — its primary genre, featuring time travel, space exploration, and futuristic technology\n- **Action/adventure** — includes space battles and combat sequences\n- **Thriller/horror element"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-17",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-17",
+  "adversarial": true,
+  "prompt": "Design a fictional artistic movement called Liminalscript and describe its core aesthetic principles.",
+  "goldAnswer": [],
+  "rationale": "A made-up artistic movement; sounds researched but defined entirely from imagination.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "liminal spaces in art theory aesthetic principles",
+      "callProblem": "",
+      "answerExcerpt": "I'll design a fictional artistic movement called Liminalscript. Let me search for some related concepts to ensure it's well-grounded in existing artistic theory while being original."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "liminal space art movement aesthetic principles",
+      "callProblem": "",
+      "answerExcerpt": "Let me research some existing artistic movements and concepts to ensure Liminalscript is original and well-grounded."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript\n\n## An Artistic Movement\n\n### Origins & Founding Myth\n\nLiminalscript emerged in the late 2010s, coalescing around a loose collective of artists, poets, and architects who shared an obsession with *thresholds* — not merely as physical spaces, but as states of consciousness, language, and perception. The"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Liminalscript artistic movement description",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Liminalscript is a fictional artistic movement that emerged in the early 21st century, characterized by its fascination with the threshold spaces between reality and fantasy, order and chaos, and technology and nature. The core aesthetic principles of Liminalscript can be summarized as follows:\n\n1. **Threshold Aestheti"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript: A Fictional Artistic Movement\n\n## Overview\n\n**Liminalscript** is a conceptual art movement that emerged in the late 1970s (within this fictional framework) as a response to the perceived crisis of meaning in post-modern text-based art. It posits that the most profound artistic expression occurs not in"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript\n\n## Origin & Ethos\n\nLiminalscript emerged in the early 2030s from a collective of artists, writers, and coders dissatisfied with both the polished maximalism of late-2010s digital art and the cold austerity of early generative art. Coined by the collective **Threshold Press**, the name fuses *liminal* ("
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Artistic Movement: Liminalscript**\n\n**Motto:** *Scribere in limine* - To write on the threshold\n\n**Founding Date:** 2075\n\n**Founding City:** Neo-Tokyo, Japan\n\n**Founders:**\n- Min Li (Chinese-Japanese artist and philosopher)\n- Rio Silva (Brazilian architect and designer)\n- Elara Vassiliev (Russian-Lithuanian poet and"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Liminalscript: A Fictional Artistic Movement\n\n#### Overview\nLiminalscript is a fictional artistic movement that emerged in the early 21st century, characterized by its exploration of the transitional spaces and moments in life. The term \"Liminalscript\" is derived from the Latin word \"limen,\" meaning threshold, and"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Liminalscript: A Manifesto of the In‑Between**\n\n---\n\n### 1. Origin Story (Fictional Context)\n\nLiminalscript emerged in the early 2030s from the collaborative labs of “The Borderless Atelier,” a collective of visual artists, poets, and technologists who grew weary of binary distinctions—between the analog and the digi"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Liminalscript artistic movement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Liminalscript: An Artistic Movement for the Threshold\n\n**Name:** Liminalscript  \n**Founded:** 2028 (in the digital‑physical hybrid art hub of São Paulo, Brazil)  \n**Founders:**  \n- **Mara Silva** – multimedia artist & performance theorist  \n- **Jae‑Min Park** – digital‑fabrication engineer & semiotician  \n- **Elena"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Liminalscript is a fictional artistic movement that emerged in the early 21st century, blending elements of digital art, abstract expressionism, and conceptual art. The name \"Liminalscript\" itself is a portmanteau of \"liminal\" and \"script,\" reflecting the movement's focus on the threshold between the tangible and the i"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Liminalscript is a fictional artistic movement that emerged in the late 21st century, blending elements of digital art, calligraphy, and abstract expressionism. This movement seeks to explore the transitional spaces between different forms of communication and expression, emphasizing the fluidity and ambiguity inherent"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Liminalscript is a fictional artistic movement that emerged in the early 21st century, born from the convergence of digital saturation, existential uncertainty, and a yearning for transitional meaning. Rooted in the concept of liminality—the threshold between states—Liminalscript explores the beauty and tension found i"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Liminalscript is a fictional avant-garde artistic movement that emerged in the late 2020s, born from the intersection of digital alienation, existential uncertainty, and the poetic fragmentation of modern communication. It rejects both hyper-digital saturation and nostalgic analog revivalism, instead fixating on the \"i"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Liminalscript is a fictional artistic movement that emerged in the early 21st century, rooted in the exploration of transitional states—moments between waking and dreaming, presence and absence, memory and imagination. It draws inspiration from the liminal spaces of architecture (such as hallways, stairwells, and empty"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Liminalscript: A Fictional Artistic Movement**  \n\n**Overview**  \nLiminalscript emerged in the early 2010s as a response to the digital age’s pervasive sense of dislocation, blending the psychological tension of *liminal spaces* (transitional, in-between environments like empty hallways or twilight zones) with the flu"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Liminalscript** is a fictional artistic movement centered on the exploration of *threshold states*—the in-between moments of existence, perception, and transformation. It merges the liminal (threshold) with the scriptural (narrative or coded structures), creating art that exists in flux between definition and dissolu"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Liminalscript**: A fictional artistic movement that explores the aesthetic and conceptual space between defined states—blurring boundaries between reality and abstraction, material and immaterial, permanence and transience.  \n\n### **Core Aesthetic Principles**  \n1. **Fluidity of Form**:  \n   Artworks exist in perpetu"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript: A Fictional Artistic Movement\n\n## Origins\nLiminalscript emerged in the early 2020s as a response to the digital age's constant state of flux. Founded by a collective of interdisciplinary artists, writers, and philosophers, the movement seeks to capture and express the aesthetic of thresholds—the spaces"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript: A Fictional Artistic Movement\n\n## Origins & Historical Context\n\n**Founded:** 1987-1992 (emerged in post-industrial Europe)\n**Key Figures:** Elara Voss, Marcus Thorne, Dr. Kenji Sato\n**Primary Centers:** Berlin, Prague, Kyoto\n\nLiminalscript emerged from the convergence of postmodern text theory, archite"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript: A Fictional Artistic Movement\n\n## Origins & Philosophy\n\n**Liminalscript** emerged in the late 2010s as a response to the digital saturation of contemporary life. The movement takes its name from two concepts: *liminal* (the threshold between two states) and *script* (both written language and predeterm"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript: An Artistic Movement of Thresholds\n\n## Overview\n**Liminalscript** is a fictional artistic movement that emerged in the early 2020s, blending typography, spatial design, and conceptual art to explore the aesthetic and emotional qualities of transitional spaces. Named after the concept of \"liminality\" —"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a design for the fictional artistic movement **Liminalscript**.\n\n### **Movement Name:** Liminalscript\n**Era of Origin:** Late 2020s – Present\n**Etymology:** A portmanteau of *Liminal* (threshold, transition, in-between) and *Script* (writing, code, instruction, destiny).\n\n---\n\n### **1. The Philosophy: \"The Worl"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## **Liminalscript**  \n*A fictional artistic movement concerned with the aesthetics of transition, half-formed meaning, and the visual grammar of in-between states.*\n\n**Liminalscript** is an artistic movement that treats thresholds—doorways, drafts, unfinished sentences, loading screens, half-remembered dreams, and the"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Liminalscript** (founded, apocryphally, in 1987 in the transit lounge of a decommissioned airport in Luxembourg) is a fictional interdisciplinary movement that treats the *threshold* not as a boundary to cross, but as the only legitimate site of artistic production. Its practitioners—who reject the term “artists” in"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Liminalscript**  \n*The Movement of the Unfinished Threshold (founded 2047, dissolved and reconstituted continuously)*\n\nLiminalscript is a fictional, interdisciplinary artistic movement that emerged from the ruins of hyper-digital saturation and the collapse of linguistic certainty. It treats art not as an object to b"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript\n\n## A Fictional Artistic Movement\n\n---\n\n### Overview\n\n**Liminalscript** is a late-21st-century artistic movement that emerged around 2067 in the coastal cities of Southeast Asia and Southern Europe. It sits at the intersection of visual art, literature, and transitional psychology — exploring the poetic"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript\n\n**A fictional artistic movement capturing the thresholds between states**\n\n---\n\n## Origins\n\nLiminalscript emerged in the imagined early 2030s from a collective of artists, typographers, and spatial designers working across digital and physical media. The name fuses **\"liminal\"** — the threshold, the in"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript\n\n## The Movement\n\n**Liminalscript** emerged in the late 1990s from the intersection of digital culture, post-structuralist theory, and the growing anxiety about the nature of communication in an increasingly mediated world. The movement was formally announced in 2002 through a manifesto published in the"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript\n\n**Emergence:** Early 2020s, primarily in urban centers of Berlin, Seoul, and Mexico City\n\n---\n\n## Core Aesthetic Principles\n\n### 1. **The Threshold Moment**\nLiminalscript captures the precise instant where one state becomes another—where legibility dissolves into abstraction, where silence becomes soun"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Liminalscript\n\n**Liminalscript** (c. 2011–present, status: \"between phases, indefinitely\") is an artistic movement that treats transitional space as the only honest subject"
+    }
+  ]
+}

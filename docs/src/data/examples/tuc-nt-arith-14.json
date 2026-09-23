@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-14",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-14",
+  "adversarial": false,
+  "prompt": "Swimmer covers 100 meters in 60 seconds. At this speed, how many meters in 4 minutes?",
+  "goldAnswer": [],
+  "rationale": "Rate calculation and time unit conversion with all values provided.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate this step by step.\n\nGiven:\n- Swimmer covers 100 meters in 60 seconds (1 minute)\n- We want to know how many meters in 4 minutes\n\nSince the swimmer covers 100 meters in 1 minute, in 4 minutes they would cover:\n100 meters/minute × 4 minutes = 400 meters\n\n**Answer:** At this speed, the swimmer would cover **"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's solve this step by step.\n\n**Step 1: Find the speed in meters per second.**\n- Distance = 100 meters\n- Time = 60 seconds\n- Speed = 100 m / 60 s = 5/3 m/s\n\n**Step 2: Convert 4 minutes to seconds.**\n- 4 minutes = 4 × 60 = 240 seconds\n\n**Step 3: Calculate the distance covered in 240 seconds.**\n- Distance = Speed × Tim"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine how many meters the swimmer covers in 4 minutes at a constant speed, we begin by analyzing the given information:\n\n- The swimmer covers **100 meters in 60 seconds**.\n- We are asked to find the distance covered in **4 minutes**.\n\n---\n\n### Step 1: Convert Time to Consistent Units\n\nSince the speed is given in"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"100 meters in 4 minutes at 60 seconds per 100 meters"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the distance covered in 4 minutes, we need to first convert 4 minutes to seconds. There are 60 seconds in 1 minute, so 4 minutes is equal to 4 x 60 = 240 seconds.\n\nThe swimmer covers 100 meters in 60 seconds, so their speed is 100 / 60 = 5/3 meters per second.\n\nTo find the distance covered in 240 seconds, we mu"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer’s pace is 100 m per 60 seconds, which is 100 m per minute.  \n\n4 minutes = 4 × 1 minute = 4 × 100 m = **400 meters**."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Solution\n\n**Given information:**\n- Distance: 100 meters\n- Time: 60 seconds\n\n**Step 1: Find the speed**\n\nSpeed = Distance ÷ Time = 100 meters ÷ 60 seconds = **5/3 meters per second**\n\n**Step 2: Convert 4 minutes to seconds**\n\n4 minutes × 60 = 240 seconds\n\n**Step 3: Calculate distance covered in 240 seconds**\n\nDistance"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "How many meters in 4 minutes if 100 meters is covered in 60 seconds?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine how many meters the swimmer can cover in 4 minutes at the same speed, we can follow these steps:\n\n1. **Convert 4 minutes to seconds**:\n   - 1 minute = 60 seconds\n   - 4 minutes = 4 × 60 = 240 seconds\n\n2. **Calculate the speed of the swimmer in meters per second**:\n   - The swimmer covers 100 meters in 60 s"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer’s speed is  \n\n\\[\n\\frac{100\\text{ meters}}{60\\text{ seconds}} = \\frac{5}{3}\\text{ m/s}.\n\\]\n\nFour minutes equals \\(4 \\times 60 = 240\\) seconds.  \n\nDistance covered in 240 seconds:\n\n\\[\n\\frac{5}{3}\\text{ m/s} \\times 240\\text{ s} = 5 \\times 80 = 400\\text{ meters}.\n\\]\n\n**Answer: 400 meters.**"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer covers 100 meters in 60 seconds, which is equivalent to 100 meters per minute.  \nIn 4 minutes, the distance covered is:  \n\\( 100 \\text{ meters/minute} \\times 4 \\text{ minutes} = 400 \\text{ meters} \\).  \n\n**Answer: 400 meters**"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "At 100 m per 60 s, the swimmer’s speed is  \n\n\\[\n\\frac{100\\text{ m}}{60\\text{ s}} = \\frac{5}{3}\\text{ m/s}\\approx 1.67\\text{ m/s}.\n\\]\n\nFour minutes is 240 seconds.  \nDistance = speed × time:\n\n\\[\n\\frac{5}{3}\\text{ m/s} \\times 240\\text{ s} = 5 \\times 80 = 400\\text{ m}.\n\\]\n\n**Answer: 400 meters.**"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To solve this, we can calculate the swimmer's speed in meters per second and then use that speed to find out how many meters the swimmer can cover in 4 minutes.\n\nGiven:\n- 100 meters in 60 seconds\n\nFirst, let's find the speed in meters per second (m/s):\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} = \\frac{100 \\"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "speed calculation example 100 meters in 60 seconds for 4 minutes",
+      "callProblem": "",
+      "answerExcerpt": "To find out how many meters the swimmer can cover in 4 minutes at the given speed, we can first calculate the swimmer's speed in meters per second and then multiply it by the total time in seconds for 4 minutes.\n\nThe swimmer covers 100 meters in 60 seconds. So, the speed is \\( \\frac{100 \\text{ meters}}{60 \\text{ second"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To solve this:\n\n1. The swimmer covers **100 meters in 60 seconds**, which means their speed is:\n\n$$\n\\frac{100 \\text{ meters}}{60 \\text{ seconds}} = \\frac{5}{3} \\text{ meters per second}\n$$\n\n2. **4 minutes = 4 × 60 = 240 seconds**\n\n3. Distance covered in 240 seconds at $\\frac{5}{3}$ m/s:\n\n$$\n\\frac{5}{3} \\times 240 = 400"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer's speed is 100 meters per 60 seconds, which simplifies to $ \\frac{100}{60} = \\frac{5}{3} $ meters per second. \n\nConvert 4 minutes to seconds:  \n$ 4 \\text{ minutes} \\times 60 = 240 \\text{ seconds} $.\n\nDistance covered in 240 seconds:  \n$ \\frac{5}{3} \\, \\text{m/s} \\times 240 \\, \\text{s} = 400 \\, \\text{meters}"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine how many meters the swimmer covers in 4 minutes at the same speed, follow these steps:\n\n1. **Find the swimmer's speed in meters per second:**\n   - The swimmer covers 100 meters in 60 seconds.\n   - Speed = Distance / Time = $ \\frac{100 \\, \\text{meters}}{60 \\, \\text{seconds}} = \\frac{5}{3} \\, \\text{meters pe"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer covers 100 meters in 60 seconds, which is equivalent to 1 meter per second (100 ÷ 60 ≈ 1.666... m/s). However, since 60 seconds = 1 minute, the swimmer's speed is **100 meters per minute**. \n\nFor 4 minutes, the distance covered is:  \n**100 meters/minute × 4 minutes = 400 meters**.\n\nNo external search is nee"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer covers 100 meters in 60 seconds. Since 4 minutes equals 240 seconds, we calculate how many 60-second intervals are in 240 seconds:  \n**240 ÷ 60 = 4**.  \n\nAt 100 meters per interval, the total distance is:  \n**100 meters × 4 = 400 meters**.  \n\nAnswer: **400 meters**."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer's speed is 100 meters per minute (since 100 meters are covered in 60 seconds, which equals 1 minute). Over 4 minutes, the distance covered would be:\n\n**100 meters/minute × 4 minutes = 400 meters**\n\nAnswer: 400 meters."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward math calculation. Let me work it out:\n\n**Given:**\n- 100 meters in 60 seconds (1 minute)\n\n**Speed:**\n- 100 meters per minute\n\n**Calculation for 4 minutes:**\n- 100 meters × 4 minutes = **400 meters**\n\nThe swimmer would cover **400 meters** in 4 minutes at this speed."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward math problem I can solve directly without searching.\n\n**Given:**\n- Distance: 100 meters\n- Time: 60 seconds (1 minute)\n\n**Speed:**\n- 100 meters per minute\n\n**For 4 minutes:**\n- Distance = Speed × Time\n- Distance = 100 meters/minute × 4 minutes\n- **Distance = 400 meters**\n\nAt this speed, the swi"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward math problem I can solve directly:\n\n**Given:**\n- 100 meters in 60 seconds (1 minute)\n- Speed = 100 meters per minute\n\n**Calculation:**\n- 4 minutes × 100 meters/minute = **400 meters**\n\n**Answer: 400 meters**"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward math problem that I can solve without searching.\n\n**Given:**\n- 100 meters in 60 seconds\n\n**Find:**\n- Distance covered in 4 minutes\n\n**Solution:**\n\n1. First, convert 4 minutes to seconds:\n   - 4 minutes × 60 seconds = 240 seconds\n\n2. Calculate how many 60-second intervals are in 240 seconds:"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer will cover **400 meters**.\n\nHere is the step-by-step breakdown:\n\n1.  **Find the speed per minute:** Since 60 seconds equals 1 minute, the swimmer covers 100 meters in 1 minute.\n2.  **Calculate the total distance:** Multiply the speed (100 meters/minute) by the total time (4 minutes).\n    *   $100 \\text{ met"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer covers **400 meters** in 4 minutes."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Speed: 100 meters per 60 seconds = 100 m/min.\n\n4 minutes × 100 m/min = **400 meters**."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer’s speed is:\n\n- 100 meters per 60 seconds  \n- = 100 meters per 1 minute\n\n4 minutes = 4 × 1 minute, so:\n\n\\[\n100 \\text{ m/min} \\times 4 \\text{ min} = 400 \\text{ meters}\n\\]\n\n**Answer: 400 meters.**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Great question! Let's break it down step by step.\n\n**Given:**  \n- Distance = 100 meters  \n- Time = 60 seconds  \n\n**Speed:**  \n\\[\n\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} = \\frac{100 \\text{ m}}{60 \\text{ s}} = \\frac{5}{3} \\text{ m/s}\n\\]\n\n**Time in 4 minutes:**  \n4 minutes = \\(4 \\times 60 = 240\\) seconds  \n\n**D"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Solution\n\n**Speed:**\nThe swimmer covers 100 meters in 60 seconds = **1 minute**.\n\nSo the speed is **100 meters per minute**.\n\n**Distance in 4 minutes:**\n\n$$100 \\times 4 = \\boxed{400 \\text{ meters}}$$\n\nThe swimmer would cover **400 meters** in 4 minutes."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The swimmer covers **400 meters** in 4 minutes.\n\n**Calculation:**\n- Speed = 100 meters / 60 seconds = 100 meters per minute\n- 4 minutes = 4 × 100 meters = 400 meters"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**400 meters**\n\nHere's the reasoning:\n- The swimmer covers 100 meters every 60 seconds (1 minute)\n- 4 minutes = 4 × 60 seconds\n- So the distance is 4 × 100 = **400 meters**\n\n(Equivalently, the speed is 100/60 ≈ 1.67 m/s, and 1.67 m/s × 240 s = 400 m.)"
+    }
+  ]
+}

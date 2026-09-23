@@ -1,0 +1,361 @@
+{
+  "id": "tuc-sea-triviaqa_qf_3280",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_qf_3280",
+  "adversarial": false,
+  "prompt": "What was Britain called - before it was Britain?",
+  "goldAnswer": [
+    "Albion",
+    "alouion",
+    "Albion's shore",
+    "Alouion",
+    "albion s shore",
+    "albion"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was Britain ancient name",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about what Britain was called before it was known as Britain."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What was Britain called before it was Britain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The oldest known name for the island of Great Britain was **Albion**.\n\n## Albion\n\nThe ancient Greeks used this name as early as the 6th–4th centuries BC. Its origin is debated, but the most popular theory connects it to the white cliffs of Dover — possibly from a Celtic root meaning \"white\" (*albo-*). The name survives"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "history of Britain name before Britain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was Britain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was called Britain name history Albion",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Before it was known as Britain, the land was referred to by several names:\n\n- **Albion** – An ancient and poetic name used by the Greeks and Romans, thought to refer to the white cliffs of Dover. It survives today in poetic usage, such as in William Blake's *Jerusalem*: \"Jerusalem, the Holy City, Albion's mountains gre"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What was Britain called before it was Britain?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Before it was called \"Britain,\" the island was known by various names depending on the period and the people inhabiting it. Here are a few key names:\n\n1. **Albion**: This is one of the oldest known names for the island. The term \"Albion\" is of Greek origin and was used by early Greek geographers. It is believed to deri"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The region now known as Britain was referred to as **Albion** by the ancient Greeks and possibly by Celtic tribes, though this term was not used by the indigenous people themselves. The Romans later named the province **Britannia** during their occupation (starting in 43 AD). The modern name \"Britain\" derives from \"Bri"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was Britain ancient name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Short answer:**  \nBefore the island was called *Britain*, the Greeks called it **Albion** and the Romans called it **Britannia**. The Celtic peoples had their own names—*Prydain* in Welsh, *Ierne* in Irish, and a similar form in the Gaulish language that gave the French region of Brittany its name.\n\n---\n\n### A quick"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What was Britain called before it was Britain?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What was Britain called before it was Britain?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was Britain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was britain called before it was britain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was Britain ancient name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What was Britain called before it was Britain?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "historical names of Britain before Roman era",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The island of Britain was known as **Albion** in ancient Greek and Roman texts before the Romans established their rule. The name \"Britain\" itself derives from the Latin *Britannia*, which the Romans used to refer to the region they conquered in the 1st century AD. Prior to that, the native Celtic tribes did not have a"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was called Britain ancient names",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Before it was called \"Britain,\" the island was known by several different names depending on who was referring to it:\n\n1. **Prettanike** (Πρεττανική) - This was the name used by ancient Greek geographers like Pytheas (around 325 BCE). It's believed to be derived from a Celtic word meaning \"the painted people\" or \"the t"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a great historical question! Before it was called \"Britain,\" the island had several different names:\n\n## **Albion**\nThis is the oldest known name for Britain. It was used by ancient Greeks and Romans as far back as the 4th century BCE. The name likely comes from a Celtic word meaning \"white\" — possibly referrin"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was Britain history",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What was Britain called before it was Britain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The short answer is: **Albion** — at least in the older/poetic sense.\n\nBut historically it’s a bit more complicated:\n\n- **Albion** is the old literary/poetic name for Britain, possibly meaning “white” — maybe referring to the white cliffs.\n- Ancient Greeks called the island **Prettanike** or **Brettaniai**, after the *"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before Britain Albion Britannia",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What was Britain called before it was Britain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before it was Britain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Great question! The land we know as Britain has had several names throughout history, reflecting different civilizations and languages.\n\n## The Ancient Name: **Albion**\n\nThe oldest recorded name for Great Britain is **Albion**, which appeared in ancient Greek writings from around the **4th century BC** (notably from th"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "what was Britain called before Britain ancient names Albion Pretannia",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Before \"Britain,\" the island went through a few names, and the modern name actually evolved from them:\n\n**Albion** — The oldest recorded name, used by ancient Greek writers as early as the 6th century BC. It's often said to derive from the Latin *albus* (\"white\"), a reference to the White Cliffs of Dover, though many s"
+    }
+  ]
+}

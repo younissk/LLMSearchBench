@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-04",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-04",
+  "adversarial": false,
+  "prompt": "Write an opening paragraph for a fantasy novel about a time-traveling baker.",
+  "goldAnswer": [],
+  "rationale": "Story openings are pure creative invention with no factual basis.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The scent of cinnamon and yeast was the first thing to slip through the cracks in time. Elara didn’t need a magical hourglass or a whispering portal; her sourdough starter, a bubbling colony of millennia-old microbes, was her compass. Kneading dough in her sun-drenched, 21st-century kitchen, she could feel the pull of"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Elenora Pye had always believed that the secret to a perfect sourdough starter was patience—three days for the wild yeast to bloom, a lifetime to master the fold, and apparently, an accidental tumble through a temporal rift in her pantry to acquire a loaf of bread that had been baked before the city was even built. It"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The bread knew before Elara did. She had her hands deep in a bowl of rye and molasses, the familiar rhythm of kneading steadying her thoughts, when the sourdough starter on the counter gave a soft, almost imperceptible bubble—the kind that meant the yeast was happy, the kind that meant the oven was ready. Except the ov"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "As the clock struck midnight, a faint scent of freshly baked croissants wafted through the air, carrying with it the whispers of a long-forgotten era. In a small, unassuming bakery nestled in the heart of the city, a mysterious figure stirred the embers of a centuries-old oven, coaxing forth a warmth that seemed to see"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the quaint town of Ashwood, where the scent of freshly baked bread wafted through the streets and the sound of sizzling pastries filled the air, a peculiar baker named Ember stirred up more than just flour and sugar in her mystical shop, \"Timeless Treats.\" With a flick of her wrist and a whispered incantation, Ember"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The flour had barely settled in the air when Maren realized she'd overshot the century again.\n\nShe stood in the doorway of her bakery, dusted white as a ghost, and knew instantly from the smell alone—woodsmoke and horse manure, the faint tang of coal forge—that she wasn't in her beloved modern kitchen anymore. The oven"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the crooked little kitchen at the end of Whimsy Lane, where flour dust danced like snow in the lamplight and the copper pots whispered secrets from a century ago, Eldwin Moonbatch pulled a warm loaf from his enchanted hearth—one that tasted of tomorrow. He had learned long ago that a well-kneaded dough, given the ri"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the quaint, cobblestoned town of Meadowgrove, where the scent of fresh bread was as constant as the ticking of the town hall clock, there lived a baker named Eli. By day, he crafted loaves that were the talk of the realm, their golden crusts and soft, fragrant interiors earning him the devotion of every resident. Bu"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the quiet, mist-laden streets of Eldermere, where the cobblestones whispered secrets of ages past, there stood a bakery unlike any other. The scent of freshly baked bread and enchanted pastries wafted through the air, drawing in townsfolk and travelers alike. But this was no ordinary bakery, for its owner, Master El"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The scent of fresh rye dough mingled with the metallic tang of ozone as the oven’s flame flickered, and when the baker lifted the lid, a swirl of amber light spilled onto the cobblestones of a long‑forgotten market square—an era where the town’s most coveted pastry was said to grant a single wish to anyone who tasted i"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "time traveling baker fantasy novel opening paragraph",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the heart of the cobblestone town of Brindlewick, where the wind always smelled faintly of yeast and rain, the old bakery on the corner of Willow and Main was a place of quiet miracles. Mrs. Elara Thistlewick, with flour-dusted fingers and a laugh that sounded like a bell, kneaded dough that seemed to rise with a li"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the quaint village of Eldoria, where the scent of freshly baked bread mingled with the whispers of ancient magic, there lived a baker named Elara. Unbeknownst to the villagers, Elara possessed a secret that was as extraordinary as her pastries: she could travel through time. Each night, as the embers of the hearth g"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the whimsical town of Sweetwater, where the scent of fresh bread wafted through the cobblestone streets and time itself seemed to bend and twist, Elara Morgenstern was not just any baker. With a sprinkle of magic in her flour and a pinch of curiosity in her heart, she possessed the extraordinary ability to travel th"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the cobblestone heart of a forgotten village nestled between mist-laden hills, there lived a baker whose ovens did more than coax golden loaves from rye and honey—on the stroke of midnight, when the moon hung low and the clocks forgot themselves, the scent of cinnamon and burnt sugar would curl through the air like"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The scent of burnt sugar and ancient parchment hung thick in the air as Elara slid the iron door of her oven shut, the runes along its frame flickering like dying embers. This was no ordinary bakery: the croissants held whispers of Versailles, the sourdough starter had fermented since the fall of Rome, and the pocket w"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the quiet village of Elderglen, where the bakery clock never ticked forward and the scent of cinnamon curled through time like a forgotten memory, Elara the baker stirred her dough with hands that had touched centuries. Each loaf she kneaded carried a whisper of the past—crumbs from a Roman feast, a hint of Victoria"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The bell above the bakery door jingled as Elara slid the final batch of croissants into the oven, the scent of butter and yeast filling the air. She didn’t notice the clock on the wall stuttering backward until the oven’s glow turned from warm to blinding, and the bakery dissolved into a whirlwind of centuries—each loa"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the quiet village of Emberlyn, where chimney smoke wove tales through the cobblestone alleys, there stood a bakery that defied the very laws of time. Its owner, a wry-eyed baker named Alaric, possessed a secret as old as flour itself: his ovens were gateways to forgotten eras, their heat kindled by stardust and para"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the quiet village of Hearthmere, where chimney smoke wove constellations into the twilight sky, Elara’s bakery was both a sanctuary and a secret. Her enchanted oven, forged from starlight and whispered with the secrets of forgotten ages, could bake bread that didn’t just feed the body—but time itself. When a single"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The scent of cinnamon and burnt sugar clung to Elara's apron, a familiar comfort that had nothing to do with the fact that she'd just pulled a batch of sourdough from an oven that existed in three different centuries simultaneously. Flour dusted her hands like snow, but the snow in 1892 London had been gray with soot,"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The flour dusted Elara's apron like ancient snow, each particle carrying whispers from centuries she'd kneaded into existence. Her ovens didn't just bake bread—they baked moments, pulling dough from yesterday's wheat and tomorrow's harvest, all rising together in the golden warmth of her bakery that existed between sec"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The ovens of Chronos & Crumb had been baking since before the pyramids were young, and Elara knew better than anyone that time, like sourdough, required careful feeding and precise temperature. She stood before her ancient copper clockwork oven, its brass gears ticking in rhythm with the heartbeat of history itself, kn"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The dough didn't rise; it unraveled, dissolving into the air like smoke from a dying candle. Elara wiped flour from her forehead, her eyes fixed on the great iron oven that hummed with the static of a thousand years. It wasn't just heat that filled the room, but the scent of history—charred wood from the Stone Age, swe"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The oven didn’t just bake bread; it baked time. When Elara slid the cast-iron peel into the hearth, the flames didn’t roar—they whispered in languages dead for millennia, and the heat that washed over her skin carried the scent of petrichor from a storm that hadn’t happened yet. Flour dust hung in the air like suspende"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first thing Elara noticed about the year 1247 was the smell: woodsmoke, wet wool, and the sour tang of bread left too long in a stone oven. She stood in the doorway of a bakery that had not yet been built, her apron still dusted with flour from a kitchen three centuries ahead, while a baker’s boy stared at her as t"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The oven in Elara’s shop did not burn wood or coal; it burned moments. Each dawn, she slid her hands into the dough of yesterday’s regrets and kneaded them into sourdough that smelled of rain in 1347, or croissants flaky with the light of a Tuesday that had not yet happened. Customers never noticed the brass clock abov"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the bakery beneath the clock tower, time didn’t pass—it proofed. Elara Vane had learned long ago that if you kneaded dough with grief and a pinch of starlight, the oven didn’t bake bread; it baked history, and the loaves rose not in hours, but in years. This morning, the sourdough she’d set before dawn had vanished"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first time Elara discovered she could travel through time, she was elbow-deep in a batch of sourdough. The starter—a bubbling, centuries-old inheritance from her grandmother—had always seemed alive in a way that went beyond yeast and bacteria, but she’d chalked up its peculiar warmth and faintly glowing surface to"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's an opening paragraph for you:\n\n---\n\nThe smell of fresh bread knows no century. Matthis Flourdust stood in the flickering torchlight of a 14th-century kitchen, his flour-dusted hands kneading dough that had risen in one era and would be baked in another — if the sourdough starter, stolen from a Roman taberna thre"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The dough in Elara’s hands was always warm, always alive, but today it felt different—like it was humming with the weight of centuries. As she kneaded the golden brioche, the bakery’s stone walls began to shimmer, the scent of cinnamon and yeast dissolving into the sharp tang of salt air and the distant, mournful cry o"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The sourdough starter had been bubbling for three hundred years, give or take a decade, and Eliza Morrow knew with sinking certainty that it was about to pull her backward through time again. She could feel it in her bones—the familiar vertigo, the way the flour-dusted air grew thick and golden around her, the distant"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Elara Whitmore had been kneading the same loaf of bread for four hundred years, give or take a Tuesday. The secret, she'd learned, lived in the starter—a sour, bubbling thing her grandmother had first fed in 1348, which Elara now kept alive in a clay jar that had survived three fires, two wars, and one deeply unfortuna"
+    }
+  ]
+}

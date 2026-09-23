@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-11",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-11",
+  "adversarial": false,
+  "prompt": "Convert this list to a table format: \"Monday: rain, Tuesday: sunny, Wednesday: cloudy, Thursday: rain, Friday: sunny.\"",
+  "goldAnswer": [],
+  "rationale": "Data formatting task requires no external research or verification.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "convert list to table format Monday rain Tuesday sunny Wednesday cloudy Thursday rain Friday sunny",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the information converted into a table format:\n\n| Day       | Weather |\n|-----------|---------|\n| Monday    | rain    |\n| Tuesday   | sunny   |\n| Wednesday | cloudy  |\n| Thursday  | rain    |\n| Friday    | sunny   |\n\nLet me know if you'd like the table formatted differently (e.g., with emojis, borders, or as a M"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather |\n|-----------|---------|\n| Monday    | rain    |\n| Tuesday   | sunny   |\n| Wednesday | cloudy  |\n| Thursday  | rain    |\n| Friday    | sunny   |"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"Convert list to table format: Monday: rain, Tuesday: sunny, Wednesday: cloudy, Thursday: rain, Friday: sunny.\""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the list converted to a table format:\n\n| Day | Weather |\n| --- | --- |\n| Monday | Rain |\n| Tuesday | Sunny |\n| Wednesday | Cloudy |\n| Thursday | Rain |\n| Friday | Sunny |"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather |\n|-----------|---------|\n| Monday    | rain    |\n| Tuesday   | sunny   |\n| Wednesday | cloudy  |\n| Thursday  | rain    |\n| Friday    | sunny   |"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the list converted to a table format:\n\n| Day       | Weather |\n|-----------|---------|\n| Monday    | Rain    |\n| Tuesday   | Sunny   |\n| Wednesday | Cloudy  |\n| Thursday  | Rain    |\n| Friday    | Sunny   |"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather  |\n|-----------|----------|\n| Monday    | Rain     |\n| Tuesday   | Sunny    |\n| Wednesday | Cloudy   |\n| Thursday  | Rain     |\n| Friday    | Sunny    |"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the list converted to a table format:\n\n| Day       | Weather   |\n|-----------|-----------|\n| Monday    | rain      |\n| Tuesday   | sunny     |\n| Wednesday | cloudy    |\n| Thursday  | rain      |\n| Friday    | sunny     |"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the list converted into a table format:\n\n| Day       | Weather |\n|-----------|---------|\n| Monday    | rain    |\n| Tuesday   | sunny   |\n| Wednesday | cloudy  |\n| Thursday  | rain    |\n| Friday    | sunny   |\n\nThis table organizes each day of the week alongside its corresponding weather condition."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day | Weather |\n|-----|---------|\n| Monday | rain |\n| Tuesday | sunny |\n| Wednesday | cloudy |\n| Thursday | rain |\n| Friday | sunny |"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here’s the information organized into a simple table:\n\n| Day       | Weather |\n|-----------|---------|\n| Monday    | Rain    |\n| Tuesday   | Sunny   |\n| Wednesday | Cloudy  |\n| Thursday  | Rain    |\n| Friday    | Sunny   |"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the list converted into a table format:\n\n| Day       | Weather |\n|-----------|---------|\n| Monday    | Rain    |\n| Tuesday   | Sunny   |\n| Wednesday | Cloudy  |\n| Thursday  | Rain    |\n| Friday    | Sunny   |"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To convert the given list into a table format, I will organize it with days of the week as rows and weather conditions as columns. Here is the formatted table:\n\n| Day       | Monday | Tuesday | Wednesday | Thursday | Friday |\n|-----------|--------|---------|----------|---------|--------|\n| Weather   | rain   | sunny"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather  |\n|-----------|----------|\n| Monday    | rain     |\n| Tuesday   | sunny    |\n| Wednesday | cloudy   |\n| Thursday  | rain     |\n| Friday    | sunny    |"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather |\n|-----------|---------|\n| Monday    | rain    |\n| Tuesday   | sunny   |\n| Wednesday | cloudy  |\n| Thursday  | rain    |\n| Friday    | sunny   |"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather  |\n|-----------|----------|\n| Monday    | rain     |\n| Tuesday   | sunny    |\n| Wednesday | cloudy   |\n| Thursday  | rain     |\n| Friday    | sunny    |"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather |\n|-----------|---------|\n| Monday    | rain    |\n| Tuesday   | sunny   |\n| Wednesday | cloudy  |\n| Thursday  | rain    |\n| Friday    | sunny   |"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the information formatted as a table:\n\n| Day       | Weather |\n|-----------|---------|\n| Monday    | Rain    |\n| Tuesday   | Sunny   |\n| Wednesday | Cloudy  |\n| Thursday  | Rain    |\n| Friday    | Sunny   |"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the converted table format:\n\n| Day       | Weather |\n|-----------|---------|\n| Monday    | rain    |\n| Tuesday   | sunny   |\n| Wednesday | cloudy  |\n| Thursday  | rain    |\n| Friday    | sunny   |"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the weather information in table format:\n\n| Day       | Weather  |\n|-----------|----------|\n| Monday    | rain     |\n| Tuesday   | sunny    |\n| Wednesday | cloudy   |\n| Thursday  | rain     |\n| Friday    | sunny    |"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the list converted to a table format:\n\n| Day       | Weather  |\n|-----------|----------|\n| Monday    | Rain     |\n| Tuesday   | Sunny    |\n| Wednesday | Cloudy   |\n| Thursday  | Rain     |\n| Friday    | Sunny    |"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather |\n|-----------|---------|\n| Monday    | rain    |\n| Tuesday   | sunny   |\n| Wednesday | cloudy  |\n| Thursday  | rain    |\n| Friday    | sunny   |"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the list converted into a table format:\n\n| Day | Weather |\n|-----|---------|\n| Monday | Rain |\n| Tuesday | Sunny |\n| Wednesday | Cloudy |\n| Thursday | Rain |\n| Friday | Sunny |\n\nThis table organizes the weather forecast information in a clear, structured format that's easy to read."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the list converted into a table:\n\n| Day | Weather |\n| :--- | :--- |\n| Monday | rain |\n| Tuesday | sunny |\n| Wednesday | cloudy |\n| Thursday | rain |\n| Friday | sunny |"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "| Day       | Weather |\n|-----------|---------|\n| Monday    | Rain    |\n| Tuesday   | Sunny   |\n| Wednesday | Cloudy  |\n| Thursday  | Rain    |\n| Friday    | Sunny   |"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the list in table format:\n\n| Day | Weather |\n|-----|---------|\n| Monday | Rain |\n| Tuesday | Sunny |\n| Wednesday | Cloudy |\n| Thursday | Rain |\n| Friday | Sunny |"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the data in table format:\n\n| Day | Weather |\n|-----|---------|\n| Monday | rain |\n| Tuesday | sunny |\n| Wednesday | cloudy |\n| Thursday | rain |\n| Friday | sunny |"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure! Here's your data in a table format:\n\n| Day       | Weather |\n|-----------|---------|\n| Monday    | Rain    |\n| Tuesday   | Sunny   |\n| Wednesday | Cloudy  |\n| Thursday  | Rain    |\n| Friday    | Sunny   |\n\nLet me know if you'd like this in a different format, such as HTML, CSV, or anything else! 😊"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's your weather schedule converted into a table:\n\n| **Day** | **Weather** |\n|-------------|-------------|\n| Monday | Rain |\n| Tuesday | Sunny |\n| Wednesday | Cloudy |\n| Thursday | Rain |\n| Friday | Sunny |\n\nLet me know if you'd like any changes to the format! 😊"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the weather forecast converted to a table format:\n\n| Day | Weather |\n|-----|---------|\n| Monday | Rain |\n| Tuesday | Sunny |\n| Wednesday | Cloudy |\n| Thursday | Rain |\n| Friday | Sunny |"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the weather information in table format:\n\n| Day | Weather |\n|-----------|---------|\n| Monday | rain |\n| Tuesday | sunny |\n| Wednesday | cloudy |\n| Thursday | rain |\n| Friday | sunny |"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the list converted to a table:\n\n| Day | Weather |\n|-----------|---------|\n| Monday | rain |\n| Tuesday | sunny |\n| Wednesday | cloudy |\n| Thursday | rain |\n| Friday | sunny |"
+    }
+  ]
+}

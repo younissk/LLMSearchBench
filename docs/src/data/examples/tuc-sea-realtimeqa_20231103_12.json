@@ -1,0 +1,356 @@
+{
+  "id": "tuc-sea-realtimeqa_20231103_12",
+  "bucket": "search",
+  "subcategory": "realtimeqa",
+  "source": "retrievalqa",
+  "sourceId": "realtimeqa_20231103_12",
+  "adversarial": false,
+  "prompt": "Fans and Hollywood stars are paying tribute to actor Matthew Perry following his untimely passing. Which popular TV sitcom did Perry star in?",
+  "goldAnswer": [
+    "“Friends”"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry TV sitcom role popular series",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Matthew Perry's most famous TV sitcom role."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry was best known for starring in the popular TV sitcom **\"Friends\"**, where he played the role of Chandler Bing."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the hit TV sitcom **Friends**, where he played the beloved character Chandler Bing."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry TV sitcom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom \"Friends\"."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry was best known for starring as Chandler Bing in the iconic TV sitcom **“Friends.”**"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm sorry, I don't have information about Matthew Perry's passing. To answer your question though, Matthew Perry is best known for starring in the popular TV sitcom **\"Friends\"** (1994–2004), where he played Chandler Bing."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry TV show",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom \"Friends.\" He played the character Chandler Bing."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry sitcom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry popular TV sitcom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry was best known for playing Chandler Bing on the hit sitcom **“Friends.”**"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry was a prominent actor who starred in the popular TV sitcom \"Friends.\" He played the character Chandler Bing, one of the main characters in the show."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on the information you've provided, Matthew Perry starred in the popular TV sitcom \"Friends.\" He played the character of Ross Geller throughout the show's run from 1994 to 2004. Would you like more details about his role or the show?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom *Friends*, where he played the character Chandler Bing."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry was best known for starring as Chandler Bing in the popular TV sitcom *Friends*. This information is widely recognized and does not require a web search to confirm."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry TV sitcom actor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom *Friends*, where he played the role of Chandler Bing. This is a well-known fact, so no search is needed."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom **\"Friends\"**, where he played the character Chandler Bing."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry popular TV sitcom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry famous TV show",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom **\"Friends\"**. He played the beloved character **Chandler Bing** on the show, which aired from 1994 to 2004. The series became one of the most iconic and successful sitcoms in television history, and Perry's witty, sarcastic portrayal of Chandler made him a fan favorite wo"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom **Friends**, where he played the character **Chandler Bing**. The show aired from 1994 to 2004 and became one of the most beloved and successful sitcoms in television history. Perry's portrayal of the witty, sarcastic Chandler was a fan favorite throughout the series' ten-"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom **Friends**. He played the beloved character Chandler Bing throughout all 10 seasons of the show, which aired from 1994 to 2004. The show became one of the most iconic and successful sitcoms in television history, and Perry's portrayal of the sarcastic, witty Chandler made"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom **\"Friends\"**. He played the iconic role of Chandler Bing in the hit show that aired from 1994 to 2004. The series became one of the most successful and beloved sitcoms in television history, and Perry's portrayal of Chandler remains one of the most memorable performances"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the popular TV sitcom **Friends**, where he played the character Chandler Bing."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry actor death tribute sitcom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry TV sitcom Friends Chandler Bing",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry popular TV sitcom starred in tribute passing 2023",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry passing tribute TV sitcom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry popular TV sitcom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Matthew Perry sitcom Friends Chandler Bing",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry starred in the hugely popular TV sitcom **\"Friends\"** (1994-2004), where he played the beloved character **Chandler Bing**. \n\n\"Friends\" was one of the most successful and iconic sitcoms in television history, following the lives of six friends living in New York City. Perry's portrayal of Chandler - known"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Matthew Perry was best known for starring in the beloved NBC sitcom **\"Friends\"** (1994–2004), where he played the sarcastic and witty **Chandler Bing**. The show was one of the most popular sitcoms of all time, and Perry's portrayal of Chandler earned him an Emmy nomination and made him a household name.\n\nPerry passed"
+    }
+  ]
+}

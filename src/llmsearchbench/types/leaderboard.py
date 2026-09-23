@@ -28,6 +28,10 @@ class LeaderboardRow(SiteModel):
     #: tool was described in the prompt instead. Shown as a badge, because the
     #: number answers a slightly different question.
     tool_protocol: ToolProtocol = ToolProtocol.NATIVE
+    #: Billions of parameters, measured from the published weights. Absent for
+    #: a closed model and for one whose repo has not been checked — never
+    #: estimated, since the whole point is deciding what to fine-tune.
+    params_b: float | None = Field(default=None, gt=0)
 
     decision_accuracy: Fraction
     memory_accuracy: Fraction

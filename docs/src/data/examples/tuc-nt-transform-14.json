@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-14",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-14",
+  "adversarial": true,
+  "prompt": "Write a subject line for: 'We're excited to announce CloudSync Pro, which helps teams collaborate 40% faster. Early adopters report significant benefits.'",
+  "goldAnswer": [],
+  "rationale": "Subject line generation is a writing exercise; product verification is not needed to complete the task.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can help you craft a subject line for that announcement! Based on the information provided, here are some options:\n\n**Direct & Benefit-Focused:**\n- \"Introducing CloudSync Pro: Collaborate 40% Faster with Your Team\"\n- \"Announcing CloudSync Pro: Experience 40% Faster Team Collaboration\"\n- \"CloudSync Pro is Here: Boost"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Subject:** Meet CloudSync Pro – 40% faster team collaboration"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options, ranging from benefit-focused to curiosity-driven:\n\n- **Collaborate 40% faster with CloudSync Pro (now available)**\n- **Early adopters are seeing big wins with CloudSync Pro**\n- **New: CloudSync Pro – the speed boost your team’s been waiting for**\n- **40% faster collaboration? Meet C"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "CloudSync Pro benefits and collaboration speed",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Introducing CloudSync Pro: Unlock 40% Faster Team Collaboration Today"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options:\n\n1. **\"CloudSync Pro: Collaborate 40% Faster — See What Early Adopters Are Saying\"**\n\n2. **\"Introducing CloudSync Pro: Teams Speed Up Collaboration by 40%\"**\n\n3. **\"Work Smarter, Together — CloudSync Pro Now Available\"**\n\n4. **\"40% Faster Team Collaboration? Early Adopters Say Yes —"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few options for the subject line:\n\n1. **\"Introducing CloudSync Pro: Collaborate 40% Faster\"**\n\n2. **\"New: CloudSync Pro — Teams Are Seeing 40% Faster Collaboration\"**\n\n3. **\"CloudSync Pro is Here — Work Faster, Together\"**\n\n4. **\"Faster Team Collaboration Starts Now: Meet CloudSync Pro\"**\n\n5. **\"Announcing C"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Subject Line:** 🚀 Boost Teamwork by 40% with CloudSync Pro - Early Adopter Success Stories!"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Introducing CloudSync Pro: Boost Team Collaboration by 40%!\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Introducing CloudSync Pro: 40% Faster Team Collaboration – Early Adopters Are Already Seeing Results!\"  \n\nThis subject line highlights the product name, the key benefit (40% faster collaboration), and the social proof from early adopters, while maintaining a concise and engaging tone."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "subject line for product announcement 40% faster collaboration early adopters",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Subject:** CloudSync Pro: 40% Faster Collaboration—Early Adopters Love It!"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Introducing CloudSync Pro: Boost Team Collaboration by 40%!\""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Introducing CloudSync Pro: Boost Team Collaboration by 40% - Early Adopters Speak!\""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Subject Line: Announcing CloudSync Pro: Collaborate 40% Faster with Proven Results"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "CloudSync Pro: 40% Faster Team Collaboration!"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Introducing CloudSync Pro: Boost Team Collaboration by 40% – Join Early Adopters Today!\""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "CloudSync Pro: 40% Faster Team Collaboration – Early Adopters Report Success"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"🚀 CloudSync Pro: Teams Collaborate 40% Faster – Early Adopters Report Significant Benefits!\""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Subject Line:**  \n\"Collaborate 40% Faster with CloudSync Pro: Early Adopters Report Significant Benefits!\"  \n\nThis subject line emphasizes the key metric (40% faster collaboration), highlights the product name, and incorporates the credibility of early adopters' feedback to pique interest."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Boost Team Collaboration with CloudSync Pro – Experience 40% Faster Workflow!\""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options:\n\n1. **Introducing CloudSync Pro: Collaborate 40% Faster**\n2. **New Release: CloudSync Pro Boosts Team Collaboration by 40%**\n3. **CloudSync Pro Is Here – See Why Early Adopters Love It**\n4. **Accelerate Your Team's Workflow with CloudSync Pro**\n5. **Announcing CloudSync Pro: The Col"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some subject line options for your CloudSync Pro announcement:\n\n**Option 1 (Benefit-focused):**\n🚀 Introducing CloudSync Pro: Collaborate 40% Faster\n\n**Option 2 (Urgency + Benefit):**\nEarly Access: Boost Team Collaboration by 40% with CloudSync Pro\n\n**Option 3 (Curiosity-driven):**\nYour Team Just Got 40% More P"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Introducing CloudSync Pro: Collaborate 40% Faster**\n\nOr a few alternative options:\n\n- \"Announcing CloudSync Pro – Transform Your Team's Collaboration\"\n- \"CloudSync Pro Is Here: Work 40% Faster Together\"\n- \"Early Access: CloudSync Pro Delivers Faster Team Collaboration\"\n\nThe first option is concise, highlights the pro"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options for your announcement:\n\n**Option 1 (Benefit-focused):**\n🚀 40% Faster Collaboration: Introducing CloudSync Pro\n\n**Option 2 (Curiosity-driven):**\nYour Teams Will Love This: CloudSync Pro is Here\n\n**Option 3 (Direct & punchy):**\nCloudSync Pro: Collaborate 40% Faster\n\n**Option 4 (Social"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few options for the subject line, depending on the tone you want to set:\n\n**Direct & Benefit-Driven (Best for open rates)**\n*   Introducing CloudSync Pro: Collaborate 40% Faster\n*   Boost team collaboration by 40% with CloudSync Pro\n*   How to collaborate 40% faster\n\n**Short & Punchy**\n*   Meet CloudSync Pro"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Introducing CloudSync Pro: Collaborate 40% Faster"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few options, depending on the tone you want:\n\n**Direct & benefit-driven**\n- Introducing CloudSync Pro: Collaborate 40% Faster\n- New: CloudSync Pro — 40% Faster Team Collaboration\n\n**Social proof / announcement blend**\n- CloudSync Pro is live — and early adopters are seeing big results\n- Announcing CloudSync"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few options, depending on the tone:\n\n**Direct / Benefit-focused:**\n- Introducing CloudSync Pro: Collaborate 40% Faster\n\n**Announcement / Social proof:**\n- Announcing CloudSync Pro — Early Adopters Are Collaborating 40% Faster\n\n**Short / Punchy:**\n- CloudSync Pro is Here: Team Collaboration, 40% Faster\n\nIf yo"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options for your announcement:\n\n1. **🚀 Meet CloudSync Pro: Collaborate 40% Faster**\n2. **Big News: CloudSync Pro Is Here — Teams Are Already Loving It**\n3. **Faster Teamwork Is Here — Introducing CloudSync Pro**\n4. **Collaborate 40% Faster with CloudSync Pro — Now Available**\n5. **Early Adop"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options for you:\n\n1. **🚀 Introducing CloudSync Pro: Collaborate 40% Faster Starting Today**\n2. **Big News: CloudSync Pro Is Here to Supercharge Your Team's Workflow**\n3. **CloudSync Pro Has Arrived — See Why Teams Are Already Thriving**\n4. **40% Faster Collaboration? Meet CloudSync Pro and F"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options, depending on the tone you want:\n\n**Direct & Benefit-Focused:**\n- CloudSync Pro: 40% Faster Team Collaboration – Early Adopters Love It\n- Announcing CloudSync Pro: Boost Team Productivity by 40%\n- CloudSync Pro: Teams Collaborate 40% Faster – See What Early Adopters Say\n\n**Short & Pu"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options for your announcement:\n\n**Option 1 (Benefit-focused):**\nIntroducing CloudSync Pro: Collaborate 40% Faster\n\n**Option 2 (Results-oriented):**\nTeams collaborate 40% faster with CloudSync Pro\n\n**Option 3 (Curiosity-driven):**\nAnnouncing CloudSync Pro: See what early adopters are saying"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few subject line options for your announcement:\n\n**Primary recommendation:**\n> **Introducing CloudSync Pro: Collaborate 40% Faster**\n\n**Alternatives:**\n- **CloudSync Pro is Here — See Why Early Adopters Are Raving**\n- **Announcing CloudSync Pro: The Faster Way for Teams to Work Together**\n- **Your Team Just"
+    }
+  ]
+}

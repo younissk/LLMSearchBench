@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-code-01",
+  "bucket": "no_tool",
+  "subcategory": "code",
+  "source": "generated",
+  "sourceId": "nt-code-01",
+  "adversarial": false,
+  "prompt": "Explain this code: start at position 0, jump forward by the value at that position, repeat until past end. Why does this pattern matter?",
+  "goldAnswer": [],
+  "rationale": "Basic pointer/array traversal, no external reference needed",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"start at position 0, jump forward by the value at that position\" algorithm pattern",
+      "callProblem": "",
+      "answerExcerpt": "I need to understand what specific code pattern you're referring to. The description \"start at position 0, jump forward by the value at that position, repeat until past end\" sounds like it could be describing several different algorithms or patterns.\n\nLet me search for more information about this specific pattern."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"start at position 0, jump forward by the value at that position\" code pattern",
+      "callProblem": "",
+      "answerExcerpt": "Let me search for this specific pattern to understand what it refers to."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This code describes a simple traversal rule: you start at index 0, then repeatedly jump forward by the number stored at your current position, stopping only when you land beyond the array’s end. It’s the core mechanic of the classic **Jump Game** problem, and the pattern matters because it captures a fundamental greedy"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Fibonacci sequence",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The code you're referring to is likely an implementation of a jump sequence or a \"jumping sequence\" algorithm. Here's a breakdown of how it works:\n\n1. Start at position 0 in a sequence of numbers.\n2. Jump forward by the value at the current position. For example, if the value at position 0 is 3, jump to position 3.\n3."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"jump forward by the value at that position\" array",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The \"Jump Game\" Pattern\n\nThis is a classic interview / algorithmic thinking problem, and it's surprisingly rich. Let me walk through why it matters.\n\n## What the code does\n\nGiven an array like `[2, 3, 1, 1, 4]`:\n\n- Start at index 0, read value `2` → jump to index 2\n- Read value `1` → jump to index 3\n- Read value `1`"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Explain this code: start at position 0, jump forward by the value at that position, repeat until past end. Why does this pattern matter?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The code you're describing is a simple algorithm that can be interpreted as follows:\n\n1. **Start at position 0**: Begin at the first element of a sequence (e.g., an array or list).\n2. **Jump forward by the value at that position**: Move forward in the sequence by the value found at the current position.\n3. **Repeat unt"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**What the code does – step‑by‑step**\n\n1. **Start at index 0** of an array (or list) `A`.  \n2. **Read the value** stored at the current index, call it `v = A[i]`.  \n3. **Jump forward** `v` positions: the next index becomes `i + v`.  \n4. **Repeat** the process with the new index.  \n5. **Stop** as soon as the next index"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "start at position 0 jump forward by the value at that position repeat until past end algorithm",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The code you're describing is a common pattern used in algorithms that involve traversing an array or list by jumping through its indices based on the values at those indices. Here's a step-by-step explanation of the process:\n\n1. **Initialization**: Start at position 0 in the array.\n2. **Jump Calculation**: Look at the"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The code you're describing is a well-known algorithm called the \"Fibonacci sequence jumping\" or more commonly known as the \"153 algorithm\" or \"153 problem.\" However, it's often referred to as the \"Fibonacci jumping\" or \"Fibonacci sequence jumping\" in some contexts. This algorithm is not directly related to the Fibonacc"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The code pattern you're describing is a simple algorithm that traverses an array (or list) by using the values in the array as instructions for how far to jump. Here's a breakdown:\n\n### How It Works:\n1. **Start at position 0**: Begin at the first element of the array.\n2. **Jump forward by the value at that position**:"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This pattern describes a deterministic traversal of an array where you start at index 0, jump forward by the value at the current index, and repeat until you exit the array. For example, given the array `[2, 3, 1, 1, 4]`:\n- Start at index 0 (value `2`), jump to index 2.\n- At index 2 (value `1`), jump to index 3.\n- At i"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "code pattern start at position 0 jump by value at position repeat until past end significance",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This pattern describes a traversal algorithm where you start at index 0 of an array, and at each step, you jump forward by the value at the current position. You repeat this process until your position exceeds the array's length (i.e., you \"jump past the end\"). \n\n**Example**:  \nFor the array `[2, 3, 1, 1, 4]`:\n- Start"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The pattern you described—starting at position 0, jumping forward by the value at the current position, and repeating until exiting the array—is a key concept in algorithms like the **\"Jump Game\"** problem. Here's why this pattern matters:\n\n### 1. **Efficient Traversal**  \n   This pattern allows traversal of an array w"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The code pattern you're describing is commonly seen in algorithms like the **Jump Game** problem. Here's a breakdown:\n\n### How It Works:\n1. **Start at position 0** (index 0).\n2. **Jump forward** by the value at your current position.\n3. **Repeat** this process until:\n   - You **reach or pass the end** of the array (suc"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The code you're referring to describes a simple **jump-based traversal algorithm** often used in programming challenges or puzzles, such as those found in coding interviews or recreational programming problems. Let's break it down:\n\n### Code Explanation\n\n1. **Start at position 0**: The traversal begins at index 0 of so"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This describes a classic **array traversal with variable jumps** pattern. Here's what it does and why it matters:\n\n## How It Works\n\n```\nPosition:  [0,  1,  2,  3,  4,  5]\nValue:     [2,  3,  1,  1,  4,  0]\n           ↑\n           Start here (position 0)\n           Jump 2 → position 2\n           Jump 1 → position 3"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "jump array index value algorithm pattern explanation",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Array Jump Pattern Explanation\n\n## How It Works\n\n```python\nposition = 0\nwhile position < len(array):\n    jump = array[position]\n    position += jump\n```\n\n**Example:**\n```\nArray: [2, 3, 1, 1, 4]\nStep 1: pos=0, value=2 → jump to pos=2\nStep 2: pos=2, value=1 → jump to pos=3\nStep 3: pos=3, value=1 → jump to pos=4\nStep 4:"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This code pattern describes a **jump pointer traversal** (also known as a jump array traversal). Here's how it works:\n\n## How It Works\n\n```python\n# Example\narr = [2, 3, 1, 1, 4]\nposition = 0\n\nwhile position < len(arr):\n    print(f\"Position {position}: value = {arr[position]}\")\n    position = position + arr[position]  #"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This logic describes a specific algorithmic pattern often referred to as the **\"Jump Game\"** or **Variable-Step Traversal**.\n\nHere is an explanation of how the code works, followed by why this specific pattern is significant in computer science.\n\n### 1. The Logic Explained\n\nIn a standard loop (like a `for` loop), you u"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"start at position 0, jump forward by the value at that position\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"start at position 0, jump forward by the value at that position, repeat until past end\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"start at position 0, jump forward by the value at that position, repeat until past end\" code pattern",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "algorithm pattern \"start at position 0\" \"jump forward by value\" array",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'd be happy to explain this pattern! You're describing what's often called a **\"jump traversal\"** or **\"array jumping\"** pattern. Let me break it down:\n\n## The Pattern Explained\n\n```python\ndef jump_traverse(arr):\n    position = 0\n    while position < len(arr):\n        jump_distance = arr[position]\n        position = p"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## What the code does\n\nThe whole thing is roughly:\n\n```python\ni = 0\nwhile 0 <= i < len(a):\n    i += a[i]\n```\n\nThe values in the array aren't data to inspect — they're **instructions**. Standing on index `i`, the number `a[i]` tells you how many slots to leap forward. Land, read, leap again, until your index leaves the"
+    }
+  ]
+}

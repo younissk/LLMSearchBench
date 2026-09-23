@@ -1,0 +1,357 @@
+{
+  "id": "tuc-mem-popqa_1710145",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_1710145",
+  "adversarial": false,
+  "prompt": "What genre is Waveform Audio File Format?",
+  "goldAnswer": [
+    "audio file format",
+    "digital audio format"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAV) is not a musical genre - it's a digital audio file format. WAV is a container format for storing audio bitstreams, developed by Microsoft and IBM. It's commonly used for uncompressed audio files on Windows systems.\n\nWAV files can contain audio in any genre - from classical music to"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Waveform Audio File Format genre",
+      "callProblem": "",
+      "answerExcerpt": "Let me search for this."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term \"genre\" typically refers to categories of music or art, not file formats. However, if you're asking about the **type** or **category** of the Waveform Audio File Format (WAV), here's the answer:\n\n**WAV is a container format for digital audio.** More specifically, it is:\n\n- **Uncompressed (usually):** It most c"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Waveform Audio File Format genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format (WAV) is an audio file format, not a music genre. It is a container format used to store audio data, typically uncompressed, in a raw format. WAV files can contain audio data in various formats, such as PCM (Pulse Code Modulation), but the format itself is not a genre of music."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Waveform Audio File Format genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format (WAV or WAVE) is an **audio file format** developed by Microsoft and IBM. It's specifically designed to store raw, uncompressed audio data (typically PCM - Pulse Code Modulation audio).\n\nKey characteristics:\n- **Container format**: WAV is a file container for storing audio data\n- **Primary us"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What genre is Waveform Audio File Format?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAVE or WAV) is not a genre of music or audio. Instead, it is a file format standard for storing audio bitstreams on computers. It is commonly used for uncompressed audio data, such as that produced by a CD-quality recording. The format is widely supported and can contain both compressed"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Waveform Audio File Format genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Waveform Audio File Format genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Waveform Audio File Format (WAV)** isn’t a music genre at all – it’s a **file format**.  \n\n- **What it is:** A container format defined by Microsoft and IBM for storing waveform audio on PCs.  \n- **Typical use:** Holds raw, uncompressed PCM audio (the “standard” CD‑quality sound), but it can also contain compressed a"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format, commonly known as WAV, is not a genre but a file format used for storing audio data. It is a standard for storing audio on computers and is known for its high quality, uncompressed audio. If you were asking about a genre of music that is often associated with WAV files, that could vary widel"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It seems there might be a bit of confusion in your question. Waveform Audio File Format (WAV) is not a genre but rather a file format used for storing audio data. If you're looking for information about the genre of music that might be stored in a WAV file, could you please provide more details or clarify your query?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAV) is not a genre of music. It is a file format for storing audio data, commonly used for uncompressed audio. WAV files can contain audio of any genre, such as classical, rock, jazz, etc., but the format itself is not a genre."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAV) is not a music genre—it is a standard **audio file format** developed by Microsoft and IBM for storing audio bitstreams on PCs. It is commonly used for uncompressed audio and is a container format, not a classification of musical style. If you meant something else, feel free to clar"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAV) is not a genre of music. It is a file format used for storing audio data, typically in an uncompressed format. WAV files are commonly used for high-quality audio and are widely supported across various platforms and software."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAV) is **not a music genre**—it is a **standard audio file format** used for storing uncompressed audio data. It was developed by Microsoft and IBM and is commonly associated with high-quality audio playback (e.g., in Windows systems). Music genres (e.g., rock, jazz, pop) categorize sty"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAV) is not a music genre but a **file format** for storing audio bitstreams. It is commonly used for **high-quality, uncompressed audio** and is often associated with **lossless audio** in professional settings (e.g., studio recordings, CD audio). While WAV files can contain any type of"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAV) is not a genre in the traditional sense (like music genres). Instead, it is a **file format** used for storing audio data. WAV is a standard for uncompressed audio, developed by Microsoft and IBM, and is commonly used for high-quality audio storage. It typically uses PCM (Pulse Code"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format (WAV) is not a music genre - it's an **audio file format**. Specifically, it's:\n\n- A **digital audio container format** developed by Microsoft and IBM\n- Part of the RIFF (Resource Interchange File Format) specification\n- Typically stores **uncompressed PCM (Pulse Code Modulation)** audio data"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Waveform Audio File Format (WAV)** is not a genre - it's an **audio file format**.\n\nWAV is a standard file format for storing audio data, developed by Microsoft and IBM. It's commonly used for:\n\n- **Uncompressed audio storage** (though it can also contain compressed audio)\n- **High-quality audio** preservation\n- **Pr"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format (WAV) is not a music genre - it's a **digital audio file format**. \n\nWAV is a standard audio file container format developed by Microsoft and IBM in 1991. It's used for storing audio bitstreams on computers and is known for:\n\n- **Uncompressed audio** (typically)\n- **High quality** sound\n- **L"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Waveform Audio File Format (WAV) is not a music genre - it's an **audio file format**. \n\nWAV is a standard for storing audio files that was developed by Microsoft and IBM. It's commonly used for storing uncompressed audio data and is widely supported across various platforms and applications.\n\nKey characteristics o"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "genre of \"Waveform Audio File Format\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format (WAV) isn’t a genre—it’s an audio file format used for storing digital sound."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Waveform Audio File Format** (WAV or WAVE) is **not a music genre**—it is an **audio file format** (specifically, a container format for digital audio).\n\nKey facts:\n- **Developed by:** Microsoft and IBM\n- **Standard:** Part of the Resource Interchange File Format (RIFF) specification\n- **Typical content:** Uncompress"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Waveform Audio File Format genre",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format (WAV) is **not a musical genre**—it’s an **audio file format** developed by Microsoft and IBM in the early 1990s. Think of it like a container that holds raw, uncompressed audio data.\n\n- **Purpose**: WAV is used to store high‑quality audio waveforms, typically for professional recording, edit"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format (WAV) isn't a music genre — it's a **digital audio file format** developed by Microsoft and IBM. It's a technical standard used for storing audio data on computers, not a style of music.\n\nWAV files are commonly used because they store uncompressed audio (typically PCM), which means they prese"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **Waveform Audio File Format (WAV)** is not a music genre at all—it's a **digital audio file format**.\n\n## What WAV Actually Is:\n- **Developed by:** Microsoft and IBM\n- **Type:** Container format for storing audio data\n- **Purpose:** Stores uncompressed audio in PCM (Pulse Code Modulation) format\n- **Common use:**"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I think there might be a misunderstanding in your question. **Waveform Audio File Format (WAV)** is not a music genre - it's a **digital audio file format**.\n\nWAV is a technical standard for storing audio data on computers, developed by Microsoft and IBM. It's one of the most common formats for uncompressed audio files"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Waveform Audio File Format (WAV) isn't actually a genre — it's an **audio file format**, not a category of music.\n\nHere's the distinction:\n\n- **WAV** is a digital audio container format developed by Microsoft and IBM in 1991. It typically stores uncompressed, high-quality audio (usually PCM data). It's the audio equiva"
+    }
+  ]
+}

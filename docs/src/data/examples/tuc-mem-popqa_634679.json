@@ -1,0 +1,360 @@
+{
+  "id": "tuc-mem-popqa_634679",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_634679",
+  "adversarial": false,
+  "prompt": "Who is the father of Makaziwe Mandela?",
+  "goldAnswer": [
+    "Nelson Mandela",
+    "Nelson Rolihlahla Mandela",
+    "Mandela",
+    "Prisoner 46664",
+    "Madiba"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Makaziwe Mandela's father."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Makaziwe Mandela is **Nelson Mandela** (the former President of South Africa and anti-apartheid revolutionary). \n\nMakaziwe Mandela is Nelson Mandela's eldest surviving daughter, born in 1954 to Nelson Mandela and his first wife, Evelyn Mase. She was named after her older sister, Makaziwe Mandela, who died"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Makaziwe Mandela's father is **Nelson Mandela**, the former President of South Africa and anti-apartheid revolutionary. Makaziwe is his eldest daughter, born from his first marriage to Evelyn Mase. She has been a notable figure in her own right, involved in business and philanthropy in South Africa."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nelson Mandela"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Makaziwe Mandela is Nelson Mandela, the iconic South African anti-apartheid revolutionary and former President of South Africa. Makaziwe Mandela is one of Nelson Mandela's children."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Makaziwe Mandela is Nelson Mandela. \n\n**Answer:**  \nNelson Mandela is the father of Makaziwe Mandela. \n\nNo tool call was needed, as this is a well-known fact about Nelson Mandela's family."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Makaziwe Mandela’s father is **Nelson Mandela**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "father of Makaziwe Mandela",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Makaziwe Mandela is the daughter of Nelson Mandela and Graca Machel. Nelson Mandela is widely known as the father of Makaziwe Mandela. If you need more details about her or her parents, feel free to ask!"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Makaziwe Mandela's father is Nelson Mandela."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Who is the father of Makaziwe Mandela?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "father of Makaziwe Mandela",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Who is the father of Makaziwe Mandela?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "father of Makaziwe Mandela",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "father of Makaziwe Mandela",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Makaziwe Mandela was the daughter of **Nelson Mandela**, the former President of South Africa and anti-apartheid revolutionary. She was born in 1954 and was the eldest child of Nelson Mandela and his first wife, Evelyn Mase. Unfortunately, she passed away in 2004 at the age of 50."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Makaziwe Mandela is **Nelson Mandela**, the former President of South Africa and renowned anti-apartheid activist. Makaziwe Mandela (also known as Maki Mandela) was born in 1954 to Nelson Mandela and his second wife, Winnie Madikizela-Mandela. She is one of Nelson Mandela's six children."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Makaziwe Mandela's father is **Nelson Mandela**, the former President of South Africa and one of the most influential anti-apartheid leaders in history. She is one of his children from his first marriage to Evelyn Ntoko Mase."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Makaziwe Mandela was **Nelson Mandela**, the former President of South Africa.\n\nShe was his daughter with his second wife, Winnie Mandela. Makaziwe passed away in a car accident in 2002."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Makaziwe Mandela is **Thabo Mbeki**, the former President of South Africa. Her mother is Graca Machel, the widow of Nelson Mandela. Makaziwe was named in tribute to Nelson Mandela — \"Mandela\" as a family honor, and \"Makaziwe\" after his mother, Nomafensiba \"Makaziwe\" Mandela."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Makaziwe Mandela father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Makaziwe Mandela's father is **Nelson Mandela**, the renowned South African anti-apartheid revolutionary and former President of South Africa.\n\nMakaziwe (also known as \"Maki\") is Nelson Mandela's daughter from his first marriage to Evelyn Mase. She was born in 1954 and is one of Mandela's six children. Nelson Mandela h"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Makaziwe Mandela's father is **Nelson Mandela**, the anti-apartheid revolutionary and former President of South Africa.\n\nA note of interest: there were actually two daughters named Makaziwe. Nelson Mandela's first daughter, Makaziwe (born 1945 to his first wife Evelyn Mase), died at about nine months old. He and Evelyn"
+    }
+  ]
+}

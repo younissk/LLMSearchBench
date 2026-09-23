@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-19",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-19",
+  "adversarial": false,
+  "prompt": "You've worked 60-hour weeks for three months. A colleague got a promotion and immediately set firmer boundaries, better mood. Should you follow or push through to prove commitment?",
+  "goldAnswer": [],
+  "rationale": "Career boundaries require personal risk appetite assessment.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "workplace boundaries after promotion work-life balance 60 hour weeks burnout",
+      "callProblem": "",
+      "answerExcerpt": "This is a complex situation that touches on workplace culture, burnout, and career advancement. Let me search for some relevant information about work-life balance, promotions, and workplace boundaries to provide you with better insights."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a thoughtful question that gets at a deeper tension many people face in their careers. Let me break it down.\n\n**First, let's look at what's actually happening:**\n\nYou've been working 60-hour weeks for three months. That's 50% more than a standard 40-hour week. Your colleague got promoted and then *immediately*"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's a powerful crossroads—and your colleague's experience is actually a **critical data point**, not a reason to feel discouraged. Here’s how to navigate this strategically, not emotionally:\n\n### 🔍 Key Insights from Your Colleague’s Move\n1. **Boundaries ≠ Lack of Commitment**  \n   They got promoted *first*, *then* s"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "burnout vs commitment",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's great that your colleague has set a good example by establishing firmer boundaries and improving their mood after a promotion. However, whether you should follow their lead or continue to push through depends on your individual circumstances and priorities.\n\nWorking 60-hour weeks for an extended period can lead to"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a really common dilemma, and the honest answer is: **it depends, but don't ignore what your body and mind are telling you.**\n\nA few things to consider:\n\n**The colleague's promotion likely wasn't just about hours.** They got promoted *and then* set boundaries—meaning they had already demonstrated their value and"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a question worth thinking through carefully, because both paths have real costs and the \"right\" choice depends on factors only you can weigh.\n\n## The case for following your colleague's example\n\n**The productivity evidence is on their side.** Research on overwork consistently shows diminishing returns past roug"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Should I follow my colleague's example and set boundaries or push through to prove commitment after working 60-hour weeks for three months?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Deciding whether to set firmer boundaries or continue pushing through to prove commitment is a personal decision that depends on various factors, including your well-being, career goals, and workplace culture. Here are some points to consider:\n\n### Setting Firmer Boundaries\n1. **Work-Life Balance**: Setting boundaries"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Working 60‑hour weeks for three months is a clear signal that you’re invested in your role, but it’s also a red flag that you’re flirting with burnout. Seeing a colleague who just got promoted instantly adopt firmer boundaries—and noticeably improve their mood—offers a useful case study. Here’s how to think about the c"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "working long hours vs setting boundaries for career advancement promotion",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Short answer  \n**Set boundaries—while still showing you’re a high‑value contributor.**  \nProving commitment by grinding 60‑hour weeks is rarely the most sustainable or respected way to advance. A promotion that comes with clearer limits usually signals that the organization now trusts you to manage your own workloa"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's important to consider both your well-being and your career goals when making this decision. Working long hours consistently can lead to burnout, which can negatively impact your health, relationships, and job performance. Your colleague's experience suggests that setting boundaries can improve mood and potentially"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's important to consider both your well-being and the sustainability of your career path. Pushing through extreme work hours can lead to burnout, which may negatively impact your performance and health in the long run. On the other hand, setting clear boundaries and improving your mood can help you maintain a healthy"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It’s important to recognize that sustainable success isn’t measured solely by hours worked, but by impact, well-being, and long-term growth. If your colleague set firmer boundaries after a promotion and is thriving, it may reflect healthy professional evolution—not a lack of commitment.\n\nHere’s what to consider:\n\n1. **"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "impact of work-life balance on career progression after promotion",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "work-life balance vs showing commitment in high-pressure jobs",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "work boundaries promotion career advancement burnout",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "work-life balance after promotion, effects of long work hours on productivity, setting boundaries in the workplace",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "impact of long work hours on productivity and burnout, benefits of setting work boundaries, work-life balance and commitment",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This situation involves a balance between demonstrating dedication and maintaining personal well-being. Here's how to approach it:\n\n1. **Reflect on Your Values**: Consider what matters most to you—career advancement, work-life balance, or proving your commitment. If you're feeling burnt out or undervalued, pushing thro"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common workplace dilemma, and your colleague's experience actually provides valuable insight. Here's what I'd suggest:\n\n**Your colleague's promotion is telling.** They got promoted *and then* set firmer boundaries. This suggests:\n- Their commitment was already recognized\n- Boundaries didn't hurt their career"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic workplace dilemma, but there's important context in your situation that points toward **following your colleague's lead** rather than pushing through. Here's why:\n\n## Key Considerations\n\n### 1. **The Colleague's Success Is Data**\nYour colleague got promoted *and* set boundaries. This suggests your org"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a pivotal moment, and your colleague's experience offers a crucial data point: **they got the promotion *before* setting boundaries, not because they lacked them.**\n\nHere is the strategic reality: Working 60-hour weeks for three months is a sprint, not a career strategy. Unless you are in a specific \"up-or-out\""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a tough workplace dilemma, but I'd strongly recommend **following the colleague's example** rather than pushing through. Here's why:\n\n## The Case for Setting Boundaries\n\n**Sustainability:** 60-hour weeks for 3 months is unsustainable. Even if you \"prove commitment\" this way, you risk burnout, health issues, and"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The short answer is: **Follow the colleague, but do it strategically.**\n\nYou are currently in a trap of \"performative busyness.\" Working 60-hour weeks for three months is a sprint, not a marathon. If you continue to push through to \"prove commitment,\" you are likely to hit burnout before you hit the next milestone.\n\nHe"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Don’t push through just to “prove commitment.” Three months of 60-hour weeks is a burnout warning, not a badge of honor.\n\nThe smarter move is to follow the colleague’s example: set firmer boundaries while making your value visible in results, not hours.\n\nA practical approach:\n\n1. **Stop treating overwork as loyalty**"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Follow your colleague. Do not push through.\n\nHere is the hard truth hidden in your comparison: **the promotion and the boundaries are likely linked, not opposed.** Your colleague probably got promoted because of results, visibility, or strategic positioning—not because they out-suffered everyone else. Once they had the"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Don’t push through to “prove commitment.” The colleague didn’t get promoted *despite* setting boundaries—they likely got promoted because they demonstrated they could deliver sustainably, not because they were the most exhausted person in the room.\n\nHere is why you should follow their lead, not outwork them:\n\n**1. “Pro"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "workplace burnout vs setting boundaries career advancement research 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a really important question, and I want to be honest with you rather than just tell you what feels comfortable.\n\n## What Your Colleague's Behavior Actually Reveals\n\nNotice the timing: they set boundaries *after* getting promoted, not before. This suggests a few possibilities:\n\n- **They learned the hard way** du"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a really tough spot, and it's completely understandable that you're feeling conflicted. Let me break down what you're weighing and help you think through the options more clearly.\n\n---\n\n## What you're dealing with\n\n- **60-hour weeks for three months** — That's a lot. Even if you're getting paid for it, sustaine"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic career dilemma, and the colleague's example is actually quite instructive. Let me break down what's really happening here:\n\n## What Your Colleague's Move Reveals\n\nYour colleague didn't set boundaries *to get* promoted—they set them *after* proving their value. This is a crucial distinction. They likel"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Follow the colleague's lead — but deliberately, not as an impulsive copy.\n\nHere's why their example is stronger evidence than it might seem: they got promoted *first*, then set boundaries, and kept both. That's a natural experiment running in your own environment, and it undercuts the core fear behind \"push through to"
+    }
+  ]
+}

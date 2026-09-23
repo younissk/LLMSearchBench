@@ -1,0 +1,374 @@
+{
+  "id": "tuc-mem-popqa_1726045",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_1726045",
+  "adversarial": false,
+  "prompt": "In what country is Sugar Loaf Mountain?",
+  "goldAnswer": [
+    "United States of America",
+    "the United States of America",
+    "America",
+    "U.S.A.",
+    "USA",
+    "U.S.",
+    "US",
+    "the US",
+    "the USA",
+    "US of A",
+    "the United States",
+    "U. S. A.",
+    "U. S.",
+    "the States",
+    "the U.S.",
+    "'Merica",
+    "U.S",
+    "United States",
+    "'Murica"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain location country",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Sugar Loaf Mountain to determine which country it's located in."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain location country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain is located in **Brazil**. It is a famous peak situated in Rio de Janeiro, at the mouth of Guanabara Bay."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain is located in Brazil."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain (Pão de Açúcar) is located in **Brazil**. Specifically, it sits at the mouth of Guanabara Bay in the city of **Rio de Janeiro**. Standing about 396 meters (1,299 feet) tall, it's one of Rio's most iconic landmarks and can be reached via a glass-walled cable car."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain is located in Rio de Janeiro, Brazil. It is a prominent peak situated near the entrance of Guanabara Bay, arising 396 meters above the city. It is known worldwide for its unique shape and is a symbol of the city and the country."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain is located in Rio de Janeiro, Brazil."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugarloaf Mountain Philippines",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "location of Sugar Loaf Mountain",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain (Pão de Açúcar in Portuguese) is located in **Brazil**. It's situated in Rio de Janeiro, standing at the entrance of Guanabara Bay. The mountain is one of Rio's most iconic landmarks and a major tourist attraction, offering spectacular views of the city and surrounding coastline."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain (Pão de Açúcar in Portuguese) is located in **Brazil**. It's a famous landmark situated in Rio de Janeiro, overlooking Guanabara Bay. The mountain is one of the most iconic and recognizable symbols of Rio de Janeiro and is a major tourist attraction, known for its cable car system that takes visitor"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain is located in **Brazil**. Specifically, it's situated in Rio de Janeiro, rising from the shores of Guanabara Bay. It's one of Brazil's most famous landmarks and is known for its distinctive shape and the cable car system that takes visitors to its summit."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain is located in **Brazil**.\n\nIt is a famous landmark in the city of Rio de Janeiro.\n\n(Note: There are other mountains with similar names in the United States, such as in California and New York, and in Scotland, but the one in Rio de Janeiro is the most globally recognized.)"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The most famous Sugar Loaf Mountain (Pão de Açúcar) is located in **Brazil**, specifically in Rio de Janeiro. It's a well-known landmark overlooking Guanabara Bay.\n\n(Note: There are other mountains with the same name in various countries, including Australia and the United States, but the Brazilian one is the most wide"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain location country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain (known as **Pão de Açúcar** in Portuguese) is located in **Brazil**. It's one of the most iconic landmarks in **Rio de Janeiro**, situated at the entrance of Guanabara Bay. It rises about 396 meters (1,299 feet) above the harbor and is famous for its cable car rides offering stunning views of the ci"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The most famous Sugar Loaf Mountain is located in **Rio de Janeiro, Brazil**. It's a prominent granite peak that rises 396 meters (1,299 feet) above Guanabara Bay and is one of Rio's most iconic landmarks.\n\nHowever, there are other Sugar Loaf Mountains in different countries, including:\n- **Australia** (multiple locati"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Sugar Loaf Mountain location country",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sugar Loaf Mountain (Portuguese: **Pão de Açúcar**) is located in **Brazil**. It sits at the entrance of Guanabara Bay in Rio de Janeiro, on a peninsula extending into the Atlantic Ocean. It's one of Rio's most famous landmarks, known for its distinctive rounded granite peak and the cable car that carries visitors to i"
+    }
+  ]
+}

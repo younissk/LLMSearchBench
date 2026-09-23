@@ -1,0 +1,381 @@
+{
+  "id": "tuc-sea-triviaqa_sfq_20510",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_20510",
+  "adversarial": false,
+  "prompt": "What is the equivalent Royal Navy rank to the Army's Major?",
+  "goldAnswer": [
+    "kontradmiral",
+    "Chef d'Escadre",
+    "R.Adm",
+    "Rear-Admiral",
+    "chef d escadre",
+    "Kontradmiral",
+    "rr adm",
+    "Surgeon Rear-Admiral",
+    "Rear admiral",
+    "Rear Admiral (Australia)",
+    "RADM",
+    "surgeon rear admiral",
+    "R. Adm.",
+    "r adm",
+    "Rear Admiral",
+    "Read Admiral",
+    "Rear-admiral",
+    "read admiral",
+    "R.Adm.",
+    "rear admiral",
+    "Rear Admiral Upper Half",
+    "Rr-Adm",
+    "Rear admiral (Australia)",
+    "rear admiral upper half",
+    "radm",
+    "rear admiral australia"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Royal Navy rank equivalent to Army Major",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Royal Navy ranks and their equivalents to Army ranks."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's Major is **Lieutenant Commander**.\n\nHere's a quick comparison of the equivalent ranks:\n\n| Army | Royal Navy |\n|------|------------|\n| Major | Lieutenant Commander |\n| Captain | Commander |\n| Lieutenant Colonel | Commander (though this is a step up) |\n\nSo, **Major = Lieutenan"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Royal Navy rank equivalent to the British Army's Major is **Lieutenant Commander**."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Royal Navy rank equivalent to Army Major",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's Major is Lieutenant Commander."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "British military rank equivalence army major royal navy lieutenant commander",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the Royal Navy, the equivalent rank to an Army Major is **Commander**."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's Major is Lieutenant."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the Royal Navy, the equivalent rank to the Army's Major is Lieutenant Commander. Here's a brief comparison of the ranks:\n\n- **Army:** Major\n- **Royal Navy:** Lieutenant Commander\n- **Royal Air Force:** Squadron Leader\n\nThese ranks are considered mid-level command positions within their respective services."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's Major is **Lieutenant Commander**. \n\nThis is because both ranks are mid-level officer positions in their respective services, typically commanding a department or a small unit. The Army's Major corresponds to the Navy's Lieutenant Commander in terms of responsibility and sen"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Royal Navy equivalent rank to Army Major",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the Royal Navy the rank that corresponds to an Army **Major** (O‑4) is **Lieutenant Commander**.  \n\n- **Army**: Major (O‑4)  \n- **Royal Navy**: Lieutenant Commander (O‑4)  \n\nBoth ranks are senior field‑officer/commissioned officer levels, typically commanding a company‑sized unit in the Army and a ship or a major st"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent rank to an Army Major in the Royal Navy is Lieutenant Commander."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "equivalent Royal Navy rank to Army Major",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's Major is **Commander**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Royal Navy equivalent rank of Army Major UK",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Royal Navy rank equivalent to Army Major",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Royal Navy rank equivalent to Army Major",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "equivalent Royal Navy rank to Army's Major",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Royal Navy rank equivalent to Army Major",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's Major is **Lieutenant Commander**.\n\nHere's a quick comparison of the rank structure:\n\n| Army | Royal Navy |\n|------|------------|\n| Major | Lieutenant Commander |\n\nBoth ranks are at the same level in the British military hierarchy, typically commanding a company-sized unit i"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's **Major** is **Lieutenant Commander**.\n\nBoth ranks are at the OF-3 level in the NATO rank structure, making them equivalent in terms of seniority and responsibility within their respective services."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's **Major** is **Lieutenant Commander**.\n\nBoth ranks are at the same level in their respective services' officer hierarchy (OF-3 in NATO rank codes). Here's a quick reference for context:\n\n| Army Rank | Royal Navy Rank |\n|-----------|-----------------|\n| Colonel | Captain |\n|"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's Major is **Lieutenant Commander**.\n\nIn the British Armed Forces rank structure, these ranks are considered equivalent in terms of seniority and responsibility:\n\n| Army | Royal Navy | Royal Air Force |\n|------|------------|-----------------|\n| Major | Lieutenant Commander | S"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's Major is **Lieutenant Commander**.\n\nBoth ranks are classified as **OF-3** in the NATO rank system.\n\nFor context, the Royal Air Force equivalent is **Squadron Leader**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army’s **Major** is **Commander**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the Royal Navy, the rank equivalent to an Army **Major** (OF-3) is **Lieutenant Commander**. \n\n- **Army:** Major  \n- **Royal Navy:** Lieutenant Commander  \n- **Royal Air Force:** Squadron Leader  \n\nAll three are senior officer ranks at the same pay/command level."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Royal Navy equivalent rank to Army Major British ranks",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the British Armed Forces, the Army rank of **Major** is equivalent to the Royal Navy rank of **Lieutenant Commander**.\n\nTo put it in context:\n\n| Army | Royal Navy | Royal Air Force | NATO Code |\n|------|------------|-----------------|-----------|\n| Major | Lieutenant Commander | Squadron Leader | OF-4 |\n\nSo if you m"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The equivalent Royal Navy rank to the Army's **Major** is **Lieutenant Commander**.\n\nBoth are mid-ranking officer positions (OF-3 in NATO rank codes). Here's a quick comparison for context:\n\n| **Army** | **Royal Navy** | **Royal Air Force** |\n|---|---|---|\n| Lieutenant Colonel | Commander | Wing Commander |\n| **Major**"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "British Army Major equivalent Royal Navy rank",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "British Army Major equivalent Royal Navy rank",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Royal Navy rank equivalent to the Army's **Major** is **Lieutenant Commander**.\n\nBoth ranks sit at the NATO OF-3 level. Here's how the senior officer ranks compare between the two services:\n\n| British Army | Royal Navy |\n|---|---|\n| Captain | Lieutenant |\n| **Major** | **Lieutenant Commander** |\n| Lieutenant Colone"
+    }
+  ]
+}

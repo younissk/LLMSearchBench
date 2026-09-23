@@ -1,0 +1,376 @@
+{
+  "id": "tuc-mem-triviaqa_bt_4055",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_bt_4055",
+  "adversarial": false,
+  "prompt": "Which letter appears in a small circle after a trade-name to prove that the trade name is a registered trademark",
+  "goldAnswer": [
+    "R",
+    "ar letter",
+    "ʀ letter",
+    "Ʀ",
+    "Ar (letter)",
+    "Ʀ (letter)",
+    "r letter",
+    "vox canina",
+    "vōx canīna",
+    "⒭",
+    "R (letter)",
+    "🅁",
+    "Vōx Canīna",
+    "Ｒ",
+    "ʀ",
+    "🅡",
+    "ｒ",
+    "r",
+    "🄡",
+    "Vox Canina",
+    "🆁"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "letter in circle after trade name registered trademark symbol",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about trademark symbols and what appears in a circle after a trade name."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "registered trademark symbol small circle R trade name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter is **R** (®)."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"registered trademark symbol"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade-name to prove that the trade name is a registered trademark is \"R\". It is written as ®."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The symbol is a capital **R** inside a circle – the “®” (the letter R) that appears after a trade name to indicate it is a registered trademark."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade name to indicate it is a registered trademark is **\"R\"** — written as **®** (a circled R).\n\nThis symbol signifies that the trademark is officially registered with the relevant national or regional trademark office (such as the USPTO in the United States). It's imp"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade-name to prove that the trade name is a registered trademark is \"®\"."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The symbol that appears in a small circle after a trade name to indicate that it is a registered trademark is the letter \"R\" enclosed in a circle, which is represented as ®. This symbol is used to provide notice that the preceding term is a registered trademark or service mark."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The symbol you’re referring to is the **registered trademark symbol (®)**. It consists of the letter **“R”** placed inside a small circle and is used after a brand or trade name to indicate that the name has been officially registered with the appropriate trademark office. \n\nSo, the letter that appears in the small cir"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "letter in small circle after trade name registered trademark",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It’s the **“R” in a circle** – the registered‑trademark symbol **®**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade-name to indicate that it is a registered trademark is the letter \"R\". This symbol is commonly written as ®."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade name to indicate that it is a registered trademark is \"®\". This symbol signifies that the trademark has been officially registered with the appropriate trademark office. Would you like more information on trademarks or how to register one?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter \"R\" appears in a small circle (®) after a trade-name to indicate that the trade name is a registered trademark."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade-name to indicate a registered trademark is **R**. This symbol is written as ® (the letter \"R\" enclosed in a circle). It signifies that the trademark is officially registered with the relevant intellectual property office. \n\nNo tool call needed, as this is standard"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade-name to prove that the trade name is a registered trademark is **®** (the registered trademark symbol). \n\nThis symbol indicates that the trademark has been officially registered with a national trademark office, such as the United States Patent and Trademark Offic"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade name to indicate it is a registered trademark is **R**. This symbol (®) is used to denote that the trademark is officially registered with the relevant intellectual property office (e.g., the U.S. Patent and Trademark Office). \n\nNo tool call is needed, as this is"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "registered trademark symbol letter in circle",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade name to indicate it is a registered trademark is **R**. This symbol, known as the registered trademark symbol (®), signifies that the trademark is officially registered with the appropriate governmental authority. \n\nExample: *Apple®* indicates \"Apple\" is a registe"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter \"R\" appears in a small circle (®) after a trade-name to prove that the trade name is a registered trademark. This symbol indicates that the trademark has been officially registered with a national trademark office, such as the United States Patent and Trademark Office (USPTO). \n\nNo tool is needed for this qu"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter **R** appears in a small circle (®) after a trade name to indicate that it is a registered trademark.\n\nThis symbol is called the \"registered trademark symbol\" and signifies that the trademark has been officially registered with the appropriate government trademark office (such as the USPTO in the United Stat"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter **R** appears in a small circle (®) after a trade name to prove that the trade name is a registered trademark.\n\nThis symbol is called the **registered trademark symbol** and indicates that the trademark has been officially registered with the relevant government authority (such as the USPTO in the United Sta"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter **R** appears in a small circle (®) after a trade name to indicate that it is a registered trademark.\n\nThis symbol (®) signifies that the trademark has been officially registered with the appropriate government trademark office, such as the United States Patent and Trademark Office (USPTO) in the United Stat"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade name to prove that the trade name is a registered trademark is the letter **R** (®).\n\nThis symbol is known as the **registered trademark symbol**. It indicates that the trademark has been officially registered with the appropriate government authority (such as the"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter is **R**.\n\nThe symbol is **®** (a capital R inside a circle). It is used to indicate that a trademark has been officially registered with the relevant government authority (such as the USPTO in the United States).\n\nThis is distinct from the **™** symbol, which is used for unregistered trademarks."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter is **R**, shown as **®** in a small circle after the trade name. It indicates that the trademark is registered."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter is **R** — the symbol is **®** (a capital R inside a small circle), indicating a registered trademark. \n\n(The similar **™** symbol uses the letters T and M, but that denotes an unregistered trademark claim.)"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter is **R** — it appears inside a small circle as **®** (the registered trademark symbol) placed after a trade name to show it is a federally registered trademark. \n\n(For comparison, **™** is used for unregistered trademarks, and **℠** for service marks.)"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "letter in small circle after trade name registered trademark",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter **R** (®) appears in a small circle after a trade name to indicate that it is a registered trademark. This symbol (®) signifies that the trademark has been officially registered with the relevant government trademark office (such as the USPTO in the United States or CNIPA in China)."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter **R** inside a small circle – the ® symbol – is used to indicate that a trade name is a registered trademark."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter that appears in a small circle after a trade-name to indicate that it's a registered trademark is **\"R\"**.\n\nThe symbol is written as **®** (the letter R enclosed in a circle).\n\nThis registered trademark symbol (®) is used to give notice that the preceding word, symbol, or logo has been officially registered"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The letter **R** appears in a small circle (®) after a trade name to indicate that it is a registered trademark.\n\nThis symbol, known as the \"registered trademark symbol,\" can only be used legally once the trademark has been officially registered with the relevant trademark office (such as the USPTO in the United States"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-03",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-03",
+  "adversarial": false,
+  "prompt": "Three workers paint a house in 6 days. How many days for one?",
+  "goldAnswer": [],
+  "rationale": "Inverse ratio calculation from given data.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "three workers paint a house in 6 days how long for one worker",
+      "callProblem": "",
+      "answerExcerpt": "I'll help you solve this problem. Let me think about it step by step.\n\nThe problem states: \"Three workers paint a house in 6 days. How many days for one?\"\n\nThis is a work rate problem. If three workers together can complete the job in 6 days, we need to find how long it would take one worker to do the same job.\n\nLet me"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If 3 workers take 6 days to paint the house, the total amount of work is:\n\n\\[\n3 \\text{ workers} \\times 6 \\text{ days} = 18 \\text{ worker-days}\n\\]\n\nOne worker alone would take:\n\n\\[\n\\frac{18 \\text{ worker-days}}{1 \\text{ worker}} = 18 \\text{ days}\n\\]\n\n**Answer:** 18 days."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine how many days it would take **one worker** to paint the house, we start by analyzing the total amount of work required.\n\n---\n\n### Step 1: Understand the Total Work\n\nWe are told that **three workers** can paint the house in **6 days**. This means the **total work** required to paint the house is:\n\n$$\n\\text{"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how many days for one worker to paint a house",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers can paint a house in 6 days, it means that the total work required to paint the house is being done by three workers in 6 days. To find out how many days it would take for one worker to do the same job, we need to consider that one worker would have to do all the work alone.\n\nSince the work is being do"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It would take one worker **18 days** to paint the house.\n\n*Reasoning:*  \n- Three workers finish the job in 6 days, so the total amount of work is \\(3 \\times 6 = 18\\) “worker‑days”.  \n- With only one worker, the same 18 worker‑days of labor require \\(18 \\div 1 = 18\\) days."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Work Rate Problem\n\n**Setting up the problem:**\n- 3 workers together complete the job in 6 days\n- I need to find how long 1 worker takes alone\n\n**Calculation:**\n\nIf 3 workers finish in 6 days, the total work = 3 × 6 = **18 worker-days**\n\nThis means one worker alone would take:\n$$\\frac{18 \\text{ worker-days}}{1 \\text{"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Three workers paint a house in 6 days. How many days for one?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine how many days it would take for one worker to paint the house, we can use the concept of man-days, which is a unit representing the amount of work one person can do in one day.\n\n1. **Calculate the total amount of work in man-days:**\n\n   If three workers can paint the house in 6 days, the total amount of wo"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The combined work of the three workers equals \\(3 \\text{ workers} \\times 6 \\text{ days}=18\\) worker‑days.  \nIf only one worker does the job, he must supply all 18 worker‑days by himself, so it would take him **18 days**.\n\n\\[\n\\boxed{18\\text{ days}}\n\\]"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers together can paint a house in 6 days, the total amount of work required is equivalent to \\(3 \\text{ workers} \\times 6 \\text{ days} = 18 \\text{ worker-days}\\).  \n\nAssuming each worker works at the same rate, one worker would need to complete all 18 worker-days of work alone. Therefore, it would take one"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers finish the job in 6 days, the total amount of work is\n\n\\[\n\\text{Work} = 3 \\text{ workers} \\times 6 \\text{ days} = 18 \\text{ worker‑days}.\n\\]\n\nWith only one worker, the same 18 worker‑days of effort would be required, so\n\n\\[\n\\text{Days for one worker} = 18 \\text{ days}.\n\\]\n\n**Answer: 18 days.**"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To solve this, we can use the concept of worker-days. If three workers can paint a house in 6 days, then the total amount of worker-days required to paint the house is:\n\n\\[ 3 \\text{ workers} \\times 6 \\text{ days} = 18 \\text{ worker-days} \\]\n\nThis means it takes 18 worker-days to paint the house. If only one worker is p"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how many days for one worker to paint a house if three workers can do it in 6 days",
+      "callProblem": "",
+      "answerExcerpt": "This problem can be solved by determining the total amount of work done and then distributing it among one worker.\n\nIf three workers paint a house in 6 days, the total amount of work (in worker-days) required to paint the house is \\(3 \\times 6 = 18\\) worker-days. This means that if only one worker were to do the job, i"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers can paint a house in 6 days, then the total work required to paint the house is equivalent to $ 3 \\times 6 = 18 $ worker-days.\n\nIf only one worker is doing the job, they would need to complete all 18 worker-days of work by themselves. Therefore, it would take:\n\n$$\n18 \\div 1 = 18 \\text{ days.}\n$$\n\nSo, o"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The problem involves determining how many days one worker would take to paint a house, given that three workers complete it in 6 days. \n\n**Step-by-Step Explanation:**\n1. **Total Work Calculation:**  \n   The total work required to paint the house is measured in \"man-days.\" For 3 workers taking 6 days:  \n   $$\n   \\text{T"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers can paint a house in 6 days, then the total amount of work required to paint the house is equivalent to $ 3 \\text{ workers} \\times 6 \\text{ days} = 18 \\text{ worker-days} $.\n\nTo find out how many days it would take for one worker to complete the same amount of work, divide the total work by the number"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The problem involves calculating the time required for one worker to paint a house, given that three workers take 6 days. \n\n**Step-by-Step Explanation:**\n1. **Total Work Calculation:**  \n   The total work to paint the house is measured in \"worker-days.\"  \n   $ 3 \\text{ workers} \\times 6 \\text{ days} = 18 \\text{ worker-"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers can paint a house in 6 days, the total work required is $3 \\text{ workers} \\times 6 \\text{ days} = 18 \\text{ worker-days}$. For one worker to complete the same task, it would take $18 \\text{ worker-days} \\div 1 \\text{ worker} = 18 \\text{ days}$.\n\n**Answer:** 18 days."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The three workers together take 6 days to paint the house. Assuming each worker contributes equally, the total work requires $3 \\text{ workers} \\times 6 \\text{ days} = 18$ worker-days. For one worker, the time needed is $18 \\text{ worker-days} \\div 1 \\text{ worker} = 18$ days.\n\n**Answer:** 18 days."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward work-rate problem that doesn't require searching.\n\n**Answer: 18 days**\n\nHere's the reasoning:\n\n- 3 workers complete the job in 6 days\n- Total work = 3 workers × 6 days = **18 worker-days**\n- If 1 worker does all the work: 18 worker-days ÷ 1 worker = **18 days**\n\nThis is an inverse proportion:"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward work-rate problem that I can solve directly.\n\n**Solution:**\n\nIf 3 workers paint a house in 6 days, we can calculate the total work required:\n- **Total work = 3 workers × 6 days = 18 worker-days**\n\nFor 1 worker to complete the same amount of work:\n- **Days needed = 18 worker-days ÷ 1 worker = 1"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a work rate problem that I can solve directly.\n\nIf 3 workers paint a house in 6 days, the total work required is:\n**3 workers × 6 days = 18 worker-days**\n\nThis means painting the house requires 18 worker-days of effort.\n\nIf only 1 worker does the job:\n**18 worker-days ÷ 1 worker = 18 days**\n\n**Answer: 18 days**"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic work-rate problem that can be solved with basic math.\n\n**The answer: 18 days**\n\nHere's why:\n\n- 3 workers × 6 days = 18 worker-days of work needed to paint the house\n- 1 worker × 18 days = 18 worker-days of work\n\nSo if you have only 1 worker, it would take **18 days** to complete the same job.\n\nThis as"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It will take **18 days**.\n\nHere is the breakdown:\n1.  If 3 workers take 6 days, the total amount of work is $3 \\times 6 = 18$ \"worker-days.\"\n2.  Therefore, 1 worker needs to complete all 18 days of work alone."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "One worker would take **18 days**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If 3 workers take 6 days, that’s **3 × 6 = 18 worker-days** of work total.\n\nSo one worker alone would take **18 days**.  \n\n(Assuming they all work at the same rate and there are no other changing factors.)"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If the work rate is the same for each worker, the total work is:\n\n- 3 workers × 6 days = **18 worker-days**\n\nSo **1 worker** would need:\n\n- 18 worker-days ÷ 1 worker = **18 days**\n\n**Answer: 18 days** (assuming each works alone at the same pace)."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers can paint a house together in 6 days, that means the total amount of work is equivalent to **3 workers × 6 days = 18 worker‑days**.  \n\nThink of it like this: each day, the three workers together complete a small fraction of the house. Over 6 days, they’ve done 100% of the painting. So the whole job req"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Solving the Work-Rate Problem\n\nThis is a straightforward **inverse proportion** problem. Here's the logic:\n\n**Total work done:**\n3 workers × 6 days = **18 worker-days** of work\n\n**For one worker:**\n18 worker-days ÷ 1 worker = **18 days**\n\n### Why it works this way\n\nThink of it like splitting a pizza 🍕:\n- If 3 people"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers together finish the job in 6 days, the total amount of work can be expressed in “worker‑days”:\n\n\\[\n\\text{Total work} = 3 \\text{ workers} \\times 6 \\text{ days} = 18 \\text{ worker‑days}.\n\\]\n\nAssuming each worker works at the same rate, one worker would need the same total amount of work, i.e., 18 worker‑"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "If three workers can paint a house in 6 days, then one worker would take **18 days**.\n\nHere's the reasoning:\n- Total work required = 3 workers × 6 days = 18 worker-days\n- One worker working alone would need 18 days to complete those 18 worker-days of work"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**18 days.**\n\nHere's why: the job requires 3 workers × 6 days = **18 worker-days** of total effort.\n\nOne worker doing all that work alone would need 18 days. (Halving the workforce from 3 to 1 means tripling the time.)"
+    }
+  ]
+}

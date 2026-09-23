@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-19",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-19",
+  "adversarial": true,
+  "prompt": "StellarCorp earned $3.2M in March and $4.0M in April. What percent growth?",
+  "goldAnswer": [],
+  "rationale": "Sounds like real company data but percentage growth computed only from supplied figures, not looked up.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate the percent growth for StellarCorp from March to April.\n\n**Step 1: Identify the values**\n- March earnings: $3.2 million\n- April earnings: $4.0 million\n\n**Step 2: Calculate the increase**\nIncrease = April earnings - March earnings\nIncrease = $4.0M - $3.2M = $0.8M\n\n**Step 3: Calculate the percent growth**"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent growth from March ($3.2M) to April ($4.0M) is:\n\n\\[\n\\text{Growth} = \\frac{4.0 - 3.2}{3.2} \\times 100 = \\frac{0.8}{3.2} \\times 100 = 0.25 \\times 100 = \\boxed{25\\%}\n\\]"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent growth from March to April is 25%.\n\n**Calculation:**  \nGrowth = (April − March) / March × 100%  \n= ($4.0M − $3.2M) / $3.2M × 100%  \n= $0.8M / $3.2M × 100%  \n= 0.25 × 100% = 25%"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"StellarCorp revenue growth March April"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the percent growth, first, find the difference in earnings between April and March: $4.0M - $3.2M = $0.8M. Then, divide the difference by the original earnings: $0.8M / $3.2M = 0.25. Finally, convert the result to a percentage: 0.25 * 100% = 25%. The answer is 25%."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The revenue grew from $3.2 M to $4.0 M, an increase of $0.8 M.\n\n\\[\n\\text{Percent growth} = \\frac{4.0 - 3.2}{3.2} \\times 100\\% = \\frac{0.8}{3.2} \\times 100\\% = 25\\%\n\\]\n\n**StellarCorp experienced a 25 % increase in earnings from March to April.**"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from March to April:\n\n**Formula:** ((New - Old) / Old) × 100\n\n**Calculation:**\n- Growth = $4.0M - $3.2M = $0.8M\n- Percent growth = ($0.8M / $3.2M) × 100 = **25%**\n\nStellarCorp experienced a **25% growth** from March to April."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Percent growth from 3.2M to 4.0M",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from March to April, you can use the following formula:\n\n\\[ \\text{Percent Growth} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100 \\]\n\nIn this case, the old value is the earnings in March ($3.2M) and the new value is the earnings in April ($4.0M)."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The growth from March to April is calculated as:\n\n\\[\n\\frac{4.0\\text{M} - 3.2\\text{M}}{3.2\\text{M}} \\times 100\\% = \\frac{0.8\\text{M}}{3.2\\text{M}} \\times 100\\% = 0.25 \\times 100\\% = 25\\%\n\\]\n\n**StellarCorp’s revenue grew by 25% from March to April.**"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "percent growth from 3.2 million to 4.0 million",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The growth from March to April is:\n\n\\[\n\\text{Growth \\%} = \\frac{4.0\\text{M} - 3.2\\text{M}}{3.2\\text{M}} \\times 100\n                 = \\frac{0.8\\text{M}}{3.2\\text{M}} \\times 100\n                 = 0.25 \\times 100\n                 = 25\\%\n\\]\n\n**StellarCorp’s revenue grew by 25 % from March to April.**"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "calculate percent growth from 3.2M to 4.0M",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth, we can use the formula:\n\n\\[ \\text{Percent Growth} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100 \\]\n\nIn this case, the old value is $3.2M (March earnings) and the new value is $4.0M (April earnings). Let's calculate the percent growth."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "percent growth calculation formula",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from March to April, we can use the formula:\n\n\\[\n\\text{Percent Growth} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100\n\\]\n\nIn this case, the old value is the earnings in March ($3.2M) and the new value is the earnings in April ($4.0M). Let's calcu"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from March to April:\n\n1. **Formula**:  \n   $$\n   \\text{Percent Growth} = \\left( \\frac{\\text{April Earnings} - \\text{March Earnings}}{\\text{March Earnings}} \\right) \\times 100\n   $$\n\n2. **Substitute values**:  \n   $$\n   \\text{Percent Growth} = \\left( \\frac{4.0 - 3.2}{3.2} \\right) \\times 1"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent growth from March to April is calculated as follows:\n\n1. **Difference**: $4.0M - $3.2M = $0.8M  \n2. **Growth Rate**: ($0.8M / $3.2M) × 100 = **25%**\n\nNo tool call needed — this is a straightforward mathematical calculation."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from March to April:\n\n$$\n\\text{Percent Growth} = \\left( \\frac{\\text{April Revenue} - \\text{March Revenue}}{\\text{March Revenue}} \\right) \\times 100\n$$\n\nSubstitute the values:\n\n$$\n\\text{Percent Growth} = \\left( \\frac{4.0 - 3.2}{3.2} \\right) \\times 100 = \\left( \\frac{0.8}{3.2} \\right) \\tim"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent growth from March to April is calculated as follows:\n\n$$\n\\text{Growth} = \\left( \\frac{\\text{April Revenue} - \\text{March Revenue}}{\\text{March Revenue}} \\right) \\times 100 = \\left( \\frac{4.0 - 3.2}{3.2} \\right) \\times 100 = 25\\%\n$$\n\n**Answer:** 25% growth."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent growth from March to April for StellarCorp is calculated as follows:\n\n1. **Difference in earnings**: $4.0M - $3.2M = **$0.8M**\n2. **Percent growth**: (0.8M / 3.2M) × 100 = **25%**\n\n**Answer**: StellarCorp experienced a **25% growth** in earnings from March to April."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent growth from March to April is calculated as follows:\n\n**Formula**:  \n$$\n\\text{Percent Growth} = \\left( \\frac{\\text{April Earnings} - \\text{March Earnings}}{\\text{March Earnings}} \\right) \\times 100\n$$\n\n**Calculation**:  \n$$\n\\left( \\frac{4.0 - 3.2}{3.2} \\right) \\times 100 = \\left( \\frac{0.8}{3.2} \\right) \\ti"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can calculate this directly without needing to search.\n\n**Percent Growth Calculation:**\n\n- March earnings: $3.2M\n- April earnings: $4.0M\n- Increase: $4.0M - $3.2M = $0.8M\n\n**Formula:** (Increase ÷ Original Amount) × 100\n\n(0.8 ÷ 3.2) × 100 = **25%**\n\nStellarCorp experienced a **25% growth** from March to April."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation I can do directly:\n\n**Percent Growth Formula:**\n$$\\text{Growth \\%} = \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\times 100$$\n\n**Calculation:**\n- March: $3.2M\n- April: $4.0M\n- Difference: $4.0M - $3.2M = $0.8M\n\n$$\\text{Growth \\%} = \\frac{0.8}{3.2} \\times 100 = 0.25"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation I can do for you:\n\n**Percent Growth Formula:** ((New Value - Old Value) / Old Value) × 100\n\n**Calculation:**\n- March: $3.2M\n- April: $4.0M\n- Growth: $4.0M - $3.2M = $0.8M\n- Percent Growth: ($0.8M / $3.2M) × 100 = **25%**\n\nStellarCorp experienced **25% growth** from March to April."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on the numbers you provided, I can calculate this directly:\n\n**Percent Growth = ((April - March) / March) × 100**\n\n= (($4.0M - $3.2M) / $3.2M) × 100\n\n= ($0.8M / $3.2M) × 100\n\n= 0.25 × 100\n\n= **25% growth**\n\nStellarCorp experienced a 25% increase in earnings from March to April."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "StellarCorp experienced a **25%** growth.\n\nHere is the breakdown of the calculation:\n\n1.  **Find the difference:** $\\$4.0\\text{M} - \\$3.2\\text{M} = \\$0.8\\text{M}$\n2.  **Divide by the original amount:** $\\$0.8\\text{M} / \\$3.2\\text{M} = 0.25$\n3.  **Convert to percentage:** $0.25 \\times 100 = 25\\%$"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "StellarCorp’s growth from March to April was:\n\n\\[\n\\frac{4.0 - 3.2}{3.2} \\times 100 = 25\\%\n\\]\n\n**Answer: 25% growth**"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Growth = (4.0 − 3.2) / 3.2 × 100 = 0.8 / 3.2 × 100 = **25%**."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Growth from March to April:\n\n\\[\n\\frac{4.0 - 3.2}{3.2} = \\frac{0.8}{3.2} = 0.25\n\\]\n\n**25% growth** (from $3.2M to $4.0M)."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth for StellarCorp from March to April, follow these steps:\n\n1.  **Find the amount of growth:** \n    $4.0M (April) - $3.2M (March) = **$0.8M**\n\n2.  **Divide the growth by the original amount (March):**\n    $0.8M / $3.2M = **0.25**\n\n3.  **Convert to a percentage:**\n    0.25 × 100 = **25%**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## StellarCorp Growth Calculation\n\nThe percent growth from March to April is:\n\n**Growth = (April − March) / March × 100**\n\n| Month | Earnings |\n|-------|----------|\n| March | $3.2M |\n| April | $4.0M |\n\n$$\\frac{\\$4.0M - \\$3.2M}{\\$3.2M} \\times 100 = \\frac{\\$0.8M}{\\$3.2M} \\times 100 = 0.25 \\times 100 = \\boxed{25\\%}$$\n\n**S"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percentage growth from March to April is **25%**.\n\n**Calculation:**\n- Growth = $4.0M - $3.2M = $0.8M\n- Percentage growth = ($0.8M ÷ $3.2M) × 100 = **25%**"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**25% growth**\n\nCalculation:\n- Change: $4.0M − $3.2M = $0.8M\n- Percent growth: $0.8M ÷ $3.2M = 0.25 = **25%**"
+    }
+  ]
+}

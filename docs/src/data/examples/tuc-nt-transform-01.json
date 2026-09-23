@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-01",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-01",
+  "adversarial": false,
+  "prompt": "Summarize this paragraph: \"The old bakery closed last Tuesday. It had been there for twenty years. Many people bought bread there each morning. The owner decided to retire. A new coffee shop will open in that space next month.\"",
+  "goldAnswer": [],
+  "rationale": "Simple text summarization needs no external knowledge.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The paragraph summarizes the closure of a long-standing bakery and its replacement with a new business:\n\n- A bakery that had been operating for 20 years closed last Tuesday\n- It was a popular morning destination where many people bought bread daily\n- The closure happened because the owner decided to retire\n- The space"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a summary of the paragraph:\n\nAn old bakery that served customers for twenty years closed last Tuesday after the owner decided to retire. A new coffee shop is set to open in its place next month."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Summary:** After twenty years of serving morning bread to loyal customers, the old bakery closed last Tuesday when its owner retired, and a new coffee shop will take over the space next month."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery closed after 20 years, with the owner retiring. A new coffee shop will replace it next month."
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A bakery that had been in business for 20 years closed last Tuesday because the owner decided to retire, and a new coffee shop is set to open in its place next month."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery on that street shut its doors last Tuesday after twenty years in business. The owner decided to retire. Many customers had regularly purchased bread there each morning. A new coffee shop is slated to open in that location next month."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery closed last Tuesday after twenty years of serving customers who bought bread there each morning. The owner decided to retire, and a new coffee shop will open in that space next month."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery closed last Tuesday after operating for twenty years. The owner retired, and a new coffee shop will open in its place next month."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which had been a local staple for twenty years and where many people bought bread daily, closed last Tuesday due to the owner's retirement. A new coffee shop is set to open in its place next month."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The bakery, which had operated for twenty years and was a daily stop for many people buying bread, closed last Tuesday as its owner decided to retire. In its place, a new coffee shop is set to open next month."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which had operated for 20 years and served many morning customers, closed last Tuesday when the owner retired. A new coffee shop will open in its place next month."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The bakery, which had operated for twenty years and was a morning staple for many, closed last Tuesday when its owner retired. A new coffee shop is set to open in the space next month."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which had been operating for twenty years and was a popular morning spot for bread purchases, closed last Tuesday as the owner decided to retire. A new coffee shop is set to open in the same location next month."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which operated for twenty years and was a daily stop for many locals buying bread, closed last Tuesday. The owner has decided to retire, and a new coffee shop is set to open in the space next month."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which had been operating for twenty years and was a popular morning spot for bread, closed last Tuesday as the owner retired. A new coffee shop is set to open in the same location next month."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which operated for twenty years and was a popular morning spot for bread, closed last Tuesday as the owner retired. A new coffee shop is set to replace it next month."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which had been operating for twenty years and was a daily spot for many customers, closed last Tuesday as the owner chose to retire. A new coffee shop is set to open in its place next month."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 20-year-old bakery closed last Tuesday after its owner retired, ending its long-standing role as a daily spot for bread buyers. A new coffee shop will open in the space next month."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which operated for 20 years and attracted daily customers, closed last Tuesday as the owner retired. A new coffee shop is set to open in its place next month."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which operated for 20 years, closed last Tuesday due to the owner's retirement. It was a popular spot for morning bread purchases, and a new coffee shop will occupy the space next month."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a summary of the paragraph:\n\nAfter 20 years of operation, the old bakery closed last Tuesday as its owner retired. The popular spot, which served many morning customers, will be replaced by a new coffee shop opening next month."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Summary:**\n\nAfter 20 years of serving customers, the local bakery closed last Tuesday as its owner decided to retire. The space will be converted into a new coffee shop opening next month."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which had operated for twenty years and served many customers each morning, closed last Tuesday when the owner retired. A new coffee shop is scheduled to open in the same location next month."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Summary:**\n\nAfter 20 years in business, a popular bakery closed last Tuesday as its owner retired. The space will be converted into a new coffee shop, which is scheduled to open next month."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "After 20 years, the popular bakery closed last Tuesday due to the owner's retirement, and a new coffee shop will take over the space next month."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A long-standing bakery closed last Tuesday after twenty years as its owner retired, and a new coffee shop will open in the space next month."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The old bakery, which had operated for twenty years and was popular with morning customers, closed last Tuesday because its owner retired. A new coffee shop will take over the space next month."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The 20-year-old bakery closed last Tuesday because its owner retired; a new coffee shop will open in its place next month."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Summary\n\nA bakery that operated for 20 years closed last Tuesday due to the owner's retirement. A new coffee shop is set to replace it next month."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A bakery that had been serving the community for twenty years closed last Tuesday because the owner retired. A coffee shop is set to take over the space next month."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A 20-year-old bakery closed last Tuesday when its owner retired, and a new coffee shop will open in the same space next month."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "After twenty years of serving morning customers, the bakery closed last Tuesday when its owner retired, and a coffee shop will replace it next month."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Summary:** A bakery that served the community for twenty years closed last Tuesday after its owner retired, and a coffee shop will take its place next month."
+    }
+  ]
+}

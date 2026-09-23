@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-02",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-02",
+  "adversarial": false,
+  "prompt": "Invent a magical plant species with three unique properties and a name.",
+  "goldAnswer": [],
+  "rationale": "Creating fictional flora requires only imagination, no external facts.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll invent a magical plant species for you.\n\n**Name:** Luminaetheria\n\n**Three Unique Properties:**\n\n1. **Chrono-Synchronized Blooming:** Luminaetheria flowers don't follow regular day/night cycles. Instead, they bloom in perfect synchronization with significant moments in the life of whoever tends to them. The flowers"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# **Luminara Noctis** (The Moonveil Bloom)\n\nA bioluminescent vine-flower that grows only in deep shadow, yet hungers for starlight.\n\n## Three Unique Properties\n\n### 1. **Resonant Luminescence**\nThe Luminara Noctis absorbs ambient starlight and converts it into a soft, pulsing glow that shifts color based on the phase o"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## **Luminmemor (Memorybloom)**  \n*The Whispering Light of Forgotten Paths*  \n\n**Appearance:** A slender, silver-veined plant with translucent, bell-shaped flowers that pulse with soft, internal light. Its roots glow faintly beneath the soil like buried constellations.  \n\n---\n\n### **Unique Properties**  \n\n1. **Emotion-"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"magical plant species with three unique properties"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The magical plant species is called \"Luminbloom\" (Latin name: Floralia Luxurians). It has the following three unique properties:\n\n1. **Bioluminescent Blooms**: The Luminbloom plant produces flowers that emit a soft, ethereal glow in the dark, illuminating its surroundings with a gentle, blue-green light. This property"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Lumivine Blossom\n\nThe **Lumivine Blossom** is a rare, enchanted climbing plant found only in the ancient twilight forests where magic lingers strongest. Its vines are comprised of delicate, silver-threaded leaves that shift from deep violet to luminous gold depending on the moon phase.\n\n## Three Unique Properties:\n\n*"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# **Moonpetal Orchid** (*Orchis Lunaris*)\n\nA rare nocturnal plant that unfurls its silvery-white petals only under the light of a full moon. Its three unique properties are:\n\n1. **Lullaby Scent** – The orchid releases a gentle, sweet fragrance that induces peaceful sleep in anyone who inhales it. Those who sleep near i"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Plant Name:** Lumenflora Aurae\n\n**Properties:**\n\n1. **Bioluminescent Canopy:** The Lumenflora Aurae has a bioluminescent canopy that glows softly in various colors, changing with the phases of the moon. This unique trait allows it to attract nocturnal pollinators and provide light for its surroundings.\n\n2. **Auric Te"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Name:** Lumina Solara\n\n**Description:** Lumina Solara is a mesmerizing, bioluminescent plant species that thrives in enchanted forests and mystical gardens. It is known for its ethereal beauty and three unique magical properties.\n\n**Unique Properties:**\n\n1. **Luminous Glow:** The Lumina Solara emits a soft, radiant g"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Name:** *Luminara Vesprum*  \n\n**Unique Properties:**\n\n1. **Radiant Resonance** – The leaves of the Luminara Vesprum emit a soft, pulsing glow that syncs with the emotional state of anyone nearby. When a person feels calm, the light steadies into a soothing teal; when excitement rises, the glow flickers in vibrant amb"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "magical plant properties in fiction unique abilities",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Name:** *Luminara noctiflora* (Commonly called the “Moon‑Glow Fern”)\n\n| Property | Description |\n|----------|-------------|\n| **Bioluminescent Veins** | The fern’s fronds are threaded with a translucent, phosphorescent network that glows softly in moonlight. The light is not merely decorative; it emits a low‑frequenc"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure! Here is a magical plant species I've invented:\n\n**Name:** Luminara Whisperleaf\n\n**Unique Properties:**\n1. **Bioluminescence:** The leaves of the Luminara Whisperleaf emit a soft, glowing light that changes color based on the emotional state of the person nearby. This makes it a popular choice for gardens and publ"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, let's imagine a magical plant species called \"Luminara\". Here are its three unique properties:\n\n1. **Bioluminescence**: The Luminara plant emits a soft, ethereal light that can be seen in complete darkness. This light is not harmful and can help guide travelers through dark forests or caves.\n\n2. **Regeneration**:"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Name:** Luminara Bloom\n\n**Unique Properties:**\n\n1. **Bioluminescent Petals:** The Luminara Bloom emits a soft, ethereal glow at night, shifting colors based on the emotions of nearby beings—blue for calm, gold for joy, and deep violet for sorrow. This makes it a natural mood oracle in enchanted gardens.\n\n2. **Dream-W"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I don't need to use any tools for this creative request—I'll invent a magical plant species from scratch!\n\n**Name:** *Lunumbra Bloom*  \n**Properties:**  \n1. **Moonlight Photosynthesis:** Absorbs lunar energy instead of sunlight, glowing silver-blue during full moons and wilting to near-invisibility during daylight.  \n2"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Name: Luminara Bloom\n\nProperties:\n1. **Nightlight Emission**: The Luminara Bloom emits a soft, bioluminescent glow that intensifies during the night. This light is not harmful to nocturnal creatures and helps guide them through dark forests, making it a natural lantern in the wild.\n\n2. **Emotion-Sensing Petals**: The p"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The magical plant species I've invented is called **Aetherbloom**. Here are its three unique properties:\n\n1. **Emotion-Responsive Bioluminescence**: The Aetherbloom emits a soft, shifting glow that mirrors the emotional state of nearby individuals (e.g., calm = cool blue, joy = warm gold, sorrow = deep violet).  \n2. **"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll create a magical plant species with three unique properties. Here's my invention:\n\n**Name:** *Aetherbloom the Guardian*\n\n**Unique Properties:**\n1. **Emotive Bioluminescence** - Its petals glow with colors that reflect the dominant emotion of anyone nearby (e.g., crimson for anger, cerulean for calm, gold for joy)."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a magical plant species I've created:\n\n**Name:** *Aetherbloom*  \n**Properties:**  \n1. **Chrono-Glow:** Emits a soft, shifting light that changes color based on the time of day (blue at night, gold at dawn, silver at noon), subtly altering the perception of time for those nearby.  \n2. **Echo Sap:** Its nectar, wh"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### **Species Name:** *Luminaleaf* (*Lumina foliata*)\n\nThe **Luminaleaf** is a rare, ethereal plant species found in the shadowed groves of the Whispering Woods. It has three unique magical properties:\n\n1. **Bioluminescent Memory**: The plant's leaves emit soft, pulsating light that changes color based on the emotions"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Luminaeth Bloom\n\n**Name:** Luminaeth Bloom (also known as the Star-Weaver's Tear)\n\n## Three Unique Properties:\n\n### 1. **Chrono-Photosynthesis**\nThe Luminaeth Bloom doesn't photosynthesize from sunlight, but instead absorbs ambient time itself. It glows with a soft, shifting iridescence that changes color based o"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The Moonshadow Lattice (Lunaria Umbra)\n\n## Appearance\nA delicate, bioluminescent vine with translucent silver leaves that pulse with soft blue light during twilight hours. Its flowers bloom only when touched by moonlight, forming intricate geometric patterns that shift like living stained glass.\n\n## Three Unique Magi"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# 🌿 The Lumivine (Lumina serpentina)\n\nA magical plant species that thrives in twilight zones between the mortal realm and the ethereal plane.\n\n## Three Unique Properties:\n\n### 1. **Memory Photosynthesis**\nInstead of converting sunlight into energy, the Lumivine absorbs forgotten memories from nearby beings. These memor"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# 🌿 The Chronos Bloom\n\n**Scientific Name:** *Tempora florifera*\n\n## Three Unique Properties:\n\n### 1. **Time-Reversal Nectar**\nThe flower's golden pollen contains nectar that, when consumed, allows the drinker to temporarily reverse one minor action or mistake. The effect lasts for exactly 10 minutes, but the nectar deg"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Name:** *Luminara velvethollow*\n\n**Three Unique Properties:**\n\n1. **Memory Bloom** — Its petals slowly open in response to spoken secrets, each flower forming a faint, glowing pattern that records the emotion behind the words.\n\n2. **Whisper Roots** — The plant’s roots extend into nearby soil and can “listen” to the t"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Name:** *Sylphora Noctiluna* (commonly called the **Moonweave Vine**)\n\n**Property 1 — Truth-Bloom:** Its silver-blue flowers open only in absolute darkness and emit a gentle, pulsing bioluminescence. When a person peers through the translucent petals, illusions, glamours, and lies become visible as cracked, gray shad"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Name:** **Aethelbloom** (*Aethelia nocturna*) — the **Whispering Starflower**\n\n**Property 1 — Moonfeed Luminescence**  \nInstead of sunlight, it feeds on moonlight and starlight. At night its translucent petals glow with a soft, pulsing silver-blue light that grows brighter with each passing hour of darkness. By day,"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "fictional magical plants fantasy literature unique properties",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# 🌿 Mirrormoss (*Speculum memoriae*)\n\n**Description:** Mirrormoss is a bioluminescent ground-cover plant with delicate, silver-blue fronds that shimmer like liquid mercury. It typically grows in shaded groves and ancient ruins, forming soft carpets that seem to ripple gently even without wind.\n\n---\n\n## Three Unique Mag"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# **Luminafern** (*Luminastrum mysticus*)\n\n## **Description**\nThe Luminafern is a delicate, perennial plant that grows in clusters in shadowy, mystical forests. Its slender, emerald-green stems reach about 12-18 inches tall, topped with fern-like fronds that shimmer with an ethereal, pearlescent glow. The plant's leave"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# **Lunavellia** (Common name: Moonveil Orchid)\n\nA rare, bioluminescent orchid found only in mountainous regions where the veil between worlds grows thin.\n\n---\n\n## **Three Unique Properties:**\n\n### **1. Eclipse-Bound Blooming**\nLunavellia flowers only open during a lunar eclipse, unfurling delicate, translucent petals"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Astranthus — *the Starfall Bloom*\n\nA low-growing, silvery flower with petals like hammered tin that sprouts only in the cratered soil where meteors have fallen. It is prized by stargazers, herbalists, and the heartbroken alike.\n\n**Its three unique properties:**\n\n1. **Stored Starlight** — The petals absorb the light o"
+    }
+  ]
+}

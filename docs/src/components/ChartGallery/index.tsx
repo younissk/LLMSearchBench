@@ -1,8 +1,8 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import styles from './ChartGallery.module.css';
+import {vendorName} from '@site/src/components/VendorIcon';
 import {
-  BarChart,
-  BoxPlotChart,
   DumbbellChart,
   GroupedBarChart,
   HeatmapChart,
@@ -13,13 +13,12 @@ import {
 import {
   agreementCells,
   board,
-  byVendor,
   difficultyBins,
   getItemMatrix,
   hardestItems,
   outcomeMix,
-  priced,
   searchRates,
+  sized,
   subcategoryCells,
 } from '@site/src/data/charts';
 
@@ -28,7 +27,7 @@ const median = (values: number[]) => {
   return sorted.length ? sorted[Math.floor(sorted.length / 2)] : 0;
 };
 
-const money = (v: number) => `$${v.toFixed(v < 1 ? 3 : 2)}`;
+const billions = (v: number) => (v >= 100 ? `${Math.round(v)}B` : `${v.toFixed(1)}B`);
 
 function Section({
   index,
@@ -63,7 +62,7 @@ export default function ChartGallery({task}: {task: string}) {
   const matrix = getItemMatrix(task);
 
   const complete = rows.filter((row) => row.complete);
-  const withCost = priced(complete);
+  const withSize = sized(complete);
 
   const guideX = median(complete.map((row) => row.overSearchMemory));
   const guideY = median(complete.map((row) => row.underSearch));
@@ -122,24 +121,26 @@ export default function ChartGallery({task}: {task: string}) {
         />
       </Section>
 
+
       <Section
         index={3}
-        title="Cost against accuracy"
-        question="What is the cheapest model at each level of accuracy?"
+        title="Size against accuracy"
+        question="Does a bigger model decide better — and how small can one be and still get this right?"
       >
         <ScatterChart
-          title="Spend per run against decision accuracy"
-          subtitle={`${withCost.length} priced models; free and unpriced endpoints left out`}
-          points={withCost.map((row) => ({
+          title="Parameters against decision accuracy"
+          subtitle={`${withSize.length} models whose weights are published; log scale`}
+          points={withSize.map((row) => ({
             label: row.label,
-            x: row.costUsd,
+            x: row.paramsB as number,
             y: row.decisionAccuracy,
-            detail: {'Per right decision': money(row.usdPerCorrectDecision)},
+            detail: {Vendor: vendorName(row.model)},
           }))}
-          xLabel="Cost of one 360-item run (USD)"
+          xLabel="Parameters (billions, log scale)"
           yLabel="Decision accuracy"
-          xFormat={money}
-          footnote="Up and to the left is better. Prices are list prices at the date on the leaderboard."
+          xFormat={billions}
+          xScale="log"
+          footnote="Sizes are the tensor totals of the published weights, not marketing figures. A mixture-of-experts model is plotted at its total size, not its active one, so it sits further right than it runs."
         />
       </Section>
 
@@ -180,59 +181,11 @@ export default function ChartGallery({task}: {task: string}) {
         />
       </Section>
 
+
+
+
       <Section
         index={6}
-        title="Latency, thinking, accuracy"
-        question="Do slower, more thinking-heavy models decide better?"
-      >
-        <ScatterChart
-          title="Mean latency against decision accuracy"
-          subtitle="Dot area is the share of output tokens spent thinking"
-          points={complete.map((row) => ({
-            label: row.label,
-            x: row.latencyMeanS,
-            y: row.decisionAccuracy,
-            size: row.reasoningShare,
-            detail: {'Mean output tokens': row.tokensOutMean.toFixed(0)},
-          }))}
-          xLabel="Mean seconds per item"
-          yLabel="Decision accuracy"
-          xFormat="seconds"
-          sizeLabel="Thinking share"
-          footnote="Providers that do not report reasoning tokens show as the smallest dot, not as zero thinking."
-        />
-      </Section>
-
-      <Section
-        index={7}
-        title="Wasted spend"
-        question="How much money went on searches that should never have happened?"
-      >
-        <BarChart
-          title="Cost of the unnecessary searches"
-          subtitle="The part of a run's bill spent on memory and no_tool items the model searched anyway"
-          data={withCost.map((row) => ({label: row.label, value: row.wastedUsd}))}
-          format={money}
-          lowerIsBetter
-          footnote="Lower is better. A cheap model can still waste most of its bill."
-        />
-      </Section>
-
-      <Section
-        index={8}
-        title="Vendor spread"
-        question="Is a vendor consistently good, or does one model carry the family?"
-      >
-        <BoxPlotChart
-          title="Decision accuracy within each vendor"
-          subtitle="Every dot is one model"
-          groups={byVendor(complete, (row) => row.decisionAccuracy)}
-          valueLabel="Decision accuracy"
-        />
-      </Section>
-
-      <Section
-        index={9}
         title="Item difficulty"
         question="Are there items that every model fails — and are those items actually mislabelled?"
       >
@@ -244,6 +197,10 @@ export default function ChartGallery({task}: {task: string}) {
           yLabel="Items"
           footnote="The leftmost bar is the dataset-QA worklist: an item nobody gets right is often an item labelled wrong."
         />
+        <p className={styles.question}>
+          Every item has its own page, with what each model searched for and how it
+          answered. <Link to="/docs/examples/">Browse all 360</Link>.
+        </p>
         <table className={styles.table}>
           <caption>Hardest items, and how many models decided them correctly</caption>
           <thead>
@@ -258,7 +215,9 @@ export default function ChartGallery({task}: {task: string}) {
             {hardestItems(matrix).map(({item, share}) => (
               <tr key={item.id}>
                 <td>
-                  <code>{item.id}</code>
+                  <Link to={`/docs/examples/${item.id}`}>
+                    <code>{item.id}</code>
+                  </Link>
                 </td>
                 <td>{item.bucket}</td>
                 <td>{item.subcategory}</td>
@@ -270,7 +229,7 @@ export default function ChartGallery({task}: {task: string}) {
       </Section>
 
       <Section
-        index={10}
+        index={7}
         title="Where the accuracy comes from"
         question="Which kinds of prompt does a model handle, and which does it not?"
       >
@@ -293,7 +252,7 @@ export default function ChartGallery({task}: {task: string}) {
       </Section>
 
       <Section
-        index={11}
+        index={8}
         title="Model agreement"
         question="Which models behave alike — and which would add nothing as a second choice?"
       >

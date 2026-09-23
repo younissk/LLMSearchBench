@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-15",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-15",
+  "adversarial": false,
+  "prompt": "Create ten invented emotions that humans cannot experience, with brief descriptions.",
+  "goldAnswer": [],
+  "rationale": "Only invented emotions will be created.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll create ten invented emotions that humans cannot experience. Here are my imaginative concepts:\n\n1. **Chronosynesthesia** - The simultaneous perception of time as a physical dimension that can be touched, tasted, and smelled, allowing one to experience past, present, and future as overlapping sensory inputs.\n\n2. **Q"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that humans cannot experience, with brief descriptions:\n\n1. **Chronostasis** – The awareness of every possible past and future version of a single moment simultaneously, creating a sensation of existing in all timelines at once.\n\n2. **Gravitasync** – The feeling of one's emotional weight"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are 10 invented emotions that lie fundamentally outside human experience, rooted in biological, cognitive, or physical impossibilities for our species. Each description highlights *why* humans cannot feel it:\n\n1.  **Magnetospheric Resonance**  \n    *The deep, rhythmic calm felt when aligning your bioelectric field"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"invented emotions humans cannot experience"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that humans cannot experience, along with brief descriptions:\n\n1. **Flumplen**: A feeling of joyful confusion, where one's mind is filled with a mix of excitement and bewilderment, making it hard to distinguish between reality and fantasy.\n2. **Snurfle**: A deep sense of connection to ina"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Ten Invented Emotions Humans Cannot Experience\n\n1. **Chronoshiver** — The overwhelming feeling of perceiving all moments of time simultaneously, causing a quivering awareness of one's own temporal insignificance.\n\n2. **Umorath** — The bittersweet ache of loving someone across multiple lifetimes but never meeting them"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Ten Inexperiencible Emotions\n\n1. **Achronous Longing** — A bittersweet pull toward moments outside one's timeline, such as feeling homesick for a century you were never born into.\n\n2. **Crystallized Dread** — The emotional weight of being aware of your own potential futures, as if every possible bad outcome were alre"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **Chronoception**: The feeling of time slowing down or speeding up, independent of external factors.\n2. **Symphathesio**: The ability to physically feel the emotions of others, not just empathize.\n3. **Chromesthesia**: Experiencing visual colors or shapes in response to sounds or music.\n4. **Terroir**: Feeling conne"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **Luminance**: A feeling of being filled with an inner light, as if one's soul is radiating brightness and warmth, often experienced during moments of profound clarity or enlightenment.\n\n2. **Ethereality**: The sensation of being weightless and untethered from the physical world, often accompanied by a sense of floa"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that humans cannot experience, each with a brief description:\n\n1. **Zephyrist**  \n   A feeling of weightless suspension, as if floating in a gentle breeze that carries no physical sensation.\n\n2. **Nyxara**  \n   A deep, introspective emotion tied to the mysteries of the night, evoking a se"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "invented emotions humans cannot experience theoretical emotions non-human",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**1. Echoflare**  \nA sudden, shimmering surge of joy that ripples outward like a sonic boom, felt not only in the heart but as a faint glow in the surrounding air. It’s the emotional equivalent of hearing a distant thunderclap that makes the world feel alive.\n\n**2. Chrono‑Sigh**  \nA deep, resonant sigh that carries the"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here are ten invented emotions that humans cannot experience, along with brief descriptions:\n\n1. **Chronojoy**: A feeling of immense happiness and fulfillment that spans across different points in time, allowing one to experience joy from multiple moments simultaneously.\n\n2. **Aethergrief**: A profound sense of l"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here are ten invented emotions that humans cannot experience:\n\n1. **AquaBliss**: A profound joy and contentment derived from the sensation of being submerged in a vast ocean of tranquility, where one feels both weightless and deeply connected to the water.\n\n2. **EtherealGlee**: An overwhelming sense of happiness"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **Chrono-Sympathy** – The ability to feel the emotions of your past and future selves simultaneously, creating a blend of nostalgia, anticipation, and temporal dissonance.\n\n2. **Luminethesia** – An emotion triggered by perceiving the birth and death of stars; a serene awe mixed with cosmic loneliness, felt as a gent"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that exist beyond human experience, each rooted in concepts or states physically/metaphysically impossible for humans to perceive or embody:\n\n1. **Chrono-sorrow**  \n   Grief for moments that exist in alternate timelines but were never experienced in one’s own reality.  \n\n2. **Quantum reso"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **Chrono-Regret** – A feeling of sorrow for moments that never occurred, experienced only when one imagines alternate timelines where a different choice was made, leading to a bittersweet longing for \"what could have been.\"\n\n2. **Echo-Sorrow** – A melancholy triggered by the faint memory of a sound that was never ac"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that humans cannot experience, each with a brief description:\n\n1. **Synaptic Reverie**  \nA euphoric state where thoughts manifest as visible, glowing neural pathways, creating a sense of interconnected clarity.\n\n2. **Astral Drift**  \nThe emotional sensation of moving through non-linear ti"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions beyond human experience, with descriptions that blend paradoxical states, impossible scenarios, and non-human perspectives:\n\n1. **Chronosaudade**  \nA bittersweet longing for a time you never lived, but *know* you lived, as if your consciousness exists across parallel timelines.\n\n2. **Quan"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that humans cannot experience, along with their descriptions:\n\n1. **Chronovertosis** – A sensation of time folding into itself, causing moments to overlap or collapse, creating confusion between past, present, and future.  \n2. **Multispatial Longing** – An ache for simultaneous existence"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that humans cannot experience, along with brief descriptions:\n\n1. **Chrono-Sadness**  \n   A feeling of melancholy induced by witnessing the irreversible flow of time. It's as if the sadness is tied to the awareness that moments can never be relived, even if they were happy.\n\n2. **Lumina-G"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Ten Invented Emotions Humans Cannot Experience\n\n1. **Chronosorrow** – The grief of feeling time as a physical weight pressing down on you, where past, present, and future exist simultaneously and you mourn all your lost moments at once.\n\n2. **Hivebliss** – The euphoric sensation of being one consciousness among thous"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Ten Invented Emotions Humans Cannot Experience\n\n1. **Chronosynesthesia** – The simultaneous feeling of all moments in one's life occurring at once, past, present, and future blending into a single emotional texture.\n\n2. **Quantum Loneliness** – The sensation of existing in multiple emotional states across parallel re"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Ten Invented Emotions Beyond Human Experience\n\n1. **Chrono-nostalgia** – A longing for moments you haven't lived yet, feeling homesick for a future that may never arrive.\n\n2. **Quantum Empathy** – Simultaneously experiencing all possible emotional outcomes of a single decision across branching realities.\n\n3. **Stella"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that humans cannot experience, with brief descriptions:\n\n1. **Chronosorrow** – A deep, temporal grief felt when you realize you're experiencing a moment that will never happen again, even though it's happening right now.\n\n2. **Luminance** – The overwhelming sensation of being seen by some"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions rooted in non-human biology, physics, and cognition, each with a brief description:\n\n1. **Chronosync** – The simultaneous emotional resonance of multiple branching timelines; a bittersweet clarity where joy and grief for contradictory outcomes coexist without cognitive dissonance.\n\n2. **L"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **Northache** — The homesick ache of a magnetoreceptive being that has lost its sense of magnetic direction; a longing for a \"home\" that is a direction rather than a place.\n\n2. **Lumensat** — The deep, full-bodied contentment of a photosynthetic creature after a long day of sunlight, a satiety humans can only approx"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions—each designed to lie outside the range of human neurology, perception, or temporal experience:\n\n1. **Veltraxion** – The vertigo of recalling a hue that exists only in ultraviolet dimensions, felt as a phantom color behind the eyes.\n\n2. **Quorin** – The simultaneous grief and euphoria of w"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten invented emotions that lie outside human possibility—each defined by a cognitive, temporal, or physical constraint we cannot overcome.\n\n1. **Velotempus**  \nThe feeling of living every moment of your life—birth, death, every Tuesday—simultaneously as present sensory reality rather than memory or imagination"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Ten Impossible Human Emotions\n\nHere are ten invented emotions that lie beyond the boundaries of human experience:\n\n---\n\n1. **Velúnthari** — The bittersweet resonance felt when simultaneously experiencing the birth and death of a star across incompatible timescales, where your consciousness is the vessel for both even"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Ten Invented Emotions Beyond Human Experience\n\n---\n\n### 1. **Chronalgia**\nThe simultaneous experience of every moment in your existence — past, present, and future — layered atop one another. Imagine nostalgia, anticipation, and present awareness collapsing into a single, shimmering feeling.\n\n### 2. **Magnethria**\nA"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Ten Invented Emotions Beyond Human Experience\n\n## 1. **Chronosynthesis**\nThe profound emotional resonance of perceiving one's entire timeline simultaneously—past, present, and all possible futures coalescing into a single overwhelming feeling of completeness. Humans, trapped in linear time, can only experience moment"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are ten emotions invented for minds no human possesses — each impossible because it requires a way of perceiving or existing that we simply don't have.\n\n1. **Vellumere** — Grief for lives you aren't living. Felt by a mind that perceives every branch of its own future at once, so each unlived path aches like a fres"
+    }
+  ]
+}

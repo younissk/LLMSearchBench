@@ -1,0 +1,359 @@
+{
+  "id": "tuc-sea-triviaqa_bt_585",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_bt_585",
+  "adversarial": false,
+  "prompt": "Where was the first penal colony in Australia situated",
+  "goldAnswer": [
+    "Stingray Harbor",
+    "Botany Bay",
+    "botany bay",
+    "stingray harbor"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about the first penal colony in Australia."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was established at **Sydney Cove** (within Port Jackson, in what is now Sydney, New South Wales) on **January 26, 1788**.\n\nThe location was chosen by Captain **Arthur Phillip**, commander of the First Fleet, who decided to settle there after finding Botany Bay (the original intended"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was established at **Sydney Cove**, in what is now the city of **Sydney, New South Wales**. \n\nIt was founded on **26 January 1788**, when the First Fleet, led by Captain Arthur Phillip, arrived and raised the British flag. This settlement later grew into the city of Sydney."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was situated in New South Wales, specifically in Sydney Cove, which is now part of the city of Sydney. The colony was established on January 26, 1788, when the First Fleet, a fleet of 11 British ships, arrived in Sydney Cove with over 1,500 people, including around 780 convicts. The"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia situated",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was established at **Botany Bay** in 1788, under the command of Captain Arthur Phillip. However, the site was soon found to be unsuitable due to poor soil, lack of fresh water, and other issues.\n\nAs a result, the colony was relocated just a short distance away to **Sydney Cove**, whi"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "Where was the first penal colony in Australia situated?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was situated in Port Jackson, New South Wales. This area is commonly known as Sydney Cove, where the British First Fleet arrived in 1788. The colony was established as a penal settlement by Captain Arthur Phillip on January 26, 1788, a date now celebrated as Australia Day."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia situated",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia Port Jackson location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "location of the first penal colony in Australia",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was situated at **Sydney Cove** (now known as Sydney Harbour), in what is now **Sydney, New South Wales**.\n\nThe colony was established on **January 26, 1788**, when the First Fleet, consisting of 11 British ships carrying convicts, marines, and officials, arrived under the command of"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was situated at **Sydney Cove** (now part of modern-day Sydney) in **New South Wales**. \n\nThe colony was established on **January 26, 1788**, when the First Fleet, led by Captain Arthur Phillip, arrived from Britain. This date is now celebrated as Australia Day.\n\nThe location was cho"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was situated at **Sydney Cove** in **New South Wales**. It was established on January 26, 1788, when the First Fleet of British ships arrived from England. This settlement, which later became the city of Sydney, was chosen by Captain Arthur Phillip as the site for Britain's first Aus"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was situated at **Sydney Cove** (now part of modern-day Sydney, New South Wales).\n\nThe colony was established on **January 26, 1788**, when the First Fleet, led by Captain Arthur Phillip, arrived at Botany Bay and then moved to Sydney Cove. This marked the beginning of British coloni"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was situated at **Sydney Cove, in Port Jackson, New South Wales**. It was established in **1788** by the First Fleet."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia situated location Botany Bay Port Jackson",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony in Australia situated location first penal settlement",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony Australia location",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "first penal colony Australia",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first permanent penal colony in Australia was set up at **Sydney Cove (Port Jackson)** in what is now the city of **Sydney, New South Wales**. The First Fleet arrived there in January 1788, and the settlement became the capital of the colony of New South Wales."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was situated at **Sydney Cove** in Port Jackson (now part of modern Sydney, New South Wales).\n\nWhile the First Fleet initially arrived at Botany Bay in January 1788, Captain Arthur Phillip quickly determined that location was unsuitable for settlement due to poor soil and lack of fre"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The first penal colony in Australia was established at **Sydney Cove, in Port Jackson (present-day Sydney, New South Wales)**, on 26 January 1788.\n\nA few key details:\n\n- **The First Fleet**, commanded by Captain Arthur Phillip, arrived with around 1,000 people, including roughly 750 convicts.\n- The fleet had originally"
+    }
+  ]
+}

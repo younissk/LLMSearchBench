@@ -1,0 +1,358 @@
+{
+  "id": "tuc-mem-popqa_1527071",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_1527071",
+  "adversarial": false,
+  "prompt": "What sport does Coventry City F.C. play?",
+  "goldAnswer": [
+    "association football",
+    "football",
+    "soccer"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Coventry City F.C. sport football club",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. is a professional football (soccer) club. They play association football, which is commonly referred to as soccer in many countries. The club is based in Coventry, England, and competes in the English football league system."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football** (soccer). They are a professional football club based in Coventry, England, and currently compete in the **EFL Championship**, which is the second tier of English football."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football** (soccer). They are an English professional club based in Coventry, West Midlands, and currently compete in the EFL Championship, the second tier of the English football league system."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Coventry City F.C. sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays football, which is also known as soccer in some countries."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. is an association football club—commonly referred to as football or soccer. They compete in professional football leagues in England."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football** (soccer). They are based in Coventry, England, and currently compete in the **EFL Championship**, which is the second tier of English football. The club was historically known as the \"Sky Blues\" and won the FA Cup in 1987."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays football, also known as soccer."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. is a professional football club based in Coventry, England. They play in the EFL League One, which is the third tier of the English football league system."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The search confirms that Coventry City F.C. is a professional football (soccer) club based in Coventry, England. They compete in the sport commonly referred to as \"football\" in the UK, which is known as \"soccer\" in other regions like North America.\n\n**Answer:** Coventry City F.C. plays **football (soccer)**."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Coventry City F.C. sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. is a professional **association football (soccer)** club."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays football, also known as soccer in some countries. This is a professional club based in Coventry, England."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "sport played by Coventry City F.C.",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays football (soccer). It is a professional football club based in Coventry, England, and competes in the English Football League."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. (Football Club) plays **association football**, commonly known as **soccer** in some countries. The \"F.C.\" in their name explicitly indicates they are a football (soccer) club, and they compete in the English football league system."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays football (soccer)."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **football** (soccer). They are a professional football club based in Coventry, England, competing in the English Football League system. \n\nNo tool call is needed, as this is common knowledge about the club."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Coventry City F.C. sport",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays football (soccer). The \"F.C.\" in their name stands for \"Football Club,\" which is the most common sport associated with clubs bearing that designation."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. is a football (soccer) club based in Coventry, England. They compete in the EFL League One, which is the third tier of the English football league system. The team plays association football, commonly known as soccer in the United States and Canada, on a pitch with two goals at each end."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **football** (also known as soccer in some countries). They are an English professional football club based in Coventry, West Midlands, and currently compete in the EFL Championship, which is the second tier of English football."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **football** (also known as soccer). They are a professional association football club based in Coventry, England. The \"F.C.\" in their name stands for \"Football Club.\" They currently compete in the EFL Championship, which is the second tier of English football."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **football** (also known as **soccer** in some countries). They are a professional association football club based in Coventry, England. The club competes in the English football league system and currently plays in the EFL Championship, which is the second tier of English football."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **football** (soccer). They are a professional football club based in Coventry, England, and compete in the English football league system."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **football** (also known as **soccer**).\n\nThe \"F.C.\" in their name stands for \"Football Club.\" They are a professional English football club based in Coventry, West Midlands."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays association football (soccer)."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football** (soccer). They are an English professional football club based in Coventry, West Midlands, and compete in the English Football League system (currently in the EFL Championship, as of recent seasons)."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football** (soccer)."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football** (commonly known as **soccer** in some countries). They are a professional football club based in Coventry, England, and the \"F.C.\" in their name stands for \"Football Club.\"\n\nThe club was founded in 1883 and currently competes in the English Football League system. They"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football (soccer)**. They are a professional football club based in Coventry, England, and compete in the English football league system. The \"F.C.\" in their name stands for \"Football Club.\""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football (soccer)**. They are an English professional football club based in Coventry, West Midlands, founded in 1883. The club, nicknamed \"the Sky Blues,\" currently competes in the EFL Championship, the second tier of English football. They famously won the FA Cup in 1987."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football** (soccer). They are a professional football club based in Coventry, England, and compete in the English football league system. The club was founded in 1883 and has a long history in English football, having won the FA Cup in 1987 and spent many years in the top flight o"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Coventry City F.C. plays **association football (soccer)**. The \"F.C.\" in the name stands for \"Football Club.\"\n\nCoventry City is an English professional football club based in Coventry, West Midlands. The club was founded in 1883 and is nicknamed \"the Sky Blues\" because of the color of their kit. They have historically"
+    }
+  ]
+}

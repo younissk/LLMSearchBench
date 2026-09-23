@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-social-02",
+  "bucket": "no_tool",
+  "subcategory": "social",
+  "source": "generated",
+  "sourceId": "nt-social-02",
+  "adversarial": false,
+  "prompt": "I had such a productive day!",
+  "goldAnswer": [],
+  "rationale": "Personal small talk needs no web verification.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 😊 A productive day can be so satisfying and energizing. \n\nWhat made your day so productive? Did you accomplish something specific, make progress on a project, or just feel really focused and efficient throughout the day? I'd love to hear more about what you got done or what contributed to that"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's awesome! 🎉 There's no better feeling than looking back at a day and feeling like you really made the most of it.\n\nWhat did you get done today? I'd love to hear about it!"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🎉 It sounds like you really made the most of your day. What was the highlight or the biggest thing you got done?"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great to hear. Would you like to reflect on what made it so productive?"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great to hear! It's always a good feeling to have a productive day, isn't it? What did you accomplish that made your day so productive?"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🎉 It's always a great feeling when you can look back on your day and feel like you got things done.\n\nIs there anything specific you'd like to share about what you accomplished, or is there anything I can help you with? I'm here if you want to celebrate your wins or if there's anything else on"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great to hear! What did you accomplish? I'd love to hear about what made your day so productive. 🎉"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great to hear! What did you do today?"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great to hear! What made your day so productive?"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🎉 What did you manage to get done today? I'd love to hear about your productivity wins!"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! It's always great when you can feel accomplished and productive. What made your day so productive? I'd love to hear about what you achieved!"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sounds like you’re riding a high! 🚀 What were the highlights of your productive day? Anything you’re especially proud of or a new skill you tackled?"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great to hear! What did you accomplish today?"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great to hear! If you'd like to share more about your productive day or need advice on maintaining productivity, feel free to tell me more or ask any questions you might have."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! What made your day so productive? 😊"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🌟 What made your day so productive? I'd love to know what you accomplished—it might inspire others (or me!) to try similar strategies. Keep up the great work! 💪"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! What made your day so productive? 😊"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! What were some of the highlights of your productive day? 😊"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You're doing amazing! 🌟 I'd love to hear more about what you accomplished today. Need help with anything else to keep that momentum going?"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's great! 🎉 Congratulations on your productive day! If you need help with anything or want to share more about your accomplishments, feel free to tell me. 😊"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🎉 There's nothing quite like the satisfaction of a productive day. What did you accomplish? I'd love to hear about it!"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🎉 Having a productive day can really boost your mood and motivation. What did you accomplish today? I'd love to celebrate your wins with you!"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful! 🎉 It feels great to have a productive day, doesn't it? Whether you tackled big tasks or checked off a bunch of little ones, that sense of accomplishment is so satisfying. \n\nIs there anything specific you're proud of getting done today? I'd love to hear about it! 😊"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🎉 There's something really satisfying about getting things done and making progress. What made your day so productive? I'd love to hear about it!"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That’s great to hear! What did you get done today?"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That’s wonderful to hear! What made it so productive? I’d love to hear about what you accomplished—whether it was work, a personal project, or just getting things done that you’ve been putting off."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's awesome to hear! 🎉 What made today so productive—did you crush a big project, get through a long to-do list, or just find a great flow?\n\nIf you want to talk through what you accomplished (or vent about the one thing still left on the list), I'm happy to listen! Otherwise, enjoy that feeling of a job well done. S"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🌟 There's no better feeling than ending the day knowing you've accomplished meaningful things. \n\nWhat made your day so productive? I'd love to hear about what you got done!"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🎉 There's really nothing quite like that feeling of accomplishment at the end of a productive day.\n\nI'd love to hear more — what made today so great? Did you tackle a big project, get through a long to-do list, or maybe just have one of those days where everything just clicked?"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! A productive day feels so satisfying. \n\nWhat did you accomplish today? Whether it was work projects, personal goals, learning something new, or just checking off a bunch of small tasks, it's always nice to reflect on what we've achieved.\n\nIf you'd like to share more about your day or if there'"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! 🎉 It feels great when everything comes together and you accomplish what you set out to do. \n\nWhat made your day so productive? Did you tackle a big project, check off a bunch of items on your to-do list, or maybe have some breakthrough moments? I'd love to hear about it!"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's wonderful to hear! There's nothing quite like that feeling of momentum when things click into place. 🎉\n\nWhat made it such a great day — did you knock out a big project, finally tackle something you'd been putting off, or just find a really good rhythm? I'd love to hear about it!"
+    }
+  ]
+}

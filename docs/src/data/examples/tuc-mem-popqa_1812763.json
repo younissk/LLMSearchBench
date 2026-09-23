@@ -1,0 +1,359 @@
+{
+  "id": "tuc-mem-popqa_1812763",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_1812763",
+  "adversarial": false,
+  "prompt": "What is the capital of West Pakistan?",
+  "goldAnswer": [
+    "Karachi",
+    "Heart of Pakistan",
+    "The Lighting City",
+    "Kurrachee"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about West Pakistan's capital to provide you with an accurate answer."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "West Pakistan no longer exists as a political entity, but when it did exist from 1955 to 1970, its capital was **Lahore**.\n\nTo clarify the historical context:\n- After Pakistan's independence in 1947, the country had two wings: West Pakistan and East Pakistan (now Bangladesh).\n- From 1955 to 1970, West Pakistan's provin"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of West Pakistan was Lahore, but since 1971, the area formerly known as West Pakistan has been part of the Islamic Republic of Pakistan, and the capital of Pakistan is Islamabad. Prior to 1959, the capital was Karachi, and from 1959 to 1967, and from 1970 to 1971, and even from 1947 to 1959, it was also in"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "West Pakistan as a political entity existed from 1955 to 1970, following the merger of the four provinces of West Pakistan (Punjab, Sindh, Khyber Pakhtunkhwa, and Balochistan) into a single province.\n\nThe capital of West Pakistan was **Lahore**.\n\nThe provincial government of West Pakistan was seated in Lahore, which se"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term \"West Pakistan\" was used during the period when Pakistan was divided into two wings: East Pakistan (now Bangladesh) and West Pakistan. The capital of West Pakistan was Lahore. However, after the separation of East Pakistan in 1971, the entire country was renamed Pakistan, and its capital is Islamabad."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of West Pakistan was **Karachi**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The concept of \"West Pakistan\" refers to a historical administrative division that existed from 1955 to 1970, which included the western provinces of Pakistan (Punjab, Sindh, Balochistan, and NWFP - now Khyber Pakhtunkhwa and Gilgit-Baltistan). During this period, there wasn't a single capital for West Pakistan as each"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "West Pakistan was a political entity that existed from 1955 to 1970 as part of the country of Pakistan. During that time, the capital of West Pakistan was Lahore. However, it's important to note that West Pakistan no longer exists as an administrative region. After 1970, the provinces were reorganized, and the current"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term \"West Pakistan\" refers to the western wing of Pakistan that existed from 1947 until 1971, when East Pakistan became the independent nation of Bangladesh. During this period, the capital of Pakistan (which governed both West and East Pakistan) was **Karachi** until 1959, after which the capital was officially m"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "West Pakistan was a province of Pakistan that existed from 1955 to 1970. The capital of West Pakistan was **Lahore**. \n\nAfter the dissolution of West Pakistan in 1970, the region was reorganized into several provinces, including Punjab, Sindh, Balochistan, and Khyber Pakhtunkhwa."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The term \"West Pakistan\" refers to the western wing of the country Pakistan, which existed from 1947 until 1971 (when East Pakistan became Bangladesh). Pakistan as a whole had its capital in **Karachi** from 1947 to 1967, and then moved to **Islamabad** in 1967. Since \"West Pakistan\" was not a sovereign country but a r"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of West Pakistan was **Lahore**.\n\nWest Pakistan was a province of Pakistan from 1955 to 1970, created through the \"One Unit\" scheme that merged several provinces and princely states into a single administrative unit. Lahore served as its capital throughout this period. In 1970, West Pakistan was dissolved a"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a historical question about Pakistan's geography before 1971.\n\n**West Pakistan** was a province of Pakistan that existed from 1955 to 1970 (before East Pakistan became Bangladesh in 1971). The capital of West Pakistan was:\n\n- **Karachi** (1955-1960) - This was also the capital of Pakistan from independence in 1"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan historical",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan province",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan province",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan province 1955 1970",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan province Lahore Karachi",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "capital of West Pakistan province",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of West Pakistan was **Lahore**.\n\nWest Pakistan was a former province of Pakistan that existed from 1955 to 1970, created under the One Unit policy which merged the provinces and princely states of western Pakistan into a single administrative unit (counterbalancing East Pakistan, the former East Bengal). L"
+    }
+  ]
+}

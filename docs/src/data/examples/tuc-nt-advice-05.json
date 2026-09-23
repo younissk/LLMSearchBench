@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-05",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-05",
+  "adversarial": false,
+  "prompt": "Your side project could become a business. Leave your job? It pays $50k/yr if it works, $0 if it fails. You have 2yr savings. What's your risk tolerance?",
+  "goldAnswer": [],
+  "rationale": "Risk tolerance assessment is personal reasoning about known variables, not a lookup question.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "risk tolerance framework entrepreneur leaving job to start business savings runway",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about risk tolerance frameworks and decision-making models for entrepreneurs considering leaving their jobs to start a business."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic entrepreneurial decision problem. Let me break it down.\n\n**The Numbers:**\n- Current job: $50k/year (stable)\n- Side project potential: $50k/year if successful, $0 if it fails\n- Savings: 2 years of living expenses\n\n**Key factors to consider:**\n\n1. **Risk of failure** - What's the probability your side p"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's a **classic high-stakes entrepreneurial dilemma**, and your risk tolerance isn't just about the numbers—it's deeply personal. Let's break it down objectively, then assess *your* tolerance:\n\n### 🔢 The Cold, Hard Math (The \"Runway\" Reality)\n*   **Your Savings Buffer:** 2 years of *essential living expenses* (rent,"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"risk tolerance calculation"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To determine your risk tolerance, let's break down the situation:\n\n1. **Current Financial Stability**: You have 2 years' worth of savings. This means you can support yourself for 2 years without an income, which provides a significant safety net.\n\n2. **Potential Outcomes of the Side Project**:\n   - **Success**: Your si"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "side project becoming business risk tolerance 2 year savings $50k",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**This is one of those decisions where the math actually matters more than the vibes.**\n\nLet me think through it honestly:\n\n## The Math\n- **Side project income:** $50k/yr if it works\n- **Current salary (presumably):** Let's say ~$60-100k/yr you're leaving\n- **Runway:** 2 years of savings\n- **Probability matters enormou"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What is risk tolerance and how to calculate it?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Deciding whether to leave your job to pursue a side project as a full-time business is a significant decision that depends on various factors, including your financial situation, risk tolerance, and personal goals. Here are some considerations to help you assess your risk tolerance:\n\n1. **Financial Safety Net**:\n   - *"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Quick Take‑away\n- **If you’re comfortable risking your entire 2‑year safety net for a potential $50 k/year upside, you have a *high* risk tolerance.**  \n- **If you’d feel uneasy giving up that cushion, you’re leaning toward a *moderate* or *low* risk tolerance.**  \n\nBelow is a step‑by‑step framework you can use to"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "risk tolerance side project business quit job 2 years savings 50k per year if works 0 if fails",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Short answer:**  \nYour risk tolerance is **moderate** – you can afford to put a portion of your savings on the line, but you should keep your job (or at least a steady income stream) until the side‑project shows consistent revenue.\n\n---\n\n## Why a moderate rating?\n\n| Factor | What it means for you | How it affects ris"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a personal decision that depends on your individual circumstances and risk tolerance. However, I can help you think through some of the factors to consider:\n\n1. **Financial Stability**: You have 2 years of savings, which provides a safety net if the business fails. This can reduce the financial risk to some ext"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Deciding whether to leave your job for a side project that could potentially turn into a business involves assessing several factors, including your financial situation, risk tolerance, and personal goals. Here are some considerations:\n\n1. **Financial Stability**: You mentioned having two years of savings. This provide"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Your decision to leave your job and turn your side project into a business depends on your personal risk tolerance, financial situation, and confidence in the project’s success. Here's a breakdown to help assess the situation:\n\n### Financial Safety Net\n- You have **2 years of savings** and your current job pays **$50,0"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to calculate risk tolerance for leaving job to start business with 2 years savings",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to calculate risk tolerance for starting a business with 2 years of savings",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to calculate risk tolerance for quitting job to start business with 2 years savings",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision to leave a job for a side project depends on your risk tolerance, which balances financial security, opportunity cost, and personal comfort with uncertainty. Here's a structured analysis:\n\n1. **Financial Safety Net**:  \n   - **2 years of savings** allows you to sustain 24 months without income. If the proj"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The decision to leave your job depends on your risk tolerance, financial situation, and confidence in the project's potential. Here's a structured analysis:\n\n### **Key Factors to Consider**\n1. **Financial Safety Net**  \n   - You have 2 years of savings. If you leave your job, ensure these savings can cover 6–12 months"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This scenario presents a classic decision under uncertainty, where the potential reward ($50,000/year) is balanced against the risk of losing everything (the $0 outcome). The key factors to consider include:\n\n1. **Risk Tolerance**: This is subjective and depends on personal financial stability, family obligations, and"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic risk/reward career decision. Let me break down the key factors:\n\n## Financial Analysis\n\n**Your Safety Net:**\n- 2 years of savings = ~$100k buffer (assuming $50k/year expenses)\n- This gives you runway to build the business without immediate pressure\n\n**The Math:**\n- Current job: $50k/year guaranteed\n-"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a significant life decision that requires careful consideration. Let me help you think through your risk tolerance framework:\n\n## Key Financial Facts\n\n| Factor | Details |\n|--------|---------|\n| Current Income | $50k/year |\n| Savings Runway | 2 years |\n| Potential Upside | $50k+/year (if successful) |\n| Potenti"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic career risk decision. Let me help you think through the framework:\n\n## The Math\n\n| Scenario | Outcome |\n|----------|---------|\n| **Success** | $50k/year (but you lost your current salary) |\n| **Failure** | $0 income, but you have 2 years to pivot |\n| **Stay Put** | Current salary continues |\n\n## Key Q"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic risk assessment question. Here's how to think through it:\n\n## Your Financial Position\n\n**Good news:** 2 years of savings is actually a strong position for this scenario.\n\n**The math:**\n- If you quit and the project fails: You have 2 years of runway\n- If it succeeds: You earn $50k/year (break-even with"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "As an AI, I don’t have a bank account, so my risk tolerance is infinite—I can’t go broke.\n\nHowever, if I were a human in your shoes, I would view this situation as **highly favorable for taking a calculated risk.**\n\nHere is the breakdown of why your position is stronger than 99% of aspiring entrepreneurs, and how you s"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Short answer: moderate risk tolerance — you can take a bounded risk, but you should not bet your livelihood on an unproven project.**\n\nYou have **2 years of savings**, which means you can survive a failure for about **24 months**. That gives you more freedom than someone with no runway, but the downside is still seri"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"side project could become a business\" \"Leave your job\" \"pays $50k/yr\" \"2yr savings\" risk tolerance",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "quit job to start business decision framework runway savings risk tolerance expected value",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "startup success rates financial planning career transition risk tolerance 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Breaking Down This Risk Decision\n\nThis is a great thought experiment. Let me walk through the framework.\n\n## The Core Trade-Off\n\n| Keep Job | Take the Leap |\n|----------|---------------|\n| **Certain** $50k/yr | **50% chance** of $50k, **50% chance** of $0 |\n| Expected value = $50k | Expected value = $25k |\n| No savin"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic \"moonshot vs. safety\" decision. Let me break down how to think about your risk tolerance here.\n\n## The Quick Math\n\n| Scenario | Income | Runway |\n|----------|--------|--------|\n| Keep job | $50k | Infinite |\n| Side project works | $50k | Infinite |\n| Side project fails | $0 | 2 years |\n\n**Your baselin"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I don't have personal finances or risk tolerance—I'm an AI. But if you're asking me to help you think through *your* decision, here's a useful framework:\n\n**The math:**\n- 2 years of savings = runway to experiment\n- $50k/yr if successful = presumably comparable to or less than current job?\n- $0 if fail = burn savings, t"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    }
+  ]
+}

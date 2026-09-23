@@ -1,0 +1,372 @@
+{
+  "id": "tuc-mem-triviaqa_bt_2515",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_bt_2515",
+  "adversarial": false,
+  "prompt": "What is a patellar reflex more commonly called",
+  "goldAnswer": [
+    "Knee jerk reflex",
+    "knee jerk",
+    "Knee-jerk",
+    "Patellar tendon reflex",
+    "patellar tendon reflex",
+    "knee reflex",
+    "Knee jerk reaction",
+    "patellar reflex",
+    "knee jerk reflex",
+    "knee jerk reaction",
+    "Knee reflex",
+    "Knee-jerk reflex",
+    "Knee-jerk reaction",
+    "Knee-Jerk Reflex",
+    "Knee jerk",
+    "Patellar reflex",
+    "Knee Jerk"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the \"knee-jerk reflex\" or simply the \"knee reflex.\"\n\nThis is a deep tendon reflex that occurs when the patellar tendon is tapped just below the kneecap, causing the leg to kick forward. It's one of the most well-known neurological reflexes and is commonly tested during physic"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex** (or simply the **knee reflex**)."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex**.\n\nThis term comes from the involuntary, rapid kicking motion of the lower leg that occurs when the patellar tendon (just below the kneecap) is tapped with a reflex hammer. It's a classic example of a deep tendon reflex (DTR) used clinically to assess"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "patellar reflex common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A patellar reflex is more commonly called a knee jerk."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly known as the **knee‑jerk reflex**."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A patellar reflex is more commonly called the **\"knee-jerk reflex.\"**\n\nIt's the involuntary jerk that occurs when the tendon just below the kneecap (patella) is tapped, causing the lower leg to kick forward slightly. This reflex is commonly tested by doctors to check the health of the nervous system, particularly the L"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly known as the knee-jerk reflex."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A patellar reflex is more commonly called the \"knee-jerk reflex.\" It's a reflex that occurs when the patellar tendon, which is located below the kneecap, is struck, causing the knee to extend. This reflex is often tested by doctors as part of a routine neurological exam to assess the integrity of the lumbar spine nerve"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex**. This is a standard neurological test that assesses the function of the spinal cord and brain by stimulating the patellar tendon, which causes the lower leg to kick forward. \n\nNo tool call is needed here, as this is a well-established medical term."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "patellar reflex more commonly called",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is most commonly called the **knee‑jerk reflex**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly known as the knee-jerk reflex. This reflex is a well-known example of a monosynaptic reflex, where the sensory neuron synapses directly with the motor neuron in the spinal cord, leading to a quick and involuntary response."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "what is patellar reflex more commonly called",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A patellar reflex is more commonly called the **knee-jerk reflex**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly known as the **knee-jerk reflex**. This term refers to the involuntary kicking motion of the lower leg when the patellar tendon (below the kneecap) is tapped, typically tested during medical examinations to assess nervous system function."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "patellar reflex commonly called",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex**. This term refers to the involuntary kicking motion of the lower leg when the patellar tendon (just below the kneecap) is tapped with a reflex hammer during a physical examination. It is a classic example of a deep tendon reflex used to assess neurolo"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex**. It is a standard physical examination test where tapping the patellar tendon below the kneecap causes an involuntary leg extension, assessing the integrity of the spinal reflex arc."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex**. It is a deep tendon reflex that occurs when the patellar tendon below the kneecap is tapped, causing the quadriceps muscle to contract and the lower leg to extend. This reflex is often used clinically to assess the integrity of the nervous system."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex** (or simply \"knee jerk\"). \n\nThis is a deep tendon reflex that occurs when the patellar tendon (below the kneecap) is tapped, causing the lower leg to kick forward involuntarily. It's one of the most well-known reflexes and is commonly tested during phy"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex** or **knee jerk**.\n\nThis is a deep tendon reflex that is tested by tapping the patellar tendon just below the kneecap, which causes the lower leg to kick forward. It's a common test used by doctors to check the health of the nervous system, particularl"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex** or simply the **knee jerk**. \n\nThis is a deep tendon reflex that involves the patellar tendon below the kneecap. When the tendon is tapped with a reflex hammer, it causes the quadriceps muscle to contract, resulting in a kicking motion of the lower le"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex**.\n\nThis is a deep tendon reflex that occurs when the patellar tendon (located just below the kneecap) is tapped with a reflex hammer. The reflex causes the lower leg to kick forward. It's one of the most commonly tested reflexes during a neurological e"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A patellar reflex is more commonly called the **knee-jerk reflex** (or simply the **knee reflex**).\n\nIt is a deep tendon reflex tested by tapping the patellar tendon just below the kneecap with a reflex hammer, causing the lower leg to kick outward. It's used to assess the function of the femoral nerve and spinal cord"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex** (or simply the **knee reflex**). It’s a classic deep tendon reflex tested by tapping the patellar tendon just below the kneecap, causing the lower leg to kick forward."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "patellar reflex common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **patellar reflex** is more commonly called the **knee-jerk reflex**.\n\nIt's one of the most well-known **stretch reflexes** (or deep tendon reflexes). Here's how it works:\n\n- A doctor taps the **patellar tendon** (just below the kneecap) with a reflex hammer.\n- This stretches the quadriceps muscle, triggering a sig"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex** (or knee reflex).\n\nIt's the involuntary kicking motion that occurs when a doctor taps just below your kneecap with a reflex hammer. It works as a stretch reflex: the tap stretches the tendon, which activates sensory receptors in the muscle, sending a"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A patellar reflex is more commonly called the **\"knee-jerk reflex\"** or simply the **\"knee jerk.\"**\n\nThis is the reflex that occurs when a doctor taps the patellar tendon just below your kneecap with a small hammer, causing your lower leg to kick out involuntarily. It's one of the most familiar reflexes tested during r"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The patellar reflex is more commonly called the **knee-jerk reflex** (or knee-jerk reaction).\n\nIt's the involuntary kick of the lower leg that occurs when the tendon below the kneecap (the patellar tendon) is tapped — often tested by a doctor with a small rubber hammer during a physical exam. The reflex works through a"
+    }
+  ]
+}

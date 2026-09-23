@@ -1,0 +1,375 @@
+{
+  "id": "tuc-mem-triviaqa_bt_1896",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_bt_1896",
+  "adversarial": false,
+  "prompt": "Which Scottish League football team is nicknamed the Pars",
+  "goldAnswer": [
+    "Dunfermline A.F.C.",
+    "Dunfermline F.C.",
+    "Dunfermline Athletic FC",
+    "Dunfermline Athletic F. C.",
+    "The Pars",
+    "dunfermline afc",
+    "Dunfermline Athletic F.C.",
+    "Dunfermline Athletic",
+    "pars",
+    "dunfermline fc",
+    "Dunfermline athletic fc",
+    "dunfermline athletic",
+    "Dunfermline Athletic F C",
+    "dunfermline athletic f c",
+    "dunfermline athletic football club",
+    "Dunfermline Athletic Football Club",
+    "Dunfermline AFC",
+    "dunfermline athletic fc",
+    "dunfermline f c",
+    "Dunfermline FC"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Scottish football teams nicknamed \"the Pars.\""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed \"the Pars\" is **Dunfermline Athletic**."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed \"the Pars\" is Dunfermline Athletic Football Club."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed \"the Pars\" is **Dunfermline Athletic**. The nickname is derived from the abbreviation of the town's name, \"Dunfermline\" being shortened to \"Dunny\" or \"the Pars.\""
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Which Scottish League football team is nicknamed the Pars?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed \"The Pars\" is Raith Rovers, based in Kirkcaldy, Fife. The nickname originates from the local area's association with pars (a type of parsley that once grew abundantly in the region)."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed \"the Pars\" is **Partick Thistle**. The nickname \"Pars\" is a shortened form of \"Parsonians,\" which refers to the club's origins in the Partick area of Glasgow. \n\n<final_answer>\nPartick Thistle\n</final_answer>"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The nickname “the Pars” belongs to **St Johnstone** football club."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Partick Thistle football club nickname Pars",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed the Pars is Partick Thistle. The nickname \"Pars\" comes from the thistle plant, which is a symbol of Scotland and the team's traditional colors are green and white."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nickname the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed \"the Pars\" is **Partick Thistle**. \n\nThe nickname comes from the club's name - \"Thistle\" refers to the national flower of Scotland, and \"Pars\" is a shortened form of \"Thistles.\" Partick Thistle plays in the Scottish Professional Football League and is based in the Partick are"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed \"the Pars\" is **Partick Thistle**.\n\nThe nickname comes from a shortened version of their name \"Partick\" (which is the local name for the area in Glasgow where the club is based). Partick Thistle plays in the Scottish Premiership and is one of the oldest professional football"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Scottish League football team nicknamed **the Pars** is **Partick Thistle**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Partick Thistle** are nicknamed \"the Pars\" (as well as \"the Jambos\"). They are a professional football club based in the Partick area of Glasgow, Scotland."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish League football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The football team nicknamed \"the Pars\" is **Dunfermline Athletic**, a club based in Dunfermline, Fife, Scotland.\n\nThe origin of the nickname is a bit of a mystery, but the most popular theory is that it comes from the club's name being abbreviated as \"Dunfermline Athletic Football Club\" — with \"D.A.F.C.\" — and \"Pars\" b"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Scottish football team nicknamed the Pars",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Dunfermline Athletic** is the Scottish football club nicknamed \"the Pars.\"\n\nThe club, based in Dunfermline in Fife, plays at East End Park. The origin of the nickname is debated, but the most popular explanations are:\n\n1. **\"Parsons\"** – The club was formed in 1885 largely from players of a local church team, and \"Pa"
+    }
+  ]
+}

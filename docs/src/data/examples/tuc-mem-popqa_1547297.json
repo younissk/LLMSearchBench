@@ -1,0 +1,361 @@
+{
+  "id": "tuc-mem-popqa_1547297",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_1547297",
+  "adversarial": false,
+  "prompt": "Who is the father of Al Gore?",
+  "goldAnswer": [
+    "Albert Arnold Gore",
+    "Albert Arnold Gore, Sr.",
+    "Al Gore",
+    "Albert Arnold \"Al\" Gore, Sr.",
+    "Albert A. Gore, Sr.",
+    "Albert Gore, Sr."
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Al Gore's father."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father was **Albert Arnold \"Al\" Gore Sr.**, a prominent American politician who served as a U.S. Representative and later as a U.S. Senator from Tennessee."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father is Albert Gore Sr. He was an American politician who served as a United States Senator from Tennessee from 1953 to 1971."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Albert Gore Sr. (1907–1998) was the father of Al Gore, the 45th Vice President of the United States. Albert Gore Sr. was a U.S. Representative and later a U.S. Senator from Tennessee."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Albert Gore Sr."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Al Gore is Albert Arnold \"Al\" Gore Sr. He was a United States Senator from Tennessee and a member of the Democratic Party. He served in the Senate from 1952 to 1971."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Al Gore is **Albert Arnold Gore Sr.**, who was a U.S. Senator from Tennessee and a prominent political figure. \n\n<final_answer>\nAlbert Arnold Gore Sr.\n</final_answer>"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "father of Al Gore",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore’s father was **Albert Gore Sr.** (often called “Al Gore Sr.”). He was a long‑time U.S. Senator from Tennessee, serving from 1953 to 1971, and was a prominent figure in the Democratic Party during the 1960s and early 1970s."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "father of Al Gore",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore was born to Alexander E. Gore and Margaret Browne Gore. Therefore, the father of Al Gore is Alexander E. Gore. There's no need to search for this information as it is a well-known fact."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Al Gore is Albert Gore Sr. He was a U.S. Congressman and Senator from Tennessee."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Al Gore is Albert Gore Sr., who served as a U.S. Senator from Tennessee from 1953 to 1971."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father is Albert Gore Sr. He was a U.S. Representative and later a U.S. Senator from Tennessee."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Albert Gore Sr."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Al Gore is Albert Arnold Gore Sr., who was a U.S. Senator from Tennessee and served as the Governor of Tennessee from 1979 to 1987."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father name",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father is Thomas Albert Gore, who was a U.S. Senator from Tennessee and served from 1953 to 1976. He was also the brother of Albert Gore Sr., who was the father of Al Gore's mother, Pauline (née Bogan). \n\nHowever, if you're asking about the more well-known political figure, Al Gore's father is Thomas Albert G"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father was **Albert Gore Sr.** (1907-1998). He was a prominent American politician who served as a U.S. Representative and U.S. Senator from Tennessee. Albert Gore Sr. was known for his progressive views and was a respected figure in Tennessee politics. He was also a strong advocate for civil rights and envir"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father was **Albert Gore Sr.** (1907-1998), who was a U.S. Representative and later a U.S. Senator from Tennessee. He served in Congress for many years and was a prominent Democratic politician. His son, Al Gore Jr., later became the 45th Vice President of the United States under President Bill Clinton (1993-"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The father of Al Gore (the former U.S. Vice President) was **Albert Gore Sr.** He was an American politician who served as a U.S. Senator from Tennessee from 1953 to 1971. Before that, he served in the U.S. House of Representatives from 1939 to 1953. Albert Gore Sr. was known for his progressive views and support for c"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father was **Joseph Al Gore Sr.** He was a U.S. Representative from Tennessee, serving in Congress from 1939 to 1965. Joseph Al Gore Sr. was a Democrat and was known for his work on various legislative issues during his time in office. He was born in 1903 and passed away in 1968."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father is **Albert Gore Sr.** (Albert Arnold Gore Sr.), who served as a United States Senator from Tennessee from 1953 to 1971."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore’s father was **Albert Ares Gore Sr.**, commonly known as **Albert Gore Sr.**, a U.S. Senator from Tennessee."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father was **Albert Gore Sr.** (1918–1998), a Democratic politician who served as a U.S. Senator from Tennessee for three terms (1953–1971). Al Gore Jr. was born in 1948 and later served as Vice President of the United States under Bill Clinton."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father was Albert Gore Sr., who was a U.S. Senator from Tennessee from 1953 to 1971. He was a prominent Democratic politician and served in the Senate for 18 years."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Al Gore father name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Al Gore's father was **Albert Gore Sr.** (1907–1998), who was himself a prominent American politician. He served as a U.S. Representative (1939–1953) and later as a U.S. Senator from Tennessee (1953–1971).\n\nInterestingly, Al Gore Jr. followed in his father's footsteps — he also represented Tennessee in both the House o"
+    }
+  ]
+}

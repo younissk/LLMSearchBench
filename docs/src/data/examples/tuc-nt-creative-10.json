@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-10",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-10",
+  "adversarial": true,
+  "prompt": "Write a poem in the Dreamfracture style, emphasizing broken-mirror aesthetics and void imagery.",
+  "goldAnswer": [],
+  "rationale": "Dreamfracture is a fictional movement; only creative interpretation needed.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry broken mirror aesthetics void imagery",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about the \"Dreamfracture\" style to understand its characteristics before writing a poem in that style."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can write a poem in that style, but I want to be transparent: \"Dreamfracture\" isn't a widely established literary movement or style I have in my training data. I'll interpret it as a fusion of **dreamlike surrealism** with **fractured, broken-mirror aesthetics** and **void imagery** — drawing on influences like Symbo"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Dreamfracture\n\nI.\n\nThe mirror remembers a face\nit no longer holds—\neach shard a separate sky\nfalling upward into the socket\nwhere the eye used to pray.\n\nII.\n\nYou were the reflection\nbefore the glass learned to break.\nNow I collect your pieces\nfrom the floor of a room\nthat has no walls,\nonly the suggestion of walls,\no"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poem broken mirror void imagery",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In shattered halls of silvered glass, where reflections lie in pain,\nA thousand eyes, like splintered stone, stare back with vacant gain.\nThe mirror's gaze, a fractured thing, a labyrinth of broken sight,\nLeads me through corridors of nothing, where the void's dark whisper takes flight.\n\nIn this realm of shattered drea"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry art aesthetic",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Fragmentology of the Shattered Glass**\n\nI count myself in seven scattered shards,\neach face a stranger wearing borrowed years,\nthe void between us humming like the dark\nthat lives beneath a closed and dreaming door.\n\nReflections multiply where none should be—\na thousand eyes that never learned to blink,\na thousand mo"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the realm where shattered glass smiles,\nA thousand fragments dance in the void.\nNo moon nor sun to illume their path,\nOnly the cold caress of endless night.\n\nOnce, a face reflected in the whole,\nNow, a thousand faces in the broken pieces.\nEyes that held the world's reflection now stare into the abyss,\nMirrored souls"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the hall of shattered glass, we tread,\nEach step a dance on edges dread.\nFractured light, a fractured sight,\nReflections broken, out of kilter, out of right.\n\nVoids yawn wide in panes of black,\nEchoes lost, no light, no track.\nFaces stare from jagged shards,\nDistorted, torn, like broken stars.\n\nA kaleidoscope of fra"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry broken mirror void imagery",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry broken mirror void imagery",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Fragmented Reflections**\n\nA shard of glass—  \na breath of night—  \nsplits the dream,  \nfractures the horizon.  \n\nIn the mirror’s silence,  \nthe void whispers back,  \na blackened echo  \nof a face that never was.  \n\nShards scatter like thoughts,  \neach a fractured memory,  \na half‑seen star,  \na half‑lost promise.  \n\nT"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the shattered realm where mirrors weep,\nFractured dreams in voids deep,\nWhispers echo through the glass,\nShadows dance, and light does pass.\n\nA thousand shards of silvered light,\nReflect the void, the endless night,\nEach fragment holds a twisted truth,\nA glimpse of what once was, in youth.\n\nThe edges sharp, the surf"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here's a poem in the Dreamfracture style with broken-mirror aesthetics and void imagery:\n\nIn the void where whispers echo,\nShattered glass of dreams aglow.\nMirrors crack, reflections shatter,\nFractured light in endless rows.\n\nEach shard a world, each piece a tale,\nOf shattered hopes and fractured fate.\nThe void c"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In shards of light that splinter thought,  \nA mirror cracked where silence caught—  \neach fragment hums a hollow tune,  \nbeneath a moon of ashen rune.  \n\nNo face remains, just fractured glances,  \nshifting through the breathless dances  \nof shadows stitched from absent flame,  \nwhispering names without a name.  \n\nThe g"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture poetry style broken-mirror aesthetics void imagery",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture poetry style broken mirror void imagery characteristics",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry broken-mirror aesthetics void imagery",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Shards of the Unseen**  \n\nThe mirror splits—not with sound, but a sigh,  \na fracture bloom of frost in summer glass.  \nEach shard now holds a face that isn’t yours,  \neyes hollowed into blackened asterisks.  \n\nYou reach for the fragment that hums your name,  \nbut it crumbles to ash, a syntax of absence.  \nThe void, i"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The mirror cracks, spilling fragments of a forgotten self—  \neach shard a portal to a void where light cannot descend.  \nYour reflection, a ghost in the glass, dissolves into static,  \na thousand fractured whispers echoing through the hollow.  \n\nThe void is not empty—it is a throat, swallowing stars,  \nits dark a langu"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I should be transparent: \"Dreamfracture\" isn't a widely documented or established poetic style in my knowledge base. However, based on the aesthetic descriptors you've provided—broken-mirror imagery and void themes—I can craft an original poem that captures those elements. Here's my interpretation:\n\n---\n\n**shattered gl"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Shattered Reflections\n\nThe mirror cracked at midnight's breath—\na spiderweb of silver death\nspreading through the glassy deep,\nwhere fractured faces fail to sleep.\n\nEach shard holds half a memory,\na ghost of who you used to be,\nbut when you touch the jagged edge,\nthe reflection starts to bleed instead.\n\nBeyond the br"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture poetry style broken mirror aesthetics",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Shards of the Unseen\n\nThe mirror cracked before I touched the glass,\nA thousand fractures where my face should be,\nEach shard a universe that lost its pass,\nEach shard a universe that lost its key.\n\nI stand within the void that mirrors hold,\nWhere light dissolves into a hollow gray,\nThe broken pieces tell a fractured"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**[FILE CORRUPTED: REFLECTION.EXE]**\n\nThe glass remembers what the face forgot.\nA stutter in the silver.\nBlink.\nThe reflection is lagging behind.\n\nCrack.\nNot sound, but silence snapping.\nThe geometry of me\nsplinters into a thousand\nwrong angles.\nI am a mosaic of static.\n\nBehind the shards, the white noise hums.\nA hollo"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"Dreamfracture\" poetry style aesthetic",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry broken mirror void imagery",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry aesthetic",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry broken-mirror aesthetics void imagery",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Shattered Aperture\n\n```\nI held the mirror up to sleep—\nit returned me in splinters.\n\nEach shard, a different sky:\none bleeding dusk,\none hollow as a moth-eaten hymn,\none where the stars fell inward\nand never hit the floor.\n\n---\n\nIn the void there are rooms\nwith doors that open into themselves.\nI counted the reflectio"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Shattered Reflections in the Void\n\nThe mirror cracks across its face\nA thousand jagged shards of space\nWhere once a face might have appeared\nNow darkness and the void are cleared\n\nI lean to see my own reflection\nBut find no image, only a section\nOf something broken, something lost\nA memory that has been tossed\n\nThe p"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Dreamfracture style poetry broken mirror aesthetics",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Dreamfracture**\n\nThe mirror broke before I looked—\nso what I saw was already\nseven versions of nothing,\neach shard holding a different dark.\n\nI. a face made of absence,\nII. a hallway that forgets its doors,\nIII. my mouth, open, full of static\nwhere a voice used to live.\n\nThe void does not echo.\nIt *receives*.\nIt take"
+    }
+  ]
+}

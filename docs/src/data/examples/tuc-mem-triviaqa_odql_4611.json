@@ -1,0 +1,377 @@
+{
+  "id": "tuc-mem-triviaqa_odql_4611",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_odql_4611",
+  "adversarial": false,
+  "prompt": "Nebuchadnezzar was the ruler of which ancient kingdom (606-562 BC)?",
+  "goldAnswer": [
+    "City of Babylon",
+    "Babilu",
+    "Babylon, Iraq",
+    "Ka Dingir",
+    "History of Babylon",
+    "babylon iraq",
+    "ka dingir",
+    "babilu",
+    "Babalyon",
+    "Babylon",
+    "history of babylon",
+    "Babylon (Iraq)",
+    "city of babylon",
+    "babylon",
+    "BABYLON",
+    "bablyon",
+    "Bablyon",
+    "Babylon (city)",
+    "babylon city",
+    "babalyon",
+    "ancient babylon",
+    "Ancient Babylon"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nebuchadnezzar ruler ancient kingdom 606-562 BC",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Nebuchadnezzar to confirm which ancient kingdom he ruled."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire) from approximately 605 BC to 562 BC. He is most famous for his conquest of Jerusalem, the destruction of the First Temple, and the Babylonian captivity of the Jewish people, as well as for the construction of the legend"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire**. \n\nHe reigned from approximately 605 BC to 562 BC and is famous for his military conquests (including the destruction of Jerusalem and the First Temple in 586 BC) and his extensive building projects in Babylon, such as the Ishtar Gate and the Hanging Gard"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nebuchadnezzar ancient kingdom 606-562 BC",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar was the ruler of the ancient kingdom of Babylon."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nebuchadnezzar ruler 606-562 BC kingdom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar (more accurately Nebuchadnezzar II) was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire) from 605/604 to 562 BC.\n\nHe is best known for:\n- Expanding the Babylonian Empire to its greatest extent\n- Destroying Jerusalem and the First Temple in 586 BC\n- Constructing the famous Ha"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Babylon"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the Neo-Babylonian Empire. He is famous for his military campaigns, the expansion of Babylon, and the construction of the Hanging Gardens of Babylon, one of the Seven Wonders of the Ancient World. His reign is often dated from 605 BC to 562 BC."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nebuchadnezzar II ruler of which ancient kingdom 606-562 BC",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian (Chaldean) Empire**, which corresponds to the ancient kingdom of **Babylon** during the years 606–562 BC. This period marks the height of Babylonian power under his reign, including the conquest of Jerusalem and the destruction of the First Temple."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nebuchadnezzar ruler of which ancient kingdom 606-562 BC",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the king of the **Neo‑Babylonian (Chaldean) Empire** (the Babylonian kingdom that ruled from 606 BC to 562 BC)."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the Neo-Babylonian Empire, which existed from 605 BC to 562 BC. He is best known for his construction of the Hanging Gardens of Babylon and for his role in the biblical accounts, particularly in the Book of Daniel."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nebuchadnezzar II ruled over which ancient kingdom",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the Babylonian Empire during the period 605–562 BC. He is known for his significant contributions to Babylonian architecture and military campaigns."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the ancient Babylonian Empire from approximately 605–562 BC. He is best known for his military campaigns, the expansion of Babylon, and the construction of the Hanging Gardens of Babylon, one of the Seven Wonders of the Ancient World."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The ruler Nebuchadnezzar II (reigned c. 605–562 BC) was the king of the **Neo-Babylonian Empire**. This kingdom, centered in Mesopotamia (modern-day Iraq), is renowned for its military campaigns, architectural achievements like the Hanging Gardens of Babylon, and the Babylonian captivity of the Jewish people. The dates"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nebuchadnezzar ruler of which ancient kingdom 606-562 BC",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire), which existed from approximately 626 to 539 BC. His reign specifically spanned 605–562 BC, during which Babylon became a dominant power in the ancient Near East. He is famously known for the destruction of Jerusalem (5"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** (606–562 BC). He is best known for events such as the siege of Jerusalem, the destruction of the First Temple, and the construction of the Hanging Gardens of Babylon. His reign marked the height of Babylon's power and influence in the ancient Near East."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** during the period 606–562 BC. He is best known for rebuilding the city of Babylon, expanding the empire's influence, and overseeing the Babylonian exile of the Jews."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire). He reigned from approximately 605-562 BC and is one of the most famous kings of ancient Babylon.\n\nDuring his reign, Nebuchadnezzar II:\n- Conquered Jerusalem in 587 BC, leading to the Babylonian captivity of the Jewish"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire). He reigned from approximately 605 BC to 562 BC, making him one of the most famous and powerful kings of ancient Babylon.\n\nDuring his reign, he is known for:\n- Building the Hanging Gardens of Babylon (one of the Seven W"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar (specifically Nebuchadnezzar II) was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire). He reigned from approximately 605 BC to 562 BC, which aligns with the dates you mentioned.\n\nHe is one of the most famous kings of ancient Mesopotamia, known for:\n- Conquering Jerusalem and"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar was the ruler of the **Neo-Babylonian Empire** (also known as the Babylonian Empire). He reigned from approximately 605-562 BC and is one of the most famous kings of ancient Babylon.\n\nDuring his reign, he:\n- Captured Jerusalem in 597 BC and 587 BC\n- Exiled the Jewish people to Babylon\n- Built the Hanging"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar (specifically Nebuchadnezzar II) was the ruler of **Babylon** (the Neo-Babylonian Empire)."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar was the ruler of the **Neo-Babylonian Empire** (ancient Babylon)."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the king of **Babylon** (the **Neo-Babylonian Empire**), reigning from about 605/604 to 562 BC. (The range 606–562 BC is sometimes used in older chronologies.) He is famous for the Hanging Gardens and the Babylonian conquest of Jerusalem."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II ruled the **Neo-Babylonian Empire** (the **Kingdom of Babylon**). He reigned from about 605/606 to 562 BC."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire), one of the most powerful kingdoms of ancient Mesopotamia.\n\nHe is one of the most famous Babylonian kings and is well known for:\n\n- **Expanding the empire** to its greatest territorial extent, controlling much of the Le"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Nebuchadnezzar ruler ancient kingdom 606-562 BC",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II ruled the **Neo‑Babylonian Empire** (also known as the Chaldean Empire) from about 606 BC to 562 BC."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire or simply **Babylon**).\n\nHe is one of history's most famous Babylonian kings, known for:\n- Conquering Jerusalem and destroying the First Temple (586 BC)\n- Initiating the Babylonian Captivity of the Jewish people\n- Massiv"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Nebuchadnezzar II was the ruler of the **Neo-Babylonian Empire** (also known as the Chaldean Empire), which was centered in Babylon in ancient Mesopotamia (modern-day Iraq).\n\nHe reigned from 605–562 BC and is best known for:\n\n- **Conquering Jerusalem** (597 BC) and destroying the city and its temple in 586 BC, which le"
+    }
+  ]
+}

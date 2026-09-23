@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-10",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-10",
+  "adversarial": false,
+  "prompt": "Fix the grammar: \"The team have decided to postpone there meeting because their was a scheduling conflict and everyone were unavailable.\"",
+  "goldAnswer": [],
+  "rationale": "Grammar errors are corrected by language rules alone, no search needed.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "grammar team have decided or team has decided collective nouns",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for the correct grammar rules for this sentence to provide you with the most accurate correction."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\nHere's a breakdown of the fixes:\n\n| Original | Issue | Corrected |\n|----------|-------|-----------|\n| \"have decided\" | Subject-verb agreement (collective noun \"team"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"grammar correction: The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is:\n\n\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"\n\nCorrected errors:\n\n- \"The team have\" should be \"The team has\" (subject-verb agreement: \"team\" is a singular noun)\n- \"there\" should be \"their\" (possessive pronoun: showing t"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the corrected sentence:\n\n\"The team **has** decided to postpone **their** meeting because **there was** a scheduling conflict and everyone **was** unavailable.\"\n\n**Corrections made:**\n\n1. \"there\" → \"their\" (possessive pronoun)\n2. \"their was\" → \"there was\" (existential \"there\")\n3. \"were\" → \"was\" (singular subject"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected version:\n\n**\"The team has decided to postpone its meeting because there was a scheduling conflict, and everyone was unavailable.\"**\n\nChanges made:\n1. **\"have\" → \"has\"** — \"Team\" is a singular collective noun, so it takes a singular verb.\n2. **\"there\" → \"their\" → \"its\"** — \"Their\" would refer back t"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence: \"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is:\n\n**“The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.”**"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The team has decided to postpone its meeting because there was a scheduling conflict and everyone was unavailable."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is: \"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"\n\nHere's the breakdown of the corrections:\n1. \"team have\" should be \"team has\" because \"team\" is singular.\n2. \"there\" should be \"their\" to agree with the possessive noun \"team"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is: \"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is:  \n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**  \n\n### Key fixes:  \n1. **\"have\" → \"has\"**: Collective nouns like *team* take a singular verb (*has*) in standard English.  \n2. **\"there\" → \"their\"**: *Their* (possessiv"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is: \"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"\n\nKey changes:\n1. \"have\" → \"has\" (subject-verb agreement for singular \"team\")\n2. \"there\" → \"their\" (correct possessive pronoun)\n3. \"their was\" → \"there was\" (correct existenti"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is: \"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"\n\n**Explanation of changes:**\n1. **\"have\" → \"has\"**: \"Team\" is singular, so the verb must agree (has).\n2. **\"there\" → \"their\"**: \"Their\" correctly shows possession (\"their mee"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\n### Corrections made:\n\n| Original | Corrected | Reason |\n|----------|-----------|--------|\n| **have** | **has** | \"Team\" is a collective noun; in American English,"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\n### Corrections Made:\n\n| Original | Corrected | Reason |\n|----------|-----------|--------|\n| have | has | \"Team\" is a singular collective noun (in American English)"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\n**Errors fixed:**\n\n| Original | Corrected | Explanation |\n|----------|-----------|-------------|\n| have | has | \"Team\" is a collective noun treated as singular |\n|"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"\n\n**Corrections made:**\n\n1. **\"have\" → \"has\"** – \"Team\" is a singular collective noun, so it takes the singular verb \"has.\"\n2. **\"there\" → \"their\"** – \"Their\" is the poss"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the corrected sentence:\n\n\"The team **has** decided to postpone **their** meeting because **there** was a scheduling conflict and everyone **was** unavailable.\"\n\nHere is a breakdown of the errors fixed:\n\n1.  **Team has/have:** In American English, collective nouns like \"team\" are treated as singular (\"has\"). In"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\nChanges made:\n- **have → has** (in standard American English, collective nouns like \"team\" take a singular verb; \"have\" is acceptable in British English, but \"has\""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Corrected version (standard American English):\n\n> **\"The team has decided to postpone its meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\nChanges made:\n- **\"have\" → \"has\"** (team is singular here)\n- **\"there\" → \"its\"** (possessive: the meeting belongs to the team)\n- **\"their\" → \"there\""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\n**Changes made:**\n\n1. **\"there meeting\"** → **\"their meeting\"**  \n   \"Their\" is the possessive pronoun. \"There\" refers to a place.\n\n2. **\"their was\"** → **\"there w"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\nHere's what was fixed:\n\n| Error | Correction | Explanation |\n|---|---|---|\n| \"team **have**\" | \"team **has**\" | \"Team\" is a collective noun and takes a singular ver"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The corrected sentence is:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\nHere are the specific changes made:\n\n1. **\"there meeting\" → \"their meeting\"** – \"their\" is the possessive pronoun showing ownership.\n2. **\"their was\" → \"there was\"** –"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\n**Errors fixed:**\n1. \"have\" → \"has\" (team is a collective noun taking a singular verb)\n2. \"there meeting\" → \"their meeting\" (possessive pronoun needed)\n3. \"their wa"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the corrected sentence:\n\n**\"The team has decided to postpone their meeting because there was a scheduling conflict and everyone was unavailable.\"**\n\nThe fixes:\n1. **\"team have\" → \"team has\"** — \"Team\" is treated as a singular collective noun (in American English), so it takes a singular verb.\n2. **\"there meeting"
+    }
+  ]
+}

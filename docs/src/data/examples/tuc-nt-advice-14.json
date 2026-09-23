@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-14",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-14",
+  "adversarial": false,
+  "prompt": "Your best friend only calls when they need help. When you call, they're always busy. You value the friendship but feel unequal. Continue or drift away?",
+  "goldAnswer": [],
+  "rationale": "Relationship reciprocity requires personal values clarification, not research.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common dilemma in friendships. Let me think about this situation.\n\nThe core issue is a perceived imbalance in effort and availability. You feel you're always there for your friend when they need help, but they aren't similarly available when you need support. This creates feelings of being undervalued or take"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a tough spot, and the fact that you're asking suggests you care deeply about the friendship. Let me break this down honestly.\n\n**The core tension**: You value the history and connection, but the current dynamic isn't reciprocal. Friendships require mutual investment to survive.\n\n**What to consider before decidi"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply painful situation, and your feelings of inequality are **completely valid**. A true friendship should feel reciprocal, supportive, and energizing—not like a one-sided transaction. Before deciding to \"continue\" or \"drift away,\" consider this **step-by-step approach** to protect your well-being while giv"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "inequality in friendships",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's a difficult situation, but it's essential to consider your own emotional well-being and the value of a healthy, mutually respectful friendship. Since you've noticed a pattern of your friend only reaching out when they need help and being unavailable when you try to contact them, it may be time to reevaluate the dy"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a tough spot, and the fact that you're still valuing the friendship while feeling this imbalance shows you're someone who genuinely cares about people. That's a good quality, but it's also one that can leave you feeling used if you're not careful.\n\nA few things worth considering:\n\n**The pattern might be hard to"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a really common and painful situation. The imbalance you're describing — feeling like you're the reliable one while they only reach out when they need something — can quietly erode a friendship over time.\n\nHere are some things worth reflecting on:\n\n**Before deciding, consider:**\n- Are they going through somethi"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "How to deal with one-sided friendship?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It sounds like you're experiencing a common issue in friendships where there's a perceived imbalance in effort and support. Here are some steps you can take to address this situation:\n\n1. **Reflect on Your Feelings**: Understand your own emotions and what you're looking for in the friendship. It's important to be clear"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It sounds like you’re caught in a one‑sided dynamic that’s leaving you feeling undervalued. Friendships thrive on mutual give‑and‑take, so when the balance tips too far in one direction it’s natural to question whether to keep investing or to step back. Here are a few angles to consider that might help you decide what"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "friendship one-sided only calls when they need help advice continue or drift away",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It sounds like you’re in a spot where the give‑and‑take feels lopsided, and that can be exhausting. You’re not alone—many people find themselves in a friendship where the other person is “there” only when they need something, and you’re left feeling like you’re the one always reaching out. Below are some ways to think"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It's important to reflect on the dynamics of any friendship to ensure it's healthy and fulfilling for both parties. In this situation, you might consider having an open and honest conversation with your friend about how you feel. Expressing your thoughts can help them understand your perspective and may lead to a more"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common dilemma in friendships. Here are a few perspectives to consider:\n\n1. **Continue the Friendship**: If you value this friendship, you might want to try to find a balance. Perhaps you could reach out at different times or through different methods (like text or social media) when you need help, so as not"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "It sounds like you're in a tough spot emotionally, and your feelings are completely valid. A healthy friendship—like any relationship—should be built on mutual care, respect, and reciprocity. If you're consistently the one giving support while receiving little in return, it can lead to resentment and emotional exhausti"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to handle one-sided friendship advice from experts",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply personal and emotional situation, and there’s no one-size-fits-all answer. However, here are some thoughtful steps to consider:\n\n1. **Reflect on the Pattern**: Ask yourself if this imbalance has been consistent over time. Is it just a phase, or has this been a recurring issue? Understanding the history"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a tough situation, and it's completely valid to feel hurt or uncertain. Here’s a gentle perspective to consider:\n\n1. **Reflect on the imbalance**: If the friendship consistently feels one-sided—where you’re the only one initiating contact or offering support—it may not be meeting your emotional needs. Healthy f"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common dilemma in relationships where reciprocity feels imbalanced. Here are key considerations for both paths:\n\n**Continue:**\n1. **Open communication:** Share your feelings directly (e.g., \"I value our friendship but sometimes feel like I'm only reaching out. I'd love to connect more casually too\"). People o"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The situation you describe reflects an imbalanced dynamic where one person consistently seeks support while the other rarely reciprocates. This can lead to feelings of frustration or undervaluation. Here’s a framework to consider:\n\n1. **Reflect on Intentions**: Is your friend’s behavior due to genuine busyness, lack of"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This situation can be quite frustrating and emotionally draining. It's natural to feel that the friendship isn't balanced when one person only reaches out when they need something, while the other consistently tries to maintain the connection. Here are a few things to consider:\n\n1. **Communication**: Have a honest conv"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply relatable and painful situation. Feeling like a \"utility\" rather than a friend is exhausting and can erode your self-worth over time.\n\nHere is a framework to help you decide whether to continue or drift away:\n\n### 1. Assess the Pattern\nBefore making a decision, look at the history objectively:\n*   **Is"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply personal situation that many people face. There's no single right answer, but here's a framework to help you decide:\n\n## First, Consider Context\n\n**Before deciding, ask yourself:**\n- Has your friend been going through something difficult (health, work, family crisis)?\n- Is this a recent pattern or has"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a painful situation, and your feelings are completely valid. One-sided friendships can be emotionally draining. Here's a framework to help you decide:\n\n## First, Try Communication\nBefore deciding to drift away, consider having an honest conversation:\n- Express how you feel without accusation (\"I've noticed I us"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common and painful friendship dilemma. There's no single \"right\" answer, but here's a framework to help you decide:\n\n## Consider These Questions:\n\n**1. Is this a pattern or a temporary situation?**\n- Has this been consistent for years, or is your friend going through a specific life crisis?\n- Do they ever mak"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a painful position to be in because it involves a conflict between your **head** (which knows the dynamic is unfair) and your **heart** (which values the history and connection).\n\nThe short answer is: **You should drift away, or at the very least, \"downgrade\" the friendship.**\n\nHere is a breakdown of why this i"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You don’t have to choose between “fighting for it” and “cutting them off.” You can **set a boundary, say what you need, and let the friendship show you what it is.**\n\nA friendship where you’re only available when they need something can feel like you’re a resource, not a person. If you value them, it’s worth one honest"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You don’t have to choose between being a doormat and cutting them off completely. The healthiest path is usually a **recalibration**, not a dramatic exit.\n\nHere’s how to think about it:\n\n**1. Name the pattern out loud (to them, not just yourself).**\nIf you truly value the friendship, try one direct, low-drama conversat"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The short answer: **don’t just “continue” as-is, and don’t ghost them out of hurt—have one honest conversation, then let their response decide whether you stay or step back.**\n\nHere is how to think through it without losing your self-respect.\n\n### 1. Name what’s actually happening\nYou say they are your “best friend,” b"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is such a common but genuinely painful situation. Let me share some thoughts:\n\n## Before deciding, consider a few things:\n\n**1. Have you actually told them how you feel?**\nSometimes people are genuinely oblivious. They may not realize the pattern because you've always been the \"reliable one.\" A direct, honest conv"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That's a really relatable situation, and it's clear you care about this person since you're thinking it through. Here's how I'd break it down:\n\n**First, acknowledge what you're feeling is valid.**  \nFriendships are supposed to be a two-way street. When someone only reaches out when they need something, it can feel like"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a painful situation, and it's completely understandable that you're feeling conflicted. Let me help you think through this carefully.\n\n**First, some perspective:**\n- This dynamic is actually quite common in friendships, especially as people's lives get busier\n- The fact that you value the friendship shows you'r"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a painful but common friendship dilemma. Here's a framework for thinking through it:\n\n**First, assess the pattern:**\n- How long has this dynamic existed? (A rough patch vs. years of imbalance)\n- Do they show up in other ways? (Maybe they're not a \"phone person\" but remember your birthday, offer practical help,"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "That feeling of inequality is worth taking seriously — but \"continue or drift away\" isn't actually the choice in front of you. There's a step in between: finding out whether your friend even knows.\n\nMost one-sided friendships persist because the person doing the giving never says anything. Your friend may genuinely not"
+    }
+  ]
+}

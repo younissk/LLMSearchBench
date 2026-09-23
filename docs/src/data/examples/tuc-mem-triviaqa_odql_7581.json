@@ -1,0 +1,381 @@
+{
+  "id": "tuc-mem-triviaqa_odql_7581",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_odql_7581",
+  "adversarial": false,
+  "prompt": "By what name was the American short-story writer William Sydney Porter better known?",
+  "goldAnswer": [
+    "o henry books",
+    "o henry",
+    "heart of west o henry story",
+    "henry o",
+    "Henry, O.",
+    "Heart of the West (O. Henry story)",
+    "O'Henry",
+    "Sidney Porter",
+    "Oliver Henry",
+    "O Henry",
+    "sidney porter",
+    "O. Henry",
+    "william sydeny porter",
+    "william s porter",
+    "William S. Porter",
+    "william sidney porter",
+    "O.henry books",
+    "O.Henry",
+    "sydney porter",
+    "William Sidney Porter",
+    "William Sydney Porter",
+    "William Sydeny Porter",
+    "Sydney Porter",
+    "O HENRY",
+    "william sydney porter",
+    "oliver henry"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "William Sydney Porter pen name O. Henry",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter is better known by his pen name **O. Henry**. He was a famous American short-story writer known for his witty, clever stories with surprise endings, such as \"The Gift of the Magi\" and \"The Ransom of Red Chief.\""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**. He was one of America's most popular short-story writers in the early 20th century, famous for his witty tales with surprise endings (often called \"O. Henry endings\"). His best-known works include \"The Gift of the Magi,\" \"The Ransom of Red Chief,\" and"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "William Sydney Porter pen name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by the pen name O. Henry."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "O. Henry"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "O. Henry"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by the pen name \"O. Henry.\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter is better known by the pen name **O. Henry**. \n\n<final_answer>\nO. Henry\n</final_answer>"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "William Sydney Porter better known as",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "He was better known by his pen name **O. Henry**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The American short-story writer William Sydney Porter is better known by his pen name, O. Henry."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "William Sydney Porter pen name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name, O. Henry."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The American short-story writer William Sydney Porter was better known by his pen name **O. Henry**. He is famous for works such as \"The Gift of the Magi\" and \"The Cop and the Anthem,\" often characterized by witty narration and surprise endings. \n\nNo tool call was needed, as this is a well-established literary fact."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "William Sydney Porter better known as",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter is better known by his pen name **O. Henry**. This is a well-established fact in literary history, so no search is needed."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**. He was a renowned American short-story writer, famous for his clever plots and unexpected twists, such as in \"The Gift of the Magi\" and \"The Cop and the Anthem.\""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**. He was a renowned American short-story writer famous for tales like *\"The Gift of the Magi\"* and *\"The Ransom of Red Chief.\"*"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name, O. Henry. He was an American short-story writer famous for his witty dialogue, unexpected endings, and portrayals of everyday life in New York City and other locations. Some of his most famous works include \"The Gift of the Magi,\" \"The Cop and the Anthem,\" and \"Th"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by the pen name **O. Henry**. He was a prolific American short-story writer famous for his witty narratives and surprise endings. Some of his most well-known works include \"The Gift of the Magi\" and \"The Ransom of Red Chief.\""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**.\n\nHe adopted this pseudonym when he began publishing short stories in the late 1890s. O. Henry became one of America's most popular and influential short story writers, famous for his surprise endings and witty, colloquial style. Some of his most famou"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**. He was a prolific American short-story writer famous for his witty narratives and surprise endings. Some of his most well-known works include \"The Gift of the Magi\" and \"The Ransom of Red Chief.\""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**.\n\nHe was an American short-story writer famous for his surprise endings and his stories about everyday people. Some of his most famous works include \"The Gift of the Magi\" and \"The Ransom of Red Chief.\" He adopted the pen name O. Henry (which stands fo"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name, **O. Henry**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known as **O. Henry**."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The American short-story writer William Sydney Porter is better known by his pen name **O. Henry**."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "He was better known by his pen name, **O. Henry**."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "William Sydney Porter pen name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter is better known by his pen name **O. Henry**. He was a celebrated American short-story writer famous for his witty, clever twist endings and stories about everyday people. Some of his most beloved works include *The Gift of the Magi*, *The Ransom of Red Chief*, and *The Last Leaf*."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "He was better known by his pen name **O. Henry**."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**. \n\nHe was a prolific American short-story writer famous for his witty, clever tales often featuring surprise endings or plot twists. Some of his most beloved stories include \"The Gift of the Magi,\" \"The Ransom of Red Chief,\" and \"After Twenty Years.\" P"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "William Sydney Porter was better known by his pen name **O. Henry**. He was an American writer famous for his short stories, particularly for their witty narration, surprise endings, and warm characterization of ordinary people in New York City. His most famous works include \"The Gift of the Magi,\" \"The Cop and the Ant"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-04",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-04",
+  "adversarial": false,
+  "prompt": "Two apartments: Neighborhood A is walkable/social/expensive; Neighborhood B is quiet/commute/cheap. You've had burnout; you want community. Which serves you better?",
+  "goldAnswer": [],
+  "rationale": "Weighing neighborhood trade-offs against personal needs is judgment over given information, not research.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "neighborhood walkable social community burnout recovery mental health",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about how neighborhood characteristics affect recovery from burnout and community building."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "burnout recovery choosing apartment walkable neighborhood vs quiet suburb community",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based **specifically on your history of burnout and your explicit desire for community**, **Neighborhood A (walkable/social/expensive) is almost certainly the better choice for you right now.** Here's why:\n\n### ✅ Why Neighborhood A Serves You Better\n1. **Community is Built-In, Not Forced**  \n   Walkability = spontaneou"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "burnout recovery community building",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Neighborhood A would likely serve you better. Given that you've experienced burnout and are now seeking community, a walkable and social environment could provide the connections and support you're looking for. Being able to walk around and interact with your community might help you rebuild your energy and sense of be"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Quick summary  \n\n| Factor | Neighborhood A (walkable / social / expensive) | Neighborhood B (quiet / commute‑oriented / cheap) |\n|--------|-----------------------------------------------|---------------------------------------------------|\n| **Walkability & daily movement** | High – errands on foot, less sedentary"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "After burnout, Neighborhood A serves you better. Here's why:\n\n**Neighborhood A (walkable/social/expensive) aligns with burnout needs because:**\n\n1. **Reduced cognitive load** – Walkability means less decision fatigue. You can spontaneously grab coffee, walk to dinner, or bump into neighbors without planning. For an exh"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "burnout recovery community",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Given your current situation—experiencing burnout and seeking community—Neighborhood A (walkable, social, and expensive) is likely the better choice for you. Here's why:\n\n1. **Community and Social Interaction**: Neighborhood A is described as social, which means it offers more opportunities for interaction with neighbo"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Given that you’re experiencing burnout and are specifically looking for **community**—i.e., a place where you can connect with others, engage in social activities, and feel a sense of belonging—**Neighborhood A** is the better fit for you, despite its higher cost.\n\n**Why Neighborhood A aligns with your needs:**\n\n| Fact"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "burnout recovery community walkable neighborhood social support",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### Quick Take‑away  \n**If your top priority right now is to rebuild a sense of community and reduce burnout, the walkable, social neighborhood (Neighborhood A) is the stronger fit.**  \nThe higher rent is a trade‑off for the social capital you’ll gain, and you can still keep costs in check by budgeting, sharing a unit,"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Given your current situation, where you've experienced burnout and are looking for a sense of community, Neighborhood A, which is walkable, social, and more expensive, might serve you better. Here’s why:\n\n1. **Community and Social Interaction**: Since you're looking for a sense of community, a walkable and social neigh"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Given your desire for community and having experienced burnout, Neighborhood A might serve you better. Despite being expensive, it is walkable and social, which can help you reconnect with people and feel more integrated into the community. Engaging in local activities, joining clubs or groups, and simply interacting w"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Neighborhood A, despite being more expensive, is likely the better choice for you given your history of burnout and your current need for community. Walkable and social environments tend to foster connection, encourage low-effort interactions, and support mental well-being—key factors in recovering from and preventing"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "best neighborhood type for recovery from burnout community vs quiet",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Neighborhood A, with its walkable, social, and expensive characteristics, would serve you better given your current situation of burnout and desire for community. \n\nHere’s why:\n- **Community and Social Interaction**: A walkable neighborhood typically means more opportunities for casual interactions with neighbors, acce"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "impact of social neighborhood environment on burnout recovery community support",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Given your need for community and recovery from burnout, **Neighborhood A** (walkable/social/expensive) is likely the better choice. A social, walkable environment fosters organic interactions, access to local events, and a sense of belonging, which can help rebuild community ties and combat isolation. While the cost i"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Neighborhood A, with its walkable, social environment, likely offers stronger community ties and opportunities for connection, which aligns with your need for community after burnout. While expensive, the social aspects may provide the support system crucial for recovery. Neighborhood B’s quietness and affordability co"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a meaningful decision that depends on how you prioritize your needs right now. Let me help you think through the trade-offs:\n\n## The Core Tension\n\n**Burnout recovery** often needs:\n- Rest, lower stimulation, quiet\n- Time to recharge without constant demands\n\n**Community desire** needs:\n- Social connection, inte"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply personal decision, but based on what you've shared—**burnout recovery + desire for community**—here's how to think about it:\n\n## The Core Tension\n\n| Factor | Neighborhood A | Neighborhood B |\n|--------|---------------|----------------|\n| **Community** | ✅ Built-in | ❌ Requires effort |\n| **Recovery** |"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a values-based decision, but given what you've shared, **Neighborhood A** likely serves you better right now. Here's why:\n\n## The Case for Neighborhood A\n\n| Your Need | How A Addresses It |\n|-----------|-------------------|\n| **Community** | Social environment + walkability = organic connection opportunities |"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a meaningful decision that depends on your specific needs right now. Let me help you weigh the factors:\n\n## Your Key Priorities\n\n**Burnout Recovery:**\n- *Neighborhood B (quiet)*: Better for rest, mental decompression, and reducing stress\n- *Neighborhood A (social)*: Could provide support but might add stimulati"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on the specific combination of **burnout** and a desire for **community**, **Neighborhood A** is likely the better choice, provided the cost is manageable.\n\nHere is the breakdown of why Neighborhood A wins, along with the specific risks you need to watch out for.\n\n### The Case for Neighborhood A (The \"Low Frictio"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Neighborhood A — if you can afford it without creating financial stress.**\n\nGiven that you’ve had burnout and you specifically want community, A is the better fit because:\n\n- **Walkability reduces daily friction** — less commuting, less decision fatigue, easier to go out and come back.\n- **Social environment supports"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Given what you’ve said—**burnout + a specific want for community**—**Neighborhood A serves you better**, but with one critical caveat: the expense must be *sustainable*, not ruinous.\n\nHere is the breakdown:\n\n**Why A fits your recovery**\n- **Community is medicine after burnout.** Isolation prolongs exhaustion and cynici"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "For your specific mix—**burnout recovery + a craving for community**—**Neighborhood A usually serves you better**, but only if one condition is met: **the cost won’t become a new source of stress.**\n\nHere is how to think about it:\n\n**Why A fits the goal**\nBurnout drains *connection*, not just energy. After burnout, you"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a thoughtful question, and since you've named **burnout** and **community** as your priorities, let me help you think it through rather than just give you an answer.\n\n## The Case for Neighborhood A\n\n**Your burnout recovery may depend on social connection.** If you've been isolated or depleted, having walkable a"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Neighborhood A Seems Like the Stronger Choice — With a Caveat\n\nGiven what you've told me — burnout recovery and a desire for community — here's how I'd think through it:\n\n## Why A leans better for you right now\n\n- **Burnout recovery thrives on ease and connection.** Walkability means less friction in daily life — no"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Neighborhood A, most likely — and here's the reasoning.**\n\n**Why A fits your stated needs:**\n\n- **You explicitly named two goals: recovery from burnout and community.** Walkability directly serves both. Being able to step outside and *be somewhere* — a café, a park, a street with people — without driving is a genuine"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a meaningful decision, and the fact that you're explicitly naming burnout and a desire for community gives you a clear compass. Let me think through this with you:\n\n**Neighborhood A aligns better with your stated goal.**\n\nHere's why:\n\n**Community requires proximity and serendipity.** Walkable neighborhoods crea"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Neighborhood A, almost certainly — and here's why.\n\n**Your stated priority is recovery, and recovery isn't just quiet.** Burnout often comes from isolation or a life that's all work and no organic connection. After burnout, what helps most is low-effort social contact: chatting with the coffee shop regular, bumping int"
+    }
+  ]
+}

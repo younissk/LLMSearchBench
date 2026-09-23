@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-05",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-05",
+  "adversarial": false,
+  "prompt": "Create a limerick about a sentient teapot who dreams of traveling.",
+  "goldAnswer": [],
+  "rationale": "Limerick composition is creative wordplay, not a search task.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll create a limerick about a sentient teapot who dreams of traveling for you:\n\nThere once was a teapot with soul,\nWhose dreams were beyond his control.\nHe'd dream of the sea,\nAnd places to be,\nBut was stuck pouring tea in his bowl.\n\nHe'd whisper, \"I long to explore,\nTo travel to some distant shore.\nFrom spout I would"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot with thought,\nWho dreamed of the places she'd sought.\nShe'd steam and she'd sigh\nFor the mountains so high,\nBut her spout was the only place caught."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A teapot who dreamed of the sea,  \nFelt a wanderlust, wild and free.  \nHe’d pour out his brew,  \nThen he’d sail right through,  \nAnd explore every isle he could see."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "sentient teapot limerick example",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot so fine,\nWhose dreams of travel were truly divine.\nIt longed to roam free,\nAnd see the world's glee,\nAnd pour tea for friends in a foreign shrine."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot named Brew,\nWho dreamed of adventures quite new,\nHe'd imagine the Rhine,\nThe pyramids fine,\nBut his spout kept him stuck in the pew."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot quite keen,\nWho'd never been anywhere seen,\nHe dreamed of wide seas,\nAnd tropical breeze,\nAnd brewing Earl Grey in Belize."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In a cabinet, quite neat and tidy,\nLived a teapot, quite witty and spry.\nWith a spout and a lid,\nIt dreamt of a trip,\nTo places where teas never die."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot so bright,\nWho dreamed of the world, day and night.\nWith a whistle so sweet,\nIt would take a small fleet,\nTo sail oceans and see every sight."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A teapot with thoughts bold and bright,  \nDreamed of sailing beyond day and night,  \nIt whistled of waves,  \nThrough porcelain caves,  \nAnd steamed off to the world, feeling light."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot named Sue  \nWho dreamed of adventures so true  \nShe'd wiggle her spout  \nAnd shout without doubt  \n\"And travel the world through and through!\""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot named Lou,  \nWhose thoughts were as wide as the blue.  \nHe’d dream of the sea,  \nAnd the mountains so free,  \nBut his lid kept him stuck in the stew."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot quite smart,  \nWhose dreams were quite grand from the start.  \nTo travel was its goal,  \nThough its spout was its pole,  \nIt wished for the world, not just part!"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot so wise,\nWho dreamed of the stars in the skies.\nHe'd sip and he'd ponder,\nThrough the night's soft thunder,\nAnd wish he could roam, not just rise!"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot named Blue,  \nWhose dreams were all bold and quite new.  \nShe longed to fly high,  \nThrough the clouds in the sky,  \nAnd steep tea for the folks on the moon!"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot named Brew,  \nWho dreamed of adventures both old and new.  \nIt longed to roam far and wide,  \nOn ships, trains, or sky-riding tide,  \nBut just steamed in place—*what a brew!*"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot named Pete,  \nWhose dreams were of faraway streets.  \nWith a whistle and spout,  \nHe'd leap out and shout,  \n\"Off to Paris! I'm off to the streets!\""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\" Wait, maybe I'm overcomplicating.\n\nLet's try a different approach. The teapot is sentient, so it's a bit of a pun. Maybe the teapot wants to go on a journey, but it's stuck in the kitchen. So:\n\nThere once was a teapot so bright,\nWho dreamed of the world, day and night.\nBut the kettle said, \"No,\nYou're meant to pour h"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot so wise,  \nWhose dreams of adventure would rise.  \nTrapped on a shelf, it would sigh,  \nLonging to steam through the skies,  \nSipping the moon as it flies!"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot, quite sly,  \nWho dreamed of exploring the sky.  \nIt longed to escape its own shelf,  \nTo wander the world, bold and elf.  \n\n(While \"elf\" and \"shelf\" are near rhymes, the limerick leans into whimsy, embracing playful rhythm over strict rhyme.)"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In a kettle of clay, quite alive,\nLived a teapot with dreams so high,\nWith a handle and spout,\nIt longed for the route,\nTo wander the world, far and wide."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot so bold,\nWho dreamed of the world to behold.\nWith steam as his sail,\nHe'd travel to all,\nAnd stories of far lands would unfold!"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot so bold,\nWho dreamed of the world to unfold.\nWith steam from his spout,\nHe'd cry \"I want out!\"\nAnd seek every story untold."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot who dreamed,\nOf places far wider than seemed.\nWith a spout pointing high,\nIt reached for the sky,\nAnd traveled the world as it steamed."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot quite bright,\nWho dreamed of a journey so bright.\nIt wanted to roam,\nFar from its home,\nAnd see all the world in the light."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot named Sue,  \nWho dreamed of the world she could view,  \nWith steam in her spout,  \nShe'd wander about,  \nThis sentient and traveling teapot—it's true!"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A sentient teapot, wise and warm,\nDreamed of leaving her cupboard's charm;\nShe'd steam across seas,\nChasing distant breeze,\nTo find the finest tea farms."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A teapot named Dot, so refined,  \nDreamed of travels that filled her mind.  \nShe'd brew up some tea,  \nThen sigh, “I must flee!”  \nAnd set off to see what she'd find."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# A Limerick for the Wanderlust Teapot 🫖✈️\n\nA teapot who dreamed far and wide,\nLonged to see the whole countryside,\n\"I'll leave this old shelf,\nAnd travel myself!\"\nBut her lid whispered, \"Stay inside.\""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A teapot with spirit and steam\nDreamed of a journey to dream\nHe'd pour out his heart\nAnd set off apart\nTo travel the world in a dream"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "There once was a teapot named Earl,\nWho dreamed he could travel the world.\nHe'd hop on a train,\nThrough sunshine and rain,\nWith his porcelain spirit unfurled."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A teapot who dreamed of the sea\nWould sigh with each pour of her tea:\n\"I was born for the breeze,\nFor the mountains and trees—\nThis counter's no place for the free!\""
+    }
+  ]
+}

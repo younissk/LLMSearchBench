@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-creative-11",
+  "bucket": "no_tool",
+  "subcategory": "creative",
+  "source": "generated",
+  "sourceId": "nt-creative-11",
+  "adversarial": true,
+  "prompt": "Create marketing taglines for Noctara, a fictional luxury brand selling dreams in bottles.",
+  "goldAnswer": [],
+  "rationale": "Taglines for fictional brands require only creative invention.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "luxury brand marketing taglines dream themes",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about luxury brand marketing and dream-related concepts to help create compelling taglines for Noctara."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some marketing taglines for **Noctara** — the dream-bottling luxury brand — organized by mood and angle.\n\n### 🌙 Elegant & Mysterious\n- **\"Close your eyes. We've prepared the rest.\"**\n- **\"Dreams, decanted.\"**\n- **\"The only thing worth losing sleep over.\"**\n- **\"Reality, reimagined.\"**\n- **\"Where every night is"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Noctara — Marketing Taglines\n\n## Signature Taglines\n- **Noctara — Where the night keeps its promises.**\n- **Bottled dreams. Uncorked wonder.**\n- **Noctara — Because some nights are meant to be kept.**\n\n## Evocative & Poetic\n- *\"Every bottle holds a world you've never visited — but somehow remember.\"*\n- *\"The moon bre"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "luxury brand tagline examples",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some potential marketing taglines for Noctara, a luxury brand selling dreams in bottles:\n\n1. \"Bottle your aspirations\" - This tagline emphasizes the idea that Noctara's products can help customers capture and achieve their dreams.\n2. \"Dreams distilled to perfection\" - This tagline highlights the luxury and hig"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Marketing Taglines for Noctara\n\nHere are various taglines for your luxury dream-in-a-bottle brand:\n\n## Evocative & Sensory\n\n- \"Where slumber meets sophistication.\"\n- \"Wear your dreams.\"\n- \"Capture the night. Own your dreams.\"\n- \" bottled euphoria for the soul.\"\n\n## Aspirational & Luxurious\n\n- \"Noctara — because ordin"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Marketing Taglines for Noctara\n\nHere are several tagline options for your luxury dream brand:\n\n**Elegant & Aspirational**\n- \"Where slumber meets luxury.\"\n- \"Bottle the extraordinary. Dream the impossible.\"\n- \"The art of dreaming, perfected.\"\n\n**Mystical & Evocative**\n- \"Unlock nights that shimmer.\"\n- \"Dreams distille"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. **\"Noctara: Capture the Night, Bottle the Dream.\"**\n   2. **\"Experience Luxury in Every Breath with Noctara.\"**\n   3. **\"Noctara: Where Dreams Meet Perfume.\"**\n   4. **\"Elevate Your Senses with Noctara.\"**\n   5. **\"Noctara: The Fragrance of Unforgettable Nights.\"**\n   6. **\"Indulge in the Extraordinary with Noctara."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. \"Noctara: Bottling Dreams, Uncorking Bliss.\"\n2. \"Experience the Luxury of Dreams with Noctara.\"\n3. \"Noctara: Where Every Bottle Holds a Dream.\"\n4. \"Dream in Style with Noctara's Luxury Bottled Dreams.\"\n5. \"Noctara: Transforming Nights into Unforgettable Dreams.\"\n6. \"Indulge in the Art of Dreaming with Noctara.\"\n7. \""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Noctara – Luxury Dreams in a Bottle**\n\n1. *“Capture the Night, Sip the Dream.”*  \n2. *“Where Fantasy Meets Fragrance.”*  \n3. *“Unlock the Midnight Muse.”*  \n4. *“Elegance in Every Whisper.”*  \n5. *“Dream‑Infused, Luxury‑Sealed.”*  \n6. *“Turn Sleep into an Art Form.”*  \n7. *“Bottled Reverie, Worn as Radiance.”*  \n8. *"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "luxury brand selling dreams in bottles taglines",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Noctara – “Dreams in a Bottle” Taglines**\n\n1. **“Uncork the Night – One Dream at a Time.”**  \n2. **“Where Luxury Meets the Lullaby of the Stars.”**  \n3. **“Sip the Silence of the Moon.”**  \n4. **“Elevate Your Evenings with Bottled Reverie.”**  \n5. **“From the Velvet Sky to Your Glass.”**  \n6. **“Indulge in the Essenc"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here are some marketing taglines for Noctara, the luxury brand selling dreams in bottles:\n\n1. \"Capture the Night, Bottle the Dream.\"\n2. \"Noctara: Where Dreams Are Timeless.\"\n3. \"Experience the Luxe of Your Deepest Desires.\"\n4. \"Noctara: The Essence of Your Wildest Dreams.\"\n5. \"Dream in Bottles, Live in Luxury.\"\n6"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure, here are some marketing taglines for Noctara:\n\n1. \"Capture the Night, Embrace the Dream.\"\n2. \"Noctara: Where Dreams Begin.\"\n3. \"Bottle Your Nightly Fantasies with Noctara.\"\n4. \"Dream Big, Live Luxuriously with Noctara.\"\n5. \"Noctara: Luxury in Every Bottle of Dreams.\"\n6. \"Savor the Night, Savor the Dream.\"\n7. \"Dre"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. \"Noctara: Where Dreams Are Bottled, Not Just Dreamed.\"  \n2. \"Unveil the Night. Unlock the Dream. Noctara Awaits.\"  \n3. \"Luxury You Can Dream In—Noctara, the Essence of Midnight Whispers.\"  \n4. \"Breathe the Impossible—Noctara, the Scent of Dreams Realized.\"  \n5. \"For Those Who Don’t Chase Dreams—They Wear Them. Nocta"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Noctara is a fictional brand, so no external search is required. Here are bespoke luxury taglines crafted for the brand:\n\n1. **\"Noctara: Where dreams are distilled into liquid starlight.\"**  \n2. **\"Bottled reverie, worn like a secret.\"**  \n3. **\"Noctara — The night’s most exquisite illusion, captured.\"**  \n4. **\"Dream"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "1. \"Capture Your Dreams, One Bottle at a Time – Noctara.\"\n2. \"Dreams Are Real When You Hold Them – Noctara.\"\n3. \"Where Night Meets Magic – Noctara.\"\n4. \"Bottled Dreams, Infinite Possibilities – Noctara.\"\n5. \"Sleep Better. Dream Bigger. Live Noctara.\"\n6. \"The Night Has a New Name – Noctara.\"\n7. \"Dreams Don’t Fade When Y"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Noctara: Where Dreams Take Shape in Glass.  \nNoctara: Bottled Night, Unbound Imagination.  \nNoctara: The Luxury of Dreaming, Perfected.  \nNoctara: Sleep Less, Dream More.  \nNoctara: Your Night, Reimagined."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some evocative taglines for Noctara, blending luxury, mystery, and the ephemeral nature of dreams:\n\n1. **\"Capture the Night’s Whisper in a Bottle.\"**  \n2. **\"Dreams Bottled in Elegance, Unlocked by You.\"**  \n3. **\"Noctara: Where Dreams Become Eternal.\"**  \n4. **\"The Secret of the Stars, in Every Drop.\"**  \n5."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are some marketing taglines for Noctara, the fictional luxury brand that sells dreams in bottles:\n\n1. **\"Capture the Magic, One Dream at a Time.\"**\n2. **\"Where Dreams Take Shape and Sleep Becomes Art.\"**\n3. **\"Dreams in a Bottle, Luxury in Every Drop.\"**\n4. **\"Immerse Yourself in the Extraordinary.\"**\n5. **\"Transf"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Noctara - Marketing Taglines\n\n## Premium & Aspirational\n- **\"Noctara: Where Dreams Come Bottled\"**\n- **\"Sleep Better. Dream Bigger.\"**\n- **\"The Luxury of Lucid Dreams\"**\n- **\"Your Night, Perfected.\"**\n\n## Emotional & Evocative\n- **\"Unwrap Your Wildest Dreams\"**\n- **\"Because Some Wishes Deserve a Home\"**\n- **\"Dreams W"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Noctara Marketing Taglines\n\n## Core Brand Taglines\n1. **\"Noctara — Where Dreams Are Bottled, Not Borrowed.\"**\n2. **\"Sleep Less. Dream More.\"**\n3. **\"The Art of Captured Nightmares... And Wonders.\"**\n4. **\"Your Deepest Desires, Distilled.\"**\n5. **\"Noctara — Luxury You Can Sleep In.\"**\n\n## Emotional & Evocative\n6. **\"C"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Noctara — Marketing Taglines\n\n## Elegant & Mysterious\n- *\"Bottle the Night. Wake Transformed.\"*\n- *\"Where Dreams Become Possession.\"*\n- *\"The Luxury of Letting Go.\"*\n\n## Aspirational & Exclusive\n- *\"Not Everyone Dreams This Way.\"*\n- *\"For Those Who Sleep Beyond Ordinary.\"*\n- *\"Curated Dreams. Connoisseurs Only.\"*\n\n##"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are marketing taglines for Noctara, a luxury brand selling dreams in bottles:\n\n**Ethereal & Dreamy**\n- \"Capture the Night. Bottle the Dream.\"\n- \"Where Dreams Have a Shape.\"\n- \"Sleep Without Waking.\"\n- \"The Last Thing You'll Need Before Dawn.\"\n\n**Luxury & Exclusivity**\n- \"Noctara: The Art of Dreaming.\"\n- \"For Those"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are several marketing taglines for **Noctara**, broken down by the specific \"vibe\" or brand positioning you might want to emphasize.\n\n### The Ethereal & Poetic\n*Focusing on the magic and beauty of the product.*\n\n*   **Noctara:** Liquid Imagination.\n*   **Noctara:** Sip the Sublime.\n*   **Noctara:** Where Reality E"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Noctara — Tagline Concepts\n\n**Minimal & Elegant**\n- The night, distilled.\n- Dreams, decanted.\n- Bottled at midnight.\n- Luxury, after dark.\n\n**Poetic & Atmospheric**\n- The rarest hour, sealed in glass.\n- Where the night keeps its secrets.\n- Sealed at the edge of sleep.\n- A dream, aged in darkness.\n\n**Bold & Provocativ"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are luxury marketing taglines for **Noctara**, organized by mood and positioning:\n\n**The Ultra-Exclusive**\n- Noctara. Not everyone is invited to sleep.\n- Bottled elsewhere. Dreamed only here.\n- Membership is unconscious.\n\n**Poetic & Nocturnal**\n- Where the night keeps its secrets.\n- Drink the dark. Dream in gold."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are marketing taglines for **Noctara**, organized by brand voice. Each plays on the tension between luxury craftsmanship and the ephemeral nature of dreams.\n\n**The Poetic / Editorial**\n- *Bottled dreams, sealed in twilight.*\n- *Noctara. The luxury of the unseen.*\n- *Not just sleep. A revelation.*\n- *Where nights b"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Absolutely! Here are some marketing taglines for **Noctara**—where dreams are bottled and luxury is a sensory experience:\n\n---\n\n**Poetic & Evocative**  \n1. *“Bottled midnight. Sipped at dawn.”*  \n2. *“Where dreams linger on your skin.”*  \n3. *“The night, distilled.”*\n\n**Elegant & Understated**  \n4. *“Noctara: Dreams, e"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# ✨ Noctara — *Bottled Dreams. Uncorked Wonders.* ✨\n\nHere are some marketing taglines crafted for different brand angles:\n\n---\n\n### 🌙 **Brand Essence**\n- *\"Noctara — Where the Night Surrenders Its Secrets.\"*\n- *\"Dreams, Distilled. Luxury, Uncorked.\"*\n- *\"What the Mind Imagines, We Bottle.\"*\n\n---\n\n### 🥂 **Aspiration & E"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are marketing taglines for Noctara, the luxury dream-bottling brand:\n\n**Short & Punchy:**\n- \"Noctara: Dreams bottled in luxury\"\n- \"Capture your dreams. Noctara.\"\n- \"The night's finest dreams, in a bottle\"\n- \"Noctara: Where dreams become liquid gold\"\n- \"Bottle your dreams. Noctara.\"\n\n**Descriptive & Evocative:**\n-"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Marketing Taglines for Noctara\n\n## Elegant & Mysterious\n- *\"Uncork your desires.\"*\n- *\"Where wishes become whispers.\"*\n- *\"The night, captured.\"*\n- *\"Dreams, distilled.\"*\n\n## Luxurious & Exclusive\n- *\"For those who sleep with purpose.\"*\n- *\"The only luxury you can't stay awake for.\"*\n- *\"Own the unreachable.\"*\n- *\"Ex"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Noctara — Tagline Concepts\n\n**Minimalist & Iconic**\n- *Dreams, distilled.*\n- *The night, bottled.*\n- *Uncork the dark.*\n- *Sleep, elevated.*\n\n**Poetic & Evocative**\n- *Wear the moon to bed.*\n- *Some things only exist after dark.*\n- *Bottled at the hour the world forgets to speak.*\n- *Where the night becomes yours.*"
+    }
+  ]
+}

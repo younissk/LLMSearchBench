@@ -1,0 +1,358 @@
+{
+  "id": "tuc-mem-popqa_2596512",
+  "bucket": "memory",
+  "subcategory": "popqa",
+  "source": "retrievalqa",
+  "sourceId": "popqa_2596512",
+  "adversarial": false,
+  "prompt": "What is Oxford the capital of?",
+  "goldAnswer": [
+    "Oxfordshire",
+    "Oxon.",
+    "County of Oxford"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What is Oxford the capital of",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about what Oxford is the capital of."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not a capital city. Oxford is a city in England, but it is not the capital of any country. The capital of the United Kingdom is London, and the capital of England is also London. Oxford is known for its prestigious university, the University of Oxford."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not the capital of any country or region. It is a historic city in **England**, United Kingdom, famous for the **University of Oxford**, the oldest university in the English-speaking world. The capital of the United Kingdom is **London**."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Oxford capital of",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not the capital of any country. It is a city located in the United Kingdom, specifically in the county of Oxfordshire, England. London is the capital of England and the United Kingdom."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is **not** the capital of a sovereign country.  \nIt is the administrative centre (the traditional “county town”) of **Oxfordshire** in England. In other words, for the county of Oxfordshire, Oxford serves as the chief town‑and‑seat of local government, but it is not a national or regional capital in the sense th"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is the county town (the main administrative center) of **Oxfordshire**, a county in southeast England. While it is not the capital of a country or a county in the formal governmental sense (the county council is headquartered in Oxford itself, though), it is often regarded as the capital of Oxfordshire.\n\nOxford"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The capital of England is London, not Oxford. Oxford is a city in England, known for its world-renowned university. Here are some fun facts about Oxford:\n\n- It is located in the Oxfordshire county in South East England.\n- The University of Oxford, established in 1096, is the oldest university in the English-speaking wo"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not a capital of any region or country. It is a city in England, known for the University of Oxford, one of the oldest and most prestigious universities in the world. The city of Oxford itself does not serve as a capital city in any administrative or political sense."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is a city in England, not the capital of any country or state. The capital of England is London. Oxford is renowned for its historic university, the University of Oxford, which is one of the oldest and most prestigious universities in the world. \n\nIf you meant to ask about a different context or location, feel f"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Oxford capital of what",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is **not** a capital city.  \nIt is a historic university city in the county of Oxfordshire, England. Oxford serves as the **county town** of Oxfordshire, but the capital of England is London, and the capital of the United Kingdom is also London."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not a capital city. It is a city in England, known for its prestigious university, the University of Oxford. If you are asking about the capital of the region or country where Oxford is located, the capital of England is London."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The query \"Oxford the capital of\" seems a bit unclear. Oxford is a city in England, but it is not the capital of any country or region. Could you please provide more context or clarify your question?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not the capital of any country or major administrative region. It is a city in England, United Kingdom, and is best known for being the home of the University of Oxford. The capital of the United Kingdom is London."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What is Oxford the capital of?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not the capital of any country or region. It is a city in Oxfordshire, England, United Kingdom. The capital of England is London."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Oxford capital of what",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Oxford capital of which country or region",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What is Oxford the capital of?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is the county town (administrative capital) of **Oxfordshire**, a county in England. It is not the capital of any country - the capital of England and the United Kingdom is London.\n\nOxford is famous for being home to the University of Oxford, one of the world's oldest and most prestigious universities, but its r"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not actually the capital of anything. It is a city in England, famous for being home to the University of Oxford (one of the world's oldest and most prestigious universities).\n\nOxford is the county town of Oxfordshire, but it is not a capital city. The capital of England and the United Kingdom is London.\n\nOxf"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is the county town (administrative capital) of **Oxfordshire**, a county in South East England. \n\nWhile Oxford is not a national capital, it serves as the administrative center for Oxfordshire county. The city is perhaps best known for being home to the University of Oxford, one of the world's oldest and most pr"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is not the capital of anything. Oxford is a historic city in England, but it is not a capital city. The capital of England and the United Kingdom is London. Oxford is well-known for its university and academic heritage, but it doesn't hold any capital status."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is the county town (often called the capital) of **Oxfordshire**, England."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Oxford capital of what county Oxfordshire",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Oxford capital of what county or region",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Oxford capital of what",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford is the **county town (administrative center) of Oxfordshire**, a county in England.\n\nIt's also famously known as a prestigious university city, home to the University of Oxford — one of the oldest and most renowned universities in the world. While it's not a national capital, its rich academic history has earned"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford isn’t a capital of any country, region, or state. It’s a historic city in England, most famous for its university."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Oxford capital of what",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Oxford isn't the capital of any country — that's a common misconception! Here's the breakdown:\n\n- **Oxford** is a city in Oxfordshire, England. It's the **county town of Oxfordshire**, but not a national capital.\n- The capital of **England** and the **United Kingdom** is **London**.\n\nThat said, Oxford has held some not"
+    }
+  ]
+}

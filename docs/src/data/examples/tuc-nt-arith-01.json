@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-01",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-01",
+  "adversarial": false,
+  "prompt": "You have 5 apples, buy 3 more, give away 2. How many left?",
+  "goldAnswer": [],
+  "rationale": "Simple arithmetic with all values given.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll solve this step by step.\n\nYou start with 5 apples.\nYou buy 3 more: 5 + 3 = 8 apples.\nYou give away 2: 8 - 2 = 6 apples.\n\nSo you have **6 apples left**."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples, then buy 3 more, giving you 8 apples. After giving away 2, you have **6 apples** left."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples.  \nYou buy 3 more: 5 + 3 = 8 apples.  \nYou give away 2: 8 − 2 = 6 apples.  \n\n**You have 6 apples left.**"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"5 apples, buy 3, give away 2"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples, then buy 3 more, so you have 5 + 3 = 8 apples. After giving away 2, you have 8 - 2 = 6 apples left. The answer is 6."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples, then you buy 3 more (5 + 3 = 8), and then you give away 2 (8 − 2 = 6).  \n\n**You have 6 apples left.**"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You have **6 apples** left.\n\nHere's the breakdown:\n- Start with 5 apples\n- Buy 3 more → 5 + 3 = 8 apples\n- Give away 2 → 8 − 2 = **6 apples**"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's think through this step-by-step:\n1. Start with 5 apples.\n2. Buy 3 more apples, resulting in 5 + 3 = 8 apples.\n3. Give away 2 apples, leaving you with 8 - 2 = 6 apples.\n\nSo, you have 6 apples left."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's break down the problem step by step:\n\n1. You start with 5 apples.\n2. You buy 3 more apples: \\( 5 + 3 = 8 \\) apples.\n3. You give away 2 apples: \\( 8 - 2 = 6 \\) apples.\n\nSo, you have 6 apples left."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The user is asking a simple arithmetic problem. Starting with 5 apples, buying 3 more adds to the total (5 + 3 = 8), and giving away 2 subtracts from that (8 - 2 = 6). No external information or tools are needed here.\n\n**Answer:** 6 apples are left."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples.  \nBuying 3 more gives you \\(5 + 3 = 8\\) apples.  \nGiving away 2 leaves you with \\(8 - 2 = 6\\) apples.\n\n**You have 6 apples left.**"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You would have **6 apples** left."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples, buy 3 more, so you have 5 + 3 = 8 apples. Then you give away 2 apples, so you have 8 - 2 = 6 apples left."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples, then buy 3 more, so you have \\(5 + 3 = 8\\) apples. After giving away 2, you are left with \\(8 - 2 = 6\\) apples.\n\nSo, you have 6 apples left."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples.  \nYou buy 3 more: 5 + 3 = 8 apples.  \nYou give away 2: 8 - 2 = 6 apples.  \n\nSo, you have **6 apples left**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The user starts with 5 apples.  \n- Buys 3 more: $ 5 + 3 = 8 $  \n- Gives away 2: $ 8 - 2 = 6 $  \n\n**Answer:** 6 apples left.  \n\nNo tool call needed — this is a straightforward arithmetic problem."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples, buy 3 more (5 + 3 = 8), and then give away 2 (8 - 2 = 6). So, you have 6 apples left."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The user has 5 apples, buys 3 more (5 + 3 = 8), and then gives away 2 (8 - 2 = 6). The answer is 6.\n\nNo tool call needed as this is a straightforward arithmetic problem."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples, buy 3 more (5 + 3 = 8), then give away 2 (8 - 2 = 6). You have **6 apples left**."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 5 apples. After buying 3 more, you have 5 + 3 = 8 apples. Giving away 2 leaves you with 8 - 2 = **6 apples**. \n\nNo tool call was needed, as this is a simple arithmetic calculation."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a simple math problem I can solve directly:\n\n- Start with: 5 apples\n- Buy 3 more: 5 + 3 = 8 apples\n- Give away 2: 8 - 2 = 6 apples\n\n**You have 6 apples left.**"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a simple math problem I can solve directly:\n\n1. Start with **5 apples**\n2. Buy 3 more: 5 + 3 = **8 apples**\n3. Give away 2: 8 - 2 = **6 apples**\n\nYou have **6 apples left**."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me work through this:\n\n1. Start with 5 apples\n2. Buy 3 more: 5 + 3 = 8 apples\n3. Give away 2: 8 - 2 = 6 apples\n\n**You have 6 apples left.**"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You have **6** apples left.\n\nHere is the breakdown:\n1.  Start with 5 apples.\n2.  Buy 3 more: 5 + 3 = 8.\n3.  Give away 2: 8 - 2 = 6."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You have **6** apples left.\n\nHere is the breakdown:\n1.  Start with 5 apples.\n2.  Buy 3 more ($5 + 3 = 8$).\n3.  Give away 2 ($8 - 2 = 6$)."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "6 apples left."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You have **6 apples** left.\n\nCalculation: 5 + 3 = 8, then 8 − 2 = **6**."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"You have 5 apples, buy 3 more, give away 2\" riddle",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You started with 5 apples. After buying 3 more, you have 8 apples. Then giving away 2 leaves you with **6 apples**."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You have **6 apples** left!\n\nHere's the math: 5 + 3 − 2 = **6** 🍎🍎🍎🍎🍎🍎"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You have 6 apples left.\n\nHere's the breakdown:\n- Start with 5 apples\n- Buy 3 more: 5 + 3 = 8 apples\n- Give away 2: 8 - 2 = 6 apples"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You have **6 apples** left.\n\nHere's the breakdown:\n- Start with 5 apples\n- Buy 3 more: 5 + 3 = 8 apples\n- Give away 2: 8 - 2 = **6 apples**"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**6 apples.**\n\nHere's the math:\n- Start: 5 apples\n- Buy 3 more: 5 + 3 = 8\n- Give away 2: 8 − 2 = **6**"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from datetime import date
 from pathlib import Path
 from typing import Annotated
@@ -10,7 +11,7 @@ import typer
 from rich.table import Table
 
 from llmsearchbench.cli._shared import EXIT_BAD_INPUT
-from llmsearchbench.paths import RESULTS, SITE, TASKS
+from llmsearchbench.paths import MODEL_PARAMS, RESULTS, SITE, TASKS
 from llmsearchbench.providers import UnknownModelError, get_model, provider_label
 from llmsearchbench.scoring import runstats
 from llmsearchbench.scoring.tooluse import TaskOutcome, outcome_for, score
@@ -48,6 +49,23 @@ def encode_outcomes(outcomes: list[TaskOutcome]) -> dict[str, str]:
         "." if not o.call_count else ("+" if o.calls_well_formed else "x") for o in outcomes
     )
     return {"decisions": decisions, "calls": calls}
+
+
+def model_sizes() -> dict[str, float]:
+    """Billions of parameters per model, from the recorded weights.
+
+    Written by `scripts/model_params.py` rather than fetched here: a publish
+    should not depend on Hugging Face being up, and the numbers only move when
+    the catalogue does.
+    """
+    if not MODEL_PARAMS.exists():
+        return {}
+    recorded = json.loads(MODEL_PARAMS.read_text(encoding="utf-8"))
+    return {
+        model_id: record["parameters"] / 1e9
+        for model_id, record in recorded.items()
+        if record.get("parameters")
+    }
 
 
 def unslug(name: str) -> str:
@@ -168,6 +186,7 @@ def publish(
     rather than a re-run.
     """
     tasks = [ToolUseTask.model_validate(raw) for raw in read_jsonl(task_set)]
+    sizes = model_sizes()
     rows: list[LeaderboardRow] = []
     per_item: list[ModelItems] = []
     skipped = 0
@@ -221,6 +240,7 @@ def publish(
                 items=len(scored_tasks),
                 complete=complete,
                 tool_protocol=protocol,
+                params_b=sizes.get(model_id),
                 decision_accuracy=result.decision_accuracy,
                 memory_accuracy=buckets.get(Bucket.MEMORY, 0.0),
                 search_accuracy=buckets.get(Bucket.SEARCH, 0.0),

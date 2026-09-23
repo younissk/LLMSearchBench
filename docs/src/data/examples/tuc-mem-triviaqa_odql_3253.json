@@ -1,0 +1,375 @@
+{
+  "id": "tuc-mem-triviaqa_odql_3253",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_odql_3253",
+  "adversarial": false,
+  "prompt": "What was the name of the company that 'Reginald Perrin' worked for in 'The Fall and Rise of Reginald Perrin'?",
+  "goldAnswer": [
+    "Fall and Rise of Reginald Perrin",
+    "fall and rise of reginald perrin",
+    "companies featured in fall and rise of reginald perrin",
+    "death of reginald perrin",
+    "The Fall and Rise of Reggie Perrin",
+    "The Death of Reginald Perrin",
+    "Companies featured in The Fall and Rise of Reginald Perrin",
+    "fall and rise of reggie perrin",
+    "Reginald Perrin",
+    "reginald perrin",
+    "sunshine desserts",
+    "'SUNSHINE DESSERTS'",
+    "Fall & Rise of Reginald Perrin",
+    "The Fall & Rise of Reginald Perrin",
+    "The Fall And Rise of Reginald Perrin",
+    "Sunshine Desserts",
+    "The Fall and Rise of Reginald Perrin",
+    "The Legacy of Reginald Perrin",
+    "fall rise of reginald perrin",
+    "legacy of reginald perrin"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company worked for The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Reginald Perrin and the company he worked for in \"The Fall and Rise of Reginald Perrin.\""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the British sitcom *The Fall and Rise of Reginald Perrin*, the main character Reginald Perrin worked for a company called **Sunshine Desserts**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name in The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sunshine Desserts"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin worked for company name The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the BBC sitcom *The Fall and Rise of Reginald Perrin*, Reginald Perrin worked for a company called **Gimbal's Cajun Wholesalers** (often referred to simply as \"Gimbal's\"), which sold industrial catering equipment. The company was run by Mr. Webster, with Reginald working as a middle manager who grew increasingly fru"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "The Fall and Rise of Reginald Perrin company name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In \"The Fall and Rise of Reginald Perrin,\" the fictional company that Reginald Perrin worked for was called **Semi Gliderol.**"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The company that Reginald Perrin worked for in *The Fall and Rise of Reginald Perrin* is **Grumble & Co.** This fictional company serves as the setting for the sitcom's satirical take on office life and bureaucratic drudgery. \n\n<final_answer>\nGrumble & Co.\n</final_answer>"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "The Fall and Rise of Reginald Perrin company name Reginald Perrin worked for",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Reginald Perrin worked for a large, faceless corporation simply called **“The Company.”**  The show uses the generic name to emphasize the anonymity and bureaucracy of the corporate world he’s trapped in."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "company name in The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "company Reginald Perrin worked for in The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The company that Reginald Perrin worked for in *The Fall and Rise of Reginald Perrin* was called **Sunshine Desserts**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "What company did Reginald Perrin work for in The Fall and Rise of Reginald Perrin?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The company that Reginald Perrin worked for in *The Fall and Rise of Reginald Perrin* is **N.C. Ltd.**, a fictional organization known for its vague and unimpressive name. The company produces a breakfast drink called \"Perk,\" which becomes a central element in the show's humor and plot."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "company name Reginald Perrin worked for The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the British TV comedy series \"The Fall and Rise of Reginald Perrin,\" the main character Reginald Perrin worked for a company called **C.J. Sunshine**. It was a fictional consumer goods company where he worked as a middle manager, and much of the show's humor revolved around the absurd corporate culture and his incre"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "The Fall and Rise of Reginald Perrin company name Reginald worked for",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "The Fall and Rise of Reginald Perrin company name Reginald Perrin worked for",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin worked for company name The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name Sunshine Desserts The Fall and Rise of Reginald Perrin",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company \"The Fall and Rise of Reginald Perrin\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Fall and Rise of Reginald Perrin\" company name where he worked",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Reginald Perrin company name \"Fall and Rise of Reginald Perrin\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In the classic British sitcom *The Fall and Rise of Reginald Perrin* (1976–1979), Reginald Perrin (played by Leonard Rossiter) worked for **Sunshine Desserts**, a company that manufactured desserts and puddings. His overbearing boss there was C.J. (Charles Jefferson), famous for his catchphrase \"I didn't get where I am"
+    }
+  ]
+}

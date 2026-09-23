@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-20",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-20",
+  "adversarial": false,
+  "prompt": "Your partner wants to move closer to their family (8 hours away) in two years. You're settled, your job lacks remote options. How do you start this conversation?",
+  "goldAnswer": [],
+  "rationale": "Difficult conversation structure requires values and communication, not external advice.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to discuss moving closer to family when partner wants to move but you have job constraints",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for advice on how to have this conversation about moving closer to family when there are job constraints."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply significant life conversation, and starting it well is crucial. Here’s a thoughtful, step-by-step approach to opening this dialogue with care and intention.\n\n## Before the Conversation: Get Clear With Yourself\n\nFirst, do some internal reflection:\n\n- **What does \"settled\" mean to you?** Identify the non"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting this conversation requires **empathy, preparation, and a collaborative mindset** – not defensiveness or assumptions. Here’s a step-by-step approach designed to foster understanding and teamwork, *not* conflict:\n\n### 🌟 Before the Conversation: Do Your Homework\n1. **Clarify YOUR non-negotiables** (be honest with"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"starting a conversation about moving closer to family"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting a conversation about a potentially life-changing decision like moving can be challenging, but it's essential to approach it with empathy and openness. Here's a suggestion on how to start the conversation:\n\n\"Hey, I know you've been thinking about moving closer to your family, and I want to talk to you about it."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic \"two-year timeline\" relationship negotiation. The good news: two years gives you time to think, not pressure to decide immediately. Here's how to start:\n\n**1. Lead with curiosity, not position**\nInstead of \"I can't move\" or \"I don't want to move,\" try: *\"I want to understand what this move means to yo"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Starting the Conversation: Moving Closer to Family\n\nThis is a common relationship challenge where two valid needs pull in different directions. Here's a framework to approach it thoughtfully:\n\n## Before the Conversation\n\n**Get clear on your own feelings first.** Ask yourself:\n- What specifically bothers me about this"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting this conversation requires empathy, clear communication, and a focus on finding a solution together. Here's a suggested way to begin the conversation:\n\n\"Hi [Partner's Name], I've been thinking about our future and there are some things I'd like to discuss with you. Let's find a quiet moment when we're both rel"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting a conversation about such a significant life change can be challenging, but it's important to approach it with openness, empathy, and a willingness to listen. Here are some steps to help you initiate this conversation:\n\n1. **Choose the Right Time and Place:**\n   - Find a quiet, comfortable setting where you bo"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting a conversation about a big life change—especially one that could affect your career, living situation, and relationship—can feel daunting. Here’s a step‑by‑step approach you can use to bring up the topic in a way that feels collaborative, respectful, and forward‑thinking.\n\n---\n\n## 1. Set the Right Context\n\n| W"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to start conversation about moving closer to partner's family when job is not remote",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### 1. Pick the Right Moment\n\n- **Timing matters** – choose a calm, private setting where you’re both relaxed (e.g., a weekend evening, after a walk, or a quiet dinner).  \n- **Avoid distractions** – no phones, no work calls, no kids in the room if you have them.  \n- **Set a gentle tone** – start with a positive note (“"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting this conversation can be delicate, but it's important to approach it with honesty and openness. Here’s a way you might begin:\n\n1. **Choose the Right Time and Place**: Find a quiet, comfortable setting where you both can talk without interruptions.\n\n2. **Express Your Feelings and Concerns**: Start by sharing yo"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting such a conversation can be delicate, but it's important to approach it with empathy and understanding. Here’s a suggested way to start the conversation:\n\n1. **Choose an Appropriate Time**: Find a time when both of you are relaxed and not stressed about other things. This could be during a weekend or after work"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a thoughtful and important conversation to have with your partner, and approaching it with empathy, honesty, and openness is key. Here’s how you can start:\n\n1. **Choose the Right Time and Setting**  \n   Pick a calm, private moment when you’re both relaxed and not distracted. Avoid bringing it up during stressfu"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to start conversation with partner about moving closer to family when job isn't remote",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to have a conversation about long-term relocation for partner's family with job constraints",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To start this conversation thoughtfully, consider these steps:\n\n1. **Choose the right time and space**: Schedule a calm, uninterrupted moment where both of you feel safe to talk—avoid bringing it up during stress or in public.\n\n2. **Express your perspective first**: \"I’ve been thinking about how important family is to"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to discuss relocation with partner for family reasons",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting this conversation requires empathy, openness, and collaboration. Here’s a structured approach:\n\n1. **Choose the Right Time**: Pick a calm, private moment when both of you are relaxed and not distracted. Avoid bringing it up during stress or conflict.\n\n2. **Express Empathy First**: Acknowledge your partner’s fe"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Moving closer to family is a significant decision that requires thoughtful communication and mutual understanding. Here's how you can approach this conversation:\n\n1. **Choose the Right Time and Place**: Pick a calm, private moment to talk without distractions. Ensure both of you have time to express your thoughts fully"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a significant life decision that requires thoughtful, compassionate communication. Here's how to start this conversation constructively:\n\n## Set the Right Foundation\n\n**Choose timing carefully:** Pick a calm moment when you're both relaxed—not during stress, fatigue, or right after work. Frame it as \"I'd love t"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a significant life decision that deserves careful, compassionate handling. Here’s a framework for starting this conversation:\n\n## Before the Conversation\n\n**Prepare yourself first:**\n- Clarify your own feelings and priorities (career, location, family ties)\n- Consider what you're willing to compromise on\n- Thin"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a significant conversation that deserves care and intentionality. Here's how to approach it:\n\n## Set the Stage\n- **Choose a calm, private moment** — not during stress or conflict\n- **Frame it as \"us vs. the problem\"** — you're teammates exploring options together, not opponents\n- **Give it time** — this shouldn"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a delicate conversation that requires empathy, clarity, and preparation. Here's how to approach it:\n\n## **Timing & Setting**\n- **Choose the right moment:** Pick a calm, private time when you're both relaxed and not distracted.\n- **Avoid:** Don't bring it up during an argument, when stressed, or in public.\n\n## *"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a significant life decision, but the two-year timeline is your greatest asset. It gives you enough time to explore options without the pressure of an immediate ultimatum.\n\nHere is a step-by-step guide on how to start this conversation, including specific scripts you can use.\n\n### 1. Preparation: Know Your \"Why\""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Pick a calm, neutral moment — not during an argument or right after a stressful day — and open with curiosity and reassurance rather than defensiveness.\n\nYou could say something like:\n\n> “I’ve been thinking about what you said about wanting to be closer to your family in the next couple of years. I care about that, and"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Start with curiosity, not a verdict. Since you have two years, this is a planning conversation—not an emergency decision—so frame it as “us versus the problem” rather than “your idea versus my life.”\n\n**How to open it:**\n\nPick a calm, private moment (not right after work or during stress). Use an invitation, not an acc"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Start by treating this as **joint problem-solving about a shared future**, not a negotiation where one of you “wins.” Because you have a two-year runway, you have time to plan rather than react.\n\n### 1. Set the conditions\n- **When:** Not after work when you’re depleted, or during a holiday visit with the family. Pick a"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of those conversations where *how* you start matters as much as *what* you say. Here's a framework:\n\n---\n\n## Start with Curiosity, Not Positioning\n\n**Open by understanding, not defending.**\n\nTry something like:\n\n> *\"I want to understand more about what moving closer to your family would mean to you. Can you"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Starting This Difficult Conversation\n\nThis is one of those talks that feels heavy *before it even begins* — but the fact that you're thinking about **how** to start it shows real care for both the relationship and your partner's needs.\n\n## A Few Ground Rules Before You Begin\n\n- **Pick a calm, neutral moment** — not d"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a delicate conversation that requires care, timing, and preparation. Here's a step-by-step approach to starting it effectively:\n\n## **Timing and Setting**\n- **Choose the right moment**: Not during stressful times, arguments, or when either of you is rushed\n- **Pick a neutral, private setting** where you can tal"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a significant conversation that deserves thoughtful approach. Here's how to start:\n\n## Set the Stage\n- **Choose the right time**: Pick a relaxed moment when you're both calm, not rushed, and have privacy\n- **Frame it proactively**: \"I've been thinking about your idea of moving closer to your family, and I want"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a good conversation to have early rather than late — two years is enough runway to find a real solution, but only if you both understand what you're actually solving for. Here's how I'd approach it:\n\n**Pick the right moment.** Not mid-argument, not when one of you is tired or rushing out the door. Something lik"
+    }
+  ]
+}

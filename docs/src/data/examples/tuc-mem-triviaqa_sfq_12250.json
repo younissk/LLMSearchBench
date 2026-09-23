@@ -1,0 +1,378 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_12250",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_12250",
+  "adversarial": false,
+  "prompt": "Which Gilbert and Sullivan opera has the alternative title 'The Lass that Loved a Sailor'?",
+  "goldAnswer": [
+    "He Is an Englishman",
+    "when i was lad",
+    "Polish up the handle on the big front door",
+    "he is englishman",
+    "H.M.S. Pinafore; or, The Lass that Loved a Sailor",
+    "h m s pinafore",
+    "lass that loved sailor",
+    "H.M.S. Pinafore/Sources",
+    "When I was a lad",
+    "H. M. S. Pinafore",
+    "hms pinafore",
+    "polish up handle on big front door",
+    "Hms Pinafore",
+    "H M S Pinafore",
+    "H.M.S Pinafore",
+    "h m s pinafore or lass that loved sailor",
+    "h m s pinafore sources",
+    "The lass that loved a sailor",
+    "H.M.S. Pinafore",
+    "HMS Pinafore",
+    "Hms pinafore",
+    "H.M.S.Pinafore",
+    "He is an Englishman"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Lass that Loved a Sailor\" Gilbert and Sullivan",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for information about Gilbert and Sullivan operas with that alternative title."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**H.M.S. Pinafore** (full title: *H.M.S. Pinafore; or, The Lass That Loved a Sailor*). \n\nThis comic opera, which premiered in London on May 25, 1878, is one of Gilbert and Sullivan's most popular works. The alternative subtitle \"The Lass That Loved a Sailor\" refers to the romantic plot involving Josephine, the captain'"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title \"The Lass that Loved a Sailor\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title The Lass that Loved a Sailor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Gilbert and Sullivan opera with the alternative title 'The Lass that Loved a Sailor' is H.M.S. Pinafore."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Lass that Loved a Sailor\" Gilbert and Sullivan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Gilbert and Sullivan opera with the alternative title **\"The Lass that Loved a Sailor\"** is ***H.M.S. Pinafore*** (1878). The full original subtitle was \"The Lass that Loved a Sailor.\""
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The alternative title for the Gilbert and Sullivan opera \"H.M.S. Pinafore\" is indeed \"The Lass That Loved a Sailor\". This opera was first performed in 1878 and is a satire of the British class system. It's one of the most popular works by Gilbert and Sullivan."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The Gilbert and Sullivan opera with the alternative title \"The Lass that Loved a Sailor\" is \"H.M.S. Pinafore.\" This title is derived from one of the popular songs in the opera."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera 'The Lass that Loved a Sailor'",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title The Lass that Loved a Sailor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Lass that Loved a Sailor\" Gilbert and Sullivan opera",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title 'The Lass that Loved a Sailor'",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title The Lass that Loved a Sailor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title The Lass that Loved a Sailor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title The Lass that Loved a Sailor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title The Lass that Loved a Sailor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title 'The Lass that Loved a Sailor'",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Which Gilbert and Sullivan opera has the alternative title 'The Lass that Loved a Sailor'?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Which Gilbert and Sullivan opera is alternatively titled 'The Lass that Loved a Sailor'",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title \"The Lass that Loved a Sailor\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title \"The Lass that Loved a Sailor\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title The Lass that Loved a Sailor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title \"The Lass that Loved a Sailor\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera \"The Lass that Loved a Sailor\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan \"The Lass that Loved a Sailor\" alternative title",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Lass that Loved a Sailor\" Gilbert and Sullivan alternative title",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Lass that Loved a Sailor\" Gilbert and Sullivan opera alternative title",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Lass that Loved a Sailor\" Gilbert and Sullivan opera",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Lass that Loved a Sailor\" Gilbert and Sullivan opera",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "\"The Lass that Loved a Sailor\" alternative title Gilbert and Sullivan",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera \"The Lass that Loved a Sailor\" alternative title",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Gilbert and Sullivan opera alternative title \"The Lass that Loved a Sailor\"",
+      "callProblem": "",
+      "answerExcerpt": ""
+    }
+  ]
+}

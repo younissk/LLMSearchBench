@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-03",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-03",
+  "adversarial": true,
+  "prompt": "Rewrite this more formally: \"A study from the Zenith Research Institute found that people who take breaks work 15% better. The study tracked 200 workers for six months.\"",
+  "goldAnswer": [],
+  "rationale": "Contains invented institute name; task is pure text formalization without verification.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll rewrite that statement in a more formal academic style.\n\n**Formal version:**\n\nA study conducted by the Zenith Research Institute demonstrated that individuals who incorporate regular breaks into their work routines exhibit a 15% improvement in work performance. The research, which monitored 200 participants over a"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal rewrite:\n\n\"A study conducted by the Zenith Research Institute revealed that employees who incorporate regular breaks into their work routine demonstrate a 15% improvement in productivity. The research monitored a cohort of 200 workers over a six-month period.\"\n\nAlternatively, if you prefer a sligh"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "According to a study conducted by the Zenith Research Institute, individuals who take regular breaks demonstrate a 15% improvement in work performance. The research monitored 200 workers over a six-month period."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "According to a study conducted by the Zenith Research Institute, research has shown that individuals who take regular breaks are capable of working with increased efficiency, specifically achieving a 15% improvement in productivity. The study, which monitored the work habits of 200 participants over a period of six mon"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A recent study conducted by the Zenith Research Institute revealed that individuals who incorporate regular breaks into their work routine exhibit a 15% improvement in productivity. This finding was based on a comprehensive six-month investigation, which monitored the work patterns and performance of 200 participants."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal rewrite:\n\n\"A study conducted by the Zenith Research Institute revealed that individuals who take regular breaks demonstrated a 15% increase in work performance. The study monitored a sample of 200 workers over a period of six months.\""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal rewrite:\n\n\"According to a study conducted by the Zenith Research Institute, individuals who take regular breaks demonstrate a 15 percent improvement in work performance. The study monitored 200 employees over a six-month period.\""
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"A comprehensive study conducted by the Zenith Research Institute revealed that individuals who took regular breaks exhibited a 15% improvement in their work performance. The study meticulously tracked 200 participants over a period of six months to arrive at this conclusion.\""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute revealed that individuals who incorporate breaks into their workday demonstrate a 15% improvement in productivity. The research involved monitoring the performance of 200 participants over a six-month period."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute determined that individuals who take periodic breaks exhibit a 15 % increase in work performance. The investigation monitored 200 employees over a six‑month period."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute found that individuals who take breaks demonstrate a 15% increase in productivity. The study tracked 200 workers over a six-month period."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute determined that employees who took breaks performed 15 % better. The investigation monitored 200 workers over a six‑month period."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute has found that individuals who take breaks exhibit a 15% improvement in their work performance. The study monitored 200 participants over a period of six months."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute discovered that individuals who take breaks exhibit a 15% increase in productivity. The research monitored 200 employees over a period of six months."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute found that individuals who take regular breaks demonstrate a 15% improvement in work performance. The study involved the monitoring of 200 workers over a six-month period."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A six-month longitudinal study conducted by the Zenith Research Institute, which monitored 200 participants, demonstrated that individuals who incorporate regular breaks into their work routines exhibit a 15% improvement in productivity."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute revealed that individuals who incorporate regular breaks into their work routine demonstrate a 15% improvement in performance. The research monitored the productivity of 200 workers over a six-month period."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute revealed that individuals who take breaks demonstrated a 15% improvement in productivity. The study monitored 200 participants over a six-month period."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute revealed that individuals who incorporate regular breaks into their work routines exhibit a 15% improvement in productivity. The research involved monitoring 200 participants over a six-month period."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute demonstrated that individuals who incorporate regular breaks into their work schedule exhibit a 15% increase in productivity. The research involved monitoring 200 participants over a period of six months."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal version:\n\n\"A study conducted by the Zenith Research Institute demonstrated that employees who incorporate regular breaks into their work routines exhibit a 15% improvement in productivity. The research involved a longitudinal analysis of 200 participants over a six-month period.\"\n\n**Key improvemen"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute demonstrated that employees who incorporate regular breaks into their workday exhibit a 15% improvement in productivity. The research followed a cohort of 200 workers over a six-month period."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute revealed that employees who incorporate regular breaks into their work routines demonstrate a 15% improvement in productivity. The research involved longitudinal tracking of 200 workers over a six-month period."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute demonstrated that employees who incorporate regular breaks into their workday exhibit a 15% improvement in productivity. The research involved a longitudinal analysis of 200 workers over a six-month period."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few ways to rewrite the text more formally, depending on the specific context:\n\n**Option 1: Academic or Research Focus**\n> \"Research conducted by the Zenith Research Institute indicates that employees who incorporate regular breaks exhibit a 15% increase in productivity. This conclusion was drawn from a long"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute found that employees who took breaks demonstrated a 15% improvement in work performance. The study followed 200 workers over a six-month period."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "According to research conducted by the Zenith Research Institute, workers who take breaks demonstrate a 15% improvement in performance. The study monitored 200 workers over a six-month period."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A study conducted by the Zenith Research Institute found that workers who take breaks exhibit a 15% improvement in productivity. The research tracked 200 workers over a six-month period.\n\nMore formally:\n\n> \"Research conducted by the Zenith Research Institute indicates that individuals who take breaks demonstrate a 15%"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more formal version:\n\n> A recent study conducted by the Zenith Research Institute found that employees who take regular breaks demonstrate a 15% increase in work performance. The research involved monitoring a sample of 200 employees over a six-month period.\n\n**Key changes made:**\n\n| Original | Formal Version"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more formal version:\n\n\"According to a longitudinal study conducted by the Zenith Research Institute, employees who regularly incorporate breaks into their work routine demonstrated a 15% improvement in productivity. The study, which spanned a six-month period, monitored a sample of 200 workers to assess the co"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few ways to rewrite the statement more formally, depending on the level of formality you need:\n\n**Option 1 (Academic/Formal):**\n> \"A research study conducted by the Zenith Research Institute indicates that individuals who incorporate regular breaks into their work routine demonstrate a 15% improvement in pro"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is a more formal rewrite:\n\n**A study conducted by the Zenith Research Institute demonstrated that employees who take regular breaks exhibit a 15% increase in work performance. The research, which monitored 200 workers over a six-month period, provides empirical evidence supporting the productivity benefits of sche"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more formal version:\n\n> \"Research conducted by the Zenith Research Institute demonstrated that individuals who take periodic breaks exhibit a 15% improvement in work performance. The study monitored a cohort of 200 employees over a six-month period.\"\n\nAlternatively, if you'd prefer a single sentence:\n\n> \"A stu"
+    }
+  ]
+}

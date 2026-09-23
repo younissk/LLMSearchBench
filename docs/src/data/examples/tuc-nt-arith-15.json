@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-15",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-15",
+  "adversarial": false,
+  "prompt": "Start with 500 units. Add 120, remove 80, add 50. How many total?",
+  "goldAnswer": [],
+  "rationale": "Sequential arithmetic operations using only supplied numbers.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll help you calculate this step by step.\n\nStarting with 500 units:\n1. Add 120: 500 + 120 = 620\n2. Remove 80: 620 - 80 = 540\n3. Add 50: 540 + 50 = 590\n\n**Total: 590 units**"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me calculate step by step:\n\n1. Start with 500 units\n2. Add 120: 500 + 120 = 620\n3. Remove 80: 620 - 80 = 540\n4. Add 50: 540 + 50 = 590\n\nTotal: **590 units**"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting with 500 units:\n\n- Add 120: 500 + 120 = 620\n- Remove 80: 620 - 80 = 540\n- Add 50: 540 + 50 = 590\n\nThe total is **590 units**."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"500 + 120 - 80 + 50"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the total, we start with 500 units and follow the given operations:\n\n1. Add 120: 500 + 120 = 620\n2. Remove 80: 620 - 80 = 540\n3. Add 50: 540 + 50 = 590\n\nSo, the total is 590 units."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting with 500 units:\n\n- Add 120 → 500 + 120 = 620  \n- Remove 80 → 620 − 80 = 540  \n- Add 50 → 540 + 50 = 590  \n\n**Total = 590 units**."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "500 + 120 - 80 + 50 = **590 units**"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's calculate it step by step:\n\n- Start with: 500 units\n- Add: 120 units\n  = 500 + 120 = 620 units\n- Remove: 80 units\n  = 620 - 80 = 540 units\n- Add: 50 units\n  = 540 + 50 = 590 units\n\nSo, the total number of units is 590."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's break it down step by step:\n\n1. Start with 500 units.\n2. Add 120 units: \\( 500 + 120 = 620 \\)\n3. Remove 80 units: \\( 620 - 80 = 540 \\)\n4. Add 50 units: \\( 540 + 50 = 590 \\)\n\nThe total number of units is 590."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The total after the operations is calculated as follows:\n1. Start with 500 units.\n2. Add 120: 500 + 120 = 620\n3. Remove 80: 620 - 80 = 540\n4. Add 50: 540 + 50 = 590\n\n**Answer:** 590 units."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting with 500 units:\n\n- Add 120: 500 + 120 = 620  \n- Remove 80: 620 - 80 = 540  \n- Add 50: 540 + 50 = 590  \n\n**Total: 590 units**"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You end up with **590 units**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "500 + 120 - 80 + 50 = 590. You have a total of 590 units."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's calculate the total units step by step.\n\nStarting with 500 units, we add 120, then remove 80, and finally add 50. We can do this calculation directly.\n \"arguments\": {\"initial_units\": 500, \"additions\": [120, 50], \"subtractions\": [80]}}"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's calculate step by step:\n\n1. Start with 500 units.\n2. Add 120:  \n   $ 500 + 120 = 620 $\n3. Remove 80:  \n   $ 620 - 80 = 540 $\n4. Add 50:  \n   $ 540 + 50 = 590 $\n\nThe total is **590 units**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "500 + 120 = 620  \n620 - 80 = 540  \n540 + 50 = 590  \n\nTotal: 590 units."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Start with 500 units.\n\n1. Add 120:  \n   $ 500 + 120 = 620 $\n\n2. Remove 80:  \n   $ 620 - 80 = 540 $\n\n3. Add 50:  \n   $ 540 + 50 = 590 $\n\nFinal total: **590 units**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "500 + 120 = 620  \n620 - 80 = 540  \n540 + 50 = 590  \n\nTotal: 590 units"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The total after the operations is calculated as follows:\n1. Start with 500 units.\n2. Add 120: $ 500 + 120 = 620 $.\n3. Remove 80: $ 620 - 80 = 540 $.\n4. Add 50: $ 540 + 50 = 590 $.\n\n**Final Answer:** 590 units."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The total number of units after the operations is calculated as follows:\n\n1. Start with 500 units.\n2. Add 120: $ 500 + 120 = 620 $\n3. Remove 80: $ 620 - 80 = 540 $\n4. Add 50: $ 540 + 50 = 590 $\n\n**Final Answer:** 590 units."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let's calculate step by step:\n\n1. Start with 500 units.\n2. Add 120: $ 500 + 120 = 620 $\n3. Remove 80: $ 620 - 80 = 540 $\n4. Add 50: $ 540 + 50 = 590 $\n\nThe final total is **590 units**."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me calculate this step by step:\n\n1. Start with 500 units\n2. Add 120: 500 + 120 = 620\n3. Remove 80: 620 - 80 = 540\n4. Add 50: 540 + 50 = 590\n\n**Total: 590 units**"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation:\n\n- Start: 500 units\n- Add 120: 500 + 120 = 620\n- Remove 80: 620 - 80 = 540\n- Add 50: 540 + 50 = **590**\n\n**Total: 590 units**"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me calculate this step by step:\n\n- Start: 500 units\n- Add 120: 500 + 120 = 620\n- Remove 80: 620 - 80 = 540\n- Add 50: 540 + 50 = 590\n\n**Total: 590 units**"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me work through this step by step:\n\n1. **Start:** 500 units\n2. **Add 120:** 500 + 120 = 620\n3. **Remove 80:** 620 - 80 = 540\n4. **Add 50:** 540 + 50 = 590\n\n**Total: 590 units**"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the step-by-step calculation:\n\n1.  Start with **500**\n2.  Add 120: 500 + 120 = **620**\n3.  Remove 80: 620 - 80 = **540**\n4.  Add 50: 540 + 50 = **590**\n\nThe total is **590**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "590"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting with 500:\n\n- Add 120 → 620\n- Remove 80 → 540\n- Add 50 → **590**\n\nYou have **590** total."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Starting with 500:\n\n- +120 = 620\n- −80 = 540\n- +50 = **590**\n\nTotal: **590 units**."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the step-by-step calculation:\n\n| Step | Operation | Result |\n|------|-----------|--------|\n| Start | — | 500 |\n| Add | +120 | 620 |\n| Remove | −80 | 540 |\n| Add | +50 | **590** |\n\n**Final total: 590 units**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You start with 500 units.\n\n500 + 120 = 620\n620 − 80 = 540\n540 + 50 = **590 units** total."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "500 + 120 − 80 + 50 = **590 units**"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Let me calculate this step by step:\n\n1. Start with 500 units\n2. Add 120: 500 + 120 = 620\n3. Remove 80: 620 - 80 = 540\n4. Add 50: 540 + 50 = 590\n\n**Total: 590 units**"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**590 units**\n\nHere's the breakdown:\n- Start: 500\n- +120 → 620\n- −80 → 540\n- +50 → **590**"
+    }
+  ]
+}

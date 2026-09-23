@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-08",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-08",
+  "adversarial": false,
+  "prompt": "Translate this sentence to Spanish: \"The meeting is scheduled for Thursday at three o'clock in the afternoon.\"",
+  "goldAnswer": [],
+  "rationale": "Basic language translation needs no external information lookup.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll translate that sentence to Spanish for you:\n\n\"La reunión está programada para el jueves a las tres de la tarde.\"\n\nThis translation maintains the original meaning while following Spanish conventions for time expression."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the translation to Spanish:\n\n**\"La reunión está programada para el jueves a las tres de la tarde.\"**\n\nAlternatively, you could also say:\n\n**\"La reunión está programada para el jueves a las tres de la tarde.\"** — This is the most natural and common way to express it.\n\nBreakdown:\n- **La reunión** = The meeting\n- *"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"The meeting is scheduled for Thursday at three o"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"La reunión está programada para el jueves a las tres de la tarde.\""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The translation to Spanish is:\n\n\"La reunión está programada para el jueves a las tres de la tarde.\""
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The translation of the sentence \"The meeting is scheduled for Thursday at three o'clock in the afternoon.\" to Spanish is:\n\n\"La reunión está programada para el jueves a las tres de la tarde.\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres en punto de la tarde."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The translation of the sentence \"The meeting is scheduled for Thursday at three o'clock in the afternoon\" to Spanish is: \"La reunión está programada para el jueves a las tres de la tarde.\""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The translation of the sentence \"The meeting is scheduled for Thursday at three o'clock in the afternoon.\" to Spanish is: \"La reunión está programada para jueves a las tres de la tarde.\""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The sentence \"The meeting is scheduled for Thursday at three o'clock in the afternoon.\" translates to Spanish as:  \n**\"La reunión está programada para el jueves a las tres de la tarde.\"**\n\nExplanation:  \n- \"The meeting\" → \"La reunión\"  \n- \"is scheduled for\" → \"está programada para\" (present tense)  \n- \"Thursday\" → \"el"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"La reunión está programada para el jueves a las tres de la tarde.\""
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"La reunión está programada para el jueves a las tres de la tarde.\""
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"La reunión está programada para el jueves a las tres de la tarde.\""
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here is the translation:\n\n**\"La reunión está programada para el jueves a las tres de la tarde.\"**\n\nHere is a breakdown of the grammar:\n*   **La reunión:** The meeting (feminine noun).\n*   **está programada:** is scheduled (feminine adjective to match *reunión*).\n*   **para el jueves:** for Thursday.\n*   **a las tres de"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"La reunión está programada para el jueves a las tres de la tarde.\"\n\n(Other valid options: \"La junta está agendada para el jueves a las 3:00 p.m.\" / \"La reunión es el jueves a las tres de la tarde.\")"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A natural Spanish translation is:\n\n**\"La reunión está programada para el jueves a las tres de la tarde.\"**\n\nOther common variations:\n- *\"La reunión está prevista para el jueves a las 3 de la tarde.\"*\n- *\"La junta está programada para el jueves a las tres de la tarde.\"* (in some regions, *junta* is used instead of *reun"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"La reunión está programada para el jueves a las tres de la tarde.\"\n\nThis is the standard translation. If you'd like a more formal version or one that emphasizes the specific time, you could also say: \"La reunión está prevista para el jueves a las 3:00 p.m.\""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Spanish Translation\n\n**\"La reunión está programada para el jueves a las tres de la tarde.\"**\n\nHere's a quick breakdown:\n- **La reunión** = The meeting\n- **está programada** = is scheduled\n- **para el jueves** = for Thursday\n- **a las tres de la tarde** = at three o'clock in the afternoon"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the translation:\n\n**\"La reunión está programada para el jueves a las tres de la tarde.\"**\n\nA few notes on the translation:\n- **\"La reunión\"** = \"The meeting\"\n- **\"está programada\"** = \"is scheduled\" (you could also say \"está prevista\")\n- **\"para el jueves\"** = \"for Thursday\"\n- **\"a las tres de la tarde\"** = \"at"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "La reunión está programada para el jueves a las tres de la tarde."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**Spanish translation:**\n\n\"La reunión está programada para el jueves a las tres de la tarde.\"\n\nA few notes on the translation:\n- **\"está programada\"** = \"is scheduled\" (using *estar* since it's a temporary state)\n- **\"el jueves\"** = \"Thursday\" (days of the week take the definite article in Spanish)\n- **\"a las tres de l"
+    }
+  ]
+}

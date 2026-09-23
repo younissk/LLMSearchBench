@@ -1,0 +1,377 @@
+{
+  "id": "tuc-mem-triviaqa_tb_2018",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_tb_2018",
+  "adversarial": false,
+  "prompt": "What is the more common name for the order Coleoptera which contains more species than any other order in the animal kingdom?",
+  "goldAnswer": [
+    "coleopterist",
+    "beetel",
+    "palm beetle",
+    "Coleopterists",
+    "Black-Beetle",
+    "Choleoptera",
+    "coleoptera",
+    "black beetle",
+    "Beetel",
+    "coleopterists",
+    "chafer",
+    "Beetle",
+    "Beetles",
+    "choleoptera",
+    "beetle",
+    "coleopteran",
+    "beetles",
+    "Coleopterist",
+    "Coleopteran",
+    "Coleoptera",
+    "Chafer",
+    "Palm beetle"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "order Coleoptera common name species animal kingdom",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**. \n\nColeoptera is indeed the largest order in the animal kingdom, containing over 400,000 described species (about 40% of all described insect species and roughly 25% of all known animal species)."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "most common name for order Coleoptera",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is beetles."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order Coleoptera is commonly known as **beetles**."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order **Coleoptera** is **beetles**.\n\nBeetles are the largest order in the animal kingdom, comprising approximately 400,000 described species — about 25% of all known animal life forms. They are characterized by their hardened forewings called **elytra**, which protect the membranous hindwi"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is beetles."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order Coleoptera is more commonly known as beetles. This group indeed contains more species than any other order in the animal kingdom."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order **Coleoptera** is most commonly known as **beetles**. It is the largest order of animals in terms of described species, containing more species than any other order."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Coleoptera common name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order **Coleoptera** is more commonly known as **beetles**. They are the most species‑rich group in the animal kingdom, with over 350,000 described species."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is \"beetles.\" This group of insects indeed contains more species than any other order in the animal kingdom."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for the order Coleoptera",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is beetles."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**. This order contains over 400,000 described species, making it the largest order in the animal kingdom by species count."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**. This order is indeed the most species-rich in the animal kingdom, with over 350,000 described species. No tool call is needed as this is a well-established biological fact."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**. This order contains the largest number of described species in the animal kingdom, with over 400,000 known species."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is \"beetles.\" This order contains the largest number of species among all animal orders, with over 400,000 described species."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order Coleoptera is commonly known as **beetles**. This order is the largest in the animal kingdom, containing more species than any other order. Beetles are characterized by their hard front wings (elytra) and varied forms, habitats, and behaviors.\n\nNo tool is needed for this question since it's based on general b"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**. \n\nBeetles are indeed the most diverse order in the animal kingdom, with over 400,000 described species—representing about 25% of all known animal life forms. They belong to the class Insecta and are found in nearly every habitat on Earth, from deserts to rai"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**.\n\nBeetles are indeed the most diverse order in the animal kingdom, with over 400,000 described species (and estimates suggesting there could be up to 1 million species total). They make up about 25% of all known animal species on Earth."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**.\n\nColeoptera is indeed the largest order in the animal kingdom, containing over 400,000 described species (with many more likely undiscovered). This makes beetles the most diverse group of organisms on Earth, representing about 25% of all known animal species"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The more common name for the order Coleoptera is **beetles**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Beetles"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order **Coleoptera** is more commonly known as **beetles**.\n\nThey are indeed the most diverse order of animals, with over 400,000 described species—making up about 40% of all known insects and roughly 25% of all known animal life forms."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "order Coleoptera common name most species",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "common name for order Coleoptera",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order **Coleoptera** is more commonly known as **beetles**. \n\nBeetles make up the largest order in the animal kingdom, with over 400,000 described species — accounting for roughly **25% of all known animal species** on Earth. The famous biologist J.B.S. Haldane is often quoted as saying that God has \"an inordinate"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order Coleoptera is commonly called **beetles**. It is the most species‑rich order in the animal kingdom, with over 400,000 described species."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The order Coleoptera is commonly known as **beetles**.\n\nColeoptera is indeed the largest order in the animal kingdom, with over 400,000 described species—roughly 25% of all known animal species. The name \"Coleoptera\" comes from the Greek words \"koleos\" (sheath) and \"pteron\" (wing), referring to their distinctive harden"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Beetles. The order **Coleoptera** is commonly known as the **beetles**, and it is the largest order in the animal kingdom — with roughly 350,000–400,000 described species, it contains more species than any other order (in fact, about 25% of all known animal species are beetles)."
+    }
+  ]
+}

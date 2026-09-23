@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-code-18",
+  "bucket": "no_tool",
+  "subcategory": "code",
+  "source": "generated",
+  "sourceId": "nt-code-18",
+  "adversarial": false,
+  "prompt": "Write Python code that exchanges the values of variables `a` and `b` without a temporary variable or extra function calls.",
+  "goldAnswer": [],
+  "rationale": "Tuple unpacking for swapping is standard Python syntax since the language began.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can help you with that! There are several ways to swap variable values in Python without using a temporary variable or extra function calls. Here are the most common approaches:\n\n## Method 1: Using Tuple Packing/Unpacking (Most Pythonic)\n```python\na = 5\nb = 10\n\n# Swap values\na, b = b, a\n\nprint(f\"a = {a}\")  # Output:"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You can swap two variables in Python without a temporary variable using tuple unpacking:\n\n```python\na, b = b, a\n```\n\nThis is the most Pythonic way. It works because Python evaluates the right-hand side first (creating a tuple `(b, a)`), then unpacks it into `a` and `b`.\n\n### Example:\n\n```python\na = 5\nb = 10\n\na, b = b,"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\na, b = b, a\n```"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"Python code to exchange values of two variables without a temporary variable or extra function calls"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\n# Given variables\na = 5\nb = 10\n\n# Exchange values without temporary variable\na, b = b, a\n\n# Print exchanged values\nprint(\"a =\", a)\nprint(\"b =\", b)\n```"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Swapping Variables in Python Without Temporary Variable\n\nHere are a few approaches to swap variables without using an explicit temporary variable:\n\n## Method 1: Tuple Unpacking (Pythonic Way) ✅\n\n```python\na = 5\nb = 10\n\n# Swap using tuple unpacking\na, b = b, a\n\nprint(f\"a = {a}, b = {b}\")  # Output: a = 10, b = 5\n```"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Exchanging Variable Values in Python\n\nHere are several idiomatic ways to swap two variables in Python **without a temporary variable** or extra function calls.\n\n## 1. Tuple Unpacking (Pythonic & Recommended) ✅\n\n```python\na, b = b, a\n```\n\nThis is the most idiomatic Python way. The right-hand side `(b, a)` is evaluated"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\na = 5\nb = 10\n\na, b = b, a\n\na, b\n```"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You can exchange the values of variables `a` and `b` without using a temporary variable or extra function calls by using tuple unpacking in Python. Here's how you can do it:\n\n```python\na = 5\nb = 10\n\n# Before swapping\nprint(\"Before swapping: a =\", a, \"b =\", b)\n\n# Swapping using tuple unpacking\na, b = b, a\n\n# After swapp"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here’s a concise way to swap the values of `a` and `b` in a single line, using Python’s tuple‑unpacking feature (no temporary variable and no extra function calls):\n\n```python\n# Example values\na = 7\nb = 13\n\n# Swap the values\na, b = b, a\n\n# Verify the swap\nprint(\"a =\", a)   # prints 13\nprint(\"b =\", b)   # prints 7\n```"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a concise way to swap the values of two variables in Python without using a temporary variable or any extra function calls:\n\n```python\na, b = b, a\n```\n\nThis single line uses tuple unpacking to exchange the values. The right-hand side `(b, a)` creates a tuple with the current values of `b` and `a`, and the left-h"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here’s the most idiomatic, “no‑temp‑variable” way to swap two values in Python:\n\n```python\n# Swap a and b\na, b = b, a\n```\n\n### Why this works\nPython’s tuple packing/unpacking creates a temporary tuple *under the hood*, but you don’t have to write or name that temporary. The assignment is atomic and works for any object"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "You can swap the values of two variables in Python without using a temporary variable by using tuple unpacking. Here is how you can do it:\n\n```python\na, b = b, a\n```\n\nThis single line of code will exchange the values of `a` and `b`."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To exchange the values of variables `a` and `b` without using a temporary variable or extra function calls, you can use Python's tuple unpacking feature. Here is how you can do it:\n\n```python\na = 5\nb = 10\n\n# Exchange values using tuple unpacking\na, b = b, a\n\nprint(f'a: {a}, b: {b}')\n```\n\nThis code snippet will swap the"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\n# Example values for a and b\na = 5\nb = 10\n\nprint(f\"Before swap: a = {a}, b = {b}\")\n\n# Swap values without a temporary variable using arithmetic operations\na = a + b\nb = a - b\na = a - b\n\nprint(f\"After swap: a = {a}, b = {b}\")\n```\n\nAlternatively, you can use tuple unpacking (a Pythonic way):\n\n```python\n# Exampl"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\na, b = b, a\n```"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\na = 5\nb = 10\n\n# Swapping without a temporary variable using tuple unpacking\na, b = b, a\n\nprint(f\"a = {a}, b = {b}\")\n```"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "a, b = b, a"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's Python code to swap variables `a` and `b` without a temporary variable or extra function calls:\n\n```python\na, b = b, a\n```\n\nThis leverages Python's tuple unpacking assignment. The right-hand side creates a tuple `(b, a)`, which is then unpacked into the variables on the left-hand side, effectively swapping their"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The most Pythonic and efficient way to swap variables without a temporary variable or extra function calls is using tuple unpacking:\n\n```python\na, b = b, a\n```\n\n**Example:**\n```python\na = 5\nb = 10\na, b = b, a\nprint(f\"a = {a}, b = {b}\")  # Output: a = 10, b = 5\n```\n\nThis method works for all data types (integers, floats"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's the Python code to exchange the values of variables `a` and `b` without using a temporary variable or extra function calls:\n\n```python\na, b = b, a\n```\n\nThis uses Python's tuple unpacking feature, which is the most Pythonic and readable way to swap variables.\n\n### Example:\n```python\na = 5\nb = 10\na, b = b, a\nprint"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Swapping Variables in Python Without a Temporary Variable\n\nIn Python, you can swap the values of two variables without using a temporary variable or extra function calls by using **tuple unpacking** (also known as multiple assignment):\n\n```python\n# Example values\na = 5\nb = 10\n\n# Swap without temporary variable\na, b ="
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Swapping Variables in Python Without a Temporary Variable\n\nThe most Pythonic way to swap two variables is using **tuple unpacking**:\n\n```python\n# Initial values\na = 5\nb = 10\n\nprint(f\"Before: a = {a}, b = {b}\")\n\n# Swap without temporary variable\na, b = b, a\n\nprint(f\"After: a = {a}, b = {b}\")\n```\n\n**Output:**\n```\nBefor"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's Python code that exchanges the values of variables `a` and `b` without using a temporary variable or extra function calls:\n\n```python\n# Method 1: Using tuple unpacking (Pythonic and recommended)\na = 5\nb = 10\na, b = b, a\nprint(f\"a = {a}, b = {b}\")  # Output: a = 10, b = 5\n```\n\n### Alternative Methods\n\n**Method 2:"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are the three most common ways to achieve this in Python.\n\n### 1. The Pythonic Way (Tuple Unpacking)\nThis is the standard, most readable way to swap variables in Python. While it technically creates a temporary tuple object in memory, it does not require a named temporary variable.\n\n```python\na = 5\nb = 10\n\n# Swap"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\na, b = b, a\n```\n\nThis swaps the values of `a` and `b` in Python without using a temporary variable or calling an extra function."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "In Python the idiomatic way is tuple unpacking—no explicit temp variable and no function calls:\n\n```python\na, b = b, a\n```\n\nIf you want a purely arithmetic version (works for numbers):\n\n```python\na = a + b\nb = a - b\na = a - b\n```\n\nOr using XOR (for integers):\n\n```python\na ^= b\nb ^= a\na ^= b\n```\n\nThe one-liner `a, b = b"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The idiomatic Python way uses **tuple unpacking**—no explicit temporary variable and no function calls:\n\n```python\na, b = b, a\n```\n\nHow it works: the right-hand side `b, a` is evaluated as a tuple first, then unpacked back into `a` and `b`.\n\nIf you specifically want to avoid even the implicit tuple (e.g., for integer-o"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Swapping Variables in Python\n\nPython makes this beautifully simple with **tuple unpacking**:\n\n```python\na = 5\nb = 10\n\n# Swap values\na, b = b, a\n\nprint(a)  # 10\nprint(b)  # 5\n```\n\n## How It Works\n\nHere's what Python is doing under the hood:\n\n1. **Right side first:** Python evaluates `b, a` and creates a temporary tupl"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Swapping Variables in Python Without a Temp Variable\n\n## The Pythonic Way (Tuple Unpacking)\n\n```python\na = 5\nb = 10\n\n# Swapping in one line\na, b = b, a\n\nprint(f\"a = {a}\")  # a = 10\nprint(f\"b = {b}\")  # b = 5\n```\n\n\n\n## How It Works\n\nThe right-hand side `b, a` creates a **tuple** `(10, 5)` **first**, using the original"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here’s the most Pythonic way to swap two variables without a temporary variable or any extra function calls:\n\n```python\n# Example usage\na = 5\nb = 10\n\n# Swap a and b\na, b = b, a\n\nprint(a)  # 10\nprint(b)  # 5\n```\n\nThe line `a, b = b, a` uses Python’s tuple‑unpacking to exchange the values in a single, readable statement."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Swapping Variables in Python Without a Temporary Variable\n\nThe most Pythonic way to swap two variables is using **tuple unpacking**:\n\n```python\na = 5\nb = 10\n\n# Swap values\na, b = b, a\n\nprint(f\"a = {a}\")  # Output: a = 10\nprint(f\"b = {b}\")  # Output: b = 5\n```\n\n---\n\n## Alternative Methods (for educational purposes)\n\n#"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "```python\na, b = b, a\n```\n\nThat's it — Python's tuple packing/unpacking handles the swap in a single statement. Here it is in context:\n\n```python\na = 10\nb = 20\n\na, b = b, a\n\nprint(a)  # 20\nprint(b)  # 10\n```\n\n**How it works:** The right-hand side `b, a` is evaluated *first*, creating a tuple `(20, 10)`. That tuple is t"
+    }
+  ]
+}

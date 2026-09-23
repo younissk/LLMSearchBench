@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-transform-17",
+  "bucket": "no_tool",
+  "subcategory": "transform",
+  "source": "generated",
+  "sourceId": "nt-transform-17",
+  "adversarial": false,
+  "prompt": "Rewrite more casually: 'Management regrets to inform personnel that the annual celebration has been rescheduled due to unforeseen circumstances.'",
+  "goldAnswer": [],
+  "rationale": "Changing formality level of supplied text needs no fact verification.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can help you rewrite that message more casually! However, I don't have a specific text rewriting tool available. \n\nHere are a few casual alternatives you could use:\n\n**Option 1 (Friendly):**\n\"Hey everyone, just wanted to let you know we need to move the annual party to a different date. Something unexpected came up,"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more casual version:\n\n\"Hey everyone, sorry to let you know, but the annual celebration has been moved to a later date because of some unexpected stuff that came up.\""
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey everyone, we’re bummed to let you know that the annual celebration has been pushed back because of some unexpected stuff."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hey team, just a heads up that the annual celebration has been pushed back - something unexpected came up, so we'll have to reschedule for another time.\""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hey team, unfortunately we've had to change the date of our annual party due to some unexpected stuff that came up.\""
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey everyone, just a heads up — the annual celebration got moved to a different date because of some unexpected stuff that came up. Sorry for any inconvenience! We'll let you know the new date soon."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hey team, heads up — the annual party got bumped due to some stuff that came up. We'll let you know the new date soon!\""
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hey there, just a heads up that the big annual bash has been moved. Sorry for any inconvenience, but you know how it is, things happen! 📅\""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hey team, unfortunately, we have to push back the annual party because of some unexpected stuff that came up. Sorry about that!\""
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sorry everyone, the annual celebration got moved because something unexpected came up."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey team, just a heads-up: the annual celebration got moved because of some unexpected stuff. Sorry for the inconvenience!"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey team—just a quick heads‑up: the annual celebration’s been moved to a new date because of some unexpected stuff."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey team, just a heads up: we had to move the date of our annual party due to some unexpected issues. Apologies for any inconvenience!"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Management's sorry to let everyone know that the annual celebration has been moved around because of some unexpected stuff happening."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey everyone, sorry for the heads-up, but the annual party’s been moved to a later date because of some unexpected stuff. Thanks for understanding!"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey team, the annual party's been rescheduled because something came up—we'll share the new date soon!"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure! Here's a more casual version:\n\n\"Hey team, just a heads-up — the annual celebration’s been moved to a new date because of some unexpected stuff. We’ll share the new details soon!\""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey team, just a quick heads-up—our annual celebration's been moved to a new date because of some unexpected changes. We’ll share the details soon! 😊"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"Hey everyone, we’re sorry to say the annual celebration won’t be happening as planned. We’ve had to move the date because of some unexpected issues. More details will follow soon!\""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "\"We're sorry to let you know the annual event has been moved to a new date because of some unexpected issues.\""
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few more casual versions:\n\n**Option 1:**\n\"Hey everyone, we had to reschedule the annual celebration due to some unexpected changes. Sorry for the inconvenience!\"\n\n**Option 2:**\n\"Quick update: The annual celebration is getting moved to a new date because of some last-minute stuff. We'll share more details soo"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few casual versions:\n\n**Option 1 (Friendly):**\n\"Hey team, just wanted to let you know we're moving the annual party to a new date due to some unexpected changes.\"\n\n**Option 2 (More relaxed):**\n\"Hi everyone! The yearly celebration has been rescheduled because of some last-minute stuff coming up. We'll share t"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey everyone,\n\nUnfortunately, we need to move the annual party to a different date due to some unexpected issues. We'll share the new details soon!\n\nSorry for the inconvenience!"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more casual version:\n\n\"Hey team, we're sorry to say the annual celebration's been moved to a different date. Something unexpected came up, so we'll let you know when we have the new details.\"\n\nOr even more relaxed:\n\n\"Hi everyone, just wanted to let you know the annual celebration's been rescheduled. We've got"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few ways to rewrite that sentence, depending on how casual you want to be:\n\n**Friendly and Direct (Good for email)**\n> \"We’re sorry to say, but we have to reschedule the annual party.\"\n\n**Short and Sweet (Good for Slack/Teams)**\n> \"Hey team, just a heads-up that we’re moving the annual celebration to a new d"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey everyone, just a heads-up that the annual celebration has been rescheduled due to some unexpected changes."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few casual ways to say it:\n\n- \"Sorry folks, but the annual party's been pushed back because something unexpected came up.\"\n- \"Heads up — the yearly celebration got rescheduled due to some unforeseen stuff.\"\n- \"Bad news, guys: management had to move the annual event 'cause something came up out of nowhere.\"\n-"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few casual versions:\n\n- **\"Hey team—bad news: the annual party's been pushed back because some unexpected stuff came up. Sorry!\"**\n\n- **\"Just a heads up: we have to reschedule the yearly celebration. Some unforeseen stuff happened, so we'll let you know the new date soon.\"**\n\n- **\"So, the big annual shindig'"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Sure! Here's a more casual version:\n\n**\"Hey everyone, heads up — the yearly party got pushed back because something came up. Sorry about that!\"**\n\nWant me to tweak the tone even more? I can make it super chill or just a bit less formal — just let me know! 😊"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more casual version:\n\n**\"Hey everyone, quick heads-up — the annual party's been pushed back due to some unexpected stuff. We know it's a bummer, but don't worry, it's still happening!\"**\n\nThis version sounds more like a real person talking to colleagues rather than a formal corporate memo. Want me to adjust th"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here are a few more casual options:\n\n- \"Hey team, we've had to reschedule the annual celebration due to some unexpected stuff\"\n- \"Just wanted to let you know the annual celebration is being moved to a new date because of some unexpected things\"\n- \"The annual celebration has been rescheduled due to some unforeseen circu"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hey everyone, sorry to say we've had to push back the annual party due to something unexpected coming up. We'll let you know the new date soon!"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Here's a more casual version:\n\n> \"Hey everyone — heads up, we've had to push the annual party to a new date because of some stuff that came up. Sorry about that!\"\n\nA couple of other options depending on the vibe you want:\n\n- **Slightly more upbeat:** \"Quick update: the annual party is getting rescheduled — some unexpec"
+    }
+  ]
+}

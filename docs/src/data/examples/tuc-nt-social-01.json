@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-social-01",
+  "bucket": "no_tool",
+  "subcategory": "social",
+  "source": "generated",
+  "sourceId": "nt-social-01",
+  "adversarial": false,
+  "prompt": "Hello! How can you help me today?",
+  "goldAnswer": [],
+  "rationale": "Standard greeting requiring no external information.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm an AI assistant with the ability to search the web for current information. I can help you with a wide variety of tasks including:\n\n- Answering questions about current events, news, or recent developments\n- Looking up specific information, facts, or data\n- Researching topics you're curious about\n- Finding pr"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hi there! I'm here to help you with a wide range of tasks. Here are some things I can do:\n\n1. **Answer questions** on various topics\n2. **Search the web** for current information\n3. **Help with writing** - essays, emails, creative writing, etc.\n4. **Explain concepts** - from science to history to technology\n5. **Solve"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I’m here to help with just about anything you need. I can:\n\n- Answer questions on a wide range of topics (science, history, tech, etc.)\n- Help with writing, editing, or brainstorming\n- Assist with coding, debugging, or explaining technical concepts\n- Analyze data, summarize documents, or translate languages\n- Pr"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can provide information and entertainment, but I can't currently take actions on your behalf. For example, I can plan a custom travel itinerary, but I can't buy tickets or book hotels. I can write you an email, but I can't send it. However, I'm here to help with any questions you may have, and I will do my best to pr"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can help you with a wide range of topics, from answering questions and providing information to assisting with tasks and projects. If you have a specific question or topic in mind, feel free to ask and I'll do my best to help. I can also help with generating ideas, proofreading text, and more. What's on your mind tod"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'd be happy to help you today. Here's what I can assist with:\n\n- **Answering questions** - I can explain concepts, answer general knowledge questions, or dive deep into specific topics\n- **Research & information** - I can search the web for current information, facts, or details on a wide range of subjects\n- **"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help with a wide range of tasks. Here's what I can do for you:\n\n**Information & Research**\n- Answer general knowledge questions\n- Search the web for current information\n- Explain complex topics in simple terms\n\n**Writing & Communication**\n- Help draft emails, essays, or messages\n- Proofread and edit"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can answer questions, provide explanations, or just have a conversation. What's on your mind?"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to assist you with a variety of tasks. Here are some ways I can help:\n\n1. **Answer Questions**: I can provide information on a wide range of topics.\n2. **Web Searches**: If I don't have the information, I can search the web for you.\n3. **Set Reminders and Alarms**: I can help you set reminders and alarm"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help with any questions or tasks you have. Whether you need information, assistance with writing, problem‑solving, or just a chat, feel free to let me know what you need!"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help you with any questions or tasks you might have. I can search the web for current information, provide explanations, assist with research, or help with various topics. \n\nWhat would you like to work on today? Whether you need information on a specific subject, help with a problem, or just want to"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! 👋 I’m here to help with anything you need—whether it’s answering questions, brainstorming ideas, troubleshooting a problem, or just chatting. What’s on your mind today?"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I can assist you with a variety of tasks. Whether you need information, help with a specific question, or any other support, just let me know what you need, and I'll do my best to help! How can I assist you today?"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help. How can I assist you today? Do you have any specific questions or topics you'd like to know more about?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to assist you with any questions or tasks you might have. Whether you need information, advice, or help with problem-solving, feel free to ask! How can I help you today?"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to assist with any questions or tasks you have. Whether you need information, help solving a problem, or just want to explore a topic, feel free to ask! 😊 How can I support you today?"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help you with any questions or tasks you might have. Whether it's finding information, solving a problem, or just chatting, feel free to let me know what you need! 😊"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'm here to help with any questions or tasks you have! Whether you need information, assistance with a problem, or just want to chat, feel free to let me know how I can assist you today. 😊"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help with any questions you might have, provide information on a wide range of topics, assist with tasks like writing or problem-solving, and more. Just let me know what you need, and I'll do my best to support you! 😊"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help with any questions, problems, or tasks you might have. Whether it's explaining concepts, solving problems, or just chatting, feel free to ask! 😊 What can I assist you with today?"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I can assist you with a wide range of topics and questions. Whether you need help with:\n\n- Answering questions on various subjects (science, history, technology, etc.)\n- Explaining concepts or processes\n- Writing or editing text\n- Solving problems\n- Providing recommendations\n- Learning new things\n\nJust let me kn"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help you with a variety of tasks. Here are some ways I can assist you:\n\n- **Answer questions** - I can help with general knowledge, facts, explanations, and more\n- **Research** - I can search the web for current information, news, or specific topics you're interested in\n- **Problem-solving** - Whethe"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm happy to help you today! Here are some ways I can assist:\n\n1. **Answer questions** - I can provide information on a wide range of topics, from general knowledge to specific facts\n2. **Search for current information** - If you need up-to-date news, recent developments, or obscure details, I can search the web"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help you with a wide variety of tasks. Here are some things I can assist you with:\n\n- **Answering questions** - Whether it's general knowledge, current events, or specific topics you're curious about\n- **Research** - I can search the web for current or obscure information when needed\n- **Problem solv"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help you with a wide variety of tasks. Here are some ways I can assist you:\n\n- **Answer questions** on topics like science, history, technology, culture, and more\n- **Help with writing** - emails, essays, stories, reports, or creative content\n- **Solve problems** - math, logic puzzles, or coding chal"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I can help you with a wide variety of tasks. Here are a few examples of what I can do:\n\n*   **Answer Questions:** I can provide information on history, science, geography, and more.\n*   **Writing & Editing:** I can draft emails, essays, stories, or help you polish and proofread your own writing.\n*   **Coding:**"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I can help with a wide range of tasks, such as:\n\n- Answering questions\n- Writing and editing text\n- Brainstorming ideas\n- Explaining concepts\n- Summarizing information\n- Helping with coding or technical problems\n- Translating languages\n- Planning projects or organizing thoughts\n\nWhat would you like help with tod"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm Inkling, an AI assistant created by Thinking Machines Lab. I can help you with a wide variety of tasks, including:\n\n- **Answering questions** and explaining concepts (science, history, tech, etc.)\n- **Writing and editing** (emails, essays, stories, code, resumes)\n- **Analysis and reasoning** (breaking down c"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm Inkling, an AI assistant made by Thinking Machines Lab. I can help you with a wide range of things, such as:\n\n- Answering questions and explaining concepts\n- Writing, editing, and summarizing text\n- Coding, debugging, and analyzing data\n- Brainstorming ideas and solving problems\n- Translating languages and l"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! 👋\n\nWelcome! I'm **MiMo**, an AI assistant created by the **Xiaomi LLM Core Team**. I'm here to help with a wide variety of tasks. Here are some things I can assist you with:\n\n- 💡 **Answering questions** — from science and history to everyday life\n- ✍️ **Writing & editing** — essays, emails, creative writing, and"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm happy to help you with a wide variety of tasks today! Here's an overview of what I can assist with:\n\n### 💡 **Information & Knowledge**\n- Answering questions on science, history, technology, culture, and more\n- Explaining complex concepts in simple terms\n- Fact-checking and research assistance\n\n### ✍️ **Writi"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help you with a wide variety of tasks. Here are some ways I can assist you:\n\n**Writing & Content:**\n- Draft emails, letters, or other written communications\n- Help with essays, reports, or creative writing\n- Edit and improve existing text\n- Generate ideas for stories, articles, or projects\n\n**Researc"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm here to help you with a wide variety of tasks. Here are some ways I can assist you:\n\n**Information & Research**\n- Answer questions on topics ranging from science and history to current events\n- Help you research and understand complex topics\n- Explain concepts in simple terms\n\n**Writing & Communication**\n- H"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Hello! I'm happy to help you with a wide range of things. Here's a quick overview:\n\n**What I can do:**\n- 💬 **Answer questions** — explain concepts, brainstorm ideas, or discuss topics you're curious about\n- ✍️ **Writing & editing** — emails, essays, reports, creative writing, summaries, proofreading\n- 💻 **Coding & tech"
+    }
+  ]
+}

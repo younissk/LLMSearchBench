@@ -1,0 +1,357 @@
+{
+  "id": "tuc-sea-triviaqa_qf_2575",
+  "bucket": "search",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_qf_2575",
+  "adversarial": false,
+  "prompt": "What is the correct term for a 'shooting star'?",
+  "goldAnswer": [
+    "meteoroid",
+    "A meteoroid"
+  ],
+  "rationale": "RetrievalQA marks this as beyond parametric memory",
+  "expectsSearch": true,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct astronomical term for shooting star",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for the correct astronomical term for a \"shooting star.\""
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"shooting star\" is actually not a star at all! The correct scientific term is a **meteor**.\n\nHere's a quick breakdown of the terminology:\n\n- **Meteoroid** – A small rock or particle in space (before it enters Earth's atmosphere).\n- **Meteor** – The streak of light we see when a meteoroid burns up as it enters Earth's"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**.\n\nHere's the breakdown of the terminology:\n- **Meteoroid:** The small particle from space (usually a fragment of an asteroid or comet) traveling through space.\n- **Meteor:** The streak of light you see when a meteoroid burns up in Earth's atmosphere. This is the \"s"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a 'shooting star' is a meteor."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star meteor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct scientific term for a \"shooting star\" is a **meteor**.\n\nHere's a quick breakdown of related terms, since they can be confusing:\n\n- **Meteoroid**: A small rocky or metallic body traveling through space, before it enters Earth's atmosphere.\n- **Meteor**: The bright streak of light you see in the sky when a me"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "What is the correct term for a 'shooting star'?",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a \"meteor.\" When a meteoroid (a small rocky or metallic body traveling through space) enters the Earth's atmosphere, it heats up and glows, creating a streak of light in the sky that we commonly refer to as a \"shooting star\" or a \"meteor.\" If the meteoroid survives its passage"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a 'shooting star' is a **meteor**. This occurs when a meteoroid (a small rocky or metallic body in space) enters Earth's atmosphere at high speed, causing it to heat up and glow due to friction, creating a visible streak of light. \n\nIf the object survives the journey and lands on Earth's surface, i"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A “shooting star” is scientifically called a **meteor**.  \n- **Meteor**: the bright streak of light produced when a meteoroid (a small fragment of a comet or asteroid) enters Earth’s atmosphere and vaporizes.  \n- If the meteoroid survives the atmospheric passage and lands on Earth, it’s then called a **meteorite**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**. \n\nA meteor is the visible streak of light that occurs when a meteoroid (a small piece of an asteroid or comet) enters the Earth's atmosphere and burns up due to friction with the air. If any part of the meteoroid survives and reaches the Earth's surface, it is the"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**. This phenomenon occurs when a meteoroid (a small particle from a comet or asteroid) enters Earth's atmosphere at high speed, causing it to heat up and produce a streak of light due to atmospheric friction. \n\n- **Meteoroid**: The solid object in space before entry."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for a shooting star",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**. It refers to the visible streak of light produced when a meteoroid (a small particle from space) enters Earth's atmosphere and burns up due to friction. Note that \"shooting star\" is a colloquial term, not an astronomical one. If the object survives the atmosphere"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct scientific term for a \"shooting star\" is a **meteor**. This refers to the bright streak of light produced when a meteoroid (a small rocky or metallic body from space) enters Earth's atmosphere and burns up due to friction. The term \"shooting star\" is a common colloquial name for this phenomenon."
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**.\n\nDespite the name, shooting stars are not actually stars at all. They are small pieces of space debris (called meteoroids) that enter Earth's atmosphere at high speed. As they travel through the atmosphere, friction causes them to heat up and glow, creating the br"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**.\n\nA meteor is not actually a star at all. It's a small piece of space debris (such as a rock or dust particle) that burns up as it enters Earth's atmosphere, creating a bright streak of light in the sky.\n\nHere are some related terms:\n- **Meteoroid**: The small part"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct scientific term for a \"shooting star\" is a **meteor**.\n\nDespite the name, shooting stars are not actually stars at all. They are small pieces of space debris (called meteoroids) that enter Earth's atmosphere at high speed. As they travel through the atmosphere, friction causes them to heat up and glow, crea"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**.\n\nHere's the breakdown of the terminology:\n\n- **Meteoroid**: A small rocky or metallic body in outer space (before it enters Earth's atmosphere)\n- **Meteor**: The streak of light we see when a meteoroid enters Earth's atmosphere and burns up (this is what people co"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**.\n\nHere is the breakdown of the terminology used by astronomers:\n\n*   **Meteoroid:** The small piece of rock or debris while it is still floating in space.\n*   **Meteor:** The streak of light you see when that object enters Earth's atmosphere and burns up (the \"shoo"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**.\n\nHere's how the related terms break down:\n\n- **Meteoroid** – A small piece of rock or debris traveling through space.\n- **Meteor** – The streak of light you see when a meteoroid burns up in Earth's atmosphere (this is the \"shooting star\").\n- **Meteorite** – A frag"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor** (specifically, the streak of light produced when a meteoroid enters Earth's atmosphere and burns up).\n\nTo clarify the related terms:\n- **Meteoroid**: The small rock or particle in space before it enters the atmosphere.\n- **Meteor**: The bright streak of light (the"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star meteor meteoroid",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct scientific term for a \"shooting star\" is a **meteor**.\n\nHere's a quick breakdown of the related terms:\n\n- **Meteoroid** — A small rock or particle traveling through space (before it hits the atmosphere).\n- **Meteor** — The bright streak of light we see when a meteoroid burns up upon entering Earth's atmosph"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": true,
+      "query": "correct term for shooting star meteor",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The correct term for a \"shooting star\" is a **meteor**.\n\nHere's the distinction between related terms:\n\n- **Meteoroid**: A small piece of debris (usually from a comet or asteroid) while it's still in space\n- **Meteor**: The streak of light we see when a meteoroid enters Earth's atmosphere and burns up due to friction\n-"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": false,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "A \"shooting star\" is commonly called a **meteor** — the streak of light we see when a small piece of space debris (called a **meteoroid**) enters Earth's atmosphere and burns up due to friction and compression of the air.\n\nIf any part of that object survives the trip and lands on the ground, it's then called a **meteor"
+    }
+  ]
+}

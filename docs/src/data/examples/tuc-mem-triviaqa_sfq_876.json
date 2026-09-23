@@ -1,0 +1,379 @@
+{
+  "id": "tuc-mem-triviaqa_sfq_876",
+  "bucket": "memory",
+  "subcategory": "triviaqa",
+  "source": "retrievalqa",
+  "sourceId": "triviaqa_sfq_876",
+  "adversarial": false,
+  "prompt": "The axilla is the anatomical name for which part of the body?",
+  "goldAnswer": [
+    "axillae",
+    "Axillae",
+    "Hairy Armpits",
+    "posterior axillary fold",
+    "anterior axillary fold",
+    "oxter",
+    "armpits",
+    "Arm pit",
+    "Oxter",
+    "Axilla",
+    "axilla",
+    "Underarm",
+    "axillary region",
+    "underarm",
+    "hairy armpits",
+    "Axillary region",
+    "Armpits",
+    "armpit",
+    "underarms",
+    "Underarms",
+    "Posterior axillary fold",
+    "arm pit",
+    "Armpit",
+    "Anterior axillary fold"
+  ],
+  "rationale": "RetrievalQA marks this answerable from parametric memory",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the **armpit** region of the body.\n\nThe axilla refers to the area under the shoulder joint where the arm connects to the torso. It's a pyramid-shaped space that contains important structures like blood vessels (axillary artery and vein), nerves (brachial plexus), lymph nodes, and o"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the **armpit**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the **armpit**. \n\nIt is the hollow area on the underside of the shoulder, where the arm connects to the torso."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "anatomical name for axilla",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the armpit."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "axilla anatomical name",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the **armpit**."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Axilla anatomy",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the armpit."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical term for the **armpit**, which is the area on the underside of the arm near the shoulder. \n\n<final_answer>\nThe axilla is the anatomical name for the armpit.\n</final_answer>"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "axilla anatomical name for which part of the body",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical term for the **armpit**—the hollow area beneath the shoulder where the arm joins the torso."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical term for the armpit, which is the area on the human body under the shoulder joint and beneath the shoulder blade. It is a triangular region that contains important structures such as blood vessels, nerves, and lymph nodes."
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical term for the armpit or underarm region of the body. It is located where the arm meets the shoulder. \n\nNo need to search, as this is a known anatomical term."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the armpit."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical term for the **armpit** (the region under the shoulder joint where the arm connects to the torso). This area includes structures such as lymph nodes, blood vessels, and nerves. No tool call was needed, as this is standard anatomical knowledge."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the armpit."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical term for the armpit. It refers to the hollow area under the arm where the arm connects to the torso.\n\n<answer>\nThe axilla is the anatomical name for the armpit.\n</answer>"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the armpit, the hollow cavity on the under side of the arm where it connects to the shoulder."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the **underarm** region of the body. It is the area located between the shoulder and the chest, bounded by the upper arm, torso, and back. This region contains important structures such as the axillary artery, axillary vein, and lymph nodes. \n\nNo tool call was needed, as this is a"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical term for the armpit. It is the area under the junction of the arm and shoulder where the arm connects to the shoulder blade and collarbone."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical name for the **armpit** (or underarm). \n\nIt refers to the pyramid-shaped hollow space located between the upper arm and the chest wall. The axilla contains important structures including:\n- Blood vessels (like the axillary artery and vein)\n- Nerves (including parts of the brachial plexu"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical name for the **armpit** — the area on the upper side of the body where the arm connects to the shoulder. It's the hollow space beneath the junction of the arm and the torso.\n\nThis region contains important structures including lymph nodes, blood vessels, and nerves that supply the arm."
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical name for the **armpit** — the area beneath the shoulder joint where the arm connects to the shoulder. \n\nThis region contains important structures including:\n- Blood vessels (axillary artery and vein)\n- Nerves (brachial plexus)\n- Lymph nodes (axillary lymph nodes)\n- Fat and connective ti"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the **armpit** or **underarm** area of the body. It's the region located between the upper arm and the chest wall, containing important structures such as blood vessels, nerves, and lymph nodes."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical name for the **armpit**."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical name for the **armpit** — the area on the side of the chest where the upper arm meets the shoulder."
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical name for the **armpit** — the hollow area beneath the shoulder joint where the arm connects to the torso."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical term for the **armpit** — the hollow area beneath the shoulder joint where the arm meets the torso."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical term for the **armpit**.\n\nSpecifically, it refers to the hollow area located beneath the junction of the arm and the shoulder. It's a pyramid-shaped space that contains important structures such as:\n\n- **Lymph nodes** (important for immune function and sometimes examined in medical cont"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical term for the **armpit** — the hollow area located just beneath the shoulder joint where the arm meets the body. It's an important anatomical region because it contains several key structures, including lymph nodes, blood vessels (axillary artery and vein), and nerves (the brachial plexu"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The axilla is the anatomical term for the **armpit**—the region under the arm, bounded by the shoulder and the chest wall. It contains important structures such as the axillary lymph nodes, blood vessels, and nerves."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical name for the **armpit** or **underarm**.\n\nIt's the pyramidal space located beneath the shoulder joint, between the upper arm and the lateral chest wall. The axilla contains important structures including:\n\n- Blood vessels (axillary artery and vein)\n- Nerves (brachial plexus)\n- Lymph nod"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The **axilla** is the anatomical name for the **armpit**.\n\nIt's the pyramidal-shaped space located between the upper arm and the chest wall (specifically between the lateral thorax and the medial surface of the upper arm). The axilla is an important anatomical region because it contains:\n\n- **Lymph nodes** (axillary ly"
+    }
+  ]
+}

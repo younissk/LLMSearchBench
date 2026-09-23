@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-advice-06",
+  "bucket": "no_tool",
+  "subcategory": "advice",
+  "source": "generated",
+  "sourceId": "nt-advice-06",
+  "adversarial": false,
+  "prompt": "Your manager wants you for a leadership track. You love technical depth. Both can't coexist here. How do you choose what to optimize for?",
+  "goldAnswer": [],
+  "rationale": "Career path choice based on values is a decision framework, not a factual question.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "balancing technical depth with leadership career path",
+      "callProblem": "",
+      "answerExcerpt": "I'll search for insights on balancing technical depth with leadership roles."
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a genuinely tough career dilemma, and the fact that you're framing it as a choice between two things that \"can't coexist\" suggests you've already observed the culture at your company closely. Let me help you think through it systematically.\n\n## First, challenge the premise\n\nBefore choosing, ask yourself: **Is t"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic tension in tech careers, and the fact that you’re asking the question means you’re already thinking about it the right way. The short answer: **optimize for the path that aligns with your deepest source of energy and long-term identity, not the one that’s most available right now.** But let’s unpack t"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "trade-offs leadership technical depth",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "When faced with a decision between pursuing a leadership track and maintaining technical depth, it's essential to consider your personal preferences, career goals, and the potential impact on your job satisfaction. Here are some steps to help you make a decision:\n\n1. **Reflect on your motivations and values**: Ask your"
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic tech career dilemma. A few thoughts:\n\n**First, challenge the premise slightly:** Many companies *do* have technical leadership tracks (Staff Engineer, Principal Engineer, Technical Fellow) where you lead technical direction without managing people. Have you explored whether that option exists at your"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# The False Dichotomy\n\nThe premise—that leadership and technical depth are mutually exclusive—is the trap. In reality, they're multiplicative, not zero-sum. The real question is: **which axis do I lean into given my specific situation?**\n\n## Reframe First\n\nBefore optimizing, check the assumption. Most \"leadership track"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Career optimization: leadership vs. technical depth",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Choosing between a leadership track and technical depth is a significant decision that can impact your career trajectory and personal fulfillment. Here are some steps and considerations to help you make an informed decision:\n\n### 1. **Self-Assessment**\n   - **Interests and Passions:** Reflect on what you enjoy most abo"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Choosing between a leadership track and a deep‑technical path isn’t an either/or decision so much as a matter of **what you want your impact to look like over the next few years**. Here are some concrete ways to evaluate the trade‑off and decide which to prioritize:\n\n---\n\n## 1. Clarify Your Core “Why”\n\n| Question | Wha"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a classic and important career crossroads. The tension between technical depth (individual contributor/IC) and leadership/management paths is real in many organizations, especially when companies don't have clear dual-ladder career frameworks. Here’s a structured way to think about your choice:\n\n### 1. **Clarif"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "### 1. Clarify the Core Conflict\n\n| **Leadership Track** | **Technical Depth Track** |\n|----------------------|---------------------------|\n| • Broader influence across teams, projects, and the organization.<br>• Focus on people, strategy, and business outcomes.<br>• Requires delegation, communication, and stakeholder"
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Choosing between a leadership track and maintaining technical depth is a significant decision that depends on your long-term career goals, personal interests, and the value you want to bring to your organization. Here are some steps to help you make an informed decision:\n\n1. **Reflect on Your Passions and Strengths:**"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a challenging decision, but it's important to consider your long-term career goals and personal interests. Here are some steps you can take to make an informed choice:\n\n1. **Assess Your Current Situation**: Understand the current demands of your role and how they align with your desire for technical depth versu"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a deeply personal decision, and many people face this crossroads in their careers. The choice between leadership and technical depth isn't always binary — but it often requires intentional trade-offs. Here’s how to think about optimizing for one or the other — or finding a hybrid path:\n\n### 1. **Clarify Your Va"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "how to choose between technical depth and leadership track career",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common and important dilemma—balancing technical excellence with leadership aspirations. Here’s how to think through it strategically:\n\n### 1. **Clarify Your Long-Term Vision**\nAsk yourself:\n- What kind of impact do I want to have in 5–10 years?\n- Do I want to be known for deep technical innovation, or for bu"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "balancing technical depth with leadership career path",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a common crossroads many professionals face. Here's a structured approach to decide:\n\n1. **Assess Your Core Motivations**  \n   - *Technical Depth*: Do you prioritize solving complex problems, mastering niche skills, or building specialized expertise?  \n   - *Leadership*: Are you driven by mentoring others, stra"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The dilemma between leadership and technical depth often requires aligning with your core values and long-term goals. Here’s a structured approach to decide:\n\n1. **Assess Priorities**:  \n   - **Leadership**: Focuses on influencing teams, strategy, and organizational impact. Ideal if you thrive in mentoring, process imp"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of the most important career decisions in tech. Here's a framework to help you think through it:\n\n## First, Challenge the Premise\n\nThe \"leadership vs. technical depth\" dichotomy is often overstated. Many organizations have:\n- **Staff/Principal Engineer tracks** that reward technical leadership without peopl"
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of the most common and difficult career crossroads in tech. There's no single right answer, but there are frameworks to help you decide what to optimize for.\n\n## First, Challenge the Premise\n\nBefore choosing, verify that **both truly can't coexist**. Some organizations have:\n- **Principal/Staff Engineer tra"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of the most significant career crossroads in tech. There's no universal right answer, but here's a framework to help you decide:\n\n## Questions to Ask Yourself\n\n**About your actual preferences:**\n- When you look back at your best weeks, what were you doing? Debugging deep systems or unblocking teammates?\n- D"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of the most common and difficult career decisions in tech. Since you've already identified that both paths can't coexist here, the choice comes down to what you want to optimize for. Here's a framework to help you decide:\n\n## Key Decision Factors\n\n### 1. **What Do You Actually Enjoy?**\n- **Technical depth**"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of the most common and difficult career inflection points in tech. The \"Manager vs. Individual Contributor (IC)\" dilemma is rarely about which path is \"better,\" but rather which path aligns with your specific definition of **impact** and **satisfaction**.\n\nSince you have established that your current compan"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I’d choose by asking: **what am I actually optimizing for — craft, influence, income, autonomy, or long-term optionality?**\n\nIf the choice is truly forced, I’d use this:\n\n## 1. Clarify what “leadership track” actually means\nNot all leadership is the same.\n\nAsk your manager:\n- “Is this people management, technical leade"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "individual contributor vs management career choice framework optimize for technical depth leadership track",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "First, pressure-test the premise: **Is it really binary, or is this organization just bad at dual-track ladders?** Many companies say you must pick “management or IC,” but have parallel Staff/Principal Engineer tracks that are technically deep *and* organizationally influential. If you can negotiate a Staff/Principal I"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of those career questions that feels like a fork in the road, but I'd push back gently on the framing before diving into the choice itself.\n\n---\n\n## First, Challenge the Binary\n\nThe idea that leadership and technical depth *can't* coexist is often a company-specific constraint, not a universal truth. Before"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a profound crossroads, and it’s wise that you’re thinking carefully about it. Let’s unpack the tension.\n\nFirst, I’d gently challenge the assumption that *both can’t coexist*. Often, they can’t coexist **in their current form within your current team**—but they might coexist in a different shape or a different p"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of the most common and challenging career dilemmas. The good news: you don't have to choose one and abandon the other entirely. The bad news: you do need to make a conscious choice about **where you'll invest your limited time and energy**.\n\nHere's a framework to help you decide:\n\n---\n\n## 1. Clarify Your Co"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is one of the classic career crossroads, and the framing itself reveals something important: you're asking about *optimization*, which suggests you're thinking about this as a maximization problem rather than an alignment problem.\n\nLet me offer a different lens:\n\n## The Real Question Isn't \"Which Path?\"\n\nIt's: **\""
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Before choosing, pressure-test the premise. \"Leadership track\" often gets used as shorthand for people management, and yes — a first-time manager's calendar usually guts deep technical work to a few hours a week. But sometimes it's a bundle (scope, visibility, comp) that can be unbundled: staff/principal scope, archite"
+    }
+  ]
+}

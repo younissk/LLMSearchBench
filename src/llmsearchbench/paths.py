@@ -18,6 +18,10 @@ DATA_PROCESSED = REPO_ROOT / "data" / "processed"
 #: Pinned URLs and checksums for every source dataset. Committed.
 DATASETS_LOCK = REPO_ROOT / "data" / "datasets.lock.json"
 
+#: Sizes measured from the published weights, written by
+#: `scripts/model_params.py` and read at publish time.
+MODEL_PARAMS = REPO_ROOT / "data" / "model_params.json"
+
 #: Benchmark task sets, one JSONL per release. Committed.
 TASKS = REPO_ROOT / "tasks"
 

@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-10",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-10",
+  "adversarial": true,
+  "prompt": "Zentech Inc: $2M Q1, $3.5M Q2 revenue. What percent growth?",
+  "goldAnswer": [],
+  "rationale": "Sounds like company research but all numbers provided in prompt.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate the percentage growth for Zentech Inc's revenue from Q1 to Q2.\n\n**Given:**\n- Q1 revenue: $2M\n- Q2 revenue: $3.5M\n\n**Calculation:**\n1. Growth amount = Q2 - Q1 = $3.5M - $2M = $1.5M\n2. Percentage growth = (Growth amount / Q1) × 100% = ($1.5M / $2M) × 100% = 0.75 × 100% = **75%**\n\n**Answer:** Zentech Inc ex"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from Q1 to Q2:\n\n**Formula:** ((Q2 - Q1) / Q1) × 100\n\n**Calculation:**\n- Q1: $2,000,000\n- Q2: $3,500,000\n- Difference: $3,500,000 - $2,000,000 = $1,500,000\n- Growth: ($1,500,000 / $2,000,000) × 100 = **75%**\n\n**Zentech Inc. experienced 75% revenue growth from Q1 to Q2.**"
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**75% quarter-over-quarter growth**\n\nCalculation:\n- Growth = (Q2 − Q1) / Q1 × 100\n- Growth = ($3.5M − $2M) / $2M × 100\n- Growth = $1.5M / $2M × 100 = **75%**\n\nZentech's revenue grew by $1.5M, which represents a 75% increase from Q1 to Q2."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Zentech Inc revenue growth Q1 Q2 2024",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To find the percent growth, first, find the difference in revenue between Q2 and Q1: $3.5M - $2M = $1.5M. Then, divide this difference by the original revenue: $1.5M / $2M = 0.75. Finally, convert this to a percentage: 0.75 * 100% = 75%. The answer is 75%."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The revenue grew from **$2 million** in Q1 to **$3.5 million** in Q2.\n\n\\[\n\\text{Percent growth} = \\frac{3.5 - 2}{2} \\times 100\\% = \\frac{1.5}{2} \\times 100\\% = 0.75 \\times 100\\% = 75\\%\n\\]\n\n**Zentech Inc. experienced a 75% increase in revenue from Q1 to Q2.**"
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Revenue Growth Calculation**Setup:**\n- Q1: $2,000,000\n- Q2: $3,500,000\n\n**Formula:** ((Q2 - Q1) / Q1) × 100\n\n**Step1:** Calculate the difference\n$3,500,000 - $2,000,000 = $1,500,000\n\n**Step 2:** Divide by Q1\n$1,500,000 / $2,000,000 = 0.75\n\n**Step 3:** Convert to percentage\n0.75 × 100 = **75%**\n\nZentech Inc experience"
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Zentech Inc revenue growth",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from Q1 to Q2 for Zentech Inc, you can use the following formula:\n\n\\[ \\text{Percent Growth} = \\left( \\frac{\\text{Revenue in Q2} - \\text{Revenue in Q1}}{\\text{Revenue in Q1}} \\right) \\times 100 \\]\n\nGiven:\n- Revenue in Q1 = $2,000,000\n- Revenue in Q2 = $3,500,000\n\nPlugging in the values:"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The revenue grew from $2 million in Q1 to $3.5 million in Q2.\n\nPercent growth = \\(\\frac{3.5 - 2}{2} \\times 100\\% = \\frac{1.5}{2} \\times 100\\% = 75\\%\\).\n\n**Growth: 75%**."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent growth from Q1 to Q2 is calculated as:\n\n\\[\n\\text{Growth} = \\frac{\\text{Q2 Revenue} - \\text{Q1 Revenue}}{\\text{Q1 Revenue}} \\times 100\\%\n\\]\n\n\\[\n\\text{Growth} = \\frac{3.5 - 2}{2} \\times 100\\% = \\frac{1.5}{2} \\times 100\\% = 0.75 \\times 100\\% = 75\\%\n\\]\n\n**Answer: 75% growth**"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The revenue grew from **$2 million in Q1 to $3.5 million in Q2**.\n\nGrowth = \\(\\dfrac{3.5M - 2M}{2M} = \\dfrac{1.5M}{2M} = 0.75\\).\n\n**Percent growth = 75 %**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from Q1 to Q2, we can use the formula:\n\n\\[ \\text{Percent Growth} = \\left( \\frac{\\text{Q2 Revenue} - \\text{Q1 Revenue}}{\\text{Q1 Revenue}} \\right) \\times 100 \\]\n\nLet's plug in the values:\n\n\\[ \\text{Q1 Revenue} = \\$2,000,000 \\]\n\\[ \\text{Q2 Revenue} = \\$3,500,000 \\]\n\nNow, let's calculate th"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "calculate percentage growth from 2M to 3.5M",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percentage growth from Q1 to Q2 for Zentech Inc., we can use the following formula:\n\n\\[ \\text{Percentage Growth} = \\left( \\frac{\\text{Q2 Revenue} - \\text{Q1 Revenue}}{\\text{Q1 Revenue}} \\right) \\times 100 \\]\n\nGiven:\n- Q1 Revenue = $2,000,000\n- Q2 Revenue = $3,500,000\n\nLet's calculate the percentage gro"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth in revenue from Q1 to Q2 for Zentech Inc:\n\nFormula:  \n$$\n\\text{Percent Growth} = \\left( \\frac{\\text{Q2 Revenue} - \\text{Q1 Revenue}}{\\text{Q1 Revenue}} \\right) \\times 100\n$$\n\nSubstitute the values:  \n$$\n\\text{Percent Growth} = \\left( \\frac{3.5M - 2M}{2M} \\right) \\times 100 = \\left( \\frac"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percent growth from Q1 to Q2 is calculated as follows:\n\n**Growth = ((Q2 Revenue - Q1 Revenue) / Q1 Revenue) × 100**  \n= (($3.5M - $2M) / $2M) × 100  \n= ($1.5M / $2M) × 100  \n= **75%**\n\nNo tool call needed — this is a straightforward mathematical calculation."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from Q1 to Q2:\n\n$$\n\\text{Percent Growth} = \\left( \\frac{\\text{Q2 Revenue} - \\text{Q1 Revenue}}{\\text{Q1 Revenue}} \\right) \\times 100\n$$\n\nSubstitute the values:\n$$\n\\text{Percent Growth} = \\left( \\frac{3.5 - 2}{2} \\right) \\times 100 = \\left( \\frac{1.5}{2} \\right) \\times 100 = 0.75 \\times 1"
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percentage growth from Q1 to Q2 is calculated as follows:\n\n$$\n\\text{Growth} = \\left( \\frac{\\text{Q2 Revenue} - \\text{Q1 Revenue}}{\\text{Q1 Revenue}} \\right) \\times 100 = \\left( \\frac{3.5 - 2}{2} \\right) \\times 100 = 75\\%\n$$\n\n**Answer:** 75% growth."
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The revenue growth from Q1 ($2M) to Q2 ($3.5M) is calculated as follows:\n\n**Percentage Growth** = [(New Value - Old Value) / Old Value] × 100  \n= [(3.5 - 2) / 2] × 100  \n= (1.5 / 2) × 100  \n= **75%**\n\nZentech Inc experienced **75% revenue growth** from Q1 to Q2."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The percentage growth from Q1 to Q2 for Zentech Inc. is calculated as follows:\n\n**Formula**:  \n$$\n\\text{Growth \\%} = \\left( \\frac{\\text{Q2 Revenue} - \\text{Q1 Revenue}}{\\text{Q1 Revenue}} \\right) \\times 100\n$$\n\n**Calculation**:  \n$$\n\\left( \\frac{3.5M - 2M}{2M} \\right) \\times 100 = \\left( \\frac{1.5M}{2M} \\right) \\times"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "percent growth calculation from 2M to 3.5M",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from Q1 to Q2, we use the formula:\n\n$$\n\\text{Percent Growth} = \\left( \\frac{\\text{Q2 Revenue} - \\text{Q1 Revenue}}{\\text{Q1 Revenue}} \\right) \\times 100\n$$\n\nGiven:\n- Q1 Revenue = $2M\n- Q2 Revenue = $3.5M\n\nLet's compute the percent growth."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can calculate this directly without needing to search.\n\n**Percent Growth Calculation:**\n\n- Q1 Revenue: $2M\n- Q2 Revenue: $3.5M\n\n**Formula:** ((Q2 - Q1) / Q1) × 100\n\n**Calculation:** ((3.5 - 2) / 2) × 100 = (1.5 / 2) × 100 = **75%**\n\nZentech Inc experienced **75% revenue growth** from Q1 to Q2."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation I can do without searching:\n\n**Percent Growth Formula:**\n((New Value - Old Value) / Old Value) × 100\n\n**Calculation:**\n- Q1 Revenue: $2M\n- Q2 Revenue: $3.5M\n- Growth: $3.5M - $2M = $1.5M\n\n**Percent Growth:**\n($1.5M / $2M) × 100 = **75%**\n\nZentech Inc. experienced **75% revenue grow"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Revenue Growth Calculation\n\n| Quarter | Revenue |\n|---------|---------|\n| Q1 | $2.0M |\n| Q2 | $3.5M |\n\n**Growth Formula:**\n$$\\frac{\\text{Q2} - \\text{Q1}}{\\text{Q1}} \\times 100$$\n\n**Calculation:**\n$$\\frac{3.5 - 2.0}{2.0} \\times 100 = \\frac{1.5}{2.0} \\times 100 = 75\\%$$\n\n**Answer: 75% quarter-over-quarter growth**"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I can calculate this directly from the numbers you provided.\n\n**Percent Growth Calculation:**\n\n- Q1 Revenue: $2M\n- Q2 Revenue: $3.5M\n- Growth: $3.5M - $2M = $1.5M\n\n**Percent Growth = ($1.5M / $2M) × 100 = 75%**\n\nZentech Inc experienced **75% revenue growth** from Q1 to Q2."
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percentage growth from Q1 to Q2, use the following formula:\n\n$$ \\text{Percentage Growth} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100 $$\n\n**Calculation:**\n\n1.  **Find the difference:** $3.5\\text{M} - \\$2\\text{M} = \\$1.5\\text{M}$\n2.  **Divide by the original v"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**75% growth**\n\nCalculation: ($3.5M − $2M) ÷ $2M = $1.5M ÷ $2M = 0.75 = **75%**"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Quarter-over-quarter growth from Q1 to Q2:\n\n\\[\n\\frac{3.5M - 2M}{2M} \\times 100 = \\frac{1.5M}{2M} \\times 100 = 75\\%\n\\]\n\n**Answer: 75% growth.**"
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Revenue grew by **75%** quarter-over-quarter.\n\n- Q1: $2.0M\n- Q2: $3.5M\n- Growth: ($3.5M − $2.0M) / $2.0M = **75%**"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on the revenue figures you provided, Zentech Inc. experienced a **75% growth** in revenue from Q1 to Q2.\n\nHere's the breakdown:\n* **Q1 Revenue:** $2 million\n* **Q2 Revenue:** $3.5 million\n* **Growth Calculation:** $(\\frac{\\$3.5M - \\$2M}{\\$2M}) \\times 100 = 75\\%$"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Zentech Inc. Revenue Growth\n\n**Q1 to Q2 growth: 75%**\n\nHere's the calculation:\n\n| | Revenue | Change |\n|---------|---------|--------|\n| Q1 | $2.0M | — |\n| Q2 | $3.5M | +$1.5M |\n\n**Growth %** = (Q2 − Q1) / Q1 × 100\n**Growth %** = ($1.5M / $2.0M) × 100 = **75%**\n\nThat's solid quarter-over-quarter growth! Let me know i"
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the percent growth from Q1 to Q2:\n\n**Step 1: Find the revenue increase**\n$3.5M (Q2) - $2M (Q1) = **$1.5M increase**\n\n**Step 2: Calculate the growth percentage**\n$1.5M ÷ $2M = 0.75\n\n**Step 3: Convert to percentage**\n0.75 × 100 = **75%**\n\nZentech Inc experienced **75% growth** from Q1 to Q2."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "Based on the revenue figures you provided:\n\n- **Q1 Revenue:** $2M\n- **Q2 Revenue:** $3.5M\n\n**Percentage Growth Calculation:**\n$$\\frac{Q2 - Q1}{Q1} \\times 100 = \\frac{3.5M - 2M}{2M} \\times 100 = \\frac{1.5M}{2M} \\times 100 = 75\\%$$\n\n**Zentech Inc. achieved 75% quarter-over-quarter revenue growth from Q1 to Q2.**"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**75% growth** from Q1 to Q2.\n\n**Calculation:**\n- Growth = (Q2 − Q1) ÷ Q1\n- Growth = ($3.5M − $2M) ÷ $2M\n- Growth = $1.5M ÷ $2M = **0.75 = 75%**\n\nZentech's revenue increased by $1.5M quarter-over-quarter, representing a 75% growth rate."
+    }
+  ]
+}

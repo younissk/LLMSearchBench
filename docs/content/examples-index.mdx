@@ -1,0 +1,24 @@
+---
+id: examples-index
+title: Every example
+sidebar_label: Every example
+description: All 360 task items, with how many models decided each one correctly.
+slug: /examples/
+---
+
+import ExampleIndex from '@site/src/components/ExampleIndex';
+
+# Every example
+
+One row per task item. **Accuracy** is the share of complete runs that made the
+right search-or-not decision on that item — not whether the answer was right,
+which this task does not score.
+
+Sorted hardest first on purpose. An item that no model gets right is usually
+worth reading as a question about the label rather than about the models, and
+the count of those is in the fourth box below.
+
+Click an item to see what every model did with it: whether it searched, what it
+searched for, and how it answered.
+
+<ExampleIndex task="tool-use-correctness" />

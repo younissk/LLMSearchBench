@@ -8,7 +8,6 @@
 import {getLeaderboard, type LeaderboardRow} from './index';
 import type {ItemMeta, ModelItems, TaskItemMatrix} from './types';
 import itemMatrix from './results/tool-use-correctness-items.json';
-import {vendorName} from '@site/src/components/VendorIcon';
 
 const matrices: Record<string, TaskItemMatrix> = {
   'tool-use-correctness': itemMatrix as TaskItemMatrix,
@@ -39,25 +38,9 @@ export function board(task: string): Board {
   return {rows: data.rows, taskItems: data.taskItems, generated: data.generated};
 }
 
-/** Models that can be compared on cost: an unpriced one reads zero. */
-export const priced = (rows: LeaderboardRow[]) =>
-  rows.filter((row) => row.costUsd > 0 && !row.isFree);
-
-/** Vendors with their models' values, for a spread plot. */
-export function byVendor(
-  rows: LeaderboardRow[],
-  value: (row: LeaderboardRow) => number,
-): {label: string; values: number[]; names: string[]}[] {
-  const groups = new Map<string, {values: number[]; names: string[]}>();
-  for (const row of rows) {
-    const key = vendorName(row.model);
-    const group = groups.get(key) ?? {values: [], names: []};
-    group.values.push(value(row));
-    group.names.push(row.label);
-    groups.set(key, group);
-  }
-  return [...groups.entries()].map(([label, group]) => ({label, ...group}));
-}
+/** Models whose published weights gave an exact parameter count. */
+export const sized = (rows: LeaderboardRow[]) =>
+  rows.filter((row): row is LeaderboardRow & {paramsB: number} => !!row.paramsB);
 
 // --- from the item matrix ---------------------------------------------------
 

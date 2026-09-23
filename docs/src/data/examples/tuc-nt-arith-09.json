@@ -1,0 +1,354 @@
+{
+  "id": "tuc-nt-arith-09",
+  "bucket": "no_tool",
+  "subcategory": "arithmetic",
+  "source": "generated",
+  "sourceId": "nt-arith-09",
+  "adversarial": false,
+  "prompt": "Town has 10,000 people, grows 3% yearly. Population after 1 year?",
+  "goldAnswer": [],
+  "rationale": "Percentage growth calculation with all values given.",
+  "expectsSearch": false,
+  "results": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "I'll calculate the population after 1 year with 3% growth.\n\nInitial population: 10,000\nGrowth rate: 3% per year\n\nPopulation after 1 year = 10,000 × (1 + 0.03) = 10,000 × 1.03 = 10,300\n\n**Answer: 10,300 people**"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the population after 1 year with a 3% annual growth rate:\n\n- Initial population: 10,000\n- Growth rate: 3% = 0.03\n- Population after 1 year = 10,000 × (1 + 0.03) = 10,000 × 1.03 = **10,300**\n\nSo the population after 1 year would be **10,300 people**."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "After 1 year, the population will be **10,300 people**.\n\n**Calculation:**  \n10,000 × (1 + 0.03) = 10,000 × 1.03 = **10,300**  \n\n*(This is a simple 3% increase applied once.)*"
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "",
+      "callProblem": "schema-error",
+      "answerExcerpt": "{\"name\": \"search\", \"parameters\": {\"query\": \"population growth 3% of 10000 after 1 year"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the population after 1 year, we need to find 3% of the current population and add it to the current population.\n\n3% of 10,000 is 0.03 * 10,000 = 300.\n\nSo, the population after 1 year will be 10,000 + 300 = 10,300."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population grows by 3 % each year.  \n\nStarting with 10,000 people:\n\n\\[\n\\text{Population after 1 year}=10{,}000 \\times (1 + 0.03) = 10{,}000 \\times 1.03 = 10{,}300.\n\\]\n\nSo after one year the town would have **10,300 residents**."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "# Population After 1 Year\n\nStarting population: **10,000**\nAnnual growth rate: **3%**\n\n**Calculation:**\n- Population increase = 10,000 × 0.03 = 300\n- New population = 10,000 + 300 = **10,300**\n\nSo after 1 year, the town will have **10,300 people**."
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "label": "Mistral Nemo 12B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "Population growth calculation",
+      "callProblem": "",
+      "answerExcerpt": ""
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the population after 1 year with a 3% yearly growth rate, you can use the following formula:\n\n\\[ \\text{Population after 1 year} = \\text{Current Population} \\times (1 + \\text{Growth Rate}) \\]\n\nGiven:\n- Current Population = 10,000\n- Growth Rate = 3% = 0.03\n\nPlugging in the values:\n\n\\[ \\text{Population after"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after one year will be:\n\n\\(10{,}000 \\times (1 + 0.03) = 10{,}000 \\times 1.03 = 10{,}300\\).\n\nSo the town will have **10,300 people** after one year."
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "label": "Nemotron 3 Super 120B-A12B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after 1 year is **10,300**.\n\nCalculation:  \nStarting population = 10,000  \nGrowth rate = 3% per year  \nPopulation after 1 year = 10,000 × (1 + 0.03) = 10,000 × 1.03 = 10,300."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "After one year, the population would be:\n\n\\[\n10{,}000 \\times 1.03 = 10{,}300\n\\]\n\nSo the town would have **10,300 people**."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population of the town after 1 year, given a 3% yearly growth rate, can be calculated using the formula:\n\n\\[ \\text{New Population} = \\text{Current Population} \\times (1 + \\text{Growth Rate}) \\]\n\nFor this case:\n\n\\[ \\text{New Population} = 10,000 \\times (1 + 0.03) \\]\n\nLet's calculate it.\n\\[ \\text{New Population} = 10"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "population growth calculation formula",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the population after one year with a 3% annual growth rate, we can use the formula for population growth:\n\n\\[ \\text{Future Population} = \\text{Current Population} \\times (1 + \\text{Growth Rate}) \\]\n\nGiven:\n- Current Population = 10,000 people\n- Growth Rate = 3% or 0.03\n\nLet's calculate the future populatio"
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the population after 1 year with a 3% yearly growth rate:\n\n$$\n\\text{New Population} = \\text{Initial Population} \\times (1 + \\text{Growth Rate})\n$$\n\n$$\n= 10,000 \\times (1 + 0.03) = 10,000 \\times 1.03 = 10,300\n$$\n\nThe population after 1 year is **10,300**."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after 1 year is calculated by multiplying the initial population by 1 plus the growth rate (3% = 0.03):\n\n**10,000 × 1.03 = 10,300**\n\nNo tool call needed — this is a straightforward mathematical calculation."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the population after 1 year with a 3% annual growth rate:\n\n$$\n\\text{New Population} = \\text{Initial Population} \\times (1 + \\text{Growth Rate})\n$$\n\n$$\n\\text{New Population} = 10,000 \\times (1 + 0.03) = 10,000 \\times 1.03 = 10,300\n$$\n\nThe population after 1 year will be **10,300** people."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-thinking-2507",
+      "label": "Qwen3 30B-A3B Thinking",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after 1 year is calculated as follows:  \n10,000 × (1 + 0.03) = 10,000 × 1.03 = 10,300.\n\n<answer>10300</answer>"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "label": "Qwen3 32B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after 1 year can be calculated using the formula for exponential growth:\n\n$$\n\\text{Population} = 10{,}000 \\times (1 + 0.03)^1 = 10{,}000 \\times 1.03 = 10{,}300\n$$\n\n**Answer:** The population after 1 year will be **10,300 people**."
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "label": "Qwen3 8B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after one year will be 10,300. \n\n**Calculation:**  \n3% of 10,000 = 0.03 × 10,000 = 300  \nNew population = 10,000 + 300 = **10,300**"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "searched": true,
+      "correct": false,
+      "query": "population growth calculation 10000 people 3 percent",
+      "callProblem": "",
+      "answerExcerpt": "To calculate the population after 1 year with a 3% growth rate, we can use the formula:\n\n$$\n\\text{New Population} = \\text{Initial Population} \\times (1 + \\text{Growth Rate})\n$$\n\nWhere:\n- Initial Population = 10,000\n- Growth Rate = 3% = 0.03\n\nLet's compute this."
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation that doesn't require a search.\n\n**Population after 1 year: 10,300**\n\nHere's the calculation:\n- Starting population: 10,000\n- Growth rate: 3% = 0.03\n- Population after 1 year = 10,000 × 1.03 = **10,300**\n\nThe town gains 300 people in the first year."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation that doesn't require searching the web.\n\n**Population after 1 year:**\n\n- Initial population: 10,000\n- Growth rate: 3% = 0.03\n- Growth amount: 10,000 × 0.03 = 300\n\n**New population:** 10,000 + 300 = **10,300 people**\n\nOr using the formula: Population = 10,000 × (1 + 0.03) = 10,000 ×"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation:\n\n**Population after 1 year = 10,000 × 1.03 = 10,300 people**\n\nThe town will have **10,300 people** after 1 year (an increase of 300 people)."
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "This is a straightforward calculation that doesn't require searching the web.\n\n**Population after 1 year = 10,300 people**\n\nHere's the calculation:\n- Initial population: 10,000\n- Growth rate: 3% (0.03)\n- Growth amount: 10,000 × 0.03 = 300\n- Final population: 10,000 + 300 = **10,300**\n\nOr using the formula: 10,000 × 1.0"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after 1 year will be **10,300**.\n\nHere is the breakdown:\n1.  **Calculate the growth:** $10,000 \\times 0.03 = 300$\n2.  **Add to the original population:** $10,000 + 300 = 10,300$"
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after 1 year is:\n\n**10,000 × 1.03 = 10,300 people**"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "After 1 year:\n\n10,000 × 1.03 = **10,300 people**."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "After 1 year:\n\n\\[\n10{,}000 \\times (1 + 0.03) = 10{,}000 \\times 1.03 = \\mathbf{10{,}300}\n\\]\n\nSo the population will be **10,300 people**."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "After 1 year, the population would be **10,300 people**.\n\nHere's the quick math:\n- Current population: 10,000\n- Growth: 10,000 × 3% = 300 people added\n- New population: 10,000 + 300 = **10,300**\n\nThis is calculated using the formula: **P = P₀ × (1 + r)^t**, where P₀ is the starting population, r is the growth rate, and"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "## Population After 1 Year\n\nUsing the simple growth formula:\n\n**P = P₀ × (1 + r)**\n\nWhere:\n- P₀ = 10,000 (initial population)\n- r = 3% = 0.03\n\n**P = 10,000 × 1.03 = 10,300 people**\n\nThe town's population after 1 year would be **10,300**."
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "label": "GLM-4.7 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**10,300 people**\n\nPopulation after 1 year = 10,000 × 1.03 = 10,300"
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "The population after 1 year would be **10,300 people**.\n\n**Calculation:**\n- Initial population: 10,000\n- Growth rate: 3% = 0.03\n- Population after 1 year = 10,000 × (1 + 0.03) = 10,000 × 1.03 = **10,300**\n\nThe town gains 300 people in that first year."
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "searched": false,
+      "correct": true,
+      "query": "",
+      "callProblem": "",
+      "answerExcerpt": "**10,300 people**\n\nCalculation: 10,000 × 1.03 = 10,300\n\nThe town gains 300 people in the first year (3% of 10,000)."
+    }
+  ]
+}
