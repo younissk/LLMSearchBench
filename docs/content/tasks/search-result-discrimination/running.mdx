@@ -1,0 +1,88 @@
+---
+id: running
+title: Running it
+sidebar_label: Running it
+sidebar_position: 7
+description: Build the set, put it to a model, score it — and what the free endpoints will and will not do.
+---
+
+# Running it
+
+```bash
+make data                  # download the sources, checksums verified
+make tasks-discrimination  # extract the judged passages, then build the set
+uv run llmsearchbench run-discrimination --model qwen/qwen3.8-27b --limit 45
+uv run llmsearchbench score-discrimination --model qwen/qwen3.8-27b
+```
+
+The first two are one-time. The third writes
+`results/local/<model>-search-result-discrimination.jsonl`, one line per item,
+as each reply lands.
+
+## What the model is sent
+
+The question, then the candidates in the order the task set fixed, then a
+request for one JSON object. No tool is offered — the results are already in
+the prompt, so there is nothing to call, and offering a tool would fail
+outright on the providers whose servers have tool calling switched off.
+
+The prompt never carries the grades. The answer key travels in the same file,
+and a test pins it out of the prompt.
+
+## Useful flags
+
+| Flag | What it does |
+| --- | --- |
+| `--limit N` | Run N items, **spread evenly across categories**. A flat slice would take only the first category and call it the task. |
+| `--category web` | Restrict to one category; repeatable. |
+| `--concurrency N` | Parallel requests. Default 4 — lower than the first task's 8, because a candidate set is roughly ten times the prompt. |
+| `--out DIR` | Somewhere other than `results/local`. |
+
+A rerun resumes: items already answered are skipped, and items that **failed**
+are retried, because a failure is not an answer.
+
+## Scoring
+
+`score-discrimination` prints nDCG@10, precision, recall, the share of cited
+candidates that were graded 0, abstention accuracy and answer accuracy —
+overall, then per category, then per noise tier. Every one of those is
+arithmetic against human labels. Groundedness needs a judge and is not scored
+until one is wired up; the command says so rather than leaving a blank column
+to be misread.
+
+Scoring reads the stored reply, so a parser improvement is a re-score rather
+than a re-run.
+
+## The free endpoints
+
+Worth knowing before planning a run, measured on 2026-09-23:
+
+| Endpoint | Behaviour |
+| --- | --- |
+| `nvidia/nemotron-3-super-120b-a12b:free` | works, with intermittent 429s |
+| `qwen/qwen3.8-27b:free` | upstream pool exhausted; every request 429s |
+| `google/gemma-4-31b-it:free` | 429 on every attempt so far |
+
+A rate-limited item burns the full retry chain — 5s, 20s, 60s, 150s — before it
+is recorded as failed, so a saturated endpoint is slow as well as unproductive.
+Run each model as its own process rather than in a loop: a saturated endpoint
+should not hold up a working one.
+
+The paid route for the same weights is cents. `qwen/qwen3.8-27b` on 45 items is
+about 40,000 input tokens.
+
+## What a reply looks like
+
+```json
+{
+  "ranking": ["3", "4", "1", "2", "5"],
+  "relevant": ["3", "4"],
+  "answer": "Notre Dame Fighting Irish football"
+}
+```
+
+Parsing is lenient — prose around the JSON, a fenced block, integer ids and
+`[3]` for `3` all pass, and every repair is counted. A reply with no JSON at
+all is recorded as unparsed and left out of the scored set rather than scored
+as zero. An empty reply is recorded as a failure, because saying nothing is not
+the same as saying the results do not answer.

@@ -466,3 +466,51 @@ class TestRunLoop:
 
         attempt = run_task(task(), "m", Broken())
         assert attempt.failed and "ConnectionError" in attempt.error
+
+
+class TestUndefinedMeasures:
+    """A no-answer item has nothing to rank and nothing to recall.
+
+    Scoring those as zero dragged every model's headline number down for
+    getting the item right, and the 1.0 nDCG they got for free pushed it back
+    up — two errors that hid each other until a real run was scored.
+    """
+
+    def none(self) -> DiscriminationTask:
+        return task(
+            category=Category.NO_ANSWER,
+            relevance={"1": 0, "2": 0, "3": 0, "4": 0},
+            supporting_ids=[],
+            gold_answer=[],
+        )
+
+    def test_ranking_and_evidence_are_undefined(self) -> None:
+        result = score_item(self.none(), DiscriminationOutput(relevant=[], answer="no"))
+        assert result.ndcg is None
+        assert result.precision is None and result.recall is None and result.f1 is None
+
+    def test_abstention_and_noise_are_still_measured(self) -> None:
+        right = score_item(self.none(), DiscriminationOutput(relevant=[], answer="no"))
+        wrong = score_item(self.none(), DiscriminationOutput(relevant=["2"], answer="apples"))
+        assert right.abstention_correct is True and right.noise_picked == 0.0
+        assert wrong.abstention_correct is False and wrong.noise_picked == 1.0
+
+    def test_an_average_skips_the_items_where_it_does_not_apply(self) -> None:
+        answerable = score_item(
+            task(), DiscriminationOutput(relevant=["1", "3"], answer="Notre Dame")
+        )
+        unanswerable = score_item(self.none(), DiscriminationOutput(relevant=[], answer="no"))
+
+        result = score("m", [answerable, unanswerable])
+        assert result.overall.items == 2
+        assert result.overall.rankable == 1
+        # The perfect answerable item is not halved by the item that had no
+        # ranking to get right.
+        assert result.overall.precision == 1.0
+        assert result.overall.ndcg == pytest.approx(1.0)
+        assert result.overall.abstention_accuracy == 1.0
+
+    def test_a_slice_with_nothing_rankable_reports_none(self) -> None:
+        result = score("m", [score_item(self.none(), DiscriminationOutput(relevant=[]))])
+        assert result.overall.ndcg is None
+        assert result.overall.rankable == 0

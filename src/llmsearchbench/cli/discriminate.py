@@ -207,6 +207,7 @@ def score_command(
     )
     table.add_column("Slice")
     table.add_column("Items", justify="right")
+    table.add_column("Rankable", justify="right")
     table.add_column("nDCG@10", justify="right")
     table.add_column("Precision", justify="right")
     table.add_column("Recall", justify="right")
@@ -214,17 +215,21 @@ def score_command(
     table.add_column("Abstention", justify="right")
     table.add_column("Answer", justify="right")
 
+    def cell(value: float | None) -> str:
+        """A dash where the measure does not apply, never a zero."""
+        return "-" if value is None else f"{value:.3f}"
+
     def row(slice_: Slice, *, heading: bool = False) -> None:
-        answer = slice_.answer_accuracy
         table.add_row(
             f"[heading]{slice_.name}[/heading]" if heading else slice_.name,
             str(slice_.items),
-            f"{slice_.ndcg:.3f}",
-            f"{slice_.precision:.3f}",
-            f"{slice_.recall:.3f}",
-            f"{slice_.noise_picked:.3f}",
-            f"{slice_.abstention_accuracy:.3f}",
-            "-" if answer is None else f"{answer:.3f}",
+            str(slice_.rankable),
+            cell(slice_.ndcg),
+            cell(slice_.precision),
+            cell(slice_.recall),
+            cell(slice_.noise_picked),
+            cell(slice_.abstention_accuracy),
+            cell(slice_.answer_accuracy),
         )
 
     row(result.overall, heading=True)
@@ -241,4 +246,9 @@ def score_command(
             f"{kind} {count}" for kind, count in sorted(result.parse_problems.items())
         )
         console.print(f"[muted]parse repairs: {detail}[/muted]")
+    console.print(
+        "[muted]a dash means the measure does not apply: a no_answer item has "
+        "nothing to rank and nothing to recall, so it counts only toward "
+        "abstention and noise picked.[/muted]"
+    )
     console.print("[muted]groundedness is not scored here: no judge has been run.[/muted]")

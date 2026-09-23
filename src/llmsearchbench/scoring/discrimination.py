@@ -144,11 +144,18 @@ class ItemScore(BenchModel):
     category: Category
     noise_tier: NoiseTier
 
-    ndcg: float = Field(ge=0, le=1)
-    precision: float = Field(ge=0, le=1)
-    recall: float = Field(ge=0, le=1)
-    f1: float = Field(ge=0, le=1)
-    #: Share of the candidates it cited that were graded 0.
+    #: None on a no-answer item: there is nothing to rank, so every order is
+    #: as good as every other and a 1.0 there would be a free mark.
+    ndcg: float | None = Field(default=None, ge=0, le=1)
+    #: None on a no-answer item: with no supporting candidate, precision has no
+    #: denominator worth having and recall has none at all. Scoring them zero
+    #: was dragging every model's headline number down for getting the item
+    #: right.
+    precision: float | None = Field(default=None, ge=0, le=1)
+    recall: float | None = Field(default=None, ge=0, le=1)
+    f1: float | None = Field(default=None, ge=0, le=1)
+    #: Share of the candidates it cited that were graded 0. Defined everywhere,
+    #: and on a no-answer item it is the whole story.
     noise_picked: float = Field(ge=0, le=1)
 
     abstained: bool
@@ -175,9 +182,17 @@ def score_item(
     supporting = set(task.supporting_ids)
     hit = chosen & supporting
 
-    precision = len(hit) / len(chosen) if chosen else 0.0
-    recall = len(hit) / len(supporting) if supporting else 0.0
-    f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+    # An item with nothing relevant cannot be ranked and cannot be recalled.
+    # Abstention accuracy is what measures it; the ranking and evidence columns
+    # stay empty rather than being filled with a number that means nothing.
+    answerable = bool(supporting)
+    precision: float | None = None
+    recall: float | None = None
+    f1: float | None = None
+    if answerable:
+        precision = len(hit) / len(chosen) if chosen else 0.0
+        recall = len(hit) / len(supporting)
+        f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
     noise = {cid for cid in chosen if task.relevance.get(cid, 0) == 0}
 
     answer_correct: bool | None = None
@@ -188,7 +203,7 @@ def score_item(
         task_id=task.id,
         category=task.category,
         noise_tier=task.noise_tier,
-        ndcg=ndcg(task, output.ranking or output.relevant),
+        ndcg=ndcg(task, output.ranking or output.relevant) if answerable else None,
         precision=precision,
         recall=recall,
         f1=f1,
@@ -201,14 +216,21 @@ def score_item(
 
 
 class Slice(BenchModel):
-    """Averages over a group of items — a category, a tier, or everything."""
+    """Averages over a group of items — a category, a tier, or everything.
+
+    Averaged over the items where each measure is defined, which is not the
+    same set for every column: a no-answer item counts toward abstention and
+    noise-picked, and toward nothing else.
+    """
 
     name: str
     items: int = Field(ge=0)
-    ndcg: float = Field(ge=0, le=1)
-    precision: float = Field(ge=0, le=1)
-    recall: float = Field(ge=0, le=1)
-    f1: float = Field(ge=0, le=1)
+    #: How many of `items` could be ranked at all.
+    rankable: int = Field(default=0, ge=0)
+    ndcg: float | None = Field(default=None, ge=0, le=1)
+    precision: float | None = Field(default=None, ge=0, le=1)
+    recall: float | None = Field(default=None, ge=0, le=1)
+    f1: float | None = Field(default=None, ge=0, le=1)
     noise_picked: float = Field(ge=0, le=1)
     #: Share of items where abstaining, or not, was the right call.
     abstention_accuracy: float = Field(ge=0, le=1)
@@ -220,15 +242,22 @@ def mean(values: Sequence[float]) -> float:
     return sum(values) / len(values) if values else 0.0
 
 
+def defined(values: Sequence[float | None]) -> float | None:
+    """Average the items where the measure applies, or None when none do."""
+    present = [value for value in values if value is not None]
+    return mean(present) if present else None
+
+
 def summarise(name: str, scores: Sequence[ItemScore]) -> Slice:
     answered = [s.answer_correct for s in scores if s.answer_correct is not None]
     return Slice(
         name=name,
         items=len(scores),
-        ndcg=mean([s.ndcg for s in scores]),
-        precision=mean([s.precision for s in scores]),
-        recall=mean([s.recall for s in scores]),
-        f1=mean([s.f1 for s in scores]),
+        rankable=sum(1 for s in scores if s.ndcg is not None),
+        ndcg=defined([s.ndcg for s in scores]),
+        precision=defined([s.precision for s in scores]),
+        recall=defined([s.recall for s in scores]),
+        f1=defined([s.f1 for s in scores]),
         noise_picked=mean([s.noise_picked for s in scores]),
         abstention_accuracy=mean([float(bool(s.abstention_correct)) for s in scores]),
         answer_accuracy=mean([float(a) for a in answered]) if answered else None,
