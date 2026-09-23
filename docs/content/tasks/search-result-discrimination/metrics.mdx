@@ -94,7 +94,9 @@ when a graded-3 passage is sitting in the candidate set.
   (accent- and punctuation-insensitive containment, as in the first task).
 - **groundedness** — do the claims in the answer appear in the candidates the
   model cited? An answer that is right but rests on a candidate graded 0 is
-  right for the wrong reason, and worth seeing.
+  right for the wrong reason, and worth seeing. This is the only measure a
+  model decides, and [how it is graded](./grading) explains why that judge
+  cannot fake a verdict.
 
 The `web` category has no gold answer — TREC judged relevance, not answers — so
 correctness is not scored there. Pretending otherwise would mean inventing

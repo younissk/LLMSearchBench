@@ -1,0 +1,286 @@
+"""Scoring one candidate set, and keeping the judge honest."""
+
+from __future__ import annotations
+
+import pytest
+
+from llmsearchbench.scoring.discrimination import (
+    ItemScore,
+    ndcg,
+    parse_output,
+    score,
+    score_item,
+)
+from llmsearchbench.scoring.judging import (
+    build_prompt,
+    grounded_rate,
+    judge_run,
+    parse_verdicts,
+    verify,
+)
+from llmsearchbench.types.discrimination import (
+    Candidate,
+    Category,
+    DiscriminationTask,
+    LabelSource,
+    NoiseTier,
+)
+from llmsearchbench.types.enums import Verdict
+from llmsearchbench.types.judging import DiscriminationOutput, GroundednessVerdict
+
+
+def task(**overrides: object) -> DiscriminationTask:
+    fields: dict[str, object] = {
+        "id": "srd-test-1",
+        "category": Category.WIKIPEDIA,
+        "question": "who replaced him",
+        "candidates": [
+            Candidate(id="1", text="Don Criqui was born in Buffalo, New York in 1940."),
+            Candidate(id="2", text="Apples are a fruit produced by apple trees."),
+            Candidate(id="3", text="Tony Roberts called Notre Dame football for decades."),
+            Candidate(id="4", text="Eli Gold is a sportscaster who calls Alabama games."),
+        ],
+        "relevance": {"1": 3, "2": 0, "3": 3, "4": 0},
+        "supporting_ids": ["1", "3"],
+        "gold_answer": ["Notre Dame"],
+        "noise_tier": NoiseTier.EASY,
+        "label_source": LabelSource.DERIVED,
+        "source": "hotpotqa",
+        "source_id": "x",
+        "subcategory": "bridge-hard",
+    }
+    fields.update(overrides)
+    return DiscriminationTask.model_validate(fields)
+
+
+class TestParsing:
+    def test_a_clean_reply(self) -> None:
+        output, problems = parse_output(
+            '{"ranking": ["3", "1", "2", "4"], "relevant": ["1", "3"], "answer": "Notre Dame"}',
+            ["1", "2", "3", "4"],
+        )
+        assert output.relevant == ["1", "3"]
+        assert output.answer == "Notre Dame"
+        assert problems == []
+
+    def test_prose_around_the_json_is_tolerated(self) -> None:
+        """This task measures reading, not obedience about formatting."""
+        output, problems = parse_output(
+            "Here is my answer:\n```json\n"
+            '{"ranking": [3, 1], "relevant": [3], "answer": "x"}\n```',
+            ["1", "2", "3"],
+        )
+        assert output.relevant == ["3"]
+        assert output.ranking == ["3", "1"]
+        assert problems == []
+
+    def test_bracketed_ids_are_normalised(self) -> None:
+        output, _ = parse_output('{"relevant": ["[2]"], "answer": "x"}', ["1", "2"])
+        assert output.relevant == ["2"]
+
+    def test_an_invented_candidate_is_recorded_and_dropped(self) -> None:
+        output, problems = parse_output('{"relevant": ["9"], "answer": "x"}', ["1", "2"])
+        assert output.relevant == []
+        assert [p.kind for p in problems] == ["unknown-candidate"]
+
+    def test_a_reply_with_no_json_is_a_parse_failure(self) -> None:
+        output, problems = parse_output("I think result three is best.", ["1", "2", "3"])
+        assert output.relevant == []
+        assert problems[0].kind == "no-json"
+
+
+class TestNdcg:
+    def test_a_perfect_ordering_scores_one(self) -> None:
+        assert ndcg(task(), ["1", "3", "2", "4"]) == pytest.approx(1.0)
+
+    def test_the_worst_ordering_scores_least(self) -> None:
+        best = ndcg(task(), ["1", "3", "2", "4"])
+        worst = ndcg(task(), ["2", "4", "1", "3"])
+        assert worst < best
+
+    def test_omitted_candidates_fall_to_the_back(self) -> None:
+        """Leaving a passage out says it does not belong at the top."""
+        listed_only_noise = ndcg(task(), ["2"])
+        assert listed_only_noise < ndcg(task(), ["1", "3"])
+
+    def test_a_no_answer_item_cannot_be_failed_on_ranking(self) -> None:
+        """With nothing relevant, every order is equally right."""
+        none = task(
+            category=Category.NO_ANSWER,
+            relevance={"1": 0, "2": 0, "3": 0, "4": 0},
+            supporting_ids=[],
+            gold_answer=[],
+        )
+        assert ndcg(none, ["4", "2", "1", "3"]) == 1.0
+
+
+class TestItemScore:
+    def test_picking_both_supporting_candidates(self) -> None:
+        result = score_item(
+            task(), DiscriminationOutput(relevant=["1", "3"], answer="Notre Dame")
+        )
+        assert result.precision == 1.0
+        assert result.recall == 1.0
+        assert result.noise_picked == 0.0
+        assert result.answer_correct
+
+    def test_picking_noise_costs_precision_not_recall(self) -> None:
+        result = score_item(task(), DiscriminationOutput(relevant=["1", "3", "2"], answer="x"))
+        assert result.recall == 1.0
+        assert result.precision == pytest.approx(2 / 3)
+        assert result.noise_picked == pytest.approx(1 / 3)
+
+    def test_abstaining_on_an_answerable_item_is_wrong(self) -> None:
+        result = score_item(task(), DiscriminationOutput(relevant=[], answer="I cannot tell"))
+        assert result.abstained
+        assert result.abstention_correct is False
+
+    def test_abstaining_on_a_no_answer_item_is_right(self) -> None:
+        none = task(
+            category=Category.NO_ANSWER,
+            relevance={"1": 0, "2": 0, "3": 0, "4": 0},
+            supporting_ids=[],
+            gold_answer=[],
+        )
+        result = score_item(
+            none, DiscriminationOutput(relevant=[], answer="not in the results")
+        )
+        assert result.abstention_correct is True
+
+    def test_an_item_without_a_gold_answer_is_not_scored_for_correctness(self) -> None:
+        """TREC judged relevance, not answers; inventing one would be fiction."""
+        web = task(category=Category.WEB, gold_answer=[], label_source=LabelSource.HUMAN)
+        result = score_item(web, DiscriminationOutput(relevant=["1"], answer="anything"))
+        assert result.answer_correct is None
+
+
+class TestAggregate:
+    def test_unparsed_replies_are_counted_not_scored_as_zero(self) -> None:
+        """A reply nobody could read is a missing measurement, not a failure."""
+        good = score_item(
+            task(), DiscriminationOutput(relevant=["1", "3"], answer="Notre Dame")
+        )
+        bad_output, problems = parse_output("no json here", ["1", "2", "3", "4"])
+        bad = score_item(task(), bad_output, problems)
+
+        result = score("m", [good, bad])
+        assert result.unparsed == 1
+        assert result.overall.items == 1
+        assert result.overall.precision == 1.0
+        assert result.parse_problems == {"no-json": 1}
+
+    def test_slices_are_reported_per_category_and_tier(self) -> None:
+        scores: list[ItemScore] = [
+            score_item(task(), DiscriminationOutput(relevant=["1", "3"], answer="Notre Dame")),
+            score_item(
+                task(
+                    id="srd-test-2",
+                    category=Category.WEB,
+                    gold_answer=[],
+                    noise_tier=NoiseTier.HARD,
+                ),
+                DiscriminationOutput(relevant=["2"], answer=""),
+            ),
+        ]
+        result = score("m", scores)
+        assert {s.name for s in result.by_category} == {"wikipedia", "web"}
+        assert {s.name for s in result.by_tier} == {"easy", "hard"}
+
+
+class TestJudging:
+    """The judge's word only counts when the quote checks out."""
+
+    def test_a_real_quote_verifies(self) -> None:
+        verdict = verify(
+            GroundednessVerdict(
+                verdict=Verdict.CORRECT,
+                claim="Criqui was born in Buffalo",
+                candidate_id="1",
+                quote="born in Buffalo, New York",
+            ),
+            task(),
+        )
+        assert verdict.quote_verified
+
+    def test_a_fabricated_quote_is_discarded(self) -> None:
+        verdict = verify(
+            GroundednessVerdict(
+                verdict=Verdict.CORRECT,
+                claim="Criqui replaced Roberts in 1980",
+                candidate_id="1",
+                quote="Criqui replaced Roberts in 1980",
+            ),
+            task(),
+        )
+        assert not verdict.quote_verified
+
+    def test_a_quote_from_the_wrong_candidate_is_discarded(self) -> None:
+        verdict = verify(
+            GroundednessVerdict(
+                verdict=Verdict.CORRECT,
+                claim="Roberts called Notre Dame football",
+                candidate_id="2",
+                quote="Tony Roberts called Notre Dame football",
+            ),
+            task(),
+        )
+        assert not verdict.quote_verified
+
+    def test_whitespace_and_accents_do_not_break_a_faithful_quote(self) -> None:
+        verdict = verify(
+            GroundednessVerdict(
+                verdict=Verdict.CORRECT,
+                claim="x",
+                candidate_id="1",
+                quote="born in  Buffalo,\nNew York",
+            ),
+            task(),
+        )
+        assert verdict.quote_verified
+
+    def test_an_unsupported_verdict_needs_no_quote(self) -> None:
+        verdict = verify(
+            GroundednessVerdict(verdict=Verdict.INCORRECT, claim="x"),
+            task(),
+        )
+        assert verdict.quote_verified
+
+    def test_the_prompt_shows_only_the_cited_candidates(self) -> None:
+        """A judge given every candidate could ground a lucky answer."""
+        prompt = build_prompt(task(), DiscriminationOutput(relevant=["1"], answer="x"))
+        assert "Buffalo" in prompt
+        assert "Apples are a fruit" not in prompt
+
+    def test_a_run_with_one_fabricated_claim_is_not_grounded(self) -> None:
+        reply = """{"verdicts": [
+          {"claim": "a", "verdict": "correct", "candidate_id": "1",
+           "quote": "born in Buffalo, New York", "reasoning": ""},
+          {"claim": "b", "verdict": "incorrect", "candidate_id": "",
+           "quote": "", "reasoning": ""}
+        ]}"""
+        run = judge_run(task=task(), reply=reply, model="m", judge_model="j")
+        assert len(run.usable) == 2
+        assert run.grounded is False
+
+    def test_a_run_whose_verdicts_all_fail_verification_grounds_nothing(self) -> None:
+        reply = """{"verdicts": [
+          {"claim": "a", "verdict": "correct", "candidate_id": "1",
+           "quote": "this sentence is not in the passage", "reasoning": ""}
+        ]}"""
+        run = judge_run(task=task(), reply=reply, model="m", judge_model="j")
+        assert run.usable == []
+        assert run.grounded is None
+
+        rate, discarded = grounded_rate([run])
+        assert rate is None
+        assert discarded == 1
+
+    def test_an_unreadable_judge_reply_yields_no_verdicts(self) -> None:
+        assert parse_verdicts("I am not going to answer that") == []
+        run = judge_run(task=task(), reply="nope", model="m", judge_model="j")
+        assert run.error and run.grounded is None
+
+    def test_the_prompt_version_travels_with_every_run(self) -> None:
+        run = judge_run(task=task(), reply='{"verdicts": []}', model="m", judge_model="j")
+        assert run.prompt_version == "groundedness-1"
+        assert run.judge_model == "j"

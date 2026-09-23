@@ -22,6 +22,10 @@ DATASETS_LOCK = REPO_ROOT / "data" / "datasets.lock.json"
 #: `scripts/model_params.py` and read at publish time.
 MODEL_PARAMS = REPO_ROOT / "data" / "model_params.json"
 
+#: What each provider will enforce about a reply's shape, written by
+#: `scripts/model_capabilities.py`. A provider fact, so it carries a date.
+MODEL_CAPABILITIES = REPO_ROOT / "data" / "model_capabilities.json"
+
 #: Benchmark task sets, one JSONL per release. Committed.
 TASKS = REPO_ROOT / "tasks"
 

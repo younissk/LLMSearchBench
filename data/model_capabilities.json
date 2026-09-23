@@ -1,0 +1,289 @@
+{
+  "anthropic/claude-sonnet-5": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "deepseek/deepseek-r1": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": false,
+    "tools": true
+  },
+  "deepseek/deepseek-v3.2": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "deepseek/deepseek-v4-flash": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "meituan/longcat-2.0": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": false,
+    "structured_outputs": false,
+    "tools": true
+  },
+  "meta-llama/llama-3.1-8b-instruct": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "meta-llama/llama-3.3-70b-instruct": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "minimax/minimax-m2": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "minimax/minimax-m3": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "mistralai/mistral-nemo": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "mistralai/mistral-small-3.2-24b-instruct": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "moonshot/kimi-k2.6": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "moonshot/kimi-k3": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "nvidia/nemotron-3-nano-30b-a3b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "nvidia/nemotron-3-super-120b-a12b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "openai/gpt-oss-120b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "openai/gpt-oss-20b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen-2.5-72b-instruct": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen-2.5-7b-instruct": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3-235b-a22b-2507": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3-235b-a22b-thinking-2507": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": false,
+    "tools": true
+  },
+  "qwen/qwen3-30b-a3b-instruct-2507": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3-30b-a3b-thinking-2507": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": false,
+    "tools": true
+  },
+  "qwen/qwen3-32b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3-8b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": false,
+    "tools": true
+  },
+  "qwen/qwen3-coder-30b-a3b-instruct": {
+    "checked": "2026-09-23",
+    "reasoning": false,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3.5-122b-a10b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3.5-27b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3.5-397b-a17b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3.5-9b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3.6-27b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3.8-27b": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "qwen/qwen3.8-27b:free": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": false,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "tencent/hy3": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "thinkingmachines/inkling": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": false,
+    "structured_outputs": false,
+    "tools": true
+  },
+  "thinkingmachines/inkling-small": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": false,
+    "structured_outputs": false,
+    "tools": true
+  },
+  "xiaomi/mimo-v2.5": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "xiaomi/mimo-v2.5-pro": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "z-ai/glm-4.7-flash": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "z-ai/glm-5": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  },
+  "z-ai/glm-5.3-flash": {
+    "checked": "2026-09-23",
+    "reasoning": true,
+    "response_format": true,
+    "structured_outputs": true,
+    "tools": true
+  }
+}

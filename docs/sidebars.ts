@@ -37,6 +37,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'tasks/search-result-discrimination/categories',
             'tasks/search-result-discrimination/metrics',
+            'tasks/search-result-discrimination/grading',
             'tasks/search-result-discrimination/building',
             'tasks/search-result-discrimination/limitations',
             'discrimination-index',

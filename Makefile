@@ -100,6 +100,10 @@ tasks-discrimination: ## Rebuild the search-result-discrimination task set
 	$(UV) run python scripts/extract_judged_passages.py
 	$(UV) run llmsearchbench tasks build-discrimination
 
+.PHONY: capabilities
+capabilities: ## Re-check what each provider enforces about a reply's shape
+	$(UV) run python scripts/model_capabilities.py
+
 .PHONY: examples-discrimination
 examples-discrimination: ## Write a page per discrimination item for the docs
 	$(UV) run llmsearchbench examples-discrimination
