@@ -53,7 +53,7 @@ ANNOTATOR = "claude-sonnet-5"
 MAX_WORDS = 6
 
 #: Bumped whenever the instructions below change.
-PROMPT_VERSION = "web-answers-2"
+PROMPT_VERSION = "web-answers-3"
 
 INSTRUCTIONS = """\
 You are writing answer keys for a search benchmark.
@@ -63,10 +63,13 @@ relevant to it. Say what answer those passages give.
 
 Rules:
 - Use only the passages shown. Do not use anything you know beyond them.
+- The answer must be COPIED from the passage, word for word. Not summarised, \
+not rephrased, not stitched together from two places.
 - The answer must be SIX WORDS OR FEWER: a name, a number, a date, a short \
 noun phrase. Not a definition and not a sentence.
-- If the query asks for a definition or an explanation, its answer cannot be \
-six words, so set "answerable" to false.
+- If the query asks for a definition, an explanation, a comparison between two \
+things, or a how-to, its answer cannot be a short copied span, so set \
+"answerable" to false.
 - If the answer is just "yes" or "no", set "answerable" to false — a coin gets \
 those right half the time.
 - Quote the exact words from one passage that state the answer. The quote is \
@@ -93,6 +96,11 @@ def fold(text: str) -> str:
     decomposed = unicodedata.normalize("NFKD", text)
     stripped = "".join(ch for ch in decomposed if not unicodedata.combining(ch))
     return re.sub(r"\s+", " ", stripped).strip().lower()
+
+
+def normalise(text: str) -> str:
+    """Compare on words, ignoring punctuation — the check is extractiveness."""
+    return re.sub(r"[^\w\s]", " ", re.sub(r"\s+", " ", fold(text))).replace("  ", " ").strip()
 
 
 def web_queries() -> dict[str, DiscriminationTask]:
@@ -191,6 +199,13 @@ def main() -> None:
                 continue
             if fold(quote) not in fold(passage.text):
                 rejected.append(f"{query_id}: quote not found in passage {passage_id!r}")
+                continue
+            # The answer must be a span of the passage, not a summary of it. A
+            # gold like "one slice cheese vs two" is true and useful and no
+            # model will ever phrase it that way, so containment matching would
+            # fail a correct answer — which is a broken label, not a wrong model.
+            if normalise(text) not in normalise(passage.text):
+                rejected.append(f"{query_id}: answer is not a span of the passage")
                 continue
             if len(text.split()) > MAX_WORDS:
                 rejected.append(f"{query_id}: {len(text.split())} words, too long to check")

@@ -20,22 +20,43 @@ Two ways to be right, and they are the whole task:
 
 <DiscriminationResults />
 
-## What this first run says
+## What this run says
 
-**Both models answer when they should not.** On items where a human assessor
-read every result against that question and rejected all of them, Qwen answered
-anyway 11 times out of 30 and Nemotron 14 out of 30. Asked *is caffeine a
-narcotic* — with nothing in the results addressing it — Nemotron replied "No".
-A reasonable answer, and not one that came from the evidence, which is the
-failure this category exists to catch.
+`qwen/qwen3.8-27b` on all 199 scorable items: **72.4% correct**.
 
-**Neither model makes the opposite mistake.** Zero wrong refusals, both models.
-When the answer is there, they use it; they never say "not in the results" about
-results that hold the answer. The error is entirely one-sided.
+| Category | Items | Correct | |
+| --- | ---: | ---: | ---: |
+| wikipedia | 120 | 92 | 76.7% |
+| web | 39 | 26 | 66.7% |
+| no_answer | 40 | 26 | 65.0% |
 
-**Noise costs accuracy.** Qwen: 85% on five results, 65% on ten, 70% on twenty.
-Nemotron: 75%, 65%, 55%. Thin evidence at 20 items per tier, but the direction
-is what the tiers were built to show.
+**It answers when it should not.** On the 40 items where a human read every
+result against the question and rejected all of them, it produced an answer 14
+times. Those answers are often true — asked *is caffeine a narcotic*, "No" is
+correct — but they did not come from the evidence, which is the failure this
+category exists to catch.
+
+**The opposite error is rarer but real.** Seven times it said the results had no
+answer when they did.
+
+**Noise does not degrade it cleanly.** 74.6% on five results, 65.2% on ten,
+77.3% on twenty. The dip in the middle is not a curve, and with ~66 items a
+tier it is not yet evidence of anything.
+
+## A label problem this run exposed
+
+The first scoring of the web category read 43.1%, and it was my labelling, not
+the model. Answers written to a six-word cap came out telegraphic — `one slice
+cheese vs two`, `RN is license, BSN is degree` — and no model phrases things
+that way, so correct answers were being marked wrong.
+
+Gold answers must now be **a span copied out of the passage**, checked
+automatically. That dropped 11 of 24 annotated queries, including every
+comparison and cost-range one. The remaining 13 are the sort that have a single
+right answer: *tracheids are part of _____* → `xylem`, *when was the salvation
+army founded* → `1865`.
+
+Web accuracy after the fix: 66.7%. The earlier 43.1% measured my labels.
 
 ## What this does not measure
 

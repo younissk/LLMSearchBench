@@ -2,8 +2,8 @@
   "task": "search-result-discrimination",
   "title": "Search-result discrimination",
   "generated": "2026-09-23",
-  "taskItems": 160,
-  "sampleItems": 60,
+  "taskItems": 199,
+  "sampleItems": 199,
   "rows": [
     {
       "model": "qwen/qwen3.8-27b",
@@ -11,95 +11,52 @@
       "provider": "OpenRouter",
       "isFree": false,
       "paramsB": 27.781427952,
-      "scored": 60,
-      "failed": 0,
-      "fabricated": 11,
-      "wronglyRefused": 0,
-      "overall": {
-        "name": "overall",
-        "items": 60,
-        "correct": 44,
-        "accuracy": 0.7333333333333333
-      },
-      "slices": [
-        {
-          "name": "wikipedia",
-          "items": 30,
-          "correct": 25,
-          "accuracy": 0.8333333333333334
-        },
-        {
-          "name": "no_answer",
-          "items": 30,
-          "correct": 19,
-          "accuracy": 0.6333333333333333
-        },
-        {
-          "name": "easy",
-          "items": 20,
-          "correct": 17,
-          "accuracy": 0.85
-        },
-        {
-          "name": "medium",
-          "items": 20,
-          "correct": 13,
-          "accuracy": 0.65
-        },
-        {
-          "name": "hard",
-          "items": 20,
-          "correct": 14,
-          "accuracy": 0.7
-        }
-      ]
-    },
-    {
-      "model": "nvidia/nemotron-3-super-120b-a12b:free",
-      "label": "Nemotron 3 Super 120B-A12B (free)",
-      "provider": "OpenRouter",
-      "isFree": true,
-      "paramsB": null,
-      "scored": 60,
-      "failed": 10,
+      "scored": 199,
+      "failed": 3,
       "fabricated": 14,
-      "wronglyRefused": 0,
+      "wronglyRefused": 7,
       "overall": {
         "name": "overall",
-        "items": 60,
-        "correct": 39,
-        "accuracy": 0.65
+        "items": 199,
+        "correct": 144,
+        "accuracy": 0.7236180904522613
       },
       "slices": [
         {
+          "name": "web",
+          "items": 39,
+          "correct": 26,
+          "accuracy": 0.6666666666666666
+        },
+        {
           "name": "wikipedia",
-          "items": 30,
-          "correct": 23,
+          "items": 120,
+          "correct": 92,
           "accuracy": 0.7666666666666667
         },
         {
           "name": "no_answer",
-          "items": 30,
-          "correct": 16,
-          "accuracy": 0.5333333333333333
-        },
-        {
-          "name": "easy",
-          "items": 20,
-          "correct": 15,
-          "accuracy": 0.75
-        },
-        {
-          "name": "medium",
-          "items": 20,
-          "correct": 13,
+          "items": 40,
+          "correct": 26,
           "accuracy": 0.65
         },
         {
+          "name": "easy",
+          "items": 67,
+          "correct": 50,
+          "accuracy": 0.746268656716418
+        },
+        {
+          "name": "medium",
+          "items": 66,
+          "correct": 43,
+          "accuracy": 0.6515151515151515
+        },
+        {
           "name": "hard",
-          "items": 20,
-          "correct": 11,
-          "accuracy": 0.55
+          "items": 66,
+          "correct": 51,
+          "accuracy": 0.7727272727272727
         }
       ]
     }
