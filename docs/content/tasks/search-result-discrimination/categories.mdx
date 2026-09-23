@@ -13,8 +13,6 @@ It is a reported dimension rather than a detail, because a model can read web
 snippets well and multi-paragraph Wikipedia badly, and one averaged number
 would hide it.
 
-<a id="grades"></a>
-
 ## The grade scale
 
 Every candidate carries a grade on TREC's four-point scale:
@@ -39,8 +37,6 @@ That sentence is why this benchmark uses TREC at all. The distinction between
 A candidate counts as supporting evidence at grade 2 or above. Grade 1 never
 does.
 
-<a id="web"></a>
-
 ## `web` — 171 items
 
 **Source:** TREC Deep Learning track 2019 and 2020, passage judgements over the
@@ -62,14 +58,12 @@ licence, so this repository does not redistribute its text. The `web` and
 `no_answer` items are built on your machine from your own download — about
 twenty seconds after `make data` — and a committed manifest of ids and
 checksums proves your build matches the published one. See
-[building](./building#local).
+[building](./building#why-part-of-the-set-is-built-on-your-machine).
 
 :::
 
 There is no gold answer for this category. TREC judged relevance, not answers,
 so answer correctness is not scored here; relevance is.
-
-<a id="wikipedia"></a>
 
 ## `wikipedia` — 120 items
 
@@ -97,8 +91,6 @@ judgement. The two are never averaged into one number.
 
 This category does have gold answers, so it is where answer correctness and
 groundedness get measured.
-
-<a id="no_answer"></a>
 
 ## `no_answer` — 40 items
 

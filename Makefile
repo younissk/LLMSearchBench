@@ -100,6 +100,10 @@ tasks-discrimination: ## Rebuild the search-result-discrimination task set
 	$(UV) run python scripts/extract_judged_passages.py
 	$(UV) run llmsearchbench tasks build-discrimination
 
+.PHONY: examples-discrimination
+examples-discrimination: ## Write a page per discrimination item for the docs
+	$(UV) run llmsearchbench examples-discrimination
+
 .PHONY: tasks-stats
 tasks-stats: ## Describe the committed task set
 	$(UV) run llmsearchbench tasks stats

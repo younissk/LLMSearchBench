@@ -74,9 +74,9 @@ candidates it used is what closes that hole.
 
 | Category | Items | Candidates come from | Labels |
 | --- | --- | --- | --- |
-| [`web`](./categories#web) | 171 | Web passages, TREC Deep Learning 2019 and 2020 | graded by human assessors, 0–3 |
-| [`wikipedia`](./categories#wikipedia) | 120 | Wikipedia paragraphs, HotpotQA distractor split | derived from supporting facts |
-| [`no_answer`](./categories#no_answer) | 40 | Web passages a human read and rejected | graded by human assessors, all 0 |
+| [`web`](/docs/tasks/search-result-discrimination/categories#web--171-items) | 171 | Web passages, TREC Deep Learning 2019 and 2020 | graded by human assessors, 0–3 |
+| [`wikipedia`](/docs/tasks/search-result-discrimination/categories#wikipedia--120-items) | 120 | Wikipedia paragraphs, HotpotQA distractor split | derived from supporting facts |
+| [`no_answer`](/docs/tasks/search-result-discrimination/categories#no_answer--40-items) | 40 | Web passages a human read and rejected | graded by human assessors, all 0 |
 
 `no_answer` is the one most benchmarks leave out, and leaving it out teaches
 the model a falsehood: that one of the results always contains the answer. Real
@@ -106,6 +106,6 @@ It is also not tied to a search product. The candidates here happen to be web
 passages and Wikipedia paragraphs; the format takes any source, and the
 category dimension exists so more can be added without averaging them together.
 
-Next: [the three categories](./categories), [what gets
-measured](./metrics), [how the set was built](./building), and [what it cannot
-tell you](./limitations).
+Next: [the three categories](/docs/tasks/search-result-discrimination/categories), [what gets
+measured](/docs/tasks/search-result-discrimination/metrics), [how the set was built](/docs/tasks/search-result-discrimination/building), and [what it cannot
+tell you](/docs/tasks/search-result-discrimination/limitations).
