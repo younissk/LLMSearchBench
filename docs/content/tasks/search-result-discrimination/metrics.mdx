@@ -1,0 +1,125 @@
+---
+id: metrics
+title: What gets measured
+sidebar_label: What gets measured
+sidebar_position: 3
+description: Ranking quality, evidence selection, abstention and answer correctness — four scores, kept apart.
+---
+
+# What gets measured
+
+Four things, reported separately. A single "accuracy" here would let a model
+hide one failure behind another.
+
+## The output the model has to produce
+
+```json
+{
+  "ranking": [3, 4, 1, 5, 2],
+  "relevant": [3, 4],
+  "answer": "Notre Dame Fighting Irish football"
+}
+```
+
+- `ranking` — every candidate id, best evidence first.
+- `relevant` — the ones it would actually cite. Empty means *the results do not
+  answer this*.
+- `answer` — the answer those candidates support, or an explicit refusal.
+
+Asking for the evidence is not decoration. A model that already knows who
+replaced Tony Roberts can answer without reading a single candidate, and a
+benchmark that only checks the answer would call that a success.
+
+## 1. Ranking quality — nDCG@10
+
+The standard information-retrieval measure, and the primary score. Discounted
+cumulative gain at rank $k$, using the graded labels:
+
+$$
+\mathrm{DCG}@k = \sum_{i=1}^{k} \frac{2^{g_i} - 1}{\log_2(i + 1)}
+$$
+
+where $g_i$ is the grade of the candidate the model put at position $i$.
+Normalising against the best possible ordering gives
+
+$$
+\mathrm{nDCG}@k = \frac{\mathrm{DCG}@k}{\mathrm{IDCG}@k}
+$$
+
+so 1.0 means the model ordered the candidates as well as the labels allow, and
+0 means it put nothing useful in the top $k$.
+
+Two properties matter here. The $2^{g}-1$ numerator makes a grade-3 passage
+worth much more than a grade-1 one, and the $\log_2(i+1)$ denominator means
+rank 1 counts for more than rank 10. Both are what you want when the question
+is "did the evidence come first".
+
+`nDCG@10` on the five-candidate tier is `nDCG@5` in effect — there is no
+eleventh candidate to get wrong.
+
+## 2. Evidence selection — precision, recall, F1
+
+The `relevant` list, treated as a set against the candidates graded 2 or 3:
+
+$$
+P = \frac{|\text{chosen} \cap \text{supporting}|}{|\text{chosen}|},
+\qquad
+R = \frac{|\text{chosen} \cap \text{supporting}|}{|\text{supporting}|},
+\qquad
+F_1 = \frac{2PR}{P + R}
+$$
+
+Recall and precision fail in different directions and are reported apart.
+Naming every candidate gives perfect recall and terrible precision; naming one
+of two supporting paragraphs on a `wikipedia` item gives the reverse. The
+false-positive rate on grade-0 candidates is reported too, because picking up
+noise is the specific failure this task is about.
+
+## 3. Abstention — on the `no_answer` category
+
+For the 40 items where a human read every candidate and rejected all of them:
+
+- **abstention rate** — how often the model says the results do not answer it.
+- **fabrication rate** — how often it produces an answer anyway.
+
+An answer here is wrong even when it is factually true, because it did not come
+from the evidence. That is the point of the category.
+
+The mirror error is measured on the other two categories: refusing to answer
+when a graded-3 passage is sitting in the candidate set.
+
+## 4. Answer quality — `wikipedia` only
+
+- **correctness** — does the answer match a gold answer, compared leniently
+  (accent- and punctuation-insensitive containment, as in the first task).
+- **groundedness** — do the claims in the answer appear in the candidates the
+  model cited? An answer that is right but rests on a candidate graded 0 is
+  right for the wrong reason, and worth seeing.
+
+The `web` category has no gold answer — TREC judged relevance, not answers — so
+correctness is not scored there. Pretending otherwise would mean inventing
+answers and calling them ground truth.
+
+## Reading it by noise tier
+
+Every score is also reported per tier, because the interesting number is not
+the average but the slope:
+
+| Tier | Candidates | Relevant |
+| --- | --- | --- |
+| easy | 5 | 1 |
+| medium | 10 | 2 |
+| hard | 20 | 4 |
+
+Each `web` question appears at all three tiers with the same relevant
+passages, so the comparison is within a question. A model that holds nDCG
+steady from 5 to 20 candidates is doing something different from one that
+collapses, and an average over the three would report them as the same.
+
+## What is deliberately not scored
+
+- **Fluency, length, style.** Not measured, not penalised.
+- **Whether the model would have searched.** That is [task
+  one](../tool-use-correctness/).
+- **What it would have searched for.** That is [search
+  quality](../search-quality), which does not exist yet.

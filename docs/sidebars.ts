@@ -29,6 +29,18 @@ const sidebars: SidebarsConfig = {
             'tasks/tool-use-correctness/open-weight-coverage',
           ],
         },
+        {
+          type: 'category',
+          label: 'Search-result discrimination',
+          collapsed: false,
+          link: {type: 'doc', id: 'tasks/search-result-discrimination/index'},
+          items: [
+            'tasks/search-result-discrimination/categories',
+            'tasks/search-result-discrimination/metrics',
+            'tasks/search-result-discrimination/building',
+            'tasks/search-result-discrimination/limitations',
+          ],
+        },
         'tasks/search-quality',
       ],
     },

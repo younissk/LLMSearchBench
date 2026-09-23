@@ -1,0 +1,86 @@
+---
+id: limitations
+title: What this task cannot tell you
+sidebar_label: What it cannot tell you
+sidebar_position: 5
+description: Where the labels are weak, where the set is thin, and which categories are missing.
+---
+
+# What this task cannot tell you
+
+## The labels are two different kinds of thing
+
+The `web` and `no_answer` grades are relevance judgements: a person read that
+passage against that query and graded it. The `wikipedia` grades are derived
+from HotpotQA's supporting-fact annotations — the dataset says which paragraphs
+its supporting sentences came from, and this build turns that into grade 3
+against grade 0.
+
+Derived labels have no middle. A HotpotQA distractor that is genuinely on topic
+and nearly answers the question is graded 0, the same as one about a different
+continent. Every item records `label_source`, and the two kinds are never
+averaged into one number, but the asymmetry does not go away by being labelled.
+
+## Assessors are not infallible
+
+TREC's judgements are the best available, not the truth. One example from the
+set: for the query *anthropological definition of environment*, a passage about
+**forensic** anthropology is graded 3. Arguably generous. It stays as graded,
+because quietly re-judging someone else's assessments would make the labels
+ours and undocumented.
+
+## 57 questions is not many
+
+The `web` category has 171 items but only **57 distinct questions** — each is
+built at three noise tiers. The tiers are the point, and they support a
+within-question comparison that 171 unrelated questions could not. But three
+items from one question are not three independent observations, and any
+confidence interval has to be computed over questions, not items.
+
+TREC 2019 and 2020 judged 97 queries between them. That is the ceiling of this
+source; a wider `web` category needs another year of the track or another
+judged collection.
+
+## The no-answer category is all from one year
+
+The 40 reserved queries are the last 40 in build order, which are all from the
+2020 track. Nothing about 2020 makes a query special, but it does mean the
+category is not a random sample of the two years.
+
+## Noise stops at twenty
+
+The hard tier shows 20 candidates. Real search shows more, and the interesting
+collapse may start somewhere past this ceiling. Twenty was chosen so the whole
+candidate set fits in a modest context window without truncation becoming the
+thing being measured — but it does mean the fall-off curve has three points on
+it, not a continuum.
+
+## Categories that are missing
+
+The design admits any source of candidates. Three exist. These do not:
+
+- **Conflicting results** — two candidates that disagree about a date, where
+  the model has to resolve rather than copy. This needs authored contradictions
+  or a counterfactual source; nothing here supplies them.
+- **Outdated results** — a passage that was correct five years ago. Requires a
+  time-stamped corpus.
+- **Reasoning-heavy relevance** — where finding the relevant document needs a
+  reasoning step rather than a semantic match. BRIGHT is the obvious source,
+  but it publishes gold ids without negatives, so candidate sets would have to
+  be built with a retriever, and the moment a retriever enters the pipeline
+  the benchmark stops being retriever-agnostic.
+- **Duplicate results** — the same fact three times, to see whether repetition
+  reads as confirmation.
+
+## The answer side is thin
+
+Answer correctness is scored on 120 items — the `wikipedia` category — because
+that is the only category whose source carries answers. The `web` category has
+3.9 times as many candidates and no gold answer at all. Anything said about
+answer quality here rests on the smaller half of the set.
+
+## Nothing has been run
+
+There is no harness and no leaderboard yet. The numbers on the [metrics
+page](./metrics) describe what would be computed, not what was. Until a run
+exists, none of this is evidence about any model.

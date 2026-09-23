@@ -1,0 +1,150 @@
+---
+id: categories
+title: The three categories
+sidebar_label: The three categories
+sidebar_position: 2
+description: Where the candidates come from, what the grades mean, and a real example of each.
+---
+
+# The three categories
+
+A category says where the results came from and who decided what was relevant.
+It is a reported dimension rather than a detail, because a model can read web
+snippets well and multi-paragraph Wikipedia badly, and one averaged number
+would hide it.
+
+<a id="grades"></a>
+
+## The grade scale
+
+Every candidate carries a grade on TREC's four-point scale:
+
+| Grade | Meaning |
+| :---: | --- |
+| 3 | perfect — answers the question |
+| 2 | highly relevant |
+| 1 | **related but does NOT answer it** |
+| 0 | not relevant |
+
+Grade 1 is the interesting one, and it is NIST's own wording:
+
+> Passages were judged on a four-point scale of Not Relevant (0), Related (1),
+> Highly Relevant (2), and Perfect (3), where 'Related' is actually NOT
+> Relevant — it means that the passage was on the same general topic, but did
+> not answer the question.
+
+That sentence is why this benchmark uses TREC at all. The distinction between
+*on topic* and *answers it* is the whole task, and a person already drew it.
+
+A candidate counts as supporting evidence at grade 2 or above. Grade 1 never
+does.
+
+<a id="web"></a>
+
+## `web` — 171 items
+
+**Source:** TREC Deep Learning track 2019 and 2020, passage judgements over the
+MS MARCO collection. 57 questions, each built at all three noise tiers.
+
+The non-relevant candidates here were *retrieved for this query* by the systems
+that competed in the track, then read and rejected by an assessor. Nobody had
+to invent distractors: they are what a real retrieval system actually returned.
+
+Example, `srd-web-dl19-19335-easy` — question: **"anthropological definition of
+environment"**. Five candidates: three graded relevant, two graded 0, one of
+which is about zeolite in aquariums and another about environmental *science*
+as a discipline. The second is the hard one.
+
+:::note[The passages are not in this repository]
+
+MS MARCO's terms grant non-commercial research use and explicitly extend no
+licence, so this repository does not redistribute its text. The `web` and
+`no_answer` items are built on your machine from your own download — about
+twenty seconds after `make data` — and a committed manifest of ids and
+checksums proves your build matches the published one. See
+[building](./building#local).
+
+:::
+
+There is no gold answer for this category. TREC judged relevance, not answers,
+so answer correctness is not scored here; relevance is.
+
+<a id="wikipedia"></a>
+
+## `wikipedia` — 120 items
+
+**Source:** HotpotQA's distractor split. Ten paragraphs per question, two
+carrying the supporting sentences and eight retrieved as near neighbours of the
+question.
+
+These questions need **two** candidates joined together, which is a different
+skill from picking one good result:
+
+> **What team had Tony Roberts replaced by an American sportscaster from
+> Buffalo, New York when he retired?**
+
+One paragraph identifies Tony Roberts. Another identifies the man from Buffalo
+who replaced him. Neither alone answers it.
+
+110 of the 120 are HotpotQA's `bridge` type — follow a link from one fact to
+the next — and 10 are `comparison`.
+
+The grades here are **derived**, not judged: HotpotQA records which paragraphs
+its supporting sentences came from, so those become grade 3 and the rest 0.
+There is no middle. Every item records `label_source: derived` for exactly this
+reason, and a derived label is weaker evidence than a human relevance
+judgement. The two are never averaged into one number.
+
+This category does have gold answers, so it is where answer correctness and
+groundedness get measured.
+
+<a id="no_answer"></a>
+
+## `no_answer` — 40 items
+
+**Source:** TREC again — 40 queries held back from the `web` category, using
+only their grade-0 passages.
+
+Nothing is fabricated and nothing is deleted to make these. Every candidate in
+a `no_answer` item was read by an assessor against this exact question and
+graded **0**. Grade 1 passages are excluded too, since "related but does not
+answer" is the grey area this category is not about.
+
+The right response is that the results do not answer the question. A model that
+answers anyway is either hallucinating or answering from memory, and both are
+failures of the thing being measured.
+
+A question never appears in both `web` and `no_answer`. A model that had
+already seen the answerable version would recognise the question instead of
+reading the candidates, which is the exact behaviour this category is trying to
+catch.
+
+## What the shipped file looks like
+
+```json
+{
+  "id": "srd-wiki-5ab6e6c75542",
+  "category": "wikipedia",
+  "question": "What team had Tony Roberts replaced by an American sportscaster from Buffalo, New York when he retired?",
+  "candidates": [
+    {"id": "1", "text": "Eli Gold (born December 15, 1953) is an American sportscaster…", "title": "Eli Gold", "source_id": ""},
+    {"id": "3", "text": "Tony Roberts (born 1928) is an American retired sportscaster…", "title": "Tony Roberts (sportscaster)", "source_id": ""}
+  ],
+  "relevance": {"1": 0, "2": 0, "3": 3, "4": 3, "5": 0},
+  "supporting_ids": ["3", "4"],
+  "gold_answer": ["Notre Dame Fighting Irish football"],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ab6e6c75542992ae4cf7f5f",
+  "subcategory": "bridge-hard",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from…"
+}
+```
+
+The model is shown `question` and `candidates` only. `relevance`,
+`supporting_ids` and `gold_answer` are what it is scored against.
+
+Candidate order is a seeded shuffle. In every source the relevant passages
+arrive first, and a model that learned "the answer is near the top" would score
+well without reading anything.

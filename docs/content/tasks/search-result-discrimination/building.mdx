@@ -1,0 +1,125 @@
+---
+id: building
+title: How the set was built
+sidebar_label: How it was built
+sidebar_position: 4
+description: The sources, the admission rules, the counts, and why part of the set is built on your machine.
+---
+
+# How the set was built
+
+One command, a fixed seed, and a report of everything it turned away:
+
+```bash
+make data                  # download the sources, checksums verified
+make tasks-discrimination  # extract the judged passages, then build
+```
+
+Building it twice gives byte-identical files. The seed is `20260923`.
+
+## Where the data comes from
+
+| Source | What it gives | Licence |
+| --- | --- | --- |
+| [TREC Deep Learning 2019 + 2020](https://trec.nist.gov/data/deep2020.html) | 20,646 human relevance judgements over 97 queries | US Government work (NIST) |
+| [MS MARCO passages](https://microsoft.github.io/msmarco/) | the text of the judged passages | non-commercial research use, no licence extended |
+| [HotpotQA](https://hotpotqa.github.io/) | 7,405 questions, each with 2 supporting and 8 distractor paragraphs | CC BY-SA 4.0 |
+
+Every file is pinned by SHA-256 in
+[`data/datasets.lock.json`](https://github.com/younissk/LLMSearchBench/blob/main/data/datasets.lock.json),
+and the licence texts as received are in `attribution/licenses/`.
+
+## The MS MARCO detour
+
+The judged passages are named by id in the TREC files; their text lives in a
+987 MB archive of 8.8 million passages. Only 20,349 of them were ever judged,
+so `scripts/extract_judged_passages.py` streams the archive once, keeps those,
+and writes a 2.5 MB file. It takes about twenty seconds and stops as soon as
+the last one turns up.
+
+<a id="local"></a>
+
+## Why part of the set is built on your machine
+
+Microsoft grants non-commercial research use of MS MARCO and states plainly
+that no licence is extended. So this repository does not redistribute its text:
+
+- **shipped** — `tasks/search-result-discrimination.jsonl`, the 120 `wikipedia`
+  items, whose source is CC BY-SA 4.0.
+- **built locally** — the 171 `web` and 40 `no_answer` items, written to
+  `tasks/local/`, which is git-ignored.
+- **committed instead** — `search-result-discrimination.local.manifest.json`,
+  holding every local item's id and a SHA-256 of its canonical JSON.
+
+That manifest is what makes the arrangement work: your build either matches the
+published one checksum for checksum, or it does not, and you can tell which
+without anyone shipping a passage they have no right to ship.
+
+## Admission rules
+
+Each rule has a name, and every rejection is counted in
+`tasks/search-result-discrimination.report.json`.
+
+### Web and no-answer
+
+| Rule | A query is rejected when |
+| --- | --- |
+| W1 | no candidate is graded 2 or 3 — there is nothing to find |
+| W2 | fewer than four judged-irrelevant passages — there is no noise |
+| W3 | a judged passage is missing from the extracted collection |
+| W4 | every relevant passage is outside the length bounds |
+| W5 | the query text is missing from the topics file |
+| W6 | not enough judged-irrelevant passages to fill this tier |
+| N1 | not enough judged-irrelevant passages for a no-answer item |
+
+No TREC query was rejected: all 97 carry both relevant and irrelevant
+judgements, which is unsurprising given assessors judged around 200 passages
+each.
+
+### Wikipedia
+
+| Rule | An item is rejected when | Count |
+| --- | --- | ---: |
+| H5 | a paragraph is outside the 120–2000 character bounds | 1,249 |
+| H2 | the answer is yes/no — guessable without reading anything | 458 |
+| H1 | the context is not the ten-paragraph distractor layout | 49 |
+| H3 | a supporting title is missing from the paragraph list | 0 |
+| H4 | the answer appears in neither supporting paragraph | 0 |
+| H6 | not enough borrowed distractors for the hard tier | 0 |
+
+**H2** matters more than its count suggests. A yes/no question can be answered
+correctly by a coin, so those items would measure luck rather than reading.
+
+**H4** is the quality check that found nothing: in every surviving item the
+answer string really does appear in a paragraph HotpotQA marked as supporting.
+A rule that catches nothing is still worth running — it is the difference
+between knowing and assuming.
+
+## How an item is assembled
+
+1. Take the relevant candidates, best grade first, capped at four.
+2. Keep as many as the tier allows: one in five, two in ten, four in twenty.
+3. Fill the rest with judged-irrelevant passages, sampled with the item's own
+   seeded generator.
+4. Shuffle the whole set. In every source the relevant passages come first, and
+   a model that learned that would score well without reading.
+5. Label every candidate, derive `supporting_ids` from the labels rather than
+   stating them separately, and reject the item if the two disagree.
+
+The hard tier of the `wikipedia` category needs twenty paragraphs where
+HotpotQA supplies ten, so it borrows distractors from other questions in the
+same dataset. A borrowed paragraph is skipped if it shares a title with a
+supporting paragraph or contains the answer string — either would make a
+"distractor" relevant.
+
+## What came out
+
+| | Items | Questions | Candidates | Relevant | Labels |
+| --- | ---: | ---: | ---: | ---: | --- |
+| `web` | 171 | 57 | 1,995 | 397 | human |
+| `wikipedia` | 120 | 120 | 1,400 | 240 | derived |
+| `no_answer` | 40 | 40 | 460 | 0 | human |
+| **total** | **331** | **217** | **3,855** | **637** | |
+
+3,855 candidates in total, of which 3,218 are graded 0. The median candidate is
+322 characters. Tiers come out even: 111 easy, 110 medium, 110 hard.
