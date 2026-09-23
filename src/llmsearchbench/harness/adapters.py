@@ -138,18 +138,21 @@ def build_adapter(model_id: str, *, effort: str = "high") -> Any:
     Fails loudly for an unknown id or a missing key: a benchmark that quietly
     substitutes a different model produces numbers nobody can place.
     """
-    from llmsearchbench.harness.openrouter import OpenRouterAdapter
+    from llmsearchbench.harness.openai_compat import MoonshotAdapter, OpenRouterAdapter
 
     spec = get_model(model_id)
     provider = get_provider(spec.provider)
     if provider.key == "anthropic":
         return AnthropicAdapter(spec, effort=effort)
-    if provider.key == "openrouter":
+
+    compatible = {"openrouter": OpenRouterAdapter, "moonshot": MoonshotAdapter}
+    if provider.key in compatible:
         try:
-            return OpenRouterAdapter(spec, effort=effort)
+            return compatible[provider.key](spec, effort=effort)
         except RuntimeError as error:
             raise NotConfiguredError(str(error)) from None
+
     raise NotConfiguredError(
         f"no adapter is wired up for provider {provider.key!r}. "
-        "Add one in src/llmsearchbench/harness/adapters.py."
+        "Add one in src/llmsearchbench/harness/openai_compat.py."
     )

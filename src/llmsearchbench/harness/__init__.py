@@ -1,7 +1,7 @@
 """Putting a prompt to a model and recording what it did.
 
 * `adapters` — talking to a model; the tool is offered, never executed
-* `openrouter` — the OpenRouter route
+* `openai_compat` — providers speaking the OpenAI chat-completions shape
 * `tooluse` — the run loop
 """
 

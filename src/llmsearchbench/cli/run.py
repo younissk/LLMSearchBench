@@ -18,7 +18,7 @@ from rich.table import Table
 
 from llmsearchbench.cli._shared import EXIT_BAD_INPUT, EXIT_NOT_WIRED
 from llmsearchbench.harness import NotConfiguredError, build_adapter
-from llmsearchbench.harness.openrouter import OpenRouterError
+from llmsearchbench.harness.openai_compat import ChatCompletionsError
 from llmsearchbench.harness.tooluse import DEFAULT_CONCURRENCY, completed_task_ids, run_tasks
 from llmsearchbench.paths import RESULTS, TASKS
 from llmsearchbench.providers import UnknownModelError, get_model, provider_label
@@ -156,7 +156,7 @@ def run(
                 on_item=on_item,
                 concurrency=concurrency,
             )
-        except OpenRouterError as error:
+        except ChatCompletionsError as error:
             progress.stop()
             fail(str(error))
             warn(f"partial results are in {attempts_path}; rerun to resume")
