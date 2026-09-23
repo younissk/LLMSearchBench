@@ -176,7 +176,8 @@ class TestRunTasks:
 
         attempts = run_tasks([task("a")], "m", adapter, out_path=out, concurrency=1)
         assert attempts[0].failed
-        assert completed_task_ids(out) == {"a"}
+        # Recorded, but not "done": a rerun must retry it.
+        assert completed_task_ids(out) == set()
 
     def test_completed_ids_is_empty_when_nothing_has_run(self, tmp_path: Path) -> None:
         assert completed_task_ids(tmp_path / "absent.jsonl") == set()
@@ -224,7 +225,8 @@ class TestConcurrency:
         assert by_id["good"].answer == "fine"
         assert by_id["bad"].failed
         assert "ConnectionError" in by_id["bad"].error
-        assert completed_task_ids(out) == {"good", "bad"}
+        # The good one is done; the failure is left for a rerun to retry.
+        assert completed_task_ids(out) == {"good"}
 
 
 class TestProviderErrorExplanation:

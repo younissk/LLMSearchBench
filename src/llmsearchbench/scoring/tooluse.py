@@ -163,11 +163,15 @@ def score(
 ) -> ToolUseScore:
     """Collapse one model's attempts into a published result.
 
-    Every task must have exactly one attempt: a missing attempt is a broken run,
-    not a zero, and silently scoring it as a failed decision would understate
-    the model rather than surface the bug.
+    Attempts that failed outright are dropped, not scored. A provider error
+    produced no decision, and counting one as "chose not to search" would be
+    correct on two buckets out of three — which is how a model that failed
+    every single item once appeared mid-table at 67%.
+
+    Every remaining task must have exactly one attempt: a missing attempt is a
+    broken run, not a zero.
     """
-    by_id = {attempt.task_id: attempt for attempt in attempts}
+    by_id = {attempt.task_id: attempt for attempt in attempts if not attempt.failed}
     missing = [task.id for task in tasks if task.id not in by_id]
     if missing:
         raise ValueError(

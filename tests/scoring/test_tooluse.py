@@ -165,3 +165,20 @@ class TestScore:
         tasks, attempts = self.build()
         with pytest.raises(ValueError, match="no attempt"):
             score("m", tasks, attempts[:-1])
+
+
+class TestFailedAttempts:
+    def test_a_failed_attempt_is_not_a_decision(self) -> None:
+        tasks = [task("ok", Bucket.MEMORY), task("broken", Bucket.MEMORY)]
+        attempts = [
+            attempt("ok", answer="Paris"),
+            attempt("broken").model_copy(update={"error": "404: no endpoints"}),
+        ]
+        result = score("m", tasks[:1], attempts)
+        assert result.items == 1
+
+    def test_scoring_a_run_where_everything_failed_raises(self) -> None:
+        """Better to stop than to publish a score built on no observations."""
+        broken = attempt("t").model_copy(update={"error": "404"})
+        with pytest.raises(ValueError, match="no attempt"):
+            score("m", [task("t")], [broken])

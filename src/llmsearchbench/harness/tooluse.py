@@ -106,9 +106,17 @@ def run_tasks(
 
 
 def completed_task_ids(path: Path) -> set[str]:
-    """Task ids already recorded, so a run can resume."""
+    """Task ids already answered, so a run can resume.
+
+    An item that failed does not count as done: a rerun should retry it, which
+    is what makes a transient provider error recoverable rather than permanent.
+    """
     if not path.exists():
         return set()
     from llmsearchbench.storage import read_jsonl
 
-    return {str(row["task_id"]) for row in read_jsonl(path) if "task_id" in row}
+    return {
+        str(row["task_id"])
+        for row in read_jsonl(path)
+        if row.get("task_id") and not row.get("error")
+    }

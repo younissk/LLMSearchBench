@@ -55,9 +55,11 @@ def leaderboard(
     for path in files:
         model = unslug(path.stem)
         attempts = load_attempts(path)
-        answered = {a.task_id for a in attempts}
+        # A failed item produced no decision, so it does not count as answered.
+        answered = {a.task_id for a in attempts if not a.failed}
         scored_tasks = [t for t in tasks if t.id in answered]
         if not scored_tasks:
+            warn(f"{model}: every item failed; nothing to score")
             continue
         if complete_only and len(scored_tasks) < len(by_id):
             continue
@@ -91,6 +93,7 @@ def leaderboard(
     table.add_column("no_tool", justify="right")
     table.add_column("Adversarial", justify="right")
     table.add_column("Calls OK", justify="right")
+    table.add_column("Failed", justify="right")
     table.add_column("Cost", justify="right")
 
     def pct(value: float) -> str:
@@ -108,6 +111,7 @@ def leaderboard(
             pct(buckets.get(Bucket.NO_TOOL, 0)),
             pct(result.adversarial_accuracy),
             pct(result.well_formed_rate) if stats.search_calls_total else "-",
+            f"[warn]{stats.failed_items}[/warn]" if stats.failed_items else "0",
             f"${stats.cost.total_usd:.3f}" if stats.cost.priced else "free",
         )
 
@@ -144,9 +148,11 @@ def publish(
     for path in sorted(results_dir.glob("*-attempts.jsonl")):
         model_id = unslug(path.stem)
         attempts = load_attempts(path)
-        answered = {a.task_id for a in attempts}
+        # A failed item produced no decision, so it does not count as answered.
+        answered = {a.task_id for a in attempts if not a.failed}
         scored_tasks = [t for t in tasks if t.id in answered]
         if not scored_tasks:
+            warn(f"{model_id}: every item failed; not published")
             continue
 
         complete = len(scored_tasks) == len(tasks)

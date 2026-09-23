@@ -140,7 +140,9 @@ def compute(
 ) -> RunStats:
     """Summarise one model's run. Tasks supply the bucket each attempt belongs to."""
     by_id = {task.id: task for task in tasks}
-    scored = [attempt for attempt in attempts if attempt.task_id in by_id]
+    # Failures cost nothing and measured nothing; they are counted, not scored.
+    scored = [a for a in attempts if a.task_id in by_id and not a.failed]
+    failures = sum(1 for a in attempts if a.task_id in by_id and a.failed)
 
     try:
         spec = get_model(model)
@@ -216,7 +218,7 @@ def compute(
     return RunStats(
         model=model,
         items=len(scored),
-        failed_items=sum(1 for a in scored if a.failed),
+        failed_items=failures,
         tokens=tokens,
         time=time_stats,
         cost=cost,

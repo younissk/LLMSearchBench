@@ -171,3 +171,22 @@ class TestCallCounts:
         tasks = [task("a"), task("b")]
         attempts = [attempt("a", calls=1), attempt("b")]
         assert compute(PRICED_MODEL, tasks, attempts).search_calls_total == 1
+
+
+class TestFailuresAreNotScored:
+    """A provider error produced no decision and must not read as one."""
+
+    def test_failed_attempts_are_excluded_from_the_totals(self) -> None:
+        broken = attempt("a").model_copy(update={"error": "404: no endpoints"})
+        stats = compute(PRICED_MODEL, [task("a"), task("b")], [broken, attempt("b")])
+        assert stats.items == 1
+        assert stats.failed_items == 1
+
+    def test_a_run_that_failed_everything_scores_nothing(self) -> None:
+        """Counting a failure as 'chose not to search' is right on two buckets
+        out of three, which once put a totally broken run mid-table."""
+        broken = [attempt(name).model_copy(update={"error": "404"}) for name in ("a", "b")]
+        stats = compute(PRICED_MODEL, [task("a"), task("b")], broken)
+        assert stats.items == 0
+        assert stats.failed_items == 2
+        assert stats.cost.total_usd == 0.0
