@@ -95,6 +95,11 @@ attribution-check: ## Fail if the generated attribution files are stale
 tasks: ## Rebuild the tool-use-correctness task set from source data
 	$(UV) run llmsearchbench tasks build
 
+.PHONY: tasks-discrimination
+tasks-discrimination: ## Rebuild the search-result-discrimination task set
+	$(UV) run python scripts/extract_judged_passages.py
+	$(UV) run llmsearchbench tasks build-discrimination
+
 .PHONY: tasks-stats
 tasks-stats: ## Describe the committed task set
 	$(UV) run llmsearchbench tasks stats

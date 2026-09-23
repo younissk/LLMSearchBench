@@ -1,0 +1,42 @@
+{
+  "candidates_total": 3855,
+  "counts": {
+    "no_answer": 40,
+    "total": 331,
+    "web": 171,
+    "wikipedia": 120
+  },
+  "dropped": [
+    {
+      "count": 1249,
+      "reason": "a paragraph is outside the length bounds",
+      "rule": "H5"
+    },
+    {
+      "count": 458,
+      "reason": "a yes/no answer, which needs no evidence to guess",
+      "rule": "H2"
+    },
+    {
+      "count": 49,
+      "reason": "not the ten-paragraph distractor layout",
+      "rule": "H1"
+    }
+  ],
+  "label_sources": {
+    "derived": 120,
+    "human": 211
+  },
+  "notes": [
+    "Every model sees the same candidates in the same order; the order is a seeded shuffle, so position carries no signal.",
+    "TREC grades are human relevance judgements. HotpotQA grades are derived from its supporting facts and only ever 0 or 3.",
+    "The web category has no gold answer: TREC judged relevance, not answers. Answer correctness is scored on the wikipedia category only."
+  ],
+  "relevant_total": 637,
+  "seed": 20260923,
+  "tiers": {
+    "easy": 111,
+    "hard": 110,
+    "medium": 110
+  }
+}

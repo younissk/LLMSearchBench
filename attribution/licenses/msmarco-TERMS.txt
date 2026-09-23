@@ -1,0 +1,30 @@
+MS MARCO terms and conditions, quoted verbatim from
+https://microsoft.github.io/msmarco/ (retrieved 2026-09-23).
+
+Microsoft grants non-commercial research use and states explicitly that no
+licence or other intellectual property right is extended. This repository
+therefore does NOT redistribute MS MARCO passage text. The `web` and
+`no_answer` categories of the search-result-discrimination task are built
+locally from your own download of the collection, and only their item ids
+and checksums are committed, so a local build can be verified without the
+text ever leaving Microsoft's terms.
+
+----------------------------------------------------------------------
+
+The MS MARCO datasets are intended for non-commercial research purposes only
+to promote advancement in the field of artificial intelligence and related
+areas, and is made available free of charge without extending any license or
+other intellectual property rights. The dataset is provided “as is” without
+warranty and usage of the data has risks since we may not own the underlying
+rights in the documents. We are not be liable for any damages related to use
+of the dataset. Feedback is voluntarily given and can be used as we see fit.
+Upon violation of any of these terms, your rights to use the dataset will end
+automatically. If you encounter any difficulties with accessing the dataset,
+please do not hesitate to inform us at ms-marco@microsoft.com. We are
+committed to ensuring that you have seamless access to all necessary resources
+and will promptly address any issues you may experience. Please contact us if
+you own any of the documents made available but do not want them in this
+dataset. We will remove the data accordingly. If you have questions about use
+of the dataset or any research outputs in your products or services, we
+encourage you to undertake your own independent legal review. For other
+questions, please feel free to contact us.

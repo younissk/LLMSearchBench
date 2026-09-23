@@ -11,6 +11,7 @@ authors = [
 keywords = ["benchmark", "llm", "search", "retrieval", "evaluation"]
 dependencies = [
     "anthropic>=1.8.0",
+    "pyarrow>=25.0.1",
     "pydantic>=2.13.5",
     "rich>=15.0.0",
     "typer>=0.27.2",
@@ -82,6 +83,11 @@ ban-relative-imports = "all"
 # Citations are reproduced exactly as the authors publish them. Rewrapping a
 # BibTeX title to satisfy a line-length rule would misquote the source.
 "src/llmsearchbench/datasets/registry.py" = ["E501"]
+
+[[tool.mypy.overrides]]
+# pyarrow ships no py.typed marker; it is used only to read one parquet file.
+module = ["pyarrow.*"]
+ignore_missing_imports = true
 
 [tool.mypy]
 python_version = "3.13"

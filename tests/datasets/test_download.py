@@ -252,4 +252,11 @@ class TestDownloadAll:
         directory.mkdir(parents=True)
         for file in spec.files:
             (directory / file.name).write_bytes(b"not the real bytes")
-        assert {r.status for r in verify_all(root=tmp_path)} == {"corrupt"}
+
+        results = verify_all(root=tmp_path)
+        ours = {r.status for r in results if r.dataset == spec.key}
+        others = {r.status for r in results if r.dataset != spec.key}
+        # Wrong bytes under this key are corrupt; another dataset's files are
+        # not there at all, and must not be reported against this one.
+        assert ours == {"corrupt"}
+        assert others <= {"missing"}

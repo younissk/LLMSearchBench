@@ -9,6 +9,9 @@ citations in machine-readable form are in [`citations.bib`](citations.bib).
 | Dataset | Licence | Files | Size | Pinned at |
 | --- | --- | --- | --- | --- |
 | [RetrievalQA](https://github.com/hyintell/RetrievalQA) | MIT | 3 | 37.8 MB | `f26134cb16` |
+| [HotpotQA (distractor setting)](https://hotpotqa.github.io/) | CC-BY-SA-4.0 | 1 | 27.5 MB | — |
+| [TREC Deep Learning Track 2019 and 2020, passage judgements](https://trec.nist.gov/data/deep2020.html) | US Government work (NIST); no licence asserted | 4 | 414.1 kB | — |
+| [MS MARCO passage collection](https://microsoft.github.io/msmarco/) | MS MARCO terms: non-commercial research use only | 1 | 1035.0 MB | — |
 
 ## RetrievalQA
 
@@ -36,5 +39,80 @@ citations in machine-readable form are in [`citations.bib`](citations.bib).
       eprint={2402.16457},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
+}
+```
+
+## HotpotQA (distractor setting)
+
+7,405 multi-hop questions in the distractor setting: each question comes with ten Wikipedia paragraphs, two of which contain the supporting sentences and eight of which were retrieved as near neighbours of the question. The supporting-fact annotations say which paragraphs carry the answer.
+
+- **Homepage:** <https://hotpotqa.github.io/>
+- **Paper:** <https://arxiv.org/abs/1809.09600>
+- **Licence:** CC-BY-SA-4.0 — [text](licenses/hotpotqa-LICENSE.txt)
+- **Tags:** wikipedia, multi-hop, distractor
+
+| File | Size | SHA-256 | What it is |
+| --- | --- | --- | --- |
+| `hotpot-distractor-validation.parquet` | 27.5 MB | `c20b638ca82b21d0…` | The distractor validation split: question, answer, supporting facts, ten paragraphs. |
+
+**Why this one.** Used for the wikipedia category of search-result discrimination. The relevance grades are derived from the supporting facts rather than judged directly, and the task set records that: a derived label is weaker evidence than a human relevance judgement and is never averaged with one.
+
+```bibtex
+@inproceedings{yang2018hotpotqa,
+  title={{HotpotQA}: A Dataset for Diverse, Explainable Multi-hop Question Answering},
+  author={Yang, Zhilin and Qi, Peng and Zhang, Saizheng and Bengio, Yoshua and Cohen, William W. and Salakhutdinov, Ruslan and Manning, Christopher D.},
+  booktitle={Conference on Empirical Methods in Natural Language Processing ({EMNLP})},
+  year={2018}
+}
+```
+
+## TREC Deep Learning Track 2019 and 2020, passage judgements
+
+20,646 human relevance judgements over 97 queries, on a four-point scale: 0 not relevant, 1 related but not answering, 2 highly relevant, 3 perfect. The judged passages were retrieved for their own query, so the non-relevant ones are on topic without answering — hard negatives by construction.
+
+- **Homepage:** <https://trec.nist.gov/data/deep2020.html>
+- **Paper:** <https://arxiv.org/abs/2003.07820>
+- **Licence:** US Government work (NIST); no licence asserted — [text](licenses/trec-dl-TERMS.txt)
+- **Tags:** web, graded-relevance, human-judged
+
+| File | Size | SHA-256 | What it is |
+| --- | --- | --- | --- |
+| `2019qrels-pass.txt` | 187.1 kB | `8a1f10d550732e4c…` | NIST passage judgements for the 2019 track. |
+| `2020qrels-pass.txt` | 218.6 kB | `60d4c34561f9687f…` | NIST passage judgements for the 2020 track. |
+| `msmarco-test2019-queries.tsv.gz` | 4.3 kB | `d66f01dfa8a3e60f…` | The 2019 test queries. |
+| `msmarco-test2020-queries.tsv.gz` | 4.1 kB | `0c749b29fd8ca0cc…` | The 2020 test queries. |
+
+**Why this one.** The grade-1 level is the reason this source was chosen. NIST states plainly that 'Related' is actually NOT relevant: the passage is on the same general topic but does not answer the question. That is exactly the distinction this task measures, already drawn by a person.
+
+```bibtex
+@article{craswell2020trecdl,
+  title={Overview of the {TREC} 2019 deep learning track},
+  author={Craswell, Nick and Mitra, Bhaskar and Yilmaz, Emine and Campos, Daniel and Voorhees, Ellen M.},
+  journal={Text REtrieval Conference (TREC)},
+  year={2020}
+}
+```
+
+## MS MARCO passage collection
+
+8.8 million web passages. Only the text of the 20,349 passages TREC judged is ever used: `scripts/extract_judged_passages.py` streams the archive once and keeps those, which is 2.5 MB rather than 3 GB.
+
+- **Homepage:** <https://microsoft.github.io/msmarco/>
+- **Paper:** <https://arxiv.org/abs/1611.09268>
+- **Licence:** MS MARCO terms: non-commercial research use only — [text](licenses/msmarco-TERMS.txt)
+- **Tags:** web, passages, non-commercial
+
+| File | Size | SHA-256 | What it is |
+| --- | --- | --- | --- |
+| `collection.tar.gz` | 1035.0 MB | `70667529e4743223…` | The full passage collection, 8.8M passages. Streamed once, never kept. |
+
+**Why this one.** Microsoft grants non-commercial research use and explicitly does not extend a licence. This benchmark therefore does not redistribute MS MARCO text: the web and no_answer categories are built locally from your own download, and only their ids and checksums are committed. Everything needed to reproduce them byte for byte is in the repository; the passages themselves are not.
+
+```bibtex
+@article{bajaj2016msmarco,
+  title={{MS MARCO}: A Human Generated MAchine Reading COmprehension Dataset},
+  author={Bajaj, Payal and Campos, Daniel and Craswell, Nick and Deng, Li and Gao, Jianfeng and Liu, Xiaodong and Majumder, Rangan and McNamara, Andrew and Mitra, Bhaskar and Nguyen, Tri and Rosenberg, Mir and Song, Xia and Stoica, Alina and Tiwary, Saurabh and Wang, Tong},
+  journal={arXiv preprint arXiv:1611.09268},
+  year={2016}
 }
 ```

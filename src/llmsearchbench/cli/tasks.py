@@ -12,13 +12,16 @@ from rich.table import Table
 from llmsearchbench.cli._shared import EXIT_BAD_INPUT
 from llmsearchbench.paths import TASKS
 from llmsearchbench.storage import read_jsonl
+from llmsearchbench.taskgen import discrimination
 from llmsearchbench.taskgen.tooluse import DEFAULT_SEED, build, save
+from llmsearchbench.types.discrimination import Category as DiscriminationCategory
 from llmsearchbench.types.tooluse import Bucket, ToolUseTask
 from llmsearchbench.ui import console, fail
 
 app = typer.Typer(help="Build and inspect task sets.", no_args_is_help=True)
 
 TASK_SET = "tool-use-correctness"
+DISCRIMINATION_SET = "search-result-discrimination"
 
 
 @app.command("build")
@@ -103,3 +106,71 @@ def _print_report(report: dict[str, object]) -> None:
         for rule, count in sorted(rules.items(), key=lambda kv: -int(kv[1])):
             table.add_row(bucket, rule, str(count))
     console.print(table)
+
+
+@app.command("build-discrimination")
+def build_discrimination_command(
+    out: Annotated[Path, typer.Option(help="Where to write the task set.")] = TASKS,
+    seed: Annotated[int, typer.Option(help="Sampling seed; fixed for reproducibility.")] = (
+        discrimination.DEFAULT_SEED
+    ),
+    web: Annotated[int, typer.Option(help="How many web-category items.")] = (
+        discrimination.DEFAULT_WEB
+    ),
+    no_answer: Annotated[int, typer.Option(help="How many no-answer items.")] = (
+        discrimination.DEFAULT_NO_ANSWER
+    ),
+    wikipedia: Annotated[int, typer.Option(help="How many wikipedia-category items.")] = (
+        discrimination.DEFAULT_WIKIPEDIA
+    ),
+) -> None:
+    """Build the search-result-discrimination task set.
+
+    The web and no-answer categories are written under `tasks/local/`, which is
+    git-ignored: their passages come from MS MARCO, whose terms grant
+    non-commercial research use and extend no licence. A committed manifest of
+    ids and checksums makes a local build verifiable against the published one.
+    """
+    try:
+        items, report = discrimination.build(
+            seed=seed, web_size=web, no_answer_size=no_answer, wikipedia_size=wikipedia
+        )
+    except FileNotFoundError as error:
+        fail(str(error))
+        raise typer.Exit(EXIT_BAD_INPUT) from None
+
+    written = discrimination.save(items, out / f"{DISCRIMINATION_SET}.jsonl")
+    report_path = out / f"{DISCRIMINATION_SET}.report.json"
+    report_path.write_text(
+        json.dumps(report.model_dump(mode="json"), indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+    for what, path in written.items():
+        console.print(f"[ok]wrote[/ok] {path}  [muted]({what})[/muted]")
+    console.print(f"[ok]wrote[/ok] {report_path}")
+
+    table = Table(
+        title=f"{DISCRIMINATION_SET} - {len(items)} items",
+        title_justify="left",
+        header_style="heading",
+    )
+    table.add_column("Category")
+    table.add_column("Items", justify="right")
+    table.add_column("Candidates", justify="right")
+    table.add_column("Relevant", justify="right")
+    table.add_column("Labels")
+    for category in DiscriminationCategory:
+        pool = [item for item in items if item.category is category]
+        if not pool:
+            continue
+        table.add_row(
+            str(category),
+            str(len(pool)),
+            str(sum(item.candidate_count for item in pool)),
+            str(sum(item.relevant_count for item in pool)),
+            ", ".join(sorted({str(item.label_source) for item in pool})),
+        )
+    console.print(table)
+    for rejection in report.dropped:
+        console.print(f"[muted]{rejection.rule}[/muted] {rejection.reason}: {rejection.count}")

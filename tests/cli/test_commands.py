@@ -135,19 +135,17 @@ class TestDataCommand:
         def fake_download(
             spec: DatasetSpec, *, root: Path, force: bool = False, **kwargs: object
         ) -> list[DownloadResult]:
+            # The first file of each dataset reports as already present, the
+            # rest as fetched, so the command has both cases to print. Some
+            # datasets ship a single file, so this cannot index blindly.
             return [
                 DownloadResult(
                     dataset=spec.key,
-                    file=spec.files[0].name,
-                    path=root / spec.files[0].name,
-                    skipped=True,
-                ),
-                DownloadResult(
-                    dataset=spec.key,
-                    file=spec.files[1].name,
-                    path=root / spec.files[1].name,
-                    skipped=False,
-                ),
+                    file=file.name,
+                    path=root / file.name,
+                    skipped=index == 0,
+                )
+                for index, file in enumerate(spec.files)
             ]
 
         monkeypatch.setattr(data_cli, "download_dataset", fake_download)

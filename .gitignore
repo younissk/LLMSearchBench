@@ -39,3 +39,4 @@ results/local/
 results/smoke/
 
 # sweep outputs; re-runnable, and large
+tasks/local/

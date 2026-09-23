@@ -1,5 +1,33 @@
 {
   "datasets": {
+    "hotpotqa": {
+      "files": [
+        {
+          "name": "hotpot-distractor-validation.parquet",
+          "sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+          "size_bytes": 27452575,
+          "url": "https://huggingface.co/datasets/hotpotqa/hotpot_qa/resolve/1908d6afbbead072334abe2965f91bd2709910ab/distractor/validation-00000-of-00001.parquet"
+        }
+      ],
+      "homepage": "https://hotpotqa.github.io/",
+      "license": "CC-BY-SA-4.0",
+      "pinned_commit": "",
+      "title": "HotpotQA (distractor setting)"
+    },
+    "msmarco": {
+      "files": [
+        {
+          "name": "collection.tar.gz",
+          "sha256": "70667529e474322327d6441c8f7b621f2a805a7f6220897d9f80e5a8294bd62e",
+          "size_bytes": 1035009698,
+          "url": "https://msmarco.z22.web.core.windows.net/msmarcoranking/collection.tar.gz"
+        }
+      ],
+      "homepage": "https://microsoft.github.io/msmarco/",
+      "license": "MS MARCO terms: non-commercial research use only",
+      "pinned_commit": "",
+      "title": "MS MARCO passage collection"
+    },
     "retrievalqa": {
       "files": [
         {
@@ -25,6 +53,38 @@
       "license": "MIT",
       "pinned_commit": "f26134cb167f420a657684665f597964aadabd3c",
       "title": "RetrievalQA"
+    },
+    "trec-dl": {
+      "files": [
+        {
+          "name": "2019qrels-pass.txt",
+          "sha256": "8a1f10d550732e4cd91d7fc49846a3784de4040972f583e69285a88f3c5fee92",
+          "size_bytes": 187092,
+          "url": "https://trec.nist.gov/data/deep/2019qrels-pass.txt"
+        },
+        {
+          "name": "2020qrels-pass.txt",
+          "sha256": "60d4c34561f9687f8f73e0a752ba80ab80159b3e9c1bedd0a351f747ed6f5684",
+          "size_bytes": 218617,
+          "url": "https://trec.nist.gov/data/deep/2020qrels-pass.txt"
+        },
+        {
+          "name": "msmarco-test2019-queries.tsv.gz",
+          "sha256": "d66f01dfa8a3e60fe375ba645efc004f97ff4dd2a424536b8d5810c16182a3b5",
+          "size_bytes": 4276,
+          "url": "https://msmarco.z22.web.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz"
+        },
+        {
+          "name": "msmarco-test2020-queries.tsv.gz",
+          "sha256": "0c749b29fd8ca0ccbf129a1bdd283e4081d6c49e96d6bf6290ba554d5d71f7f1",
+          "size_bytes": 4131,
+          "url": "https://msmarco.z22.web.core.windows.net/msmarcoranking/msmarco-test2020-queries.tsv.gz"
+        }
+      ],
+      "homepage": "https://trec.nist.gov/data/deep2020.html",
+      "license": "US Government work (NIST); no licence asserted",
+      "pinned_commit": "",
+      "title": "TREC Deep Learning Track 2019 and 2020, passage judgements"
     }
   }
 }

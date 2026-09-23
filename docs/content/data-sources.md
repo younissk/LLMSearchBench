@@ -16,6 +16,9 @@ is pinned to a SHA-256 so a run can be reproduced against the same bytes.
 | Dataset | Licence | Size | Pinned at |
 | --- | --- | --- | --- |
 | [RetrievalQA](https://github.com/hyintell/RetrievalQA) | MIT | 37.8 MB | `f26134cb16` |
+| [HotpotQA (distractor setting)](https://hotpotqa.github.io/) | CC-BY-SA-4.0 | 27.5 MB | — |
+| [TREC Deep Learning Track 2019 and 2020, passage judgements](https://trec.nist.gov/data/deep2020.html) | US Government work (NIST); no licence asserted | 414.1 kB | — |
+| [MS MARCO passage collection](https://microsoft.github.io/msmarco/) | MS MARCO terms: non-commercial research use only | 1035.0 MB | — |
 
 ## RetrievalQA
 
@@ -37,6 +40,69 @@ The `param_knowledge_answerable` flag is the reason this dataset is first in the
       eprint={2402.16457},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
+}
+```
+
+## HotpotQA (distractor setting)
+
+7,405 multi-hop questions in the distractor setting: each question comes with ten Wikipedia paragraphs, two of which contain the supporting sentences and eight of which were retrieved as near neighbours of the question. The supporting-fact annotations say which paragraphs carry the answer.
+
+Paper: [https://arxiv.org/abs/1809.09600](https://arxiv.org/abs/1809.09600)
+
+:::note[Why this one]
+
+Used for the wikipedia category of search-result discrimination. The relevance grades are derived from the supporting facts rather than judged directly, and the task set records that: a derived label is weaker evidence than a human relevance judgement and is never averaged with one.
+
+:::
+
+```bibtex
+@inproceedings{yang2018hotpotqa,
+  title={{HotpotQA}: A Dataset for Diverse, Explainable Multi-hop Question Answering},
+  author={Yang, Zhilin and Qi, Peng and Zhang, Saizheng and Bengio, Yoshua and Cohen, William W. and Salakhutdinov, Ruslan and Manning, Christopher D.},
+  booktitle={Conference on Empirical Methods in Natural Language Processing ({EMNLP})},
+  year={2018}
+}
+```
+
+## TREC Deep Learning Track 2019 and 2020, passage judgements
+
+20,646 human relevance judgements over 97 queries, on a four-point scale: 0 not relevant, 1 related but not answering, 2 highly relevant, 3 perfect. The judged passages were retrieved for their own query, so the non-relevant ones are on topic without answering — hard negatives by construction.
+
+Paper: [https://arxiv.org/abs/2003.07820](https://arxiv.org/abs/2003.07820)
+
+:::note[Why this one]
+
+The grade-1 level is the reason this source was chosen. NIST states plainly that 'Related' is actually NOT relevant: the passage is on the same general topic but does not answer the question. That is exactly the distinction this task measures, already drawn by a person.
+
+:::
+
+```bibtex
+@article{craswell2020trecdl,
+  title={Overview of the {TREC} 2019 deep learning track},
+  author={Craswell, Nick and Mitra, Bhaskar and Yilmaz, Emine and Campos, Daniel and Voorhees, Ellen M.},
+  journal={Text REtrieval Conference (TREC)},
+  year={2020}
+}
+```
+
+## MS MARCO passage collection
+
+8.8 million web passages. Only the text of the 20,349 passages TREC judged is ever used: `scripts/extract_judged_passages.py` streams the archive once and keeps those, which is 2.5 MB rather than 3 GB.
+
+Paper: [https://arxiv.org/abs/1611.09268](https://arxiv.org/abs/1611.09268)
+
+:::note[Why this one]
+
+Microsoft grants non-commercial research use and explicitly does not extend a licence. This benchmark therefore does not redistribute MS MARCO text: the web and no_answer categories are built locally from your own download, and only their ids and checksums are committed. Everything needed to reproduce them byte for byte is in the repository; the passages themselves are not.
+
+:::
+
+```bibtex
+@article{bajaj2016msmarco,
+  title={{MS MARCO}: A Human Generated MAchine Reading COmprehension Dataset},
+  author={Bajaj, Payal and Campos, Daniel and Craswell, Nick and Deng, Li and Gao, Jianfeng and Liu, Xiaodong and Majumder, Rangan and McNamara, Andrew and Mitra, Bhaskar and Nguyen, Tri and Rosenberg, Mir and Song, Xia and Stoica, Alina and Tiwary, Saurabh and Wang, Tong},
+  journal={arXiv preprint arXiv:1611.09268},
+  year={2016}
 }
 ```
 

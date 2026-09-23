@@ -1,0 +1,22 @@
+TREC Deep Learning Track passage judgements (qrels), produced by NIST
+assessors and published at https://trec.nist.gov/data/deep2019.html and
+https://trec.nist.gov/data/deep2020.html (retrieved 2026-09-23).
+
+NIST publishes no separate licence file for these judgements. Works of the
+United States Government are not subject to copyright protection in the
+United States (17 U.S.C. section 105), and NIST distributes the judgements
+openly for research use. No licence is asserted here beyond that, and this
+note is not legal advice: check for yourself if it matters to you.
+
+The judgement scale, quoted verbatim from the 2020 track data page:
+
+  "Passages were judged on a four-point scale of Not Relevant (0),
+   Related (1), Highly Relevant (2), and Perfect (3), where 'Related' is
+   actually NOT Relevant---it means that the passage was on the same
+   general topic, but did not answer the question."
+
+That sentence is the reason this benchmark uses the source: the distinction
+it draws is the one the task measures, and a person drew it.
+
+The query text distributed alongside the judgements comes from MS MARCO and
+carries the MS MARCO terms; see msmarco-TERMS.txt.
