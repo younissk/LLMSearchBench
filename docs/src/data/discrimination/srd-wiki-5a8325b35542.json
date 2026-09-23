@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a8325b35542",
+  "category": "wikipedia",
+  "question": "Who held the record for the longest service in the Australian Parliament for a woman, and was surpassed by  a former Australian politician who was the 29th Speaker of the House of Representatives?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Mehmet Tillem (born 10 September 1974) is a former Australian politician. He was an Australian Labor Party member of the Australian Senate from 21 August 2013 to 30 June 2014. He filled a casual vacancy caused by the resignation of Senator David Feeney, but was defeated at the 2013 federal election, and left parliament at the conclusion of his term. He is the first Turkish-born member of the Australian parliament.",
+      "source_id": "Mehmet Tillem",
+      "title": "Mehmet Tillem"
+    },
+    {
+      "id": "2",
+      "text": "Carol Anne Martin (born 13 October 1957) is a former Australian politician who served as a Labor Party member of the Legislative Assembly of Western Australia between 2001 and 2013, representing the seat of Kimberley. She was the first Aboriginal woman to be elected to any Australian parliament.",
+      "source_id": "Carol Martin",
+      "title": "Carol Martin"
+    },
+    {
+      "id": "3",
+      "text": "Bronwyn Kathleen Bishop (née Setright; born 19 October 1942) is a former Australian politician who was the 29th Speaker of the House of Representatives, holding the office between 12 November 2013 and 2 August 2015.",
+      "source_id": "Bronwyn Bishop",
+      "title": "Bronwyn Bishop"
+    },
+    {
+      "id": "4",
+      "text": "Kathryn Jean Martin \"Kathy\" Sullivan AM (born 8 March 1942), Australian politician, was a Liberal member of the Australian Senate from 1974 to 1984, representing Queensland, and a member of the House of Representatives for the Division of Moncrieff, Queensland, from 1984 to 2001. She previously held the record for the longest service in the Australian Parliament for a woman, oustripping the record previously held by Dorothy Tangney. This record has since been surpassed by Bronwyn Bishop. She was the first woman member of the parliament to have served in both houses.",
+      "source_id": "Kathy Sullivan (Australian politician)",
+      "title": "Kathy Sullivan (Australian politician)"
+    },
+    {
+      "id": "5",
+      "text": "Philip Maxwell Ruddock (born 12 March 1943) is an Australian politician who is currently mayor of Hornsby Shire. He previously was a Liberal member of the House of Representatives from 1973 to 2016. First elected in a 1973 by-election, by the time of his retirement he was the last parliamentary survivor of the Whitlam and Fraser Governments. He was both the Father of the House and the Father of the Parliament from 1998 to his retirement. He is the second longest-serving parliamentarian in the history of the Australian Parliament (only Billy Hughes served longer). Ruddock served continuously in federal cabinet during the Howard Government, as Minister for Immigration and Multicultural Affairs from 1996 to 2003, and then Attorney-General from 2003 to 2007.",
+      "source_id": "Philip Ruddock",
+      "title": "Philip Ruddock"
+    },
+    {
+      "id": "6",
+      "text": "Robert John Debus {'1': \", '2': \", '3': \", '4': \"} (born 16 September 1943), a former Australian politician, has been a member of the Australian House of Representatives and the New South Wales Legislative Assembly, representing the Australian Labor Party. Debus has been a minister in both the Australian and New South Wales governments. He served in the NSW Parliament from 1981 to 1988 and again from 1995 to 2007; and in the Australian Parliament from 2007 to 2010.",
+      "source_id": "Bob Debus",
+      "title": "Bob Debus"
+    },
+    {
+      "id": "7",
+      "text": "Michael John Atkinson (born 17 June 1958), an Australian politician in the South Australian Branch of the Australian Labor Party, is the 34th Speaker of the South Australian House of Assembly for the Jay Weatherill government, serving since 5 February 2013. First elected to the House at the 1989 election, Atkinson is Father of the House.",
+      "source_id": "Michael Atkinson",
+      "title": "Michael Atkinson"
+    },
+    {
+      "id": "8",
+      "text": "George Richard Torbay (born 26 March 1961), an Australian politician, was an independent member of the New South Wales Legislative Assembly representing Northern Tablelands from 1999 to 2013. Torbay was the 30th Speaker of the New South Wales Legislative Assembly, serving from 2007 until 2011, and was the first independent member to be Speaker of the House since 1913. Prior to his election to State parliament, he served as Mayor of Armidale City Council from 1995 to 1998.",
+      "source_id": "Richard Torbay",
+      "title": "Richard Torbay"
+    },
+    {
+      "id": "9",
+      "text": "Roslyn Dundas (born 28 July 1978) is a former Australian politician. She was an Australian Democrats member of the Australian Capital Territory Legislative Assembly from 2001 to 2004, when she was defeated in a bid for re-election. Until Kelly Vincent's election to the South Australian Legislative Council in 2010, Dundas was the youngest woman ever elected to an Australian parliament.",
+      "source_id": "Roslyn Dundas",
+      "title": "Roslyn Dundas"
+    },
+    {
+      "id": "10",
+      "text": "Peter Douglas Blacker (born 20 October 1941) is a former Australian politician who represented the seat of Flinders in the South Australian House of Assembly for the Nationals SA from 1973 to 1993. During that time he was the only Nationals member in the South Australian parliament. He is now the Chair of the Minister’s Regional Communities Consultative Council.",
+      "source_id": "Peter Blacker",
+      "title": "Peter Blacker"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 0,
+    "3": 3,
+    "4": 3,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "3",
+    "4"
+  ],
+  "gold_answer": [
+    "Kathryn Jean Martin"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a8325b35542990548d0b18f",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a8b6d885542",
+  "category": "wikipedia",
+  "question": "Which actress is \"Beyond Rangoon\" was also in \"True Romance\" and \"Ed Wood?\"",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Victor Slezak (born July 30, 1957) is an American stage, television and screen actor who has appeared in numerous films, including \"The Bridges of Madison County\" (1995), \"Beyond Rangoon\" (1995), \"The Devil's Own\" (1997), \"The Siege\" (1998),\"The Cat's Meow\" (2001), \"Timequest\" as John F. Kennedy (2002) and \"The Notorious Bettie Page\" (2005).",
+      "source_id": "Victor Slezak",
+      "title": "Victor Slezak"
+    },
+    {
+      "id": "2",
+      "text": "Beyond Rangoon is a 1995 drama film directed by John Boorman about Laura Bowman (played by Patricia Arquette), an American tourist who vacations in Burma (Myanmar) in 1988, the year in which the 8888 Uprising takes place. The film was mostly filmed in Malaysia, and, though a work of fiction, was inspired by real people and real events.",
+      "source_id": "Beyond Rangoon",
+      "title": "Beyond Rangoon"
+    },
+    {
+      "id": "3",
+      "text": "Nwe Yin Win (Burmese: နွဲ့ယဉ်ဝင်း , ] ; born Joyce Win on 23 April 1945) is a Burmese singer, considered one of the pioneers of modern Burmese pop music. Nwe Yin Win was born in Sagaing to parents a Bamar father Min Swe (also known as Win Maung) and an Anglo-Burmese mother \"Cathy\" Tin Tin Hla. She attended the English-speaking St. Francis Girls' School (today's Tamwe 4 High School) and St. Philomena's Convent High School (Sanchaung 2 High School). In 1967, she graduated from Rangoon University with a degree in English before getting a master's degree (M.Ed.) in 1973 at the Rangoon Institute of Education. During her time in college, she began dabbling with a music career.",
+      "source_id": "Nwe Yin Win",
+      "title": "Nwe Yin Win"
+    },
+    {
+      "id": "4",
+      "text": "Patricia Arquette (born April 8, 1968) is an American actor. She made her film debut in \"\" (1987) at the age of eighteen. Her notable films include Tony Scott's \"True Romance\" (1993), Tim Burton's \"Ed Wood\" (1994), David O. Russell's \"Flirting with Disaster\" (1996), David Lynch's \"Lost Highway\" (1997), Stephen Frears's \"The Hi-Lo Country\" (1998), Martin Scorsese's \"Bringing Out the Dead\" (1999), and Andrew Davis's \"Holes\" (2003).",
+      "source_id": "Patricia Arquette",
+      "title": "Patricia Arquette"
+    },
+    {
+      "id": "5",
+      "text": "Conrad Brooks (born Conrad Biedrzycki on January 3, 1931 in Baltimore, Maryland) is an American actor. He moved to Hollywood, California in 1948 to pursue a career in acting. He got his start in movies appearing in Ed Wood films such as \"Plan 9 from Outer Space\", \"Glen or Glenda\", and \"Jail Bait.\" He took a break from acting during the 1960s and 1970s but due to the ongoing interest in the films of Ed Wood, he reemerged in the 1980s and has become a prolific actor. He also has since gone on to write, produce and direct several films.",
+      "source_id": "Conrad Brooks",
+      "title": "Conrad Brooks"
+    },
+    {
+      "id": "6",
+      "text": "Beyond Rangoon is an original soundtrack album written by the German composer Hans Zimmer. The film \"Beyond Rangoon\" and the album were released in 1995. It features the nature of the Burmese background during and after the 8888 Uprising in Burma. In this ethnic tropes music, Hans Zimmer highlights on South-East Asia tradition where he employs pipes, wood flutes, and native rhythms with vivid effects to demonstrate the character of the students' strike in 1988, Burma and their fleeing Rangoon after martial law imposed.",
+      "source_id": "Beyond Rangoon (soundtrack)",
+      "title": "Beyond Rangoon (soundtrack)"
+    },
+    {
+      "id": "7",
+      "text": "Woodson is a census-designated place (CDP) in Pulaski County, Arkansas, in the United States. Its population was 403 at the 2010 census. It is part of the Little Rock–North Little Rock–Conway Metropolitan Statistical Area. Woodson and its accompanying Woodson Lake and Wood Hollow are the namesake for Ed Wood Sr., a prominent plantation owner, trader, and businessman at the turn of the 20th century. Woodson is adjacent to the Wood Plantation, the largest of the plantations own by Ed Wood Sr.",
+      "source_id": "Woodson, Arkansas",
+      "title": "Woodson, Arkansas"
+    },
+    {
+      "id": "8",
+      "text": "Ed Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood. The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau. Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast.",
+      "source_id": "Ed Wood (film)",
+      "title": "Ed Wood (film)"
+    },
+    {
+      "id": "9",
+      "text": "Music of True Romance for Hyper Meat Performance is the only album by True Romance, a performance art side project of Merzbow. It contains extracts from the backing music made for two performances.",
+      "source_id": "Music of True Romance for Hyper Meat Performance",
+      "title": "Music of True Romance for Hyper Meat Performance"
+    },
+    {
+      "id": "10",
+      "text": "Final Curtain was a television pilot written and directed by Ed Wood in 1957. It starred Duke Moore as an actor wandering an empty theater after dark, where he is haunted by creepy sounds and eerie sights. The film is narrated by Dudley Manlove. Both Moore and Manlove also appear in Wood's cult film \"Plan 9 from Outer Space\". Wood had hoped to use the film as the pilot for a television series he intended to produce called \"Portraits of Terror.\"",
+      "source_id": "Final Curtain (film)",
+      "title": "Final Curtain (film)"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 3,
+    "3": 0,
+    "4": 3,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "2",
+    "4"
+  ],
+  "gold_answer": [
+    "Patricia Arquette"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a8b6d885542997f31a41d25",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

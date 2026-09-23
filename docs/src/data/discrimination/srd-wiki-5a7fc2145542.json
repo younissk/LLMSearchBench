@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a7fc2145542",
+  "category": "wikipedia",
+  "question": "Who narrates the documentary television series that features the largest airline in the United Kingdom based on fleet size?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Air Canada is the largest airline and flag carrier of Canada. Founded in 1936 as Trans-Canada Airlines, it provides scheduled services to 194 destinations on five continents. Its largest hub is Toronto Pearson International Airport, followed by Montreal-Pierre Elliott Trudeau International Airport, Vancouver International Airport and Calgary International Airport. Air Canada is the world's 10th largest passenger airline by fleet size, and the airline is a founding member of Star Alliance. In 2014, Air Canada together with its Air Canada Express regional partners carried over 38 million passengers. Between them, they operate on average more than 1,500 scheduled flights daily.",
+      "source_id": "Air Canada destinations",
+      "title": "Air Canada destinations"
+    },
+    {
+      "id": "2",
+      "text": "China Southern Airlines Company Limited is an airline headquartered in Baiyun District, Guangzhou, Guangdong Province, China. Established on 1 July 1988 following the restructuring of the Civil Aviation Administration of China that acquired and merged a number of domestic airlines, the airline became one of China's \"Big Three\" airlines (alongside Air China and China Eastern Airlines), the world's fourth-largest airline measured by passengers carried and Asia's largest airline in fleet size, revenue and passengers carried. With its main hubs at Guangzhou Baiyun International Airport and Beijing Capital International Airport, the airline operates more than 2,000 flights to 208 destinations daily as a member of SkyTeam. The logo of the airline consists of a kapok flower (which is also the city flower of Guangzhou) on a blue tail fin.",
+      "source_id": "China Southern Airlines",
+      "title": "China Southern Airlines"
+    },
+    {
+      "id": "3",
+      "text": "Virgin Australia Airlines Pty Ltd, formerly Virgin Blue Airlines, is Australia's second-largest airline after Qantas and it is the largest airline by fleet size to use the 'Virgin' brand. Now based in Bowen Hills, Brisbane, the airline was co-founded by British businessman Richard Branson, the founder of parent Virgin Group and former Virgin Blue CEO Brett Godfrey. It was established in November 1999 with two aircraft operating on a single route, and suddenly found itself catapulted to the position of Australia's second airline after the collapse of Ansett Australia in September 2001. The airline has grown to directly serve 29 cities in Australia from hubs in Brisbane, Melbourne and Sydney, using a fleet of narrow-body Boeing and Embraer jets; and Airbus and Boeing widebody jets.",
+      "source_id": "Virgin Australia",
+      "title": "Virgin Australia"
+    },
+    {
+      "id": "4",
+      "text": "Air Canada () is the flag carrier and largest airline of Canada. The airline, founded in 1937, provides scheduled and charter air transport for passengers and cargo to 182 destinations worldwide. It is the world's eighth-largest passenger airline by fleet size, and is a founding member of the Star Alliance. Air Canada's corporate headquarters are located in Montreal, Quebec, while its largest hub is at Toronto Pearson International Airport. Air Canada had passenger revenues of CA$13.8 billion in 2015. The airline's regional service is Air Canada Express.",
+      "source_id": "Air Canada",
+      "title": "Air Canada"
+    },
+    {
+      "id": "5",
+      "text": "Deutsche Lufthansa AG () (] ), commonly known as Lufthansa (sometimes also as \"Lufthansa German Airlines\"), is the largest German airline and, when combined with its subsidiaries, also the largest airline in Europe, in terms of fleet size, and the second largest airline in terms of passengers carried during 2016. The name of the company is derived from \"Luft\" 'air' and \"Hansa\", the Hanseatic League. Lufthansa is one of the five founding members of Star Alliance, the world's largest airline alliance, formed in 1997.",
+      "source_id": "Lufthansa",
+      "title": "Lufthansa"
+    },
+    {
+      "id": "6",
+      "text": "Aegean Airlines S.A. (Greek: Αεροπορία Αιγαίου Ανώνυμη Αεροπορική Εταιρεία , \"Aeroporía Aigíou Anónime Etairía\" ] ; ) is the largest Greek airline by total number of passengers carried, by number of destinations served and by fleet size. A Star Alliance member since June 2010, it operates scheduled and charter services from Athens and Thessaloniki to other major Greek destinations as well as to a number of European and Middle Eastern destinations. Its main hubs are Athens International Airport in Athens, Thessaloniki International Airport in Thessaloniki and Larnaca International Airport in Cyprus. It also uses other Greek airports as bases, some of which are seasonal. It has its head office in Kifisia, a suburb of Athens. Although the airline is the largest airline in Greece, it is not a flag carrier.",
+      "source_id": "Aegean Airlines",
+      "title": "Aegean Airlines"
+    },
+    {
+      "id": "7",
+      "text": "British Airways (BA) is the largest airline in the United Kingdom based on fleet size, or the second largest, behind easyJet, when measured by passengers carried. The airline is based in Waterside near its main hub at London Heathrow Airport. In January 2011 BA merged with Iberia, creating the International Airlines Group (IAG), a holding company registered in Madrid, Spain. IAG is the world's third-largest airline group in terms of annual revenue and the second-largest in Europe. It is listed on the London Stock Exchange and in the FTSE 100 Index.",
+      "source_id": "British Airways",
+      "title": "British Airways"
+    },
+    {
+      "id": "8",
+      "text": "IndiGo is a low-cost airline headquartered at Gurgaon, Haryana, India. It is the largest airline in India by passengers carried and fleet size, with a 38.7% market share as of July 2017. It is also the largest individual Asian low-cost carrier in terms of jet fleet size and passengers carried, and the eighth largest carrier in Asia with over 41 million passengers carried in 2016. The airline operates to 46 destinations both domestic and international. It has its primary hub at Indira Gandhi International Airport, Delhi.",
+      "source_id": "IndiGo",
+      "title": "IndiGo"
+    },
+    {
+      "id": "9",
+      "text": "British Airways (BA) is the flag carrier airline of the United Kingdom. It is the largest airline in the UK based on fleet size, international flights and international destinations. British Airways was considered the largest UK airline by passenger numbers from its creation in 1974 until 2008, when it was displaced by low-cost rival EasyJet. Since its inception, British Airways has been centred at its main hub at London Heathrow Airport, with a second major hub at London Gatwick Airport.",
+      "source_id": "History of British Airways",
+      "title": "History of British Airways"
+    },
+    {
+      "id": "10",
+      "text": "A Very British Airline is a British documentary television series that was first broadcast on BBC Two between 2 and 16 June 2014. The three-part series goes behind the scenes of British Airways with the narrator Stephen Mangan.",
+      "source_id": "A Very British Airline",
+      "title": "A Very British Airline"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 3,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 3,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "7",
+    "10"
+  ],
+  "gold_answer": [
+    "Stephen Mangan"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a7fc21455429969796c1b4b",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

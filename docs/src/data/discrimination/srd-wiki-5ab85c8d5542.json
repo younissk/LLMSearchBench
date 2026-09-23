@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5ab85c8d5542",
+  "category": "wikipedia",
+  "question": "What is the name of this Austrian association football club from Vienna for which Raphael Holzhauser was a player?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Fußballklub Austria Wien (] ; known in English as Austria Vienna, and usually shortened to Austria in German-speaking countries), is an Austrian association football club from the capital city of Vienna. It has won the second most Austrian Bundesliga titles - counting 24 since the introduction of the Austrian league in the season 1911-12. Along with its cross-city rival Rapid Wien, it is one of the only sides that have never been relegated from the Austrian top flight. With 27 victories in the Austrian Cup and six in the Austrian Supercup, Austria Wien is also the most successful club in each of those tournaments, and has won the most national titles of any Austrian football club. The club reached the UEFA Cup Winners' Cup final in 1978, and the semi-finals of the European Cup the season after. The club plays at the Franz Horr Stadium, known as the Generali Arena since a 2010 naming rights deal with an Italian insurance company.",
+      "source_id": "FK Austria Wien",
+      "title": "FK Austria Wien"
+    },
+    {
+      "id": "2",
+      "text": "First Vienna FC is an Austrian association football club based in the Döbling district of Vienna. Established on 22 August 1894, it is the country's oldest team and has played a notable role in the history of the game there. It is familiarly known to Austrians by the English name \"Vienna\".",
+      "source_id": "First Vienna FC",
+      "title": "First Vienna FC"
+    },
+    {
+      "id": "3",
+      "text": "SK Vorwärts Steyr is an Austrian association football club based in Steyr. It was founded in 1919. They play at the Vorwärts Stadium. Currently the club has about 300 members. The club is one of the oldest football clubs in Upper Austria. In 1999 the club went bankrupt and reformed in lower leagues later in 2001. In 2011 Vorwarts was promoted to the Regional League (Middle) which is part of third division of Austrian league football.",
+      "source_id": "SK Vorwärts Steyr",
+      "title": "SK Vorwärts Steyr"
+    },
+    {
+      "id": "4",
+      "text": "SV Wienerberg is an Austrian association football club from Vienna. The club was founded as \"ASV Wienerberg\" (Arbeiter Sportverein, \"Workers' Sports Club\") in 1921 by Czech immigrants, primarily labourers from the local brickworks - today's global construction material producer Wienerberger - at the hill \"Wienerberg\" in the Viennese district of Favoriten. The company lent its support and provided the grounds. The club took on its current name in 1970.",
+      "source_id": "SV Wienerberg",
+      "title": "SV Wienerberg"
+    },
+    {
+      "id": "5",
+      "text": "1. Simmeringer SC is an Austrian association football club based in Vienna. Established in 1901, it played in the Austrian Football Bundesliga.",
+      "source_id": "1. Simmeringer SC",
+      "title": "1. Simmeringer SC"
+    },
+    {
+      "id": "6",
+      "text": "Linzer Athletik-Sport-Klub, commonly known as LASK Linz (] ) or simply LASK, is an Austrian association football club, from the Upper-Austrian state capital Linz. It is the oldest football club hailing from that region, and currently plays in the Austrian Football Bundesliga, the top tier of Austrian football. The club's colours are black and white. The women's football section currently plays in the second highest division of Austrian women's football.",
+      "source_id": "LASK Linz",
+      "title": "LASK Linz"
+    },
+    {
+      "id": "7",
+      "text": "Raphael Holzhauser (born 16 February 1993 in Wiener Neustadt) is an Austrian football midfielder who plays for Austria Wien.",
+      "source_id": "Raphael Holzhauser",
+      "title": "Raphael Holzhauser"
+    },
+    {
+      "id": "8",
+      "text": "SC Ostbahn XI are an Austrian association football club based in the Simmering (\"XI\") district of Vienna. Founded in 1921 by employees of the East railway line, they are playing in the Austrian Regional League East since 2008/2009 season after promotion the season before.",
+      "source_id": "SC Ostbahn XI",
+      "title": "SC Ostbahn XI"
+    },
+    {
+      "id": "9",
+      "text": "Kapfenberger SV is an Austrian association football club from Kapfenberg. They won the 2007–08 Austrian Football First League and advanced to the Austrian Bundesliga. The club was founded in 1919 as \"Kapfenberger SC\". The club was renamed into Kapfenberger SV in 1947 and currently play in the Austrian First League, the second level of Austrian football.",
+      "source_id": "Kapfenberger SV",
+      "title": "Kapfenberger SV"
+    },
+    {
+      "id": "10",
+      "text": "FC Liefering is an Austrian association football club. It currently plays in the First League, the second tier of Austrian football. Since 2012, Liefering has been a feeder club for Austrian Football Bundesliga side FC Red Bull Salzburg.",
+      "source_id": "FC Liefering",
+      "title": "FC Liefering"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "10": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 3,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "1",
+    "7"
+  ],
+  "gold_answer": [
+    "Austria Wien"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ab85c8d55429934fafe6d84",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

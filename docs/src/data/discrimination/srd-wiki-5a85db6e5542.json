@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a85db6e5542",
+  "category": "wikipedia",
+  "question": "What is the student body for Ron Johnson's alma mater?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Needles High School (NHS) is a public high school in Needles, California. It is part of the Needles Unified School District. The school nickname is the Mustang, and the school colors are royal blue and white. The current alma mater, \"All Hail to Thee,\" was written by members of the Class of 1959 as their gift to NHS as outgoing seniors. The school offers many extracurricular activities, including athletics, ASB (Associated Student Body), the Mock National Security Workshop, among others. Needles High School was featured on a School Pride television episode November 12, 2010. Needles High is one of five California high schools that is part of the Nevada Interscholastic Activities Association.",
+      "source_id": "Needles High School",
+      "title": "Needles High School"
+    },
+    {
+      "id": "2",
+      "text": "The \"Alma Mater\" is the official school song of Dartmouth College, an Ivy League university located in Hanover, New Hampshire, United States. Composed by Harry Wellman, class of 1907, it was officially adopted by the College in 1926. The difficult to sing \"Dartmouth Undying\" replaced it in the fall of 1972, but the Alma Mater was restored as the official song in early 1973. Richard Hovey of the class of 1885 wrote the original lyrics in 1894, titling the song \"Men of Dartmouth\". Traditionally the original second verse was only sung during time of war. On May 28, 1988, Dartmouth changed the title and words to reflect the presence of women as part of the College, since Dartmouth had become coeducational in 1972. Nicole Sakowitz, Dartmouth Glee Club President was the first person to conduct the new Alma Mater.",
+      "source_id": "Alma Mater (Dartmouth College)",
+      "title": "Alma Mater (Dartmouth College)"
+    },
+    {
+      "id": "3",
+      "text": "The \"LSU Alma Mater\" was written in 1929 by Lloyd Funchess and Harris Downey, two students who developed the original song and music because LSU's first alma mater was sung to the tune of \"Far Above Cayuga's Waters\" and was used by Cornell University. The band plays the \"Alma Mater\" during pregame and at the end of each home football game. Also, members of the band join arm-in-arm at the end of rehearsals on Saturday game days and sing the \"Alma Mater\" before leaving the practice facility.",
+      "source_id": "LSU Alma Mater",
+      "title": "LSU Alma Mater"
+    },
+    {
+      "id": "4",
+      "text": "California State University, Long Beach (CSULB; also known as Long Beach State, Cal State Long Beach, LBSU, or The Beach) is the third largest campus of the 23-school California State University system (CSU) and one of the largest universities in the state of California by enrollment, its student body numbering 37,776 for the Fall 2016 semester. As of Fall 2014, the school had 2,283 total faculty, with 36.7 percent of those faculty on the tenure track. With 5,286 graduate students, the university enrolls one of the largest graduate student populations across the CSU and in the state of California alone. The university is located in the Los Altos neighborhood of Long Beach at the southeastern coastal tip of Los Angeles County, less than one mile from the border with Orange County. The university offers 82 different Bachelor's degrees, 65 types of Master's degrees, and four Doctoral degrees.",
+      "source_id": "California State University, Long Beach",
+      "title": "California State University, Long Beach"
+    },
+    {
+      "id": "5",
+      "text": "Ronald J. Johnson (born September 21, 1958) is a former American football wide receivers who played five seasons with the Philadelphia Eagles of the National Football League. He was drafted by the Seattle Seahawks in the seventh round of the 1981 NFL Draft. He first enrolled at Monterey Peninsula College before transferring to California State University, Long Beach. Johnson attended Monterey High School in Monterey, California. He was also a member of the Hamilton Tiger-Cats and Portland Breakers.",
+      "source_id": "Ron Johnson (wide receiver, born 1958)",
+      "title": "Ron Johnson (wide receiver, born 1958)"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 3
+  },
+  "supporting_ids": [
+    "4",
+    "5"
+  ],
+  "gold_answer": [
+    "37,776"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a85db6e5542994c784ddb96",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ac2ffea5542",
+  "category": "wikipedia",
+  "question": "Jordan's Furniture is a furniture retailer with a location in an enclosed shopping mall on the north side of Interstate 295 near what?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Jordan's Furniture is a furniture retailer in New England. There are currently seven locations - in Reading, Avon, Taunton, Natick, Massachusetts, Nashua, New Hampshire, Warwick Mall in Warwick, Rhode Island, and New Haven, Connecticut.",
+      "source_id": "Jordan's Furniture",
+      "title": "Jordan's Furniture"
+    },
+    {
+      "id": "2",
+      "text": "Raleigh Springs Mall was an enclosed shopping mall serving the city of Memphis, Tennessee, USA. The site is located on the north side of Memphis, on Austin Peay Hwy. just north of Interstate 40. Opened in 1971 as one of the city's first two shopping malls (the other being Southland Mall), owned and managed by Angela Whichard, Inc., Raleigh Springs Mall originally featured about seventy stores later to be remodeled and feature a twelve-screen multiplex, with four anchor stores, formerly occupied by Sears, JCPenney, Goldsmith's and Dillard's. The theater closed in December 2011, Sears closed in April 2011, and the other three anchors closed in 2003. The mall was later seized by the City of Memphis in favor to build a city Civic Center. The mall closed with 3 business still operating, City Trends, World Diamond Center, and a church. Some of the anchor stores JCPenney and Sears have been demolished leaving the movie theater, Dillard's, and the main building left. As of the end of 2016, the remaining buildings were surrounded by gates.",
+      "source_id": "Raleigh Springs Mall",
+      "title": "Raleigh Springs Mall"
+    },
+    {
+      "id": "3",
+      "text": "Warwick Mall is an enclosed shopping mall in Warwick, Rhode Island, on the north side of Interstate 295 near the junction with Interstate 95. Composed of more than 1000000 sqft of retail space, it features more than 80 stores and a food court. The mall opened for business in 1970, with Boston-based Filene's and Jordan Marsh alongside Providence-based Peerless and The Outlet, and national chain Woolworth as initial anchors, JCPenney being later added as a sixth anchor.",
+      "source_id": "Warwick Mall",
+      "title": "Warwick Mall"
+    },
+    {
+      "id": "4",
+      "text": "Karcher Mall is an enclosed shopping mall located in Nampa, Idaho, U.S.. The mall opened in August 1965 with Buttrey Food & Drug, Rasco-Tempo, and Skaggs Drug Centers as anchor stores. The mall was the largest shopping center in the Treasure Valley until 1988 when the Boise Towne Square Mall was opened in Boise. The new mall directed traffic away for the Karcher Mall and several retailers, including 20-year-old anchor JCPenney, departed the mall to move to Boise. Since then, the mall has been sold to numerous owners, each of which attempted to revitalize the mall to mixed results. Today, the mall has 28 stores, including anchor stores Burlington Coat Factory, Discount Furniture, Jo-Ann Fabrics, Ross Dress for Less, and Mor Furniture, and is owned by Milan Properties, Inc.",
+      "source_id": "Karcher Mall",
+      "title": "Karcher Mall"
+    },
+    {
+      "id": "5",
+      "text": "McCain Mall is the largest enclosed shopping mall by leasable area in the Little Rock metropolitan area, located near Interstate 40 in North Little Rock, Arkansas. The shopping hub was officially dedicated in April 1973, although its primary anchor, Little Rock-based Pfiefer-Blass, had opened for business in late 1972. Among its 80 stores and services were a J.G. McCrory 5 and 10 and McCain Mall Cinema I and II. The shopping center was the largest in the state until an addition was completed as Fort Smith's Central Mall in 1986. McCain Mall is one of two enclosed shopping centers within Central Arkansas, with the other enclosed mall being the larger (by number of stores) Park Plaza Mall, located in Little Rock. Anchors are Dillard's, JCPenney and Sears.",
+      "source_id": "McCain Mall",
+      "title": "McCain Mall"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "3"
+  ],
+  "gold_answer": [
+    "the junction with Interstate 95"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ac2ffea55429921a00ab0cc",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

@@ -1,0 +1,152 @@
+.wrap {
+  margin: 1.5rem 0;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.1rem;
+}
+
+.stat {
+  flex: 1 1 7rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--lsb-grid);
+  border-radius: 12px;
+  background: var(--lsb-surface);
+}
+
+.statValue {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--lsb-ink);
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--lsb-ink-muted);
+}
+
+.notice {
+  margin-bottom: 1rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--lsb-grid);
+  border-left: 3px solid var(--series-4);
+  border-radius: 8px;
+  background: var(--lsb-surface);
+  font-size: 0.85rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  color: var(--lsb-ink-muted);
+}
+
+.search {
+  flex: 1 1 12rem;
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--lsb-ink);
+  background: var(--lsb-surface);
+  border: 1px solid var(--lsb-hairline);
+  border-radius: 7px;
+}
+
+.select {
+  padding: 0.4rem 0.5rem;
+  font: inherit;
+  font-size: 0.82rem;
+  color: var(--lsb-ink);
+  background: var(--lsb-surface);
+  border: 1px solid var(--lsb-hairline);
+  border-radius: 7px;
+}
+
+.count {
+  margin-left: auto;
+}
+
+.scroll {
+  max-height: 36rem;
+  overflow: auto;
+  border: 1px solid var(--lsb-grid);
+  border-radius: 12px;
+  background: var(--lsb-surface);
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.table th,
+.table td {
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--lsb-grid);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--lsb-surface);
+  color: var(--lsb-ink-muted);
+  font-weight: 500;
+}
+
+.question {
+  /* The long column: everything else stays at its natural width, and the
+     question takes what is left rather than being clipped to a few words. */
+  width: 100%;
+  max-width: 0;
+  color: var(--lsb-ink-secondary);
+}
+
+.table td:first-child {
+  white-space: nowrap;
+}
+
+.numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  width: 5rem;
+}
+
+.pill {
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--lsb-grid);
+  font-size: 0.72rem;
+}
+
+.web {
+  border-color: #b7d3f4;
+  color: #1a559c;
+}
+
+.wikipedia {
+  border-color: #b4e0cd;
+  color: #0b7a62;
+}
+
+.no_answer {
+  border-color: #f6c9b4;
+  color: #b4460f;
+}

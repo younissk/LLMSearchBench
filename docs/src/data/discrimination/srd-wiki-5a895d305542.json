@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a895d305542",
+  "category": "wikipedia",
+  "question": "Which football team does Lewis Young's older brother, Ashley Young, play for?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Robert Allen Young (September 3, 1942 – June 17, 1995) was an American football offensive guard who played 16 seasons in the National Football League, mainly for the St. Louis Cardinals, where he and other Cardinal offensive linemen are credited with introducing modern weightlifting/powerlifting into the training regime of the NFL. He was named to two Pro Bowls (1978 & 1979) and was a first team All Pro selection in 1979 as well. Young attended Howard Payne University. He was the older brother of three-time world powerlifting champion Doug Young.",
+      "source_id": "Bob Young (American football)",
+      "title": "Bob Young (American football)"
+    },
+    {
+      "id": "2",
+      "text": "George Lewis Young (27 October 1922 – 10 January 1997) was a Scottish footballer, best remembered for his association with Rangers and for being the first player to receive more than 50 caps for the Scotland national team.",
+      "source_id": "George Young (Scottish footballer)",
+      "title": "George Young (Scottish footballer)"
+    },
+    {
+      "id": "3",
+      "text": "Ashley Simon Young (born 9 July 1985) is an English professional footballer who plays as a winger for Premier League club Manchester United and the England national team.",
+      "source_id": "Ashley Young",
+      "title": "Ashley Young"
+    },
+    {
+      "id": "4",
+      "text": "Lewis Young (born 20 December 1998) is a professional Australian rules footballer playing for the Western Bulldogs in the Australian Football League (AFL). He was drafted by the Western Bulldogs with their third selection and forty-ninth overall in the 2016 national draft. He made his debut in the twenty point win against Carlton at Etihad Stadium in round seventeen of the 2017 season.",
+      "source_id": "Lewis Young (Australian footballer)",
+      "title": "Lewis Young (Australian footballer)"
+    },
+    {
+      "id": "5",
+      "text": "Lewis Jack Young (born 27 September 1989) is an English professional footballer who plays for Crawley Town. He can play either as a striker, as a right winger or as, most recently, a right back. He is the younger brother of Manchester United footballer Ashley Young.",
+      "source_id": "Lewis Young",
+      "title": "Lewis Young"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 3
+  },
+  "supporting_ids": [
+    "3",
+    "5"
+  ],
+  "gold_answer": [
+    "Premier League club Manchester United and the England national team"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a895d305542993b751ca931",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

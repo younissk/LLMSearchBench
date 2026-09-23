@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a8eabf75542",
+  "category": "wikipedia",
+  "question": "What was the job title of the wife of the director of the film \"Aaina?\"",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Pamela Chopra (born 1938) is a Bollywood playback singer. She is the widow of veteran film director Yash Chopra. She has also written and produced several films.",
+      "source_id": "Pamela Chopra",
+      "title": "Pamela Chopra"
+    },
+    {
+      "id": "2",
+      "text": "Aaina (English: \"Mirror\" ), is a 1993 film directed by Deepak Sareen and produced by Yash Chopra and independently produced by his wife Pamela Chopra. The film starred Juhi Chawla, Jackie Shroff and Amrita Singh in lead roles with Deepak Tijori in a supporting role. The film was a blockbuster hit in India, and solidified Juhi Chawla's career as a leading lady in the 1990s. The film was remade in Telugu as \"Aayanaki Iddaru\", in Tamil as \"Kalyana Vaibhogam\" and in Kannada as \"Yare Nee Abhimani\".",
+      "source_id": "Aaina (1993 film)",
+      "title": "Aaina (1993 film)"
+    },
+    {
+      "id": "3",
+      "text": "In the airline industry, a baggage handler is a person who loads and unloads baggage (suitcases or luggage), and other cargo (airfreight, mail, counter-to-counter packages) for transport via aircraft. With most airlines, the formal job title is \"fleet service agent/clerk\", though the position is commonly known amongst airline employees as a \"ramp agent\", due to the job's location on the airport ramp (tarmac).",
+      "source_id": "Baggage handler",
+      "title": "Baggage handler"
+    },
+    {
+      "id": "4",
+      "text": "A production assistant, also known as a PA, is a member of the film crew and is a job title used in filmmaking and television for a person responsible for various aspects of a production. The job of a PA can vary greatly depending on the budget and specific requirements of a production as well as whether the production is unionized.",
+      "source_id": "Production assistant",
+      "title": "Production assistant"
+    },
+    {
+      "id": "5",
+      "text": "A demotion is a compulsory reduction in an employee's rank or job title within the organizational hierarchy of a company, public service department, or other body. A demotion may also lead to the loss of other privileges associated with a more senior rank and/or a reduction in salary or benefits. An employee may be demoted for violating the rules of the organization by a behavior such as excessive lateness, misconduct, or negligence. In some cases, an employee may be demoted as an alternative to being laid off, if the employee has poor job performance or if the company is facing a financial crisis. A move to a position at the same rank or level elsewhere in the organization is called a lateral move or deployment. A voluntary move to a lower level is also a deployment as it is not a compulsory reduction in level. Demotion is often misinterpreted simply as the opposite of a promotion, however it is only one means of undergoing a reduction in work level.",
+      "source_id": "Demotion",
+      "title": "Demotion"
+    },
+    {
+      "id": "6",
+      "text": "William Cameron Menzies (July 29, 1896 – March 5, 1957) was an American film production designer (a job title he invented) and art director as well as a film director and producer during a career spanning five decades. He earned acclaim for his work in silent film, and later pioneered the use of color in film for dramatic effect.",
+      "source_id": "William Cameron Menzies",
+      "title": "William Cameron Menzies"
+    },
+    {
+      "id": "7",
+      "text": "Supervisor, when the meaning sought is similar to foreman, foreperson, overseer, cell coach, manager, facilitator, monitor, or area coordinator, is the job title of a low level management position that is primarily based on authority over a worker or charge of a workplace. A Supervisor can also be one of the most senior in the staff at the place of work, such as a Professor who oversees a PhD dissertation. Supervision, on the other hand, can be performed by people without this formal title, for example by parents. The term Supervisor itself can be used to refer to any personnel who have this task as part of their job description.",
+      "source_id": "Supervisor",
+      "title": "Supervisor"
+    },
+    {
+      "id": "8",
+      "text": "Fireman or stoker is the job title for someone whose job is to tend the fire for the running of a steam engine. On steam locomotives the term \"fireman\" is usually used, while on steamships and stationary steam engines, such as those driving saw mills, the term is usually \"stoker\" (although the British Merchant Navy did use \"fireman\"). The German word \"Heizer\" is equivalent and in Dutch the word \"stoker\" is mostly used too. The United States Navy referred to them as watertenders. Much of the job is hard physical labor, such as shoveling fuel, typically coal, into the engine's firebox.",
+      "source_id": "Fireman (steam engine)",
+      "title": "Fireman (steam engine)"
+    },
+    {
+      "id": "9",
+      "text": "A retail cashier or simply a cashier is a person who handles the cash register at various locations such as the point of sale in a retail store. The most common use of the title is in the retail industry, but this job title is also used in the context of accountancy for the person responsible for receiving and disbursing money or within branch banking in the United Kingdom for the job known in the United States as a bank teller.",
+      "source_id": "Cashier",
+      "title": "Cashier"
+    },
+    {
+      "id": "10",
+      "text": "In human resource management, developing competency-based job descriptions is one way to define participant roles while still allowing for evolution. Like well-written typical job descriptions, competency-based job descriptions list job title, job description, key responsibilities, and requisite and preferred education and experience. What competency-based job descriptions add is a focus on less tangible behavioural competencies.",
+      "source_id": "Competency-based job description",
+      "title": "Competency-based job description"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "10": 0,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "1",
+    "2"
+  ],
+  "gold_answer": [
+    "Bollywood playback singer"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a8eabf755429917b4a5bdaa",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

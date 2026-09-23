@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a851ba95542",
+  "category": "wikipedia",
+  "question": "Rosemary Willis was seen in the grass in what Texas town, where John F. Kennedy was assassinated?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Rosemary Willis, (born December 31, 1990) is an American beauty pageant titleholder from Chesapeake, Virginia who was named Miss Virginia 2012.",
+      "source_id": "Rosemary Willis (Miss Virginia)",
+      "title": "Rosemary Willis (Miss Virginia)"
+    },
+    {
+      "id": "2",
+      "text": "Dealey Plaza , in the historic West End district of downtown Dallas, Texas (U.S.), is the location of the assassination of John F. Kennedy on November 22, 1963. The Dealey Plaza Historic District was named a National Historic Landmark in 1993 to preserve Dealey Plaza, street rights-of-way, and buildings and structures by the plaza visible from the assassination site, that have been identified as witness locations or as possible assassin locations.",
+      "source_id": "Dealey Plaza",
+      "title": "Dealey Plaza"
+    },
+    {
+      "id": "3",
+      "text": "John F. Kennedy: Years of Lightning, Day of Drums is a ninety-minute filmed memorial tribute to President John F. Kennedy, who had been assassinated on November 22, 1963. It was completed in 1964, and released to theatres by Embassy Pictures in 1966. The film, containing both color and black-and-white footage, is narrated by Gregory Peck, and features extensive excerpts from President Kennedy's speeches, including color footage of his swearing in and inaugural address. It was written and directed by Bruce Herschensohn, who also composed the music - long before he was recognized as a noted conservative. Maximilian Schell narrated the German version.",
+      "source_id": "John F. Kennedy: Years of Lightning, Day of Drums",
+      "title": "John F. Kennedy: Years of Lightning, Day of Drums"
+    },
+    {
+      "id": "4",
+      "text": "Clearly seen in the Zapruder film at the start of the assassination wearing a white, hooded coat and a red skirt, while she trotted in the Dealey Plaza grass located to the presidential limousine's left, she runs southwestward and parallel with the limousine, which she faces for a short time when the limousine is to her direct right.",
+      "source_id": "Rosemary Willis",
+      "title": "Rosemary Willis"
+    },
+    {
+      "id": "5",
+      "text": "The grave of Robert F. Kennedy is a historic grave site and memorial to assassinated U.S. Senator and 1968 Democratic presidential candidate Robert F. Kennedy located in section 45 of Arlington National Cemetery in Arlington County, Virginia, in the United States. It was dedicated on December 6, 1971, and replaced a temporary grave in which Kennedy was originally buried on June 8, 1968. It is adjacent to the John F. Kennedy Eternal Flame.",
+      "source_id": "Grave of Robert F. Kennedy",
+      "title": "Grave of Robert F. Kennedy"
+    },
+    {
+      "id": "6",
+      "text": "A pink Chanel suit was worn by Jacqueline Bouvier Kennedy on November 22, 1963, when her husband, President John F. Kennedy was assassinated in Dallas, Texas. Made of wool bouclé, the double-breasted, strawberry pink and navy trim collared suit was matched with a trademark matching pink pillbox hat and white gloves. After President Kennedy was assassinated, Jacqueline Kennedy insisted on wearing the suit, stained with his blood, during the swearing-in of Lyndon B. Johnson on Air Force One and for the flight back to Washington, D.C. with the President’s body.",
+      "source_id": "Pink Chanel suit of Jacqueline Bouvier Kennedy",
+      "title": "Pink Chanel suit of Jacqueline Bouvier Kennedy"
+    },
+    {
+      "id": "7",
+      "text": "The John F. Kennedy Eternal Flame is a presidential memorial at the gravesite of U.S. President John F. Kennedy, in Arlington National Cemetery. The permanent site replaced a temporary grave and eternal flame used during President Kennedy's funeral on November 25, 1963. The site was designed by architect John Carl Warnecke, a long-time friend of the President. The permanent John F. Kennedy Eternal Flame grave site was consecrated and opened to the public on March 15, 1967.",
+      "source_id": "John F. Kennedy Eternal Flame",
+      "title": "John F. Kennedy Eternal Flame"
+    },
+    {
+      "id": "8",
+      "text": "John F. Kennedy, the 35th President of the United States, was assassinated on Friday, November 22, 1963 at 12:30 p.m. Central Standard Time in Dallas, Texas while riding in a motorcade in Dealey Plaza. Kennedy was fatally shot by a former U.S Marine, Lee Harvey Oswald, while he was riding with his wife, Jacqueline, Texas Governor John Connally, and Connally's wife, Nellie, in a presidential motorcade. A ten-month investigation by the Warren Commission from November 1963 to September 1964 concluded that Oswald acted alone in shooting Kennedy, and that Jack Ruby also acted alone when he killed Oswald before he could stand trial. Kennedy's death marked the fourth (following Lincoln, Garfield, and McKinley) and most recent assassination of an American President. Vice President Lyndon B. Johnson became President upon Kennedy's death.",
+      "source_id": "Assassination of John F. Kennedy",
+      "title": "Assassination of John F. Kennedy"
+    },
+    {
+      "id": "9",
+      "text": "The President's Commission on the Assassination of President Kennedy, known unofficially as the Warren Commission, was established by President Lyndon B. Johnson through Executive Order on November 29, 1963 to investigate the assassination of United States President John F. Kennedy that had taken place on November 22, 1963. The U.S. Congress passed Senate Joint Resolution 137 authorizing the Presidential appointed Commission to report on the assassination of President John F. Kennedy, mandating the attendance and testimony of witnesses and the production of evidence. Its 888-page final report was presented to President Johnson on September 24, 1964 and made public three days later. It concluded that President Kennedy was assassinated by Lee Harvey Oswald and that Oswald acted entirely alone. It also concluded that Jack Ruby also acted alone when he killed Oswald two days later. The Commission's findings have proven controversial and have been both challenged and supported by later studies.",
+      "source_id": "Warren Commission",
+      "title": "Warren Commission"
+    },
+    {
+      "id": "10",
+      "text": "The presidency of John F. Kennedy, also known as the Kennedy Administration, began January 20, 1961, when John F. Kennedy was inaugurated as President of the United States, and ended on November 22, 1963, when he was assassinated, a span of days. This timeline begins on January 2, 1960, the date when then U.S. Senator Kennedy announced his intention to run for the Democratic Party presidential nomination, and concludes on November 25, 1963, when the martyred president was buried. Kennedy, the 35th United States president, was the first Roman Catholic as well as the first person born in the 20th century to be elected president. Additionally, he is the youngest individual ever elected to the office.",
+      "source_id": "Timeline of the presidency of John F. Kennedy",
+      "title": "Timeline of the presidency of John F. Kennedy"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 3,
+    "3": 0,
+    "4": 3,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "2",
+    "4"
+  ],
+  "gold_answer": [
+    "Dallas"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a851ba95542997175ce1f81",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

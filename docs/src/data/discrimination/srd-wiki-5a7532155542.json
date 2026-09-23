@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a7532155542",
+  "category": "wikipedia",
+  "question": "What is the title of the person who is Head of the Department of Biological Sciences at the University of Lincoln",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "The Animal Demography Unit (ADU) is a formally recognized research unit of the University of Cape Town (UCT) located within the Department of Biological Sciences of UCT. (The Department of Biological Sciences was formed from the merger of the Department of Botany and the Department of Zoology at the start of the 2013 academic year). The Animal Demography Unit, popularly known as the ADU, was responsible for the management of the First and Second Southern African Bird Atlas Projects SABAP1 and SABAP2. The unit has submitted over eight million georeferenced biodiversity records to GBIF.",
+      "source_id": "Animal Demography Unit",
+      "title": "Animal Demography Unit"
+    },
+    {
+      "id": "2",
+      "text": "The Biological Society of Pakistan is an organization in Pakistan which is engaged in the promotion of learning and research of biology in the region. The Biological Society of Pakistan has been acknowledged at global scale in terms of contribution in classical as well as in emerging modern technological aspects of the biological sciences. Its members mainly consist of those interested in the biological sciences.",
+      "source_id": "Biological Society of Pakistan",
+      "title": "Biological Society of Pakistan"
+    },
+    {
+      "id": "3",
+      "text": "Daniel Simon Mills, FRCVS (born 21 Aug 1966) is an English biologist and the UK's first Professor of Veterinary Behavioural Medicine based at the University of Lincoln, United Kingdom. He attended St Edmund's College, Ware before studying at the University of Bristol where he received his BVSc degree and completed his Ph.D. degree in animal behaviour from De Montfort University. After some time spent in general practice, he became a Lecturer, Senior Lecturer and Principal Lecturer in animal behaviour at De Montfort University, and subsequently the University of Lincoln, where he has been Head of the Department of Biological Sciences. His research has focused on the assessment of emotion in companion animals and the use of semiochemicals to manage their problem behaviour (pheromonatherapy).",
+      "source_id": "Daniel Mills (biologist)",
+      "title": "Daniel Mills (biologist)"
+    },
+    {
+      "id": "4",
+      "text": "Umesh Varshney (born 1957) is an Indian molecular biologist, academician and the head of the \"Prof.Umesh Varshney's Lab\" at the Indian Institute of Science, Bengaluru. He is a J. C. Bose National Fellow of the Department of Science and Technology and is known for his studies on protein synthesis and DNA repair in \"Escherichia coli\" and Mycobacterium tuberculosis. An elected fellow of the Indian Academy of Sciences, Indian National Science Academy and the National Academy of Sciences (India), he is also a recipient of the National Bioscience Award for Career Development of the Government of India. The Council of Scientific and Industrial Research, the apex agency of the Government of India for scientific research, awarded him the Shanti Swarup Bhatnagar Prize for Science and Technology, one of the highest Indian science awards, in 2001, and then in 2014 with the G. N. Ramachandran Gold Medal for Excellence in Biological Sciences & Technology for his contributions to biological sciences.",
+      "source_id": "Umesh Varshney",
+      "title": "Umesh Varshney"
+    },
+    {
+      "id": "5",
+      "text": "A Doctor of Philosophy (PhD, Ph.D., or DPhil; Latin \"Philosophiae Doctor \") is the highest academic degree awarded by universities in most countries. Ph.D.s are awarded for programs across the whole breadth of academic fields. The completion of a Ph.D. is often a requirement for employment as a university professor, researcher, or scientist in many fields. Individuals who have earned a Doctor of Philosophy degree may, in most jurisdictions, use the title of \"Doctor\" (often abbreviated \"Dr\") or, in non-English speaking countries, variants such as \"Dr. phil.\" with their name, and may use post-nominal letters such as \"Ph.D.\", \"PhD\" or \"DPhil\" (depending on the awarding institute).",
+      "source_id": "Doctor of Philosophy",
+      "title": "Doctor of Philosophy"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 3
+  },
+  "supporting_ids": [
+    "3",
+    "5"
+  ],
+  "gold_answer": [
+    "Doctor"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a75321555429916b0164290",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

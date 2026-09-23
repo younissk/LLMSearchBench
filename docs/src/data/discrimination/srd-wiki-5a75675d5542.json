@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a75675d5542",
+  "category": "wikipedia",
+  "question": "What movie directed by Tim Fywell, included the actress who also appeared in \"Euro Trip\" and \"Inspector Gadget\"?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Michelle Christine Trachtenberg (born October 11, 1985) is an American actress. She is known for portraying Nona F. Mecklenberg in \"The Adventures of Pete & Pete\" (1994–96), Dawn Summers in \"Buffy the Vampire Slayer\" (2000–03), Celeste in \"Six Feet Under\" (2004), and Georgina Sparks in \"Gossip Girl\" (2008–12). She has also appeared in films such as \"Harriet the Spy\" (1996), \"Inspector Gadget\" (1999), \"EuroTrip\" (2004), \"Ice Princess\" (2005), \"Black Christmas\" (2006), \"17 Again\" (2009), \"Cop Out\" (2010), \"Weeds\" (2011), and \"Killing Kennedy\" (2013).",
+      "source_id": "Michelle Trachtenberg",
+      "title": "Michelle Trachtenberg"
+    },
+    {
+      "id": "2",
+      "text": "Normahl is a German punk band formed in 1978 in Winnenden near Stuttgart by four high school students. Their first major entry into the U.S. was with the song Keine Überdosis Deutschland featured in the hit movie Euro Trip.",
+      "source_id": "Normahl",
+      "title": "Normahl"
+    },
+    {
+      "id": "3",
+      "text": "Affinity is a 2008 UK film adaptation of Sarah Waters' 1999 novel of the same name; directed by Tim Fywell and screenplay by Andrew Davies. The film was nominated for the GLAAD Media Award for Outstanding TV Movie or Limited Series.",
+      "source_id": "Affinity (film)",
+      "title": "Affinity (film)"
+    },
+    {
+      "id": "4",
+      "text": "Ice Princess is a 2005 American figure-skating film directed by Tim Fywell, written by Hadley Davis from a story by Meg Cabot and Davis, and starring Michelle Trachtenberg, Joan Cusack, Kim Cattrall and Hayden Panettiere. The film focuses on Casey Carlyle, a normal teenager who gives up a promising future academic life in order to pursue her new-found dream of being a professional figure skater. The film was released on March 18, 2005. \"Ice Princess\" had an unsuccessful performance at the box office, grossing $24 million in the United States during its theatrical run against a production budget of $25 million. It did, however, inspire Zahra Lari, a Muslim in the United Arab Emirates, to take up the sport, become an Olympics 2018 hopeful, and inspire more freedom for women.",
+      "source_id": "Ice Princess",
+      "title": "Ice Princess"
+    },
+    {
+      "id": "5",
+      "text": "Inspector Gadget's Field Trip (onscreen title: Field Trip Starring Inspector Gadget) is a spin-off incarnation of Inspector Gadget, produced by DIC Entertainment in 1996 and aired on the The History Channel, where it was rerun until 2000. 26 episodes mixing animation with live-action were produced. Don Adams returned as the voice of Inspector Gadget. The series was an educational travelogue program for children, in which the animated Gadget would show viewers the many different sites in famous cities around the world via live-action-clips with historical facts. The theme song is slightly similar to the one in the Gadget Boy series. In fact, Gadget Boy sometimes makes a cameo appearance in the show (e.g. St. Augustine, Florida episode).",
+      "source_id": "Inspector Gadget's Field Trip",
+      "title": "Inspector Gadget's Field Trip"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "4"
+  ],
+  "gold_answer": [
+    "Ice Princess"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a75675d5542992d0ec05f87",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a892d6f5542",
+  "category": "wikipedia",
+  "question": "The original serialized story of the Bride of Re-Animator film was titled \"Herbert West–Reanimator\" and written by an American author who achieved posthumous fame through his influential works of what?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Frank Percy Doel (14 July 1908 – 22 December 1968) was an antiquarian bookseller for Marks & Co in London, England who achieved posthumous fame as the recipient of a series of humorous letters from American author Helene Hanff, to which he scrupulously and, at first, very formally replied. The shop where he worked was at 84 Charing Cross Road, the title of a bestselling 1970 novel written by Hanff which became a cult classic, a 1981 stage play, and a 1987 film starring Anthony Hopkins as Doel and Anne Bancroft as Hanff.",
+      "source_id": "Frank Doel",
+      "title": "Frank Doel"
+    },
+    {
+      "id": "2",
+      "text": "Hack/Slash is a comic book series, launched from several one shots of the same name, published by Image Comics (previously by Devil's Due Publishing). The series was created by writer and sometime penciller Tim Seeley. The series follows horror victim Cassie Hack as she strikes back at the monsters who prey upon teenagers. These monsters are known as \"slashers\", and are a mix of original villains and crossover appearances, such as the appearance of Re-Animator (from Herbert West–Reanimator) in Volume 1.",
+      "source_id": "Hack/Slash",
+      "title": "Hack/Slash"
+    },
+    {
+      "id": "3",
+      "text": "\"Herbert West–Reanimator\" is a horror short story by American writer H. P. Lovecraft. It was written between October 1921 and June 1922. It was first serialized in February through July 1922 in the amateur publication \"Home Brew\". The story was the basis of the 1985 horror film \"Re-Animator\" and its sequels, in addition to numerous other adaptations in various media.",
+      "source_id": "Herbert West–Reanimator",
+      "title": "Herbert West–Reanimator"
+    },
+    {
+      "id": "4",
+      "text": "Re-Animator is a film series consisting of three horror films directed by Stuart Gordon and Brian Yuzna. They are based on the 1922 short story \"Herbert West–Reanimator\" by H. P. Lovecraft. The lead character, Herbert West, is portrayed by actor Jeffrey Combs in all three films.",
+      "source_id": "Re-Animator (film series)",
+      "title": "Re-Animator (film series)"
+    },
+    {
+      "id": "5",
+      "text": "Howard Phillips Lovecraft ( ; August 20, 1890 – March 15, 1937) was an American author who achieved posthumous fame through his influential works of horror fiction. He was virtually unknown and published only in pulp magazines before he died in poverty, but he is now regarded as one of the most significant 20th-century authors in his genre. Lovecraft was born in Providence, Rhode Island, where he spent most of his life. Among his most celebrated tales are \"The Call of Cthulhu\" and \"The Shadow over Innsmouth\", both canonical to the Cthulhu Mythos. Lovecraft was never able to support himself from earnings as author and editor. He saw commercial success increasingly elude him in this latter period, partly because he lacked the confidence and drive to promote himself. He subsisted in progressively strained circumstances in his last years; an inheritance was completely spent by the time that he died at age 46.",
+      "source_id": "H. P. Lovecraft",
+      "title": "H. P. Lovecraft"
+    },
+    {
+      "id": "6",
+      "text": "Miskatonic University is a fictional university located in Arkham, a fictitious town in Essex County, Massachusetts. It is named after the Miskatonic River (also fictional). After first appearing in H. P. Lovecraft's 1922 story \"Herbert West–Reanimator\", the school appeared in numerous Cthulhu Mythos stories by Lovecraft and other writers. The story \"The Dunwich Horror\" implies that Miskatonic University is a highly prestigious university, on par with Harvard University, and that Harvard and Miskatonic are the two most popular schools for the children of the Massachusetts “Old Gentry”. The university also appears in role-playing games and board games based on the mythos.",
+      "source_id": "Miskatonic University",
+      "title": "Miskatonic University"
+    },
+    {
+      "id": "7",
+      "text": "Bride of Re-Animator is a 1990 American science-fiction horror film directed by Brian Yuzna and was written by Yuzna, Rick Fry and Woody Keith. H. P. Lovecraft wrote the original serialized story, titled \"Herbert West–Reanimator\", from which the characters were derived. The plot roughly follows episodes \"V. The Horror from the Shadows\" and \"VI. The Tomb-Legions\" of the original. The film stars Bruce Abbott, Claude Earl Jones, Fabiana Udenio, David Gale, Kathleen Kinmont, and Jeffrey Combs.",
+      "source_id": "Bride of Re-Animator",
+      "title": "Bride of Re-Animator"
+    },
+    {
+      "id": "8",
+      "text": "Robert Seymour Bridges, OM (23 October 1844 – 21 April 1930) was Britain's poet laureate from 1913 to 1930. A doctor by training, he achieved literary fame only late in life. His poems reflect a deep Christian faith, and he is the author of many well-known hymns. It was through Bridges’ efforts that Gerard Manley Hopkins achieved posthumous fame.",
+      "source_id": "Robert Bridges",
+      "title": "Robert Bridges"
+    },
+    {
+      "id": "9",
+      "text": "Re-Animator, also known as H. P. Lovecraft's Re-Animator, is a 1985 American science-fiction horror comedy film loosely based on the H. P. Lovecraft episodic novella \"Herbert West–Reanimator\". Directed by Stuart Gordon and produced by Brian Yuzna, the film stars Jeffrey Combs as Herbert West, a scientist who invents a solution which can re-animate deceased bodies. He and Dan Cain (Bruce Abbott) begin to test the serum on dead human bodies, and conflict with Dr. Carl Hill (David Gale), who is infatuated with Cain's fiancée (Barbara Crampton) and wants to claim the invention as his own.",
+      "source_id": "Re-Animator",
+      "title": "Re-Animator"
+    },
+    {
+      "id": "10",
+      "text": "Herbert West is a fictional character created by H. P. Lovecraft for his short story \"Herbert West—Reanimator\", first published in 1922. There have been several film adaptations of the story including Herbert West as played by Jeffrey Combs in the \"Re-Animator (film series)\" which include the 1985 \"Re-Animator\" film and its two sequels, \"Bride of Re-Animator\" and \"Beyond Re-Animator\".",
+      "source_id": "Herbert West",
+      "title": "Herbert West"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 3,
+    "6": 0,
+    "7": 3,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "5",
+    "7"
+  ],
+  "gold_answer": [
+    "horror fiction"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a892d6f55429951533612d1",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

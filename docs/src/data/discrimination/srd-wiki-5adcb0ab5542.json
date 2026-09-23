@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5adcb0ab5542",
+  "category": "wikipedia",
+  "question": "TACA Airlines, is an airline owned by a conglomerate owned by who ?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Avianca Costa Rica, formerly known as LACSA (\"Spanish: Lineas Aéreas Costarricenses S.A.\"), minority owned by the Synergy Group, is the national airline of Costa Rica and is based in San José. It operates international scheduled services to over 35 destinations in Central, North and South America. The airline previously used the TACA/LACSA moniker when it was a subsidiary of Grupo TACA. Since May 2013, following Avianca's purchase of Grupo TACA, Avianca Costa Rica became one of seven nationally branded airlines (Avianca Ecuador, Avianca Honduras, etc.) operated by Avianca Holdings group of Latin American airlines.",
+      "source_id": "Avianca Costa Rica",
+      "title": "Avianca Costa Rica"
+    },
+    {
+      "id": "2",
+      "text": "Synergy Group Corp. is a South American conglomerate created and owned by Germán Efromovich, an entrepreneur holding multiple citizenship of Brazil, Colombia and Poland. The group is headquartered in Rio de Janeiro, Brazil. It operates several airlines in South America, among which are Avianca Holdings, with a 66.66% stake, and is active in the exploration of oil and natural gas throughout the region. Additionally, it operates hydroelectric power plants, participates in the construction of telecommunications infrastructure, shipbuilding and technical inspections, radiochemistry, radiopharmaceuticals, agriculture and hospitality.",
+      "source_id": "Synergy Group",
+      "title": "Synergy Group"
+    },
+    {
+      "id": "3",
+      "text": "Avianca El Salvador, formerly Transportes Aereos del Continente Americano, simply known as TACA Airlines, is an airline owned by the Synergy Group based in El Salvador. As TACA, it was the flag carrier of El Salvador. As Avianca El Salvador, it is one of the seven nationally branded airlines (Avianca Ecuador, Avianca Honduras, etc.) in the Avianca Holdings group of Latin American airlines. This Airline has been in operation for 75 years.",
+      "source_id": "Avianca El Salvador",
+      "title": "Avianca El Salvador"
+    },
+    {
+      "id": "4",
+      "text": "Avianca Holdings (formerly AviancaTaca AirHoldings Inc.) is a Latin American airline holding company formed in February 2010 by the merger of two airlines, Avianca from Colombia and TACA Airlines from El Salvador. The company is a subsidiary of Synergy Group, a South American conglomerate based in Rio de Janeiro, Brazil. Avianca Holdings S.A. is headquartered in Panama City, Panama.",
+      "source_id": "Avianca Holdings",
+      "title": "Avianca Holdings"
+    },
+    {
+      "id": "5",
+      "text": "SkyWest Airlines is a North American airline owned by SkyWest, Inc. and headquartered in St. George, Utah, U.S.. According to the Airlines for America definitions, SkyWest is a North American major airline. SkyWest however, operates on a regional airline level and is a member of the Regional Airline Association. SkyWest Airlines flies to 238 cities, in 45 states; Washington, D.C., six Canadian provinces and five cities in Mexico. The airline serves as a feeder airline, operating under contract with various major carriers. It flies as SkyWest Airlines in a partnership with Alaska Airlines, as United Express on behalf of United Airlines, as American Eagle on behalf of American Airlines, and as Delta Connection on behalf of Delta Air Lines. SkyWest also provides ground handling services for airports across the United States.",
+      "source_id": "SkyWest Airlines",
+      "title": "SkyWest Airlines"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "2",
+    "3"
+  ],
+  "gold_answer": [
+    "Germán Efromovich"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5adcb0ab5542994d58a2f69a",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

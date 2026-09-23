@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5addeb685542",
+  "category": "wikipedia",
+  "question": "Mastophora dizzydeani is a species of spider named after baseball player Jerome Herman Dean who goes by what nickname?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Jerome Charles Witte (July 30, 1915 – April 27, 2002) was a professional baseball player. He played parts of two seasons in Major League Baseball, 1946 and 1947, for the St. Louis Browns, primarily as a first baseman. He also had a long minor league baseball career, spanning 16 seasons from 1937 until 1952. In 1946, he won the American Association Most Valuable Player award while playing for the Toledo Mud Hens, earning a shot at the major leagues that September.",
+      "source_id": "Jerry Witte",
+      "title": "Jerry Witte"
+    },
+    {
+      "id": "2",
+      "text": "Jay Hanna \"Dizzy\" Dean (January 16, 1910 – July 17, 1974), also known as Jerome Herman Dean, was an American professional baseball player. He played in Major League Baseball as a pitcher for the St. Louis Cardinals, Chicago Cubs and the St. Louis Browns. A brash and colorful personality, Dean was the last National League pitcher to win 30 games in one season. After his playing career, he became a popular television sports commentator. Dean was elected to the Baseball Hall of Fame in 1953. When the Cardinals reopened the team Hall of Fame in 2014, Dean was inducted among the inaugural class.",
+      "source_id": "Dizzy Dean",
+      "title": "Dizzy Dean"
+    },
+    {
+      "id": "3",
+      "text": "Otha Bailey (born June 30, 1931 - September 17, 2013) was an American baseball player in the Negro Leagues baseball player. He was a catcher for many teams. He played for the Birmingham Black Barons, Chattanooga Choo-Choos, Cleveland Buckeyes, Houston Eagles, and the New Orleans Eagles from 1949 to 1959. Throughout his career, his nickname was \"Little Catch\".",
+      "source_id": "Otha Bailey",
+      "title": "Otha Bailey"
+    },
+    {
+      "id": "4",
+      "text": "Mastophora dizzydeani is a species of spider named after baseball player Dizzy Dean. It uses a sticky ball on the end of a thread of webbing to catch its prey.",
+      "source_id": "Mastophora dizzydeani",
+      "title": "Mastophora dizzydeani"
+    },
+    {
+      "id": "5",
+      "text": "Willett Hall (originally Lancer Hall) is an academic facility and 1,807-seat multi-purpose arena in Farmville, Virginia. It was built in 1980 and is home to the Longwood University Lancers men's and women's basketball teams. On December 3, 2016, the basketball court was named after former Longwood basketball player Jerome Kersey, officially making the hardwood Jerome Kersey Court.",
+      "source_id": "Willett Hall",
+      "title": "Willett Hall"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 0,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "2",
+    "4"
+  ],
+  "gold_answer": [
+    "Dizzy Dean"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5addeb685542992200553bb1",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

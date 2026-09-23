@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a7939545542",
+  "category": "wikipedia",
+  "question": "What was the name of the lead character in the 1960s sitcom \"Get Smart\", which also featured an American actress born in 1933?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Barbara Feldon (born March 12, 1933) is an American character actress who works mostly in the theatre, but is primarily known for her roles on television. Her most prominent role was that of Agent 99 on the 1960s sitcom \"Get Smart\". She also worked as a model.",
+      "source_id": "Barbara Feldon",
+      "title": "Barbara Feldon"
+    },
+    {
+      "id": "2",
+      "text": "Get Smart is an American sitcom sequel to the original 1965–1970 NBC/CBS sitcom \"Get Smart\" starring Don Adams and Barbara Feldon reprising their characters of Maxwell Smart and Agent 99. The series aired Sunday at 7:30 pm on Fox for seven episodes from January 8 to February 19, 1995.",
+      "source_id": "Get Smart (1995 TV series)",
+      "title": "Get Smart (1995 TV series)"
+    },
+    {
+      "id": "3",
+      "text": "Robert Karvelas (April 3, 1921 – December 5, 1991) was an American actor who was notable for his role as the Chief's dense assistant, Larrabee, on the 1960s sitcom \"Get Smart\". He was Don Adams's cousin.",
+      "source_id": "Robert Karvelas",
+      "title": "Robert Karvelas"
+    },
+    {
+      "id": "4",
+      "text": "Get Smart, Again! is a 1989 American made-for-television comedy film based on the 1965–1970 NBC/CBS sitcom \"Get Smart!\" starring Don Adams and Barbara Feldon reprising their characters of Maxwell Smart and Agent 99. It originally aired February 26, 1989 on ABC (the network that rejected the original pilot for \"Get Smart!\") and has subsequently been released twice on DVD by different publishers. In the video release of the movie, the laugh track is absent.",
+      "source_id": "Get Smart, Again!",
+      "title": "Get Smart, Again!"
+    },
+    {
+      "id": "5",
+      "text": "Nancy Walters (June 26, 1933 – September 29, 2009) was an American model, actress and minister. She was born in Mount Plymouth, Florida. Her career in modeling included appearances in \"Vogue\" (magazine), \"Mademoiselle\" (magazine) and Harper's Bazaar. She appeared on the NBC game show \"The Big Payoff\". In 1958 she was also on the CBS show \"Strike It Rich\". She was in several movies including \"Blue Hawaii\", \"The Singing Nun\" and \"Monster on the Campus\". Over the years she was a guest star on several television shows, including \"77 Sunset Strip\", \"Gunsmoke\", \"The Monkees\", and \"Get Smart\". Her film and television career ended after 1967. She became an ordained minister and was living in Las Vegas, Nevada when she died at the age of 76.",
+      "source_id": "Nancy Walters",
+      "title": "Nancy Walters"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "4"
+  ],
+  "gold_answer": [
+    "Maxwell Smart"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a79395455429970f5fffe7d",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5ae268f35542",
+  "category": "wikipedia",
+  "question": "What job do both Alfred Santell and David Fincher have in common?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Tess of the Storm Country is a 1932 American pre-Code drama film. The movie stars Janet Gaynor, Charles Farrell, and Dudley Digges, and was directed by Alfred Santell and released by Fox Film Corporation. It is based on the novel of the same name by Grace Miller White and its adaptation for the stage by Rupert Hughes.",
+      "source_id": "Tess of the Storm Country (1932 film)",
+      "title": "Tess of the Storm Country (1932 film)"
+    },
+    {
+      "id": "2",
+      "text": "This Is Heaven (1929) is an American Pre-Code film, produced by Samuel Goldwyn, released through United Artists, and directed by Alfred Santell.",
+      "source_id": "This Is Heaven",
+      "title": "This Is Heaven"
+    },
+    {
+      "id": "3",
+      "text": "That Brennan Girl, also known as Tough Girl, is a 1946 drama romance film directed by Alfred Santell starring James Dunn, Mona Freeman, William Marshall and June Duprez.",
+      "source_id": "That Brennan Girl",
+      "title": "That Brennan Girl"
+    },
+    {
+      "id": "4",
+      "text": "Bluebeard's Seven Wives was a 1926 American silent comedy film produced and released by First National Pictures. It was directed by Alfred Santell and starred Ben Lyon, Lois Wilson and Blanche Sweet. The film is now considered lost.",
+      "source_id": "Bluebeard's Seven Wives",
+      "title": "Bluebeard's Seven Wives"
+    },
+    {
+      "id": "5",
+      "text": "Subway Sadie is a 1926 American comedy-drama silent film directed by Alfred Santell. Adapted from Mildred Cram's 1925 short story \"Sadie of the Desert\", the film focuses on a relationship between New York salesgirl Sadie Hermann (Dorothy Mackaill) and subway guard Herb McCarthy (Jack Mulhall), who meet on the subway and become engaged. However, after Sadie receives a promotion, she must choose between her new job and marrying Herb. The cast also includes Charles Murray, Peggy Shaw, Gaston Glass, and Bernard Randall.",
+      "source_id": "Subway Sadie",
+      "title": "Subway Sadie"
+    },
+    {
+      "id": "6",
+      "text": "Alfred Allen Santell also known as Al Santell (born September 14, 1895 in San Francisco, California) was an American film director and film producer.",
+      "source_id": "Alfred Santell",
+      "title": "Alfred Santell"
+    },
+    {
+      "id": "7",
+      "text": "Howard Kelly \"Jack\" Fincher (December 6, 1930 — April 10, 2003) was a screenwriter and journalist who has written for various magazines and periodicals, notably serving as a chief editor of \"Life\" magazine. He is also the husband of Claire Mae (née Boettcher), a mental health nurse from South Dakota who worked in drug addiction programs and the father of acclaimed film director David Fincher. Fincher once wrote a Howard Hughes biopic before it was decided to go with John Logan's script for \"The Aviator\" instead. He also wrote The Brain Mystery of Matter and Mind (The Human Body) (Torstar Books Inc.) It is believed that Jack Fincher is the name he used for his books and that Howard Kelly Fincher is the name he was given.",
+      "source_id": "Jack Fincher (screenwriter)",
+      "title": "Jack Fincher (screenwriter)"
+    },
+    {
+      "id": "8",
+      "text": "Just Another Blonde (also known as The Girl From Coney Island) is a 1926 American silent romantic comedy/adventure film distributed by First National Pictures. Based on the short story \"Even Stev'en\" by Gerald Beaumont, the film was directed by Alfred Santell and stars Dorothy Mackaill, Jack Mulhall and Louise Brooks. An incomplete print of the film is preserved at the UCLA Film and Television Archive.",
+      "source_id": "Just Another Blonde",
+      "title": "Just Another Blonde"
+    },
+    {
+      "id": "9",
+      "text": "David Andrew Leo Fincher (born August 28, 1962) is an American director and producer, notably for films, television series and music videos. He was nominated for the Academy Award for Best Director for \"The Curious Case of Benjamin Button\" (2008) and \"The Social Network\" (2010). For the latter, he won the Golden Globe Award for Best Director and the BAFTA Award for Best Direction.",
+      "source_id": "David Fincher",
+      "title": "David Fincher"
+    },
+    {
+      "id": "10",
+      "text": "Aloma of the South Seas is a 1941 American romantic adventure drama film starring Dorothy Lamour and Jon Hall, directed by Alfred Santell. The film was shot in Technicolor and distributed by Paramount Pictures.",
+      "source_id": "Aloma of the South Seas (1941 film)",
+      "title": "Aloma of the South Seas (1941 film)"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 3,
+    "7": 0,
+    "8": 0,
+    "9": 3
+  },
+  "supporting_ids": [
+    "6",
+    "9"
+  ],
+  "gold_answer": [
+    "director"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ae268f35542994d89d5b416",
+  "subcategory": "comparison-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

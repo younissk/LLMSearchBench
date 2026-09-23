@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ae5fc345542",
+  "category": "wikipedia",
+  "question": "Kiki Preston was the alleged mother of a child born out of wedlock with a prince born in which year ?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Fraser v Children's Court, Pretoria North and Others is a 1997 judgment of the Constitutional Court of South Africa which held that, in certain circumstances, the consent of the father is required before a child born out of wedlock may be adopted. In a unanimous decision, the court held that the provisions of the Child Care Act, 1983, which required only the mother's consent, were unconstitutional, but suspended its order for two years so that Parliament could amend the law accordingly.",
+      "source_id": "Fraser v Children's Court, Pretoria North",
+      "title": "Fraser v Children's Court, Pretoria North"
+    },
+    {
+      "id": "2",
+      "text": "Prince George, Duke of Kent, {'1': \", '2': \", '3': \", '4': \"} (George Edward Alexander Edmund; 20 December 1902 – 25 August 1942) was the fourth son of George V of the United Kingdom and Queen Mary.",
+      "source_id": "Prince George, Duke of Kent",
+      "title": "Prince George, Duke of Kent"
+    },
+    {
+      "id": "3",
+      "text": "Miller v. Albright, 523 U.S. 420 (1998) , was a United States Supreme Court case in which the Court upheld the validity of laws relating to U.S. citizenship at birth for children born outside the United States, out of wedlock, to an American parent. The Court declined to overturn a more restrictive citizenship requirement applying to an illegitimate foreign-born child of an American father, as opposed to a child born to an American mother under similar circumstances.",
+      "source_id": "Miller v. Albright",
+      "title": "Miller v. Albright"
+    },
+    {
+      "id": "4",
+      "text": "Legitimacy, in traditional Western common law, is the status of a child born to parents who are legally married to each other, and of a child conceived before the parents obtain a legal divorce. Conversely, \"illegitimacy \" (or \"bastardy\") has been the status of a child born outside marriage.",
+      "source_id": "Legitimacy (family law)",
+      "title": "Legitimacy (family law)"
+    },
+    {
+      "id": "5",
+      "text": "Kiki Preston, née Alice Gwynne (1898 - December 23, 1946) was an American socialite, a member of the Happy Valley set, and the alleged mother of a child born out of wedlock with Prince George, Duke of Kent, fourth son of King George V. Known for her drug addiction, which earned her the soubriquet \"the girl with the silver syringe\", she was a fixture of the Paris and New York high social circles, and a relation to the powerful Vanderbilt and Whitney families. Her life was marred by several tragic losses and her own mental problems, which eventually led to her suicide at 48.",
+      "source_id": "Kiki Preston",
+      "title": "Kiki Preston"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 3
+  },
+  "supporting_ids": [
+    "2",
+    "5"
+  ],
+  "gold_answer": [
+    "1902"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ae5fc345542993aec5ec1f8",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

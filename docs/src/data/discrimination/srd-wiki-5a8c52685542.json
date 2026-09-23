@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a8c52685542",
+  "category": "wikipedia",
+  "question": "The We The People Amendment was introduced by the U.S. Representative for what congressional district?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Barbara Jean Lee (born July 16, 1946) is the U.S. Representative for California 's 13th congressional district , serving East Bay voters from 1998 to 2013 during a time when the region was designated California 's 9 congressional district . She is a member of the Democratic Party. She was the first woman to represent the 9th district and is also the first woman to represent the 13th district. Lee was the Chair of the Congressional Black Caucus and was the Co-Chair of the Congressional Progressive Caucus. Lee is notable as the only member of either house of Congress to vote against the authorization of use of force following the September 11, 2001 attacks. This made her a hero among many in the anti-war movement. Lee has been a vocal critic of the war in Iraq and supports legislation creating a Department of Peace.",
+      "source_id": "Barbara Lee",
+      "title": "Barbara Lee"
+    },
+    {
+      "id": "2",
+      "text": "Gary Charles Peters (born December 1, 1958) is an American politician and businessman who is the junior United States Senator from Michigan. A member of the Democratic Party, he was the U.S. Representative for Michigan 's 14 congressional district from 2013 until his election to the Senate. The district includes the eastern half of Detroit, as well as the Grosse Pointes, Hamtramck, Southfield and Pontiac. He previously represented Michigan 's 9 congressional district from 2009 to 2013. Following the redrawing of congressional district boundaries after the 2010 United States Census, Peters defeated fellow Congressman Hansen Clarke in the Democratic primary and won re-election in the newly redrawn 14th District.",
+      "source_id": "Gary Peters (politician)",
+      "title": "Gary Peters (politician)"
+    },
+    {
+      "id": "3",
+      "text": "Richard Michael Nolan (born December 17, 1943) is an American politician and member of the Minnesota Democratic–Farmer–Labor Party who has been the U.S. Representative for Minnesota's 8th congressional district since 2013 and previously served as the U.S. Representative for Minnesota's 6th congressional district from 1975 to 1981.",
+      "source_id": "Rick Nolan",
+      "title": "Rick Nolan"
+    },
+    {
+      "id": "4",
+      "text": "Adam Daniel Kinzinger (born February 27, 1978) is the U.S. Representative for Illinois 's 16 congressional district . He is a member of the Republican Party. He was first elected to Congress in 2010, winning election to represent Illinois's 11th congressional district. After redistricting, he was re-elected to Congress in 2012, 2014, and 2016 to represent Illinois's 16th congressional district.",
+      "source_id": "Adam Kinzinger",
+      "title": "Adam Kinzinger"
+    },
+    {
+      "id": "5",
+      "text": "The We The People Amendment is a joint resolution to amend the United States Constitution to abolish the doctrines of corporate personhood and money equals political speech. It was introduced by Representative Rick Nolan as on February 23, 2013. It has been re-introduced two more times as on April 29, 2015 and again as on January 30, 2017.",
+      "source_id": "We the People Amendment",
+      "title": "We the People Amendment"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 3
+  },
+  "supporting_ids": [
+    "3",
+    "5"
+  ],
+  "gold_answer": [
+    "Minnesota's 8th congressional district"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a8c52685542995e66a475bb",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

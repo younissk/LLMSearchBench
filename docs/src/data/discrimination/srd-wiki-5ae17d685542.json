@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ae17d685542",
+  "category": "wikipedia",
+  "question": "Which radioshow did Frank Sinatra appear on the year he won an Academy Award?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "\"Our Love\" is a 1939 song by Larry Clinton, Buddy Bernier, and Bob Emmerich. It was recorded by Frank Sinatra and was his first recording. Some sources have said that this song was recorded a day before Sinatra married his first wife Nancy or a month later in March. This song did not make Sinatra famous, but in that year he joined the Harry James Orchestra, only to leave a year later to join Tommy Dorsey and his orchestra. It was with Dorsey that Sinatra had his first hit, with I'll Never Smile Again.",
+      "source_id": "Our Love (song)",
+      "title": "Our Love (song)"
+    },
+    {
+      "id": "2",
+      "text": "This article contains a listing of American vocalist Frank Sinatra's albums (original LPs and collections) and singles from his career. An alphabetical listing of songs recorded by Sinatra with year(s) List of songs recorded by Frank Sinatra. Sinatra recorded his first album in 1946 while his final album was a collection of duets, released in 1994.",
+      "source_id": "Frank Sinatra discography",
+      "title": "Frank Sinatra discography"
+    },
+    {
+      "id": "3",
+      "text": "Sinatra: London is a 3CD & 1DVD Frank Sinatra box set released on November 25, 2014. It is the third in a series of city-themed box sets following \"\" and \"\". The set includes the 1962 album \"Sinatra Sings Great Songs from Great Britain\" as recorded in London, as well as unreleased outtake material from those sessions and spoken introductions for each song intended for a BBC radio special. The live material consists of a 1953 session from BBC Radio's \"The Show Band Show\", a full concert recorded in 1984 at the Royal Albert Hall, and two concerts on the DVD, both recorded at the Royal Festival Hall in 1962 and 1970. The liner notes are written by Ken Barnes.",
+      "source_id": "Sinatra: London",
+      "title": "Sinatra: London"
+    },
+    {
+      "id": "4",
+      "text": "Francis Albert Sinatra ( ; ] ; December 12, 1915 – May 14, 1998) was an American singer, actor, and producer who was one of the most popular and influential musical artists of the 20th century. He is one of the best-selling music artists of all time, having sold more than 150 million records worldwide. Born in Hoboken, New Jersey, to Italian immigrants, Sinatra began his musical career in the swing era with bandleaders Harry James and Tommy Dorsey. Sinatra found success as a solo artist after he signed with Columbia Records in 1943, becoming the idol of the \"bobby soxers\". He released his debut album, \"The Voice of Frank Sinatra\", in 1946. Sinatra's professional career had stalled by the early 1950s, and he turned to Las Vegas, where he became one of its best known performers as part of the Rat Pack. His career was reborn in 1953 with the success of \"From Here to Eternity\", with his performance subsequently winning an Academy Award and Golden Globe Award for Best Supporting Actor. Sinatra released several critically lauded albums, including \"In the Wee Small Hours\" (1955), \"Songs for Swingin' Lovers!\" (1956), \"Come Fly with Me\" (1958), \"Only the Lonely\" (1958) and \"Nice 'n' Easy\" (1960).",
+      "source_id": "Frank Sinatra",
+      "title": "Frank Sinatra"
+    },
+    {
+      "id": "5",
+      "text": "Laura Elsie Dickinson is an American actress and singer from California who is a vocalist for featured songs on the Disney Channel's programs \"Phineas and Ferb\", \"Sofia the First\", and \"Jake and the Never Land Pirates\". On December 12, 2014, she released her debut album, \"One for My Baby – To Frank Sinatra with Love\", on Music & Mirror Records in celebration of Frank Sinatra's 99th birthday and centennial year.",
+      "source_id": "Laura Dickinson",
+      "title": "Laura Dickinson"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "3",
+    "4"
+  ],
+  "gold_answer": [
+    "BBC Radio's \"The Show Band Show\""
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ae17d6855429901ffe4aea7",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

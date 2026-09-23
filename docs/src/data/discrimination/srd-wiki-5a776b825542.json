@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a776b825542",
+  "category": "wikipedia",
+  "question": "What is the official currency in the country that hosts the Asahi-Ryokuken Yomiuri Memorial tournament?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "The Yomiuri International Tournament was a golf event from 1962 to 1971. It was played at the Tokyo Yomiuri Country Club. The tournament served as the final event on the Asian Golf Circuit. The tournament was cancelled by the sponsor Yomiuri Shinbun newspaper because of political tensions. The Sobu Country Club offered a new tournament the Sobu International Open to replace the Yomiuri in the Asian schedule.",
+      "source_id": "Yomiuri International",
+      "title": "Yomiuri International"
+    },
+    {
+      "id": "2",
+      "text": "The 2007 Ivan Hlinka Memorial Tournament was an ice hockey tournament held in Hodonin, Czech Republic and Piešťany, Slovakia between August 14, 2007 and August 18, 2007. It was the 2007 installment of the Ivan Hlinka Memorial Tournament. Sweden defeated Finland 3-2 in the final to claim the gold medal, while Russia defeated Canada 5-4 to capture the bronze medal.",
+      "source_id": "2007 Ivan Hlinka Memorial Tournament",
+      "title": "2007 Ivan Hlinka Memorial Tournament"
+    },
+    {
+      "id": "3",
+      "text": "Valeri Lobanovsky Memorial Tournament (Ukrainian: Турнір Пам'яті Валерія Лобановського ) (before 2005); and since 2005 it is called the International Valeri Lobanovsky Memorial Tournament (Ukrainian: Міжнародний Турнір Пам'яті Валерія Лобановського ). This tournament was created in honour and memory of Valeri Lobanovsky since his death on 13 May 2002, hence the name Memorial. The idea was initiated by the FC Dynamo Kyiv management and the tournament is played at the V.V. Lobanovsky Dynamo Stadium in Kiev, Ukraine.",
+      "source_id": "Valeriy Lobanovskyi Memorial Tournament",
+      "title": "Valeriy Lobanovskyi Memorial Tournament"
+    },
+    {
+      "id": "4",
+      "text": "The Deutsche Mark (] , \"German mark\"), abbreviated \"DM\" or    , was the official currency of West Germany from 1948 until 1990 and later the unified Germany from 1990 until 2002. It was first issued under Allied occupation in 1948 to replace the Reichsmark, and served as the Federal Republic of Germany's official currency from its founding the following year until the adoption of the euro. In English, but not in German, it is commonly called the \"Deutschmark\" ( ).",
+      "source_id": "Deutsche Mark",
+      "title": "Deutsche Mark"
+    },
+    {
+      "id": "5",
+      "text": "The Asahi-Ryokuken Yomiuri Memorial was a golf tournament on the Japan Golf Tour from 2004 to 2006. It was played in November at the Asoiizuka Golf Club in Fukuoka. The purse for the 2006 event was ¥100,000,000, with ¥20,000,000 going to the winner.",
+      "source_id": "Asahi-Ryokuken Yomiuri Memorial",
+      "title": "Asahi-Ryokuken Yomiuri Memorial"
+    },
+    {
+      "id": "6",
+      "text": "The yen (Japanese: 円 , Hepburn: en , symbol: ¥; code: JPY; also abbreviated as JP¥) is the official currency of Japan. It is the third most traded currency in the foreign exchange market after the United States dollar and the euro. It is also widely used as a reserve currency after the U.S. dollar, the euro, and the pound sterling.",
+      "source_id": "Japanese yen",
+      "title": "Japanese yen"
+    },
+    {
+      "id": "7",
+      "text": "The Shinya Hashimoto Memorial Tournament is an annual professional wrestling memorial event produced by Steve Corino's Pro Wrestling WORLD-1 (WORLD-1) promotion, typically between July and September. It is held in honor of Japanese wrestler Shinya Hashimoto, one of the most popular stars in Japan during the 1990s, who died of a brain aneurysm in Tokyo, Japan on July 11, 2005. It is the second Hashimoto memorial show following HUSTLE's Shinya Hashimoto Memorial Six Man Tag Team Tournament in 2006. Officially sanctioned by Pro Wrestling Zero1, is the first and only Hashimoto memorial event ever held outside Japan.",
+      "source_id": "Shinya Hashimoto Memorial Legacy Cup Tournament",
+      "title": "Shinya Hashimoto Memorial Legacy Cup Tournament"
+    },
+    {
+      "id": "8",
+      "text": "The Jeff Peterson Memorial Cup was an annual professional wrestling memorial show produced by Full Impact Pro (FIP) promotion, typically between October and December. The event was established to honor the memory of independent wrestler \"All American\" Jeff Peterson who died at age 21 after a two-year battle with leukemia. A rising star in the National Wrestling Alliance at the time of his death, his home promotion NWA Florida held a memorial tournament, co-hosted by IPW Hardcore, presented by his friends and fellow Florida wrestlers. The first show was held on May 16–17, 2003, at the Florida WrestlePlex in St. Petersburg, Florida. It is the longest-running tournament in the Southeastern United States followed by CWF Mid-Atlantic's Johnny Weaver Memorial Tournament.",
+      "source_id": "Jeff Peterson Memorial Cup",
+      "title": "Jeff Peterson Memorial Cup"
+    },
+    {
+      "id": "9",
+      "text": "The Fiume krone (Italian: \"corona Fiumana\" , abbreviated Cor. or FIUK) was introduced in the Free State of Fiume on 18 April 1919 by the stamping the previous Austro-Hungarian krone notes by the Italian National Council of Fiume who effectively exercised power in the City. After the Dannunzian occupation in September 1919, a new series of notes were stamped on behalf of the \"Istituto di credito del Consiglio Nazionale\" with a decree dated 6 October 1919. The Fiume krone was the official currency of the City of Fiume up to 26 September 1920 when, by the decree of the general Amantea commander of the Italian troops in Fiume, the Italian lira was introduced as the new official currency.",
+      "source_id": "Fiume krone",
+      "title": "Fiume krone"
+    },
+    {
+      "id": "10",
+      "text": "Currency depreciation is the loss of value of a country's currency with respect to one or more foreign reference currencies, typically in a floating exchange rate system in which no official currency value is maintained. Currency appreciation in the same context is an increase in the value of the currency.",
+      "source_id": "Currency appreciation and depreciation",
+      "title": "Currency appreciation and depreciation"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 3,
+    "6": 3,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "5",
+    "6"
+  ],
+  "gold_answer": [
+    "yen"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a776b82554299373536026f",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

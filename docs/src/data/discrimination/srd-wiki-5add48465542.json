@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5add48465542",
+  "category": "wikipedia",
+  "question": "What film directed by David Greene did Merrell Jackson play an apostle in?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "The Dark Light is a 1951 British thriller film directed by Vernon Sewell and starring  Albert Lieven, David Greene, Norman Macowan. It was filmed at a rented country estate in Gilston and on location around Portsmouth.",
+      "source_id": "The Dark Light (film)",
+      "title": "The Dark Light (film)"
+    },
+    {
+      "id": "2",
+      "text": "Godspell (also known as \"Godspell: A Musical Based on the Gospel According to St. Matthew\") is the 1973 musical film of the Off-Broadway musical \"Godspell\" created by John-Michael Tebelak with music and lyrics by Stephen Schwartz. Directed by David Greene with stars Victor Garber as Jesus and David Haskell as Judas/John the Baptist, the film is set in contemporary New York City. John-Michael Tebelak is credited as co-writer of the screenplay and served as the creative consultant, although director David Greene said Tebelak did not write the screenplay.",
+      "source_id": "Godspell (film)",
+      "title": "Godspell (film)"
+    },
+    {
+      "id": "3",
+      "text": "Merrell Jackson (April 26, 1952 – February 23, 1991) was an actor who played one of the apostles in the film \"Godspell\" (1973). He sang \"All Good Gifts\".",
+      "source_id": "Merrell Jackson",
+      "title": "Merrell Jackson"
+    },
+    {
+      "id": "4",
+      "text": "What Ever Happened to... is a 1991 American made-for-television thriller drama film directed by David Greene and adapted for the small screen by Brian Taggert, based on the novel \"What Ever Happened to Baby Jane?\" by Henry Farrell and the 1962 theatrical film of the same name. It stars real-life sisters Lynn Redgrave as Baby Jane Hudson and Vanessa Redgrave as Blanche Hudson, in the roles previously played by Bette Davis and Joan Crawford in the 1962 adaptation.",
+      "source_id": "What Ever Happened to...",
+      "title": "What Ever Happened to..."
+    },
+    {
+      "id": "5",
+      "text": "Madame Sin is a 1972 British thriller film directed by David Greene and starring Bette Davis, Robert Wagner, Denholm Elliott and Gordon Jackson. The screenplay was written by Greene and Barry Oringer.",
+      "source_id": "Madame Sin",
+      "title": "Madame Sin"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "2",
+    "3"
+  ],
+  "gold_answer": [
+    "Godspell"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5add48465542992200553a80",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

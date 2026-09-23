@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ab761d95542",
+  "category": "wikipedia",
+  "question": "Which Austrian Chancellor does Jörg Leichtfried serve under?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Jörg Leichtfried (born 18 June 1967 in Bruck an der Mur, Styria) is an Austrian politician who currently serves as Federal Minister for Transport, Innovation and Technology in the government of Chancellor Christian Kern.",
+      "source_id": "Jörg Leichtfried",
+      "title": "Jörg Leichtfried"
+    },
+    {
+      "id": "2",
+      "text": "Karl, Count Chotek of Chotkow and Wognin (Czech: \"Karel hrabě Chotek z Chotkova a Vojnína\" , German: \"Karl Graf Chotek von Chotkow und Wognin\" ); (23 July 1783 – 18 December 1868) was an Austrian chancellor, Government President (Gubernialpräsident) and school reformer of Bohemia and honorary citizen of Innsbruck and Prague.",
+      "source_id": "Karl, Count Chotek of Chotkow and Wognin",
+      "title": "Karl, Count Chotek of Chotkow and Wognin"
+    },
+    {
+      "id": "3",
+      "text": "George Abraham von Dyhrn, \"1st Baron of Dyhrn\" (1620–1671), was an Austrian Chancellor in the province of Silesia, politician and a landowner in the Habsburg monarchy.",
+      "source_id": "George Abraham von Dyhrn",
+      "title": "George Abraham von Dyhrn"
+    },
+    {
+      "id": "4",
+      "text": "Christian Kern ( ] ; born 4 January 1966) is the incumbent Chancellor of Austria and chairman of the Social Democratic Party of Austria (SPÖ).",
+      "source_id": "Christian Kern",
+      "title": "Christian Kern"
+    },
+    {
+      "id": "5",
+      "text": "The Second Faymann government was a government of Austrian Chancellor Werner Faymann. It took office on 16 December 2013 following the 2013 legislative election, succeeding the First Faymann government. On 17 May 2016, it was succeeded by the Kern government, following Faymann's resignation amidst the 2016 presidential election.",
+      "source_id": "Second Faymann government",
+      "title": "Second Faymann government"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "4"
+  ],
+  "gold_answer": [
+    "Christian Kern"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ab761d955429928e1fe3856",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

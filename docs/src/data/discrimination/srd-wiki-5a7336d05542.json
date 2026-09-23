@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a7336d05542",
+  "category": "wikipedia",
+  "question": "Lady Elizabeth Delmé and Her Children (1779) is a portrait given to the National Gallery of Art in 1937, which is located in which state?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Lady Elizabeth Delmé and Her Children (1779) is an oil on canvas portrait by Joshua Reynolds. It was given to the National Gallery of Art in 1937. The NGA describes the work as a \"majestic group portrait\".",
+      "source_id": "Lady Elizabeth Delmé and Her Children",
+      "title": "Lady Elizabeth Delmé and Her Children"
+    },
+    {
+      "id": "2",
+      "text": "The National Gallery of Art, and its attached Sculpture Garden, is a national art museum in Washington, D.C., located on the National Mall, between 3rd and 9th Streets, at Constitution Avenue NW. Open to the public and free of charge, the museum was privately established in 1937 for the American people by a joint resolution of the United States Congress. Andrew W. Mellon donated a substantial art collection and funds for construction. The core collection includes major works of art donated by Paul Mellon, Ailsa Mellon Bruce, Lessing J. Rosenwald, Samuel Henry Kress, Rush Harrison Kress, Peter Arrell Brown Widener, Joseph E. Widener, and Chester Dale. The Gallery's collection of paintings, drawings, prints, photographs, sculpture, medals, and decorative arts traces the development of Western Art from the Middle Ages to the present, including the only painting by Leonardo da Vinci in the Americas and the largest mobile created by Alexander Calder.",
+      "source_id": "National Gallery of Art",
+      "title": "National Gallery of Art"
+    },
+    {
+      "id": "3",
+      "text": "Self-Portrait at the Age of 34 is a self-portrait by Rembrandt, dating to 1640 and now in the National Gallery, London. The painting is one of many self-portraits by Rembrandt, in both painting and etching, to show the artist in a fancy costume from the previous century. In this case specific influences in the pose have long been recognised from Raphael's \"Portrait of Baldassare Castiglione\" (now Louvre) and Titian's \"A Man with a Quilted Sleeve\" (in 2017 called \"Portrait of Gerolamo? Barbarigo\") in the National Gallery. Rembrandt saw both of these in Amsterdam, in his day the centre of Europe's art trade, and made a sketch of the Raphael, with its price.",
+      "source_id": "Self-portrait at the age of 34",
+      "title": "Self-portrait at the age of 34"
+    },
+    {
+      "id": "4",
+      "text": "Madame Moitessier is the title of a portrait of Marie-Clotilde-Inès Moitessier (née de Foucauld) begun in 1844 and completed in 1856 by Jean-Auguste-Dominique Ingres. The portrait, which depicts Madame Moitessier seated, is now in the National Gallery in London. \"Madame Moitessier\" is also the title of a second portrait by Ingres, which depicts her standing; it was painted in 1851 and is now in the National Gallery of Art, Washington, D.C..",
+      "source_id": "Madame Moitessier",
+      "title": "Madame Moitessier"
+    },
+    {
+      "id": "5",
+      "text": "The National Portrait Gallery (NPG) is an art gallery in London housing a collection of portraits of historically important and famous British people. It was the first portrait gallery in the world when it opened in 1856. The gallery moved in 1896 to its current site at St Martin's Place, off Trafalgar Square, and adjoining the National Gallery. It has been expanded twice since then. The National Portrait Gallery also has regional outposts at Beningbrough Hall in Yorkshire and Montacute House in Somerset. It is unconnected to the Scottish National Portrait Gallery in Edinburgh, with which its remit overlaps. The gallery is a non-departmental public body sponsored by the Department for Culture, Media and Sport.",
+      "source_id": "National Portrait Gallery, London",
+      "title": "National Portrait Gallery, London"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "2"
+  ],
+  "gold_answer": [
+    "Washington, D.C."
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a7336d05542992359bc3293",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

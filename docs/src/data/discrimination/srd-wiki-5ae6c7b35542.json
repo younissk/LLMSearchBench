@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ae6c7b35542",
+  "category": "wikipedia",
+  "question": "What is the magazine that listed \"Jump Around\" by House of Pain at 325 out of \"500 greatest songs since you were born\", known for?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "\"Jump Around\" is a hit song by American hip hop group House of Pain, produced by DJ Muggs of Cypress Hill, who has also covered the song. It became a hit in 1992, reaching number 3 in the group's native United States. A 1993 re-release of the song in the United Kingdom, where the initial release had been a minor hit, peaked at number 8. On VH1's \"100 Greatest Songs of the 90s\", \"Jump Around\" was featured at position 24. It was number 66 on VH1's \"100 Greatest Songs of Hip Hop\". The song is popular among dancehall DJs and is widely regarded in the United Kingdom as a club classic. Blender's \"500 Greatest Songs Since You Were Born\" listed it at number 325.",
+      "source_id": "Jump Around",
+      "title": "Jump Around"
+    },
+    {
+      "id": "2",
+      "text": "\"Criminal\" is a song by Fiona Apple. Apple said that the song is about \"feeling bad for getting something so easily by using your sexuality.\" It was released as the third single from the album \"Tidal\" in September 1997, and is Apple's biggest hit, peaking at No. 21 on the \"Billboard\" Hot 100, as well as No. 4 on the Billboard Modern Rock Tracks chart. The song won the Grammy Award for Best Female Rock Vocal Performance at the 40th Grammy Awards and was nominated for Best Rock Song. The song was listed at number 71 on \"Blender\" magazine's 2005 list of \"The 500 Greatest Songs Since You Were Born\". It reached No. 55 on VH1's \"100 Greatest Songs of the 90's.",
+      "source_id": "Criminal (Fiona Apple song)",
+      "title": "Criminal (Fiona Apple song)"
+    },
+    {
+      "id": "3",
+      "text": "\"Move Ya Body\" is a song recorded by American duo Nina Sky. It was released in April 2004 as the lead single from their debut album \"Nina Sky\". The song features rapper Jabba. There is a remix to the song with Jamaican deejay Vybz Kartel. The song became the duo's only solo single to reach the top 40 of the \"Billboard\" Hot 100, as such Nina Sky is often regarded as a one hit wonder, though they did appear on N.O.R.E.s \"Oye Mi Canto\", which made it to number 12 on the Hot 100. The song ranked at number 250 on \"Blender\"' s 500 Greatest Songs Since You Were Born. It was also featured as soundtrack in 2012 film Zero Dark Thirty.",
+      "source_id": "Move Ya Body",
+      "title": "Move Ya Body"
+    },
+    {
+      "id": "4",
+      "text": "Blender was an American music magazine that billed itself as \"the ultimate guide to music and more\". It was also known for sometimes steamy pictorials of celebrities. It compiled lists of albums, artists, and songs, including both \"best of\" and \"worst of\" lists. In each issue, there was a review of an artist's entire discography, with each album being analyzed in turn.",
+      "source_id": "Blender (magazine)",
+      "title": "Blender (magazine)"
+    },
+    {
+      "id": "5",
+      "text": "\"Larger than Life\" is a song by American boy band Backstreet Boys, released on September 3, 1999 as the second single from their third studio album, \"Millennium\". It was written by band member Brian Littrell with Max Martin and Kristian Lundin, who also produced the song along with Rami Yacoub. The song is a \"thank you\" for their fans' encouragement and devotion. Music critics praised its memorable melody, singalong lyrics and the band's vocal performance. It was also on \"Blender's\" list of the 500 Greatest Songs Since You Were Born.",
+      "source_id": "Larger than Life (song)",
+      "title": "Larger than Life (song)"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "4"
+  ],
+  "gold_answer": [
+    "steamy pictorials of celebrities"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ae6c7b35542992ae0d1639c",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

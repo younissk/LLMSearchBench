@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ab97b275542",
+  "category": "wikipedia",
+  "question": "What characteristics do Rosario Castellanos and Arthur Hailey  share?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Jean-Claude Andro (1937, Quimper – 2000) was a French writer. He published his first novel at 22 and then left to teach in Mexico (1960-62). He then pursued a career as a novelist and translator (\"Zone sacrée\" and \"Chant des aveugles\" by Carlos Fuentes and \"Christ des ténèbres\" by Rosario Castellanos).",
+      "source_id": "Jean-Claude Andro",
+      "title": "Jean-Claude Andro"
+    },
+    {
+      "id": "2",
+      "text": "Rosario Castellanos Figueroa (] ; 25 May 1925 – 7 August 1974) was a Mexican poet and author. Along with the other members of the Generation of 1950 (the poets who wrote following the Second World War, influenced by César Vallejo and others), she was one of Mexico's most important literary voices in the last century. Throughout her life, she wrote eloquently about issues of cultural and gender oppression, and her work has influenced feminist theory and cultural studies. Though she died young, she opened the door of Mexican literature to women, and left a legacy that still resonates today.",
+      "source_id": "Rosario Castellanos",
+      "title": "Rosario Castellanos"
+    },
+    {
+      "id": "3",
+      "text": "Arthur Hailey (April 5, 1920 – November 24, 2004) was a British-Canadian novelist whose plot-driven storylines were set against the backdrops of various industries. His meticulously-researched books, which include such best sellers as \"Hotel\" (1965), \"Airport\" (1968), \"Wheels\" (1971), \"The Moneychangers\" (1975), and \"Overload\" (1979), have sold 170 million copies in 38 languages.",
+      "source_id": "Arthur Hailey",
+      "title": "Arthur Hailey"
+    },
+    {
+      "id": "4",
+      "text": "Cristina Pacheco is a journalist, writer, interviewer and television personality who lives and works in Mexico City. While her journalism career began in 1960, continuing with regular columns in La Jornada, she is best known for her work in television, hosting two shows called Aquí nos tocó vivir and Conversando, con Cristina Pacheco, both on Once TV since 1980. Which these shows, Pacheco interviews notable people and profiles popular Mexican culture, which includes interviews with common people. She has received over forty prizes and other recognitions for her work including Mexico’s National Journalism Prize and the first Rosario Castellanos a la Trayectoria Cultural de la Mujer Award for outstanding women in the Spanish-speaking world.",
+      "source_id": "Cristina Pacheco",
+      "title": "Cristina Pacheco"
+    },
+    {
+      "id": "5",
+      "text": "Zero Hour! is a 1957 drama film directed by Hall Bartlett from a screenplay by Arthur Hailey, Hall Bartlett and John Champion. It stars Dana Andrews, Linda Darnell and Sterling Hayden and features Peggy King, Elroy \"Crazy Legs\" Hirsch, Geoffrey Toone and Jerry Paris in supporting roles. The film was released by Paramount Pictures.",
+      "source_id": "Zero Hour! (1957 film)",
+      "title": "Zero Hour! (1957 film)"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "2",
+    "3"
+  ],
+  "gold_answer": [
+    "poet and author."
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ab97b27554299131ca4233c",
+  "subcategory": "comparison-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

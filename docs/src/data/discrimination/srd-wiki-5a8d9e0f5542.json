@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a8d9e0f5542",
+  "category": "wikipedia",
+  "question": "The actor that played Gutthi on Comedy nights with Kapil Show also starred in what 2016 Punjabi film directed by Smeep Kang?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Sudesh Lehri is an Indian stand-up comedian, film, and television actor. He participated in the 2007 comedy show \"The Great Indian Laughter Challenge III\" in 2007. He was a second runner up in the show after Kapil Sharma and Chandan Prabhakar. He then participated in the TV show, \"Comedy Circus\", as a contestant partnering with Krushna Abhishek. Together, they won three seasons and quickly garnered popularity as \"Krushna-Sudesh\". The duo appeared on \"Comedy Nights Bachao,Comedy nights live & Comedy nights taza\". His new show is The Drama company on Sony Entertainment Television where he is seen with Bollywood legend Mithun Chakraborty",
+      "source_id": "Sudesh Lehri",
+      "title": "Sudesh Lehri"
+    },
+    {
+      "id": "2",
+      "text": "Vaisakhi List (Punjabi: ਵਿਸਾਖੀ ਲਿਸਟ ) is a 2016 Punjabi film directed by Smeep Kang and starring Jimmy Shergill, Shruti Sodhi and Sunil Grover as the main cast and the film was released on 22 April 2016.",
+      "source_id": "Vaisakhi List",
+      "title": "Vaisakhi List"
+    },
+    {
+      "id": "3",
+      "text": "Sunil Grover (born 3 August 1977) is an Indian actor and stand-up comedian He has acted in many comedy shows but gained popularity on the Comedy nights with Kapil Show, for his portrayal of a character called Gutthi. Other popular characters portrayed by him have been Dr. Mashoor Gulati and Rinku bhabhi on The Kapil Sharma Show",
+      "source_id": "Sunil Grover",
+      "title": "Sunil Grover"
+    },
+    {
+      "id": "4",
+      "text": "Lock is a 2016 Indian Punjabi-language film directed by Smeep Kang, written by Pali Bhupinder Singh and starring Gippy Grewal, Gurpreet Ghuggi, Geeta Basra, Karamjit Anmol & Smeep Kang as the main protagonist of the film and released worldwide on 14 October 2016. The film is a remake of Malayalam film \"Shutter\".",
+      "source_id": "Lock (film)",
+      "title": "Lock (film)"
+    },
+    {
+      "id": "5",
+      "text": "Bhaji in Problem (Punjabi: ਭਾਜੀ ਇਨ ਪ੍ਰਾਬਲਮ ) is a 2013 Indian Punjabi-language comedy film directed by Smeep Kang, who had earlier directed films like \"Carry on Jatta\" and \"Lucky Di Unlucky Story\", both of which featured Gippy Grewal in the lead role. Grewal also appears in this film, along with an ensemble cast including Ragini Khanna, Gurpreet Ghuggi, B.N. Sharma, Karamjit Anmol, Japji Khaira, Khushboo Grewal and Misha Bajwa amongst others. The film is produced by Ashvini Yardi, and Bollywood actor Akshay Kumar who also appears in the film shortly, enacting as a lookalike of himself.",
+      "source_id": "Bhaji in Problem",
+      "title": "Bhaji in Problem"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "2",
+    "3"
+  ],
+  "gold_answer": [
+    "Vaisakhi List"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a8d9e0f554299441c6ba015",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

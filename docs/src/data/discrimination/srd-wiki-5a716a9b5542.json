@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a716a9b5542",
+  "category": "wikipedia",
+  "question": "What actor from \"Willow\" also starred in \"The Usual Suspects\"?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Pan-Européenne is a French film production and publishing company. Originally only distribution company, in 1992 it began also a production company, producing \"Beau fixe\". It has produced various films, including Jaco Van Dormael's \"The Eighth Day\" (1996) and \"Mr. Nobody\" (2009), Jérôme Salle's \"Largo Winch\" (2008), and distributed Bryan Singer's \"The Usual Suspects\" (1995), Frank Miller and Robert Rodriguez's \"Sin City\" (2009).",
+      "source_id": "Pan-Européenne",
+      "title": "Pan-Européenne"
+    },
+    {
+      "id": "2",
+      "text": "Bad Hat Harry Productions is an American film and television production company founded in 1994 by director Bryan Singer. It has produced such films as \"The Usual Suspects\" and the \"X-Men\" film series, as well as the television series \"House\". The name is a homage to Steven Spielberg and comes from a line uttered by Roy Scheider in the 1975 feature \"Jaws\". Martin Brody says to an elderly swimmer who teases him about not going in the water, \"That's some bad hat, Harry\" (a \"bad hat\" is a disreputable person or troublemaker). The logo, introduced in 1997, is taken from the police lineup scene of \"The Usual Suspects\".",
+      "source_id": "Bad Hat Harry Productions",
+      "title": "Bad Hat Harry Productions"
+    },
+    {
+      "id": "3",
+      "text": "Calogero Lorenzo \"Chazz\" Palminteri (born May 15, 1952) is an American actor, screenwriter, and producer, best known for his Academy Award-nominated role for Best Supporting Actor in \"Bullets over Broadway\", the 1993 film \"A Bronx Tale\", based on his play of the same name, Special Agent David \"Dave\" Kujan in \"The Usual Suspects\", Primo Sidone in \"Analyze This\" and his recurring role as Shorty in \"Modern Family\". Also has a role in [Call of Duty, Black Ops 2] Zombie map Mob of the Dead as \"Sal\"",
+      "source_id": "Chazz Palminteri",
+      "title": "Chazz Palminteri"
+    },
+    {
+      "id": "4",
+      "text": "The Empire Award for Best Newcomer (formerly known as Best Debut) was an Empire Award presented annually by the British film magazine \"Empire\" to honor a director with a breakthrough film or an actor who has delivered a breakthrough performance while working within the film industry. The Empire Award for Best Newcomer was first introduced at the 1st Empire Awards ceremony in 1996 with Bryan Singer receiving the award for his direction of \"The Usual Suspects\" and last presented at the 16th Empire Awards ceremony in 2011. Winners were voted by the readers of \"Empire\" magazine.",
+      "source_id": "Empire Award for Best Newcomer",
+      "title": "Empire Award for Best Newcomer"
+    },
+    {
+      "id": "5",
+      "text": "Kevin Spacey is an American actor, director and producer, who began acting on stage. After winning two Academy Awards for \"The Usual Suspects\" and \"American Beauty\". He stars in the Netflix television series \"House of Cards\".",
+      "source_id": "Kevin Spacey filmography",
+      "title": "Kevin Spacey filmography"
+    },
+    {
+      "id": "6",
+      "text": "Stephen Andrew Baldwin (born May 12, 1966) is an American actor, producer and author. He is known for appearing in films, including \"Born on the Fourth of July\" (1989), \"Posse\" (1993), \"Threesome\" (1994), \"The Usual Suspects\" (1995), \"Bio-Dome\" (1996) and \"The Flintstones in Viva Rock Vegas\" (2000). He also starred in the television series \"The Young Riders\" (1989–92), and as himself in the reality shows \"Celebrity Big Brother 7\" (UK) and \"Celebrity Apprentice\". In 2004, he directed \"Livin' It\", a Christian-themed skateboarding DVD. He is the youngest of the Baldwin brothers and is a Christian evangelist.",
+      "source_id": "Stephen Baldwin",
+      "title": "Stephen Baldwin"
+    },
+    {
+      "id": "7",
+      "text": "The Usual Suspects is a 1995 American neo-noir mystery film directed by Bryan Singer and written by Christopher McQuarrie. It stars Stephen Baldwin, Gabriel Byrne, Benicio del Toro, Kevin Pollak, Chazz Palminteri, Pete Postlethwaite, and Kevin Spacey.",
+      "source_id": "The Usual Suspects",
+      "title": "The Usual Suspects"
+    },
+    {
+      "id": "8",
+      "text": "Kevin Spacey Fowler, KBE (born July 26, 1959) is an American actor, film director, producer, screenwriter, and singer. He began his career as a stage actor during the 1980s before obtaining supporting roles in film and television. He gained critical acclaim in the early 1990s that culminated in his first Academy Award for Best Supporting Actor for the neo-noir crime thriller \"The Usual Suspects\" (1995), and an Academy Award for Best Actor for midlife crisis-themed drama \"American Beauty\" (1999).",
+      "source_id": "Kevin Spacey",
+      "title": "Kevin Spacey"
+    },
+    {
+      "id": "9",
+      "text": "100 Films and a Funeral is both a memoir by Michael Kuhn and a 2007 documentary film adaptation by filmmaker Michael McNamara about the rise and fall of PolyGram Filmed Entertainment (PFE), the company that produced \"Four Weddings and a Funeral\", \"The Usual Suspects\", and \"Trainspotting\". Kuhn headed PFE from 1991 till 1999, when Philips sold it to the Seagram conglomerate. The selling of PFE also ended the prominent role of the company in the British film industry revival of the 1990s.",
+      "source_id": "100 Films and a Funeral",
+      "title": "100 Films and a Funeral"
+    },
+    {
+      "id": "10",
+      "text": "Kevin Elliot Pollak (born October 30, 1957) is an American actor, impressionist, and comedian. He started performing stand-up comedy at the age of 10 and touring professionally at the age of 20. In 1988, he landed a role in \"Willow\", his first major role in a film. Pollak is an avid poker player, hosting weekly home games with some of Hollywood's A-list celebrities. He finished 134th out of 6,598 entrants in the 2012 World Series of Poker, his winnings totaling to $52,718.",
+      "source_id": "Kevin Pollak",
+      "title": "Kevin Pollak"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 3,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 3,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "7",
+    "10"
+  ],
+  "gold_answer": [
+    "Kevin Elliot Pollak"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a716a9b5542994082a3e821",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

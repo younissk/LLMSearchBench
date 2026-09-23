@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a77101d5542",
+  "category": "wikipedia",
+  "question": "Who was born in 1922 and published a book in 1985 by Delacorte Press?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Starters is a novel by Lissa Price. The book was published on March 12, 2012 by Delacorte Press and has been published in German, Greek, Dutch, Italian, French, Portuguese, Turkish and Spanish. Price has announced a sequel to the book entitled \"Enders\", with screen rights to the series currently being shopped. Price stated that she came up with the idea for the novel after trying to receive a flu shot and was turned away due to a lack of available vaccines.",
+      "source_id": "Starters (novel)",
+      "title": "Starters (novel)"
+    },
+    {
+      "id": "2",
+      "text": "Betrayal is a novel by Danielle Steel, published by Delacorte Press in July 2012. The book is Steel's eighty-sixth novel, and (including non-fiction and children's books) her 104th book overall. It reached number 3 in the New York Times hardback fiction bestsellers chart. It is also available in audio book, read by Renee Raudman.",
+      "source_id": "Betrayal (Steel novel)",
+      "title": "Betrayal (Steel novel)"
+    },
+    {
+      "id": "3",
+      "text": "Galápagos is the eleventh novel written by American author Kurt Vonnegut. The novel questions the merit of the human brain from an evolutionary perspective. The title is both a reference to the islands on which part of the story plays out, and a tribute to Charles Darwin on whose theory Vonnegut relies to reach his own conclusions. It was first published in 1985 by Delacorte Press.",
+      "source_id": "Galápagos (novel)",
+      "title": "Galápagos (novel)"
+    },
+    {
+      "id": "4",
+      "text": "The Fever Code is a 2016 young adult dystopian science fiction novel written by American author James Dashner and published on September 27, 2016 by Delacorte Press. It is the second prequel book in \"The Maze Runner\" series and the fifth installment overall. The book is chronologically set in between the events of \"The Kill Order\" and immediately before \"The Maze Runner\" book.",
+      "source_id": "The Fever Code",
+      "title": "The Fever Code"
+    },
+    {
+      "id": "5",
+      "text": "Kurt Vonnegut Jr. ( ; November 11, 1922April 11, 2007) was an American writer. In a career spanning over 50 years, Vonnegut published 14 novels, three short story collections, five plays, and five works of non-fiction. He is most famous for his darkly satirical, best-selling novel \"Slaughterhouse-Five\" (1969).",
+      "source_id": "Kurt Vonnegut",
+      "title": "Kurt Vonnegut"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 3
+  },
+  "supporting_ids": [
+    "3",
+    "5"
+  ],
+  "gold_answer": [
+    "Kurt Vonnegut"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a77101d5542994aec3b71d7",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

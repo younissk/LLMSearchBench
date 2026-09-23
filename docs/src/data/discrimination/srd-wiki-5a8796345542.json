@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a8796345542",
+  "category": "wikipedia",
+  "question": "In the epic of Gilgamesh, where did the wise female divinity associated with fermentation live?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Mashu, as described in the Epic of Gilgamesh of Mesopotamian mythology, is a great cedar mountain through which the hero-king Gilgamesh passes via a tunnel on his journey to Dilmun after leaving the Cedar Forest, a forest of ten thousand leagues span. Siduri, the Alewife, lived on the shore, associated with \"the Waters of Death\" that Gilgamesh had to cross to reach Utnapishtim, the far-away.",
+      "source_id": "Mashu",
+      "title": "Mashu"
+    },
+    {
+      "id": "2",
+      "text": "Siduri is a character in the Epic of Gilgamesh. She is an \"alewife\", a wise female divinity associated with fermentation (specifically beer and wine).",
+      "source_id": "Siduri",
+      "title": "Siduri"
+    },
+    {
+      "id": "3",
+      "text": "The cuneiform sign ur (𒌨</a> ) is a common-use sign in the \"<a href=\"Epic%20of%20Gilgamesh\">Epic of Gilgamesh</a>\", the <a href=\"Amarna%20letters\">Amarna letters</a>, and other cuneiform texts. It has multiple sub-uses in the \"Epic of Gilgamesh\", as well as use for the sumerogram (capital letter (majuscule)), UR. In the Epic, \"UR\" is used to spell Akkadian language \"barbaru\", \"wolf\", as \"UR.BAR.RA (in Tablet VI, and Tablet XI).",
+      "source_id": "Ur (cuneiform)",
+      "title": "Ur (cuneiform)"
+    },
+    {
+      "id": "4",
+      "text": "The \"Epic of Gilgamesh\" has directly inspired many manifestations of literature, art, music, and popular culture, as identified by Theodore Ziolkowski in the book \"Gilgamesh Among Us: Modern Encounters With the Ancient Epic\" (2011). It was only during and after the First World War that the first reliable translations of the epic appeared that reached a wide audience, and it was only after the Second World War that the epic of Gilgamesh began to make itself felt more broadly in a variety of genres.",
+      "source_id": "Gilgamesh in popular culture",
+      "title": "Gilgamesh in popular culture"
+    },
+    {
+      "id": "5",
+      "text": "The Epic of Gilgamesh is an epic poem from ancient Mesopotamia that is often regarded as the earliest surviving great work of literature. The literary history of Gilgamesh begins with five Sumerian poems about 'Bilgamesh' (Sumerian for 'Gilgamesh'), king of Uruk, dating from the Third Dynasty of Ur (circa 2100 BC). These independent stories were later used as source material for a combined epic. The first surviving version of this combined epic, known as the \"Old Babylonian\" version, dates to the 18th century BC and is titled after its \"incipit\", Shūtur eli sharrī (\"Surpassing All Other Kings\"). Only a few tablets of it have survived. The later \"Standard\" version dates from the 13th to the 10th centuries BC and bears the \"incipit\" Sha naqba īmuru (\"He who Saw the Deep\", in modern terms: \"He who Sees the Unknown\"). Approximately two thirds of this longer, twelve-tablet version have been recovered. Some of the best copies were discovered in the library ruins of the 7th-century BC Assyrian king Ashurbanipal.",
+      "source_id": "Epic of Gilgamesh",
+      "title": "Epic of Gilgamesh"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "2"
+  ],
+  "gold_answer": [
+    "the Waters of Death"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a8796345542994846c1cda3",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

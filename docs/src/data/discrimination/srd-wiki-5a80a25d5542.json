@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a80a25d5542",
+  "category": "wikipedia",
+  "question": "What is the name of the vocalist who collaborated with the rap duo who won the 2002 Grammy Award for Best Rap Performance by a Duo or Group?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Anomaly is the seventh studio album by American Christian hip hop artist Lecrae, released on September 9, 2014, through Reach Records. The album features appearances from Crystal Nicole, Kari Jobe, and For King & Country, along with label-mate Andy Mineo. \"Anomaly\" met with a positive critical reception, and the song \"Nuthin\", released for streaming as a single on July 1, 2014, was nominated for the 2014 BET Hip Hop Awards in the best Impact Track category. The album also fared well commercially, debuting at No. 1 on the \"Billboard\" 200 with over 88,000 copies sold. It also debuted at No. 1 on the Top Gospel Albums chart, marking the first time that any artist has ever topped both the 200 and Gospel charts. \"Anomaly\" won Rap/Hip Hop Album of the Year at the 2015 GMA Dove Awards, and Rap, Hip Hop Gospel CD of the Year at the 2015 Stellar Awards. Two songs earned a nomination for the 2015 Grammy Awards; \"All I Need is You\" was nominated for Best Rap Performance, and \"Messengers\", featuring For King & Country, which won Best Contemporary Christian Music Performance/Song. Rolling Stone ranked it at No. 12 on their list \"40 best rap albums of 2014\".",
+      "source_id": "Anomaly (Lecrae album)",
+      "title": "Anomaly (Lecrae album)"
+    },
+    {
+      "id": "2",
+      "text": "The Grammy Award for Best Rap Solo Performance was awarded from 1991 to 2011, alongside the Best Rap Performance by a Duo or Group. Previously, a single award was presented for Best Rap Performance.",
+      "source_id": "Grammy Award for Best Rap Solo Performance",
+      "title": "Grammy Award for Best Rap Solo Performance"
+    },
+    {
+      "id": "3",
+      "text": "\"Ms. Jackson\" is a song by American alternative hip hop duo OutKast. It was released on October 3, 2000, as the second single from their fourth album, \"Stankonia\". It topped the US charts, and won a 2002 Grammy Award for Best Rap Performance by a Duo or Group. It also reached number one in Germany and number two in the United Kingdom, held from the top spot by Atomic Kitten's \"Whole Again\". In October 2011, \"NME\" placed it at number 81 on its list of the \"150 Best Tracks of the Past 15 Years\" and in June of the same year \"Rolling Stone\" ranked it at number 55 in their \"100 Best Songs of the 2000s\".",
+      "source_id": "Ms. Jackson",
+      "title": "Ms. Jackson"
+    },
+    {
+      "id": "4",
+      "text": "\"So Fresh, So Clean\" is the third and final single to be released from Outkast's fourth studio album, \"Stankonia\". It features uncredited vocals from singer Sleepy Brown. It was produced by longtime collaborators Organized Noize. The music video features the duo and Sleepy Brown performing on a variety of CGI backgrounds, a beauty parlor, and a church. Ludacris, Layzie Bone of Bone Thugs-N-Harmony, Chilli of TLC and members of Goodie Mob make cameo appearances in the video. The song was a moderate success, reaching #30 on the \"Billboard\" charts, #46 on the ARIA charts and further propelling the sales of \"Stankonia\" after the success of \"Ms. Jackson\". Among the things and people mentioned in the song are the Chevrolet Monte Carlo and Cadillac Eldorado (both General Motors cars), the television show \"Showtime At The Apollo\" and its longtime host Kiki Sheppard, and the R&B singers Teddy Pendergrass and Freddie Jackson. It appeared on the soundtrack for the video game NBA 2K18.",
+      "source_id": "So Fresh, So Clean",
+      "title": "So Fresh, So Clean"
+    },
+    {
+      "id": "5",
+      "text": "Salt-N-Pepa is an American hip-hop/rap trio from New York City, New York. The group, consisting of Cheryl James (\"Salt\"), Sandra Denton (\"Pepa\") and originally Latoya Hanson, who was replaced in 1986 by Deidra Roper (\"DJ Spinderella\"), was formed in 1985 and was one of the first all-female rap groups. They won the 1995 Grammy Award for Best Rap Performance by a Duo or Group.",
+      "source_id": "Salt-N-Pepa",
+      "title": "Salt-N-Pepa"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "3",
+    "4"
+  ],
+  "gold_answer": [
+    "Sleepy Brown"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a80a25d5542995d8a8ddfb7",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

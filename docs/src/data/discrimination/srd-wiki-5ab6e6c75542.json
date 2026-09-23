@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ab6e6c75542",
+  "category": "wikipedia",
+  "question": "What team had Tony Roberts replaced by an American sportscaster from Buffalo, New York when he retired?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Eli Gold (born December 15, 1953) is an American sportscaster. Gold is best known as the radio voice for the Alabama Crimson Tide football team, along with Tom Roberts, as part of the Crimson Tide Sports Network since 1988. He has also been the host of \"NASCAR Live\" on the Motor Racing Network since 1982. He formerly called play-by-play for Arena Football League's coverage on TNN and NBC and currently calls college football and NFL games for Sports USA Radio Network.",
+      "source_id": "Eli Gold",
+      "title": "Eli Gold"
+    },
+    {
+      "id": "2",
+      "text": "Spencer Ross is an American sportscaster. With the exception of the New York Mets, Ross has called play-by-play for every professional New York metropolitan area sports franchise, including the Yankees of MLB, the Nets and Knicks of the NBA, and Jets and Giants of the NFL. He has also called games for the Americans of the ABA and, in the NHL, for the New Jersey Devils, New York Islanders and the New York Rangers. Outside of New York, he has called games for the Florida State Seminoles and Boston Celtics. Nationally, he has worked for the \"NFL on NBC\", \"Major League Baseball on CBS Radio\", the NCAA Basketball Tournament on Westwood One Radio and as the lead play by play announcer for the 1992 USA Olympic Dream Team with Dick Vitale.",
+      "source_id": "Spencer Ross",
+      "title": "Spencer Ross"
+    },
+    {
+      "id": "3",
+      "text": "Tony Roberts (born 1928) is an American retired sportscaster who was the play-by-play announcer for the Notre Dame Fighting Irish football team from 1980 until 2006. He is a member of the Indiana Broadcasters Hall of Fame, Holiday Bowl Hall of Fame and College Football Hall of Fame. In 2005, he won the Chris Schenkel Award. In 2006, he was replaced by Don Criqui as play-by-play announcer for Notre Dame.",
+      "source_id": "Tony Roberts (sportscaster)",
+      "title": "Tony Roberts (sportscaster)"
+    },
+    {
+      "id": "4",
+      "text": "Don Criqui (born May 5, 1940, Buffalo, New York) is an American sportscaster, currently the radio voice of Notre Dame Fighting Irish football.",
+      "source_id": "Don Criqui",
+      "title": "Don Criqui"
+    },
+    {
+      "id": "5",
+      "text": "John Murphy is an American sportscaster from Buffalo, New York. He is best known as the voice of the Buffalo Bills Radio Network and host of \"The John Murphy Show\" on WGR and MSG Western New York. In addition to the Bills, he also served as commentator for the Buffalo Bisons, Canisius College Golden Griffins, Buffalo Bulls and Niagara University Purple Eagles in the 1980s.",
+      "source_id": "John Murphy (sportscaster)",
+      "title": "John Murphy (sportscaster)"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "3",
+    "4"
+  ],
+  "gold_answer": [
+    "Notre Dame Fighting Irish football"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ab6e6c7554299710c8d1fa4",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ae1ba555542",
+  "category": "wikipedia",
+  "question": "Where is the academy, for which Joseph D. Stewart was appointed Superintendent, located?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Joseph D. Stewart, also known affectionately by the midshipmen of the United States Merchant Marine Academy as \"Joey D,\" (born July 9, 1942) is a retired United States Marine Corps major general, who after his retirement from the Marine Corps, was appointed as Superintendent of the United States Merchant Marine Academy (USMMA) on August 1, 1998. He retired from the U.S. Maritime Service with the rank of vice admiral on September 30, 2008.",
+      "source_id": "Joseph D. Stewart",
+      "title": "Joseph D. Stewart"
+    },
+    {
+      "id": "2",
+      "text": "The United States Merchant Marine Academy (also known as USMMA or Kings Point) is one of the five United States service academies, located in Kings Point, New York. It is charged with training officers for the United States Merchant Marine, branches of the military, and the transportation industry. Midshipmen (as students at the Academy are called) are trained in marine engineering, navigation, ship's administration, maritime law, personnel management, international law, customs, and many other subjects important to the task of running a large ship.",
+      "source_id": "United States Merchant Marine Academy",
+      "title": "United States Merchant Marine Academy"
+    },
+    {
+      "id": "3",
+      "text": "Allen B. Worley of Roanoke, Virginia, Captain (USN), Rear Admiral (USMS), was the tenth Superintendent of the United States Merchant Marine Academy (USMMA) at Kings Point, New York. Retired career U.S. Navy and a 1974 graduate of the United States Naval Academy at Annapolis, Maryland, Worley was Superintendent of the Texas Maritime Academy, one of the United States' six state maritime academies prior to his being appointed Superintendent of the United States Merchant Marine Academy in 2008. In addition to his Naval Academy BS degree in physics, Webster University awarded him a MA degree in business administration and personnel management, and the United States Naval War College awarded him a MA degree in national security and strategic studies. Admiral Worley resigned from his position as Superintendent of the USMMA in 2009, effective January 4, 2010, serving as the Academy’s Superintendent for just over a year.",
+      "source_id": "Allen B. Worley",
+      "title": "Allen B. Worley"
+    },
+    {
+      "id": "4",
+      "text": "Lieutenant General Winfield W. Scott Jr. (born December 10, 1927) was the tenth Superintendent of the United States Air Force Academy in Colorado. Thereafter, he was appointed Superintendent of the New Mexico Military Institute, a public military high school and junior college that is supported by the State of New Mexico, located in Roswell, New Mexico.",
+      "source_id": "Winfield W. Scott Jr.",
+      "title": "Winfield W. Scott Jr."
+    },
+    {
+      "id": "5",
+      "text": "James W. Naughton (1840–1898) was an American architect, serving as the Superintendent of Buildings for the Board of Education of the City of Brooklyn. He was born in Ireland and immigrated to the United States in 1848, at age eight. He worked as an apprentice in the office of J & A Douglas in Milwaukee, Wisconsin. He entered the University of Wisconsin to study architecture in 1859. He returned to Brooklyn, New York in 1861 and continued his studies at the Cooper Union. He served as Superintendent of Buildings for the City of Brooklyn from 1874 to 1876. In 1879, he was appointed Superintendent of Buildings for the Board of Education of the City of Brooklyn, a position he held until his death in 1898. During this period he designed all the school buildings in the city of Brooklyn.",
+      "source_id": "James W. Naughton",
+      "title": "James W. Naughton"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "2"
+  ],
+  "gold_answer": [
+    "Kings Point, New York"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ae1ba55554299234fd042d9",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

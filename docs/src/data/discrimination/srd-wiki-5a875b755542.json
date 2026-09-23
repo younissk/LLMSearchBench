@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a875b755542",
+  "category": "wikipedia",
+  "question": "The song \"Medicine\" by The 1975 appears in a film directed by what Danish filmmaker?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "\"Medicine\" is a standalone song by the English rock band The 1975, released on 31 October 2014 for the 2014 \"Drive\" re-release. It was written, produced and performed by members Matthew Healy and George Daniel.",
+      "source_id": "Medicine (The 1975 song)",
+      "title": "Medicine (The 1975 song)"
+    },
+    {
+      "id": "2",
+      "text": "The Ambassador is a 2011 Danish documentary film created and directed by Danish filmmaker and journalist Mads Brügger. The film was nominated for the Grand Jury Prize at the 2012 Sundance Film Festival.",
+      "source_id": "The Ambassador (2011 film)",
+      "title": "The Ambassador (2011 film)"
+    },
+    {
+      "id": "3",
+      "text": "\"Drive\" is a 2011 American neo-noir crime film directed by Danish filmmaker Nicolas Winding Refn and written by Hossein Amini, based on the eponymous 2005 novel by James Sallis. It stars Ryan Gosling as an unnamed Hollywood stunt driver moonlighting as a getaway driver. He suddenly grows fond of his neighbor (Carey Mulligan) and her young son until her debt-ridden husband (Oscar Isaac) is released from prison and hires him to take part in what turns out to be a botched, million-dollar heist that endangers their lives. Bryan Cranston, Christina Hendricks, Ron Perlman, and Albert Brooks play supporting roles. The film premiered on May 11 in competition at the 2011 Cannes Film Festival, before being released by FilmDistrict in American theaters on September 16. \"Drive\" earned a worldwide total of $76.1 million on a production budget of $15 million. Rotten Tomatoes, a review aggregator, surveyed 238 reviews and judged 92% to be positive.",
+      "source_id": "List of accolades received by Drive (2011 film)",
+      "title": "List of accolades received by Drive (2011 film)"
+    },
+    {
+      "id": "4",
+      "text": "Drive is a 2011 American neo-noir crime thriller film directed by Danish filmmaker Nicolas Winding Refn. The screenplay by Hossein Amini was based on the eponymous 2005 novel by James Sallis. The film stars Ryan Gosling as an unnamed Hollywood stunt driver moonlighting as a getaway driver. He quickly grows fond of his neighbor, Irene (Carey Mulligan) and her young son, Benicio. Her debt-laden husband, Standard (Oscar Isaac), is released from prison, and hires him to take part in what turns out to be a botched million-dollar heist that endangers their lives. Other members of the ensemble cast include Bryan Cranston, Christina Hendricks, Ron Perlman, and Albert Brooks.",
+      "source_id": "Drive (2011 film)",
+      "title": "Drive (2011 film)"
+    },
+    {
+      "id": "5",
+      "text": "Flatliners is a 1990 American science fiction psychological horror film directed by Joel Schumacher, produced by Michael Douglas and Rick Bieber, and written by Peter Filardi. It stars Kiefer Sutherland, Julia Roberts, William Baldwin, Oliver Platt, and Kevin Bacon. The film is about five medical students who attempt to find out what lies beyond death by conducting clandestine experiments that produce near-death experiences. The film was shot on the campus of Loyola University (Chicago) between October 1989 and January 1990, and was nominated for an Academy Award for Best Sound Editing in 1990 (Charles L. Campbell and Richard C. Franklin). The film was theatrically released on August 10, 1990, by Columbia Pictures. A remake, directed by Danish filmmaker Niels Arden Oplev, was released in September 2017.",
+      "source_id": "Flatliners",
+      "title": "Flatliners"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "4"
+  ],
+  "gold_answer": [
+    "Nicolas Winding Refn"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a875b755542996e4f308796",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

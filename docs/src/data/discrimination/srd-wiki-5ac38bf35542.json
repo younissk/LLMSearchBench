@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ac38bf35542",
+  "category": "wikipedia",
+  "question": "William McGrath was a loyalist from Northern Ireland, and was known for opposing what?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Ulster loyalism is a political ideology found primarily among working class Ulster Protestants in Northern Ireland, whose status as a part of the United Kingdom has remained controversial. Most Ulster Protestants are descendants of settlers from Great Britain in the 17th and 18th centuries. Like unionists, loyalists are attached to the British monarchy, support the continued existence of Northern Ireland, and oppose a united Ireland. Ulster loyalism has been described as a kind of ethnic nationalism and \"a variation of British nationalism\". It is strongly associated with paramilitarism.",
+      "source_id": "Ulster loyalism",
+      "title": "Ulster loyalism"
+    },
+    {
+      "id": "2",
+      "text": "The official flag of Northern Ireland is the Union Flag of the United Kingdom. From 1953 until 1973, the Ulster Banner (also known as the Ulster flag) was used by the Parliament of Northern Ireland; however, since its abolition use of the flag has been limited to representing Northern Ireland in certain sports, at the Commonwealth of Nations, at some local councils and at some other organisations and occasions. Despite this, the Ulster Banner is still commonly seen and referred to as the flag of Northern Ireland, especially by those from the unionist and loyalist communities.",
+      "source_id": "Flag of Northern Ireland",
+      "title": "Flag of Northern Ireland"
+    },
+    {
+      "id": "3",
+      "text": "William McGrath (11 December 1916 – 1992) was a loyalist from Northern Ireland who founded the far-right organisation Tara in the 1960s, having also been prominent in the Orange Order until his expulsion due to his paedophilia. A house master in Kincora Boys' Home in East Belfast, in 1981 he was jailed for four years for paedophile activities at the Home.",
+      "source_id": "William McGrath",
+      "title": "William McGrath"
+    },
+    {
+      "id": "4",
+      "text": "Tara was an Ulster loyalist movement in Northern Ireland that espoused a brand of evangelical Protestantism. Preaching a hard-line and somewhat esoteric brand of loyalism, Tara enjoyed some influence in the late 1960s before declining amid a high-profile sex abuse scandal involving its leader William McGrath.",
+      "source_id": "Tara (Northern Ireland)",
+      "title": "Tara (Northern Ireland)"
+    },
+    {
+      "id": "5",
+      "text": "The Tandragee killings took place in the early hours of Saturday 19 February 2000 on an isolated country road outside Tandragee, County Armagh, Northern Ireland. Two young Protestant men, Andrew Robb and David McIlwaine, were beaten and repeatedly stabbed to death in what was part of a Loyalist feud between the loyalist Ulster Volunteer Force (UVF) and their rivals, the breakaway Loyalist Volunteer Force (LVF). The men were not members of any loyalist paramilitary organisation. It later emerged in court hearings that Robb had made disparaging remarks about the killing of UVF Mid-Ulster Brigade leader Richard Jameson by an LVF gunman the previous month. This had angered the killers, themselves members of the Mid-Ulster UVF, and in retaliation they had lured the two men to the remote lane on the outskirts of town, where they killed and mutilated them.",
+      "source_id": "Andrew Robb and David McIlwaine killings",
+      "title": "Andrew Robb and David McIlwaine killings"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "3"
+  ],
+  "gold_answer": [
+    "united Ireland"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ac38bf355429939154137ba",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

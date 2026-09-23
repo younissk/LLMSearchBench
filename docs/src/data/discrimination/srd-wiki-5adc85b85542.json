@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5adc85b85542",
+  "category": "wikipedia",
+  "question": "Who is an Australian philosopher that inspired Living High and Letting Die?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Michael Andrew Smith (born in Melbourne, Australia on 23 July 1954) is an Australian philosopher who teaches at Princeton University (since September 2004). He taught previously at the University of Oxford, Monash University, and was a member of the Philosophy Program at the Research School of Social Sciences, Australian National University. He is the author of a number of important books and articles in moral philosophy. In 2013, he was elected a Fellow of the American Academy of Arts and Sciences.",
+      "source_id": "Michael A. Smith",
+      "title": "Michael A. Smith"
+    },
+    {
+      "id": "2",
+      "text": "Living High and Letting Die: Our Illusion of Innocence ISBN  is a philosophical book by Peter K. Unger, published in 1996. Inspired by Peter Singer's 1971 essay \"Famine, Affluence, and Morality,\" Unger argues that for people in the developed world to live morally, they are morally obliged to make sacrifices to help mitigate human suffering and premature death in the third world, and further that it is acceptable (and morally right) to lie, cheat, and steal to mitigate suffering.",
+      "source_id": "Living High and Letting Die",
+      "title": "Living High and Letting Die"
+    },
+    {
+      "id": "3",
+      "text": "Raimond Gaita (born Raimund Gaita 14 May 1946, Dortmund, Germany) is an Australian philosopher and award-winning writer. He was, until 2011, Foundation Professor of Philosophy at the Australian Catholic University and Professor of Moral Philosophy at King's College London. He is currently Professorial Fellow in the Melbourne Law School and the Faculty of Arts, University of Melbourne and Emeritus Professor of Moral Philosophy at King's College London. He is a Fellow of the Australian Academy of the Humanities.",
+      "source_id": "Raimond Gaita",
+      "title": "Raimond Gaita"
+    },
+    {
+      "id": "4",
+      "text": "Peter Albert David Singer, AC (born 6 July 1946) is an Australian moral philosopher. He is the Ira W. DeCamp Professor of Bioethics at Princeton University, and a Laureate Professor at the Centre for Applied Philosophy and Public Ethics at the University of Melbourne. He specializes in applied ethics and approaches ethical issues from a secular, utilitarian perspective. He is known in particular for his book \"Animal Liberation\" (1975), in which he argues in favor of vegetarianism, and his essay \"Famine, Affluence, and Morality,\" in which he argues in favor of donating to help the global poor. For most of his career, he was a preference utilitarian, but he announced in \"The Point of View of the Universe (2014)\", coauthored with Katarzyna de Lazari-Radek, that he had become a hedonistic utilitarian.",
+      "source_id": "Peter Singer",
+      "title": "Peter Singer"
+    },
+    {
+      "id": "5",
+      "text": "Kim Sterelny (born 1950) is an Australian philosopher and professor of philosophy in the Research School of Social Sciences at Australian National University and Victoria University of Wellington. He is the winner of several international prizes in the philosophy of science, and editor of \"Biology and Philosophy\". He is also a member of the Australian Academy of the Humanities.",
+      "source_id": "Kim Sterelny",
+      "title": "Kim Sterelny"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 0,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "2",
+    "4"
+  ],
+  "gold_answer": [
+    "Peter Singer"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5adc85b855429944faac24e9",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

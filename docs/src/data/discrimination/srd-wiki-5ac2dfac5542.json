@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5ac2dfac5542",
+  "category": "wikipedia",
+  "question": "What multinational professional services firm, headquartered in London, England, is one of the \"Big Four\" accounting firms and is also a tenant in InfoPark, Kochi?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "EY (formerly Ernst & Young) is a multinational professional services firm headquartered in London, England. EY is one of the largest professional services firms in the world and is one of the \"Big Four\" accounting firms.",
+      "source_id": "Ernst &amp; Young",
+      "title": "Ernst &amp; Young"
+    },
+    {
+      "id": "2",
+      "text": "PricewaterhouseCoopers (doing business as PwC) is a multinational professional services network headquartered in London, United Kingdom. It is the second largest professional services firm in the world, and is one of the Big Four auditors, along with Deloitte, EY and KPMG. Vault Accounting 50 has ranked PwC as the most prestigious accounting firm in the world for seven consecutive years, as well as the top firm to work for in North America for three consecutive years.",
+      "source_id": "PricewaterhouseCoopers",
+      "title": "PricewaterhouseCoopers"
+    },
+    {
+      "id": "3",
+      "text": "Infopark, Kochi (Malayalam: ഇൻഫോപാർക്ക് കൊച്ചി) is an information technology park situated in the city of Kochi, Kerala, India. Established in 2004 by the Government of Kerala, Infopark Phase I is spread over a 101 acre campus with 3200000 sqft of operational built-up space, and an additional 2000000 sqft is now under construction, housing over 200 companies which employ close to 32,000 professionals. The park is currently on expansion mode and is adding another 160 acre as part of its Phase II expansion. The notable tenants in the park include native giants like Tata Consultancy Services, Cognizant, Wipro, IBS Software Services etc and foreign corporations like KPMG, Ernst & Young, EXL, Etisalat, UST Global, Nielsen Audio, Xerox, Conduent, Fingent etc.",
+      "source_id": "InfoPark, Kochi",
+      "title": "InfoPark, Kochi"
+    },
+    {
+      "id": "4",
+      "text": "Parsons Brinckerhoff is a multinational engineering and design firm with approximately 14,000 employees. The firm operates in the fields of strategic consulting, planning, engineering, construction management, infrastructure and community planning. In 2013, the company was named the tenth largest U.S.-based engineering/design firm by \"Engineering News Record\". On October 31, 2014 Parsons Brinckerhoff became a wholly owned independent subsidiary of WSP Global, a Canadian-based professional services firm. Together, WSP/Parsons Brinckerhoff is one of the largest professional services firms in the world with approximately 31,500 employees in 500 offices serving 39 countries.",
+      "source_id": "Parsons Brinckerhoff",
+      "title": "Parsons Brinckerhoff"
+    },
+    {
+      "id": "5",
+      "text": "RSM International, branded RSM, is a multi-national network of accounting firms, forming the sixth largest accountancy professional services network in the world. The member firms of RSM are independent accounting and advisory firms each of which practices in its own right, and is unified as part of the network. The network is not a separate legal entity of any description in any jurisdiction, and does not provide services.",
+      "source_id": "RSM International",
+      "title": "RSM International"
+    },
+    {
+      "id": "6",
+      "text": "Baretz+Brunelle is a corporate communications agency based in New York City, with additional offices in Boston, Charlotte, Chicago, Detroit, Houston, Los Angeles, and Richmond, Virginia. Baretz+Brunelle provides public relations services, including crisis communications advice, to law firms and investment advisors, including hedge funds, private equity firms and investment banks, as well as international corporations, accounting firms, consulting firms, and other professional services providers.",
+      "source_id": "Baretz+Brunelle",
+      "title": "Baretz+Brunelle"
+    },
+    {
+      "id": "7",
+      "text": "Multidisciplinary professional services networks are organizations formed by law, accounting and other professional services firms to offer clients new multidisciplinary approaches solving increasingly complex issues. They are a type of professional services network which operates to provide services to their members. They operate in the same way as accounting firm networks and associations and law firm networks. They do not practice a profession such as law or accounting but provide services to members so they can serve clients needs.Aim is to provide members involved in doing business internationally with access to experienced, tried and tested, reliable, and responsive professional advisers who know their local jurisdiction intimately as well as the intricacies of cross border business.",
+      "source_id": "Multidisciplinary professional services networks",
+      "title": "Multidisciplinary professional services networks"
+    },
+    {
+      "id": "8",
+      "text": "Arup (officially Arup Group Limited) is a multinational professional services firm headquartered in London which provides engineering, design, planning, project management and consulting services for all aspects of the built environment. The firm has over 14,000 staff based in 92 offices across 42 countries, and is present in Africa, the Americas, Australasia, East Asia, Europe and the Middle East. Arup has participated in projects in over 160 countries.",
+      "source_id": "Arup Group",
+      "title": "Arup Group"
+    },
+    {
+      "id": "9",
+      "text": "TMF Group is a multinational professional services firm headquartered in Amsterdam, the Netherlands. The independent group provides accounting, tax, HR and payroll services to businesses operating on an international scale. TMF Group employs more than 6,000 staff and has 100 offices in over 80 jurisdictions.",
+      "source_id": "TMF Group",
+      "title": "TMF Group"
+    },
+    {
+      "id": "10",
+      "text": "WSG, also branded as World Services Group, is a multidisciplinary professional services network of independent law, accounting and investment banking firms. It ranks as one of the largest among the more than 200 professional services networks in the world. WSG members are independent law, accounting and investment banking firms. According to the organization's website as of 2016 , WSG was formed in 2002 as a multidisciplinary network with the objective of bringing together professionals in a professional services network that creates business opportunities and relationships to better service their clients globally. Its members have more than 19,000 professionals in more than 115 countries in almost 400 offices. Its global headquarters are located in the Houston, Texas,",
+      "source_id": "World Services Group",
+      "title": "World Services Group"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "10": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "1",
+    "3"
+  ],
+  "gold_answer": [
+    "Ernst & Young"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ac2dfac554299657fa290b3",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

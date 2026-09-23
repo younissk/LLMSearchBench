@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5ac5484d5542",
+  "category": "wikipedia",
+  "question": "According to the 2011 census what is the population of the city where Royal Wahingdoh F.C. are based ?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Bowari Khongstia (born 19 January 1993) is an Indian professional footballer who plays as a defender for Royal Wahingdoh F.C. in the I-League.",
+      "source_id": "Bowari Khongstia",
+      "title": "Bowari Khongstia"
+    },
+    {
+      "id": "2",
+      "text": "Shillong ( ; Khasi: \"Shillong\") is the capital and hill station of Meghalaya, also known as \"The Abode of Clouds\", one of the smallest states in India. It is the headquarters of the East Khasi Hills district and is situated at an average altitude of 4,908 feet (1,496 m) above sea level, with the highest point being Shillong Peak at 6,449 feet (1,966 m). Shillong is the 330th most populous city in India with a population of 143,007 according to the 2011 census. It is said that the rolling hills around the town reminded the European settlers of Scotland. Hence, they would also refer to it as the \"Scotland of the East\".",
+      "source_id": "Shillong",
+      "title": "Shillong"
+    },
+    {
+      "id": "3",
+      "text": "Milancy Khongstia (born 13 January 1993) is an Indian professional footballer who plays as a midfielder for Royal Wahingdoh F.C. in the I-League.",
+      "source_id": "Milancy Khongstia",
+      "title": "Milancy Khongstia"
+    },
+    {
+      "id": "4",
+      "text": "Marlangki Suting (born 1986) is an Indian football player. He is currently playing for Royal Wahingdoh F.C. in the I-League in India as a Defender. In July 2015 Suting was drafted to play for NorthEast United FC in the 2015 Indian Super League.",
+      "source_id": "Marlangki Suting",
+      "title": "Marlangki Suting"
+    },
+    {
+      "id": "5",
+      "text": "Ngouba Singh (born 1 March 1995 in Manipur) is an Indian professional footballer who plays as a defender for Royal Wahingdoh F.C. in the I-League.",
+      "source_id": "Ngouba Singh",
+      "title": "Ngouba Singh"
+    },
+    {
+      "id": "6",
+      "text": "Malsawmtluanga (born on 11 January 1989) simply known as Mala, is an Indian professional footballer who plays as a midfielder for Royal Wahingdoh F.C. in the I-League.He currently play with Aizawl FC.",
+      "source_id": "Malsawmtluanga",
+      "title": "Malsawmtluanga"
+    },
+    {
+      "id": "7",
+      "text": "Royal Wahingdoh Football Club is a men's professional football club based in Shillong, Meghalaya that participates in the Indian I-League. Royal Wahingdoh F.C. holds the record for the highest number of consecutive Shillong Premier League titles, having won the finals in December 2010, 2011 and in 2012. They played in I-League 2nd Division for the 2013-14 season. They won the league by defeating Bhowanipore F.C. in the last match of the league and qualified to play for the 2014-15 season of the I-League.",
+      "source_id": "Royal Wahingdoh F.C.",
+      "title": "Royal Wahingdoh F.C."
+    },
+    {
+      "id": "8",
+      "text": "The 2014 I-League 2nd Division Final Round is the seventh final round of the I-League 2nd Division. The tournament began after the group stage was completed on 18 February 2014. Royal Wahingdoh F.C. won the tournament and will be promoted to 2014–15 I-League.",
+      "source_id": "2014 I-League 2nd Division Final Round",
+      "title": "2014 I-League 2nd Division Final Round"
+    },
+    {
+      "id": "9",
+      "text": "The 2014 I-League 2nd Division is the seventh season of the I-League 2nd Division under its current title. The season began on February 7, 2014. It contained 11 clubs in two groups and twelfth club United Sikkim F.C. directly entered into final round. Royal Wahingdoh F.C. won the tournament and will be promoted to 2014–15 I-League.",
+      "source_id": "2014 I-League 2nd Division",
+      "title": "2014 I-League 2nd Division"
+    },
+    {
+      "id": "10",
+      "text": "The Shillong Premier League is an association football league in India. It started with 8 teams in 2012. Royal Wahingdoh F.C. clinched the title for the third consecutive year after winning the previous two editions in 2010 and 2011. Royal Wahingdoh F.C. beat table toppers in the league stage, Rangdajied United F.C. comprehensively by 3-1 after the match was taken into extra time.",
+      "source_id": "Shillong Premier League",
+      "title": "Shillong Premier League"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 3,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "2",
+    "7"
+  ],
+  "gold_answer": [
+    "143,007"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ac5484d5542994611c8b48d",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

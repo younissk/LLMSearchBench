@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5ac4da3b5542",
+  "category": "wikipedia",
+  "question": "Stephen Joseph Bercik was mayer of a city that had a population of 124,969 as of the 2010 United States Census, and that has an estimated population of what for 2015?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Lone Tree is an affluent home rule municipality in Douglas County, Colorado, United States. The city population was 10,218 at the 2010 United States Census, with an estimated population of 13,545 in 2014. Lone Tree is a part of the Denver-Aurora-Lakewood, CO Metropolitan Statistical Area.",
+      "source_id": "Lone Tree, Colorado",
+      "title": "Lone Tree, Colorado"
+    },
+    {
+      "id": "2",
+      "text": "Trenton is the capital city of the U.S. state of New Jersey and the county seat of Mercer County. It was briefly the capital of the United States. The city's metropolitan area is grouped with the New York metropolitan area by the United States Census Bureau, but directly borders the Philadelphia metropolitan area and is part of the Federal Communications Commission's Philadelphia Designated Market Area. As of the 2010 United States Census, Trenton had a population of 84,913, making it the state's 10th-largest municipality. The Census Bureau estimated that the city's population was 84,034 in 2014.",
+      "source_id": "Trenton, New Jersey",
+      "title": "Trenton, New Jersey"
+    },
+    {
+      "id": "3",
+      "text": "Elizabeth is both the largest city and the county seat of Union County, in New Jersey, United States. As of the 2010 United States Census, the city had a total population of 124,969, retaining its ranking as New Jersey's fourth largest city (by population). The population increased by 4,401 (3.7%) from the 120,568 counted in the 2000 Census, which had in turn increased by 10,566 (+9.6%) from the 110,002 counted in the 1990 Census. For 2015, the Census Bureau's Population Estimates Program calculated a population of 129,007, an increase of 3.2% from the 2010 enumeration, ranking the city the 210th largest in the nation.",
+      "source_id": "Elizabeth, New Jersey",
+      "title": "Elizabeth, New Jersey"
+    },
+    {
+      "id": "4",
+      "text": "Biloxi ( ) is a city in Harrison County, Mississippi, United States. The 2010 United States Census recorded the population as 44,054, and in 2016 the estimated population was 45,975. Along with the adjoining city of Gulfport, Biloxi is a county seat of Harrison County.",
+      "source_id": "Biloxi, Mississippi",
+      "title": "Biloxi, Mississippi"
+    },
+    {
+      "id": "5",
+      "text": "Sapulpa is a city in Creek and Tulsa counties in the U.S. state of Oklahoma. The population was 20,544 at the 2010 United States census, compared to 19,166 at the 2000 census. As of 2013 the estimated population was 20,836. It is the county seat of Creek County.",
+      "source_id": "Sapulpa, Oklahoma",
+      "title": "Sapulpa, Oklahoma"
+    },
+    {
+      "id": "6",
+      "text": "Hot Springs is the eleventh-largest city in the state of Arkansas and the county seat of Garland County. The city is located in the Ouachita Mountains among the U.S. Interior Highlands, and is set among several natural hot springs for which the city is named. As of the 2010 United States Census, the city had a population of 35,193. In 2015 the estimated population was 35,635.",
+      "source_id": "Hot Springs, Arkansas",
+      "title": "Hot Springs, Arkansas"
+    },
+    {
+      "id": "7",
+      "text": "Tucson ( ) is a city and the county seat of Pima County, Arizona, United States, and home to the University of Arizona. The 2010 United States Census put the population at 520,116, while the 2015 estimated population of the entire Tucson metropolitan statistical area (MSA) was 980,263. The Tucson MSA forms part of the larger Tucson-Nogales combined statistical area (CSA), with a total population of 1,010,025 as of the 2010 Census. Tucson is the second-largest populated city in Arizona behind Phoenix, both of which anchor the Arizona Sun Corridor. The city is located 108 mi southeast of Phoenix and 60 mi north of the U.S.–Mexico border. Tucson is the 33rd largest city and the 53rd largest metropolitan area in the United States.",
+      "source_id": "Tucson, Arizona",
+      "title": "Tucson, Arizona"
+    },
+    {
+      "id": "8",
+      "text": "Stephen Joseph Bercik, J.S.C., J.D. (1921–2003) served as mayor of Elizabeth, New Jersey between 1956-1964. While mayor, his achievements included the modernization of the city charter, establishment of the Elizabeth Human Relations Committee, helping to develop Elizabeth seaport as a major shipping center, and meadowlands developments.",
+      "source_id": "Stephen Bercik",
+      "title": "Stephen Bercik"
+    },
+    {
+      "id": "9",
+      "text": "The Front Range Urban Corridor is an oblong region of urban population located along the eastern face of the Southern Rocky Mountains, encompassing 18 counties in the U.S. states of Colorado and Wyoming. The corridor derives its name from the Front Range, the mountain range that defines the west central boundary of the corridor. The region comprises the northern portion of the Southern Rocky Mountain Front geographic area, which in turn comprises the southern portion of the Rocky Mountain Front geographic area of Canada and the United States. The Front Range Urban Corridor had an estimated population of 4,833,260 on July 1, 2016, an increase of +11.53% since the 2010 United States Census.",
+      "source_id": "Front Range Urban Corridor",
+      "title": "Front Range Urban Corridor"
+    },
+    {
+      "id": "10",
+      "text": "Norwalk ( ), is the sixth most populous city in the U.S. state of Connecticut. According to the 2010 United States Census the city had a total population of 85,603; with an estimated population of 88,438 in 2016. Located in southwestern Connecticut in southern Fairfield County, also known informally as Connecticut's Gold Coast, the city sits on the northern shore of Long Island Sound. Norwalk is included statistically within both the New York-Newark, NY-NJ-CT-PA Combined Statistical Area as well as Bridgeport-Stamford-Norwalk, CT Metropolitan Statistical Area.",
+      "source_id": "Norwalk, Connecticut",
+      "title": "Norwalk, Connecticut"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 3,
+    "9": 0
+  },
+  "supporting_ids": [
+    "3",
+    "8"
+  ],
+  "gold_answer": [
+    "129,007"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ac4da3b554299076e296e17",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

@@ -1,0 +1,170 @@
+.wrap {
+  margin-top: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.tag {
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--lsb-grid);
+  background: var(--lsb-plane);
+  font-size: 0.74rem;
+  color: var(--lsb-ink-secondary);
+}
+
+.web {
+  border-color: #b7d3f4;
+  color: #1a559c;
+}
+
+.wikipedia {
+  border-color: #b4e0cd;
+  color: #0b7a62;
+}
+
+.no_answer {
+  border-color: #f6c9b4;
+  color: #b4460f;
+}
+
+.human {
+  border-color: var(--lsb-ink);
+  color: var(--lsb-ink);
+}
+
+.question {
+  margin: 0 0 1.1rem;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--series-1);
+  background: var(--lsb-surface);
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0 0 1.1rem;
+  font-size: 0.88rem;
+}
+
+.facts dt {
+  color: var(--lsb-ink-muted);
+  font-weight: 500;
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.filter {
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--lsb-grid);
+  border-radius: 999px;
+  background: var(--lsb-surface);
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--lsb-ink-secondary);
+  cursor: pointer;
+}
+
+.filterActive {
+  border-color: var(--lsb-ink);
+  color: var(--lsb-ink);
+}
+
+.variant {
+  font-size: 0.78rem;
+  color: var(--lsb-ink-muted);
+}
+
+.candidates {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.candidate {
+  margin-bottom: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--lsb-grid);
+  border-radius: 10px;
+  background: var(--lsb-surface);
+}
+
+.candidateHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.candidateId {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--lsb-ink);
+}
+
+.title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--lsb-ink-secondary);
+}
+
+.grade {
+  margin-left: auto;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  border: 1px solid var(--lsb-grid);
+  color: var(--lsb-ink-muted);
+  white-space: nowrap;
+}
+
+/* One hue, darker with the grade: relevance is a magnitude, not an identity. */
+.g3 {
+  background: var(--seq-4);
+  border-color: transparent;
+  color: #fff;
+}
+
+.g2 {
+  background: var(--seq-3);
+  border-color: transparent;
+  color: #fff;
+}
+
+.g1 {
+  background: var(--seq-1);
+  border-color: transparent;
+  color: var(--lsb-ink);
+}
+
+.text {
+  margin: 0;
+  font-size: 0.87rem;
+  line-height: 1.55;
+  color: var(--lsb-ink-secondary);
+}
+
+.footnote {
+  margin-top: 0.9rem;
+  font-size: 0.78rem;
+  color: var(--lsb-ink-muted);
+}

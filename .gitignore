@@ -40,3 +40,10 @@ results/smoke/
 
 # sweep outputs; re-runnable, and large
 tasks/local/
+
+# Discrimination items whose passages come from MS MARCO: buildable from
+# your own download, never redistributed from here.
+docs/content/discrimination-examples/srd-web-*.mdx
+docs/content/discrimination-examples/srd-none-*.mdx
+docs/src/data/discrimination/srd-web-*.json
+docs/src/data/discrimination/srd-none-*.json

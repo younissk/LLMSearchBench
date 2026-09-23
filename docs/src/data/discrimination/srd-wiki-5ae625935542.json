@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ae625935542",
+  "category": "wikipedia",
+  "question": "Who founded gaming company which owns and operates the Red Rock Resort?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "UFC Fight Night: Sanchez vs. Parisyan (also known as UFC Fight Night 6) was a mixed martial arts event held by the Ultimate Fighting Championship on August 17, 2006. The event took place at the Red Rock Resort Spa and Casino in Las Vegas, Nevada, and was broadcast live on Spike TV in the United States and Canada. It acted as a lead-in to the season four premiere of \"The Ultimate Fighter\". The two-hour broadcast of UFC Fight Night 6 on Spike TV drew a 1.5 overall rating.",
+      "source_id": "UFC Fight Night 6",
+      "title": "UFC Fight Night 6"
+    },
+    {
+      "id": "2",
+      "text": "Station Casinos is a gaming company based in the Las Vegas suburb of Summerlin, Nevada, founded by Frank Fertitta, Jr. Station Casinos, along with Affinity Gaming, Boyd Gaming, and American Casino & Entertainment Properties, dominate the locals casino market in Las Vegas. The company purchased several sites that were gaming-entitled, meaning that major casinos can be built at that location without additional approvals. There are only a limited number of such sites available in the Las Vegas area. Station has also branched out into managing casinos that they do not own. Red Rock Resorts, Inc. () is a publicly traded holding company that owns a portion of Station Casinos.",
+      "source_id": "Station Casinos",
+      "title": "Station Casinos"
+    },
+    {
+      "id": "3",
+      "text": "Red Rock Resort is a hotel and casino. It is owned and operated by Station Casinos on 70 acre located in Downtown Summerlin in the village of Summerlin Centre in Summerlin, Nevada. Located on Charleston Boulevard, at the interchange of Clark County 215 and some distance from the Las Vegas Strip, the resort is known as a locals casino. It is the flagship property of Station Casinos and the company's corporate headquarters is located on the property.",
+      "source_id": "Red Rock Casino, Resort &amp; Spa",
+      "title": "Red Rock Casino, Resort &amp; Spa"
+    },
+    {
+      "id": "4",
+      "text": "The Red Rock River is a roughly 70 mi river in southwestern Montana in the United States. Its drainage basin covers over 1548 mi2 . Its furthest tributary, Hell Roaring Creek, originates in the Beaverhead National Forest within a few hundred meters of the North American Continental Divide and Montana-Idaho border near Brower's Spring, at an elevation of about 9100 ft . Brower's Spring is near the furthest headwaters of the Missouri River, one of the major watercourses of the central United States. The drainage flows north and west with its name changing to \"Red Rock Creek\" into the Red Rock Lakes in the middle of a wide grassy valley; the Red Rock River issues from the west side of Lower Red Rock Lake. It flows west, receiving many tributaries such as Peet Creek and Long Creek, widening into the Lima Reservoir and then passing through a canyon, which ends near Lima, Montana. From there, it flows northwest through a valley, passing Kidd and Red Rock, and into Clark Canyon Reservoir. Under the waters of the lake was once the confluence of the Red Rock and Horse Prairie Creek, forming the Beaverhead River, a tributary of the Jefferson River, in turn a headwater of the Missouri River.",
+      "source_id": "Red Rock River (Montana)",
+      "title": "Red Rock River (Montana)"
+    },
+    {
+      "id": "5",
+      "text": "Season 2 of \"Hell's Kitchen\" was cast during November 2005, started on June 12, 2006 and concluded on August 14, 2006. The winner was Heather West. Her prize was the position of executive chef at the Red Rock Resort Spa and Casino in Las Vegas with a salary of $250,000, where she worked as chef at the Terra Rossa Restaurant.",
+      "source_id": "Hell's Kitchen (U.S. season 2)",
+      "title": "Hell's Kitchen (U.S. season 2)"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "2",
+    "3"
+  ],
+  "gold_answer": [
+    "Frank Fertitta, Jr."
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ae625935542995703ce8b2a",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

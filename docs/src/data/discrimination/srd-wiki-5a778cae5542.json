@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a778cae5542",
+  "category": "wikipedia",
+  "question": "Who is younger Chris Gould or Robbie Gould ?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Chris Gould (born December 10, 1985) is a former American football placekicker. He currently serves as the assistant special teams coach for the Denver Broncos, and is the brother of former Chicago Bears and current 49ers placekicker Robbie Gould.",
+      "source_id": "Chris Gould",
+      "title": "Chris Gould"
+    },
+    {
+      "id": "2",
+      "text": "The Jay Gould House was a mansion located at 857 Fifth Avenue at East 67th Street on the Upper East Side of Manhattan, New York City. It was constructed for Jay Gould in the French Neo-Gothic style, and given by Gould to his son George Jay Gould in 1868. The younger Gould tore the mansion down in 1906, and had the George J. Gould House built in its place.",
+      "source_id": "Jay Gould House",
+      "title": "Jay Gould House"
+    },
+    {
+      "id": "3",
+      "text": "Robert Paul \"Robbie\" Gould III ( ; born December 6, 1981) is an American football placekicker for the San Francisco 49ers of the National Football League (NFL). He played with the Chicago Bears from 2005 to 2015, during which he became the franchise's all-time leading scorer. Gould was originally signed by the New England Patriots as an undrafted free agent in 2005. He played college football at Penn State.",
+      "source_id": "Robbie Gould",
+      "title": "Robbie Gould"
+    },
+    {
+      "id": "4",
+      "text": "Edward Wyatt Gould (18 May 1879 - 9 February 1960) was a Welsh rugby union player who also represented Britain at the 1908 Summer Olympics. Gould captained his club side, Newport RFC, for a single season, and is best known as the younger brother of Welsh rugby superstar Arthur \"Monkey\" Gould",
+      "source_id": "Wyatt Gould",
+      "title": "Wyatt Gould"
+    },
+    {
+      "id": "5",
+      "text": "\"Close My Eyes\" is an electronic song from Dutch techno and trance music DJ and producer Sander van Doorn. The song features Robbie Williams and production by Pet Shop Boys and Chris Zippel. The remix is of the original version of the song called \"We're the Pet Shop Boys\", a track recorded by Robbie Williams, featuring Pet Shop Boys, from his album \"Rudebox\". The track peaked at number five on the U.S. \"Billboard\" Hot Dance Club Songs chart. An official music video exists.",
+      "source_id": "Close My Eyes (Sander van Doorn song)",
+      "title": "Close My Eyes (Sander van Doorn song)"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "3"
+  ],
+  "gold_answer": [
+    "Chris Gould"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a778cae55429949eeb29eeb",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

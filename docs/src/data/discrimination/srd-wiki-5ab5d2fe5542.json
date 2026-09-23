@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5ab5d2fe5542",
+  "category": "wikipedia",
+  "question": "What type of band is the group who released a 2007 compilation CD?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "22 More Hits is George Strait's 2007 compilation CD, comprising hits that did not reach Number One (except for \"She Let Herself Go\") on the country charts, from his 1981 debut single \"Unwound\" to his most recent single at the time of the album's release, \"How 'bout Them Cowgirls\". The collection is intended as a companion to \"50 Number Ones\", a 2004 compilation which featured all of Strait's singles that had reached #1 to that point.",
+      "source_id": "22 More Hits",
+      "title": "22 More Hits"
+    },
+    {
+      "id": "2",
+      "text": "SnapDragon is a contemporary jazz band based in San Antonio, Texas. The group released their debut CD, \"Stealing a Moment\" on Humbug Records in 2008, and the 10-song CD soon broke the Top 100 in U.S radio airplay (Mediabase Smooth Adult Contemporary chart). SnapDragon also had three tracks on the compilation CD \"HumBug Christmas\" (HumBug Records, 2008).",
+      "source_id": "SnapDragon",
+      "title": "SnapDragon"
+    },
+    {
+      "id": "3",
+      "text": "Mob Rules is the tenth studio album by English rock band Black Sabbath, released in November 1981. It followed 1980's \"Heaven and Hell\", and it was the second and last Black Sabbath studio album to feature lead vocalist Ronnie James Dio prior to the 1992 album \"Dehumanizer\".",
+      "source_id": "Mob Rules (album)",
+      "title": "Mob Rules (album)"
+    },
+    {
+      "id": "4",
+      "text": "Now Summer 2007 is a compilation CD released by EMI Music Australia in late 2006. Like most Australian summer compilations, it is released in December and is meant to carry on throughout January and February (the three months of summer). It has two CDs which no other NOW CD in Australia has. \"Now Summer 2007\" is the 15th CD of the Australian Now! series.",
+      "source_id": "Now Summer 2007 (Australian series)",
+      "title": "Now Summer 2007 (Australian series)"
+    },
+    {
+      "id": "5",
+      "text": "Black Sabbath: The Dio Years is a 2007 compilation CD of material from recordings made during vocalist Ronnie James Dio's tenure in the band. The CD contains full album length, remastered tracks culled from all three studio albums: \"Heaven and Hell\" (1980), \"Mob Rules\" (1981), \"Dehumanizer\" (1992), and the live album \"Live Evil\" (1982). It also contains three new recorded songs: \"The Devil Cried\", \"Shadow of the Wind\", and \"Ear in the Wall\".",
+      "source_id": "Black Sabbath: The Dio Years",
+      "title": "Black Sabbath: The Dio Years"
+    },
+    {
+      "id": "6",
+      "text": "A Touch of Class is a big band jazz album recorded by the Thad Jones/Mel Lewis Jazz Orchestra in Warsaw, Poland in November 1978. The first three tracks, together with a 14-minute version of \"Fingers,\" were previously released in Poland on a Poljazz LP and all tracks were also included on the 2007 compilation album, \"Thad Jones Mel Lewis Orchestra In Europe\" and on the 2009 compilation CD, \"The Complete Poland Concerts 1976 & 1978\".",
+      "source_id": "A Touch of Class (album)",
+      "title": "A Touch of Class (album)"
+    },
+    {
+      "id": "7",
+      "text": "Managing the Details of an Undertaking is a compilation CD and DVD package by the San Diego, California rock band Counterfit, released in 2007 by One Bad Landing Records. It was a posthumous release, as the group had disbanded in 2004. The CD portion of the release compiles rare, unreleased, and out-of-print songs from the band's career. The DVD portion includes a 76-minute documentary film of Counterfit's final tour from July 23 to September 15, 2004 in support of Finch and Recover. It also includes their entire farewell show, the music video for \"Better Late Than Never,\" band commentary, and over 40 minutes of additional live footage. The package's title is taken from the title of a song from the band's only full-length album \"Super Amusement Machine for Your Exciting Heart\".",
+      "source_id": "Managing the Details of an Undertaking",
+      "title": "Managing the Details of an Undertaking"
+    },
+    {
+      "id": "8",
+      "text": "Trinity is a compilation album by death/doom metal band My Dying Bride. The album combines tracks from previously released EPs. This compilation CD also has two different versions of the front cover. The American release version has a different cover to the version released in the rest of the world. In 2004 the CD was re-released and given an extra 2 tracks taken from the band's first demo, \"Towards the Sinister\".",
+      "source_id": "Trinity (My Dying Bride album)",
+      "title": "Trinity (My Dying Bride album)"
+    },
+    {
+      "id": "9",
+      "text": "Voted Most Random is an American pop punk band formed in 2010 from Hamden, Connecticut. Although currently unsigned, the band is making a name for themselves on the East Coast in states like Connecticut, New York, New Jersey, Rhode Island, Massachusetts, Delaware and New Hampshire. In April 2010 they played a benefit concert for The Clearwater Initiative with pop punk quartet We The Kings at Toad's Place in New Haven, Connecticut raising over $11,000 for the cause. The group released their E.P. debut album in 2010, which debuted at their sold out CD release show at The Space in Hamden, CT. The band then went on to earn spots on both the 2010 Warped Tour and The Bamboozle Festival in 2011. On February 23, 2011 Voted Most Random was featured in the New Haven Register's \"make a playlist\" series. In the summer of 2011, the band's popular hit \"Party Naked\" was featured in the pop punk compilation CD \"The Scene-you just need to know where to look,\" released by Pacific Ridge Records.",
+      "source_id": "Voted Most Random",
+      "title": "Voted Most Random"
+    },
+    {
+      "id": "10",
+      "text": "\"Minute by Minute\" is a song by Grinspoon and is the third single from the studio album \"Alibis & Other Lies\". The single was initially a digital release however a CD single was released on 8 December 2007. The track \"Blind Lead Blind\" also features on a compilation CD titled \"Caution: Life Ahead\", making the song available on hard disk. \"Minute by Minute\" is included in the various artists' 3× CD, \"Flood Relief: Artists for the Flood Appeal\" (January 2011), which raised money for victims of the Queensland floods of that year.",
+      "source_id": "Minute by Minute (Grinspoon song)",
+      "title": "Minute by Minute (Grinspoon song)"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "10": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 3,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "3",
+    "5"
+  ],
+  "gold_answer": [
+    "rock"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ab5d2fe554299488d4d9a3e",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

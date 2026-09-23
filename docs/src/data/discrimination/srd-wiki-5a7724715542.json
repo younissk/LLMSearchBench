@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a7724715542",
+  "category": "wikipedia",
+  "question": "Pierre Benjamin Monteux conducted the world premiere of which play by Maurice Ravel?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "La reine Fiammette is an opera in four acts by composer Xavier Leroux. The opera uses a French language libretto by Catulle Mendès which is based on Mendès's 1898 work of the same name, a \"conte dramatique\" in six acts set in Renaissance Italy. The opera's premiere was given by the Opéra-Comique at the Salle Favart theatre in Paris on 23 December 1903. The production was directed by Albert Carré and conducted by André Messager. The United States premiere of the work was given at the Metropolitan Opera in New York City on 24 January 1919. That production was directed by Richard Ordynski, conducted by Pierre Monteux, and starred Geraldine Farrar as Orlanda, Hipolito Lazaro as Danièlo, Adamo Didur as Giorgio, Léon Rothier as César, and Flora Perini as Pantasilée. Up to the Second World War the opera received 59 performances at the Opéra-Comique.",
+      "source_id": "La reine Fiammette",
+      "title": "La reine Fiammette"
+    },
+    {
+      "id": "2",
+      "text": "Le Tombeau de Couperin is a ballet made by New York City Ballet co-founder and founding choreographer George Balanchine to Maurice Ravel's 1919 music of the same title, orchestrated by the composer. The premiere took place as part of City Ballet's Ravel Festival on 29 May 1975 at the New York State Theater, Lincoln Center.",
+      "source_id": "Le tombeau de Couperin (ballet)",
+      "title": "Le tombeau de Couperin (ballet)"
+    },
+    {
+      "id": "3",
+      "text": "This is a list of casts for the ballet La valse made by New York City Ballet co-founder and founding choreographer George Balanchine to the eponymous 1920 music of Maurice Ravel (with additions from Ravel's 1911 \"Valses nobles et sentimentales\" in his orchestration of 1912). The premiere took place Tuesday, February 20th, 1951, at City Center of Music and Drama in New York City with costumes by Karinska and lighting by Jean Rosenthal.",
+      "source_id": "List of La valse casts",
+      "title": "List of La valse casts"
+    },
+    {
+      "id": "4",
+      "text": "Daphnis et Chloé is a ballet in one act with three parts (scenes) by Maurice Ravel described as a \"symphonie chorégraphique\" (choreographic symphony). The scenario was adapted by Michel Fokine from an eponymous romance by the Greek writer Longus thought to date from around the 2nd century AD. Scott Goddard published a contemporary commentary that discussed the changes to the story that Fokine made to prepare a workable ballet scenario. The story concerns the love between the goatherd Daphnis and the shepherdess Chloé.",
+      "source_id": "Daphnis et Chloé",
+      "title": "Daphnis et Chloé"
+    },
+    {
+      "id": "5",
+      "text": "Pierre Benjamin Monteux (] ; 4 April 18751 July 1964) was a French (later American) conductor. After violin and viola studies, and a decade as an orchestral player and occasional conductor, he began to receive regular conducting engagements in 1907. He came to prominence when, for Sergei Diaghilev's Ballets Russes company between 1911 and 1914, he conducted the world premieres of Stravinsky's \"The Rite of Spring\" and other prominent works including \"Petrushka\", Ravel's \"Daphnis et Chloé\", and Debussy's \"Jeux\". Thereafter he directed orchestras around the world for more than half a century.",
+      "source_id": "Pierre Monteux",
+      "title": "Pierre Monteux"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 3
+  },
+  "supporting_ids": [
+    "4",
+    "5"
+  ],
+  "gold_answer": [
+    "Daphnis et Chloé"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a7724715542994aec3b71fd",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

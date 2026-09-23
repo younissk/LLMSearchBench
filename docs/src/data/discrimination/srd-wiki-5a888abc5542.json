@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a888abc5542",
+  "category": "wikipedia",
+  "question": "Which was released first, Kolejka or Ghettopoly?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Ghettopoly is a parody of \"Monopoly\" released in 2003. Invented by David Chang, it uses \"Monopoly\"-like mechanics in the atmosphere of a caricaturized United States ghetto.",
+      "source_id": "Ghettopoly",
+      "title": "Ghettopoly"
+    },
+    {
+      "id": "2",
+      "text": "Clannad (クラナド , Kuranado ) is a Japanese visual novel developed by Key and released on April 28, 2004 for Windows PCs. While both of Key's first two previous works, \"Kanon\" and \"Air\", had been released first as adult games and then censored for the younger market, \"Clannad\" was released with a rating for all ages. It was later ported to the PlayStation 2, PlayStation Portable, Xbox 360, PlayStation 3 and PlayStation Vita consoles. An English version for Windows was released on Steam by Sekai Project in 2015. The story follows the life of Tomoya Okazaki, a high school delinquent who meets many people in his last year at school, including five girls, and helps resolve their individual problems.",
+      "source_id": "Clannad (visual novel)",
+      "title": "Clannad (visual novel)"
+    },
+    {
+      "id": "3",
+      "text": "Seoulite is the second album by South Korean singer Lee Hi. The album marked her comeback to the Korean music scene after a three-year hiatus following the release of her debut studio album, \"First Love\", in 2013. The album was released first in a half album format, the first half being released on March 9, 2016 and the full album released digitally in April 20, 2016, and physically a week later.",
+      "source_id": "Seoulite (album)",
+      "title": "Seoulite (album)"
+    },
+    {
+      "id": "4",
+      "text": "Kolejka ( ; Polish for \"queue\" or \"line (of people)\") is a board game designed by Karol Madaj and launched in February 2011 by Poland's Institute of National Remembrance. It was designed to teach young generations about the hardships under communism (1945–1989), particularly the difficulty of acquiring consumer goods in the shortage economy. The game has been described as inspired by \"Monopoly\".",
+      "source_id": "Kolejka (game)",
+      "title": "Kolejka (game)"
+    },
+    {
+      "id": "5",
+      "text": "Midnite Movies is a line of B movies released first on VHS and later on DVD by MGM Home Entertainment. The line was begun by MGM in March 2001 following its acquisition of Orion Pictures, which bought out Filmways, the owner of American International Pictures. AIP had a library of B movies from the 1950s and 1960s that were science fiction, horror, and exploitation films. The \"Midnite Movies\" collection is primarily derived from the AIP library (including most of Roger Corman's and Vincent Price's horror movies) but also included Hammer Film Productions, Amicus Productions, United Artists, and Empire International Pictures movies as well. The DVDs were first released as single films but most later releases would be double features on single double-sided discs. Sony Pictures Home Entertainment later became owners of the MGM library and continued the \"Midnite Movies\" line with distributor 20th Century Fox Home Entertainment. All double feature titles released on the 20th Century Fox label were two-disc packages. By 2011, no new titles were forthcoming; the previous catalog titles slowly went out of print and the \"Midnite Movies\" website was taken down.",
+      "source_id": "Midnite Movies",
+      "title": "Midnite Movies"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "4"
+  ],
+  "gold_answer": [
+    "Ghettopoly"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a888abc5542997e5c09a604",
+  "subcategory": "comparison-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

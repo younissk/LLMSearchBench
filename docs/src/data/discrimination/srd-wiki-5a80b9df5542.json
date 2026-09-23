@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5a80b9df5542",
+  "category": "wikipedia",
+  "question": "What was the nickname of Judy Lewis's father?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "William Clark Gable (February 1, 1901 – November 16, 1960) was an American film actor and military officer, often referred to as \"The King of Hollywood\" or just simply as \"The King\". Gable began his career as a stage actor and appeared as an extra in silent films between 1924 and 1926, and progressed to supporting roles with a few films for Metro-Goldwyn-Mayer in 1931. The next year, he landed his first leading Hollywood role and over the next three decades he became a leading man in more than 60 motion pictures.",
+      "source_id": "Clark Gable",
+      "title": "Clark Gable"
+    },
+    {
+      "id": "2",
+      "text": "Girl 27 is a 2007 documentary film about the 1937 rape of dancer and sometime movie extra Patricia Douglas (1917-2003) at an M-G-M exhibitors' convention, the front-page news stories that followed, and the studio's subsequent cover-up of the crime. Also covered in the film are a similar assault on singer Eloise Spann and her subsequent suicide, and the better-known scandal involving actress Loretta Young and her \"adopted\" daughter Judy Lewis, the product of her affair with Clark Gable during the production of \"The Call of the Wild\".",
+      "source_id": "Girl 27",
+      "title": "Girl 27"
+    },
+    {
+      "id": "3",
+      "text": "Aunt Judy's Magazine was a British magazine for young people founded in 1866 by Margaret Gatty. After her death in 1873, publishing was continued by her daughter Horatia Eden until 1885. The magazine is named after Gatty’s daughter, Juliana Horatia Ewing’s childhood nickname, “Judy”.",
+      "source_id": "Aunt Judy's Magazine",
+      "title": "Aunt Judy's Magazine"
+    },
+    {
+      "id": "4",
+      "text": "Judy Lewis (born Judith Young; November 6, 1935 – November 25, 2011) was an American actress, writer, producer, and therapist. She was the secret biological daughter of actor Clark Gable and actress Loretta Young.",
+      "source_id": "Judy Lewis",
+      "title": "Judy Lewis"
+    },
+    {
+      "id": "5",
+      "text": "Dennis Shepard is the father of Matthew Shepard, a 21-year-old student at University of Wyoming who was murdered in October 1998 in what became one of the most high-profiled cases highlighting hate-crimes against LGBT people. He and his wife, Judy Shepard, are co-founders of the Matthew Shepard Foundation, and advocates for LGBT rights. He has been an advocate for parental support of LGBT children both during Matthew's life and, very publicly, since Matthew's death. He and Judy continue to live and work in Casper.",
+      "source_id": "Dennis Shepard",
+      "title": "Dennis Shepard"
+    },
+    {
+      "id": "6",
+      "text": "Tiger Eyes is a young adult novel written by Judy Blume in 1981 about a 15-year-old girl attempting to cope with the unexpected death of her father. In 2012, the novel was adapted into a film of the same name, directed by Judy's son, Lawrence Blume and starring Willa Holland as Davey Wexler. Davey is often sad, depressed and defensive on everything. She has a short breakdown at her brother, Jason. Her mom becomes incapable of doing things about the house, making Davey more depressed.",
+      "source_id": "Tiger Eyes",
+      "title": "Tiger Eyes"
+    },
+    {
+      "id": "7",
+      "text": "Husbands and Wives is a 1992 American comedy-drama film written and directed by Woody Allen. The film stars Allen, Mia Farrow, Sydney Pollack, Judy Davis, Juliette Lewis, and Liam Neeson. It was nominated for two Academy Awards, Best Supporting Actress (Judy Davis) and Best Original Screenplay (Woody Allen). The film debuted shortly after the end of Allen and Farrow's romantic and professional partnership, and was their final of 13 films together. The movie is filmed by Carlo Di Palma with a handheld camera style and features documentary-like one-on-one interviews with the characters interspersed with the story.",
+      "source_id": "Husbands and Wives",
+      "title": "Husbands and Wives"
+    },
+    {
+      "id": "8",
+      "text": "Judy Grable, American professional wrestler who was best known by her ring name Judy Grable or by nickname \"The Barefoot Contessa\"",
+      "source_id": "Barefoot Contessa (disambiguation)",
+      "title": "Barefoot Contessa (disambiguation)"
+    },
+    {
+      "id": "9",
+      "text": "Lewis Richardson is a fictional character from the British Channel 4 soap opera, \"Hollyoaks\", played by Ben Hull. Lewis was introduced by Phil Redmond as part of the Richardson family. Lewis made his first on-screen appearance on 6 November 1995 before departing on 15 October 2001. Lewis was initially a \"good bloke\" but changed, becoming like his abusive father Dennis Richardson. Lewis's exit from the serial was devised by series producer Jo Hallows who decided to kill Lewis on screen as part of a suicide storyline. The storyline was devised to show the \"full horror\" of suicide.",
+      "source_id": "Lewis Richardson (Hollyoaks)",
+      "title": "Lewis Richardson (Hollyoaks)"
+    },
+    {
+      "id": "10",
+      "text": "Diana Van der Vlis (June 9, 1935 - October 22, 2001) was a Canadian-American stage, screen and television actress best known for her characters Dr. Nell Beaulac on the ABC soap opera \"Ryan's Hope\" and Kate Hathaway Prescott on the CBS soap opera \"Where the Heart Is\". Two other roles on daytime dramas that she played were Sherry Rowan on \"Ryan's Hope\" and Susan Ames Carver on \"The Secret Storm\", when she was a substitute for Judy Lewis in the role.",
+      "source_id": "Diana Van der Vlis",
+      "title": "Diana Van der Vlis"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "10": 0,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "1",
+    "2"
+  ],
+  "gold_answer": [
+    "\"The King of Hollywood\""
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a80b9df5542992bc0c4a7ec",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

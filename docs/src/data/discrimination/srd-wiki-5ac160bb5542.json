@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5ac160bb5542",
+  "category": "wikipedia",
+  "question": "What corporation does the company that publishes the monthly magazine that focuses almost exclusively on the Western United States and featured photograph by Julius Shulman of a home designed by Rodney Walker belong to?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Country Living is an American lifestyle and home magazine published by the Hearst Corporation since 1978. The monthly magazine focuses on food, home renovation, home decor, DIY and lifestyle. The magazine hosts four Country Living Fairs a year in Rhinebeck, NY, Nashville, TN, Columbus, OH and Atlanta, GA.",
+      "source_id": "Country Living",
+      "title": "Country Living"
+    },
+    {
+      "id": "2",
+      "text": "WSJ. or WSJ. Magazine, which was originally intended to be a monthly magazine named Pursuits, is a luxury glossy news and lifestyle monthly magazine by the publishers of \"The Wall Street Journal\". It features luxury consumer products advertisements and is distributed to subscribers in large United States markets as well as throughout Europe and Asia. Its coverage spans art, fashion, entertainment, design, food, architecture, travel and more. Kristina O’Neill is Editor in Chief and Anthony Cenname is Publisher. Launched as a quarterly in 2008, the magazine grew to 12 issues a year for 2014.",
+      "source_id": "WSJ.",
+      "title": "WSJ."
+    },
+    {
+      "id": "3",
+      "text": "Rodney Walker (1910–1986) was a midcentury American modern designer and builder who specialized in residential architecture in the Southern California area. He contributed three designs to Arts & Architecture magazine's Case Study House program during the late 1940s (Case Study House #16, #17, and #18). Many of his homes were photographed by Julius Shulman for \"Arts & Architecture\" magazine, \"Better Homes and Gardens\", \"Architectural Record\", \"Sunset\", and the \"Los Angeles Times Home\" magazine.",
+      "source_id": "Rodney Walker (architect)",
+      "title": "Rodney Walker (architect)"
+    },
+    {
+      "id": "4",
+      "text": "Diana Lemieux is a United States freelance photographer and has been the assistant to the President of the Lymphoma Research Foundation, a non-profit cancer organization in downtown Manhattan. She resides in Brooklyn, New York. Her photograph \"Sometimes the Road Gets Rugged and It's Hard to Travel On\" was first published in the December 2006/January 2007 issue of \"JPG Magazine\". Most recently, the same photograph appeared in the June 2007 issue of Smithsonian Magazine. The photograph earned her a place as a finalist of the 4th Annual Smithsonian Magazine Photo Contest in the travel category and will be featured in an exhibit called \"Through Our Reader's Eyes\" at the Smithsonian in Washington DC from July 1 – August 15, 2007.",
+      "source_id": "Diana Lemieux",
+      "title": "Diana Lemieux"
+    },
+    {
+      "id": "5",
+      "text": "Sunset is a lifestyle magazine in the United States. \"Sunset\" focuses on homes, cooking, gardening, and travel, with a focus almost exclusively on the Western United States. The magazine is published monthly by the Sunset Publishing Corporation, part of Southern Progress Corporation, itself a subsidiary of Time Warner.",
+      "source_id": "Sunset (magazine)",
+      "title": "Sunset (magazine)"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 3
+  },
+  "supporting_ids": [
+    "3",
+    "5"
+  ],
+  "gold_answer": [
+    "Southern Progress Corporation"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5ac160bb5542994d76dccdfb",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

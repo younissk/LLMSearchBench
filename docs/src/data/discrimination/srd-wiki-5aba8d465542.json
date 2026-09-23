@@ -1,0 +1,93 @@
+{
+  "id": "srd-wiki-5aba8d465542",
+  "category": "wikipedia",
+  "question": "Which writer, Karen Blixen or Woody Allen, has a broader range of artistic talents?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Baroness Karen Christenze von Blixen-Finecke (née Dinesen; 17 April 1885 – 7 September 1962) was a Danish author who wrote works in Danish and English. She is best known under her pen names Isak Dinesen, used in English-speaking countries, and Tania Blixen, used in German-speaking countries. She also published works using the aliases Osceola and Pierre Andrézel.",
+      "source_id": "Karen Blixen",
+      "title": "Karen Blixen"
+    },
+    {
+      "id": "2",
+      "text": "Heywood \"Woody\" Allen (born Allan Stewart Konigsberg; December 1, 1935) is an American filmmaker, writer, actor, comedian, and musician whose career spans more than six decades.",
+      "source_id": "Woody Allen",
+      "title": "Woody Allen"
+    },
+    {
+      "id": "3",
+      "text": "The Karen Blixen Museum, located 10 km outside of Nairobi, Kenya, \"at the foot of the Ngong Hills\", is the former African home of Danish author Karen Blixen, famous for her book \"Out of Africa\" which chronicles life at the estate.",
+      "source_id": "Karen Blixen Museum (Kenya)",
+      "title": "Karen Blixen Museum (Kenya)"
+    },
+    {
+      "id": "4",
+      "text": "Rungstedlund, also known as the Karen Blixen Museum, is a country house in Rungsted on the Øresund coast just north of Copenhagen, Denmark, notable for its association with the author Karen Blixen, who lived there for most of her life. She was born on the estate in 1885, and returned there after her years in Kenya, chronicled in her book \"Out of Africa\", to do most of her writings. The property is today managed by the Rungstedlund Foundation as a writer's house museum.",
+      "source_id": "Rungstedlund",
+      "title": "Rungstedlund"
+    },
+    {
+      "id": "5",
+      "text": "Familien de Cats (The de Cats Family) was the third short story written by the Danish writer Karen Blixen under the pen name Osceola, a famous early 19th-century Native American leader. Published in the literary journal \"Tilskueren\" in January 1909, it followed \"Eneboerne\" (The Hermits) and \"Pløjeren\" (The Ploughman), both published in 1907. It tells the story of a law-abiding family which in each generation has a black sheep who turns out to be its secret blessing. Although Blixen, then Karen Dinesen, wrote hundreds of pages of poems, essays and stories in her youth, it was only when she was 22 that she began to publish some of her short stories in literary journals as Osceola which had also been the name of her father's dog. Like her other early short stories, at the time it failed to attract attention.",
+      "source_id": "Familien de Cats",
+      "title": "Familien de Cats"
+    },
+    {
+      "id": "6",
+      "text": "Babette's Feast (Danish: \"Babettes gæstebud\" ) is a 1987 Danish drama film directed by Gabriel Axel. The film's screenplay was written by Axel based on the story by Isak Dinesen (Karen Blixen). Produced by Just Betzer, Bo Christensen, and Benni Korzen with funding from the Danish Film Institute, \"Babette's Feast\" was the first Danish cinema film of a Blixen story. It was also the first Danish film to win the Academy Award for Best Foreign Language Film. The film premiered in the Un Certain Regard section of the 1987 Cannes Film Festival.",
+      "source_id": "Babette's Feast",
+      "title": "Babette's Feast"
+    },
+    {
+      "id": "7",
+      "text": "Anecdotes of Destiny is a collection of stories by Danish author Karen Blixen. It was the last work put out during Karen Blixen's lifetime; it was published in Denmark on October 12, 1958.",
+      "source_id": "Anecdotes of Destiny",
+      "title": "Anecdotes of Destiny"
+    },
+    {
+      "id": "8",
+      "text": "The Rungstedlund Award is an award of honor, founded by the Rungstedlund Foundation in 1991. The DKK 25,000 prize is annually handed to a person who has made a notable contribution in an area which interested Karen Blixen. The prize is handed at the birthday of Karen Blixen on 17 April. The award comes from a gift from Hørsholm Municipality at the opening of the Karen Blixen Museum on 14 May 1991. Rungstedlund was owned by Karen Blixen from 1939-58.",
+      "source_id": "Rungstedlund Award",
+      "title": "Rungstedlund Award"
+    },
+    {
+      "id": "9",
+      "text": "Out of Africa is a memoir by the Danish author Karen Blixen. The book, first published in 1937, recounts events of the seventeen years when Blixen made her home in Kenya, then called British East Africa. The book is a lyrical meditation on Blixen’s life on her coffee plantation, as well as a tribute to some of the people who touched her life there. It provides a vivid snapshot of African colonial life in the last decades of the British Empire. Blixen wrote the book in English and then rewrote it in Danish. The book has sometimes been published under the author's pen name, Isak Dinesen.",
+      "source_id": "Out of Africa",
+      "title": "Out of Africa"
+    },
+    {
+      "id": "10",
+      "text": "Bonita Sue \"Bonnie\" Dunbar (born February 14, 1948) is a former professor in the department of molecular and cell biology at Baylor College of Medicine, a position she held from 1994 to 2004. Prior thereto she was an assistant professor in the same department at the same university from 1981 to 1983. From 1984 to 1994, also at Baylor College of Medicine, she also held a position as associate professor in the department of obstetrics and gynecology. She is currently an honorary lecturer at the University of Nairobi. She is a member of the American Association for the Advancement of Science, the Endocrine Society, the American Society for Cell Biology, and the New York Academy of Sciences. She is perhaps best known for her work regarding the zona pellucida of mammalian eggs, and has written chapters of textbooks on the topic. She has been called \"the new Karen Blixen,\" and is currently the owner of the Karen Blixen Coffee Garden Restaurant and Cottages, as well as the treasurer of the African Biomedical Center. She also served on the editorial board of the journal Medical Veritas, which was published from 2004 to 2008 and endorsed anti-vaccine views.",
+      "source_id": "Bonnie S. Dunbar",
+      "title": "Bonnie S. Dunbar"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "10": 0,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "supporting_ids": [
+    "1",
+    "2"
+  ],
+  "gold_answer": [
+    "\"Woody\" Allen"
+  ],
+  "noise_tier": "medium",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5aba8d4655429901930fa82b",
+  "subcategory": "comparison-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

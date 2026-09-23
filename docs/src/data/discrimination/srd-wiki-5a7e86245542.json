@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5a7e86245542",
+  "category": "wikipedia",
+  "question": "Who was the New York City Fire Commissioner at the time of Providenza Panno's death?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "The Triangle Shirtwaist Factory fire in New York City on March 25, 1911 was the deadliest industrial disaster in the history of the city, and one of the deadliest in US history. The fire caused the deaths of 146 garment workers – 123 women and 23 men – who died from the fire, smoke inhalation, or falling or jumping to their deaths. Most of the victims were recent Italian and Jewish immigrant women aged 16 to 23; of the victims whose ages are known, the oldest victim was Providenza Panno at 43, and the youngest were 14-year-olds Kate Leone and \"Sara\" Rosaria Maltese.",
+      "source_id": "Triangle Shirtwaist Factory fire",
+      "title": "Triangle Shirtwaist Factory fire"
+    },
+    {
+      "id": "2",
+      "text": "Howard Safir (born February 24, 1942) was New York City Fire Commissioner from 1994 to 1996 and New York City Police Commissioner from 1996 to 2000.",
+      "source_id": "Howard Safir",
+      "title": "Howard Safir"
+    },
+    {
+      "id": "3",
+      "text": "Rhinelander Waldo (May 24, 1877 – August 13, 1927) was appointed the seventh New York City Fire Commissioner by Mayor William Jay Gaynor on January 13, 1910. He resigned on May 23, 1911, less than two months after the deadly Triangle Shirtwaist Factory fire to accept an appointment as the eighth New York City Police Commissioner. On December 31, 1913, he was dismissed by the outgoing acting mayor, Ardolph Kline. Among other achievements in office, Waldo contributed to the motorization of both departments.",
+      "source_id": "Rhinelander Waldo",
+      "title": "Rhinelander Waldo"
+    },
+    {
+      "id": "4",
+      "text": "The New York City Fire Commissioner is the civilian administrator of the New York City Fire Department (FDNY), appointed by the Mayor of the City of New York. There have been 33 commissioners excluding Acting Fire Commissioners, and 38 including Acting Fire Commissioners. This is since Manhattan and the Bronx consolidated with Brooklyn, Queens, and Staten Island to form The City of New York in 1898. The current Fire Commissioner is Daniel A. Nigro, who has held the office since June 7, 2014. The term of office is January 1 to December 31 unless the commissioner is removed from office by the mayor, dies in office, or resigns.",
+      "source_id": "New York City Fire Commissioner",
+      "title": "New York City Fire Commissioner"
+    },
+    {
+      "id": "5",
+      "text": "Salvatore Joseph \"Sal\" Cassano (born 22 January 1945) served as the 32nd New York City Fire Commissioner. His appointment by New York City Mayor Michael R. Bloomberg to succeed Nicholas Scoppetta was announced on 21 December 2009 and became effective on 1 January 2010. Cassano was sworn in on 11 January 2010. On May 9, 2014, Daniel A. Nigro was announced as Cassano's successor as commissioner of the FDNY, in June 2014.",
+      "source_id": "Salvatore Cassano",
+      "title": "Salvatore Cassano"
+    }
+  ],
+  "relevance": {
+    "1": 3,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "1",
+    "3"
+  ],
+  "gold_answer": [
+    "Rhinelander Waldo"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5a7e86245542991319bc94ce",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}

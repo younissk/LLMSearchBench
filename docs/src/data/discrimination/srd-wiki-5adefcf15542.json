@@ -1,0 +1,58 @@
+{
+  "id": "srd-wiki-5adefcf15542",
+  "category": "wikipedia",
+  "question": "What position does the First Vice Captain of Juventus play?",
+  "candidates": [
+    {
+      "id": "1",
+      "text": "Miguel Mario Díaz-Canel Bermúdez (born 20 April 1960) is a Cuban politician who has been First Vice President of the Council of State of Cuba and Council of Ministers since 2013. He has been a member of the Politburo of the Communist Party of Cuba since 2003, and he served as Minister of Higher Education from 2009 to 2012; he was promoted to the post of Vice President of the Council of Ministers in 2012. A year later, on 24 February 2013, he was elected as First Vice President of the Council of State.",
+      "source_id": "Miguel Díaz-Canel",
+      "title": "Miguel Díaz-Canel"
+    },
+    {
+      "id": "2",
+      "text": "Claudio Marchisio (] ; born 19 January 1986) is an Italian professional footballer who plays as a midfielder for Juventus and the Italian national team. A product of the Juventus youth system, he has spent his whole career thus far at his hometown club, with the exception of a season-long loan spell at Empoli, winning six consecutive Serie A titles. He is currently the club's second vice-captain, behind Giorgio Chiellini.",
+      "source_id": "Claudio Marchisio",
+      "title": "Claudio Marchisio"
+    },
+    {
+      "id": "3",
+      "text": "Giorgio Chiellini (] ; born 14 August 1984) is an Italian professional footballer who plays as a defender for Serie A club Juventus and the Italian national team. A physically strong, aggressive, and versatile defender, although he is usually deployed as a centre-back, he is also capable of playing as a left-back, both in a three or four-man defence.",
+      "source_id": "Giorgio Chiellini",
+      "title": "Giorgio Chiellini"
+    },
+    {
+      "id": "4",
+      "text": "Syeda Nain Fatima Abidi (born 23 May 1985 in Karachi; Urdu: ) is an international cricketer from Pakistan. She is a right-handed batsman with good footwork and can bowl too. Abidi holds the all-time record of being first Pakistani player to score a century in women’s one-day internationals. Abidi is a Syed. Abidi was vice captain of the Pakistan women cricket team and is vice captain of her club Ztbl from 2008.",
+      "source_id": "Nain Abidi",
+      "title": "Nain Abidi"
+    },
+    {
+      "id": "5",
+      "text": "The President of the Parliament of Sint Maarten (Dutch: \"Voorzitter van Staten van Sint Maarten\" ) is the presiding officer of the Parliament of Sint Maarten. According to Article 56 of the Constitution of Sint Maarten he or she presides over the sittings of the House and enforces the rules prescribed in the Rules of Order of Parliament for the orderly conduct of parliamentary business. The President is supported in his or her duties by a team of Vice Presidents, divided into a First Vice President, Second Vice President, which also are members of the House. In the event that the President is unable to lead a meeting the meeting is chaired by the First Vice President.",
+      "source_id": "President of the Parliament of Sint Maarten",
+      "title": "President of the Parliament of Sint Maarten"
+    }
+  ],
+  "relevance": {
+    "1": 0,
+    "2": 3,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "supporting_ids": [
+    "2",
+    "3"
+  ],
+  "gold_answer": [
+    "centre-back"
+  ],
+  "noise_tier": "easy",
+  "label_source": "derived",
+  "source": "hotpotqa",
+  "source_id": "5adefcf15542995ec70e8f4c",
+  "subcategory": "bridge-hard",
+  "variant_of": "",
+  "rationale": "HotpotQA marks which paragraphs its supporting sentences came from; those are graded 3 and the rest 0. The grade is inferred from the dataset's structure, not a relevance judgement."
+}
