@@ -60,6 +60,7 @@ def run_task(task: ToolUseTask, model: str, adapter: PromptAdapter) -> ToolUseAt
         cached_tokens=turn.cached_tokens,
         latency_s=turn.latency_s,
         stop_reason=turn.stop_reason,
+        tool_protocol=turn.tool_protocol,
     )
 
 

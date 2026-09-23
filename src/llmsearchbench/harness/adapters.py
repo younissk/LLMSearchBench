@@ -16,6 +16,7 @@ from pydantic import Field
 
 from llmsearchbench.providers import ModelSpec, get_model, get_provider
 from llmsearchbench.types import BenchModel
+from llmsearchbench.types.enums import ToolProtocol
 from llmsearchbench.types.tooluse import ToolCall
 
 #: The one tool the model is offered. Deliberately *not* `strict`: strict mode
@@ -51,6 +52,9 @@ class Turn(BenchModel):
     cached_tokens: int = Field(default=0, ge=0)
     latency_s: float = Field(ge=0)
     stop_reason: str = ""
+    #: How the tool was offered. Set by the adapter, carried through to the
+    #: attempt so a prompted number is never mistaken for a native one.
+    tool_protocol: ToolProtocol = ToolProtocol.NATIVE
 
     @property
     def searched(self) -> bool:

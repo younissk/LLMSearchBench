@@ -10,6 +10,7 @@ from __future__ import annotations
 from pydantic import Field
 
 from llmsearchbench.types import BenchModel
+from llmsearchbench.types.enums import ToolProtocol
 
 
 class Provider(BenchModel):
@@ -45,4 +46,8 @@ class ModelSpec(BenchModel):
     #: True when the provider publishes no price. Cost figures will read zero
     #: and must not be compared against a priced model.
     price_unknown: bool = False
+    #: How the tool is offered. `PROMPTED` is a fallback for a provider
+    #: whose server has tool calling disabled, and is marked as such
+    #: everywhere the number is shown.
+    tool_protocol: ToolProtocol = ToolProtocol.NATIVE
     notes: str = ""

@@ -16,6 +16,7 @@ from llmsearchbench.scoring import runstats
 from llmsearchbench.scoring.tooluse import score
 from llmsearchbench.storage import load_attempts, read_jsonl
 from llmsearchbench.types import LeaderboardRow, TaskLeaderboard
+from llmsearchbench.types.enums import ToolProtocol
 from llmsearchbench.types.tooluse import Bucket, ToolUseTask
 from llmsearchbench.ui import console, fail, warn
 
@@ -169,6 +170,11 @@ def publish(
             label, provider, is_free = model_id, "unknown", False
 
         buckets = {b.bucket: b.accuracy for b in result.buckets}
+        # Taken from the attempts, not the catalogue: what actually ran is what
+        # the badge should describe, even if the catalogue changed since.
+        protocol = next(
+            (a.tool_protocol for a in attempts if not a.failed), ToolProtocol.NATIVE
+        )
 
         rows.append(
             LeaderboardRow(
@@ -177,6 +183,7 @@ def publish(
                 provider=provider,
                 items=len(scored_tasks),
                 complete=complete,
+                tool_protocol=protocol,
                 decision_accuracy=result.decision_accuracy,
                 memory_accuracy=buckets.get(Bucket.MEMORY, 0.0),
                 search_accuracy=buckets.get(Bucket.SEARCH, 0.0),

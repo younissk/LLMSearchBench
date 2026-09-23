@@ -17,6 +17,7 @@ from typing import Self
 from pydantic import Field, model_validator
 
 from llmsearchbench.types.base import BenchModel
+from llmsearchbench.types.enums import ToolProtocol
 
 
 class Bucket(StrEnum):
@@ -120,6 +121,10 @@ class ToolUseAttempt(BenchModel):
     stop_reason: str = ""
     #: Set when the item failed outright; the attempt is recorded either way.
     error: str = ""
+
+    #: How the tool was offered for this item. Old files predate the field and
+    #: load as `native`, which is what they were.
+    tool_protocol: ToolProtocol = ToolProtocol.NATIVE
 
     @property
     def searched(self) -> bool:

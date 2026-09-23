@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import time
 import urllib.error
 import urllib.request
@@ -18,6 +19,7 @@ from typing import Any, ClassVar
 
 from llmsearchbench.harness.adapters import Turn
 from llmsearchbench.providers import ModelSpec
+from llmsearchbench.types.enums import ToolProtocol
 from llmsearchbench.types.tooluse import ToolCall
 
 #: Socket timeout. urllib applies this per operation, not to the whole
@@ -48,6 +50,50 @@ SEARCH_TOOL: dict[str, Any] = {
         },
     },
 }
+
+
+#: Offered in the prompt instead of the `tools` field, for a provider whose
+#: server has tool calling switched off. The wording tracks `SEARCH_TOOL` above
+#: so the two protocols describe the same tool, and asks for one line so the
+#: reply is parseable without guessing.
+PROMPTED_PREAMBLE = """You have one tool available:
+
+search(query: string) — Search the web for current or obscure information. \
+Use it only when you do not already know the answer.
+
+This connection cannot carry a real tool call, so to use the tool, reply with \
+exactly one line and nothing else:
+
+SEARCH: <the query>
+
+If you do not need the tool, answer directly and do not write that line.
+
+"""
+
+#: A prompted call. Tolerant about markdown around the keyword — a model that
+#: writes `**SEARCH:** paris population` has made the decision this task
+#: measures, and punishing the asterisks would measure formatting instead.
+PROMPTED_CALL = re.compile(
+    r"^[\s>*`_\-]*search\s*:\s*(?P<query>.*)$", re.IGNORECASE | re.MULTILINE
+)
+
+
+def parse_prompted_call(text: str) -> ToolCall | None:
+    """Read a prompted tool call out of reply text, if there is one.
+
+    Returns `None` when the model answered instead — which is the same signal
+    as an empty `tool_calls` list on the native route.
+    """
+    match = PROMPTED_CALL.search(text)
+    if match is None:
+        return None
+
+    query = match.group("query").strip().strip('`"*_').strip()
+    if not query:
+        return ToolCall(
+            name="search", arguments={}, schema_error="missing required argument 'query'"
+        )
+    return ToolCall(name="search", arguments={"query": query}, schema_error=None)
 
 
 class ChatCompletionsError(RuntimeError):
@@ -133,13 +179,21 @@ class ChatCompletionsAdapter:
         self._effort = effort
         self._api_key = api_key
 
+    @property
+    def prompted(self) -> bool:
+        return self._spec.tool_protocol is ToolProtocol.PROMPTED
+
     def _payload(self, prompt: str, temperature: float) -> dict[str, Any]:
+        content = PROMPTED_PREAMBLE + prompt if self.prompted else prompt
         payload: dict[str, Any] = {
             "model": self.wire_name(self._spec.id),
-            "messages": [{"role": "user", "content": prompt}],
-            "tools": [SEARCH_TOOL],
+            "messages": [{"role": "user", "content": content}],
             "max_tokens": 4096,
         }
+        # A server with tool calling disabled rejects the request outright when
+        # `tools` is present, whatever `tool_choice` says.
+        if not self.prompted:
+            payload["tools"] = [SEARCH_TOOL]
         if self._spec.supports_temperature:
             payload["temperature"] = temperature
         return payload
@@ -207,7 +261,13 @@ class ChatCompletionsAdapter:
             raise ChatCompletionsError("response contained no choices")
 
         message = choices[0].get("message") or {}
+        text = str(message.get("content") or "")
+
         calls: list[ToolCall] = []
+        if self.prompted:
+            prompted_call = parse_prompted_call(text)
+            if prompted_call is not None:
+                calls.append(prompted_call)
         for call in message.get("tool_calls") or []:
             function = call.get("function") or {}
             arguments, schema_error = parse_arguments(str(function.get("arguments", "")))
@@ -220,8 +280,9 @@ class ChatCompletionsAdapter:
             )
 
         return Turn(
-            answer=str(message.get("content") or ""),
+            answer=text,
             calls=calls,
+            tool_protocol=self._spec.tool_protocol,
             tokens_in=int(usage.get("prompt_tokens", 0)),
             tokens_out=int(usage.get("completion_tokens", 0)),
             reasoning_tokens=reasoning_tokens(usage),

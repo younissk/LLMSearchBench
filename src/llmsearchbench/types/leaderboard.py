@@ -9,6 +9,7 @@ from __future__ import annotations
 from pydantic import Field
 
 from llmsearchbench.types.base import Fraction, SiteModel
+from llmsearchbench.types.enums import ToolProtocol
 
 
 class LeaderboardRow(SiteModel):
@@ -23,6 +24,10 @@ class LeaderboardRow(SiteModel):
     items: int = Field(ge=0)
     #: False when the run did not cover the whole task set.
     complete: bool
+    #: `prompted` marks a model whose provider has tool calling disabled: the
+    #: tool was described in the prompt instead. Shown as a badge, because the
+    #: number answers a slightly different question.
+    tool_protocol: ToolProtocol = ToolProtocol.NATIVE
 
     decision_accuracy: Fraction
     memory_accuracy: Fraction

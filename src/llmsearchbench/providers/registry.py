@@ -7,6 +7,7 @@ the cost calculation, and the results table all read from this one dict.
 from __future__ import annotations
 
 from llmsearchbench.providers.entities import ModelSpec, Provider
+from llmsearchbench.types.enums import ToolProtocol
 
 PROVIDERS: dict[str, Provider] = {
     provider.key: provider
@@ -247,15 +248,6 @@ MODELS: dict[str, ModelSpec] = {
             notes="Llama licence; no reasoning mode",
         ),
         ModelSpec(
-            id="meta-llama/llama-4-scout",
-            label="Llama 4 Scout",
-            provider="openrouter",
-            price_in_per_mtok=0.1000,
-            price_out_per_mtok=0.3000,
-            priced_on="2026-09-23",
-            notes="Llama licence; no reasoning mode",
-        ),
-        ModelSpec(
             id="meta-llama/llama-3.1-8b-instruct",
             label="Llama 3.1 8B",
             provider="openrouter",
@@ -326,9 +318,12 @@ MODELS: dict[str, ModelSpec] = {
             price_out_per_mtok=0.0,
             priced_on="",
             price_unknown=True,
+            tool_protocol=ToolProtocol.PROMPTED,
             notes=(
-                "cannot run yet: the provider's vLLM server has tool calling "
-                "disabled. Avey publishes no price, so cost reads zero."
+                "the provider's vLLM server has tool calling disabled, so the "
+                "tool is described in the prompt and the call is parsed out of "
+                "the reply. Not comparable to a native tool-calling run. Avey "
+                "publishes no price, so cost reads zero."
             ),
         ),
         # Add more OpenRouter models here with their listed prices from

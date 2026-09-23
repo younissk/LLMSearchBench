@@ -247,3 +247,75 @@ class TestProviderErrorExplanation:
         from llmsearchbench.harness.openai_compat import ChatCompletionsAdapter
 
         assert ChatCompletionsAdapter.explain("rate limited") == "rate limited"
+
+
+class TestPromptedProtocol:
+    """A provider with tool calling disabled can still be measured, with a
+    caveat attached to every number it produces."""
+
+    def _adapter(self) -> object:
+        from llmsearchbench.harness.openai_compat import AveyAdapter
+        from llmsearchbench.providers import get_model
+
+        adapter = AveyAdapter.__new__(AveyAdapter)
+        adapter._spec = get_model("avey/olive")  # type: ignore[attr-defined]
+        adapter._effort = "high"  # type: ignore[attr-defined]
+        adapter._api_key = "test"  # type: ignore[attr-defined]
+        return adapter
+
+    def test_the_payload_carries_no_tools(self) -> None:
+        """`tools` is exactly what such a server rejects."""
+        payload = self._adapter()._payload("who?", 0.0)  # type: ignore[attr-defined]
+        assert "tools" not in payload
+        assert "tool_choice" not in payload
+
+    def test_the_tool_is_described_in_the_prompt_instead(self) -> None:
+        payload = self._adapter()._payload("who?", 0.0)  # type: ignore[attr-defined]
+        content = payload["messages"][0]["content"]
+        assert "SEARCH:" in content
+        assert content.endswith("who?")
+
+    def test_a_native_model_is_unaffected(self) -> None:
+        from llmsearchbench.harness.openai_compat import OpenRouterAdapter
+        from llmsearchbench.providers import get_model
+
+        adapter = OpenRouterAdapter.__new__(OpenRouterAdapter)
+        adapter._spec = get_model("qwen/qwen3-8b")  # type: ignore[attr-defined]
+        adapter._api_key = "test"  # type: ignore[attr-defined]
+        payload = adapter._payload("who?", 0.0)
+        assert payload["tools"]
+        assert payload["messages"][0]["content"] == "who?"
+
+
+class TestParsePromptedCall:
+    def test_a_plain_call(self) -> None:
+        from llmsearchbench.harness.openai_compat import parse_prompted_call
+
+        call = parse_prompted_call("SEARCH: population of Doha 2026")
+        assert call is not None
+        assert call.arguments == {"query": "population of Doha 2026"}
+        assert call.schema_error is None
+
+    def test_markdown_around_the_keyword_is_not_a_malformed_call(self) -> None:
+        from llmsearchbench.harness.openai_compat import parse_prompted_call
+
+        call = parse_prompted_call("**SEARCH:** who won in 2026")
+        assert call is not None and call.arguments == {"query": "who won in 2026"}
+
+    def test_an_empty_query_is_recorded_as_malformed(self) -> None:
+        from llmsearchbench.harness.openai_compat import parse_prompted_call
+
+        call = parse_prompted_call("SEARCH:")
+        assert call is not None and call.schema_error is not None
+
+    def test_an_answer_is_not_a_call(self) -> None:
+        from llmsearchbench.harness.openai_compat import parse_prompted_call
+
+        assert parse_prompted_call("The capital of France is Paris.") is None
+
+    def test_a_call_after_some_preamble_still_counts(self) -> None:
+        """The decision is what is measured, not obedience about line count."""
+        from llmsearchbench.harness.openai_compat import parse_prompted_call
+
+        call = parse_prompted_call("I do not know this offhand.\nSEARCH: Avey Olive model")
+        assert call is not None and call.arguments == {"query": "Avey Olive model"}
