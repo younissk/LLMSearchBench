@@ -41,6 +41,10 @@ class LeaderboardRow(SiteModel):
     under_search: Fraction
 
     cost_usd: float = Field(ge=0)
+    #: The part of `cost_usd` spent on searches that should not have happened.
+    wasted_usd: float = Field(default=0.0, ge=0)
+    #: Total spend divided by right decisions. Zero for an unpriced model.
+    usd_per_correct_decision: float = Field(default=0.0, ge=0)
     is_free: bool = False
     tokens_out_mean: float = Field(ge=0)
     #: Share of output tokens spent thinking, where the provider reports it.
@@ -58,3 +62,45 @@ class TaskLeaderboard(SiteModel):
     #: How many items the full task set has, so partial runs are obvious.
     task_items: int = Field(ge=0)
     rows: list[LeaderboardRow] = Field(default_factory=list)
+
+
+class ItemMeta(SiteModel):
+    """One task item, as the charts need to see it."""
+
+    id: str = Field(min_length=1)
+    bucket: str = Field(min_length=1)
+    subcategory: str = Field(min_length=1)
+    source: str = Field(min_length=1)
+    adversarial: bool = False
+
+
+class ModelItems(SiteModel):
+    """One model's per-item result, encoded one character per item.
+
+    A string rather than an array of objects: 36 models x 360 items is a file
+    the browser downloads, and the objects would be forty times the size for
+    the same information.
+    """
+
+    model: str = Field(min_length=1)
+    label: str = Field(min_length=1)
+    tool_protocol: ToolProtocol = ToolProtocol.NATIVE
+
+    #: In `items` order. `A` correct abstain, `S` correct search,
+    #: `O` over-search, `U` under-search.
+    decisions: str
+    #: In `items` order. `.` no call, `+` well-formed call, `x` malformed call.
+    calls: str
+
+
+class TaskItemMatrix(SiteModel):
+    """Every model's answer on every item, for the per-item charts.
+
+    Only complete runs appear: a partial run would leave holes in a string
+    whose whole point is that position means item.
+    """
+
+    task: str = Field(min_length=1)
+    generated: str = Field(min_length=1)
+    items: list[ItemMeta] = Field(default_factory=list)
+    models: list[ModelItems] = Field(default_factory=list)

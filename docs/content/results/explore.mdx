@@ -1,0 +1,23 @@
+---
+id: explore
+title: Explore the results
+sidebar_label: Explore
+description: Every chart drawn from the published results, with what each one answers.
+---
+
+import ChartGallery from '@site/src/components/ChartGallery';
+
+# Explore the results
+
+The [leaderboard](./leaderboard) ranks models. These charts are for the
+questions a ranking cannot answer: *which way* a model is wrong, what a run
+actually spent, and which models are so alike that running both buys nothing.
+
+Everything below is drawn from the two published files — `tool-use-correctness.json`
+for the rates and `tool-use-correctness-items.json` for anything per-item. No
+chart re-scores a run; they are all reshapings of the same numbers.
+
+Only complete runs appear. A run with failed items is left out rather than
+scored on what survived, because a failure produced no decision at all.
+
+<ChartGallery task="tool-use-correctness" />

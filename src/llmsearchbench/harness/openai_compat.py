@@ -33,6 +33,12 @@ DEADLINE = 180.0
 #: How much body to read per chunk while checking the deadline.
 CHUNK = 1 << 16
 
+#: Waits between retries of a rate-limited request, in seconds. A 429 is the
+#: provider asking for a slower pace, not a broken item, so retrying beats
+#: recording 335 failures — which is what one run against a staging endpoint
+#: did before this existed.
+BACKOFF = (2.0, 8.0, 20.0)
+
 #: The one tool, in the shape these APIs expect. Deliberately not `strict`:
 #: strict mode would make a malformed call impossible to observe.
 SEARCH_TOOL: dict[str, Any] = {
@@ -159,6 +165,19 @@ def cached_tokens(usage: dict[str, Any]) -> int:
     return int(details.get("cached_tokens", 0) or 0) if isinstance(details, dict) else 0
 
 
+def retry_after(error: urllib.error.HTTPError) -> float | None:
+    """The provider's own pace, when it names one.
+
+    Only the seconds form is honoured; the HTTP-date form is rare here and
+    guessing at a date parse would be worse than the fixed backoff.
+    """
+    raw = error.headers.get("Retry-After") if error.headers else None
+    try:
+        return max(0.0, float(str(raw))) if raw else None
+    except ValueError:
+        return None
+
+
 class ChatCompletionsAdapter:
     """One prompt, one response, and whether it reached for the tool."""
 
@@ -213,21 +232,26 @@ class ChatCompletionsAdapter:
             },
             method="POST",
         )
-        deadline = time.monotonic() + DEADLINE
-        try:
-            with urllib.request.urlopen(request, timeout=SOCKET_TIMEOUT) as response:
-                body: dict[str, Any] = json.loads(read_with_deadline(response, deadline))
-        except urllib.error.HTTPError as error:
-            detail = error.read()[:400].decode(errors="replace")
-            raise ChatCompletionsError(f"{error.code}: {self.explain(detail)}") from error
-        except urllib.error.URLError as error:
-            raise ChatCompletionsError(f"unreachable: {error.reason}") from error
-        except RequestTimeoutError as error:
-            raise ChatCompletionsError(str(error)) from error
-        except TimeoutError as error:
-            raise ChatCompletionsError(
-                f"socket timed out after {SOCKET_TIMEOUT:.0f}s"
-            ) from error
+        for wait in (*BACKOFF, None):
+            deadline = time.monotonic() + DEADLINE
+            try:
+                with urllib.request.urlopen(request, timeout=SOCKET_TIMEOUT) as response:
+                    body: dict[str, Any] = json.loads(read_with_deadline(response, deadline))
+                break
+            except urllib.error.HTTPError as error:
+                detail = error.read()[:400].decode(errors="replace")
+                if error.code == 429 and wait is not None:
+                    time.sleep(retry_after(error) or wait)
+                    continue
+                raise ChatCompletionsError(f"{error.code}: {self.explain(detail)}") from error
+            except urllib.error.URLError as error:
+                raise ChatCompletionsError(f"unreachable: {error.reason}") from error
+            except RequestTimeoutError as error:
+                raise ChatCompletionsError(str(error)) from error
+            except TimeoutError as error:
+                raise ChatCompletionsError(
+                    f"socket timed out after {SOCKET_TIMEOUT:.0f}s"
+                ) from error
 
         if "error" in body:
             raise ChatCompletionsError(str(body["error"]))

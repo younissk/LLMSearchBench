@@ -35,7 +35,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Results',
       collapsed: false,
-      items: ['results/leaderboard'],
+      items: ['results/leaderboard', 'results/explore'],
     },
     'data-format',
     'data-sources',

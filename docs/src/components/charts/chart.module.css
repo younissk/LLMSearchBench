@@ -87,3 +87,26 @@
   fill: transparent;
   cursor: default;
 }
+
+.guide {
+  stroke: var(--lsb-axis);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.quadrant {
+  font-size: 11px;
+  fill: var(--lsb-ink-muted);
+  font-style: italic;
+}
+
+.pointLabel {
+  font-size: 11px;
+  fill: var(--lsb-ink-secondary);
+}
+
+.axisTitle {
+  font-size: 11px;
+  fill: var(--lsb-ink-secondary);
+  letter-spacing: 0.02em;
+}

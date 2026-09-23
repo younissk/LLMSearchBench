@@ -1,0 +1,2724 @@
+{
+  "task": "tool-use-correctness",
+  "generated": "2026-09-23",
+  "items": [
+    {
+      "id": "tuc-mem-popqa_101298",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1020335",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1202978",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1391744",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1412527",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1486222",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1519072",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1527071",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1547297",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_165529",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1710145",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1726045",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1729004",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1798218",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1812763",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_1915979",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_2049458",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_2160023",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_2259095",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_2596512",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_2697463",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_2962543",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3132805",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3174709",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3282579",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3468623",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3550345",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_373418",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_377436",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3806305",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3817483",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3823041",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3916727",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_3990933",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_4042935",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_4177778",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_4202841",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_4232296",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_4650739",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_4811648",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_4851661",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_5085889",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_5183056",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_5308029",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_5365158",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_5407037",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_5696015",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_5715834",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_5776797",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_6073694",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_6239537",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_6265961",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_634679",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_6408042",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_6463892",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_6502612",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_6533919",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_669443",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_902091",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-popqa_904146",
+      "bucket": "memory",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_bt_1896",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_bt_2515",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_bt_279",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_bt_3655",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_bt_4055",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_bt_4555",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_jp_1437",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_jp_1890",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_jp_3304",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_12355",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_13425",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_14829",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_1520",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_2332",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_3253",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_3714",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_4611",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_4777",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_4912",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_548",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_7581",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_odql_7986",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qf_1273",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qf_2472",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qf_2569",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qg_2316",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qg_2451",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qg_675",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_1016",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_11526",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_13372",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_14053",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_3281",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_4481",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_5947",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_5965",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_6281",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_qw_6433",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_11335",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_12250",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_13877",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_14611",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_16690",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_16741",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_1821",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_18764",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_19115",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_20548",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_21242",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_21625",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_22585",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_24100",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_3322",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_5269",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_5736",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_5871",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_625",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_sfq_876",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_tb_2001",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-mem-triviaqa_tb_2018",
+      "bucket": "memory",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-freshqa_404",
+      "bucket": "search",
+      "subcategory": "freshqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-freshqa_405",
+      "bucket": "search",
+      "subcategory": "freshqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-freshqa_433",
+      "bucket": "search",
+      "subcategory": "freshqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-freshqa_449",
+      "bucket": "search",
+      "subcategory": "freshqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-freshqa_457",
+      "bucket": "search",
+      "subcategory": "freshqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-freshqa_462",
+      "bucket": "search",
+      "subcategory": "freshqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-freshqa_465",
+      "bucket": "search",
+      "subcategory": "freshqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_1000986",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_1053271",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_1318756",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_1542205",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_2151362",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_2154635",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_2175983",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_2712125",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_3073609",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_309956",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_3101008",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_3553522",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_3609667",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_3900281",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4384819",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4490656",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4528405",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4626488",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4741585",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4776718",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4783606",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4895544",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_4903474",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_5132170",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_5346139",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_5621482",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_5623957",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_5719217",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_580143",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_5959504",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_5972970",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_6020401",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_6120764",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_6139600",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_661853",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_669330",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_896602",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-popqa_975023",
+      "bucket": "search",
+      "subcategory": "popqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231006_17",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231006_22",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231006_25",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231006_3",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231013_16",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231013_17",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231013_2",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231013_7",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231027_1",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231027_18",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231027_6",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231027_9",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231103_1",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231103_12",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231103_7",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231110_15",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231117_1",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231117_11",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231117_17",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231117_3",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231117_6",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231117_9",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231124_5",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231201_0",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231201_17",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231201_2",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231201_8",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231208_12",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231208_6",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231215_0",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231215_7",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231215_9",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231222_2",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20231222_22",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20240105_25",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20240112_21",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20240112_3",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-realtimeqa_20240112_9",
+      "bucket": "search",
+      "subcategory": "realtimeqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_bt_1085",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_bt_2723",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_bt_4062",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_bt_585",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_jp_4324",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_10742",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_3850",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_389",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_3960",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_4800",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_6075",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_6238",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_6789",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_7910",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_8890",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_odql_9657",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_qf_2575",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_qf_2668",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_qf_3280",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_qw_14614",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_qw_15541",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_qw_16531",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_qw_2661",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_qw_7235",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_10869",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_14777",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_15667",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_17743",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_1979",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_20510",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_21328",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_22962",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_5255",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_6995",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_sfq_9630",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_tb_125",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-sea-triviaqa_tb_1939",
+      "bucket": "search",
+      "subcategory": "triviaqa",
+      "source": "retrievalqa",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-01",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-02",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-03",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-04",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-05",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-06",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-07",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-08",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-09",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-10",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-advice-11",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-advice-12",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-advice-13",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-14",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-15",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-16",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-advice-17",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-18",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-advice-19",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-advice-20",
+      "bucket": "no_tool",
+      "subcategory": "advice",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-01",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-02",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-03",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-04",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-05",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-06",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-07",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-08",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-09",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-10",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-arith-11",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-arith-12",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-arith-13",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-14",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-15",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-16",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-17",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-18",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-arith-19",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-arith-20",
+      "bucket": "no_tool",
+      "subcategory": "arithmetic",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-code-01",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-02",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-03",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-05",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-06",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-07",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-code-08",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-09",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-10",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-11",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-code-12",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-13",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-14",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-15",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-16",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-17",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-18",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-19",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-code-20",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-code-21",
+      "bucket": "no_tool",
+      "subcategory": "code",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-creative-01",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-02",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-03",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-04",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-05",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-06",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-07",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-08",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-09",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-10",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-creative-11",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-creative-12",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-creative-13",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-14",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-15",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-16",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-17",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-creative-18",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-19",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-creative-20",
+      "bucket": "no_tool",
+      "subcategory": "creative",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-social-01",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-02",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-03",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-04",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-05",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-06",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-07",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-08",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-09",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-social-10",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-social-11",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-social-12",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-13",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-14",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-15",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-16",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-17",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-18",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-social-19",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-social-20",
+      "bucket": "no_tool",
+      "subcategory": "social",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-transform-01",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-02",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-03",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-transform-04",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-05",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-06",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-transform-07",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-08",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-09",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-transform-10",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-11",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-12",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-13",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-14",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-transform-15",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-16",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-17",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-18",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    },
+    {
+      "id": "tuc-nt-transform-19",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": true
+    },
+    {
+      "id": "tuc-nt-transform-20",
+      "bucket": "no_tool",
+      "subcategory": "transform",
+      "source": "generated",
+      "adversarial": false
+    }
+  ],
+  "models": [
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "label": "DeepSeek V3.2",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOOOOAOOOOOAOAOOOOAOOOAOOOOOOOOOAOOOOOOOOOOOOOOOAOOOOOOOAOOOOAOAOOOOOOOOOOOOOOOAAOOOOAOOOOOOOOOOOOOOAOOOOOAOOOOOAOOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSOOOOOOAOOOOOOAOOOOOOAAOOAOAAAAAAAAAAAAAAOAOAOOAAAOAAOOOOAOOOAAOAAAOOOOOOOOAOOOOOAAAAAAAAOAAAAAAAAAAAAAAOAAAAOOOAOAAOAAOO",
+      "calls": "+++++.++++.+++++.+.++++.+++.+++++++++.+++++++++++++++.+++++++.++++.+.+++++++++++++++..++++.++++++++++++++.+++++.+++++.+++++++++++++++++++++++++++++++++++++.++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.++++++.++++++..++.+..............+.+.++...+..++++.+++..+...++++++++.+++++........+..............+....+++.+..+..++"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "label": "DeepSeek V4 Flash",
+      "toolProtocol": "native",
+      "decisions": "OOOAOAOAAAOOAAAOAOOAAOAOOAOAOAOOOOOOOAOOAOOOOOOOOOAAAAAAOOOOOAAAOAAAAAAOOOAOAOOAAAAAAAAAAAAAOAOAOAAAAAOOAAAAAAOAOOOOAAOASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSUSSSSSSSSSSSSSSSSSSSSUUUSUSSSSSSSSSSUSSSUSSSSSSSUUSSSUSSSAOOOAAAAAAOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAOAAAAAAAAAAAAOAAAAAAAOAAAAOAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++.+.+...++...+.++..+.++.+.+.+++++++.++.+++++++++......+++++...+......+++.+.++.............+.+.+.....++......+.++++..+.++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.++++.++++++++++++++++++++...+.++++++++++.+++.+++++++..+++.+++.+++......+.+...........................+....+............+.......+....+....+..........................................."
+    },
+    {
+      "model": "meituan/longcat-2.0",
+      "label": "LongCat 2.0",
+      "toolProtocol": "native",
+      "decisions": "OAAOOAOAOAAAAAOAAOAAAOAAOOAAOOOOOAOOOAOOAOAAAOOOOAAOOAAAOOOOAAOAAAAAAAAAOOOOAOAOAAAAAAAAAAOAAOAAOAOOOAAOAAAAAOOAAAAAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUUSSSSSSSSSSSSUSSSSSSSSSSUSUSSSSSSSSSSSSSSSSUSSSSSUSUUUUUSSSSSSSSSUUUSUSSUSSSSSUSSSUSUUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+..++.+.+.....+..+...+..++..+++++.+++.++.+...++++..++...++++..+.........++++.+.+..........+..+..+.+++..+.....++.........+++++++++++++++++++++++++++++++++..++++++++++++.++++++++++.+.++++++++++++++++.+++++.+.....+++++++++...+.++.+++++.+++.+.........................................................................................................................."
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "label": "Llama 3.1 8B",
+      "toolProtocol": "native",
+      "decisions": "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOAOOOOOOOOOOOOOOOSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSOOOOOOOOAOAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOAOOAOOAOOOOOOAOOOOOAAAAAAAAAOAAAAAAOOAOOAOAOOOOOAOOOAOOOAOOO",
+      "calls": "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++x+++++++++++++++++++++++++++++++++++++++.++++++++++++++++++++++.++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++xx++x+x+.x.++++++x+xxx+xxxxxx+xxxxxxxxx++x+x++x+x+xxx++xxxxx.x+.++.++++++.x++++.........+......+x.+x.x.xx++x.xx+.+xx.++x"
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "label": "Llama 3.3 70B",
+      "toolProtocol": "native",
+      "decisions": "OAOAOAAAAAAAAAAAAOAAAOAAOAAAOAOAOAOOOOAOAOAAAOAOAOAAOAAAAOOOAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAOAAAAAUUUUUUUUUUSSSSSSSSUSSSUSSSSSSSUSSSSSSSSSSSSUUSUSSUSUSSUUUUUSUUSUUUSSSUSUUSSUUSSUUSSSUSUUUUUUSSUUUUUUSSUUUUUUUSUSUSSUUUUUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+.+.+............+...+..+...+.+.+.++++.+.+...+.+.+..+....+++.............+......................+.................+...............++++++++.+++.+++++++.++++++++++++..+.++.+.++.....+..+...+++.+..++..++..+++.+......++......++.......+.+.++...............................................................................................x............................."
+    },
+    {
+      "model": "minimax/minimax-m2",
+      "label": "MiniMax M2",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOAOOOOAAOOOOAAOOOOOOOOOAOOOOOOOOOOAOOOOOOOOOOOOAOOOOOOOAOOAOAAAAOOOOOOOOOAAOOOAAOAAAOAOOOAOOOOOOOOAOOAAOOAOOOAAOAASSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSAAOAOAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAOAAOAAAOAAOAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++++.+.++++..++++..+++++++++.++++++++++.++++++++++++.+++++++.++.+....+++++++++..+++..+...+.+++.++++++++.++..++.+++..+..+++.++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++++++++++++++++++++++++++++++.+++++++++++++++++++++++++++++..+.+......+............................+.+..+...+..+................+..................+..............................."
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "label": "MiniMax M3",
+      "toolProtocol": "native",
+      "decisions": "AAAAAAOAAAAAAAAAAOAAAAAAAAAAAAAAAAOAAAOAAAAAAAAAAAAAAAAAAAOOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAUUUUSUUUUUUSSUUUUUUSUUUUUUUUUUUUUSUUUUUUSUUUUUSUSUSUUSUSSUUSUSUUUUUSUUSUUSUSSUSUSUUUUUUUUUSUSSUUUSUUUUSUUSUSSSSUUSUUUUUUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "......+..........+................+...+...................++...........................................+....................+......++......+.............+......+.....+.+.+..+.++..+.+.....+..+..+.++.+.+.........+.++...+....+..+.++++..+.............................................................................................................................."
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "label": "Mistral Small 3.2 24B",
+      "toolProtocol": "native",
+      "decisions": "OAAAOAOAAAAAAAAAAAAAAOAAOAAAAAOAAAAAOAOAAAAAAOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASSSUSSSSUUSSSSUUUUSSUUUUUUSUSSUUUUSSSUUUSSSUUSSUUSUSSUSSSUUSSSSSSSSSSSSSSUSSSSSSSSSSUUUUUUUUUUUUUSUUUUUUUUUUUSUUUUUUUUUUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+...+.+..............+..+.....+.....+.+......+.+........................................................................+++.++++..++++....++......+.++....+++...+++..++..+.++.+++..++++++++++++++.++++++++++.............+...........+.................................................................................................................................."
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "label": "Nemotron 3 Nano 30B-A3B",
+      "toolProtocol": "native",
+      "decisions": "OAAOOAOAAAOOOOOOOOOAAOAAOOOAOOAAOAOOAOOOAOOOOOOOOOOOAOAOAOAOAAOOAOAOAAAOOOAAOAAOAOAOOAOOOAOAAOOOOAOOOOAOOOOOAOOAAAOOOAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSUSSUUSSUSSSUSSSSUSSSUSSSSSSSSSSSSUSUSUUUSSUSSSSSSUUUSUSSUUUSSSUSUSSSUSAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAOAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+..++.+...+++++++++..+..+++.++..+.++.+++.+++++++++++.+.+.+.+..++.+.+...+++..+..+.+.++.+++.+..++++.++++.+++++.++...+++...+++++++++++++++++++++++++++++++++.++++++++++++++++.++..++.+++.++++.+++.++++++++++++.+.+...++.++++++...+.++...+++.+.+++.+............+................................+............+..........+.................................................."
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "label": "GPT-OSS 20B",
+      "toolProtocol": "native",
+      "decisions": "OAOAOAOAAAAOAAAAAOAAAOAAOOOAOAOAOAOOOAOOAOAOOOAOOAAOAAAAAAAOAAAAAAAAAAAAOOAAAOOAAAOAAAAAAAAAOAAOOAOOAAAOAAOAAOAAAAOAAAAAUUSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSUSSSSSSSSSSUSSSSSSSSSSSSUSSSSSSSSSSSSUUSSUUUUUSSUSSSUUUSUSSUSSSSSUSSSUUUSAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+.+.+.+....+.....+...+..+++.+.+.+.+++.++.+.+++.++..+.......+............++...++...+.........+..++.++...+..+..+....+.......+.++++++++++++++++++++++++++++++++++x+++++.++.++++++++++.+++++++x++++.++++++++++++..++.....++.+++...+.++.+++++.+++...x...........+......................................+.....................................+..............................."
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen2.5 72B",
+      "toolProtocol": "native",
+      "decisions": "OOAOOAOAOAAOOOOOAOAAAOAAOAOAOOOOOOOOOOOOAOOOOOOOOOAOOOAAOAOOOAOOAOAAAAOAOOOOAOOAAAOAAAOOOAAOOAAOOAOOOAAOAOOOAOOAAOOAAAOASSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSUSSSSSSUAAAAAAAAAAOAAAAAAAAAAAAOAAAAAAAOOAAAOAOOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "++.++.+.+..+++++.+...+..+.+.++++++++++++.+++++++++.+++..+.+++.++.+....+.++++.++...+...+++..++..++.+++..+.+++.++..++...+.+++.++++++++++++++++++++++++++++++++++++++++.+++++++++++++.++++++++++++++++++++++++++++++++++++++++++++.++++++++.++++++...........+............+.......++...+.++................................................................................"
+    },
+    {
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "label": "Qwen2.5 7B",
+      "toolProtocol": "native",
+      "decisions": "OAAOOOOOAOAOOOAOOOAAOOOOOAOOOOOOOOOOOAOOAOAOOOOOOOAOAAOAOAOOOOOOAOAOAOOOOOOOOOOOOOOOAOOOOOOOOOOOOOOOOOOOOOOOOOOOAOOAOAOOSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSUSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSAAAAAAAAAAOAAAAAAAAAAOOOOOOAOOOOAOAOOOOOAAAAOOOOAAAAOAOOAOOOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAOAAAAA",
+      "calls": "+..+++++.+.+++.+++..+++++.+++++++++++.++.+.+++++++.+..+.+.++++++.+.+.+++++++++++++++.+++++++++++++++++++++++++++.++.+.+++++.++++++++++++++++++++++++++++++++++++.+++.+++++++++++++.++++++++++++++++++++++++++++++++++++++++++++++++++++++++.++++..........+..........++++++.++++.+.+++++....++++....+.++.+++...................................+..................+....."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B-A22B Instruct",
+      "toolProtocol": "native",
+      "decisions": "OAAAOAOAAAAOAAAAAOAAAOAAOAAAOAOAOAAOOAAOAOAOOOAOOAAAAAAAAAAOOAOOAAAAAAAAAOAOAOOAAAAAAAAAAAAAAAAAAAOOOAAAAAAAAAOAAAOAAAOASSSSSSSSSSUSUSSUSSSSSSUUSUSSSSSSSSSSSUSSSSSSUSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSUSSUUSSUSSSUUSSUSSSUSSSSSSSSUSSSUUUUAAOAAAAAAAOAOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+...+.+....+.....+...+..+...+.+.+..++..+.+.+++.++..........++.++.........+.+.++...................+++.........+...+...+.++++++++++.+.++.++++++..+.+++++++++++.++++++.+++++++++++++.+++++++++++++++++++++++++.++..++.+++..++.+++.++++++++.+++......+.......+.+.+........................................................................................................."
+    },
+    {
+      "model": "qwen/qwen3-235b-a22b-thinking-2507",
+      "label": "Qwen3 235B-A22B Thinking",
+      "toolProtocol": "native",
+      "decisions": "OAOAOAOAAAAOOOAOAOAOAOAAOOOAOOOOOAOOOOOOAOOOOOOOOOAAOAAAOOOOOAOAAOAAAAAAOOOOAOAAAAOAAAAAAOAAOAOAOAOOOOAOOAAOAAOAAAAAAAOASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSUSSSSSSSSSSSSSSSSSSSSSSSSSUUSSUSSSSSSSSSSUSSSUSSUSSSSSSSSSSSSSOOOOOOOOOAOAOOOOOAOOAAAAAAAAAAAAAAAAAAAAAAAAAOAAAOAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+.+.+.+....+++.+.+.+.+..+++.+++++.++++++.+++++++++..+...+++++.+..+......++++.+....+......+..+.+.+.++++.++..+..+.......+.++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++.+++++++++++++++++++++++++..++.++++++++++.+++.++.++++++++++++++++++++++.+.+++++.++.........................+...+...................+.................................................."
+    },
+    {
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "label": "Qwen3 30B-A3B Instruct",
+      "toolProtocol": "native",
+      "decisions": "OAAAOAOAAAAOAAAOAOAAAOAAOAOAOOOOOOOOOAOOAOAOOOOOOAAOOAAAOOAOOOOOAOAAAAOOOOOOOOOAOAOAAAOAOAAOOAOOOAOOOOOOAOOOAOOOOOOOAAOASSSUSSSSSSSSSSUSSSSSSSSSSSUSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSUSSSSSSSUSSSSSSSUOOOAOAAOOAOOOAOAOAOOAAAAAAAAAAAAAAAAAAAAOAOAOOOOAOOOOOAAAOOOAAOAAAAAAOAOOOAAAOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+...+.+....+...+.+...+..+.+.+++++++++.++.+.++++++..++...++.+++++.+....+++++++++.+.+...+.+..++.+++.++++++.+++.+++++++..+.+++.++++++++++.+++++++++++.++++++++++++++++.++++++++++++++++++++++++++++++++++++++++.++++++++++++++++++.+++++++.+++++++.+++.+..++.+++.+.+.++....................+.+.++++.+++++...+++..+......+.+++...+.+........................................"
+    },
+    {
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "label": "Qwen3 Coder 30B-A3B",
+      "toolProtocol": "native",
+      "decisions": "AAAAAAAAOAAAOAAOOAAAAOAAAAAAAOAAOAAAAAAAAAAAAOAAOAAAOOAAOAAAOAAAAOAOAAAAAAAOAAAAAAOAAAOAOAAAOOAAOOAAOAAAOOOAAAOAAOAOAAAASSSUSSUUSUSUSUSSUSSSUUUUUSSSUUUSSSUUUUUUUSUUUSUUUSSUUUSUUUSSUSUSSSUSSUUUSUSUUUUUUUSUSSSUSUUSUSSUSUSSSUUUUUSUUUUUUUUSUUUUAAAAAAAAAAAAOAAAAAAAAAAAAAOAOOAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "........+...+..++....+.......+..+............+..+...++..+...+....+.+.......+......+...+.+...++..++..+...+++...+..+.+....+++.++..+.+.+.++.+++.....+++...+++.......+...+...++...+...++.+.+++.++...+.+.......+.+++.+..+.++.+.+++.....+........+................+.............+.++.....+.......................................+............................................"
+    },
+    {
+      "model": "qwen/qwen3.5-122b-a10b",
+      "label": "Qwen3.5 122B-A10B",
+      "toolProtocol": "native",
+      "decisions": "OAAAOAOAAAAAAAAOAOAAAOAAOOOAOAOOOOOOOAOOAOAOOOOOOOAOOAAAOOAOOAOAAAAAAAAAAOAOAOOAAAAAAAAAAAAAOAAAOAOOOAAOAAAAAOOAAAOAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSUUUSSSSSSSSSSUUSSUSSSSSSSUUSSSUSSUAAOAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+...+.+........+.+...+..+++.+.+++++++.++.+.+++++++.++...++.++.+..........+.+.++.............+...+.+++..+.....++...+.....++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++++++++++++++++++++++++++...++++++++++..++.+++++++..+++.++...+.........+................................+..........................................+..............................."
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "label": "Qwen3.5 27B",
+      "toolProtocol": "native",
+      "decisions": "OAOAOAOAAAAAAAAAAOAAAOAAOOOAOOOOOAOOOAOOAOAOOOOOOAAAAAAAAOAOAAOAAAAAAAAOAOOOAOAAAAAAAAAAAAAAAAOAAAOOAAAOAAAAAAAAAAOAAAAASSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSUUUUUUSSSSSSSSSUUUSUSSUSSSSSUSSSUSSSAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+.+.+.+..........+...+..+++.+++++.+++.++.+.++++++........+.+..+........+.+++.+................+...++...+..........+.....+++.+++++++++++++++++++++++++++++++++++++.++++++++++++++++.+++++++++++++++++++++++++......+++++++++...+.++.+++++.+++.+++...........+............................+....+.........................+................................................"
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "label": "Qwen3.5 397B-A17B",
+      "toolProtocol": "native",
+      "decisions": "OAOAOAOAAAAAAOOAAOAAAOAAOOOAOAOOOOOOOAOOAOOOOOOOOAAOAAAAOOOOOAOAAAAAAAAAAOOOAOOAAAAAAAAAAAAAAAAAAAOOOAAOAAOAAOOAAAOAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSUUUSUSSSSSSSSUUUUSUSSUSSSSSUSSSUUSSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+.+.+.+......++..+...+..+++.+.+++++++.++.++++++++..+....+++++.+..........+++.++...................+++..+..+..++...+.....++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.++++++++++++++++++++++++++...+.++++++++....+.++.+++++.+++..++.............................................+.......................+.+................................................"
+    },
+    {
+      "model": "qwen/qwen3.5-9b",
+      "label": "Qwen3.5 9B",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOAAAAOAOOOAOOAAOOAOOOAOOOOOOOOOOOOAOOOOOOOOAOOAAAAOOOOAAOAAAAAAAAOOOOOAOOAAAAAAAAAAAAAOAAAOAOOOAAOAAOOAOAAAAOAAAAASSSUSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSUUUUSSUSSSSSSSUUSSUSUSSSSSSUSSSUSSSAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAOAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++++.+....+.+++.++..++.+++.++++++++++++.++++++++.++....++++..+........+++++.++.............+...+.+++..+..++.+....+.....+++.+++++++++++.++++++++++++++++++++++++++++++++++++++++++.++++++++++++++++++++++++++....++.+++++++..++.+.++++++.+++.+++...........+.................................+........+................+................................................"
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "label": "Qwen3.6 27B",
+      "toolProtocol": "native",
+      "decisions": "OAOAOAOAAAOAAAOOAOAAAOOAOOOAOOOOOAOOOAOOAOOOOOOOOOOAAAAAOOOOAAOOAAAAAAAOOOAOAAAAAAAAAAAAAAAAOAAAOAOOAAAOAAAAAAAAAAOAAAAASSSUSSSUSSSSSSSSUSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSUSSSSSSSSUSSUSSSSUSSSSSSSSSSSSSSSSSUUSUUUUSSSSSSSSUSSSUSSUSUSSUUSSSUSSUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+.+.+.+...+...++.+...++.+++.+++++.+++.++.++++++++++.....++++..++.......+++.+................+...+.++...+..........+.....+++.+++.++++++++.++++++++++++++++++++.+++++++++++.++++++++.++.++++.+++++++++++++++++..+....++++++++.+++.++.+.++..+++.++..............................................+..........................................+..............................."
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "toolProtocol": "native",
+      "decisions": "OAAAOAOAAAAAAAOAAOAAAOAAOOAAAAOOOAOOOAOOAOAOOOAOOAAAAAAAAOOOAAOAAAAAAAAAOOOOAOAAAAAAAAAAAAAAAAAAAAOOAAAOAAAAAOAAAAOAAAAASUSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSUUUSUUUUSSSSSSSUUUSSSSSUSSSSUSSSUUSUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAOAAAAAAAAAAAAAAAAAAAOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+...+.+.......+..+...+..++....+++.+++.++.+.+++.++........+++..+.........++++.+....................++...+.....+....+.....+.++++++++++++++++++++.++++++++++++++++++++++++++++++++++++++++.++++++++++++++++++++...x....+++++++...+++++.++++.+++..+...............................................+..+...................+.+................................................"
+    },
+    {
+      "model": "thinkingmachines/inkling",
+      "label": "Inkling",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOAOAAOAOOOAOOOAOOOOOOOOOOOOAOOOOOOAOAOOOOOOOOOOAAAOOOOOAOAAAAAAAOAOOOOAOAAAOAOAAAAAAAAOOAOOAOOOOAOOAAAAOOAAAOAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSUSSSUSSSSSSSSSUSSSSSSSSSSSSUSSSSSUSAAOAOOAOAAOOOAAAOAAAAAAAAAAAAAAAAAAAAAAAOAOAAOOAAOAAAOAAAAOOAAAAAAAAAOAOAAAOAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++++.+.+..+.+++.+++.++++++++++++.++++++.+.++++++++++...+++++.+.......+.++++.+...+.+........++.++.++++.++....++...+.....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+.+++.+++++++++.++++++++++++.+++++.+..+.++.+..+++...+.......................+.+..++..+...+....++.........+.+...+............+..............................."
+    },
+    {
+      "model": "thinkingmachines/inkling-small",
+      "label": "Inkling Small",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOAAAOOOOOOOOAOAOOOOOOAOOOOOAOOOOOOOOOOOOOOOOOOOAAAOOOOOAOOAAAAAAAOOOOOAOOAAOOAAAOOOAOAOAOAOAOOOOOOOOOOAOOOOOOOAAOOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSUSSSOAAAOAAOOAOOOAOAOOAAOAAAAAAAAAAAAAAAAAAAOAOAAOOOAOOOOOAOAAOOAAOAAAAAAOAOAAAOAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++++.+...++++++++.+.++++++.+++++.+++++++++++++++++++...+++++.++.......+++++.++..++...+++.+.+.+.+.++++++++++.+++++++..+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++++++++++++++++.++++++++++++.++++...+..++.+++.+.++..+...................+.+..+++.+++++.+..++..+......+.+...+............+..............................."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "label": "MiMo V2.5",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOAOOAOOAOOOOAOAOOOOOOAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOAOOOOOOAOOOOOOOAAOAAAAAOAOOOOOOOOAOOOOOOOOOOOOOOAOOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSAAAAOAAAAAAAOAAOAOOAAAAAAAOAAAAAAAAAAAAAOAOAAOOAAOAAAAOAAAAAAOAAAAAOAOAAAAAOAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++++.+.++.++.++++.+.++++++.+++++++++++++++++++++++++++++++++++++++++.++++++.+++++++..+.....+.++++++++.++++++++++++++.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.++++++++++++++++++++++++.+++++++....+.......+..+.++.......+.............+.+..++..+....+......+.....+.+.....+............+..............................."
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "label": "MiMo V2.5 Pro",
+      "toolProtocol": "native",
+      "decisions": "OOOAOAOAOAAAAAOOOOOAAOAOOOOOOOOOOAOOOOOOAOOOOOOOOOOAOAOAOOOOOAOOAAAAAAOAOOOOOOOAAAAAAAAAAAAAAAAAAAOOAAOOOOOAAOOAAOOAAAOASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSUSSSSSSSUSUSSSSSSSSSSUSSSSSSUAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAOAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++.+.+.+.....+++++..+.++++++++++.++++++.++++++++++.+.+.+++++.++......+.+++++++...................++..+++++..++..++...+.++++++++++++++++++++++++++++++++++++++++++++.++++++++++++++++++++++++++++++++++++++.+++++++.+++++++.+.++++++++++.++++++................+........................+....+..........................................+..............................."
+    },
+    {
+      "model": "z-ai/glm-5",
+      "label": "GLM-5",
+      "toolProtocol": "native",
+      "decisions": "OOOOOAOAOAAOAOOOAOOOAOAOOOOAOOOOOAOOOAOOAOOOOOOOOOAOAAAAOOOOOAOAAAAAAAAOOOOOAOAAAAAAAAAAOAAOOAOAOAOOOAAOAOOOAOOAAAOAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSSUSSSSSSSSSSSSSSSSUSSSAAOAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAOAAAAAAAAAAAAAAAAAAAOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+++++.+.+..+.+++.+++.+.++++.+++++.+++.++.+++++++++.+....+++++.+........+++++.+..........+..++.+.+.+++..+.+++.++...+.....++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++++++++++++++++++++++++++.++++++++++++.++++++++++++++++.+++..+.........+................................+...+...................+.+................................................"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "label": "GLM-5.3 Flash",
+      "toolProtocol": "native",
+      "decisions": "OAAAOAOAAAAAAAAAAOAAAOAAOAOAOAAOOAOOAAOAAOAAOOAOAOAAAAAAAOAOAAOAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAOOAAAOAAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSUSSSSSSSSSSSSSSSSSSSSSSSUSSSSSSSSSSSUUSSSSSUSSSSSUUUUUUUSUUUSUUSSUUUSUUUSSSSSUUSUUUUUUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAOAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "calls": "+...+.+..........+...+..+.+.+..++.++..+..+..++.+.+.......+.+..+..........+........................++...+................++++++++++++++++++++++.+++++++++++.+++++++++++++++++++++++.+++++++++++..+++++.+++++.......+...+..++...+...+++++..+...................................................+...+.....................+................................................"
+    }
+  ]
+}

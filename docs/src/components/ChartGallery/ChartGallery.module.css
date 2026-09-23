@@ -1,0 +1,46 @@
+.section {
+  margin: 2.5rem 0;
+  scroll-margin-top: 4rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 50%;
+  background: var(--lsb-plane);
+  border: 1px solid var(--lsb-grid);
+  font-size: 0.8rem;
+  color: var(--lsb-ink-secondary);
+}
+
+.question {
+  color: var(--lsb-ink-secondary);
+  font-size: 0.93rem;
+  margin-bottom: 0.4rem;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  font-size: 0.83rem;
+  margin: 0 0 1.5rem;
+}
+
+.table caption {
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 0.4rem;
+  color: var(--lsb-ink-muted);
+  font-size: 0.78rem;
+}

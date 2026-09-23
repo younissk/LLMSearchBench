@@ -12,7 +12,13 @@ in an artefact fails at load rather than silently dropping a metric.
 
 from llmsearchbench.types.base import BenchModel, Fraction, SiteModel
 from llmsearchbench.types.enums import Category, Verdict
-from llmsearchbench.types.leaderboard import LeaderboardRow, TaskLeaderboard
+from llmsearchbench.types.leaderboard import (
+    ItemMeta,
+    LeaderboardRow,
+    ModelItems,
+    TaskItemMatrix,
+    TaskLeaderboard,
+)
 from llmsearchbench.types.manifest import Manifest
 from llmsearchbench.types.runs import RunRecord
 from llmsearchbench.types.tasks import Task
@@ -21,11 +27,14 @@ __all__ = [
     "BenchModel",
     "Category",
     "Fraction",
+    "ItemMeta",
     "LeaderboardRow",
     "Manifest",
+    "ModelItems",
     "RunRecord",
     "SiteModel",
     "Task",
+    "TaskItemMatrix",
     "TaskLeaderboard",
     "Verdict",
 ]

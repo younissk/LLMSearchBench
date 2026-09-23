@@ -32,6 +32,14 @@
   --series-4: #eda100;
   --series-5: #e87ba4;
 
+  /* Sequential ramp for heatmaps: one hue, light to dark. Magnitude is not
+     an identity, so it never uses the categorical slots above. */
+  --seq-1: #e4eefb;
+  --seq-2: #bcd6f3;
+  --seq-3: #7fb0e6;
+  --seq-4: #3f86d3;
+  --seq-5: #1a559c;
+
   /* --- sequential (single hue, light -> dark) ---------------------------- */
   --seq-100: #cde2fb;
   --seq-250: #86b6ef;
@@ -82,6 +90,14 @@
   --series-3: #199e70;
   --series-4: #c98500;
   --series-5: #d55181;
+
+  /* Dark mode steps its own ramp against the dark surface rather than
+     flipping the light one, which would wash out at the pale end. */
+  --seq-1: #17293d;
+  --seq-2: #1e4472;
+  --seq-3: #2a68b0;
+  --seq-4: #4b93dd;
+  --seq-5: #8fc0ee;
 
   --seq-100: #0d366b;
   --seq-250: #1c5cab;
